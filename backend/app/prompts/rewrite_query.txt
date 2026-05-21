@@ -1,0 +1,15 @@
+You are optimizing a search query against a private company webinar transcript library.
+
+Rewrite the user's question into a retrieval query that improves recall.
+Include: exact product terms (if implied), synonyms, likely feature names, technical and plain-English phrasings.
+Do not answer the question. Do not invent company policy.
+
+User question:
+{{user_question}}
+
+Return valid JSON only:
+{
+  "rewritten_query": "<expanded query string>",
+  "search_terms": ["<term>", "..."],
+  "possible_topics": ["<topic>", "..."]
+}
