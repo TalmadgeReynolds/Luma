@@ -1,0 +1,1652 @@
+[
+  {
+    "start_time_seconds": 12.81,
+    "end_time_seconds": 14.58,
+    "speaker": "Davicho Barona",
+    "text": "Hey guys, welcome!"
+  },
+  {
+    "start_time_seconds": 15.43,
+    "end_time_seconds": 21.239,
+    "speaker": "Davicho Barona",
+    "text": "Welcome, welcome. I'm just going to, I'm gonna be busy for a second just admitting people."
+  },
+  {
+    "start_time_seconds": 21.58,
+    "end_time_seconds": 24.08,
+    "speaker": "Davicho Barona",
+    "text": "Into the call."
+  },
+  {
+    "start_time_seconds": 25.79,
+    "end_time_seconds": 29.839,
+    "speaker": "Davicho Barona",
+    "text": "So just give me a second here, but welcome, everybody."
+  },
+  {
+    "start_time_seconds": 30.39,
+    "end_time_seconds": 36.269,
+    "speaker": "Davicho Barona",
+    "text": "We're gonna… Really, honestly, today, and for the foreseeable, like."
+  },
+  {
+    "start_time_seconds": 36.65,
+    "end_time_seconds": 52.98,
+    "speaker": "Davicho Barona",
+    "text": "few weeks, I'm just gonna focus mostly on agents, the new… the new Luma app, really. Which I assume that's why most of you guys are here. And if you are currently using, Dream Machine."
+  },
+  {
+    "start_time_seconds": 53.26,
+    "end_time_seconds": 68.149,
+    "speaker": "Davicho Barona",
+    "text": "I urge you to try, agents, especially because you will have some credits available to you since you already have a Dream Machine account. If you don't already have a Dream Machine account, and you're just jumping in to agents for the first time."
+  },
+  {
+    "start_time_seconds": 68.15,
+    "end_time_seconds": 74.639,
+    "speaker": "Davicho Barona",
+    "text": "You will probably see a… you'll probably see a credit card paywall at the beginning."
+  },
+  {
+    "start_time_seconds": 74.89,
+    "end_time_seconds": 79.059,
+    "speaker": "Davicho Barona",
+    "text": "I just want you to know that that is also meant to…"
+  },
+  {
+    "start_time_seconds": 79.65,
+    "end_time_seconds": 89.62,
+    "speaker": "Davicho Barona",
+    "text": "Basically, prevent a lot of scam bots from coming in and making unlimited accounts and just starting to create a ton without real permissions."
+  },
+  {
+    "start_time_seconds": 89.62,
+    "end_time_seconds": 99.959,
+    "speaker": "Davicho Barona",
+    "text": "So when you put that credit card in, just know you're not getting charged anything until you actually commit, and if you are there for the first time, you will have a bunch of test credits to begin with."
+  },
+  {
+    "start_time_seconds": 99.97,
+    "end_time_seconds": 111.699,
+    "speaker": "Davicho Barona",
+    "text": "But okay, let me, let me get into it. I'm just, again, I'm just submitting some new, new, folks into the room here. Hey, Tammy, welcome. I see some familiar faces. Awesome, Elle."
+  },
+  {
+    "start_time_seconds": 112.06,
+    "end_time_seconds": 119.819,
+    "speaker": "Davicho Barona",
+    "text": "Artur is here, too, from my team, and he will be able to, to help out as well. I'm gonna try to monitor the chats."
+  },
+  {
+    "start_time_seconds": 119.85,
+    "end_time_seconds": 134.099,
+    "speaker": "Davicho Barona",
+    "text": "too, hey, Chase, I'm gonna, let's make sure everybody's able to send some questions through here. As I go through it, I don't have, like, unlimited time, but as I go through it, like, please…"
+  },
+  {
+    "start_time_seconds": 134.1,
+    "end_time_seconds": 141.55,
+    "speaker": "Davicho Barona",
+    "text": "stop me, ask me questions. No question is a stupid question, please feel free to ask, like, whatever you want."
+  },
+  {
+    "start_time_seconds": 141.79,
+    "end_time_seconds": 145.17,
+    "speaker": "Davicho Barona",
+    "text": "I'm gonna first just walk through,"
+  },
+  {
+    "start_time_seconds": 145.65,
+    "end_time_seconds": 159.07,
+    "speaker": "Davicho Barona",
+    "text": "the interface, and just kind of break things down as they are, and as, as, like, going through it as, as sort of you would coming into it brand new. Okay, looks like I don't have anybody else"
+  },
+  {
+    "start_time_seconds": 159.31,
+    "end_time_seconds": 163.509,
+    "speaker": "Davicho Barona",
+    "text": "in the waiting room, so I'm just gonna go ahead and jump in. Let me open the,"
+  },
+  {
+    "start_time_seconds": 164.02,
+    "end_time_seconds": 165.45,
+    "speaker": "Davicho Barona",
+    "text": "Open the interface."
+  },
+  {
+    "start_time_seconds": 165.58,
+    "end_time_seconds": 171.219,
+    "speaker": "Davicho Barona",
+    "text": "And, and let's… let's hop in and start looking at some stuff."
+  },
+  {
+    "start_time_seconds": 171.84,
+    "end_time_seconds": 182.07,
+    "speaker": "Davicho Barona",
+    "text": "So, here I am… Okay, this is… this is really the homepage here of Luma Agents."
+  },
+  {
+    "start_time_seconds": 182.55,
+    "end_time_seconds": 206.14,
+    "speaker": "Davicho Barona",
+    "text": "the new Luma app, and as you get in here, you know, obviously you may not have as many boards as I do already created. This may be pretty blank for you guys. I do want to note that this does live in a new URL. This is not the same dream-machine.lumalabs.ai. This is app.lumalabs.ai. So just note that, that it is… that it does live in a different URL."
+  },
+  {
+    "start_time_seconds": 206.19,
+    "end_time_seconds": 208.539,
+    "speaker": "Davicho Barona",
+    "text": "And so when you jump in here."
+  },
+  {
+    "start_time_seconds": 208.89,
+    "end_time_seconds": 221.29,
+    "speaker": "Davicho Barona",
+    "text": "again, you guys, please feel free, just stop me, or throw your hand up, or throw it in the chat, and I think maybe Artur, if you can help me, just monitor the chats, if there's any questions being raised in there, it'd be great if you could help me answer."
+  },
+  {
+    "start_time_seconds": 221.29,
+    "end_time_seconds": 240.44,
+    "speaker": "Davicho Barona",
+    "text": "But in any case, you come into the homepage here, you will see, again, you'll have no boards in here unless you're already starting to use it. And then this plus sign here, very reminiscent of Dream Machine. As soon as you click it, it'll open up a brand new board here, and as you'll notice, the board"
+  },
+  {
+    "start_time_seconds": 240.78,
+    "end_time_seconds": 249.41,
+    "speaker": "Davicho Barona",
+    "text": "gives you, a familiar feel. Like, if you guys use any kind of, like, infinite canvas type of,"
+  },
+  {
+    "start_time_seconds": 249.6,
+    "end_time_seconds": 256.469,
+    "speaker": "Davicho Barona",
+    "text": "type of tools, or like Figma, where, you know, you have this kind of collaborative space here."
+  },
+  {
+    "start_time_seconds": 256.73,
+    "end_time_seconds": 263.33,
+    "speaker": "Davicho Barona",
+    "text": "Same thing here. Let me just poke around and give you, some very basics."
+  },
+  {
+    "start_time_seconds": 263.33,
+    "end_time_seconds": 280.19,
+    "speaker": "Davicho Barona",
+    "text": "So, number one, here's your chat, your agent chat here, which you'll see it living on the right side. You can move this around and place it on the other side if you want. I think eventually we might be able to place it on the top or bottom, or have it float, but for now, it lives either on the left or on the right side."
+  },
+  {
+    "start_time_seconds": 280.49,
+    "end_time_seconds": 298.039,
+    "speaker": "Davicho Barona",
+    "text": "And if you guys are used to using ChatGBT, or Claude, or Gemini, all of that, and then some is built in here under the hood. So, you can create, and you can talk, you can feedback, you can iterate everything with the agent here, however you're used to using all of those other tools."
+  },
+  {
+    "start_time_seconds": 298.04,
+    "end_time_seconds": 303.17,
+    "speaker": "Davicho Barona",
+    "text": "This is the same premise here. The kicker is that this agent has"
+  },
+  {
+    "start_time_seconds": 303.17,
+    "end_time_seconds": 327.959,
+    "speaker": "Davicho Barona",
+    "text": "skills, knowledge, and access to all kinds of different multimodal tools. So, I'm just gonna point at them using my… the toolbar down here, which is also another way to create with, like, a more familiar UI. But just so you know, and you can see down here all the different tools that it has access to. You may see some differences here. I have an internal version, so there are some things that will pop up here as I'm doing the demo that you may not have access"
+  },
+  {
+    "start_time_seconds": 327.96,
+    "end_time_seconds": 330.579,
+    "speaker": "Davicho Barona",
+    "text": "us to. Ignore that for now."
+  },
+  {
+    "start_time_seconds": 330.74,
+    "end_time_seconds": 355.059,
+    "speaker": "Davicho Barona",
+    "text": "However, you can see the image tools that it has access to, you can see the video tools that it has access to, and you can see the audio tools that it has access to as well. You can either, like I said, create based on this sort of more familiar UI, like when you click on a tool, there's a space for your prompt, a space for some reference images or start frames, etc, some settings, and then you can just create directly on the canvas itself."
+  },
+  {
+    "start_time_seconds": 355.08,
+    "end_time_seconds": 358.019,
+    "speaker": "Davicho Barona",
+    "text": "But I also urge you to try doing this"
+  },
+  {
+    "start_time_seconds": 358.02,
+    "end_time_seconds": 381.47,
+    "speaker": "Davicho Barona",
+    "text": "also with the agent. Like, you can just start asking to create a video using, you know, whatever, you know, Veo 3.1, or just ask it to create, and it'll kind of choose a model. You can also ask it to create using all the models, so that you can compare all the different results with each other and stuff. Again, the agent, same thing, very smart as"
+  },
+  {
+    "start_time_seconds": 381.47,
+    "end_time_seconds": 385.68,
+    "speaker": "Davicho Barona",
+    "text": "The same as you're used to using any other chat agents."
+  },
+  {
+    "start_time_seconds": 385.99,
+    "end_time_seconds": 391.78,
+    "speaker": "Davicho Barona",
+    "text": "Except, like I said, this has the ability to use and no…"
+  },
+  {
+    "start_time_seconds": 391.78,
+    "end_time_seconds": 411.17,
+    "speaker": "Davicho Barona",
+    "text": "everything about all of these tools that it has access to. So, for example, if you want to have… if you want to see, like, best practices, or what a prompt should look like for Veo versus Sora, or Kling, ask it for those breakdowns. You can ask it to give you breakdowns on anything, step-by-step guides."
+  },
+  {
+    "start_time_seconds": 411.17,
+    "end_time_seconds": 419.38,
+    "speaker": "Davicho Barona",
+    "text": "And you can either ask it to tell you, or you can ask it to create a text document that it will drop on the canvas as well."
+  },
+  {
+    "start_time_seconds": 419.44,
+    "end_time_seconds": 444.359,
+    "speaker": "Davicho Barona",
+    "text": "you can go into create mode, which is the mode, and down here is the little drop-down menu, which is the mode that you can use to just start making assets, dropping them on your board, or you can also go, first into brainstorm mode, which is… this is just chat only. Very cheap, can help you plan, kind of strategize before you start spending credits and creating assets on your board, so really nice to have the ability to go either create"
+  },
+  {
+    "start_time_seconds": 444.36,
+    "end_time_seconds": 446.769,
+    "speaker": "Davicho Barona",
+    "text": "Or brainstorm mode down here."
+  },
+  {
+    "start_time_seconds": 446.91,
+    "end_time_seconds": 466.81,
+    "speaker": "Davicho Barona",
+    "text": "You'll see it's super useful, when… before you start making stuff, and that's where you can also ask questions. Well, you can ask questions and do research and brainstorming kind of in both mode… both modes, but when you're in brainstorm, it's charging you a lot less, you're not making assets, you're really just having this kind of conversation with the agent, all in that place."
+  },
+  {
+    "start_time_seconds": 466.81,
+    "end_time_seconds": 473.03,
+    "speaker": "Davicho Barona",
+    "text": "Also, really good to point out, this does have access to the web, so you can refer URLs."
+  },
+  {
+    "start_time_seconds": 473.03,
+    "end_time_seconds": 482.849,
+    "speaker": "Davicho Barona",
+    "text": "You can also drop any assets that you want onto this board, whether they're PDFs, images, videos, MP3s, creative briefs."
+  },
+  {
+    "start_time_seconds": 482.85,
+    "end_time_seconds": 490.529,
+    "speaker": "Davicho Barona",
+    "text": "scripts, you name it. And you can drop them in here, or again, you can ask the agent to help you create them."
+  },
+  {
+    "start_time_seconds": 491.0,
+    "end_time_seconds": 491.95,
+    "speaker": "Davicho Barona",
+    "text": "So…"
+  },
+  {
+    "start_time_seconds": 492.43,
+    "end_time_seconds": 502.149,
+    "speaker": "Davicho Barona",
+    "text": "Chat, super important, on the right side here, starting out. You can also minimize it here, and then re-access it down from this, little shortcut down here."
+  },
+  {
+    "start_time_seconds": 502.32,
+    "end_time_seconds": 516.219,
+    "speaker": "Davicho Barona",
+    "text": "you'll also… I'm gonna actually go ahead and jump into a board that I've, like, already created, so you can all just see, some assets and stuff on the board itself. Let me hop into one that I've kind of been using to,"
+  },
+  {
+    "start_time_seconds": 516.47,
+    "end_time_seconds": 527.289,
+    "speaker": "Davicho Barona",
+    "text": "to do some of these demos, let me just make sure I find, one that makes the most sense. So, let's, hop in here."
+  },
+  {
+    "start_time_seconds": 527.54,
+    "end_time_seconds": 552.519,
+    "speaker": "Davicho Barona",
+    "text": "I've done a lot of organization on this board. Like, as you can see, some… I'm using a lot of the tools here, like the Canvas tools, like arrow builders, and text boxes, etc. You can find all of those tools down here in the toolbar. Like, the first set of tools on the left side here are gonna be all of your, like, generation tools, but then on the right side, you're gonna see different, like, annotation tools and kind of organization tools, if you"
+  },
+  {
+    "start_time_seconds": 552.52,
+    "end_time_seconds": 553.34,
+    "speaker": "Davicho Barona",
+    "text": "you will."
+  },
+  {
+    "start_time_seconds": 553.53,
+    "end_time_seconds": 570.42,
+    "speaker": "Davicho Barona",
+    "text": "Like, for example, you'll have shapes here. Every single one of them also has some shortcuts next to them, and that, for me, is, like, really key, because I really like working fast with shortcuts, same as I'm used to working in, like, Adobe and things like that. And then to give you a little bit more on shortcuts."
+  },
+  {
+    "start_time_seconds": 570.77,
+    "end_time_seconds": 588.379,
+    "speaker": "Davicho Barona",
+    "text": "I actually… you have a… you have a little settings menu on the top right here, and in here, you're gonna see also a bunch of different settings over here. Some of them may be internal and just to me. Some of them, you'll… you'll… so you may not see them as I'm doing this demo, like, you may see some changes in yours."
+  },
+  {
+    "start_time_seconds": 588.38,
+    "end_time_seconds": 591.09,
+    "speaker": "Davicho Barona",
+    "text": "But this shortcuts"
+  },
+  {
+    "start_time_seconds": 591.09,
+    "end_time_seconds": 609.35,
+    "speaker": "Davicho Barona",
+    "text": "menu here will give you the full shortcuts, options here in this menu. What I usually do is I honestly just take a screenshot of that, and then I just drop the screenshot right into my board. It kind of helps me, have it just as a very quick reference here."
+  },
+  {
+    "start_time_seconds": 609.61,
+    "end_time_seconds": 620.91,
+    "speaker": "Davicho Barona",
+    "text": "So in any case, again, you'll see, like, me organizing my assets with all of these different kinds of tools here, which you'll see as either, you know, shapes, like arrows, lines."
+  },
+  {
+    "start_time_seconds": 620.91,
+    "end_time_seconds": 633.1,
+    "speaker": "Davicho Barona",
+    "text": "ellipses, diamonds, rectangles, or just, like, you know, basic doodle tools. I can switch the color of those, that way I can maybe annotate differently, for either me or for my team."
+  },
+  {
+    "start_time_seconds": 633.43,
+    "end_time_seconds": 649.52,
+    "speaker": "Davicho Barona",
+    "text": "text boxes, just drag and start typing here. Once you double-click into the text box as well, you'll see other little, helpful tools, you know, different sizes of the text itself, bolding, italic, underlining, strikethroughs, bulleted lists."
+  },
+  {
+    "start_time_seconds": 649.52,
+    "end_time_seconds": 654.42,
+    "speaker": "Davicho Barona",
+    "text": "highlighting, etc. Things like this are also really useful when working with your team."
+  },
+  {
+    "start_time_seconds": 654.42,
+    "end_time_seconds": 655.32,
+    "speaker": "Davicho Barona",
+    "text": "And then…"
+  },
+  {
+    "start_time_seconds": 655.4,
+    "end_time_seconds": 677.88,
+    "speaker": "Davicho Barona",
+    "text": "As it comes to working with your team, you're gonna see a share button on the top right here. Also, by the way, I'm recording this. If you guys, want to see this afterwards, please just feel free, shoot me an email, I will send you the recording of this. And this will also happen. Any webinars that I do will be recorded, so feel free to also request that. And you know what? As I'm talking, I'm gonna go ahead and drop…"
+  },
+  {
+    "start_time_seconds": 677.88,
+    "end_time_seconds": 682.11,
+    "speaker": "Davicho Barona",
+    "text": "My email address here, as well as Artur's"
+  },
+  {
+    "start_time_seconds": 682.78,
+    "end_time_seconds": 700.23,
+    "speaker": "Davicho Barona",
+    "text": "in the, in the chat. Feel free to copy that, shoot me an email, I'll send you the recordings, after they're ready. It takes, like, an hour after this for it to be ready for me to share, so just remind me, please. Thank you. Artur drops his email in there, too. We're both here to just, like, help. Anytime you guys have any questions."
+  },
+  {
+    "start_time_seconds": 700.23,
+    "end_time_seconds": 708.47,
+    "speaker": "Davicho Barona",
+    "text": "please feel free, shoot us a question, and we may, hey, Tammy, we may have, you have not been able…"
+  },
+  {
+    "start_time_seconds": 708.78,
+    "end_time_seconds": 721.45,
+    "speaker": "Davicho Barona",
+    "text": "to use agents, you had a lot of errors I'm seeing here. Thank you, Tammy, for sending me an email. I was in South by Southwest all of last week, so I haven't been able to get back to a lot of my requests. I'm hoping…"
+  },
+  {
+    "start_time_seconds": 721.64,
+    "end_time_seconds": 731.059,
+    "speaker": "Davicho Barona",
+    "text": "that… I'm gonna… Tammy, I'm gonna connect you with support. This seems like a support issue, so I'm gonna go ahead and connect you with support. Please,"
+  },
+  {
+    "start_time_seconds": 731.23,
+    "end_time_seconds": 733.429,
+    "speaker": "Davicho Barona",
+    "text": "Artur, is this correct?"
+  },
+  {
+    "start_time_seconds": 733.68,
+    "end_time_seconds": 739.39,
+    "speaker": "Davicho Barona",
+    "text": "Yeah, support at lumilabs.ai, really great people there. Martin, Irina."
+  },
+  {
+    "start_time_seconds": 739.39,
+    "end_time_seconds": 762.689,
+    "speaker": "Davicho Barona",
+    "text": "Sharky, those guys are there to help. Tammy, please reach out, and if you… and you can copy me and Arturo on there, if you're having a hard time getting through to anybody's, to just escalate it. I want to make sure you're up and running. I'm sorry that's been happening to you. Launch week, this time is always a little bit nuts, as we're always kind of, like, in the back end, trying to correct all these little things."
+  },
+  {
+    "start_time_seconds": 762.72,
+    "end_time_seconds": 767.57,
+    "speaker": "Davicho Barona",
+    "text": "But please copy us and shoot an email to support at lumilabs.ai."
+  },
+  {
+    "start_time_seconds": 767.96,
+    "end_time_seconds": 769.99,
+    "speaker": "Davicho Barona",
+    "text": "And we'll get it sorted out."
+  },
+  {
+    "start_time_seconds": 770.1,
+    "end_time_seconds": 776.839,
+    "speaker": "Davicho Barona",
+    "text": "where was I? So, in share mode, when you, you're, you know, you click this button on the top right."
+  },
+  {
+    "start_time_seconds": 777.11,
+    "end_time_seconds": 779.189,
+    "speaker": "Davicho Barona",
+    "text": "Let me just make sure, I think there's…"
+  },
+  {
+    "start_time_seconds": 779.75,
+    "end_time_seconds": 803.94,
+    "speaker": "Davicho Barona",
+    "text": "Someone else joining. Click that button, that share button on the top right, and you'll see here, you can add anybody's email address here on your team, etc, and just invite him, invite them into your board, give them a permission, either view or edit, and then you just copy the link also and share that link in particular. As soon as you type their email in here, they'll get an email that says, like, you've been invited to this board, like, open it up."
+  },
+  {
+    "start_time_seconds": 805.18,
+    "end_time_seconds": 816.15,
+    "speaker": "Davicho Barona",
+    "text": "But you'll be able to share and work in sync on the same board with your teammates here, which is super helpful. And a lot of times, that's why I use"
+  },
+  {
+    "start_time_seconds": 816.54,
+    "end_time_seconds": 830.109,
+    "speaker": "Davicho Barona",
+    "text": "all of these different, little Canvas tools as well, just to be able to, like, drop notes and hints for my team and, you know, be able to… to work, like, together on a board. Okay, so as I'm here, first, let me stop."
+  },
+  {
+    "start_time_seconds": 830.11,
+    "end_time_seconds": 839.589,
+    "speaker": "Davicho Barona",
+    "text": "And ask you guys, if you have any questions so far, please just throw it out there, raise your hand, or just unmute yourself, and feel free to throw it out there."
+  },
+  {
+    "start_time_seconds": 840.22,
+    "end_time_seconds": 843.739,
+    "speaker": "Davicho Barona",
+    "text": "Let me pop in the chat real quick. Cool."
+  },
+  {
+    "start_time_seconds": 843.84,
+    "end_time_seconds": 848.519,
+    "speaker": "Davicho Barona",
+    "text": "We have… we should have access to Clang already, I believe."
+  },
+  {
+    "start_time_seconds": 848.74,
+    "end_time_seconds": 866.6,
+    "speaker": "Davicho Barona",
+    "text": "I mean, I see it in mine. I know we have Clink 2.6 in there. I'm curious about 3.0. If anybody has it open, if you can see that, please just give me a thumbs up or not. Like, I would just like to know if you guys see this, or if this is just my internal account right now, showing,"
+  },
+  {
+    "start_time_seconds": 866.68,
+    "end_time_seconds": 871.72,
+    "speaker": "Davicho Barona",
+    "text": "showing it up in there. But if we don't have it now, we'll have it very, very, soon."
+  },
+  {
+    "start_time_seconds": 871.94,
+    "end_time_seconds": 877.269,
+    "speaker": "Davicho Barona",
+    "text": "but yeah, if anybody can see it, let me know if you have that already."
+  },
+  {
+    "start_time_seconds": 878.78,
+    "end_time_seconds": 897.059,
+    "speaker": "Davicho Barona",
+    "text": "Something else good to note is, obviously, like, your… the canvas, like, it grows quite a bit. The more you use it, the bigger it starts getting, and the more assets you start putting on there. Just remember, you can obviously zoom in or zoom out, but also, you have a little mini-map down here on the bottom left."
+  },
+  {
+    "start_time_seconds": 897.06,
+    "end_time_seconds": 902.42,
+    "speaker": "Davicho Barona",
+    "text": "That also helps me, if I click on it, it helps me kind of get around my board a little bit faster as well."
+  },
+  {
+    "start_time_seconds": 902.64,
+    "end_time_seconds": 913.25,
+    "speaker": "Davicho Barona",
+    "text": "And down here, I have a Zoom panel. If I click, actually, on that Zoom panel, I actually can see a few other,"
+  },
+  {
+    "start_time_seconds": 913.25,
+    "end_time_seconds": 928.919,
+    "speaker": "Davicho Barona",
+    "text": "a few other, elements as well that I can select. I can… I can obviously zoom in, zoom out. I can zoom to, like, 100% according to how I've sized my objects on the board. I also can zoom to selection. Like, if I,"
+  },
+  {
+    "start_time_seconds": 929.04,
+    "end_time_seconds": 932.57,
+    "speaker": "Davicho Barona",
+    "text": "Actually, something that's important to note here that I haven't touched on."
+  },
+  {
+    "start_time_seconds": 932.93,
+    "end_time_seconds": 949.679,
+    "speaker": "Davicho Barona",
+    "text": "repeat the chats real quick. Something I haven't touched on is this search mode. So, you can go, and I don't… I hope you can see that clearly, let me get to a clear area here. So, right next to my chat button down here, I have this asset search mode, or as a shortcut, Command-F."
+  },
+  {
+    "start_time_seconds": 950.1,
+    "end_time_seconds": 950.94,
+    "speaker": "Davicho Barona",
+    "text": "And…"
+  },
+  {
+    "start_time_seconds": 950.94,
+    "end_time_seconds": 972.94,
+    "speaker": "Davicho Barona",
+    "text": "Here, if I open this up, I'm gonna actually be able to see all my assets on my board, according to… and it'll take a second to load everything here, according to whatever filter I have here, like, I can filter through all kinds of different, media, as well as, like, labels. Like, I can give any asset a label. When I click on an asset."
+  },
+  {
+    "start_time_seconds": 972.94,
+    "end_time_seconds": 974.37,
+    "speaker": "Davicho Barona",
+    "text": "I can,"
+  },
+  {
+    "start_time_seconds": 974.37,
+    "end_time_seconds": 989.37,
+    "speaker": "Davicho Barona",
+    "text": "sorry, I can go to this label, for example, and I can just say, like, approved. So now I can also go in and search by just all approved labels, and it'll show me those assets that I've labeled, that certain label here. I can also search through assets by name."
+  },
+  {
+    "start_time_seconds": 989.37,
+    "end_time_seconds": 995.959,
+    "speaker": "Davicho Barona",
+    "text": "Which means that every asset that I have on the board, if I… if I… if I zoom in, I will see that each one has a file name."
+  },
+  {
+    "start_time_seconds": 996.28,
+    "end_time_seconds": 998.31,
+    "speaker": "Davicho Barona",
+    "text": "I can change that file name."
+  },
+  {
+    "start_time_seconds": 999.31,
+    "end_time_seconds": 1001.59,
+    "speaker": "Davicho Barona",
+    "text": "And that now becomes…"
+  },
+  {
+    "start_time_seconds": 1001.69,
+    "end_time_seconds": 1017.209,
+    "speaker": "Davicho Barona",
+    "text": "a… the name of this asset on my board, which, number one, gives me context for search, but number two, also gives me context for my agent. Like, I can now refer to this as man and woman, you know, the image labeled man and woman is what I can talk to the agent about."
+  },
+  {
+    "start_time_seconds": 1018.45,
+    "end_time_seconds": 1035.379,
+    "speaker": "Davicho Barona",
+    "text": "So, search mode is super important, especially once you start creating a lot on your board. And then if I, like, for example, like, if I'm out here, and I'm searching, and I select something, I can also zoom in to that selection. So this zoom"
+  },
+  {
+    "start_time_seconds": 1035.38,
+    "end_time_seconds": 1060.369,
+    "speaker": "Davicho Barona",
+    "text": "sometimes is really helpful when I have something selected, and I just want to zoom in to find it on my board. This zoom to Selection is really helpful. Zoom to fit is also nice, which just shows me the entire board, all the contents of my board, just to be able to help me find my way a little bit faster. We are working definitely on improving some organizational aspects of this. I would like to, like, drop a pin somewhere, and then be able to refer to the"
+  },
+  {
+    "start_time_seconds": 1060.37,
+    "end_time_seconds": 1063.739,
+    "speaker": "Davicho Barona",
+    "text": "a pin on my board, for example, kind of find my way."
+  },
+  {
+    "start_time_seconds": 1063.98,
+    "end_time_seconds": 1069.959,
+    "speaker": "Davicho Barona",
+    "text": "a little bit better. I'll go back to chat, and let's look at the way that"
+  },
+  {
+    "start_time_seconds": 1070.36,
+    "end_time_seconds": 1074.309,
+    "speaker": "Davicho Barona",
+    "text": "you can interact with these files. So, like, once I create something."
+  },
+  {
+    "start_time_seconds": 1074.57,
+    "end_time_seconds": 1092.669,
+    "speaker": "Davicho Barona",
+    "text": "When I click on something, I can also shift-click multiple assets. Every time I'm shift-clicking assets, you start seeing them populate the chat. So now I can, whenever I talk to the agent, and I have selected assets, I'm now referring to those assets, right? I can say, like, you know,"
+  },
+  {
+    "start_time_seconds": 1093.08,
+    "end_time_seconds": 1100.54,
+    "speaker": "Davicho Barona",
+    "text": "Create these again, but… Use Sea Dream instead."
+  },
+  {
+    "start_time_seconds": 1101.06,
+    "end_time_seconds": 1102.0,
+    "speaker": "Davicho Barona",
+    "text": "Now…"
+  },
+  {
+    "start_time_seconds": 1102.06,
+    "end_time_seconds": 1112.549,
+    "speaker": "Davicho Barona",
+    "text": "the board has contextual history, just like you're used to using, like, ChatGPT, for example. You have contextual history of your entire ChatGPT, let's say."
+  },
+  {
+    "start_time_seconds": 1112.55,
+    "end_time_seconds": 1127.09,
+    "speaker": "Davicho Barona",
+    "text": "But also, every single chat that I have in here has its own little contextual history as well, just like in ChatGPT, where you can, like, refer to something you've been working on in that chat, or refer to the entirety of your project as well. And…"
+  },
+  {
+    "start_time_seconds": 1127.68,
+    "end_time_seconds": 1130.959,
+    "speaker": "Davicho Barona",
+    "text": "something to note is, like, if I click on this top"
+  },
+  {
+    "start_time_seconds": 1130.98,
+    "end_time_seconds": 1137.829,
+    "speaker": "Davicho Barona",
+    "text": "drop-down here, I can keep adding chats. So I can, like, organize my project by chat."
+  },
+  {
+    "start_time_seconds": 1137.83,
+    "end_time_seconds": 1155.24,
+    "speaker": "Davicho Barona",
+    "text": "And so it doesn't get super messy. You're used to using ChatGPT in the same way, too. You wouldn't start mixing concepts and mixing different ideas within a single chat, because it'll drive you nuts. At least it does me. Like, I can't… I have to keep contacts within one chat. Same thing here. Create new chats."
+  },
+  {
+    "start_time_seconds": 1155.24,
+    "end_time_seconds": 1160.579,
+    "speaker": "Davicho Barona",
+    "text": "For whatever new bit of your board or of your project in this board that you're trying to make."
+  },
+  {
+    "start_time_seconds": 1161.05,
+    "end_time_seconds": 1174.66,
+    "speaker": "Davicho Barona",
+    "text": "Feel free to do that. You can create endless amounts of chats. I am working on making sure that we can relabel these chats. That would be, like, really helpful for me to be able to label them. Right now, they get auto-labeled based on the context of what you're making in here."
+  },
+  {
+    "start_time_seconds": 1174.98,
+    "end_time_seconds": 1176.61,
+    "speaker": "Davicho Barona",
+    "text": "So, right."
+  },
+  {
+    "start_time_seconds": 1176.97,
+    "end_time_seconds": 1185.399,
+    "speaker": "Davicho Barona",
+    "text": "Shift-click… like, selecting something and shift-clicking is really super helpful. And let me show you also how things can…"
+  },
+  {
+    "start_time_seconds": 1185.73,
+    "end_time_seconds": 1197.07,
+    "speaker": "Davicho Barona",
+    "text": "how selections can really work. So, I created this little workflow here, which the workflow is really just, creating, you know, turning any illustration"
+  },
+  {
+    "start_time_seconds": 1197.44,
+    "end_time_seconds": 1216.93,
+    "speaker": "Davicho Barona",
+    "text": "into, like, a photorealistic version of that illustration. That's my basic workflow. To do that, I could do that a couple different ways. I could literally do it by just telling the agent, like, in very basic language, like, hey, turn this photo into a photorealistic… or turn this illustration into a photorealistic image."
+  },
+  {
+    "start_time_seconds": 1216.93,
+    "end_time_seconds": 1227.42,
+    "speaker": "Davicho Barona",
+    "text": "And the agent is going to go pick up on a bunch of strategies, basically skills that we've programmed into it, and it will do that on its own. And that was from a very basic,"
+  },
+  {
+    "start_time_seconds": 1227.66,
+    "end_time_seconds": 1246.839,
+    "speaker": "Davicho Barona",
+    "text": "instruction, like, natural language. However, I'm like a stickler, and I like to keep things… like, I like the most amount of control I possibly can, and I kind of am sort of like this prompt engineer, in a sense, so whether you are or you aren't, this tool can be used either way, but I just want to show you"
+  },
+  {
+    "start_time_seconds": 1247.03,
+    "end_time_seconds": 1254.479,
+    "speaker": "Davicho Barona",
+    "text": "How referencing assets can kind of work. So… If I select this image."
+  },
+  {
+    "start_time_seconds": 1255.39,
+    "end_time_seconds": 1260.539,
+    "speaker": "Davicho Barona",
+    "text": "It's loaded up into my chat. Then I can also click, shift, select this prompt."
+  },
+  {
+    "start_time_seconds": 1261.28,
+    "end_time_seconds": 1282.79,
+    "speaker": "Davicho Barona",
+    "text": "Then I can also click Shift and select any other asset in here, and I can just basically say, like, run this prompt on this image. That's one way I can do it. Or I can literally, like, select it, or I can copy this entire thing, just literally copy it to my clipboard, select this image, and then I can just drop that full prompt in here."
+  },
+  {
+    "start_time_seconds": 1282.79,
+    "end_time_seconds": 1288.7,
+    "speaker": "Davicho Barona",
+    "text": "Right? And it'll do the same thing. But I love being able to build a prompt, or build, like."
+  },
+  {
+    "start_time_seconds": 1288.7,
+    "end_time_seconds": 1298.099,
+    "speaker": "Davicho Barona",
+    "text": "a brief, and then just select it as an asset, and then select whatever other asset I want to run that workflow on, and then literally just say."
+  },
+  {
+    "start_time_seconds": 1298.1,
+    "end_time_seconds": 1303.94,
+    "speaker": "Davicho Barona",
+    "text": "run this prompt on this image. Something like that. So."
+  },
+  {
+    "start_time_seconds": 1304.11,
+    "end_time_seconds": 1314.779,
+    "speaker": "Davicho Barona",
+    "text": "Agent has context of your board, of your assets. You can type in your prompts in here, however much you want, or you can drop them in on your boards, for example."
+  },
+  {
+    "start_time_seconds": 1314.97,
+    "end_time_seconds": 1333.369,
+    "speaker": "Davicho Barona",
+    "text": "and then refer… like, unpack them by just saying, like, run this on any image that you, or any asset that you… that you want that's on your board already, if that makes sense. Do you guys have any questions so far? I want to make sure that I'm… I'm giving time for that, since I only have, like, 10-ish minutes."
+  },
+  {
+    "start_time_seconds": 1334.13,
+    "end_time_seconds": 1336.63,
+    "speaker": "Davicho Barona",
+    "text": "But yeah, anybody have any questions on this?"
+  },
+  {
+    "start_time_seconds": 1339.59,
+    "end_time_seconds": 1344.809,
+    "speaker": "Davicho Barona",
+    "text": "Cool. I am also, just so you guys know, I am running, like."
+  },
+  {
+    "start_time_seconds": 1344.95,
+    "end_time_seconds": 1360.64,
+    "speaker": "Davicho Barona",
+    "text": "3 public webinars every week, and for the first couple weeks, like, I'm gonna go over these basics, just for new folks joining. However, as time goes on, we might not have as many webinars at some point, but on Wednesdays, every single Wednesday for"
+  },
+  {
+    "start_time_seconds": 1360.88,
+    "end_time_seconds": 1363.57,
+    "speaker": "Davicho Barona",
+    "text": "eternity, I'm gonna be running…"
+  },
+  {
+    "start_time_seconds": 1363.8,
+    "end_time_seconds": 1380.629,
+    "speaker": "Davicho Barona",
+    "text": "a public webinar, and I… I just want to make sure that you guys have links to that. Most of, or a lot of you guys show up to my… to my Wednesday webinar, but let me just make sure that I am…"
+  },
+  {
+    "start_time_seconds": 1380.69,
+    "end_time_seconds": 1394.309,
+    "speaker": "Davicho Barona",
+    "text": "Yeah, this is correct. Let me just make sure I'm copying this and giving you guys this in your chat so that you're able to join this anytime. Artur is freaking on it, thank you, I don't even need to do that."
+  },
+  {
+    "start_time_seconds": 1394.61,
+    "end_time_seconds": 1413.86,
+    "speaker": "Davicho Barona",
+    "text": "That is the… that is the right link, so please make sure that you register for those if you want to come in, and this is… these are great for, like, just ask questions. It's open, like, I don't want to be the only one talking. Everyone learns from everybody's questions, so, like, bring your problems, bring your, and bring your tips, too. Like."
+  },
+  {
+    "start_time_seconds": 1413.9,
+    "end_time_seconds": 1427.47,
+    "speaker": "Davicho Barona",
+    "text": "This is open… like, this is an open world, like, I don't have all the answers. In fact, I urge you to also ask the agent for any answers. Like, how do I do X?"
+  },
+  {
+    "start_time_seconds": 1427.8,
+    "end_time_seconds": 1438.959,
+    "speaker": "Davicho Barona",
+    "text": "What's the best way to, you know, create a storyboard for my, you know, for a luxury product commercial?"
+  },
+  {
+    "start_time_seconds": 1439.17,
+    "end_time_seconds": 1443.08,
+    "speaker": "Davicho Barona",
+    "text": "The agent will help you break those things down into steps, like."
+  },
+  {
+    "start_time_seconds": 1443.21,
+    "end_time_seconds": 1451.279,
+    "speaker": "Davicho Barona",
+    "text": "It truly is the knowledge base, and when… and I'm creating a lot of different knowledge docs that go up on our Learning Hub. In fact, let me make sure to,"
+  },
+  {
+    "start_time_seconds": 1451.69,
+    "end_time_seconds": 1462.949,
+    "speaker": "Davicho Barona",
+    "text": "to… we will… I'm gonna revamp this whole learning hub. It's being rebuilt right now to just focus on agents as well, but if you go to lumilabs.ai slash learninghub here."
+  },
+  {
+    "start_time_seconds": 1464.32,
+    "end_time_seconds": 1468.339,
+    "speaker": "Davicho Barona",
+    "text": "this, and just search, like, Luma agents."
+  },
+  {
+    "start_time_seconds": 1468.84,
+    "end_time_seconds": 1481.279,
+    "speaker": "Davicho Barona",
+    "text": "And then you should be able to have… it should give you, like, all kinds of different… see, it's a little clunky right now, and I apologize for this, because it's intermingled with a lot of different…"
+  },
+  {
+    "start_time_seconds": 1481.43,
+    "end_time_seconds": 1492.84,
+    "speaker": "Davicho Barona",
+    "text": "Dream Machine articles. And so I'm sorry for that, because it's, it's a little bit, like, a little bit confusing, but you're going to be able to see here, if you search, like."
+  },
+  {
+    "start_time_seconds": 1494.9,
+    "end_time_seconds": 1512.18,
+    "speaker": "Davicho Barona",
+    "text": "agents, you'll be able to see these different articles in here, like here, uploading your files in here, how this works. Tell the agent what I've uploaded. I have put in, like, prompt templates in here, all kinds of different places, like, and there's…"
+  },
+  {
+    "start_time_seconds": 1512.18,
+    "end_time_seconds": 1529.06,
+    "speaker": "Davicho Barona",
+    "text": "articles about different capabilities, video, image, audio, about, team collaboration, about creating at scale, about brainstorm mode, about the, you know, how to use the toolbar, for example. So, please hit that up."
+  },
+  {
+    "start_time_seconds": 1529.06,
+    "end_time_seconds": 1533.91,
+    "speaker": "Davicho Barona",
+    "text": "And also, make yourself comfortable with all those different articles."
+  },
+  {
+    "start_time_seconds": 1534.24,
+    "end_time_seconds": 1538.57,
+    "speaker": "Davicho Barona",
+    "text": "And so, all of these, like, like, ground truth…"
+  },
+  {
+    "start_time_seconds": 1538.77,
+    "end_time_seconds": 1541.69,
+    "speaker": "Davicho Barona",
+    "text": "kind of articles. The agent is…"
+  },
+  {
+    "start_time_seconds": 1541.8,
+    "end_time_seconds": 1550.09,
+    "speaker": "Davicho Barona",
+    "text": "also learning from this, as we internally keep testing and testing and checking out different workflows, etc. So."
+  },
+  {
+    "start_time_seconds": 1550.12,
+    "end_time_seconds": 1559.569,
+    "speaker": "Davicho Barona",
+    "text": "the information that the agent has in here is also quite useful. At the same time that you can also tell it to go search online."
+  },
+  {
+    "start_time_seconds": 1559.57,
+    "end_time_seconds": 1573.57,
+    "speaker": "Davicho Barona",
+    "text": "for different things. So, when you find articles about, like, Nano Banana Pro prompts, selfies, whatever it is that you find out there, you can apply that in here. Like, there is… there is no real limitation here."
+  },
+  {
+    "start_time_seconds": 1573.57,
+    "end_time_seconds": 1580.709,
+    "speaker": "Davicho Barona",
+    "text": "This truly is a home where you can use all of those different, tools without having, like, a million subscriptions."
+  },
+  {
+    "start_time_seconds": 1581.01,
+    "end_time_seconds": 1588.12,
+    "speaker": "Davicho Barona",
+    "text": "And without having to, like, go to ChatGPT all the time to try to refine a prompt, or do whatever, you can do that here."
+  },
+  {
+    "start_time_seconds": 1588.39,
+    "end_time_seconds": 1593.64,
+    "speaker": "Davicho Barona",
+    "text": "with this knowledge base on those tools attached to it. So."
+  },
+  {
+    "start_time_seconds": 1593.93,
+    "end_time_seconds": 1604.719,
+    "speaker": "Davicho Barona",
+    "text": "it has more power than just… it's not an aggregator. This is… this isn't… this isn't that. This has, like, a level of intelligence and a… and a level of, like."
+  },
+  {
+    "start_time_seconds": 1604.72,
+    "end_time_seconds": 1618.32,
+    "speaker": "Davicho Barona",
+    "text": "connectedness that you can't get from that splintered workflow. So I urge you to, if you get an account here, I urge you to, like, try this as your only, like, place to work."
+  },
+  {
+    "start_time_seconds": 1618.62,
+    "end_time_seconds": 1630.819,
+    "speaker": "Davicho Barona",
+    "text": "And if it doesn't… like, you know, I use Midjourney, for example, I even still use ChatGBT, because it has my contacts in certain places, but now I'm truly starting to switch everything over to agents, because…"
+  },
+  {
+    "start_time_seconds": 1630.88,
+    "end_time_seconds": 1649.809,
+    "speaker": "Davicho Barona",
+    "text": "it has… once you start building in here, you have, like, a whole new way of working, and it just makes a whole lot more sense. Again, we are in, like, week two, post-launch. You're gonna see some bugs, you're gonna see some kinks. Tammy, like, what you're experiencing, these things…"
+  },
+  {
+    "start_time_seconds": 1649.89,
+    "end_time_seconds": 1655.92,
+    "speaker": "Davicho Barona",
+    "text": "You're gonna see some of this stuff. And when something doesn't work, you're gonna see this thumbs up, thumbs down."
+  },
+  {
+    "start_time_seconds": 1656.22,
+    "end_time_seconds": 1658.29,
+    "speaker": "Davicho Barona",
+    "text": "In, in your chat responses."
+  },
+  {
+    "start_time_seconds": 1658.44,
+    "end_time_seconds": 1673.439,
+    "speaker": "Davicho Barona",
+    "text": "please, if you hit the thumbs down, please share your notes. Like, please tell us what's happening. You know, I truly… we want to know what's going on, because otherwise we're just in the dark. We don't know how you like to do it. We don't know your problems. We can't add"
+  },
+  {
+    "start_time_seconds": 1673.44,
+    "end_time_seconds": 1693.199,
+    "speaker": "Davicho Barona",
+    "text": "to a pattern. We want to see patterns, so that we can go in there and fix stuff. Like, this tool is made for you. This isn't made for our engineers, and it's not made just because we can. This is made so that you guys can use it, you guys can have a great time using it, and so your projects are actually what's driving"
+  },
+  {
+    "start_time_seconds": 1693.29,
+    "end_time_seconds": 1712.139,
+    "speaker": "Davicho Barona",
+    "text": "the way that this thing is being built. So, please, take advantage of that. Email support if you have issues. Email me if you're having things that you, you know, blockers or problems or whatever, but also email me if you're having good things. Like, I also want to know good stuff. Like, please share your creations with me, something you like."
+  },
+  {
+    "start_time_seconds": 1712.14,
+    "end_time_seconds": 1714.54,
+    "speaker": "Davicho Barona",
+    "text": "And then come back on Wednesdays."
+  },
+  {
+    "start_time_seconds": 1714.54,
+    "end_time_seconds": 1738.429,
+    "speaker": "Davicho Barona",
+    "text": "And, like, please share it with the group. Like, I want this to be, like, truly, like, a community where we can all build with this thing together, learn from each other. I learn from people in those calls all the freaking time, and I honestly, like, I love it. We do have a CPP, I encourage you to apply. It's a little… it's kind of tight, so, you know, we have more, like, requirements now than we ever have."
+  },
+  {
+    "start_time_seconds": 1738.43,
+    "end_time_seconds": 1744.929,
+    "speaker": "Davicho Barona",
+    "text": "But we also have more perks now than we ever had. So, whether you get in or not is worth applying, so please do."
+  },
+  {
+    "start_time_seconds": 1744.93,
+    "end_time_seconds": 1746.84,
+    "speaker": "Davicho Barona",
+    "text": "Artur can help you with this."
+  },
+  {
+    "start_time_seconds": 1747.21,
+    "end_time_seconds": 1765.929,
+    "speaker": "Davicho Barona",
+    "text": "Let me see, where do you find how many credits you have left? Good question. I'm gonna go back out of this board. If I back out of this board, I have, like, every time… everybody's got their own team. Once you make an account, you're gonna have your team. For me, this is David's team, up in the top. If I click on this drop-down arrow."
+  },
+  {
+    "start_time_seconds": 1766.29,
+    "end_time_seconds": 1786.06,
+    "speaker": "Davicho Barona",
+    "text": "I can go to this Manage Team here. If I click that Manage Team, I'm gonna see how many credits I have left in here. Obviously, I have a ton of credits because I need to create stuff, and, yes, you guys are not gonna have as many credits unless that's how much you have, but this is where you're gonna see how many credits you have left."
+  },
+  {
+    "start_time_seconds": 1787.64,
+    "end_time_seconds": 1791.579,
+    "speaker": "Davicho Barona",
+    "text": "Also, before I go, because I'm totally running out of time."
+  },
+  {
+    "start_time_seconds": 1793.07,
+    "end_time_seconds": 1808.86,
+    "speaker": "Davicho Barona",
+    "text": "This up here, you're gonna see these seeds. We're gonna be expanding on this a lot. And these are, like, pre-built little workflows in here. You're gonna see them under a few different categories, okay? Each one of these, you're gonna see this being built up a lot more robustly here, but we have the beginnings of this."
+  },
+  {
+    "start_time_seconds": 1808.86,
+    "end_time_seconds": 1815.01,
+    "speaker": "Davicho Barona",
+    "text": "And every single one of you, as soon as you jump in there, you're going to be able to see, number one."
+  },
+  {
+    "start_time_seconds": 1815.01,
+    "end_time_seconds": 1824.17,
+    "speaker": "Davicho Barona",
+    "text": "I'm just gonna open this, sketch to render seed. Number one, you're gonna be able to see a, a couple assets that are pre-loaded on the board."
+  },
+  {
+    "start_time_seconds": 1824.98,
+    "end_time_seconds": 1825.9,
+    "speaker": "Davicho Barona",
+    "text": "And…"
+  },
+  {
+    "start_time_seconds": 1826.07,
+    "end_time_seconds": 1835.85,
+    "speaker": "Davicho Barona",
+    "text": "Those are gonna be just, like, example assets for you to use. These are, like, pre-meditated workflows, and in here, the agent's already gonna start asking you stuff."
+  },
+  {
+    "start_time_seconds": 1835.85,
+    "end_time_seconds": 1852.289,
+    "speaker": "Davicho Barona",
+    "text": "Because it's just about sketch to render, for example. And so now it's like, hey, I have… I see this, like, image of this chair already loaded up, but do you have your own sketch? Like, upload it, basically. Like, give me something, and I'll turn that sketch into a full render."
+  },
+  {
+    "start_time_seconds": 1852.29,
+    "end_time_seconds": 1866.32,
+    "speaker": "Davicho Barona",
+    "text": "So these seeds are really, really fun. You can, this slide deck one is absolutely awesome, for example. Like, this is so helpful. I'm gonna actually go back out and show you one that I, that I made here."
+  },
+  {
+    "start_time_seconds": 1867.24,
+    "end_time_seconds": 1882.689,
+    "speaker": "Davicho Barona",
+    "text": "So I made this, like, slide deck about coffee, which, by the way, I am out of coffee. But this slide deck here, I literally made in, like, 2 minutes, just with the agent asking me"
+  },
+  {
+    "start_time_seconds": 1883.02,
+    "end_time_seconds": 1896.379,
+    "speaker": "Davicho Barona",
+    "text": "what it was that I wanted to make it about, right? Like, it first started, like, hey, I got a brief on the board, which is, this is the starting asset, but, like, you know, give me a topic, let me make a slide deck. So I just said coffee and the history of coffee, and then…"
+  },
+  {
+    "start_time_seconds": 1896.4,
+    "end_time_seconds": 1916.049,
+    "speaker": "Davicho Barona",
+    "text": "boom, I have, like, such a great little starter for a deck about coffee, with really clear text on here, super accurate information that I've literally checked, accurate maps, for example, in a particular style, and then I can also go in there and ask for some,"
+  },
+  {
+    "start_time_seconds": 1916.42,
+    "end_time_seconds": 1927.54,
+    "speaker": "Davicho Barona",
+    "text": "some different styles, some different details about it, I can go change it, I can then kind of start tweaking things here. Again, you have an agent here."
+  },
+  {
+    "start_time_seconds": 1927.54,
+    "end_time_seconds": 1942.369,
+    "speaker": "Davicho Barona",
+    "text": "You can ask the agent pretty much anything. So this isn't, you know, if you feel stuck, just talk to this agent. It also has a voice mode in your chat, so you could literally talk to the agent if you want to. Makes it much more conversational as well."
+  },
+  {
+    "start_time_seconds": 1942.39,
+    "end_time_seconds": 1953.489,
+    "speaker": "Davicho Barona",
+    "text": "Anyway, I'm out of time, but I want to ask you guys if you have any questions here, hopefully you found this helpful, but please shout it out if you do have any questions."
+  },
+  {
+    "start_time_seconds": 1953.63,
+    "end_time_seconds": 1955.439,
+    "speaker": "Davicho Barona",
+    "text": "Elisa here."
+  },
+  {
+    "start_time_seconds": 1955.44,
+    "end_time_seconds": 1956.21,
+    "speaker": "Elisa King",
+    "text": "Yeah."
+  },
+  {
+    "start_time_seconds": 1956.21,
+    "end_time_seconds": 1957.05,
+    "speaker": "Davicho Barona",
+    "text": "Yeah, go ahead."
+  },
+  {
+    "start_time_seconds": 1957.44,
+    "end_time_seconds": 1969.259,
+    "speaker": "Elisa King",
+    "text": "Yeah, I was just curious, because, like, I'm trying to finish this, commercial… here, I'll just go back to this, in the time frame… well, within the credits that I have, but I found myself generating a lot."
+  },
+  {
+    "start_time_seconds": 1969.39,
+    "end_time_seconds": 1974.719,
+    "speaker": "Elisa King",
+    "text": "With one particular frame over and over, it just can't seem to grasp"
+  },
+  {
+    "start_time_seconds": 1974.75,
+    "end_time_seconds": 1991.05,
+    "speaker": "Elisa King",
+    "text": "like, the lighting and keeping the faces from getting all warped. Okay. And I'm at about, you know, I'm almost at the 40,000 credit limit. I've got about, you know, a little bit left. And I'm wondering, from what you know, for tasks, kind of like what each,"
+  },
+  {
+    "start_time_seconds": 1991.87,
+    "end_time_seconds": 1995.269,
+    "speaker": "Elisa King",
+    "text": "like, I guess, how many credits are used?"
+  },
+  {
+    "start_time_seconds": 1995.27,
+    "end_time_seconds": 2000.01,
+    "speaker": "Davicho Barona",
+    "text": "The credits are used per test, it's a good call. I've actually…"
+  },
+  {
+    "start_time_seconds": 2000.12,
+    "end_time_seconds": 2014.29,
+    "speaker": "Davicho Barona",
+    "text": "to be honest, I built… I had the same… I had the same question, and so I actually… I can share this with you guys if anybody has Claude as well. Like, I… I built a calculator that allows me to see"
+  },
+  {
+    "start_time_seconds": 2014.34,
+    "end_time_seconds": 2026.64,
+    "speaker": "Davicho Barona",
+    "text": "how many credits are, like, everything uses, which you can totally build as well on your own, but I, let me see why this is not loading up here. Let me see if I can reload."
+  },
+  {
+    "start_time_seconds": 2026.97,
+    "end_time_seconds": 2036.089,
+    "speaker": "Davicho Barona",
+    "text": "I… But, hold on. Before I go into this calculator, which doesn't really… You're trying to make a…"
+  },
+  {
+    "start_time_seconds": 2036.36,
+    "end_time_seconds": 2044.38,
+    "speaker": "Davicho Barona",
+    "text": "You're having issues with creating frames, because the faces are being all weird, and you're not getting the right lighting that you want?"
+  },
+  {
+    "start_time_seconds": 2044.62,
+    "end_time_seconds": 2063.979,
+    "speaker": "Elisa King",
+    "text": "Well, I've got this kind of, like, like, very interesting kind of, like, aura about, like, it's a kind of flickering, kind of magical lighting that's happening amongst a bunch of children, and I found that a couple of the faces, especially one particular face, kept getting blurry, and the more I would generate different ones."
+  },
+  {
+    "start_time_seconds": 2064.07,
+    "end_time_seconds": 2078.68,
+    "speaker": "Elisa King",
+    "text": "it actually started making it worse. So I was like, oh, we were better off at the beginning with just one kid's face being weird, but then I found the rest of them started to get blurry the more that I proceeded with regenerating it. So it seemed like, and I talked to the chat."
+  },
+  {
+    "start_time_seconds": 2078.9,
+    "end_time_seconds": 2084.859,
+    "speaker": "Elisa King",
+    "text": "And it seemed to think that it was just a lot of processing, and it was too tricky… I don't know."
+  },
+  {
+    "start_time_seconds": 2085.87,
+    "end_time_seconds": 2092.899,
+    "speaker": "Davicho Barona",
+    "text": "How did you… what did you tell the agent? Like, so, like, okay, let's go, let me go into just this, this, this, random…"
+  },
+  {
+    "start_time_seconds": 2093.04,
+    "end_time_seconds": 2097.06,
+    "speaker": "Davicho Barona",
+    "text": "board here of character consistency."
+  },
+  {
+    "start_time_seconds": 2097.32,
+    "end_time_seconds": 2109.829,
+    "speaker": "Davicho Barona",
+    "text": "So, like, for example, here's me, just, like, building characters, okay? Yeah. Number one, if you want to control your character, you truly need to build, like, a master references set."
+  },
+  {
+    "start_time_seconds": 2110.15,
+    "end_time_seconds": 2110.82,
+    "speaker": "Elisa King",
+    "text": "Okay."
+  },
+  {
+    "start_time_seconds": 2110.82,
+    "end_time_seconds": 2123.44,
+    "speaker": "Davicho Barona",
+    "text": "So, I go in here, and I first start with building my character. Obviously, you can build your character in here, or you can bring your character already, right? Either way, what you want to start doing is you want to create"
+  },
+  {
+    "start_time_seconds": 2123.78,
+    "end_time_seconds": 2126.409,
+    "speaker": "Davicho Barona",
+    "text": "a character reference set. I…"
+  },
+  {
+    "start_time_seconds": 2126.93,
+    "end_time_seconds": 2144.789,
+    "speaker": "Davicho Barona",
+    "text": "my biggest piece of advice to folks is do not create a single page with all the different, all the different, angles on a single image. I don't think that that's actually accurate. I truly believe in creating a single asset per"
+  },
+  {
+    "start_time_seconds": 2144.79,
+    "end_time_seconds": 2150.659,
+    "speaker": "Davicho Barona",
+    "text": "Every single one of the angles or the views of that character, it makes a lot more sense."
+  },
+  {
+    "start_time_seconds": 2150.66,
+    "end_time_seconds": 2152.59,
+    "speaker": "Elisa King",
+    "text": "That makes total sense, yeah."
+  },
+  {
+    "start_time_seconds": 2152.59,
+    "end_time_seconds": 2165.34,
+    "speaker": "Davicho Barona",
+    "text": "Yeah, you'll see, like, bleeding over, you'll see some weird leakage happening when you do… when you do a single character reference image. I don't like it, and I don't advise you to do that. As much as other people may, it's not as clean, and that's not…"
+  },
+  {
+    "start_time_seconds": 2165.42,
+    "end_time_seconds": 2181.069,
+    "speaker": "Davicho Barona",
+    "text": "that may be good for a human, but for an agent, it starts messing things up, because it doesn't actually know which one should I be referencing. So, like, it might bring in some aspects of one that's, like, the buttons on the back of the shirt, or whatever, sometimes may leak into the front."
+  },
+  {
+    "start_time_seconds": 2181.07,
+    "end_time_seconds": 2186.13,
+    "speaker": "Davicho Barona",
+    "text": "Or, you know, and you're like, why is that happening? Well, it's because you have a single character reference image."
+  },
+  {
+    "start_time_seconds": 2186.13,
+    "end_time_seconds": 2194.459,
+    "speaker": "Davicho Barona",
+    "text": "for multiple views. How is it supposed to understand which is which? It's on one page. So, multiple images, and create at least 6."
+  },
+  {
+    "start_time_seconds": 2194.62,
+    "end_time_seconds": 2204.43,
+    "speaker": "Davicho Barona",
+    "text": "Like, I go in here and start with the first one, and here's, like, my prompt. It's like, portrait of a young… of a… and I put this in brackets so that anybody can kind of use it."
+  },
+  {
+    "start_time_seconds": 2204.62,
+    "end_time_seconds": 2215.229,
+    "speaker": "Davicho Barona",
+    "text": "So please feel free to email me. I can totally send this to you. And I have this, like, in steps, in phases. So, I create the… my… my main…"
+  },
+  {
+    "start_time_seconds": 2215.3,
+    "end_time_seconds": 2226.5,
+    "speaker": "Davicho Barona",
+    "text": "reference asset, and then from here, in order to create the next one, like, I actually click on it, so that now I'm referencing my reference, and now I tell it"
+  },
+  {
+    "start_time_seconds": 2226.5,
+    "end_time_seconds": 2243.179,
+    "speaker": "Davicho Barona",
+    "text": "You know, give me a 1 to 1 aspect ratio portrait facing directly forward, head and shoulders, visible, neutral expression, solid white background, very important, so that you don't have any pollution from anything else. You're just able to focus on that particular face."
+  },
+  {
+    "start_time_seconds": 2243.19,
+    "end_time_seconds": 2251.969,
+    "speaker": "Davicho Barona",
+    "text": "And then from there, I start making the same, I start doing the same thing for the other assets. So now that I have this one."
+  },
+  {
+    "start_time_seconds": 2252.28,
+    "end_time_seconds": 2273.99,
+    "speaker": "Davicho Barona",
+    "text": "Now, I'm gonna use this as my reference, because now I'm more focused in on her face. Now I'm gonna select that, and now I'm gonna go to the next prompt here. Side profile portrait, 90 degree side view, head and shoulders visible, showing profile of nose, ear, etc. Again, the white background. Same person as the reference images."
+  },
+  {
+    "start_time_seconds": 2273.99,
+    "end_time_seconds": 2280.74,
+    "speaker": "Davicho Barona",
+    "text": "And so, I'm basically… As I continue to go down here, I'm referencing my new references."
+  },
+  {
+    "start_time_seconds": 2280.89,
+    "end_time_seconds": 2290.259,
+    "speaker": "Davicho Barona",
+    "text": "That way, I'm really building things, according to the references that I've made. And so I go all the way down here, so like, for example."
+  },
+  {
+    "start_time_seconds": 2290.26,
+    "end_time_seconds": 2302.54,
+    "speaker": "Davicho Barona",
+    "text": "wants to build this front view, I'm obviously gonna tell it to create, like, a full body front view, like, facing forward, but I'm actually gonna make sure that all of my,"
+  },
+  {
+    "start_time_seconds": 2302.54,
+    "end_time_seconds": 2310.899,
+    "speaker": "Davicho Barona",
+    "text": "my, like, garment descriptions are there, including down to the shoes. If you don't describe the shoes, a lot of times it won't give you the full body pose, because…"
+  },
+  {
+    "start_time_seconds": 2310.98,
+    "end_time_seconds": 2315.21,
+    "speaker": "Davicho Barona",
+    "text": "It's like you're not giving it context enough to tell you, like, I want to actually see the feet."
+  },
+  {
+    "start_time_seconds": 2316.6,
+    "end_time_seconds": 2329.75,
+    "speaker": "Davicho Barona",
+    "text": "And then from here, like, I would use this reference now in order to create the back view. And then I would use that reference to create the side view, etc. And then once I have…"
+  },
+  {
+    "start_time_seconds": 2329.75,
+    "end_time_seconds": 2339.309,
+    "speaker": "Davicho Barona",
+    "text": "all of my different, references set, then what I actually do is I go in here, and I rename every single one of them."
+  },
+  {
+    "start_time_seconds": 2339.31,
+    "end_time_seconds": 2351.749,
+    "speaker": "Davicho Barona",
+    "text": "to something that makes sense, right? And I give the character a name. In this case, I named her Maya. And so Maya, now this is the Maya front face. So now I can actually talk about Maya…"
+  },
+  {
+    "start_time_seconds": 2352.02,
+    "end_time_seconds": 2368.13,
+    "speaker": "Davicho Barona",
+    "text": "front, face, and use Maya, and I can start talking about Maya. And then anytime I do something, I can… and also, I put a frame around all of them, and create it, and give the frame a name as well, and just call it Maya Master Character Reference Images."
+  },
+  {
+    "start_time_seconds": 2368.13,
+    "end_time_seconds": 2374.36,
+    "speaker": "Davicho Barona",
+    "text": "So that now I can just select the entire frame, and I can then say, okay, you know what?"
+  },
+  {
+    "start_time_seconds": 2374.38,
+    "end_time_seconds": 2376.599,
+    "speaker": "Davicho Barona",
+    "text": "I'm gonna select this whole frame."
+  },
+  {
+    "start_time_seconds": 2376.91,
+    "end_time_seconds": 2388.879,
+    "speaker": "Davicho Barona",
+    "text": "I also created a bunch of, like, items here, right? Like, this is kind of like a Fallout, kind of a, you know, end-of-the-world cowboy kind of a theme. And now I just… all these assets that I created, I'm just gonna select the ones I want."
+  },
+  {
+    "start_time_seconds": 2389.34,
+    "end_time_seconds": 2393.109,
+    "speaker": "Davicho Barona",
+    "text": "these. In this case, I'm highlighting these in green by actually just"
+  },
+  {
+    "start_time_seconds": 2393.18,
+    "end_time_seconds": 2411.029,
+    "speaker": "Davicho Barona",
+    "text": "Using the little color picker. And now, because I have those assets selected, right? Like, I selected the full frame, and now I selected those garments, I can literally come in here and just say, okay, now create all of these different reference images again."
+  },
+  {
+    "start_time_seconds": 2411.08,
+    "end_time_seconds": 2422.0,
+    "speaker": "Davicho Barona",
+    "text": "like, create… recreate Maya, except make her wearing all the assets that are selected. So now, I'm going in here, and I'm really creating my… a new set of character references."
+  },
+  {
+    "start_time_seconds": 2422.18,
+    "end_time_seconds": 2427.049,
+    "speaker": "Davicho Barona",
+    "text": "But now, using all of these items that I just dressed her in. Does that make sense?"
+  },
+  {
+    "start_time_seconds": 2427.24,
+    "end_time_seconds": 2428.0,
+    "speaker": "Elisa King",
+    "text": "Yeah."
+  },
+  {
+    "start_time_seconds": 2428.0,
+    "end_time_seconds": 2432.09,
+    "speaker": "Davicho Barona",
+    "text": "And now I have a full character. Now I can start placing her…"
+  },
+  {
+    "start_time_seconds": 2432.42,
+    "end_time_seconds": 2438.45,
+    "speaker": "Davicho Barona",
+    "text": "In a, in a different setting, and keeping all of those different details"
+  },
+  {
+    "start_time_seconds": 2438.52,
+    "end_time_seconds": 2457.3,
+    "speaker": "Davicho Barona",
+    "text": "alive, because I am now using those character references, like my master references alive. And if I want to create an image of her with her back facing, or the side profile, I'm going to make sure to select the one that is closest to what I want. And also select her face, because"
+  },
+  {
+    "start_time_seconds": 2457.3,
+    "end_time_seconds": 2464.43,
+    "speaker": "Davicho Barona",
+    "text": "That's gonna be, like, the close… I want to make sure that I'm always using my references. Like."
+  },
+  {
+    "start_time_seconds": 2464.59,
+    "end_time_seconds": 2468.349,
+    "speaker": "Davicho Barona",
+    "text": "Really doing it as if you were, like."
+  },
+  {
+    "start_time_seconds": 2468.59,
+    "end_time_seconds": 2487.569,
+    "speaker": "Davicho Barona",
+    "text": "in filmmaking. Does that make sense? Like, you truly want to use the process as tried and tested and proven in filmmaking in general. And if you have any issues, I'll give you another tip. All of this, this entire process, I didn't make this all from scratch. I actually started this whole process by saying."
+  },
+  {
+    "start_time_seconds": 2488.2,
+    "end_time_seconds": 2493.88,
+    "speaker": "Davicho Barona",
+    "text": "Let me go back to my chat… I think, maybe here…"
+  },
+  {
+    "start_time_seconds": 2494.19,
+    "end_time_seconds": 2496.959,
+    "speaker": "Davicho Barona",
+    "text": "I think maybe it was my initial chat."
+  },
+  {
+    "start_time_seconds": 2498.52,
+    "end_time_seconds": 2513.56,
+    "speaker": "Davicho Barona",
+    "text": "or maybe it's in a different board, but I actually… what I actually said was, help me create a classroom guide. Like, I said I'm teaching a class. Actually, this was part of a workshop that I just did at South by Southwest. And I was like, I'm teaching a class."
+  },
+  {
+    "start_time_seconds": 2513.64,
+    "end_time_seconds": 2529.39,
+    "speaker": "Davicho Barona",
+    "text": "I'm teaching them character and object consistency. Please give me, like, a step-by-step breakdown with prompt templates to copy, and look, I'm coming in here, and it's truly giving me, like, this badass breakdown of how to do everything."
+  },
+  {
+    "start_time_seconds": 2529.39,
+    "end_time_seconds": 2533.939,
+    "speaker": "Davicho Barona",
+    "text": "And I go in there, and I tested it. Number one, I tested it. Make sure it's not telling me"
+  },
+  {
+    "start_time_seconds": 2533.94,
+    "end_time_seconds": 2540.11,
+    "speaker": "Davicho Barona",
+    "text": "a bunch of lies, or it's not, like, hallucinating and telling me random stuff, but because I've also…"
+  },
+  {
+    "start_time_seconds": 2540.25,
+    "end_time_seconds": 2558.86,
+    "speaker": "Davicho Barona",
+    "text": "allowed it to scrape, those articles that I told you about, that I made, like, ground-level truth articles that I put up on our Learning Hub, it now knows to make sure it's not making stuff up. And so, super important, you can also get this entire guide."
+  },
+  {
+    "start_time_seconds": 2559.3,
+    "end_time_seconds": 2559.62,
+    "speaker": "Elisa King",
+    "text": "Okay."
+  },
+  {
+    "start_time_seconds": 2559.62,
+    "end_time_seconds": 2574.09,
+    "speaker": "Davicho Barona",
+    "text": "don't have to do, you know, you don't have to rely on other stuff. You can truly ask the agent to help you create a guide. Just be direct, and be detailed, and give it the right context, and it will give you back detailed."
+  },
+  {
+    "start_time_seconds": 2574.09,
+    "end_time_seconds": 2579.699,
+    "speaker": "Davicho Barona",
+    "text": "fully contextual answers. And then from there, you can also… you can…"
+  },
+  {
+    "start_time_seconds": 2579.78,
+    "end_time_seconds": 2588.839,
+    "speaker": "Davicho Barona",
+    "text": "I can literally select this now, like that breakdown it gave me, and I can ask it to do stuff with this breakdown. Just say, like, hey."
+  },
+  {
+    "start_time_seconds": 2588.95,
+    "end_time_seconds": 2589.959,
+    "speaker": "Davicho Barona",
+    "text": "You know what?"
+  },
+  {
+    "start_time_seconds": 2590.11,
+    "end_time_seconds": 2602.529,
+    "speaker": "Davicho Barona",
+    "text": "do this exercise as if you were actually trying to create something with this, and make up your own characters. Show me every single thing here that you're telling me, in this breakdown, but actually do it."
+  },
+  {
+    "start_time_seconds": 2602.6,
+    "end_time_seconds": 2605.89,
+    "speaker": "Davicho Barona",
+    "text": "You know, and then it'll start doing… and you can talk to it just like that."
+  },
+  {
+    "start_time_seconds": 2605.89,
+    "end_time_seconds": 2629.99,
+    "speaker": "Davicho Barona",
+    "text": "Like, literally just get the words out of your… your head and put them down here, whether it's written or in voice mode, and just talk to it, and it will do such an amazing job. It's then up to you to organize it, because this is me really organizing it. That's what took me the most time, was organizing this so that I could present it in a way that made sense to people, in a way that was easy to understand."
+  },
+  {
+    "start_time_seconds": 2630.1,
+    "end_time_seconds": 2633.389,
+    "speaker": "Davicho Barona",
+    "text": "But all of this stuff that I just showed you here."
+  },
+  {
+    "start_time_seconds": 2633.52,
+    "end_time_seconds": 2644.589,
+    "speaker": "Davicho Barona",
+    "text": "Minus some of these accessories, I kind of did that as sort of a side thing, but all of this breakdown, it helped me figure out how to do, so that I didn't have to start from zero, you know?"
+  },
+  {
+    "start_time_seconds": 2645.03,
+    "end_time_seconds": 2646.35,
+    "speaker": "Davicho Barona",
+    "text": "Really, really helpful."
+  },
+  {
+    "start_time_seconds": 2647.98,
+    "end_time_seconds": 2649.1,
+    "speaker": "Elisa King",
+    "text": "Well, thank you."
+  },
+  {
+    "start_time_seconds": 2649.1,
+    "end_time_seconds": 2650.389,
+    "speaker": "Davicho Barona",
+    "text": "Yeah, you bet."
+  },
+  {
+    "start_time_seconds": 2650.81,
+    "end_time_seconds": 2658.419,
+    "speaker": "Davicho Barona",
+    "text": "over time. I'm sorry, you guys, to keep you here, but I appreciate you so very much for being here. I,"
+  },
+  {
+    "start_time_seconds": 2658.64,
+    "end_time_seconds": 2678.439,
+    "speaker": "Davicho Barona",
+    "text": "I will be here again every Wednesday, I'll be here, and for the next few weeks, I'll be here today, and Thursdays as well, for this, like, you know, open to the public webinar. So, Mondays, Thursdays… Mondays, Wednesdays, and Thursdays, I think is the right order, for this one, and for the other one that Artur dropped the link of there."
+  },
+  {
+    "start_time_seconds": 2678.45,
+    "end_time_seconds": 2693.37,
+    "speaker": "Davicho Barona",
+    "text": "just come armed with questions, or whatever, and tips, things that you found. I would love to see you guys here again. Like, it would be my pleasure to keep hosting you guys here, and to continue to help you through any of these processes."
+  },
+  {
+    "start_time_seconds": 2693.52,
+    "end_time_seconds": 2713.009,
+    "speaker": "Davicho Barona",
+    "text": "But you'll get the hang of it, and you'll start realizing that if you think, like, quote-unquote, outside the box a little bit, you can talk to this thing as if it was a real production assistant. The more you treat this thing as, like, a person, almost, it sounds weird and creepy, but the more you do that, the better it responds."
+  },
+  {
+    "start_time_seconds": 2713.86,
+    "end_time_seconds": 2716.209,
+    "speaker": "Davicho Barona",
+    "text": "As opposed to treating it as just,"
+  },
+  {
+    "start_time_seconds": 2716.38,
+    "end_time_seconds": 2737.63,
+    "speaker": "Davicho Barona",
+    "text": "I'm gonna give you this prompt, if it didn't work, I'm gonna delete it, and I'm gonna start again. Like, this should be like a collaborative feedback loop. If you think about it that way, as if you're giving an order… you're giving directions to your production assistant, and then it's coming back with something, and then you say, no, this is not right, like, go back and do it this way, blah blah blah, and you kind of keep that mentality going into it."
+  },
+  {
+    "start_time_seconds": 2737.63,
+    "end_time_seconds": 2741.259,
+    "speaker": "Davicho Barona",
+    "text": "you'll crush it. This thing will be so useful."
+  },
+  {
+    "start_time_seconds": 2741.26,
+    "end_time_seconds": 2744.179,
+    "speaker": "Davicho Barona",
+    "text": "More than most other tools out there, like, for real."
+  },
+  {
+    "start_time_seconds": 2744.69,
+    "end_time_seconds": 2747.26,
+    "speaker": "Davicho Barona",
+    "text": "Cool."
+  },
+  {
+    "start_time_seconds": 2747.7,
+    "end_time_seconds": 2754.019,
+    "speaker": "Davicho Barona",
+    "text": "I'm gonna… I'm gonna stop, but, any final questions before I… before we sign off?"
+  },
+  {
+    "start_time_seconds": 2756.18,
+    "end_time_seconds": 2768.54,
+    "speaker": "Davicho Barona",
+    "text": "Cool. Again, remember guys, please shoot me an email if you want the recording of this. Eventually, we'll make these all available, but for now, it's on a case-by-case, so just, reach out, and I'm happy to provide it, if it helps."
+  },
+  {
+    "start_time_seconds": 2773.0,
+    "end_time_seconds": 2774.01,
+    "speaker": "Davicho Barona",
+    "text": "Awesome."
+  },
+  {
+    "start_time_seconds": 2774.22,
+    "end_time_seconds": 2788.989,
+    "speaker": "Davicho Barona",
+    "text": "Thank you guys so very much for being here. I will see you guys again, either this week or next. We'll be here, same bat channel, and same time for the next foreseeable weeks. After that, Wednesdays will be the day."
+  },
+  {
+    "start_time_seconds": 2790.64,
+    "end_time_seconds": 2797.16,
+    "speaker": "Davicho Barona",
+    "text": "Beautiful. Thank you guys very, very much, really appreciate you all. And, we'll see you guys next time."
+  },
+  {
+    "start_time_seconds": 2797.74,
+    "end_time_seconds": 2798.98,
+    "speaker": "Artur Monteiro",
+    "text": "Thank you, Daviko."
+  },
+  {
+    "start_time_seconds": 2799.4,
+    "end_time_seconds": 2799.99,
+    "speaker": "Elisa King",
+    "text": "Here's…"
+  },
+  {
+    "start_time_seconds": 2801.39,
+    "end_time_seconds": 2801.96,
+    "speaker": "Davicho Barona",
+    "text": "Bye."
+  }
+]

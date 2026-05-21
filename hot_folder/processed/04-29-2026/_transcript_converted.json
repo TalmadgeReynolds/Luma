@@ -1,0 +1,1688 @@
+[
+  {
+    "start_time_seconds": 8.97,
+    "end_time_seconds": 10.999,
+    "speaker": "Davicho Barona",
+    "text": "Hey guys. Oops."
+  },
+  {
+    "start_time_seconds": 12.76,
+    "end_time_seconds": 14.44,
+    "speaker": "Davicho Barona",
+    "text": "Let's see here…"
+  },
+  {
+    "start_time_seconds": 19.23,
+    "end_time_seconds": 20.76,
+    "speaker": "Michael Mandaville",
+    "text": "Good morning, DeVito."
+  },
+  {
+    "start_time_seconds": 21.02,
+    "end_time_seconds": 22.45,
+    "speaker": "Davicho Barona",
+    "text": "Good morning, guys."
+  },
+  {
+    "start_time_seconds": 23.19,
+    "end_time_seconds": 24.94,
+    "speaker": "Davicho Barona",
+    "text": "Hey, Michael, how are you?"
+  },
+  {
+    "start_time_seconds": 25.18,
+    "end_time_seconds": 28.109,
+    "speaker": "Michael Mandaville",
+    "text": "Doing pretty good, every day above ground's a beautiful day."
+  },
+  {
+    "start_time_seconds": 28.11,
+    "end_time_seconds": 31.089,
+    "speaker": "Davicho Barona",
+    "text": "But this is true. I like that saying."
+  },
+  {
+    "start_time_seconds": 31.99,
+    "end_time_seconds": 35.69,
+    "speaker": "Michael Mandaville",
+    "text": "It does put a very low bar for happiness and gratitude."
+  },
+  {
+    "start_time_seconds": 37.59,
+    "end_time_seconds": 41.42,
+    "speaker": "Davicho Barona",
+    "text": "That is good. I'm just gonna spend a second here."
+  },
+  {
+    "start_time_seconds": 42.31,
+    "end_time_seconds": 45.42,
+    "speaker": "Davicho Barona",
+    "text": "Allowing… Everyone…"
+  },
+  {
+    "start_time_seconds": 45.42,
+    "end_time_seconds": 51.089,
+    "speaker": "Michael Mandaville",
+    "text": "And then I have a critical… well, a stupid but critical question for you and Arturo."
+  },
+  {
+    "start_time_seconds": 51.09,
+    "end_time_seconds": 52.289,
+    "speaker": "Davicho Barona",
+    "text": "Jama, yeah, go ahead."
+  },
+  {
+    "start_time_seconds": 52.87,
+    "end_time_seconds": 57.62,
+    "speaker": "Michael Mandaville",
+    "text": "Essentially, I've been working a great deal on all the boards."
+  },
+  {
+    "start_time_seconds": 57.62,
+    "end_time_seconds": 58.17,
+    "speaker": "Davicho Barona",
+    "text": "Okay."
+  },
+  {
+    "start_time_seconds": 58.17,
+    "end_time_seconds": 62.969,
+    "speaker": "Michael Mandaville",
+    "text": "and generating a lot of material, but I find myself at a loss on"
+  },
+  {
+    "start_time_seconds": 63.53,
+    "end_time_seconds": 81.76,
+    "speaker": "Michael Mandaville",
+    "text": "I will pick two items, and then it'll say a start and end frame, and I know there must be a technique that I've searched for where it allows me to drag in an image on my board into that start or end frame. But every single time that I go to get that one, it…"
+  },
+  {
+    "start_time_seconds": 81.76,
+    "end_time_seconds": 87.529,
+    "speaker": "Michael Mandaville",
+    "text": "Selects the image, and then makes the video palette disappear."
+  },
+  {
+    "start_time_seconds": 87.78,
+    "end_time_seconds": 101.04,
+    "speaker": "Michael Mandaville",
+    "text": "So, I'm sure there must be a technique to do it, but I've literally searched the learning, the Lumipedia, or whatever learning section, as well as,"
+  },
+  {
+    "start_time_seconds": 101.44,
+    "end_time_seconds": 111.659,
+    "speaker": "Michael Mandaville",
+    "text": "I've tried online, and it says, well, I'm the agent, just ask me to do it, and I'm like, well, if I could drag it over, it would speed things along."
+  },
+  {
+    "start_time_seconds": 111.92,
+    "end_time_seconds": 114.62,
+    "speaker": "Davicho Barona",
+    "text": "Okay, let's check it out real quick. Okay, let me just…"
+  },
+  {
+    "start_time_seconds": 115.12,
+    "end_time_seconds": 118.2,
+    "speaker": "Davicho Barona",
+    "text": "Let me just, try to…"
+  },
+  {
+    "start_time_seconds": 119.34,
+    "end_time_seconds": 126.29,
+    "speaker": "Davicho Barona",
+    "text": "to replicate this. Okay, so let's just say… you have…"
+  },
+  {
+    "start_time_seconds": 126.68,
+    "end_time_seconds": 129.28,
+    "speaker": "Davicho Barona",
+    "text": "you have two images, right? Yes."
+  },
+  {
+    "start_time_seconds": 129.699,
+    "end_time_seconds": 132.889,
+    "speaker": "Davicho Barona",
+    "text": "So, you brought both of these from your computer, right?"
+  },
+  {
+    "start_time_seconds": 132.89,
+    "end_time_seconds": 133.58,
+    "speaker": "Michael Mandaville",
+    "text": "Yes."
+  },
+  {
+    "start_time_seconds": 134.2,
+    "end_time_seconds": 138.53,
+    "speaker": "Davicho Barona",
+    "text": "And you're trying to use them both as keyframes, start and end frame, right?"
+  },
+  {
+    "start_time_seconds": 138.68,
+    "end_time_seconds": 139.4,
+    "speaker": "Michael Mandaville",
+    "text": "Right?"
+  },
+  {
+    "start_time_seconds": 139.54,
+    "end_time_seconds": 144.31,
+    "speaker": "Michael Mandaville",
+    "text": "Let's say, Kling 3.0 is one I was using, let's say."
+  },
+  {
+    "start_time_seconds": 144.51,
+    "end_time_seconds": 147.509,
+    "speaker": "Davicho Barona",
+    "text": "And what you're trying to do is…"
+  },
+  {
+    "start_time_seconds": 147.96,
+    "end_time_seconds": 150.67,
+    "speaker": "Davicho Barona",
+    "text": "Use these two as start and end frame."
+  },
+  {
+    "start_time_seconds": 150.67,
+    "end_time_seconds": 151.32,
+    "speaker": "Michael Mandaville",
+    "text": "Yes."
+  },
+  {
+    "start_time_seconds": 151.47,
+    "end_time_seconds": 157.839,
+    "speaker": "Davicho Barona",
+    "text": "And you're going from… and what you're doing right now is going create video, And you're going to cling."
+  },
+  {
+    "start_time_seconds": 158.01,
+    "end_time_seconds": 161.529,
+    "speaker": "Davicho Barona",
+    "text": "And then you're trying to figure out, how do I add them here?"
+  },
+  {
+    "start_time_seconds": 161.53,
+    "end_time_seconds": 162.36,
+    "speaker": "Michael Mandaville",
+    "text": "Yes."
+  },
+  {
+    "start_time_seconds": 162.36,
+    "end_time_seconds": 166.209,
+    "speaker": "Davicho Barona",
+    "text": "Okay, so before you open that, select them."
+  },
+  {
+    "start_time_seconds": 166.48,
+    "end_time_seconds": 170.11,
+    "speaker": "Davicho Barona",
+    "text": "And in that order, first frame, second frame."
+  },
+  {
+    "start_time_seconds": 170.22,
+    "end_time_seconds": 173.39,
+    "speaker": "Davicho Barona",
+    "text": "Then, you can either right-click here."
+  },
+  {
+    "start_time_seconds": 173.86,
+    "end_time_seconds": 176.06,
+    "speaker": "Davicho Barona",
+    "text": "and just go to Make Video."
+  },
+  {
+    "start_time_seconds": 176.22,
+    "end_time_seconds": 181.569,
+    "speaker": "Davicho Barona",
+    "text": "And click Cling, and they'll be loaded up in there already, if you select them beforehand."
+  },
+  {
+    "start_time_seconds": 181.57,
+    "end_time_seconds": 182.38,
+    "speaker": "Michael Mandaville",
+    "text": "If you…"
+  },
+  {
+    "start_time_seconds": 182.38,
+    "end_time_seconds": 188.49,
+    "speaker": "Davicho Barona",
+    "text": "also select them beforehand and go down here, you'll also see them popped in there. So either…"
+  },
+  {
+    "start_time_seconds": 188.81,
+    "end_time_seconds": 200.989,
+    "speaker": "Davicho Barona",
+    "text": "right-click after selecting them to make video, or selecting them and then go to make video down here, or select them both and then just say, make a keyframe…"
+  },
+  {
+    "start_time_seconds": 200.99,
+    "end_time_seconds": 202.63,
+    "speaker": "Michael Mandaville",
+    "text": "Great. Okay."
+  },
+  {
+    "start_time_seconds": 202.63,
+    "end_time_seconds": 205.22,
+    "speaker": "Davicho Barona",
+    "text": "Right? Video with Kling."
+  },
+  {
+    "start_time_seconds": 205.44,
+    "end_time_seconds": 209.09,
+    "speaker": "Davicho Barona",
+    "text": "3.0… use image…"
+  },
+  {
+    "start_time_seconds": 210.16,
+    "end_time_seconds": 220.88,
+    "speaker": "Davicho Barona",
+    "text": "1 as start frame, and image 2 as end frame. So, as long as you have them selected."
+  },
+  {
+    "start_time_seconds": 221.28,
+    "end_time_seconds": 226.88,
+    "speaker": "Davicho Barona",
+    "text": "then you don't have to… then when you pop this open, you're not like, oh shoot, I gotta drag this."
+  },
+  {
+    "start_time_seconds": 226.88,
+    "end_time_seconds": 231.269,
+    "speaker": "Michael Mandaville",
+    "text": "That's what I was doing. I think I got in a bad habit or something, but yeah, I see what you mean."
+  },
+  {
+    "start_time_seconds": 231.27,
+    "end_time_seconds": 231.9,
+    "speaker": "Davicho Barona",
+    "text": "Yep."
+  },
+  {
+    "start_time_seconds": 232.15,
+    "end_time_seconds": 237.099,
+    "speaker": "Davicho Barona",
+    "text": "Just select them before you do anything, select your assets, and then you'll be able to cruise through it."
+  },
+  {
+    "start_time_seconds": 238.2,
+    "end_time_seconds": 245.47,
+    "speaker": "Michael Mandaville",
+    "text": "I knew you'd give me the nutshell version and, of simplicity and insight."
+  },
+  {
+    "start_time_seconds": 245.47,
+    "end_time_seconds": 246.03,
+    "speaker": "Davicho Barona",
+    "text": "Good."
+  },
+  {
+    "start_time_seconds": 246.52,
+    "end_time_seconds": 250.959,
+    "speaker": "Davicho Barona",
+    "text": "I'm so glad to hear it, man. That's hopefully what I'm… what I'm here for."
+  },
+  {
+    "start_time_seconds": 251.1,
+    "end_time_seconds": 252.1,
+    "speaker": "Michael Mandaville",
+    "text": "Thank you."
+  },
+  {
+    "start_time_seconds": 252.1,
+    "end_time_seconds": 254.3,
+    "speaker": "Davicho Barona",
+    "text": "Maria, you have your hand up, too."
+  },
+  {
+    "start_time_seconds": 254.82,
+    "end_time_seconds": 265.14,
+    "speaker": "Dr. Maria Ian",
+    "text": "Yes, do you have an answer to my question about what the subscription level that, says it's 4 times more than the lower one?"
+  },
+  {
+    "start_time_seconds": 265.62,
+    "end_time_seconds": 276.319,
+    "speaker": "Davicho Barona",
+    "text": "I don't have an answer, Maria, I am so sorry. Sharky is here, though, actually, and Sharky usually is pretty good at answering these Lumipedia."
+  },
+  {
+    "start_time_seconds": 276.32,
+    "end_time_seconds": 286.479,
+    "speaker": "Davicho Barona",
+    "text": "Sharky, can you… can you help us with this? I'm gonna go back into my notes, because I have this question in my notes. I'm so sorry, Maria."
+  },
+  {
+    "start_time_seconds": 286.59,
+    "end_time_seconds": 298.55,
+    "speaker": "Davicho Barona",
+    "text": "I, completely. So, the question… is, maria, ask your question again."
+  },
+  {
+    "start_time_seconds": 298.55,
+    "end_time_seconds": 316.22,
+    "speaker": "Dr. Maria Ian",
+    "text": "Yeah, it's on the Luma Agents, subscription page. There is one tier that is about $100, and it says that it's four times the amount of generations than the lower tier."
+  },
+  {
+    "start_time_seconds": 316.68,
+    "end_time_seconds": 321.229,
+    "speaker": "Dr. Maria Ian",
+    "text": "but… so I… I'm not clear on what exactly"
+  },
+  {
+    "start_time_seconds": 321.46,
+    "end_time_seconds": 331.279,
+    "speaker": "Dr. Maria Ian",
+    "text": "That, for what from among, like, video, images, prompting the agent, like, what exactly does that refer to?"
+  },
+  {
+    "start_time_seconds": 332.66,
+    "end_time_seconds": 344.61,
+    "speaker": "Davicho Barona",
+    "text": "Right, like, why… 4 times what, since you can do… since you can do so much? And this is trying to compare it to a dream machine, I think, right? Like, at the end…"
+  },
+  {
+    "start_time_seconds": 344.61,
+    "end_time_seconds": 353.279,
+    "speaker": "Dr. Maria Ian",
+    "text": "I mean, the classical dream machine is very clear. I never had any questions about what exactly that… I mean, I'm fine with that."
+  },
+  {
+    "start_time_seconds": 353.28,
+    "end_time_seconds": 353.64,
+    "speaker": "Davicho Barona",
+    "text": "Yep. That's."
+  },
+  {
+    "start_time_seconds": 353.64,
+    "end_time_seconds": 358.499,
+    "speaker": "Dr. Maria Ian",
+    "text": "perfectly clear. Like, this is totally unclear of what exactly that means."
+  },
+  {
+    "start_time_seconds": 358.83,
+    "end_time_seconds": 375.47,
+    "speaker": "Davicho Barona",
+    "text": "Right, and I think it's trying to draw a comparison between Dream Machine Unlimited, and since now the Agents app does not have an unlimited tier, it's trying to basically say, look, this is not… we don't have unlimited, but with this tier, you can make"
+  },
+  {
+    "start_time_seconds": 375.47,
+    "end_time_seconds": 384.88,
+    "speaker": "Davicho Barona",
+    "text": "four times as many as this other tier. I, honestly need a little bit more info, Maria. I'm sorry that I didn't,"
+  },
+  {
+    "start_time_seconds": 385.01,
+    "end_time_seconds": 393.06,
+    "speaker": "Davicho Barona",
+    "text": "get to get… have this answer… this question answered. But I do have this written down as, what does the 4X generations mean?"
+  },
+  {
+    "start_time_seconds": 393.28,
+    "end_time_seconds": 401.069,
+    "speaker": "Davicho Barona",
+    "text": "And it's the same price as unlimited plan. It's really just about breaking it down, right? So here's what."
+  },
+  {
+    "start_time_seconds": 401.07,
+    "end_time_seconds": 403.769,
+    "speaker": "Artur Monteiro",
+    "text": "Sharky had the answer. Sharky had just put, you know, let's at the end."
+  },
+  {
+    "start_time_seconds": 403.77,
+    "end_time_seconds": 413.23,
+    "speaker": "Dr. Maria Ian",
+    "text": "So, what do those credits refer to? So, for the pro plan, like, 40K credits, because, you know, those can disappear, those can go to zero really fast."
+  },
+  {
+    "start_time_seconds": 413.23,
+    "end_time_seconds": 413.829,
+    "speaker": "Davicho Barona",
+    "text": "They can."
+  },
+  {
+    "start_time_seconds": 413.83,
+    "end_time_seconds": 421.5,
+    "speaker": "Dr. Maria Ian",
+    "text": "They may look like a lot… like a pretty high number, but they can go to zero within a couple of days."
+  },
+  {
+    "start_time_seconds": 421.5,
+    "end_time_seconds": 422.18,
+    "speaker": "Davicho Barona",
+    "text": "It's true."
+  },
+  {
+    "start_time_seconds": 422.18,
+    "end_time_seconds": 438.3,
+    "speaker": "Artur Monteiro",
+    "text": "Maria, we had, in this page about the pricing, regarding the tiers. If you scroll it down, I don't know if you can put here on the screen share, the video, the pricing. We have this estimation about each one of our models."
+  },
+  {
+    "start_time_seconds": 438.48,
+    "end_time_seconds": 445.909,
+    "speaker": "Artur Monteiro",
+    "text": "how much of the cost per second… yeah, cool. The video's showcased right now. Can you scroll a little bit to the bottom?"
+  },
+  {
+    "start_time_seconds": 447.34,
+    "end_time_seconds": 455.639,
+    "speaker": "Artur Monteiro",
+    "text": "Yes, this, this information we provide the users. Sharky, do you have any additional information besides this one?"
+  },
+  {
+    "start_time_seconds": 456.51,
+    "end_time_seconds": 458.95,
+    "speaker": "Dr. Maria Ian",
+    "text": "Okay, I see."
+  },
+  {
+    "start_time_seconds": 462.19,
+    "end_time_seconds": 464.35,
+    "speaker": "Dr. Maria Ian",
+    "text": "320, okay."
+  },
+  {
+    "start_time_seconds": 464.35,
+    "end_time_seconds": 466.89,
+    "speaker": "Davicho Barona",
+    "text": "Sharky, maybe you're not allowed to…"
+  },
+  {
+    "start_time_seconds": 470.46,
+    "end_time_seconds": 471.03,
+    "speaker": "Dr. Maria Ian",
+    "text": "Hmm."
+  },
+  {
+    "start_time_seconds": 476.6,
+    "end_time_seconds": 479.02,
+    "speaker": "Davicho Barona",
+    "text": "Does that help at all there, Maria?"
+  },
+  {
+    "start_time_seconds": 479.02,
+    "end_time_seconds": 481.219,
+    "speaker": "Dr. Maria Ian",
+    "text": "It does a little, yes."
+  },
+  {
+    "start_time_seconds": 485.0,
+    "end_time_seconds": 488.07,
+    "speaker": "Davicho Barona",
+    "text": "And Sharky, I'm gonna make sure you can talk, although…"
+  },
+  {
+    "start_time_seconds": 489.54,
+    "end_time_seconds": 495.999,
+    "speaker": "Artur Monteiro",
+    "text": "Yeah, he just said that the only, new information from this webpage is that Sora, because, yeah, Sora is…"
+  },
+  {
+    "start_time_seconds": 496.44,
+    "end_time_seconds": 500.009,
+    "speaker": "Artur Monteiro",
+    "text": "being erased from everywhere, we don't have Sora anymore."
+  },
+  {
+    "start_time_seconds": 501.31,
+    "end_time_seconds": 514.999,
+    "speaker": "Dr. Maria Ian",
+    "text": "Okay, so… so here's, I mean, just my input to create a, well, I'm gonna keep… I mean, if this is the answer to the question, I'm going to keep to myself whatever else I just wanted to say."
+  },
+  {
+    "start_time_seconds": 515.44,
+    "end_time_seconds": 520.409,
+    "speaker": "Dr. Maria Ian",
+    "text": "I think that's better, but okay, I got the answer to the question, thank you."
+  },
+  {
+    "start_time_seconds": 521.2,
+    "end_time_seconds": 521.96,
+    "speaker": "Davicho Barona",
+    "text": "Okay, great."
+  },
+  {
+    "start_time_seconds": 521.96,
+    "end_time_seconds": 523.059,
+    "speaker": "Dr. Maria Ian",
+    "text": "So, yeah."
+  },
+  {
+    "start_time_seconds": 523.289,
+    "end_time_seconds": 524.429,
+    "speaker": "Davicho Barona",
+    "text": "Okay, great."
+  },
+  {
+    "start_time_seconds": 524.559,
+    "end_time_seconds": 529.989,
+    "speaker": "Davicho Barona",
+    "text": "Thank you for… for that help, Artur and… and Sharky."
+  },
+  {
+    "start_time_seconds": 530.229,
+    "end_time_seconds": 531.549,
+    "speaker": "Davicho Barona",
+    "text": "Yep."
+  },
+  {
+    "start_time_seconds": 532.239,
+    "end_time_seconds": 540.489,
+    "speaker": "Davicho Barona",
+    "text": "Okay, any other questions before… here's what… I'll tell you what I'm gonna go through, today, is I just… I've prepared this board"
+  },
+  {
+    "start_time_seconds": 540.489,
+    "end_time_seconds": 557.719,
+    "speaker": "Davicho Barona",
+    "text": "That is really about modified video, like video-to-video, and then motion control. And I've done it with a few fun examples here, some of the things you kind of see online already. I'm also gonna… I can touch on image-to-video, and then some keyframe transitions as well."
+  },
+  {
+    "start_time_seconds": 557.719,
+    "end_time_seconds": 565.119,
+    "speaker": "Davicho Barona",
+    "text": "So that's kind of my goal for today, but if you guys have any other questions before I jump in."
+  },
+  {
+    "start_time_seconds": 565.119,
+    "end_time_seconds": 582.559,
+    "speaker": "Davicho Barona",
+    "text": "please let me know if anybody's having anything that, like, you want to get answered. I only have about another 20 minutes, and then Artur will take over, also can help answer questions and go over anything else. But anything before I just jump into showing a couple different processes here."
+  },
+  {
+    "start_time_seconds": 584.059,
+    "end_time_seconds": 584.859,
+    "speaker": "Davicho Barona",
+    "text": "Okay."
+  },
+  {
+    "start_time_seconds": 585.349,
+    "end_time_seconds": 589.499,
+    "speaker": "Davicho Barona",
+    "text": "Okay, so starting out, I want to talk about"
+  },
+  {
+    "start_time_seconds": 589.699,
+    "end_time_seconds": 593.869,
+    "speaker": "Davicho Barona",
+    "text": "The difference between motion control and…"
+  },
+  {
+    "start_time_seconds": 594.129,
+    "end_time_seconds": 599.669,
+    "speaker": "Davicho Barona",
+    "text": "video-to-video, which is really two different models. Video-to-video is…"
+  },
+  {
+    "start_time_seconds": 599.689,
+    "end_time_seconds": 617.459,
+    "speaker": "Davicho Barona",
+    "text": "modify video, which is Ray Pi, Ray 3.14. And motion control is really Cling. So those are the two, kind of, different models that I'm gonna touch on here for the most part. I'll also touch a little bit on Uni One for image creation, and"
+  },
+  {
+    "start_time_seconds": 617.509,
+    "end_time_seconds": 620.679,
+    "speaker": "Davicho Barona",
+    "text": "a couple other little minimal things. However."
+  },
+  {
+    "start_time_seconds": 620.939,
+    "end_time_seconds": 644.279,
+    "speaker": "Davicho Barona",
+    "text": "We'll start with video-to-video. Okay, so, number one, I grabbed… this is my original video here, which is Cody, one of our old colleagues, and he's dancing here. And my whole point is, I want to change this character. I want to bring my own character in here and have him dance just like Cody is dancing. So, the first thing I do here, I'll show this with the approach"
+  },
+  {
+    "start_time_seconds": 644.279,
+    "end_time_seconds": 651.019,
+    "speaker": "Davicho Barona",
+    "text": "of Modify Video. So, number one, I took the start frame out of my original video."
+  },
+  {
+    "start_time_seconds": 651.189,
+    "end_time_seconds": 660.589,
+    "speaker": "Davicho Barona",
+    "text": "In fact, the very first thing I did was, if I still have it, the very first thing I did was the video was actually cut like this."
+  },
+  {
+    "start_time_seconds": 660.589,
+    "end_time_seconds": 674.499,
+    "speaker": "Davicho Barona",
+    "text": "So, it was a 16 to 9, with the 9 to 16 in the middle. I did not need any of those black bars, so the first thing I did was I just clicked on my asset, and I just went to Crop."
+  },
+  {
+    "start_time_seconds": 674.499,
+    "end_time_seconds": 680.189,
+    "speaker": "Davicho Barona",
+    "text": "And then inside crop, I just brought in the two sides here."
+  },
+  {
+    "start_time_seconds": 681.369,
+    "end_time_seconds": 684.079,
+    "speaker": "Davicho Barona",
+    "text": "And then just click Crop."
+  },
+  {
+    "start_time_seconds": 684.079,
+    "end_time_seconds": 704.199,
+    "speaker": "Davicho Barona",
+    "text": "And then what that does, it just gives me a cropped video, regardless of where I put it. It's just gonna crop along, which is really helpful to not get you locked into a particular aspect ratio that maybe you don't have, but just being able to crop to exactly whatever size I want. So, that's how that started."
+  },
+  {
+    "start_time_seconds": 704.199,
+    "end_time_seconds": 708.009,
+    "speaker": "Davicho Barona",
+    "text": "And so, first things first, I crop my video."
+  },
+  {
+    "start_time_seconds": 708.329,
+    "end_time_seconds": 723.929,
+    "speaker": "Davicho Barona",
+    "text": "and I was left with this video now, 9-second video. Then what I did is I just right-clicked and went to Extract Start Frame. So that got me here. Now I have my start frame. Now I also have this image of a character that I developed previously for a different…"
+  },
+  {
+    "start_time_seconds": 723.929,
+    "end_time_seconds": 740.469,
+    "speaker": "Davicho Barona",
+    "text": "purpose, but this is the character that I want to put in. Notice that he's a full body character, that's really important for this. Everything is really clear, outlined. I don't have to worry even about background stuff kind of polluting my image here. On white, isolated."
+  },
+  {
+    "start_time_seconds": 740.949,
+    "end_time_seconds": 745.029,
+    "speaker": "Davicho Barona",
+    "text": "Front-facing, no expression. This is, like, a classic."
+  },
+  {
+    "start_time_seconds": 745.139,
+    "end_time_seconds": 751.209,
+    "speaker": "Davicho Barona",
+    "text": "Full-body character image that you truly want to have on hand."
+  },
+  {
+    "start_time_seconds": 751.209,
+    "end_time_seconds": 767.219,
+    "speaker": "Davicho Barona",
+    "text": "I also would like to, showcase that we do have a seed in there that we published recently that is this full-body character seed, and what this does is you can upload a"
+  },
+  {
+    "start_time_seconds": 767.349,
+    "end_time_seconds": 785.239,
+    "speaker": "Davicho Barona",
+    "text": "selfie that… or a image, like, that is just the face, just the head, or shoulders up that doesn't have a body, and with this seed, you can create full body options. So, it'll give you an option of, like, is it slim body? Is it athletic? Is it large? Is it, like…"
+  },
+  {
+    "start_time_seconds": 785.239,
+    "end_time_seconds": 809.499,
+    "speaker": "Davicho Barona",
+    "text": "very muscular, like, different kinds of full-body options. So this seed right here, when you go into your homepage and go into Discover, you'll see the Build Full Body Character seed. Open it up, it'll walk you through the process. You'll be able to create a full body character there. That's how I made this full-body character. Actually, I may have made this differently, but regardless, that seed will also help you do that. So, I have my start frame."
+  },
+  {
+    "start_time_seconds": 809.499,
+    "end_time_seconds": 811.499,
+    "speaker": "Davicho Barona",
+    "text": "I got my full body character."
+  },
+  {
+    "start_time_seconds": 811.649,
+    "end_time_seconds": 826.779,
+    "speaker": "Davicho Barona",
+    "text": "Now what I did is actually grab my start frame, and I first said, remove the character, just have the empty room, basically. Like, to edit that… this image into this, because my goal is to actually just place this character in this room."
+  },
+  {
+    "start_time_seconds": 826.779,
+    "end_time_seconds": 835.899,
+    "speaker": "Davicho Barona",
+    "text": "pose it just like this character in this image. So I basically would select all of them, then just say, pose the character in image 1,"
+  },
+  {
+    "start_time_seconds": 836.289,
+    "end_time_seconds": 843.839,
+    "speaker": "Davicho Barona",
+    "text": "Which actually would be… This is the wrong order, let's just get this straight."
+  },
+  {
+    "start_time_seconds": 845.589,
+    "end_time_seconds": 854.439,
+    "speaker": "Davicho Barona",
+    "text": "Pose a character in image 1 exactly like the character in image 2, and place her in the environment of image 3. That's really the right order here."
+  },
+  {
+    "start_time_seconds": 854.439,
+    "end_time_seconds": 877.269,
+    "speaker": "Davicho Barona",
+    "text": "And then match the lighting of image 3. Like, I want to keep that… that lighting. In fact, when I did it, it didn't really match the lighting, so I… but I didn't want to keep going. If you do a couple more generations, I'm sure you'll get the lighting matched. I saw that it kind of gave me this, like, weird golden light in the background here, so I didn't do a good enough job of matching the lighting there."
+  },
+  {
+    "start_time_seconds": 877.609,
+    "end_time_seconds": 895.979,
+    "speaker": "Davicho Barona",
+    "text": "But I probably would do that again, and get the right results here. Luckily, when we're talking images, pretty cheap still at that point. So anyway, I get this image after doing that, right? My character posed just like him in that room. Yes, she's kind of looking forward, but after…"
+  },
+  {
+    "start_time_seconds": 895.979,
+    "end_time_seconds": 904.549,
+    "speaker": "Davicho Barona",
+    "text": "knowing what I know, I know that's not actually gonna matter too much. So, in any case, I'm gonna grab my image result here, I'm gonna grab my video."
+  },
+  {
+    "start_time_seconds": 904.549,
+    "end_time_seconds": 907.449,
+    "speaker": "Davicho Barona",
+    "text": "And then I'm gonna say, modify this video."
+  },
+  {
+    "start_time_seconds": 907.799,
+    "end_time_seconds": 922.089,
+    "speaker": "Davicho Barona",
+    "text": "using this image as the start frame, and then I'm gonna say sweep adhered to through Flex 3. Now, when I say sweep, I really mean, like, so if I select both of those, and I go into modify."
+  },
+  {
+    "start_time_seconds": 922.479,
+    "end_time_seconds": 939.139,
+    "speaker": "Davicho Barona",
+    "text": "video with Ray 3.14, you obviously will see these different strengths. And so, sometimes I don't know exactly what strength I want. So, if I… if my credits allow, I will go and just say, Sweep X Strengths. Basically."
+  },
+  {
+    "start_time_seconds": 939.309,
+    "end_time_seconds": 957.779,
+    "speaker": "Davicho Barona",
+    "text": "do it with all these different strengths, that way I can compare. So in this case, I'm saying, okay, I know I don't need to go all the way down, necessarily, I'm just gonna go from, like, Adhere 2 through Flex 3, like, I know I don't need to go total reimagine, and I may not need to go all the way down. And so, all of a sudden, I'm getting these different results."
+  },
+  {
+    "start_time_seconds": 957.779,
+    "end_time_seconds": 962.449,
+    "speaker": "Davicho Barona",
+    "text": "You'll see that the first one, if it's too close to it here, it's like trying to get…"
+  },
+  {
+    "start_time_seconds": 962.449,
+    "end_time_seconds": 965.319,
+    "speaker": "Davicho Barona",
+    "text": "his beanie, right? It's like trying to…"
+  },
+  {
+    "start_time_seconds": 965.659,
+    "end_time_seconds": 986.559,
+    "speaker": "Davicho Barona",
+    "text": "trying to keep all the contours and edges of the original true and intact, so therefore, it's like sucking in her hat into the beanie shape. And so, as you can see, this is just not working for me. That's rejected. Second one here, also, I rejected it, probably because of some facial expressions, as well as…"
+  },
+  {
+    "start_time_seconds": 986.559,
+    "end_time_seconds": 995.629,
+    "speaker": "Davicho Barona",
+    "text": "It just didn't perform, as well as I… as I wanted it to. I can see, like, the sleeves, for example, are getting messed up. It's reading…"
+  },
+  {
+    "start_time_seconds": 995.629,
+    "end_time_seconds": 1001.339,
+    "speaker": "Davicho Barona",
+    "text": "It's reading too close to his original sleeves, but I can tell that my sleeves are much…"
+  },
+  {
+    "start_time_seconds": 1001.339,
+    "end_time_seconds": 1012.299,
+    "speaker": "Davicho Barona",
+    "text": "different, and so I can start seeing that it's, like, still too close to the original contours. Now, as I move into Flex, and if you want to know which one is which, if I hit Info here."
+  },
+  {
+    "start_time_seconds": 1012.489,
+    "end_time_seconds": 1017.159,
+    "speaker": "Davicho Barona",
+    "text": "now I see that they've… they've coded in here that I can see this was Flex 1."
+  },
+  {
+    "start_time_seconds": 1017.159,
+    "end_time_seconds": 1032.599,
+    "speaker": "Davicho Barona",
+    "text": "I could also hit reuse, and then you'll see exactly what was done here before. I can see the prompt, the system prompt, I can see the strength, etc. But if you just want to see the strength, you can hit info, and you'll see what strength that was made in, along with all the other details."
+  },
+  {
+    "start_time_seconds": 1032.599,
+    "end_time_seconds": 1047.609,
+    "speaker": "Davicho Barona",
+    "text": "So that still didn't work for me. I think the facial expression was the last thing, wasn't working, maybe the hat was not staying the same way that I wanted it. Finally, into Flex 2 and Flex 3 were the ones that worked best for me. So, again, this process…"
+  },
+  {
+    "start_time_seconds": 1047.709,
+    "end_time_seconds": 1071.899,
+    "speaker": "Davicho Barona",
+    "text": "would be much more simple if I didn't have to mess around with the different adhere, I mean, the different modify strengths, but that really lets me dial things in. And so, when I have different subjects, maybe something that wasn't human, let's say it was a dog, or it was a dolphin, or something, I probably would have to experiment a little more with the strengths, and I'll be up in, like, the reimagine, etc."
+  },
+  {
+    "start_time_seconds": 1071.899,
+    "end_time_seconds": 1074.219,
+    "speaker": "Davicho Barona",
+    "text": "In this case, like, now I know"
+  },
+  {
+    "start_time_seconds": 1074.419,
+    "end_time_seconds": 1091.399,
+    "speaker": "Davicho Barona",
+    "text": "Human to human, I know I'm gonna… even if it's a totally different outfit, now for the future, I know I'm gonna wanna be somewhere around Flex 1, or Flex 2, or somewhere in the Flex range. So next time, I probably wouldn't generate any adhere levels. However, it's nice to know that you can just say sweep."
+  },
+  {
+    "start_time_seconds": 1091.399,
+    "end_time_seconds": 1096.499,
+    "speaker": "Davicho Barona",
+    "text": "all the strengths. You can also just say, sweep every modified strength, if you have enough credits to do so."
+  },
+  {
+    "start_time_seconds": 1096.499,
+    "end_time_seconds": 1100.649,
+    "speaker": "Davicho Barona",
+    "text": "And luckily, in 720, Ray 314 is pretty cheap."
+  },
+  {
+    "start_time_seconds": 1100.649,
+    "end_time_seconds": 1122.719,
+    "speaker": "Davicho Barona",
+    "text": "So that's nice. So, in any case, that's the first mode. It's just going from, basically re-editing the whole image, compositing the entire thing, making it as a start frame, then just sweeping a few strings, and then actually getting, to a video pretty quickly, where now my new character is in that same room, dancing like my previous character."
+  },
+  {
+    "start_time_seconds": 1122.929,
+    "end_time_seconds": 1123.829,
+    "speaker": "Davicho Barona",
+    "text": "Done."
+  },
+  {
+    "start_time_seconds": 1123.829,
+    "end_time_seconds": 1148.719,
+    "speaker": "Davicho Barona",
+    "text": "So, that's one way. Now let's look at it with Cling, in this way as well. So with Cling, I have my original video. I don't need to do any start frame, anything with Cling. I just choose my original video, choose the character I want, and then use this prompt. In this case, I wanted to first see if I could get this girl in that room with just this prompt. So I said use Cling 3, motion control and character reference."
+  },
+  {
+    "start_time_seconds": 1148.839,
+    "end_time_seconds": 1168.839,
+    "speaker": "Davicho Barona",
+    "text": "on this video to replace the character in the video with the character in the image, and then I said, use the living room background from the video. But I can tell it did not do that. It didn't transfer the background. It tried, there's, like, a weird, like, table back there, I don't know if you could see that, but at the end of the day, motion control"
+  },
+  {
+    "start_time_seconds": 1168.849,
+    "end_time_seconds": 1188.649,
+    "speaker": "Davicho Barona",
+    "text": "in Cling is really meant to transform that image into a video, as opposed to transforming the video into a new video. This is not a video-to-video workflow. This is more of an image-to-video, referencing the original video as the movement."
+  },
+  {
+    "start_time_seconds": 1188.649,
+    "end_time_seconds": 1194.119,
+    "speaker": "Davicho Barona",
+    "text": "So, it's kind of a little bit different. So, in this case, what I really needed to be doing"
+  },
+  {
+    "start_time_seconds": 1194.349,
+    "end_time_seconds": 1203.279,
+    "speaker": "Davicho Barona",
+    "text": "is, number one, I'll go back to how I really needed to be doing. Number one is, again, grabbing the start frame from my video."
+  },
+  {
+    "start_time_seconds": 1203.279,
+    "end_time_seconds": 1228.129,
+    "speaker": "Davicho Barona",
+    "text": "then selecting it, plus selecting my character image, and the first step is not animating, the first step is saying replace the background of image 2 with the background of image 1. So now I have a new character image. And so when I do the same thing that I did before, selecting my character image with the new background, and selecting my video that is going to be the motion driver."
+  },
+  {
+    "start_time_seconds": 1228.129,
+    "end_time_seconds": 1239.269,
+    "speaker": "Davicho Barona",
+    "text": "now I can say, use Kling 3.0 motion control and character reference to make the character in this image move like the character in this video, and so now, I'm getting"
+  },
+  {
+    "start_time_seconds": 1239.269,
+    "end_time_seconds": 1253.899,
+    "speaker": "Davicho Barona",
+    "text": "that same result that I got with Modify, except I'm doing it with Cling Motion Control, but I had to do the background transfer, image-to-image background transfer before I committed to making that video."
+  },
+  {
+    "start_time_seconds": 1253.899,
+    "end_time_seconds": 1274.469,
+    "speaker": "Davicho Barona",
+    "text": "Also, yes, I have this very specific prompt here, which, because I know what I want to use, etc, but you can get to this result doing the same thing, grabbing my image, grabbing my video, and then just saying something more natural. Like, make the character in the image dance like the character in the video. That is also a very"
+  },
+  {
+    "start_time_seconds": 1274.469,
+    "end_time_seconds": 1280.509,
+    "speaker": "Davicho Barona",
+    "text": "easy way to do it, and you can tell in this way, it actually did it using Ray 3."
+  },
+  {
+    "start_time_seconds": 1280.509,
+    "end_time_seconds": 1284.949,
+    "speaker": "Davicho Barona",
+    "text": "But it hid all this other process that I showed you first."
+  },
+  {
+    "start_time_seconds": 1284.949,
+    "end_time_seconds": 1293.179,
+    "speaker": "Davicho Barona",
+    "text": "it actually recognized what was the best mode to do it with, and it just did it straight up with Ray 3.14."
+  },
+  {
+    "start_time_seconds": 1293.519,
+    "end_time_seconds": 1310.099,
+    "speaker": "Davicho Barona",
+    "text": "as a 10-second video-to-video, as opposed to having to extract the starframe, all that stuff, it really did it all on its own. So, remember, this is very easy to also do with natural language. You don't have to go in and get specific, and it will pick up on, like."
+  },
+  {
+    "start_time_seconds": 1310.099,
+    "end_time_seconds": 1318.699,
+    "speaker": "Davicho Barona",
+    "text": "For example, let me try doing it the cheaper way, because believe it or not, this is actually cheaper to do it than with cling motion control."
+  },
+  {
+    "start_time_seconds": 1318.859,
+    "end_time_seconds": 1326.319,
+    "speaker": "Davicho Barona",
+    "text": "that's a much more expensive model, the… the… than… than Ray 3, Pi. So…"
+  },
+  {
+    "start_time_seconds": 1326.639,
+    "end_time_seconds": 1333.779,
+    "speaker": "Davicho Barona",
+    "text": "I will also quickly touch on this. Again, I'll show you just another kind of"
+  },
+  {
+    "start_time_seconds": 1333.949,
+    "end_time_seconds": 1339.279,
+    "speaker": "Davicho Barona",
+    "text": "Version of this, same thing here, start frame, character image."
+  },
+  {
+    "start_time_seconds": 1339.359,
+    "end_time_seconds": 1357.079,
+    "speaker": "Davicho Barona",
+    "text": "and then first replacing the background, right? Transporting my subject of my character into the background, no video yet, and then I can also say, now pose the character in image 1 exactly like the character in image 2. So now, I'm also doing this"
+  },
+  {
+    "start_time_seconds": 1357.109,
+    "end_time_seconds": 1373.619,
+    "speaker": "Davicho Barona",
+    "text": "with that kind of precursor, but instead of just stopping here, I can actually go all the way into the pose. And so now I have a more prepared image, whether I wanted to do… whether I want to do it with cling."
+  },
+  {
+    "start_time_seconds": 1373.619,
+    "end_time_seconds": 1391.159,
+    "speaker": "Davicho Barona",
+    "text": "or I want to do it with Ray 3, having this posed image, and making sure you're posing the character in image 1, like the character in image 2, also gets you some pretty good results, which a lot of times are even more usable, and your final video will be better that way."
+  },
+  {
+    "start_time_seconds": 1391.389,
+    "end_time_seconds": 1414.299,
+    "speaker": "Davicho Barona",
+    "text": "Same exact stuff here. I won't go back to this. Instead, we'll keep moving forward since I'm kind of running out of time. Here's another version of this. Start frame, and this is with more wild transformations, okay? Start frame again. Now I say, turn this character into a worm with worm-like appendages instead of arms and legs. So I went from here to here."
+  },
+  {
+    "start_time_seconds": 1414.319,
+    "end_time_seconds": 1432.449,
+    "speaker": "Davicho Barona",
+    "text": "And now you can see it's a very different character, and I was afraid, like, this is not gonna dance like my original guy, because the appendages are so different, you know, like, even the hands are not real hands anymore, the feet are so low down, the legs are not really visible, like, how is this really gonna work?"
+  },
+  {
+    "start_time_seconds": 1432.449,
+    "end_time_seconds": 1437.759,
+    "speaker": "Davicho Barona",
+    "text": "And so I tried it, and I just said, okay, grab my video."
+  },
+  {
+    "start_time_seconds": 1437.759,
+    "end_time_seconds": 1442.599,
+    "speaker": "Davicho Barona",
+    "text": "grab that image that I just generated, and I just said, modify this video."
+  },
+  {
+    "start_time_seconds": 1442.599,
+    "end_time_seconds": 1447.789,
+    "speaker": "Davicho Barona",
+    "text": "using this video… this image as a start frame, and now I also said, just sweep, like."
+  },
+  {
+    "start_time_seconds": 1447.789,
+    "end_time_seconds": 1461.159,
+    "speaker": "Davicho Barona",
+    "text": "all, flex and reimagine modify strings so I can compare outputs. I can do this, I usually have more prompt, more credits than most. So, in any case, when I start at the lowest end."
+  },
+  {
+    "start_time_seconds": 1461.529,
+    "end_time_seconds": 1466.559,
+    "speaker": "Davicho Barona",
+    "text": "A lot of times, and you'll see it, it works fine. Let me see, this was done with…"
+  },
+  {
+    "start_time_seconds": 1466.909,
+    "end_time_seconds": 1474.089,
+    "speaker": "Davicho Barona",
+    "text": "Show more… actually, I can't tell what that's done with."
+  },
+  {
+    "start_time_seconds": 1474.269,
+    "end_time_seconds": 1480.829,
+    "speaker": "Davicho Barona",
+    "text": "In there, but that was done with Reimagine One. So in the Reimagine space."
+  },
+  {
+    "start_time_seconds": 1480.909,
+    "end_time_seconds": 1487.369,
+    "speaker": "Davicho Barona",
+    "text": "There was something I didn't like about this, and it probably had to do with the legs. Yeah, see how it, like, splits up the boxers?"
+  },
+  {
+    "start_time_seconds": 1487.369,
+    "end_time_seconds": 1502.099,
+    "speaker": "Davicho Barona",
+    "text": "Right, so no good. This one, also no good. Probably also had something to do with the legs. Let's see right when it gets right to the very end. Yep, it split up the legs again. It's just not really carrying through, very well."
+  },
+  {
+    "start_time_seconds": 1502.099,
+    "end_time_seconds": 1505.389,
+    "speaker": "Davicho Barona",
+    "text": "I think probably the same thing here with the legs."
+  },
+  {
+    "start_time_seconds": 1505.989,
+    "end_time_seconds": 1521.939,
+    "speaker": "Davicho Barona",
+    "text": "Let's see when it gets to the top here… yeah, the legs will split up again. Anyway, I realized that my two best were at the top of Flex, Flex 3, and Reimagine 2. And so, when I look at these two videos, I can see the legs are not splitting."
+  },
+  {
+    "start_time_seconds": 1521.939,
+    "end_time_seconds": 1545.949,
+    "speaker": "Davicho Barona",
+    "text": "And it still did grab my arms correctly. Like, it didn't just extend these as weird little appendages, although I kind of was interested to see if I could do that. But it did make arms, very wormy arms anyway, and this worked really well, even as wildly different as it is. But because I went either top of flex or bottom of Reimagine, it still really"
+  },
+  {
+    "start_time_seconds": 1545.949,
+    "end_time_seconds": 1567.579,
+    "speaker": "Davicho Barona",
+    "text": "really kept the reference video alive, and the dancing, and it gave me the right legs, and the right proportions of everything, and it didn't split them up, etc. So, it can definitely work this way, even with a character that's, like, so wildly different than a human here, because you're going at the top of flex or bottom of Reimagine."
+  },
+  {
+    "start_time_seconds": 1567.579,
+    "end_time_seconds": 1585.699,
+    "speaker": "Davicho Barona",
+    "text": "I did the same exact thing here, except transformed it, transformed this image. I said, show me 6 more versions of this, but, like, make sure the limb length and proportions match the original images, basically cleaning it up from looking so wildly different."
+  },
+  {
+    "start_time_seconds": 1585.699,
+    "end_time_seconds": 1590.999,
+    "speaker": "Davicho Barona",
+    "text": "To something that's more… still wormy, but more close to my original character."
+  },
+  {
+    "start_time_seconds": 1590.999,
+    "end_time_seconds": 1610.149,
+    "speaker": "Davicho Barona",
+    "text": "And from here, I just grab my approved one, do the same exact thing, I just said modify this video with this image as a star frame, same process, and now I ended up still at Flex 3 and Flex 2 as my, go-to strengths. Looking really good, though, like, I truly like the way that this came out."
+  },
+  {
+    "start_time_seconds": 1610.679,
+    "end_time_seconds": 1628.499,
+    "speaker": "Davicho Barona",
+    "text": "I will just kind of keep breezing forward here, show you another use case of this. This one's interesting. The first thing I did in this case, I wanted to turn him into the girl with the pearl earring in a few different ways. Now, the first thing I did was I just went to the agent, and I just selected him."
+  },
+  {
+    "start_time_seconds": 1628.929,
+    "end_time_seconds": 1633.859,
+    "speaker": "Davicho Barona",
+    "text": "And I said, download a reference image of Vermeer's girl with a pearl earring."
+  },
+  {
+    "start_time_seconds": 1633.859,
+    "end_time_seconds": 1658.829,
+    "speaker": "Davicho Barona",
+    "text": "Then use Modify Image with Nano Banana Pro to replace only the head and the face of the selected image with the girl with a pearl earring look. Blue and Gold Head Wrap Pro basically described the entire thing, and I just said, keep the body, clothing, pose, room, everything below the neck exactly the same. Then what it does is it goes online, because, and I don't know if you know this, but the agent is connected to the web, you can give it URLs."
+  },
+  {
+    "start_time_seconds": 1658.829,
+    "end_time_seconds": 1669.019,
+    "speaker": "Davicho Barona",
+    "text": "you can tell it to research stuff, to look for things online, it'll do it all on its own, or with your further instruction. So it grabbed this image from the web, brought it in."
+  },
+  {
+    "start_time_seconds": 1669.269,
+    "end_time_seconds": 1680.019,
+    "speaker": "Davicho Barona",
+    "text": "And because I was already selected, I had already my… I already had my image selected, and told it what to do to it, it just started the process. So I went from there to here."
+  },
+  {
+    "start_time_seconds": 1680.239,
+    "end_time_seconds": 1704.889,
+    "speaker": "Davicho Barona",
+    "text": "started very crude, right? This is, like, not composited at all. A little bit better composited here, to a lot better, and then to kind of a version that was just a little bit wild and did not do what I wanted. The boxers even are quite different. Everything turned out to be a little bit different here, but this was my go-to, so I'm like, okay, I can definitely work with this. Then I did the same process as I did before."
+  },
+  {
+    "start_time_seconds": 1704.889,
+    "end_time_seconds": 1723.069,
+    "speaker": "Davicho Barona",
+    "text": "First, I just grabbed my video, grabbed my image, and I went into modify mode. Same thing, and I just said Sweep Flex 1 through Reimagine 3, and I got some pretty good results, actually, in multiple categories… in multiple flex strengths here. You know, and I still… I have kind of a separation of, like, painterly."
+  },
+  {
+    "start_time_seconds": 1723.069,
+    "end_time_seconds": 1725.609,
+    "speaker": "Davicho Barona",
+    "text": "To, like, real life kind of thing."
+  },
+  {
+    "start_time_seconds": 1725.799,
+    "end_time_seconds": 1741.819,
+    "speaker": "Davicho Barona",
+    "text": "And… but I still like it. I love the way that these earrings are moving, and how her headscarf is moving, and some of the shadows really interacting really, really well with this. And also, another reimagined, too, I think this is where I kind of ended up the best of both worlds, was this…"
+  },
+  {
+    "start_time_seconds": 1741.819,
+    "end_time_seconds": 1750.719,
+    "speaker": "Davicho Barona",
+    "text": "reimagine 2 setting, or I went to modify Flex 3. I'm not sure where I ended up liking the most, but those 3 were passable."
+  },
+  {
+    "start_time_seconds": 1750.719,
+    "end_time_seconds": 1768.819,
+    "speaker": "Davicho Barona",
+    "text": "Then, I also… another kind of pushing this into the next realm here is, again, using that image that I had, exported that I liked, which was actually done by NanoBanana2, which I want to point that out. We now have Nano Banana 2 and GPT Image 2, both"
+  },
+  {
+    "start_time_seconds": 1768.819,
+    "end_time_seconds": 1793.179,
+    "speaker": "Davicho Barona",
+    "text": "really strong models. Nano Banana Pro is still kind of my go-to, regardless. If I'm doing cinematic stuff, I'm going to Uni1, that's, like, gonna be my hands-down go-to. But if I'm doing edits or things that are, like, a lot more subtle, I'm actually gonna use Nano Banana Pro. But now, with NB2 and GPT Image 2, you have other options that are really solid as well, like, really, really good."
+  },
+  {
+    "start_time_seconds": 1793.299,
+    "end_time_seconds": 1809.989,
+    "speaker": "Davicho Barona",
+    "text": "So make sure you check those out. In any case, going from that image, now I'm saying, make this image look like a painting. So now it's going here, and it's making it look like a painting. You can see the brush strokes here, et cetera, so it really looks painterly. It kind of brought everything together. And now I said."
+  },
+  {
+    "start_time_seconds": 1809.989,
+    "end_time_seconds": 1827.799,
+    "speaker": "Davicho Barona",
+    "text": "Okay, change the body to a female body, wearing a long, light blue dress, and leave everything else untouched. So now I'm going from that image to this image, which is kind of coming together. The proportion's a little bit weird, like, her head is a little bit big, maybe. I could probably go and finesse that a little bit, but just to show you how that goes."
+  },
+  {
+    "start_time_seconds": 1827.799,
+    "end_time_seconds": 1846.589,
+    "speaker": "Davicho Barona",
+    "text": "grab that, grab my video, and then as a Kling 3.0 motion control prompt, I just went and made this image now. So now I have, like, the girl with the pearl earring, now she's dancing in her own painting, just like my dancer was in his original video. Looking pretty good here."
+  },
+  {
+    "start_time_seconds": 1846.839,
+    "end_time_seconds": 1855.419,
+    "speaker": "Davicho Barona",
+    "text": "Same process here, just without turning it into, the, you know, into her body and her dress, etc, just the painterly look with the"
+  },
+  {
+    "start_time_seconds": 1855.419,
+    "end_time_seconds": 1874.749,
+    "speaker": "Davicho Barona",
+    "text": "her face and his body, noticing a few different things here. For example, the earrings are all of a sudden loop earrings. These are things you probably can go in and kind of tweak and change a little bit. But as I'm running a little bit low on time here, I'll just still show a couple more versions of this."
+  },
+  {
+    "start_time_seconds": 1874.749,
+    "end_time_seconds": 1875.619,
+    "speaker": "Davicho Barona",
+    "text": "Again."
+  },
+  {
+    "start_time_seconds": 1875.719,
+    "end_time_seconds": 1887.959,
+    "speaker": "Davicho Barona",
+    "text": "grabbing the star frame, make this look like a classical painting. Now I'm going into kind of a different realm here, transporting the hat and the sunglasses from one image to the other here."
+  },
+  {
+    "start_time_seconds": 1888.119,
+    "end_time_seconds": 1906.659,
+    "speaker": "Davicho Barona",
+    "text": "And then, again, making it dance in the same way, using cling, going to kind of a… just a different feel, painterly, but also kind of transporting the likeness a little bit, and the… some of those… those, other accessories, the hat and the glasses. So…"
+  },
+  {
+    "start_time_seconds": 1907.159,
+    "end_time_seconds": 1909.409,
+    "speaker": "Davicho Barona",
+    "text": "That's another process."
+  },
+  {
+    "start_time_seconds": 1910.009,
+    "end_time_seconds": 1915.569,
+    "speaker": "Davicho Barona",
+    "text": "Another way to also showcase this here is, again, start frame."
+  },
+  {
+    "start_time_seconds": 1915.919,
+    "end_time_seconds": 1935.719,
+    "speaker": "Davicho Barona",
+    "text": "prompt, download some Avatar character references, so I can turn the character in this image into a character from the Avatar movie, but still retain his likeness. So, I had this selected, it went in, downloaded a bunch of Avatar references here, and then created these as sort of like, okay, this is his likeness."
+  },
+  {
+    "start_time_seconds": 1936.189,
+    "end_time_seconds": 1950.969,
+    "speaker": "Davicho Barona",
+    "text": "And this is him, like, posed as an avatar, so does this work for you? I didn't think that that was actually where I was gonna stop initially, so I didn't. I just kept going. I grabbed the references it made now with his likeness."
+  },
+  {
+    "start_time_seconds": 1950.969,
+    "end_time_seconds": 1957.399,
+    "speaker": "Davicho Barona",
+    "text": "Grab my start frame, and then just say, okay, now, use these new references that you created."
+  },
+  {
+    "start_time_seconds": 1957.509,
+    "end_time_seconds": 1963.899,
+    "speaker": "Davicho Barona",
+    "text": "To transform him, but keep his pose, the outfit, and accessories, and the living room space, and the."
+  },
+  {
+    "start_time_seconds": 1963.9,
+    "end_time_seconds": 1965.52,
+    "speaker": "Jacques Stroweis",
+    "text": "Oh, we're disabling?"
+  },
+  {
+    "start_time_seconds": 1965.52,
+    "end_time_seconds": 1965.92,
+    "speaker": "Davicho Barona",
+    "text": "entirely."
+  },
+  {
+    "start_time_seconds": 1965.92,
+    "end_time_seconds": 1968.17,
+    "speaker": "Jacques Stroweis",
+    "text": "Is sampled Lighting."
+  },
+  {
+    "start_time_seconds": 1968.17,
+    "end_time_seconds": 1970.399,
+    "speaker": "Davicho Barona",
+    "text": "Yeah, let me… I'm just gonna mute somebody."
+  },
+  {
+    "start_time_seconds": 1972.02,
+    "end_time_seconds": 1975.03,
+    "speaker": "Jacques Stroweis",
+    "text": "So, you can see that…"
+  },
+  {
+    "start_time_seconds": 1975.03,
+    "end_time_seconds": 1976.0,
+    "speaker": "Davicho Barona",
+    "text": "I just muted myself."
+  },
+  {
+    "start_time_seconds": 1976.0,
+    "end_time_seconds": 1977.799,
+    "speaker": "Jacques Stroweis",
+    "text": "getting GI contribution."
+  },
+  {
+    "start_time_seconds": 1978.24,
+    "end_time_seconds": 1980.62,
+    "speaker": "Davicho Barona",
+    "text": "Can everybody… Whatever…"
+  },
+  {
+    "start_time_seconds": 1980.9,
+    "end_time_seconds": 1988.149,
+    "speaker": "Jacques Stroweis",
+    "text": "is being lit. Yeah, whatever GI system is active, in this case, lumen, like regular hardware ray traced lumen. Exactly. Right."
+  },
+  {
+    "start_time_seconds": 1988.57,
+    "end_time_seconds": 1990.21,
+    "speaker": "Davicho Barona",
+    "text": "Okay, so…"
+  },
+  {
+    "start_time_seconds": 1990.48,
+    "end_time_seconds": 2014.609,
+    "speaker": "Davicho Barona",
+    "text": "In here, now I'm just, transforming him into an avatar figure, but I don't want it to look like this, right? I didn't… I didn't mean it for you to get all the stuff in those references. I just wanted the, like, the kind of, like, identity stuff, like, the basic things. I wanted those transported to him. So now, I went in here, and now I see these are my results after doing that."
+  },
+  {
+    "start_time_seconds": 2014.64,
+    "end_time_seconds": 2025.679,
+    "speaker": "Davicho Barona",
+    "text": "And I still am not quite happy with them. I basically said, like, show me more versions of this, but make them more realistic. Like, right now, the lighting and the colors, they look too fake."
+  },
+  {
+    "start_time_seconds": 2025.68,
+    "end_time_seconds": 2050.639,
+    "speaker": "Davicho Barona",
+    "text": "It should look more real, and also the sunglasses should be more mirrored, so I shouldn't be able to see his eyes. And the t-shirt should not have the skin stripes on them, right? So, like, I'm seeing these skin stripes on the t-shirt, the lighting, the color is way too pumped up, just looks very fake here. The sunglasses are not coming through. So again, all those things that I want as feedback, I tell it very naturally, just"
+  },
+  {
+    "start_time_seconds": 2050.639,
+    "end_time_seconds": 2066.859,
+    "speaker": "Davicho Barona",
+    "text": "tell it exactly what's wrong and what it should fix. Now it goes and fixes that and gives me a much better version of this. The sunglasses are there. In fact, I kind of went through a couple more iterations of making sure that the ears were there, and they kind of, like, ripped through the hat, which I really like that effect."
+  },
+  {
+    "start_time_seconds": 2066.86,
+    "end_time_seconds": 2085.02,
+    "speaker": "Davicho Barona",
+    "text": "And so now, I grab my final with my video, and do the same thing, that modified process. I said SweepFlex 1 through Reimagine 3, let me compare. And so now I'm getting those versions, like, really, really good versions of that, honestly. Like, looking actually pretty good. I was very happily surprised."
+  },
+  {
+    "start_time_seconds": 2085.02,
+    "end_time_seconds": 2092.91,
+    "speaker": "Davicho Barona",
+    "text": "So, again, another way of doing this with online references, and then just a few different edit steps to get where you need."
+  },
+  {
+    "start_time_seconds": 2093.13,
+    "end_time_seconds": 2098.879,
+    "speaker": "Davicho Barona",
+    "text": "Okay, last thing here, that I will demo…"
+  },
+  {
+    "start_time_seconds": 2098.88,
+    "end_time_seconds": 2123.49,
+    "speaker": "Davicho Barona",
+    "text": "Oh, I have… I have more, but I'll show… I'll show the other stuff next week. But here, I also wanted to show just kind of what you see when you scroll Instagram, for example. You see dancing characters, and you're like, how do people make that happen? So in Luma, it's really easy to do, especially with motion control here. So in this case, I just went and screen-recorded this girl dancing, right? Some random, I think this is Kyla, actually, but I…"
+  },
+  {
+    "start_time_seconds": 2123.49,
+    "end_time_seconds": 2131.33,
+    "speaker": "Davicho Barona",
+    "text": "some random dance to a Tyla's song, Kyla, Tyla, can't remember her name. So anyway, this is the, this is the dance."
+  },
+  {
+    "start_time_seconds": 2131.35,
+    "end_time_seconds": 2134.639,
+    "speaker": "Davicho Barona",
+    "text": "Now I just match it with a creature that I created."
+  },
+  {
+    "start_time_seconds": 2135.9,
+    "end_time_seconds": 2159.65,
+    "speaker": "Davicho Barona",
+    "text": "So, select one, select the other, and now I just say that same prompt as you saw before. Use Kling 3.0 motion control and character reference on this video to replace the character in the video with the character in the image. And so now I'm getting these results here, which look really, really good. Just getting that exact dance transported into this new character here. And because I'm using Kling."
+  },
+  {
+    "start_time_seconds": 2159.65,
+    "end_time_seconds": 2184.65,
+    "speaker": "Davicho Barona",
+    "text": "That video was originally 13 seconds. I can still go all the way to 13 seconds. Same thing goes for Modify with Ray Pi. You can go all the way up to 18 seconds with just a start frame. Again, same process here, just different characters. You can really see the same dance happening here, translating all the facial expressions really, really well. Another character here, again, just running through some of the"
+  },
+  {
+    "start_time_seconds": 2184.65,
+    "end_time_seconds": 2188.1,
+    "speaker": "Davicho Barona",
+    "text": "different executions here. They look really good."
+  },
+  {
+    "start_time_seconds": 2189.45,
+    "end_time_seconds": 2213.609,
+    "speaker": "Davicho Barona",
+    "text": "I also will show more dances here. Here's another dance, just a different example of how to do this here. Same thing, girl dancing, adding, you know, my creature that I created, and then having it do that same dance exactly the way that it's done in that, initial video. Looks really, really good. Like, the effects are looking really sharp. So, as you can see, obviously, this is my kind of, like, technical prompt."
+  },
+  {
+    "start_time_seconds": 2213.61,
+    "end_time_seconds": 2216.91,
+    "speaker": "Davicho Barona",
+    "text": "But you can still get away with these natural"
+  },
+  {
+    "start_time_seconds": 2216.97,
+    "end_time_seconds": 2240.959,
+    "speaker": "Davicho Barona",
+    "text": "prompts as well. Make the character in the image, dance like the character in the video, and it'll pick that up and do a really, really good job kind of translating all of that, into this new, transformed video. One thing to watch out for, though, is, for example, in this case, you know, this character's got this, like, really tall, kind of, like, weird appendage on its head."
+  },
+  {
+    "start_time_seconds": 2240.96,
+    "end_time_seconds": 2265.95,
+    "speaker": "Davicho Barona",
+    "text": "And when you do a dance that is going to kind of, like, involve the top of the head in this case, you'll see the hand will kind of just go through it. Like, I don't know if you see that, it kind of just kind of goes through that. So you just want to make sure that you are taking into account what the original video had available to it. Obviously, it didn't have a big appendage to kind of, like, bend as the hand goes over."
+  },
+  {
+    "start_time_seconds": 2265.95,
+    "end_time_seconds": 2279.41,
+    "speaker": "Davicho Barona",
+    "text": "So you just be aware of what happens. Like, same thing goes here. When I use this creature here for that dance, like, everything works fine, but I am going to, when the hand goes over the head."
+  },
+  {
+    "start_time_seconds": 2279.41,
+    "end_time_seconds": 2289.559,
+    "speaker": "Davicho Barona",
+    "text": "it's gonna go through that fabric, or whatever that is a little bit, as opposed to making it move, because that did not happen in the original video."
+  },
+  {
+    "start_time_seconds": 2289.82,
+    "end_time_seconds": 2306.699,
+    "speaker": "Davicho Barona",
+    "text": "More examples here. Same thing, just another video. This, again, I just recorded this, like, just a screen record or a screen capture of just a dance. I'm doing the same stuff here, just going, you know, adding the image, and just doing the same kind of"
+  },
+  {
+    "start_time_seconds": 2306.7,
+    "end_time_seconds": 2310.44,
+    "speaker": "Davicho Barona",
+    "text": "Process here, telling it to, replace"
+  },
+  {
+    "start_time_seconds": 2310.44,
+    "end_time_seconds": 2326.46,
+    "speaker": "Davicho Barona",
+    "text": "the character in the, in the video with the character in the image, or making it dance, rather. So that is that. Anybody have any questions on that? I… next week, I'm gonna go over some transitions, and just other videos."
+  },
+  {
+    "start_time_seconds": 2326.46,
+    "end_time_seconds": 2330.979,
+    "speaker": "Davicho Barona",
+    "text": "It's weird, it's like failing to load my assets sometimes. Let me try to reload this."
+  },
+  {
+    "start_time_seconds": 2331.82,
+    "end_time_seconds": 2345.439,
+    "speaker": "Davicho Barona",
+    "text": "I'm gonna… I'm gonna go over some, like, creating more kind of virally-looking videos with, you know, starting with Uni One that's so good at making things very realistic, and then being able to, like."
+  },
+  {
+    "start_time_seconds": 2345.44,
+    "end_time_seconds": 2360.61,
+    "speaker": "Davicho Barona",
+    "text": "animate these things in a way that looks really viral and really kind of, like, weird and crazy and trippy. I'll go over these kinds of stuff, also, like, these fray… freeze frame-looking animations like this."
+  },
+  {
+    "start_time_seconds": 2360.61,
+    "end_time_seconds": 2372.33,
+    "speaker": "Davicho Barona",
+    "text": "Where the camera is really just kind of, like, circling, everything is sort of frozen in midair. I see this as being kind of a trend on social. I will also go over some transitions."
+  },
+  {
+    "start_time_seconds": 2372.33,
+    "end_time_seconds": 2376.809,
+    "speaker": "Davicho Barona",
+    "text": "Going from, like, how to get images that are"
+  },
+  {
+    "start_time_seconds": 2377.54,
+    "end_time_seconds": 2387.46,
+    "speaker": "Davicho Barona",
+    "text": "In the same timeline, but separated by time a little bit in some way, and then animating them both back together in a way that's, like."
+  },
+  {
+    "start_time_seconds": 2387.56,
+    "end_time_seconds": 2400.78,
+    "speaker": "Davicho Barona",
+    "text": "pleasing, and that they morph in a clean way, and then how to get those to morph in ways that are, like, also a little bit more targeted, with different effects, if you will. Things that maybe are, like."
+  },
+  {
+    "start_time_seconds": 2400.78,
+    "end_time_seconds": 2419.529,
+    "speaker": "Davicho Barona",
+    "text": "elemental, with wind, or fire, or things like this. I'll go over this next time, and also more transitions here as well, achieving, different things like, like this, you know, kind of like these video games, sort of select screens, or things like this. I will go over that next week. But…"
+  },
+  {
+    "start_time_seconds": 2419.79,
+    "end_time_seconds": 2427.89,
+    "speaker": "Davicho Barona",
+    "text": "Any questions on the stuff that you just saw before here with, video-to-video or motion control? Arturia, what's up?"
+  },
+  {
+    "start_time_seconds": 2429.01,
+    "end_time_seconds": 2444.85,
+    "speaker": "Artur Monteiro",
+    "text": "I'd like to add some comments about what the Vitu is doing, is that we're… we still have the tutorials and the documentation stuff from the modify guides that you used to have. I just put it here on the chat."
+  },
+  {
+    "start_time_seconds": 2444.85,
+    "end_time_seconds": 2450.199,
+    "speaker": "Artur Monteiro",
+    "text": "David, if you can make… click it to showcase in the screen."
+  },
+  {
+    "start_time_seconds": 2450.2,
+    "end_time_seconds": 2457.669,
+    "speaker": "Artur Monteiro",
+    "text": "Because we are being, doing updates weekly, new articles every day, but we still have some interesting"
+  },
+  {
+    "start_time_seconds": 2457.67,
+    "end_time_seconds": 2470.82,
+    "speaker": "Artur Monteiro",
+    "text": "information from our previous Learning Hub. So, if you guys wanted to check it out, modify with Raytree, we still have these tips, these instructions, and maybe, in the future, we will also translate this for the new"
+  },
+  {
+    "start_time_seconds": 2470.83,
+    "end_time_seconds": 2486.249,
+    "speaker": "Artur Monteiro",
+    "text": "Learning Center, I don't know, someone called Luma Page is an excellent name. I will always call Luma Page from now on. And yeah, if you guys want more information about Modify, check this, and come back again next week, too, to see more stuff from the video."
+  },
+  {
+    "start_time_seconds": 2487.52,
+    "end_time_seconds": 2488.88,
+    "speaker": "Davicho Barona",
+    "text": "Perfect. Thanks, man."
+  },
+  {
+    "start_time_seconds": 2489.11,
+    "end_time_seconds": 2497.44,
+    "speaker": "Davicho Barona",
+    "text": "Yeah, and you know what? There are, there are…"
+  },
+  {
+    "start_time_seconds": 2498.47,
+    "end_time_seconds": 2500.86,
+    "speaker": "Davicho Barona",
+    "text": "A few different guides on this."
+  },
+  {
+    "start_time_seconds": 2502.09,
+    "end_time_seconds": 2506.779,
+    "speaker": "Davicho Barona",
+    "text": "The one thing that is really important here"
+  },
+  {
+    "start_time_seconds": 2507.07,
+    "end_time_seconds": 2509.449,
+    "speaker": "Davicho Barona",
+    "text": "that I don't see in this…"
+  },
+  {
+    "start_time_seconds": 2509.67,
+    "end_time_seconds": 2513.29,
+    "speaker": "Davicho Barona",
+    "text": "Guide here. It are the actual strengths."
+  },
+  {
+    "start_time_seconds": 2513.63,
+    "end_time_seconds": 2517.559,
+    "speaker": "Davicho Barona",
+    "text": "The strengths are really important. Are they in here?"
+  },
+  {
+    "start_time_seconds": 2518.9,
+    "end_time_seconds": 2521.079,
+    "speaker": "Artur Monteiro",
+    "text": "I think they are, if you scroll a little bit."
+  },
+  {
+    "start_time_seconds": 2521.57,
+    "end_time_seconds": 2523.5,
+    "speaker": "Artur Monteiro",
+    "text": "Yeah, strength levels there."
+  },
+  {
+    "start_time_seconds": 2523.5,
+    "end_time_seconds": 2524.88,
+    "speaker": "Davicho Barona",
+    "text": "Yeah, right here."
+  },
+  {
+    "start_time_seconds": 2526.79,
+    "end_time_seconds": 2528.31,
+    "speaker": "Davicho Barona",
+    "text": "This is important."
+  },
+  {
+    "start_time_seconds": 2533.43,
+    "end_time_seconds": 2544.919,
+    "speaker": "Davicho Barona",
+    "text": "Yeah, there's more information to be had there. But anyway, you're right, this is definitely a good place to start, too. And we'll make more of this available on"
+  },
+  {
+    "start_time_seconds": 2544.92,
+    "end_time_seconds": 2556.76,
+    "speaker": "Davicho Barona",
+    "text": "Online. And this whole board, I will also make this available. Please feel free to email me, I'm happy to share this for now, but this will also be in the Learning Center, we'll put this up."
+  },
+  {
+    "start_time_seconds": 2556.76,
+    "end_time_seconds": 2559.789,
+    "speaker": "Davicho Barona",
+    "text": "I just have to finalize a couple things."
+  },
+  {
+    "start_time_seconds": 2560.19,
+    "end_time_seconds": 2563.2,
+    "speaker": "Davicho Barona",
+    "text": "And, and I'll put this up there and show you."
+  },
+  {
+    "start_time_seconds": 2563.48,
+    "end_time_seconds": 2574.979,
+    "speaker": "Davicho Barona",
+    "text": "and show it to you with all the prompts and all the things, so you can actually copy it. But feel free to email me if you want to, want me to share a copy of this board with you as it is."
+  },
+  {
+    "start_time_seconds": 2575.44,
+    "end_time_seconds": 2581.109,
+    "speaker": "Davicho Barona",
+    "text": "And if you want to see the recording of today's session as well, I can send that to you, no problem."
+  },
+  {
+    "start_time_seconds": 2582.69,
+    "end_time_seconds": 2596.169,
+    "speaker": "Davicho Barona",
+    "text": "Yeah, okay. I have to take off. No, no other questions right now for me. I will leave you in the hands of Artur and Sharky, probably for just another few minutes, actually. I think, I think we're out of time in general."
+  },
+  {
+    "start_time_seconds": 2596.17,
+    "end_time_seconds": 2609.3,
+    "speaker": "Davicho Barona",
+    "text": "But anyway, thank you guys. Yeah, we are totally out of time. So I'm just gonna… I'm just gonna close this out. If you have any other questions, please speak up in the next minute as I'm blabbering to try to…"
+  },
+  {
+    "start_time_seconds": 2610.78,
+    "end_time_seconds": 2626.43,
+    "speaker": "Davicho Barona",
+    "text": "to try to cover some time. No problem, David, no problem, Al. It's great to see you guys, and we will see you guys again next week to finish out this process and, talk about a couple more things, as well."
+  },
+  {
+    "start_time_seconds": 2627.91,
+    "end_time_seconds": 2628.77,
+    "speaker": "Davicho Barona",
+    "text": "Cool."
+  },
+  {
+    "start_time_seconds": 2628.9,
+    "end_time_seconds": 2631.45,
+    "speaker": "Davicho Barona",
+    "text": "Thank you guys very, very much."
+  },
+  {
+    "start_time_seconds": 2631.71,
+    "end_time_seconds": 2636.459,
+    "speaker": "Davicho Barona",
+    "text": "And we will see you guys, again next week."
+  },
+  {
+    "start_time_seconds": 2637.88,
+    "end_time_seconds": 2638.7,
+    "speaker": "Davicho Barona",
+    "text": "Cheers."
+  }
+]

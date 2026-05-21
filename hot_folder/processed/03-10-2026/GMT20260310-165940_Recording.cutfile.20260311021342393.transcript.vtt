@@ -1,0 +1,2198 @@
+WEBVTT
+
+1
+00:00:24.098 --> 00:00:24.858
+Davicho Barona: boards.
+
+
+2
+00:00:25.228 --> 00:00:29.237
+Davicho Barona: I am going to be introing the new
+
+
+3
+00:00:29.238 --> 00:00:52.868
+Davicho Barona: Luma Agents, which really, it actually lives in a different URL, but when you're in boards, you can access it through here. This little Luma app button will bring you out into this new account, and Mike, you'll notice a credit card paywall, which you're not getting charged for, it's really to keep out the bots. If you have any questions about that.
+
+
+4
+00:00:52.868 --> 00:00:53.708
+Davicho Barona: like Dr.
+
+
+5
+00:00:53.708 --> 00:01:06.747
+Davicho Barona: I was pointing out here, just feel free to email support, and they'll give you the rundown of exactly why, and sort of tell you, what will happen. It's not like you'll be getting charged, it's just a way to kind of protect ourselves
+
+
+6
+00:01:06.748 --> 00:01:16.168
+Davicho Barona: from a lot of, mostly Russian bots, and we, we just… it's an expensive platform if we let it run wild like that, so,
+
+
+7
+00:01:16.168 --> 00:01:18.318
+Mike Matsumoto: Yeah, that's really smart, really smart.
+
+
+8
+00:01:19.008 --> 00:01:26.407
+Davicho Barona: Cool. So, Mike, before I jump in, are you in Dream Machine, and do you have any burning questions about this platform?
+
+
+9
+00:01:26.408 --> 00:01:41.828
+Mike Matsumoto: I am not injury machine, and actually, I am quite new to all of this, so I'm just gonna listen along and watch while I can, and just to absorb it all, and then, you know, maybe you and I can have a follow-up.
+
+
+10
+00:01:42.158 --> 00:01:42.728
+Mike Matsumoto: soon.
+
+
+11
+00:01:43.148 --> 00:01:59.967
+Davicho Barona: That sounds great. And also, Mike, I dropped in the chat, I dropped a, a registration link for the ongoing webinar that happens on Wednesdays. We are, like, ramping up the amount of webinars that happen, for this launch period, but…
+
+
+12
+00:01:59.978 --> 00:02:12.197
+Davicho Barona: ongoing, that one is, like, a permanent, link to register, and you can attend, like, every Wednesday, I host these, at this, at this same time, so feel free to sign up for as many of those as you want.
+
+
+13
+00:02:12.818 --> 00:02:14.498
+Mike Matsumoto: Oh, that's awesome, thank you so much.
+
+
+14
+00:02:14.498 --> 00:02:30.187
+Davicho Barona: Yeah, you bet. Okay, so when you come into this, new platform here, which is app.lumalabs.ai, or again, accessed through this button in your current Dream Machine, this Luma app button at the top above boards,
+
+
+15
+00:02:30.568 --> 00:02:54.218
+Davicho Barona: after you sign up for that account, after you get through that, you'll get to this, like, this is kind of the homepage here. And in here, you're going to see a couple things that I want to point out. Number one, obviously, you don't have as many boards as I already have set up here. You'll have just this blank, plus sign here, and you'll have these up here, which are what we call seed boards.
+
+
+16
+00:02:54.218 --> 00:02:59.878
+Davicho Barona: These are, like, examples. They're, like, quick workflows set up for… to introduce you to different flows.
+
+
+17
+00:02:59.968 --> 00:03:14.038
+Davicho Barona: when you jump in here, you also have a certain amount of credits that are aside from whatever subscription you end up getting, or whatever trial credits you end up getting, or whatever credits you have from your shift
+
+
+18
+00:03:14.038 --> 00:03:26.307
+Davicho Barona: from Dream Machine Classic to this, which you will have a certain amount of credits if you are a current subscriber, so take advantage of that. Anyway, these seed boards are really interesting. As soon as you open them.
+
+
+19
+00:03:26.508 --> 00:03:28.838
+Davicho Barona: The agent will start talking to you.
+
+
+20
+00:03:28.838 --> 00:03:53.678
+Davicho Barona: And you'll be able to kind of commit to one of these short workflows here, and you'll see a few different ones, and some may be interesting to you, some may not. These are really designed to give you a very quick intro, where it's, like, really laid out for you, and things start happening fast, and you're just kind of picking from options that the agent is going to give you, and you're just going to run this kind of quick workflow. These are great introductions.
+
+
+21
+00:03:53.678 --> 00:04:08.217
+Davicho Barona: I'll touch on these a little bit deeper in just a minute, but first I want to run down, like, what the interface is, and to just show you what things are like in here. So I click that plus button, and it brings me here to an empty board.
+
+
+22
+00:04:08.368 --> 00:04:20.588
+Davicho Barona: now I'm here, ready to start creating. As you see, it's a big, empty, infinite canvas here. I can zoom in or out with just my gesture trackpad, for example, or my mouse wheel.
+
+
+23
+00:04:20.588 --> 00:04:31.548
+Davicho Barona: And in here, you'll notice a few different key elements. Number one, your chat here, this agent chat that lives on the right side. Also, please feel free to stop me and ask me any questions.
+
+
+24
+00:04:31.548 --> 00:04:48.397
+Davicho Barona: The agent primarily lives in this chat window on the right side. If you guys have used ChatGPT or Gemini or Claude, all of that and beyond is built under the hood here, so get used to talking in the same way that you talk to any other LLM. The kicker is.
+
+
+25
+00:04:48.398 --> 00:04:54.058
+Davicho Barona: This LLM is trained with tons of different skills and strategies around creative actions.
+
+
+26
+00:04:54.058 --> 00:05:13.438
+Davicho Barona: all of which are now connected to a bunch of different models. So not only… obviously, this is multimodal, so you're here to create text, or edit, images, video, and audio. And not only with our in-house models, like the Ray 3 models, or Image V2, or Photon, but with Image
+
+
+27
+00:05:13.648 --> 00:05:33.628
+Davicho Barona: You now have Nano Banana, Banana Pro, GPT Image 1.5, and Seadream, and probably more coming as time goes on as well. And with video, you will also have our, of course, our models, but you have Sora 2, you have Veo, Veo 3.1, Kling 2.6, Kling 3 will also be coming here, and we'll keep updating this list.
+
+
+28
+00:05:33.628 --> 00:05:38.288
+Davicho Barona: As we vet models, that we feel are safe for people to use.
+
+
+29
+00:05:38.288 --> 00:05:57.407
+Davicho Barona: having to do with privacy and indemnifications that we offer enterprise customers, etc. Anyone with those upper-level plans gets those protections, and we… so we have to kind of vet these models, make sure that your data is kind of being protected, and not just going off, you know, overseas somewhere without, without any oversight.
+
+
+30
+00:05:57.408 --> 00:05:58.508
+Mike Matsumoto: That's amazing.
+
+
+31
+00:05:58.508 --> 00:06:08.377
+Davicho Barona: Also, audio, you have, speech models, music models, and sound effects. You also have linked, lip sync, under the hood here as well.
+
+
+32
+00:06:08.378 --> 00:06:31.738
+Davicho Barona: And you can create anything you want with the agent by just talking to it, basically asking it to make an image. You can, tell it to make it with a certain model. You can tell it to make 6 images, 10 images, 12. Same with video. This really is meant to be something where it's truly scalable, and you can do it, with natural language.
+
+
+33
+00:06:31.738 --> 00:06:56.738
+Davicho Barona: like, just asking it for something, kind of as a director would the production artist or their production team. The more you get used to talking to this, like, as if it was a person, and having it really be like an assistant, the better your time is gonna be, as opposed to just thinking, I need to craft my prompt, and just make it this, like, perfect prompt, and then throw it out there, and then, you know, when it comes back, if I don't like it, I delete it and start again.
+
+
+34
+00:06:56.738 --> 00:07:01.637
+Davicho Barona: And I almost want you to see this as, like, a collaborative feedback loop with the agent.
+
+
+35
+00:07:02.018 --> 00:07:25.617
+Davicho Barona: as I say that, you not only are able to create in that sense with natural language, kind of this back and forth, but you also can create with this more traditional UI here, where you're, you know, adding a reference, typing in your prompt, setting a couple different settings here, and then just hitting create and drop it on your board that way.
+
+
+36
+00:07:25.618 --> 00:07:42.017
+Davicho Barona: Same with video, you can do… you can do these kinds of actions as well, but I urge you to also really try things with the agent, because that's when things truly, truly get really interesting. The agent as well has a brainstorm mode and a create mode.
+
+
+37
+00:07:42.318 --> 00:08:07.197
+Davicho Barona: I don't think you have Zach down here, this is internal only, but with the Brainstorm mode, you can just use this for planning, and really, you're just talking to the agent. It's… you're not getting charged very much at all for these chat tokens here. You really only start getting charged once you go into create mode, and you start dropping assets into the… into the board. But Brainstorm is awesome. It truly helps you plan, it helps you kind of go back and forth
+
+
+38
+00:08:07.198 --> 00:08:31.877
+Davicho Barona: in a very reminiscent to ChatGPT or Claude mode of going back and forth, asking for guides, asking for step-by-step for best practices, all of that stuff, you can use Brainstorm for. You can also use Create Mode for, and even ask it to create a text document based on something. And something that's really important to point out.
+
+
+39
+00:08:31.878 --> 00:08:55.668
+Davicho Barona: is that it is here to also help you figure out how to use it. So, it has a huge knowledge base on itself, on its tools, and on how it communicates on all kinds of different things. Of course, it can search the web, it can analyze your files, you can drop in a PDF and ask it about page 30, it could be brand guidelines, it could be a script.
+
+
+40
+00:08:55.668 --> 00:09:15.258
+Davicho Barona: You can ask it so many different things to analyze and then create new information from those files. So, huge, huge capabilities of this agent, and my suggestion is just try to lean on it. For anything you're used to leaning on, ChatGPT, etc, try to keep everything under one roof and see how it goes. Because the cool thing…
+
+
+41
+00:09:15.258 --> 00:09:19.118
+Davicho Barona: Is it has contextual memory about everything that's on your board.
+
+
+42
+00:09:19.608 --> 00:09:22.017
+Davicho Barona: Another thing here is…
+
+
+43
+00:09:22.018 --> 00:09:39.987
+Davicho Barona: this is a shareable canvas, so I can hit share and share this board with anybody that I give the link to. I can just add their email address here, and give them a permission to view or edit. I can copy the link, and also share with, you know, anyone with the link can view or edit, etc.
+
+
+44
+00:09:39.988 --> 00:09:41.237
+Davicho Barona: So, really fun.
+
+
+45
+00:09:41.438 --> 00:10:01.437
+Davicho Barona: aspect of this is that shareable sort of multiplayer canvas aspect. And then related to that, you have some canvas tools down here as well. You have shapes, doodle, text boxes, sticky notes, etc. So I can, you know, leave a sticky note for my team here. I could also change the color of that sticky note.
+
+
+46
+00:10:01.648 --> 00:10:17.647
+Davicho Barona: maybe bring that elsewhere and mark up different assets. I can, of course, doodle in here, I can create text boxes, and do things that are helpful to me or my team to annotate my board in different ways, or annotate my assets in different ways.
+
+
+47
+00:10:18.078 --> 00:10:20.728
+Davicho Barona: Any questions that you guys may have so far?
+
+
+48
+00:10:22.838 --> 00:10:30.937
+Mike Matsumoto: I have one. When we're starting a new board, a new prompt, can you save one and then start another one?
+
+
+49
+00:10:31.808 --> 00:10:39.637
+Davicho Barona: Yeah, so here, like, for example, I can come in here, and I'll click on this top here, and I'll rename this board to just call it something, right?
+
+
+50
+00:10:39.848 --> 00:10:58.877
+Davicho Barona: and then I can now just back out, and now I have that board saved in here, and I can just start endless amounts of boards, however much I want. Right? And here, I'll open up a board that is maybe more complete here. This is kind of a demo board where I just have different things here that I've dropped in the board.
+
+
+51
+00:10:58.878 --> 00:11:15.907
+Davicho Barona: to, to showcase, you know, different workflows, etc. Some things are unfinished, some things are kind of in the works, and some things are more finalized. But in here, like, you can see, like, I'm zooming out, I can drop all kinds of different things on this board here.
+
+
+52
+00:11:16.068 --> 00:11:29.558
+Davicho Barona: And I can really start fleshing out all kinds of different stuff. Here's an example of some files that I'm giving it. For example, I uploaded a style guide, I uploaded some screens, from,
+
+
+53
+00:11:29.558 --> 00:11:48.358
+Davicho Barona: from, like, mock-ups that I have. Like, in this case, I'm uploading some brand copy, uploading some, different copy in general to give it more information, and then from here, I can just, using these references, I can start creating all kinds of different assets here.
+
+
+54
+00:11:48.418 --> 00:12:03.958
+Davicho Barona: there's text, you know, you have Nano Banana Pro here, so text is really great, in here as well. I can for sure start creating all kinds of different things, mock-ups and products, all of it using… leaning on the agent.
+
+
+55
+00:12:03.958 --> 00:12:15.417
+Davicho Barona: all of it leaning on references, super important, having my kind of core references, what I like to call my master reference assets. And from there, I'm always
+
+
+56
+00:12:15.418 --> 00:12:31.437
+Davicho Barona: referencing them to the agent. How I reference things is literally, every time I click on something, you'll see it being loaded up into my agent chat, so now I know that whatever I'm telling the agent, I'm actually referencing that. I can do the same thing with a text box.
+
+
+57
+00:12:31.438 --> 00:12:37.748
+Davicho Barona: you can see it selected and brought it in here. I can do the same thing with a file. It's also being brought in here.
+
+
+58
+00:12:37.888 --> 00:12:40.467
+Davicho Barona: And every time I select an asset.
+
+
+59
+00:12:40.508 --> 00:13:00.068
+Davicho Barona: you'll see these menus kind of pop up above and below it. So, if I… if I click on it, I can also shift-click. If I hold shift and click on multiple assets, I'm now starting to populate my chat with multiple assets as my references. Now I can talk to the agent about all of those different things.
+
+
+60
+00:13:00.068 --> 00:13:18.747
+Davicho Barona: Also, when I do click on it, you'll notice a little menu pop up above it, and a little text box pop up below it. This text box is the same as, like, the agent text box here, so this is me talking to the agent about this asset. Also, if you notice, I can activate voice mode if you have a mic.
+
+
+61
+00:13:18.748 --> 00:13:24.697
+Davicho Barona: Which also helps me just prompt in real time with my voice, picks it up really, really well.
+
+
+62
+00:13:24.878 --> 00:13:30.177
+Davicho Barona: Above it, you're gonna see a few different, things here as well.
+
+
+63
+00:13:30.178 --> 00:13:47.627
+Davicho Barona: you can create frames around different objects in order to further organize, and in order to further… to give context further to the agent. So, for example, if I select these multiple assets here, and I were to hit this frame button here, or it's… the shortcut is F,
+
+
+64
+00:13:47.718 --> 00:13:58.288
+Davicho Barona: then I'm creating this frame around them. Now I've grouped them, basically. And now I can name that frame something like Screens 1, or Screens
+
+
+65
+00:13:58.528 --> 00:13:59.748
+Davicho Barona: mock-up
+
+
+66
+00:14:00.238 --> 00:14:13.218
+Davicho Barona: 1, or something like this. Now I can use this name to reference to my agent. Without even necessarily having to touch it. I can say, you know, use, the…
+
+
+67
+00:14:13.918 --> 00:14:23.958
+Davicho Barona: the contents of frame, or whatever, what did I call it? Screen Mockup 1.
+
+
+68
+00:14:24.048 --> 00:14:39.117
+Davicho Barona: and blah blah blah blah. So, it's really nice to be able to, group things, frame them, rename them. I can also rename my files themselves if I just, like, double-click on the name. Now I can rename, like, Frog Mascot.
+
+
+69
+00:14:39.398 --> 00:15:03.498
+Davicho Barona: something like that. And now, again, it also now has context of that name. So I can tell it, like, look for the file name Frog Mascot, and make X with, you know, based on that, etc. So, really, also, a nice thing to note is that you can frame things, group them, rename them, and now the agent will have context that's a little bit more direct.
+
+
+70
+00:15:03.498 --> 00:15:06.408
+Davicho Barona: If you don't want to always be kind of, like, selecting them.
+
+
+71
+00:15:06.408 --> 00:15:20.568
+Davicho Barona: Something else in here, you can obviously download an asset. I can get more information about an asset, like, if there's something I've created in here, let me make sure… something I've created in this board.
+
+
+72
+00:15:20.568 --> 00:15:27.997
+Davicho Barona: Let's see this… yeah, like, for example, this I created in this board, so you're gonna be able to get, like… you'll see the prompt.
+
+
+73
+00:15:27.998 --> 00:15:41.627
+Davicho Barona: that the agent gave to, the image model, I think this was probably Nano Banana Pro, because when I give the agent instructions, in this case, I basically said, I grabbed my sketch, like, I grabbed this sketch.
+
+
+74
+00:15:41.968 --> 00:15:58.218
+Davicho Barona: And I told the agent to retexture, like, I was like, retexture this sketch to look like a dystopian, rusty structure, with a sandpit in the
+
+
+75
+00:15:58.548 --> 00:16:10.718
+Davicho Barona: the center, or something like this, right? So I send this off, the agent then basically mauls us over, enhances my prompt, and sends out a really much more detailed prompt
+
+
+76
+00:16:10.718 --> 00:16:34.818
+Davicho Barona: to the image model that it's using. I can tell it which image model to use, or I can let it choose for me, depending on the task, and depending on, like, different, aspects of the image, like if it's certain edits, or if it's certain styles, maybe it'll go for a different, image model. But anyway, I can see, if I hit the info button, I can see that prompt.
+
+
+77
+00:16:34.968 --> 00:16:50.297
+Davicho Barona: that the agent gave to the model. And sometimes this is just really helpful for me to be able to see it, I can actually edit this, I can take this and use it as, like, a framework in some way. It's just really useful to be able to have access to this.
+
+
+78
+00:16:50.648 --> 00:16:54.268
+Davicho Barona: Also, if I right-click on an asset.
+
+
+79
+00:16:54.498 --> 00:17:10.908
+Davicho Barona: I'm gonna see all kinds of more menu items here. I can now make a video using that, and, you know, choosing one of these models. I can use that as a keyframe to make a video. I can make another image based on that, which means, basically, I'm gonna drop that in as a reference now.
+
+
+80
+00:17:10.908 --> 00:17:33.158
+Davicho Barona: I can go in here and, reframe it. I can remove the background if there's a subject clear in the foreground. I can extract the color palette. I can label it approved, or pending, or rejected, something that's also actually in this top menu as well. That's if I'm working with a team, or if I want the agent to just pick up on things that are approved by me.
+
+
+81
+00:17:34.448 --> 00:17:44.577
+Davicho Barona: I can come in here, and I can copy it, I can download it, I can do the same things that I was doing here as well. So, lots of options here, that you have.
+
+
+82
+00:17:45.228 --> 00:17:47.288
+Davicho Barona: Did you… was there a question?
+
+
+83
+00:17:47.588 --> 00:17:49.598
+Davicho Barona: Oh, hey, Nikki, how are you? Welcome.
+
+
+84
+00:17:49.938 --> 00:17:51.358
+Nicky Keller: Thank you. Hi.
+
+
+85
+00:17:51.578 --> 00:17:52.168
+Davicho Barona: No problem.
+
+
+86
+00:17:52.168 --> 00:17:54.348
+Mike Matsumoto: I have, I have a quick question.
+
+
+87
+00:17:54.348 --> 00:17:54.858
+Davicho Barona: Yeah, tell me.
+
+
+88
+00:17:54.858 --> 00:18:03.698
+Mike Matsumoto: When you're creating those images, and go back to the sandpit that you were just clicking on, for…
+
+
+89
+00:18:03.708 --> 00:18:15.627
+Mike Matsumoto: for when you can create another image off of that, does it show you which, what it was generated with? So, was this originally done in Nano? Was it really done in…
+
+
+90
+00:18:15.628 --> 00:18:26.467
+Davicho Barona: Yeah, and you know what, I usually… I usually do see it here. I believe this was done in Nano. I can… I can also just, like, select it and ask, like, what…
+
+
+91
+00:18:26.468 --> 00:18:27.338
+Mike Matsumoto: Which, yeah.
+
+
+92
+00:18:27.338 --> 00:18:27.878
+Davicho Barona: model.
+
+
+93
+00:18:27.878 --> 00:18:28.428
+Mike Matsumoto: Gotcha.
+
+
+94
+00:18:28.428 --> 00:18:32.407
+Davicho Barona: Did you… yeah, use to make this, something like that?
+
+
+95
+00:18:33.148 --> 00:18:48.777
+Davicho Barona: And then it will, you know, you can see it down here, like, trying to figure, you know, trying to tell me what it, what it was made in. And then, oh, so it wasn't generated in our session, so now it's gonna go look at the metadata, and now it can tell me.
+
+
+96
+00:18:48.778 --> 00:18:49.398
+Mike Matsumoto: In the manner.
+
+
+97
+00:18:49.398 --> 00:18:51.028
+Davicho Barona: with Nano Banana Pro.
+
+
+98
+00:18:51.678 --> 00:18:53.287
+Mike Matsumoto: Super cool. Cool. Thank you.
+
+
+99
+00:18:53.538 --> 00:19:01.568
+Davicho Barona: Yeah, no doubt. Yeah, so lots of options here. Again, I could walk you through, like, as we continue… yeah, Maria.
+
+
+100
+00:19:01.568 --> 00:19:12.548
+Dr. Maria Ian: Yeah, on… at your event on Thursday, it was emphasized that longer prompts work Can work with this.
+
+
+101
+00:19:13.048 --> 00:19:13.428
+Davicho Barona: Totally.
+
+
+102
+00:19:13.428 --> 00:19:16.948
+Dr. Maria Ian: Can you give… yes, so can you give an example
+
+
+103
+00:19:17.128 --> 00:19:22.547
+Dr. Maria Ian: comparing and contrasting. I know we had spoken at… during one of these seminars about
+
+
+104
+00:19:22.638 --> 00:19:37.498
+Dr. Maria Ian: the fact that for the dream machine, you know, it's very useful to have detailed prompts. Like, really be very, very specific, instead of just describing an action overall, like, be very specific in terms of what
+
+
+105
+00:19:37.558 --> 00:19:47.408
+Dr. Maria Ian: exactly you want the image to do. Now, can you give a compare and contrast a long prompt
+
+
+106
+00:19:47.568 --> 00:19:56.278
+Dr. Maria Ian: for Luma agents, comparing it to, contrasting to a specific prompt, which is also sort of a longer prompt.
+
+
+107
+00:19:56.388 --> 00:20:00.437
+Dr. Maria Ian: For the classical, Dream Machine.
+
+
+108
+00:20:01.118 --> 00:20:01.878
+Davicho Barona: So, even…
+
+
+109
+00:20:01.878 --> 00:20:02.228
+Dr. Maria Ian: Yeah.
+
+
+110
+00:20:02.228 --> 00:20:09.187
+Davicho Barona: even this example is actually not bad, the one that we just used, right? So, like, when I went from this sketch to this.
+
+
+111
+00:20:09.248 --> 00:20:20.847
+Davicho Barona: this is the prompt that I gave it, right? I just told it, retexture of this sketch to look like a dystopian, rusty structure with a sample in the center. Very brief, you know, this is basically a single sentence.
+
+
+112
+00:20:20.848 --> 00:20:33.767
+Davicho Barona: And then you can… then you can see here this prompt that the agent used to give to Nanobanana. And remember, and I don't know if you've used Nano Banana Pro, for example, elsewhere, or Veo 3.1, the context is huge.
+
+
+113
+00:20:33.768 --> 00:20:34.668
+Davicho Barona: So…
+
+
+114
+00:20:34.738 --> 00:20:48.658
+Davicho Barona: because this works with all these different models, every one of these models may have a different way that they like to be prompt, but let me, like… and I'll go back in here, like, here's a massive prompt here that was used
+
+
+115
+00:20:48.738 --> 00:20:53.487
+Davicho Barona: in conjunction with my short prompt. So it can handle something like this.
+
+
+116
+00:20:53.678 --> 00:20:54.548
+Davicho Barona: Right?
+
+
+117
+00:20:55.028 --> 00:20:57.558
+Davicho Barona: Super long, very detailed, right?
+
+
+118
+00:20:57.558 --> 00:21:04.578
+Dr. Maria Ian: Right, so, yeah, so if a person, were to type in that prompt, what, like, how…
+
+
+119
+00:21:04.818 --> 00:21:12.177
+Dr. Maria Ian: what would they, like, focus on? How would they structure it, just so I can get a little bit better of an idea?
+
+
+120
+00:21:12.648 --> 00:21:18.767
+Davicho Barona: Well, actually, here, I'll give you an even better one. If I take this… here, let's say this is my prompt, right?
+
+
+121
+00:21:19.228 --> 00:21:33.137
+Davicho Barona: Remember, I am now using a pretty powerful set of LLMs here that are built into this that can even help me expand. So I can take this prompt, I can just say, like, I can come into this chat and say.
+
+
+122
+00:21:33.968 --> 00:21:50.607
+Davicho Barona: help me expand this prompt into a very detailed, instruction for Nano Banana Pro, for example. Or, to animate
+
+
+123
+00:21:50.838 --> 00:21:57.888
+Davicho Barona: with… or to create a video, right? To create a video with Veo 3.1.
+
+
+124
+00:21:57.898 --> 00:22:08.117
+Davicho Barona: And I can come in, I can, you know, just… I'll put a colon here, and then, like, I will, you know, put this in quotations, for example, and I will just…
+
+
+125
+00:22:08.118 --> 00:22:19.877
+Davicho Barona: let the agent expand it for me, right? Because it knows more than I will tell you. Something else I can do, and something else that's important, I can create… I can open as many different chats as I want to.
+
+
+126
+00:22:19.878 --> 00:22:30.387
+Davicho Barona: over here with this little drop-down. This is actually huge. So let's say I just add a chat, just to keep things clean. I'll let that other agents keep working there. And in here, I can just say.
+
+
+127
+00:22:30.748 --> 00:22:36.277
+Davicho Barona: Show me a, prompt best
+
+
+128
+00:22:36.458 --> 00:22:51.888
+Davicho Barona: practices guide for Nano Banana Pro. Make a text document that I can use as a template, Yeah.
+
+
+129
+00:22:52.038 --> 00:23:03.367
+Davicho Barona: And so now I'm just gonna… now I'm gonna… I'm leaning on this agent. I'm leaning on these LLMs to help me create all kinds of different guides, like those questions you have.
+
+
+130
+00:23:03.368 --> 00:23:27.977
+Davicho Barona: Those are the perfect questions to ask the agent. Hey, what's… what is considered a detailed prompt? What is the best practices to create a detailed prompt, for making an image, or for editing an image, or for making a video, or for making a storyboard? Or how do I… how do I create… give me a step-by-step guide of creating a 60-second movie trailer. Here's my script.
+
+
+131
+00:23:27.978 --> 00:23:42.377
+Davicho Barona: Or help me write a script based on the… you know, it's like all of the… this whole world starts really opening up when you're talking about agents, when you're having all of this kind of power harnessed in here, and you're training it
+
+
+132
+00:23:42.418 --> 00:23:59.647
+Davicho Barona: and giving it the skills related to all of these different tools. So think about it as, like, this is not just your agent to help you execute stuff and to make things, this is also your agent to help you learn as you go.
+
+
+133
+00:23:59.648 --> 00:24:00.058
+Ian Hu: Sorry.
+
+
+134
+00:24:00.548 --> 00:24:09.907
+Ian Hu: duty rules, and as I say, I do unfortunately have to go. This looks absolutely awesome, David. Thanks for this. Any chance I can get a copy of the recording so I can catch.
+
+
+135
+00:24:09.908 --> 00:24:12.657
+Davicho Barona: Absolutely. Yeah, yeah, for sure. Meantime.
+
+
+136
+00:24:12.658 --> 00:24:14.928
+Ian Hu: And I will no doubt catch you again soon. Take care.
+
+
+137
+00:24:14.928 --> 00:24:16.178
+Davicho Barona: No problem, cheers, Ian.
+
+
+138
+00:24:16.178 --> 00:24:16.988
+Ian Hu: Thanks, bye.
+
+
+139
+00:24:17.788 --> 00:24:18.398
+Dr. Maria Ian: Pencil.
+
+
+140
+00:24:18.398 --> 00:24:19.628
+Davicho Barona: And so…
+
+
+141
+00:24:19.628 --> 00:24:42.458
+Davicho Barona: Yeah, like, Maria, here's this, here's this, like, big guide, right? Like, I'm now here starting to see, good examples, bad examples. I'm starting to see, you know, different modes of prompting in different, for different tasks in different ways. You can also narrow this down, like, this may be, like, way too big, right? It's telling me about multi-references.
+
+
+142
+00:24:42.458 --> 00:24:55.917
+Davicho Barona: You know, it's telling me about, you know, it's giving me, like, templates for how to use references, so you can narrow this down, and make this a little bit easier on you. But, you know, you can have some, like, quick start prompt templates.
+
+
+143
+00:24:55.918 --> 00:25:10.507
+Davicho Barona: And remember, the agent itself is going to expand on your prompt if you want it to. It can help you figure out how to do different things with a prompt, or you can just literally focus on telling it instructions, like.
+
+
+144
+00:25:10.618 --> 00:25:12.697
+Davicho Barona: You can be a director.
+
+
+145
+00:25:12.828 --> 00:25:20.048
+Davicho Barona: That doesn't need to know exactly how the sausage is made, but you know a good sausage when you see it, and then you just…
+
+
+146
+00:25:20.048 --> 00:25:38.658
+Davicho Barona: you're giving it instructions and context and details, and it's coming back to you with a result, and then you're going to give it feedback, just as if it was your production team, right? You kind of work with this collaborative feedback loop if you had a real team, or a real production artist.
+
+
+147
+00:25:38.658 --> 00:25:56.197
+Davicho Barona: The same way. And then at some point, you can throttle that back and forth and jump into the shoes of a production artist also, and go in there and start controlling things very granularly, and build these big, detailed prompts if you want to. You can kind of have this back and forth.
+
+
+148
+00:25:56.198 --> 00:26:11.368
+Davicho Barona: And you… so you can be that director that, again, doesn't need to know exactly how the sausage is made, but knows a good sausage, or you can be the production artist that controls all the different ingredients of that sausage, and puts them together, like.
+
+
+149
+00:26:11.668 --> 00:26:17.797
+Davicho Barona: It has that ability to kind of let you use it in different ways, if that makes sense.
+
+
+150
+00:26:17.998 --> 00:26:35.078
+Dr. Maria Ian: Oh, it makes a lot of sense. I have one more question. Yeah. I saw at the top there, and also when I was inside this, agent, inside my agent's account, like, exchange background, like, you have a video with one background, and then it exchanges the background for you.
+
+
+151
+00:26:35.358 --> 00:26:52.378
+Dr. Maria Ian: Now, I'm sure, as you know, if you were to do this the traditional special effects way, you would need to have an image separate the image into layers, maybe erase the character that's on the… insert a character from a different layer.
+
+
+152
+00:26:52.418 --> 00:26:56.017
+Dr. Maria Ian: Add a depth mask, you know, add all kinds of other masks.
+
+
+153
+00:26:56.018 --> 00:26:58.218
+Davicho Barona: Yeah, you have your, like, your plates, basically.
+
+
+154
+00:26:58.218 --> 00:27:10.148
+Dr. Maria Ian: Exactly, yeah. Now, does this inside agent have the ability to go in as much detail When you're asking…
+
+
+155
+00:27:10.148 --> 00:27:12.488
+Davicho Barona: It really does. I mean.
+
+
+156
+00:27:13.748 --> 00:27:24.747
+Davicho Barona: you're gonna… so, for example, let's… let's just say, like, this image here, right? Like, I can go in here, and obviously, I have, like, in here, there's really only, like, 2 plates, per se.
+
+
+157
+00:27:24.748 --> 00:27:35.817
+Davicho Barona: you know, you, you're, you're… well, maybe, maybe 3, since you have lighting and things like this. So, I can go in here, and I can… I can split this image up by basically saying, you know, isolate.
+
+
+158
+00:27:35.818 --> 00:27:38.918
+Davicho Barona: The car on a white background.
+
+
+159
+00:27:39.378 --> 00:27:39.978
+Dr. Maria Ian: Hmm.
+
+
+160
+00:27:40.638 --> 00:27:43.408
+Davicho Barona: Right? Something like this. Now.
+
+
+161
+00:27:43.458 --> 00:28:06.848
+Davicho Barona: I'm not gonna have the same functionality as I would with plates, where I'm gonna be able to control… and actually, that's actually coming very soon, actually, but I can split the image up into different elements. With Nano Banana Pro, for example, is it so good at doing that. So I could take these elements and just manually split them up, or I can also just
+
+
+162
+00:28:06.858 --> 00:28:17.967
+Davicho Barona: you know, if I have an image that's, let's say, it had more elements to it, like I had maybe potentially this image here that had multiple characters.
+
+
+163
+00:28:18.017 --> 00:28:35.378
+Davicho Barona: I could tell it to split this image up into the different elements, right? Like, and I would just literally just do that here. I would say, split this image up into the different, elements, and then I would just say which ones, right? The…
+
+
+164
+00:28:35.477 --> 00:28:51.928
+Davicho Barona: actor, holding… The girl, the girl, laying in his arms, the backdrop and the…
+
+
+165
+00:28:52.168 --> 00:29:02.448
+Davicho Barona: mountains, or something like this, and it would start making, how many images that would be. It would give me all those different layers and start splitting those, those up.
+
+
+166
+00:29:02.448 --> 00:29:23.707
+Davicho Barona: Right? And then you'll see what the result is, and you might need to tweak it. You might be like, hey, this, you know, his hand is still showing, or something, you know, you might see things that you'll then kind of correct, because maybe your initial prompt wasn't super detailed, because you didn't think of all of those different things. But, like, also, you know, here's this, like.
+
+
+167
+00:29:23.708 --> 00:29:30.768
+Davicho Barona: cars starting to get generated, here, split up into that white background. The judge will also tell you
+
+
+168
+00:29:31.128 --> 00:29:43.197
+Davicho Barona: There's a quality judge at play here as well, which anytime it rejects something, it's not charging you for it, but it will kind of…
+
+
+169
+00:29:43.978 --> 00:29:49.067
+Davicho Barona: Analyze the image and see if it recognizes some kind of
+
+
+170
+00:29:49.128 --> 00:30:04.448
+Davicho Barona: drop in quality, some kind of, artifact that it, that, you know, shouldn't be there, etc, and it'll just start generating that again. Which is also kind of useful in certain, in certain scenarios. But anyway, yeah, I…
+
+
+171
+00:30:05.608 --> 00:30:06.628
+Davicho Barona: It's like…
+
+
+172
+00:30:07.208 --> 00:30:17.417
+Davicho Barona: You can either build it that way by building just the background first, then building the car, and then building, a, like, a text
+
+
+173
+00:30:17.418 --> 00:30:36.598
+Davicho Barona: document, for example, for the lighting, the exact lighting, which then you would later on just grab all of them, you know, shift-click all those elements, and say, combine these. Or, you know, place this car into this racetrack using this lighting description, for example.
+
+
+174
+00:30:37.778 --> 00:30:38.597
+Davicho Barona: Does that make sense?
+
+
+175
+00:30:38.598 --> 00:30:44.347
+Dr. Maria Ian: Wow. Well, that's, I mean, that's amazing. So, so you can actually ask it at a depth
+
+
+176
+00:30:44.628 --> 00:30:50.408
+Dr. Maria Ian: Depth mask, add… would it recognize that? Or add some depth? Would it then do the same thing?
+
+
+177
+00:30:50.658 --> 00:30:51.978
+Dr. Maria Ian: As it would.
+
+
+178
+00:30:51.978 --> 00:31:01.738
+Davicho Barona: I haven't… I actually haven't tried using a depth map, but I assume it will. If you've used any of these advanced models here.
+
+
+179
+00:31:01.738 --> 00:31:14.868
+Davicho Barona: Like, probably the most advanced that we have in here right now is Nano Banana Pro. If you've used that model elsewhere, you can see it does all kinds of stuff. I mean, you can… it does shot blocking, it does so many different
+
+
+180
+00:31:15.398 --> 00:31:31.518
+Davicho Barona: things, and the cool thing is that you have this agent to build the perfect prompt for you from just your instructions. Your instructions just have to have the right context, they have to have the right, detail, but then the agent really is the one that
+
+
+181
+00:31:31.518 --> 00:31:42.577
+Davicho Barona: takes it and makes it truly, detailed and perfect for that model. You know, it builds that bigger prompt.
+
+
+182
+00:31:42.578 --> 00:31:52.418
+Dr. Maria Ian: Great, so if I were to tell it, add a sandstorm, like a sandstorm layer, I could do that, it would do that in a… Correct. Correct. Okay.
+
+
+183
+00:31:52.718 --> 00:32:07.877
+Davicho Barona: And you can also… you can also tell it to, you know, you can… you can ask it to make many different variants in one shot. Like, for example, in this case, like, I took a blank 3D render, right? Then I re-skinned it.
+
+
+184
+00:32:07.878 --> 00:32:23.858
+Davicho Barona: with a basic prompt, then I combined it with another reference, and now I have this composite. And now I can just say, you know what, I want to see more versions of how that dust and debris, how it comes out. Maybe I don't like this. So now I just ask for, like.
+
+
+185
+00:32:23.858 --> 00:32:33.738
+Davicho Barona: 10 different variations, showing different ways in which that dust can kind of form around and shoot out from that… from that,
+
+
+186
+00:32:33.808 --> 00:32:53.147
+Davicho Barona: that scene, that action of the worm coming out. And then once I have that, then I can start combining elements, and just… I can now start creating keyframe animations, for example, and starting to bring these things, to life, right? And I can start extending the shots and making them,
+
+
+187
+00:32:53.148 --> 00:33:03.567
+Davicho Barona: longer, I can use more references to make them longer, into whatever it is that I, you know, animating into whatever it is that I want it to go.
+
+
+188
+00:33:03.678 --> 00:33:08.188
+Davicho Barona: It's… the power is really the agent, helping you.
+
+
+189
+00:33:08.188 --> 00:33:10.378
+Dr. Maria Ian: expand your…
+
+
+190
+00:33:10.428 --> 00:33:13.978
+Davicho Barona: Direction, and creating things that are
+
+
+191
+00:33:14.208 --> 00:33:33.048
+Davicho Barona: more detailed than you would really want to describe. Like, it's going from needing a prompt engineer to just needing someone with a good idea and a good vision to be… and good communication skills. That's really important. It's just communication skills.
+
+
+192
+00:33:33.048 --> 00:33:41.198
+Davicho Barona: between you and the agent, treating it as if it was your production artist, your teammate. If you treat it like a person.
+
+
+193
+00:33:41.628 --> 00:33:44.508
+Davicho Barona: I know that sounds weird, but if you treat it like a person, like…
+
+
+194
+00:33:44.508 --> 00:33:53.747
+Dr. Maria Ian: perfectly. That's why I've been using… that's why I've been using Luma Dream Machine, because it allows me to treat it like a person. When I speak to it like a person, it does what I tell it to do.
+
+
+195
+00:33:53.748 --> 00:33:54.917
+Davicho Barona: Exactly. Get upset.
+
+
+196
+00:33:54.918 --> 00:33:55.817
+Dr. Maria Ian: yell at it, it's.
+
+
+197
+00:33:55.818 --> 00:34:11.078
+Davicho Barona: Same thing here, and here it's even more interesting, because it talks back to you, and you can actually see how it's working, and it has a little bit more of a personality. It's really interesting when you, again, when you get into that mind state.
+
+
+198
+00:34:11.078 --> 00:34:18.207
+Davicho Barona: Of treating it like a person, it does things, it's much more satisfying, and the results are much better.
+
+
+199
+00:34:18.378 --> 00:34:36.318
+Dr. Maria Ian: Great, so I just have one… just one more question to clarify. So, the example with the car, right? So, I can add, something that wasn't yet in the image to those plates, right? So, I can add a crowd, I can add advertising, I can add.
+
+
+200
+00:34:36.318 --> 00:34:36.638
+Davicho Barona: Correct.
+
+
+201
+00:34:36.638 --> 00:34:45.157
+Dr. Maria Ian: I can add whatnot, right? I can just upload that there. Is that how it works? And then I ask it
+
+
+202
+00:34:45.308 --> 00:34:48.968
+Dr. Maria Ian: To combine those with specific directions.
+
+
+203
+00:34:49.458 --> 00:34:55.867
+Davicho Barona: Yeah, you can. Or you can even ask it just, like, as it is. So, like, here, I'll walk you through this quick process.
+
+
+204
+00:34:55.868 --> 00:35:19.267
+Davicho Barona: I can start here, either from a basic sketch, or from, like, a grayscale, you know, a 3D render of some kind, right? From there, I can just ask it to basically reskin or retexture it into a photorealistic image, right? So I'm going from here to here, I'm basically telling it to add, like, a background, et cetera, to add everything, that I want.
+
+
+205
+00:35:19.268 --> 00:35:43.017
+Davicho Barona: Then from here, I can, like you just said, add the stands with the crowd in the background, right? Now from here, I can, like, remove some unwanted elements. I can just tell it, hey, remove the red and white paint, and the white line on the bottom right corner. Now I'm, like, removing stuff, kind of editing it right here, in line, without going anywhere else.
+
+
+206
+00:35:43.058 --> 00:36:01.438
+Davicho Barona: Now I can add, like, motion blur, right? Now I'm like, this car looks like it's standing still. I need it to look like it's moving. So add some motion blur, to the background, and some effects make it look like it's moving fast. Then from here, I can say, you know, give me… give me 6 or 5 diff… four different angles.
+
+
+207
+00:36:01.438 --> 00:36:04.377
+Davicho Barona: Of this same exact scene, right?
+
+
+208
+00:36:04.378 --> 00:36:22.277
+Davicho Barona: And then from there, I can also do the same thing I did before. I can now select this one and the one I like from here, and now I can start creating, like, a keyframe video out of those, two, two keyframes, for example, right? And now I have the full, the full crowd in the background.
+
+
+209
+00:36:22.278 --> 00:36:27.017
+Davicho Barona: I have… I give it more context visually, and kind of start creating
+
+
+210
+00:36:27.018 --> 00:36:44.138
+Davicho Barona: Very, very quickly. From, like I said, I could go either from a sketch, or from a render, or whatever, or it could literally just be a description if it's something that I don't have a visual for. I like to work with visual references as much as possible, so I either draw something.
+
+
+211
+00:36:44.298 --> 00:36:48.737
+Davicho Barona: or I render something, and then I… I start kind of going from there.
+
+
+212
+00:36:49.268 --> 00:36:56.558
+Dr. Maria Ian: Okay, so the same process is doable if I start with a video instead of with an image, right?
+
+
+213
+00:36:56.558 --> 00:37:10.078
+Davicho Barona: You can, yeah, you can definitely start with a video, and you can start… so here's another, version of this. So, like, for example, this actually started as a video. In this case, another 3D render that's very blank.
+
+
+214
+00:37:10.318 --> 00:37:14.567
+Davicho Barona: And then from here, I actually just, using the start frame.
+
+
+215
+00:37:14.668 --> 00:37:31.797
+Davicho Barona: I re-skinned that start frame into this with that very basic prompt that I told you before, and then I used that as my start frame. So now I would basically come in here, I would, go to modify video.
+
+
+216
+00:37:31.908 --> 00:37:35.608
+Davicho Barona: I would then bring in this image as my start frame.
+
+
+217
+00:37:36.038 --> 00:37:55.998
+Davicho Barona: And now I could… I'm basically just reskinning that video according to that start frame that I just, retextured, right? So this is like a modified video, pipeline here, a video-to-video pipeline. It's that same 7-second video, the same camera motion.
+
+
+218
+00:37:56.488 --> 00:38:00.578
+Davicho Barona: Just reskinned according to my edited start frame.
+
+
+219
+00:38:00.578 --> 00:38:08.308
+Dr. Maria Ian: Alright, so if in that reskinned version I wanted to change, let's say, the background, or the walls.
+
+
+220
+00:38:08.308 --> 00:38:10.317
+Davicho Barona: Yeah. Into some… how would I do that?
+
+
+221
+00:38:10.698 --> 00:38:20.358
+Davicho Barona: I could just say, like, say this version is what you reskinned, and then now you're like, alright, you know what, I want to add some more stuff. So now, same thing, I grab it, and I just tell it what I want.
+
+
+222
+00:38:21.068 --> 00:38:27.838
+Davicho Barona: Because now I'm using this image as the starting point, and I can say, make the walls,
+
+
+223
+00:38:28.428 --> 00:38:36.518
+Davicho Barona: Green, like, copper, patina, or something like this, I don't know how you spell patina.
+
+
+224
+00:38:36.638 --> 00:38:37.697
+Davicho Barona: Whoops.
+
+
+225
+00:38:38.318 --> 00:38:41.508
+Davicho Barona: How do you spell patina?
+
+
+226
+00:38:41.508 --> 00:38:43.718
+Dr. Maria Ian: I think with an A. P-A?
+
+
+227
+00:38:44.098 --> 00:38:45.368
+Nicky Keller: E-A-N-A.
+
+
+228
+00:38:45.368 --> 00:38:45.738
+Dr. Maria Ian: BL.
+
+
+229
+00:38:45.738 --> 00:38:50.257
+Davicho Barona: There we go. So then I would… I would just type that, and I would,
+
+
+230
+00:38:51.088 --> 00:38:52.327
+Davicho Barona: I'm not sure what.
+
+
+231
+00:38:52.648 --> 00:38:56.527
+Davicho Barona: Hop in here, let me reload this real quick.
+
+
+232
+00:38:57.268 --> 00:39:00.957
+Davicho Barona: Oh, it kicked me out. I've been logged in for too long.
+
+
+233
+00:39:01.928 --> 00:39:02.508
+Dr. Maria Ian: Here.
+
+
+234
+00:39:03.258 --> 00:39:04.218
+Davicho Barona: Yeah.
+
+
+235
+00:39:06.288 --> 00:39:10.218
+Davicho Barona: Yeah, I've been logged in probably for days now.
+
+
+236
+00:39:10.558 --> 00:39:21.048
+Davicho Barona: let's go back in there, but yeah, so I would… I would just tell it, like, exactly what I want here, or, you know, add flowers, growing…
+
+
+237
+00:39:21.068 --> 00:39:38.978
+Davicho Barona: down the walls, something like this. And now I can just have a whole new version of that. Now, what I probably want to make sure to do at times is… and you'll… we'll see here what, what happens. Sometimes, I like to say, like.
+
+
+238
+00:39:38.978 --> 00:39:44.057
+Davicho Barona: preserve the structure and elements exactly as they were, something like that.
+
+
+239
+00:39:44.058 --> 00:39:56.408
+Davicho Barona: You know, so that it's really holding onto exactly those details. Sometimes you'll notice it's not, and you'll realize, like, oh, I didn't… I didn't really tell it to preserve everything exactly as it was.
+
+
+240
+00:39:56.698 --> 00:39:57.028
+Nicky Keller: Can you.
+
+
+241
+00:39:57.028 --> 00:39:59.188
+Davicho Barona: And sometimes… yeah, go ahead, Nikki.
+
+
+242
+00:39:59.188 --> 00:40:03.828
+Nicky Keller: Can you select stuff with a mouse inside your frame, or it's all prompt-based?
+
+
+243
+00:40:04.798 --> 00:40:22.368
+Davicho Barona: So I can… there's kind of a hack that way, like, for example, here, I can't do, like, in-painting, where I'd be, like, drawing around a certain thing, but what I can do, because NanoBanana handles, that kind of annotation.
+
+
+244
+00:40:22.718 --> 00:40:31.228
+Davicho Barona: I can grab my, like, doodle tool, and I can, like, I'll switch the color. I can circle
+
+
+245
+00:40:31.628 --> 00:40:41.608
+Davicho Barona: an area here, and then my hack for this is actually, I come back in here, whoops, and I just, I take a screenshot of this.
+
+
+246
+00:40:42.178 --> 00:40:47.527
+Davicho Barona: This annotation tool will be a little bit more powerful, where it'll actually, like,
+
+
+247
+00:40:48.008 --> 00:41:03.637
+Davicho Barona: recognize those later on. Like, it will start recognizing my annotations on the actual images themselves, but for now, that's kind of the way I do it, is I sort of take a screenshot if I want to just focus on something, and then I bring that
+
+
+248
+00:41:03.648 --> 00:41:08.867
+Davicho Barona: image back, I don't know why that disappeared, like, I watched it disappeared, which was kind of strange.
+
+
+249
+00:41:09.008 --> 00:41:16.257
+Davicho Barona: So I will, like, I'll circle that again, and I'll take the…
+
+
+250
+00:41:16.378 --> 00:41:20.338
+Davicho Barona: I'll take my, my screenshot again of that.
+
+
+251
+00:41:21.858 --> 00:41:31.628
+Davicho Barona: and then I would, like, bring that screenshot back in here, and then that's what I would… I would tell it to change, if that makes sense.
+
+
+252
+00:41:31.928 --> 00:41:32.897
+Dr. Maria Ian: Yes.
+
+
+253
+00:41:33.518 --> 00:41:36.348
+Dr. Maria Ian: So that works with Nano-banana only?
+
+
+254
+00:41:36.348 --> 00:41:37.098
+Davicho Barona: Correct.
+
+
+255
+00:41:37.098 --> 00:41:38.038
+Dr. Maria Ian: Correct.
+
+
+256
+00:41:38.418 --> 00:41:54.737
+Davicho Barona: And so, like, here's that image that we just sort of retextured, right? We now have, like, those flowers, growing around the walls. It doesn't seem to… that, you know, it changed anything, from… from my… my original here, which is great. Like, all the structure…
+
+
+257
+00:41:54.738 --> 00:41:58.578
+Dr. Maria Ian: So that was with Luma? That was with Luma, this one?
+
+
+258
+00:41:58.868 --> 00:42:01.658
+Davicho Barona: I don't know, I think this was also with Nano Banana.
+
+
+259
+00:42:01.658 --> 00:42:02.668
+Dr. Maria Ian: Okay.
+
+
+260
+00:42:06.198 --> 00:42:17.668
+Davicho Barona: Yeah, I think this was also with Nana Bananas. I used to be able to see exactly which one it was. Again, I can also, you know, ask, like, what did you use to make this?
+
+
+261
+00:42:18.478 --> 00:42:25.198
+Davicho Barona: And it should, you know, it should tell me, like, what, What image model it used.
+
+
+262
+00:42:25.738 --> 00:42:26.278
+Nicky Keller: To make…
+
+
+263
+00:42:26.278 --> 00:42:26.948
+Dr. Maria Ian: Yeah.
+
+
+264
+00:42:26.948 --> 00:42:27.798
+Nicky Keller: I'm sorry.
+
+
+265
+00:42:27.798 --> 00:42:28.898
+Davicho Barona: Not a banana pro.
+
+
+266
+00:42:28.898 --> 00:42:33.757
+Dr. Maria Ian: Just one last very quick question. Yeah. So, in…
+
+
+267
+00:42:34.068 --> 00:42:47.137
+Dr. Maria Ian: in my account now, because I'm a subscriber to Dream Machine, you were saying I'm gonna have free credits there, so I entered my credit card number to be able to access it, and then customer support explained they're not charging anything.
+
+
+268
+00:42:47.268 --> 00:42:52.267
+Dr. Maria Ian: So there is credits in there now, because I'm a…
+
+
+269
+00:42:52.708 --> 00:43:10.108
+Davicho Barona: there are credits in there now. If you go… if you go back to your, to the homepage here, you should be able to see, when you go to your, like, team here, and you'll hit Manage Team, it should show you how many credits you have remaining there.
+
+
+270
+00:43:10.578 --> 00:43:12.247
+Dr. Maria Ian: Like, how many credits you have.
+
+
+271
+00:43:12.978 --> 00:43:13.908
+Dr. Maria Ian: Great.
+
+
+272
+00:43:15.828 --> 00:43:20.348
+Dr. Maria Ian: Great, so this is not yet combined in terms of subscriptions.
+
+
+273
+00:43:20.528 --> 00:43:21.298
+Dr. Maria Ian: That's right.
+
+
+274
+00:43:21.298 --> 00:43:22.548
+Davicho Barona: This is a separate… that's right.
+
+
+275
+00:43:22.818 --> 00:43:24.258
+Dr. Maria Ian: Two separate, okay.
+
+
+276
+00:43:24.258 --> 00:43:24.958
+Davicho Barona: That's right.
+
+
+277
+00:43:25.168 --> 00:43:25.988
+Davicho Barona: Yep.
+
+
+278
+00:43:25.988 --> 00:43:30.738
+Dr. Maria Ian: So I can't transfer the credits I have now with Dream Machine to this.
+
+
+279
+00:43:30.948 --> 00:43:35.197
+Davicho Barona: You cannot. No, they work on a totally different credit system.
+
+
+280
+00:43:35.998 --> 00:43:38.288
+Dr. Maria Ian: Okay… Cool.
+
+
+281
+00:43:38.838 --> 00:43:46.768
+Nicky Keller: I have a quick question. I'm sorry I missed the beginning. Just for documentary filmmaking, with regards to realism.
+
+
+282
+00:43:51.968 --> 00:43:54.758
+Nicky Keller: Is this all kind of sci-fi?
+
+
+283
+00:43:55.348 --> 00:43:57.207
+Davicho Barona: No, this can do anything.
+
+
+284
+00:43:57.478 --> 00:43:59.338
+Davicho Barona: Anything you really want.
+
+
+285
+00:43:59.338 --> 00:44:14.528
+Nicky Keller: in the past, I've used it, and I just hate it in my documentaries. And I work for a municipality, and so… and they didn't see it. But now they… everyone's asking questions, are you using AI? And so I'm keeping my mouth shut so far.
+
+
+286
+00:44:14.528 --> 00:44:24.127
+Nicky Keller: And just also with ethics of taking other people's images, how is Luma standing with that?
+
+
+287
+00:44:26.068 --> 00:44:45.618
+Davicho Barona: I mean, it's the same way, you know, we're… obviously, we're using, like, a bunch of these different models, right? So, all of these different models have their own training sets, their own training data, etc. We indemnify you. If you have, like, a paid account, a pro account, we will go to bat for you, but…
+
+
+288
+00:44:45.618 --> 00:44:49.268
+Nicky Keller: What does that mean? You take a lawyer if I get… Called out?
+
+
+289
+00:44:49.268 --> 00:45:02.137
+Davicho Barona: Oh, I don't… I don't know if we'll take a lower, you can ask further questions. No, but what does it mean? Sorry, my English… what did you mean? No, that's okay. You can use it for commercial use, knowing that you made it with our tool, if you're… if you're paying…
+
+
+290
+00:45:02.138 --> 00:45:19.358
+Davicho Barona: If you're a paying customer, you are able to use it commercially, and that is in our terms and conditions, so you could basically point back to our terms and conditions and say, you know, you're able to… I'm able to do this if somebody's, like, suing you or something like that.
+
+
+291
+00:45:20.928 --> 00:45:28.228
+Davicho Barona: But as far as, like, the realism and the documentary goes, any one of these models can handle all of those things very well.
+
+
+292
+00:45:28.228 --> 00:45:41.287
+Davicho Barona: Then it just comes down to you, how you're prompting it, what you're asking for. A lot of times, it comes down to, like, telling it what camera to use, right? If you're not giving it certain details, it's gonna have its own
+
+
+293
+00:45:41.288 --> 00:45:56.367
+Davicho Barona: It's gonna select its own aesthetic for you if you don't control those details. So you might have to go in there and say, you know, make it as if it was shot with a, you know, a camcorder, or an iPhone.
+
+
+294
+00:45:56.368 --> 00:46:01.927
+Davicho Barona: Or something like that. Then, of course, you can also upload your own footage, or upload an image and say, you know, tell it…
+
+
+295
+00:46:01.928 --> 00:46:03.397
+Davicho Barona: But I've been doing aesthetic.
+
+
+296
+00:46:03.818 --> 00:46:06.647
+Nicky Keller: I've only been working with my own images, so…
+
+
+297
+00:46:06.648 --> 00:46:18.627
+Davicho Barona: Yeah, then you should… you shouldn't have an issue there. It really just comes down to both those… those input reference images that you're using, and the way that you're telling it to make things, you know?
+
+
+298
+00:46:18.628 --> 00:46:26.697
+Nicky Keller: just because I missed the beginning, and I'm sorry for the others, but just so the… what is it, the LLM, or what do you call it? Your friend inside the…
+
+
+299
+00:46:26.698 --> 00:46:28.218
+Davicho Barona: The agent, yeah.
+
+
+300
+00:46:28.218 --> 00:46:33.727
+Nicky Keller: He's… you make a relationship with him, Is that correct?
+
+
+301
+00:46:33.918 --> 00:46:36.858
+Nicky Keller: Like, when you have a subscription, he…
+
+
+302
+00:46:37.088 --> 00:46:42.638
+Nicky Keller: Kind of tunes to what you say to him, or is it the same For every…
+
+
+303
+00:46:42.638 --> 00:46:53.397
+Davicho Barona: board. In every board, it has contextual memory of what you've been doing. The styles that you like, the things that you're making, etc.
+
+
+304
+00:46:53.398 --> 00:47:15.438
+Davicho Barona: Every single board is going to be different. I am pushing for that, for a really, really personalized experience where the agent truly does get to know you, and you're giving it, like, the context right away. I work in this industry. This is my style that I like. Here's this, here's that, and then it would kind of go from there and start really building.
+
+
+305
+00:47:15.438 --> 00:47:24.868
+Davicho Barona: like, building a persona for you, so to speak. Currently, right now, the way that that is translated is really just contextual memory
+
+
+306
+00:47:24.868 --> 00:47:31.048
+Davicho Barona: per board and per chat here. So, you can, you can, every time you open a board.
+
+
+307
+00:47:31.068 --> 00:47:35.628
+Davicho Barona: It build… it starts building memory of what you've been making.
+
+
+308
+00:47:35.918 --> 00:47:40.898
+Davicho Barona: And it… you can kind of lean on that, as you… as you go along.
+
+
+309
+00:47:41.818 --> 00:47:48.548
+Nicky Keller: Okay, this… I can't wait. Luma has been great. I've liked it from the start.
+
+
+310
+00:47:49.368 --> 00:47:55.217
+Davicho Barona: Same. I… before I worked here, I… it was my first video model, and so it was really.
+
+
+311
+00:47:55.218 --> 00:47:56.878
+Nicky Keller: Me too. There's some…
+
+
+312
+00:47:56.878 --> 00:48:01.717
+Davicho Barona: been here. Yeah, it's been really fun. It's been… it's gone from…
+
+
+313
+00:48:01.858 --> 00:48:19.808
+Davicho Barona: a little, tiny, little generator to huge frontier models, and now this, like, humongous upgrade here, which is, this is really going to be the new way to create. Like, node systems are going to be a thing of the past. They're so limiting.
+
+
+314
+00:48:19.818 --> 00:48:27.457
+Davicho Barona: Having the agent connecting all the dots for you under the hood, and you not having to worry about, you know, taking your
+
+
+315
+00:48:27.458 --> 00:48:40.047
+Davicho Barona: creative hat off, and putting your technical hat back on to, you know, wire things up, and create all those dependencies, and all that stuff, and then putting your creative hat back on to make something, and then doing it again in order…
+
+
+316
+00:48:40.048 --> 00:48:54.858
+Davicho Barona: this is just such a easier and more intuitive way to build and to create. This is… it's honestly a game changer. I… it's addicting. That's the one thing I will say, is watch your credits, because it is truly addicting. You can start making
+
+
+317
+00:48:54.978 --> 00:48:56.878
+Davicho Barona: Tons of stuff very quickly.
+
+
+318
+00:48:57.948 --> 00:49:00.828
+Nicky Keller: Mmm, I worry about that, to be honest.
+
+
+319
+00:49:00.828 --> 00:49:19.728
+Davicho Barona: Yeah, you just… you kind of start getting, used to it at first, and so you're gonna, you know, you burn through credits at first, trying to… you're just experimenting. Then after a while, you start understanding really how it's working, and you, you know, you kind of go one by one at first.
+
+
+320
+00:49:19.728 --> 00:49:26.717
+Davicho Barona: Before you just… I've… I've asked it to make 100 videos in one shot.
+
+
+321
+00:49:27.008 --> 00:49:29.278
+Davicho Barona: And it made 100 videos in one shot.
+
+
+322
+00:49:29.298 --> 00:49:30.667
+Nicky Keller: A new credits were gone.
+
+
+323
+00:49:30.668 --> 00:49:31.498
+Mike Matsumoto: Wow.
+
+
+324
+00:49:31.498 --> 00:49:42.128
+Davicho Barona: Yeah, exactly. Like, my credits are totally gone. Same with images. The other day, I didn't mean to. I made 512 images at once. I didn't get my math right. I told it, you know, I had a grid, and…
+
+
+325
+00:49:42.378 --> 00:50:01.617
+Davicho Barona: That was, again, a big learning lesson there, but also going into this brainstorm mode that I was talking about, and just being able to have a conversation first, planning everything out, understanding where, you know, what steps to really take, and what tools to use for what.
+
+
+326
+00:50:01.758 --> 00:50:07.107
+Davicho Barona: it makes a huge difference, and then starting to generate afterwards. It makes a really big difference.
+
+
+327
+00:50:07.408 --> 00:50:17.817
+Nicky Keller: Where can we… can we… because this is useful, and I'm… again, I'm really sorry I missed the beginning. That's okay. Are there good places where we can find tutorials, or is it.
+
+
+328
+00:50:17.818 --> 00:50:36.518
+Davicho Barona: Yeah, so right now, there is… and this is… it's a little bit janky right now, and I apologize for this, we're… we're starting a whole new learning center just for agents, or the new product, let's say. Right now, in Learning Hub is where you can find a lot of these
+
+
+329
+00:50:36.578 --> 00:50:38.898
+Davicho Barona: tutorials that I have written.
+
+
+330
+00:50:38.898 --> 00:50:40.017
+Nicky Keller: It's a Luma thing?
+
+
+331
+00:50:40.688 --> 00:50:45.417
+Davicho Barona: Yeah, let me drop this in the chat. So, under this,
+
+
+332
+00:50:45.608 --> 00:51:01.928
+Davicho Barona: learning hub here, you can find, like, you'll see they're intermingled with the old Dream Machine stuff, too, but you'll see, you know, what… the different tutorials here. In getting started, you'll kind of see them all here.
+
+
+333
+00:51:02.288 --> 00:51:13.078
+Davicho Barona: Also, in the how-to section, you'll start to see them as well. Again, I'm sorry, this is so janky, but you kind of have to go down and start
+
+
+334
+00:51:13.188 --> 00:51:25.527
+Davicho Barona: looking at the newest ones that I've uploaded down here, but if you… if you wait, like, another week, you'll… this will be a lot more organized, and it'll have its own learning center.
+
+
+335
+00:51:25.828 --> 00:51:30.817
+Davicho Barona: But it's still here. Like, you'll start seeing them here. Like.
+
+
+336
+00:51:30.818 --> 00:51:53.758
+Davicho Barona: the video models, audio capabilities, brainstorm mode also in here, the toolbar, how to use that toolbar, how to use the agent in general. You'll see the articles in here. I will try to surface them as much as possible, and also just, you know, you feel free to stay in touch with me as well.
+
+
+337
+00:51:53.758 --> 00:51:58.418
+Davicho Barona: As much as I can, I will help you offline.
+
+
+338
+00:51:58.958 --> 00:52:02.598
+Davicho Barona: You can see that email address. Yeah, no problem.
+
+
+339
+00:52:02.598 --> 00:52:10.707
+Nicky Keller: You just… you said before you started from the start with Luma, where you took a camera, you would film from below.
+
+
+340
+00:52:10.708 --> 00:52:13.908
+Davicho Barona: Oh, yeah, that was even before… yeah, that was the nerf…
+
+
+341
+00:52:13.908 --> 00:52:23.538
+Nicky Keller: And I actually made a few films with that that were shown, on… on this for my employer. Does that get… does that get…
+
+
+342
+00:52:23.648 --> 00:52:28.288
+Nicky Keller: Pimped up as we go along, or is that forgotten in a drawer?
+
+
+343
+00:52:28.958 --> 00:52:36.928
+Davicho Barona: That has been deprecated a while back, but I have personally been trying to bring that back, because I feel like that is something that, in here.
+
+
+344
+00:52:37.058 --> 00:52:45.308
+Davicho Barona: If it was in here somehow, it would be truly awesome to be able to use that spatial, recognition somehow in here.
+
+
+345
+00:52:45.308 --> 00:53:01.697
+Nicky Keller: Being able to put a camera in a 3D space on your phone, and then export movies. I did my first and my last one-shot entire film with that, and I'm super proud of it. Wow.
+
+
+346
+00:53:01.958 --> 00:53:03.138
+Davicho Barona: That's crazy.
+
+
+347
+00:53:03.138 --> 00:53:04.658
+Mike Matsumoto: One shot, good for you.
+
+
+348
+00:53:04.658 --> 00:53:05.398
+Davicho Barona: to that.
+
+
+349
+00:53:05.808 --> 00:53:20.597
+Nicky Keller: And it's… I made this film for this art center in the city where I live, and I had to make all these films about sculptures, and that was just the perfect tool. And I just hope it grows with Luma.
+
+
+350
+00:53:20.838 --> 00:53:25.297
+Nicky Keller: Because it… I don't know, I'm attached to that tool.
+
+
+351
+00:53:25.298 --> 00:53:26.988
+Davicho Barona: Yeah, I share, I share that.
+
+
+352
+00:53:26.988 --> 00:53:31.248
+Nicky Keller: I forget what it's called, it's called the… it's Before Dream Machine, the first one.
+
+
+353
+00:53:31.248 --> 00:53:35.798
+Davicho Barona: Yeah, it was actually called, like, I think it was just called Luma 3D Capture, or something like that.
+
+
+354
+00:53:35.798 --> 00:53:40.527
+Nicky Keller: That's it. I have the app on my phone. Luma3D.
+
+
+355
+00:53:40.528 --> 00:53:45.158
+Davicho Barona: with 3D. And then… and then it was Genie, also, which was creating 3D assets.
+
+
+356
+00:53:45.158 --> 00:53:48.897
+Nicky Keller: That's right. That I never used. That's for 3D artists.
+
+
+357
+00:53:48.898 --> 00:53:52.548
+Davicho Barona: I never used that either, and then… and then it was Dream Machine after that.
+
+
+358
+00:53:52.548 --> 00:53:52.987
+Nicky Keller: Which is also.
+
+
+359
+00:53:52.988 --> 00:53:53.458
+Davicho Barona: So…
+
+
+360
+00:53:53.458 --> 00:53:54.568
+Nicky Keller: really great.
+
+
+361
+00:53:54.768 --> 00:53:55.638
+Davicho Barona: So I can't wait…
+
+
+362
+00:53:55.638 --> 00:53:56.517
+Nicky Keller: Let's dive into this.
+
+
+363
+00:53:56.518 --> 00:53:59.468
+Davicho Barona: I know, I can't wait for you to do the same either.
+
+
+364
+00:53:59.468 --> 00:54:02.987
+Nicky Keller: Just, I worry about my cash and my credits.
+
+
+365
+00:54:03.148 --> 00:54:05.808
+Davicho Barona: You can give it… you can give it, like, a limit.
+
+
+366
+00:54:05.808 --> 00:54:14.307
+Nicky Keller: Once you, you know, like a, like a spend limit that it'll, you know, once you've hit it… Before you make money with it, you gotta…
+
+
+367
+00:54:14.708 --> 00:54:19.128
+Nicky Keller: try it, and to try it, you know, it's from your pocket, so…
+
+
+368
+00:54:19.128 --> 00:54:28.728
+Davicho Barona: You're gonna have some kind of credits, though, as you log in, and as you open this account, and you have another Dream Machine account, you're gonna have credits to start.
+
+
+369
+00:54:28.888 --> 00:54:29.848
+Nicky Keller: Okay, cool.
+
+
+370
+00:54:30.428 --> 00:54:37.298
+Nicky Keller: I can't wait, I'm really psyched, and I'm looking forward to non-sci-fi-looking films.
+
+
+371
+00:54:37.298 --> 00:54:38.307
+Davicho Barona: Anytime, I mean…
+
+
+372
+00:54:38.308 --> 00:54:44.197
+Nicky Keller: use it, and I just want realism, just that it… you don't see it. That's my dream.
+
+
+373
+00:54:44.198 --> 00:54:44.928
+Davicho Barona: Julie, it's.
+
+
+374
+00:54:44.928 --> 00:54:45.508
+Nicky Keller: We don't…
+
+
+375
+00:54:45.508 --> 00:55:02.418
+Davicho Barona: to you. Honestly, like, you can… you can make this your own, with your own style, etc. It handles your references really well. And then again, just make sure that… yeah, go ahead, Doctor. Make sure that you… you control it. Yeah, so…
+
+
+376
+00:55:02.418 --> 00:55:17.058
+Dr. Maria Ian: So basically, this does not have a built-in additional video editor. It is still restricted to the individual, using the individual models, right? Correct. Correct. Correct, okay.
+
+
+377
+00:55:17.468 --> 00:55:33.238
+Davicho Barona: It will. At some point, we're building a timeline, like, we're building a timeline editor that will come in here that you'll be able to use to cut things together, but even as it is right now, I can select multiple videos that I've made, and I can say, concat them, or stitch them together back to back.
+
+
+378
+00:55:33.238 --> 00:55:34.838
+Dr. Maria Ian: Oh, really? Yeah.
+
+
+379
+00:55:34.838 --> 00:55:43.367
+Davicho Barona: So you can create, like, a 3-minute video in here, made up of 5, 8-second clips, 10-second clips, 20-second, whatever, however you…
+
+
+380
+00:55:43.368 --> 00:55:44.008
+Dr. Maria Ian: Hmm.
+
+
+381
+00:55:44.008 --> 00:55:45.067
+Davicho Barona: You have them, yeah.
+
+
+382
+00:55:45.068 --> 00:55:46.758
+Nicky Keller: and export it in ProRes.
+
+
+383
+00:55:47.758 --> 00:55:52.027
+Davicho Barona: I don't know if you can export it in ProRes, but you can export
+
+
+384
+00:55:53.308 --> 00:55:55.118
+Davicho Barona: No, I don't think you…
+
+
+385
+00:55:55.118 --> 00:56:07.777
+Dr. Maria Ian: Just to be really clear, so with the thing with the flowers, right? Yeah. If I were to upload an image of a person, or a movie of a person, and I would say.
+
+
+386
+00:56:07.888 --> 00:56:12.778
+Dr. Maria Ian: Combine this one here, combine the one with the flowers.
+
+
+387
+00:56:13.018 --> 00:56:18.398
+Dr. Maria Ian: with this person, insert this person, have this person do X, Y, and Z, be very specific.
+
+
+388
+00:56:19.288 --> 00:56:21.388
+Dr. Maria Ian: Could it do that at this point?
+
+
+389
+00:56:22.438 --> 00:56:24.387
+Davicho Barona: With a video, did you say?
+
+
+390
+00:56:24.848 --> 00:56:27.908
+Dr. Maria Ian: Yes, let's say I have a, yes, a video.
+
+
+391
+00:56:28.208 --> 00:56:41.927
+Davicho Barona: I would… it can, you just have to kind of go through the process that we went through here. So, like, you know, in this… in this case, right, where I made that… this video using an edited start frame.
+
+
+392
+00:56:41.928 --> 00:56:45.708
+Dr. Maria Ian: That's how I would probably want to go about it, is like.
+
+
+393
+00:56:45.708 --> 00:56:59.988
+Davicho Barona: I would extract that start frame, and then edit the start frame to put the person in there, for example. I can also edit the end frame, I can edit any other frames that I want, also. Like, I can come in here, I can right-click on my video.
+
+
+394
+00:56:59.988 --> 00:57:12.288
+Davicho Barona: and go to More Actions, I can trim, I can split, I can extract the frame, add subtitles, audio, I can stitch it together, so I can also, like, if I hit Extract Frame, I can…
+
+
+395
+00:57:12.378 --> 00:57:19.368
+Davicho Barona: scroll through, and at any point, wherever I'm at, I can now drop that
+
+
+396
+00:57:19.748 --> 00:57:33.608
+Davicho Barona: frame into my board and start editing this frame. So maybe this is where something else comes in. And then I would use that as my new either start frame or my end frame for
+
+
+397
+00:57:33.748 --> 00:57:37.248
+Davicho Barona: Creating that video-to-video transformation.
+
+
+398
+00:57:41.038 --> 00:57:50.548
+Dr. Maria Ian: All right, so the video-to-video transformation, it would create within the model that you selected. So if you selected
+
+
+399
+00:57:51.338 --> 00:57:55.598
+Dr. Maria Ian: Nano Banana, or would it choose which model would work best for that?
+
+
+400
+00:57:55.598 --> 00:58:03.398
+Davicho Barona: You can choose… you can also tell it which model to use. You can also tell it to show it to you in… with all the models, and then you could compare.
+
+
+401
+00:58:03.398 --> 00:58:05.527
+Dr. Maria Ian: Oh my god, okay, wow.
+
+
+402
+00:58:05.528 --> 00:58:06.058
+Davicho Barona: Yeah.
+
+
+403
+00:58:06.578 --> 00:58:20.058
+Davicho Barona: Yeah, the agent… remember, the agent is, like, super smart, knowledgeable, and capable. So, it knows everything you're doing here, and it knows how to do everything you haven't done in here. And so, even questions like that, like, feel free to ask that, like, hey.
+
+
+404
+00:58:20.078 --> 00:58:27.778
+Davicho Barona: I don't know how to work in video-to-video. I need, like, a guide as a, like, a beginner's guide to video-to-video.
+
+
+405
+00:58:28.198 --> 00:58:31.937
+Davicho Barona: You know, and it'll, it'll give you that, that whole guide.
+
+
+406
+00:58:34.048 --> 00:58:37.507
+Dr. Maria Ian: Okay, alright, well, thank… thank you so much.
+
+
+407
+00:58:37.998 --> 00:58:38.348
+Davicho Barona: Yeah.
+
+
+408
+00:58:38.348 --> 00:58:39.378
+Dr. Maria Ian: Very helpful.
+
+
+409
+00:58:39.378 --> 00:58:51.558
+Davicho Barona: Absolutely. I'm totally over time, but I really appreciate you guys being here. And I… feel free to register, again, for any one of these sessions. They'll be ongoing, like.
+
+
+410
+00:58:52.138 --> 00:58:54.368
+Davicho Barona: This, for the next couple weeks.
+
+
+411
+00:58:54.528 --> 00:59:08.477
+Davicho Barona: like, every… like, almost every day. I'll drop that in here again, Nikki, if you want to register. And then after the next… the first month, like, every Wednesday, I'll be back here doing my regular Wednesday, like, office hours.
+
+
+412
+00:59:09.288 --> 00:59:09.888
+Nicky Keller: Great.
+
+
+413
+00:59:10.748 --> 00:59:12.728
+Nicky Keller: All right. Super, and you're…
+
+
+414
+00:59:12.728 --> 00:59:13.957
+Mike Matsumoto: Thank you so much, this is incredible.
+
+
+415
+00:59:13.958 --> 00:59:15.928
+Davicho Barona: Of course, absolutely, man.
+
+
+416
+00:59:17.408 --> 00:59:20.388
+Davicho Barona: Cool. Thank you, guys. Nikki, do you have one more question?
+
+
+417
+00:59:20.728 --> 00:59:24.247
+Nicky Keller: I've got loads. I think I just need to start…
+
+
+418
+00:59:24.588 --> 00:59:27.408
+Nicky Keller: I start, I'll play with it, and I'll come back.
+
+
+419
+00:59:27.938 --> 00:59:32.197
+Davicho Barona: Yeah, again, lean on that agent. Go into brainstorm mode.
+
+
+420
+00:59:32.198 --> 00:59:49.938
+Davicho Barona: And just ask it as many questions as you want. It'll give you a ton of knowledge. It is also learning from all the articles that I post, as well. So, it scrapes our own knowledge base that we create after we test it, etc, and it will tell you all those different things.
+
+
+421
+00:59:50.098 --> 00:59:50.938
+Nicky Keller: Fantastic.
+
+
+422
+00:59:51.518 --> 00:59:53.648
+Nicky Keller: Super, thanks a lot. This was great.
+
+
+423
+00:59:54.418 --> 00:59:59.087
+Davicho Barona: No problem at all. Thank you guys so much for being here, I appreciate it. Hopefully we'll see you guys.
+
+
+424
+00:59:59.458 --> 01:00:00.338
+Nicky Keller: Take care.
+
+
+425
+01:00:00.338 --> 01:00:01.208
+Davicho Barona: Cheers.
+
+
+426
+01:00:02.128 --> 01:00:05.557
+Mike Matsumoto: Before you go, would it be possible to get a recording of this?
+
+
+427
+01:00:05.728 --> 01:00:08.707
+Davicho Barona: Yes, Mike, if you don't mind emailing me, please shoot.
+
+
+428
+01:00:08.708 --> 01:00:09.208
+Mike Matsumoto: Yeah.
+
+
+429
+01:00:09.208 --> 01:00:10.048
+Davicho Barona: Do you have…
+
+
+430
+01:00:10.728 --> 01:00:11.808
+Mike Matsumoto: I can drop it in the chat if you want.
+
+
+431
+01:00:11.808 --> 01:00:12.538
+Davicho Barona: Fair enough.
+
+
+432
+01:00:13.038 --> 01:00:19.097
+Davicho Barona: No, go… if you don't mind emailing me to this email and just request it.
+
+
+433
+01:00:19.778 --> 01:00:20.388
+Mike Matsumoto: Okay.
+
+
+434
+01:00:21.028 --> 01:00:24.398
+Davicho Barona: Yeah, shoot me a quick email and just be like, hey, that was great, please send me.
+
+
+435
+01:00:24.398 --> 01:00:25.748
+Mike Matsumoto: It was, it was awesome.
+
+
+436
+01:00:27.348 --> 01:00:39.738
+Mike Matsumoto: Yeah, I just want to be able to, like, share this with my team and have them, you know, look at everything, because they'll… they'll have just a million ideas to… on how to use it. So thank you so much for… for this. Yeah, I'll be joining, you know, moving forward, so that's awesome. Thank you.
+
+
+437
+01:00:39.738 --> 01:00:42.098
+Davicho Barona: Great. See you later, man. I appreciate you.
+
+
+438
+01:00:42.098 --> 01:00:42.717
+Mike Matsumoto: Have a good one.
+
+
+439
+01:00:42.778 --> 01:00:43.728
+Davicho Barona: Bye. See ya.
+
+
+

@@ -1,0 +1,1102 @@
+WEBVTT
+
+1
+00:00:12.810 --> 00:00:14.580
+Davicho Barona: Hey guys, welcome!
+
+2
+00:00:15.430 --> 00:00:21.239
+Davicho Barona: Welcome, welcome. I'm just going to, I'm gonna be busy for a second just admitting people.
+
+3
+00:00:21.580 --> 00:00:24.080
+Davicho Barona: Into the call.
+
+4
+00:00:25.790 --> 00:00:29.839
+Davicho Barona: So just give me a second here, but welcome, everybody.
+
+5
+00:00:30.390 --> 00:00:36.269
+Davicho Barona: We're gonna… Really, honestly, today, and for the foreseeable, like.
+
+6
+00:00:36.650 --> 00:00:52.980
+Davicho Barona: few weeks, I'm just gonna focus mostly on agents, the new… the new Luma app, really. Which I assume that's why most of you guys are here. And if you are currently using, Dream Machine.
+
+7
+00:00:53.260 --> 00:01:08.149
+Davicho Barona: I urge you to try, agents, especially because you will have some credits available to you since you already have a Dream Machine account. If you don't already have a Dream Machine account, and you're just jumping in to agents for the first time.
+
+8
+00:01:08.150 --> 00:01:14.639
+Davicho Barona: You will probably see a… you'll probably see a credit card paywall at the beginning.
+
+9
+00:01:14.890 --> 00:01:19.059
+Davicho Barona: I just want you to know that that is also meant to…
+
+10
+00:01:19.650 --> 00:01:29.620
+Davicho Barona: Basically, prevent a lot of scam bots from coming in and making unlimited accounts and just starting to create a ton without real permissions.
+
+11
+00:01:29.620 --> 00:01:39.959
+Davicho Barona: So when you put that credit card in, just know you're not getting charged anything until you actually commit, and if you are there for the first time, you will have a bunch of test credits to begin with.
+
+12
+00:01:39.970 --> 00:01:51.699
+Davicho Barona: But okay, let me, let me get into it. I'm just, again, I'm just submitting some new, new, folks into the room here. Hey, Tammy, welcome. I see some familiar faces. Awesome, Elle.
+
+13
+00:01:52.060 --> 00:01:59.819
+Davicho Barona: Artur is here, too, from my team, and he will be able to, to help out as well. I'm gonna try to monitor the chats.
+
+14
+00:01:59.850 --> 00:02:14.099
+Davicho Barona: too, hey, Chase, I'm gonna, let's make sure everybody's able to send some questions through here. As I go through it, I don't have, like, unlimited time, but as I go through it, like, please…
+
+15
+00:02:14.100 --> 00:02:21.550
+Davicho Barona: stop me, ask me questions. No question is a stupid question, please feel free to ask, like, whatever you want.
+
+16
+00:02:21.790 --> 00:02:25.170
+Davicho Barona: I'm gonna first just walk through,
+
+17
+00:02:25.650 --> 00:02:39.070
+Davicho Barona: the interface, and just kind of break things down as they are, and as, as, like, going through it as, as sort of you would coming into it brand new. Okay, looks like I don't have anybody else
+
+18
+00:02:39.310 --> 00:02:43.509
+Davicho Barona: in the waiting room, so I'm just gonna go ahead and jump in. Let me open the,
+
+19
+00:02:44.020 --> 00:02:45.450
+Davicho Barona: Open the interface.
+
+20
+00:02:45.580 --> 00:02:51.219
+Davicho Barona: And, and let's… let's hop in and start looking at some stuff.
+
+21
+00:02:51.840 --> 00:03:02.070
+Davicho Barona: So, here I am… Okay, this is… this is really the homepage here of Luma Agents.
+
+22
+00:03:02.550 --> 00:03:26.140
+Davicho Barona: the new Luma app, and as you get in here, you know, obviously you may not have as many boards as I do already created. This may be pretty blank for you guys. I do want to note that this does live in a new URL. This is not the same dream-machine.lumalabs.ai. This is app.lumalabs.ai. So just note that, that it is… that it does live in a different URL.
+
+23
+00:03:26.190 --> 00:03:28.539
+Davicho Barona: And so when you jump in here.
+
+24
+00:03:28.890 --> 00:03:41.290
+Davicho Barona: again, you guys, please feel free, just stop me, or throw your hand up, or throw it in the chat, and I think maybe Artur, if you can help me, just monitor the chats, if there's any questions being raised in there, it'd be great if you could help me answer.
+
+25
+00:03:41.290 --> 00:04:00.440
+Davicho Barona: But in any case, you come into the homepage here, you will see, again, you'll have no boards in here unless you're already starting to use it. And then this plus sign here, very reminiscent of Dream Machine. As soon as you click it, it'll open up a brand new board here, and as you'll notice, the board
+
+26
+00:04:00.780 --> 00:04:09.410
+Davicho Barona: gives you, a familiar feel. Like, if you guys use any kind of, like, infinite canvas type of,
+
+27
+00:04:09.600 --> 00:04:16.469
+Davicho Barona: type of tools, or like Figma, where, you know, you have this kind of collaborative space here.
+
+28
+00:04:16.730 --> 00:04:23.330
+Davicho Barona: Same thing here. Let me just poke around and give you, some very basics.
+
+29
+00:04:23.330 --> 00:04:40.190
+Davicho Barona: So, number one, here's your chat, your agent chat here, which you'll see it living on the right side. You can move this around and place it on the other side if you want. I think eventually we might be able to place it on the top or bottom, or have it float, but for now, it lives either on the left or on the right side.
+
+30
+00:04:40.490 --> 00:04:58.039
+Davicho Barona: And if you guys are used to using ChatGBT, or Claude, or Gemini, all of that, and then some is built in here under the hood. So, you can create, and you can talk, you can feedback, you can iterate everything with the agent here, however you're used to using all of those other tools.
+
+31
+00:04:58.040 --> 00:05:03.170
+Davicho Barona: This is the same premise here. The kicker is that this agent has
+
+32
+00:05:03.170 --> 00:05:27.959
+Davicho Barona: skills, knowledge, and access to all kinds of different multimodal tools. So, I'm just gonna point at them using my… the toolbar down here, which is also another way to create with, like, a more familiar UI. But just so you know, and you can see down here all the different tools that it has access to. You may see some differences here. I have an internal version, so there are some things that will pop up here as I'm doing the demo that you may not have access
+
+33
+00:05:27.960 --> 00:05:30.579
+Davicho Barona: us to. Ignore that for now.
+
+34
+00:05:30.740 --> 00:05:55.059
+Davicho Barona: However, you can see the image tools that it has access to, you can see the video tools that it has access to, and you can see the audio tools that it has access to as well. You can either, like I said, create based on this sort of more familiar UI, like when you click on a tool, there's a space for your prompt, a space for some reference images or start frames, etc, some settings, and then you can just create directly on the canvas itself.
+
+35
+00:05:55.080 --> 00:05:58.019
+Davicho Barona: But I also urge you to try doing this
+
+36
+00:05:58.020 --> 00:06:21.470
+Davicho Barona: also with the agent. Like, you can just start asking to create a video using, you know, whatever, you know, Veo 3.1, or just ask it to create, and it'll kind of choose a model. You can also ask it to create using all the models, so that you can compare all the different results with each other and stuff. Again, the agent, same thing, very smart as
+
+37
+00:06:21.470 --> 00:06:25.680
+Davicho Barona: The same as you're used to using any other chat agents.
+
+38
+00:06:25.990 --> 00:06:31.780
+Davicho Barona: Except, like I said, this has the ability to use and no…
+
+39
+00:06:31.780 --> 00:06:51.170
+Davicho Barona: everything about all of these tools that it has access to. So, for example, if you want to have… if you want to see, like, best practices, or what a prompt should look like for Veo versus Sora, or Kling, ask it for those breakdowns. You can ask it to give you breakdowns on anything, step-by-step guides.
+
+40
+00:06:51.170 --> 00:06:59.380
+Davicho Barona: And you can either ask it to tell you, or you can ask it to create a text document that it will drop on the canvas as well.
+
+41
+00:06:59.440 --> 00:07:24.359
+Davicho Barona: you can go into create mode, which is the mode, and down here is the little drop-down menu, which is the mode that you can use to just start making assets, dropping them on your board, or you can also go, first into brainstorm mode, which is… this is just chat only. Very cheap, can help you plan, kind of strategize before you start spending credits and creating assets on your board, so really nice to have the ability to go either create
+
+42
+00:07:24.360 --> 00:07:26.769
+Davicho Barona: Or brainstorm mode down here.
+
+43
+00:07:26.910 --> 00:07:46.810
+Davicho Barona: You'll see it's super useful, when… before you start making stuff, and that's where you can also ask questions. Well, you can ask questions and do research and brainstorming kind of in both mode… both modes, but when you're in brainstorm, it's charging you a lot less, you're not making assets, you're really just having this kind of conversation with the agent, all in that place.
+
+44
+00:07:46.810 --> 00:07:53.030
+Davicho Barona: Also, really good to point out, this does have access to the web, so you can refer URLs.
+
+45
+00:07:53.030 --> 00:08:02.849
+Davicho Barona: You can also drop any assets that you want onto this board, whether they're PDFs, images, videos, MP3s, creative briefs.
+
+46
+00:08:02.850 --> 00:08:10.529
+Davicho Barona: scripts, you name it. And you can drop them in here, or again, you can ask the agent to help you create them.
+
+47
+00:08:11.000 --> 00:08:11.950
+Davicho Barona: So…
+
+48
+00:08:12.430 --> 00:08:22.149
+Davicho Barona: Chat, super important, on the right side here, starting out. You can also minimize it here, and then re-access it down from this, little shortcut down here.
+
+49
+00:08:22.320 --> 00:08:36.219
+Davicho Barona: you'll also… I'm gonna actually go ahead and jump into a board that I've, like, already created, so you can all just see, some assets and stuff on the board itself. Let me hop into one that I've kind of been using to,
+
+50
+00:08:36.470 --> 00:08:47.289
+Davicho Barona: to do some of these demos, let me just make sure I find, one that makes the most sense. So, let's, hop in here.
+
+51
+00:08:47.540 --> 00:09:12.519
+Davicho Barona: I've done a lot of organization on this board. Like, as you can see, some… I'm using a lot of the tools here, like the Canvas tools, like arrow builders, and text boxes, etc. You can find all of those tools down here in the toolbar. Like, the first set of tools on the left side here are gonna be all of your, like, generation tools, but then on the right side, you're gonna see different, like, annotation tools and kind of organization tools, if you
+
+52
+00:09:12.520 --> 00:09:13.340
+Davicho Barona: you will.
+
+53
+00:09:13.530 --> 00:09:30.420
+Davicho Barona: Like, for example, you'll have shapes here. Every single one of them also has some shortcuts next to them, and that, for me, is, like, really key, because I really like working fast with shortcuts, same as I'm used to working in, like, Adobe and things like that. And then to give you a little bit more on shortcuts.
+
+54
+00:09:30.770 --> 00:09:48.379
+Davicho Barona: I actually… you have a… you have a little settings menu on the top right here, and in here, you're gonna see also a bunch of different settings over here. Some of them may be internal and just to me. Some of them, you'll… you'll… so you may not see them as I'm doing this demo, like, you may see some changes in yours.
+
+55
+00:09:48.380 --> 00:09:51.090
+Davicho Barona: But this shortcuts
+
+56
+00:09:51.090 --> 00:10:09.350
+Davicho Barona: menu here will give you the full shortcuts, options here in this menu. What I usually do is I honestly just take a screenshot of that, and then I just drop the screenshot right into my board. It kind of helps me, have it just as a very quick reference here.
+
+57
+00:10:09.610 --> 00:10:20.910
+Davicho Barona: So in any case, again, you'll see, like, me organizing my assets with all of these different kinds of tools here, which you'll see as either, you know, shapes, like arrows, lines.
+
+58
+00:10:20.910 --> 00:10:33.100
+Davicho Barona: ellipses, diamonds, rectangles, or just, like, you know, basic doodle tools. I can switch the color of those, that way I can maybe annotate differently, for either me or for my team.
+
+59
+00:10:33.430 --> 00:10:49.520
+Davicho Barona: text boxes, just drag and start typing here. Once you double-click into the text box as well, you'll see other little, helpful tools, you know, different sizes of the text itself, bolding, italic, underlining, strikethroughs, bulleted lists.
+
+60
+00:10:49.520 --> 00:10:54.420
+Davicho Barona: highlighting, etc. Things like this are also really useful when working with your team.
+
+61
+00:10:54.420 --> 00:10:55.320
+Davicho Barona: And then…
+
+62
+00:10:55.400 --> 00:11:17.880
+Davicho Barona: As it comes to working with your team, you're gonna see a share button on the top right here. Also, by the way, I'm recording this. If you guys, want to see this afterwards, please just feel free, shoot me an email, I will send you the recording of this. And this will also happen. Any webinars that I do will be recorded, so feel free to also request that. And you know what? As I'm talking, I'm gonna go ahead and drop…
+
+63
+00:11:17.880 --> 00:11:22.110
+Davicho Barona: My email address here, as well as Artur's
+
+64
+00:11:22.780 --> 00:11:40.230
+Davicho Barona: in the, in the chat. Feel free to copy that, shoot me an email, I'll send you the recordings, after they're ready. It takes, like, an hour after this for it to be ready for me to share, so just remind me, please. Thank you. Artur drops his email in there, too. We're both here to just, like, help. Anytime you guys have any questions.
+
+65
+00:11:40.230 --> 00:11:48.470
+Davicho Barona: please feel free, shoot us a question, and we may, hey, Tammy, we may have, you have not been able…
+
+66
+00:11:48.780 --> 00:12:01.450
+Davicho Barona: to use agents, you had a lot of errors I'm seeing here. Thank you, Tammy, for sending me an email. I was in South by Southwest all of last week, so I haven't been able to get back to a lot of my requests. I'm hoping…
+
+67
+00:12:01.640 --> 00:12:11.059
+Davicho Barona: that… I'm gonna… Tammy, I'm gonna connect you with support. This seems like a support issue, so I'm gonna go ahead and connect you with support. Please,
+
+68
+00:12:11.230 --> 00:12:13.429
+Davicho Barona: Artur, is this correct?
+
+69
+00:12:13.680 --> 00:12:19.390
+Davicho Barona: Yeah, support at lumilabs.ai, really great people there. Martin, Irina.
+
+70
+00:12:19.390 --> 00:12:42.689
+Davicho Barona: Sharky, those guys are there to help. Tammy, please reach out, and if you… and you can copy me and Arturo on there, if you're having a hard time getting through to anybody's, to just escalate it. I want to make sure you're up and running. I'm sorry that's been happening to you. Launch week, this time is always a little bit nuts, as we're always kind of, like, in the back end, trying to correct all these little things.
+
+71
+00:12:42.720 --> 00:12:47.570
+Davicho Barona: But please copy us and shoot an email to support at lumilabs.ai.
+
+72
+00:12:47.960 --> 00:12:49.990
+Davicho Barona: And we'll get it sorted out.
+
+73
+00:12:50.100 --> 00:12:56.839
+Davicho Barona: where was I? So, in share mode, when you, you're, you know, you click this button on the top right.
+
+74
+00:12:57.110 --> 00:12:59.189
+Davicho Barona: Let me just make sure, I think there's…
+
+75
+00:12:59.750 --> 00:13:23.940
+Davicho Barona: Someone else joining. Click that button, that share button on the top right, and you'll see here, you can add anybody's email address here on your team, etc, and just invite him, invite them into your board, give them a permission, either view or edit, and then you just copy the link also and share that link in particular. As soon as you type their email in here, they'll get an email that says, like, you've been invited to this board, like, open it up.
+
+76
+00:13:25.180 --> 00:13:36.150
+Davicho Barona: But you'll be able to share and work in sync on the same board with your teammates here, which is super helpful. And a lot of times, that's why I use
+
+77
+00:13:36.540 --> 00:13:50.109
+Davicho Barona: all of these different, little Canvas tools as well, just to be able to, like, drop notes and hints for my team and, you know, be able to… to work, like, together on a board. Okay, so as I'm here, first, let me stop.
+
+78
+00:13:50.110 --> 00:13:59.589
+Davicho Barona: And ask you guys, if you have any questions so far, please just throw it out there, raise your hand, or just unmute yourself, and feel free to throw it out there.
+
+79
+00:14:00.220 --> 00:14:03.739
+Davicho Barona: Let me pop in the chat real quick. Cool.
+
+80
+00:14:03.840 --> 00:14:08.519
+Davicho Barona: We have… we should have access to Clang already, I believe.
+
+81
+00:14:08.740 --> 00:14:26.600
+Davicho Barona: I mean, I see it in mine. I know we have Clink 2.6 in there. I'm curious about 3.0. If anybody has it open, if you can see that, please just give me a thumbs up or not. Like, I would just like to know if you guys see this, or if this is just my internal account right now, showing,
+
+82
+00:14:26.680 --> 00:14:31.720
+Davicho Barona: showing it up in there. But if we don't have it now, we'll have it very, very, soon.
+
+83
+00:14:31.940 --> 00:14:37.269
+Davicho Barona: but yeah, if anybody can see it, let me know if you have that already.
+
+84
+00:14:38.780 --> 00:14:57.059
+Davicho Barona: Something else good to note is, obviously, like, your… the canvas, like, it grows quite a bit. The more you use it, the bigger it starts getting, and the more assets you start putting on there. Just remember, you can obviously zoom in or zoom out, but also, you have a little mini-map down here on the bottom left.
+
+85
+00:14:57.060 --> 00:15:02.420
+Davicho Barona: That also helps me, if I click on it, it helps me kind of get around my board a little bit faster as well.
+
+86
+00:15:02.640 --> 00:15:13.250
+Davicho Barona: And down here, I have a Zoom panel. If I click, actually, on that Zoom panel, I actually can see a few other,
+
+87
+00:15:13.250 --> 00:15:28.919
+Davicho Barona: a few other, elements as well that I can select. I can… I can obviously zoom in, zoom out. I can zoom to, like, 100% according to how I've sized my objects on the board. I also can zoom to selection. Like, if I,
+
+88
+00:15:29.040 --> 00:15:32.570
+Davicho Barona: Actually, something that's important to note here that I haven't touched on.
+
+89
+00:15:32.930 --> 00:15:49.679
+Davicho Barona: repeat the chats real quick. Something I haven't touched on is this search mode. So, you can go, and I don't… I hope you can see that clearly, let me get to a clear area here. So, right next to my chat button down here, I have this asset search mode, or as a shortcut, Command-F.
+
+90
+00:15:50.100 --> 00:15:50.940
+Davicho Barona: And…
+
+91
+00:15:50.940 --> 00:16:12.940
+Davicho Barona: Here, if I open this up, I'm gonna actually be able to see all my assets on my board, according to… and it'll take a second to load everything here, according to whatever filter I have here, like, I can filter through all kinds of different, media, as well as, like, labels. Like, I can give any asset a label. When I click on an asset.
+
+92
+00:16:12.940 --> 00:16:14.370
+Davicho Barona: I can,
+
+93
+00:16:14.370 --> 00:16:29.370
+Davicho Barona: sorry, I can go to this label, for example, and I can just say, like, approved. So now I can also go in and search by just all approved labels, and it'll show me those assets that I've labeled, that certain label here. I can also search through assets by name.
+
+94
+00:16:29.370 --> 00:16:35.959
+Davicho Barona: Which means that every asset that I have on the board, if I… if I… if I zoom in, I will see that each one has a file name.
+
+95
+00:16:36.280 --> 00:16:38.310
+Davicho Barona: I can change that file name.
+
+96
+00:16:39.310 --> 00:16:41.590
+Davicho Barona: And that now becomes…
+
+97
+00:16:41.690 --> 00:16:57.209
+Davicho Barona: a… the name of this asset on my board, which, number one, gives me context for search, but number two, also gives me context for my agent. Like, I can now refer to this as man and woman, you know, the image labeled man and woman is what I can talk to the agent about.
+
+98
+00:16:58.450 --> 00:17:15.379
+Davicho Barona: So, search mode is super important, especially once you start creating a lot on your board. And then if I, like, for example, like, if I'm out here, and I'm searching, and I select something, I can also zoom in to that selection. So this zoom
+
+99
+00:17:15.380 --> 00:17:40.369
+Davicho Barona: sometimes is really helpful when I have something selected, and I just want to zoom in to find it on my board. This zoom to Selection is really helpful. Zoom to fit is also nice, which just shows me the entire board, all the contents of my board, just to be able to help me find my way a little bit faster. We are working definitely on improving some organizational aspects of this. I would like to, like, drop a pin somewhere, and then be able to refer to the
+
+100
+00:17:40.370 --> 00:17:43.739
+Davicho Barona: a pin on my board, for example, kind of find my way.
+
+101
+00:17:43.980 --> 00:17:49.959
+Davicho Barona: a little bit better. I'll go back to chat, and let's look at the way that
+
+102
+00:17:50.360 --> 00:17:54.309
+Davicho Barona: you can interact with these files. So, like, once I create something.
+
+103
+00:17:54.570 --> 00:18:12.669
+Davicho Barona: When I click on something, I can also shift-click multiple assets. Every time I'm shift-clicking assets, you start seeing them populate the chat. So now I can, whenever I talk to the agent, and I have selected assets, I'm now referring to those assets, right? I can say, like, you know,
+
+104
+00:18:13.080 --> 00:18:20.540
+Davicho Barona: Create these again, but… Use Sea Dream instead.
+
+105
+00:18:21.060 --> 00:18:22.000
+Davicho Barona: Now…
+
+106
+00:18:22.060 --> 00:18:32.549
+Davicho Barona: the board has contextual history, just like you're used to using, like, ChatGPT, for example. You have contextual history of your entire ChatGPT, let's say.
+
+107
+00:18:32.550 --> 00:18:47.090
+Davicho Barona: But also, every single chat that I have in here has its own little contextual history as well, just like in ChatGPT, where you can, like, refer to something you've been working on in that chat, or refer to the entirety of your project as well. And…
+
+108
+00:18:47.680 --> 00:18:50.959
+Davicho Barona: something to note is, like, if I click on this top
+
+109
+00:18:50.980 --> 00:18:57.829
+Davicho Barona: drop-down here, I can keep adding chats. So I can, like, organize my project by chat.
+
+110
+00:18:57.830 --> 00:19:15.240
+Davicho Barona: And so it doesn't get super messy. You're used to using ChatGPT in the same way, too. You wouldn't start mixing concepts and mixing different ideas within a single chat, because it'll drive you nuts. At least it does me. Like, I can't… I have to keep contacts within one chat. Same thing here. Create new chats.
+
+111
+00:19:15.240 --> 00:19:20.579
+Davicho Barona: For whatever new bit of your board or of your project in this board that you're trying to make.
+
+112
+00:19:21.050 --> 00:19:34.660
+Davicho Barona: Feel free to do that. You can create endless amounts of chats. I am working on making sure that we can relabel these chats. That would be, like, really helpful for me to be able to label them. Right now, they get auto-labeled based on the context of what you're making in here.
+
+113
+00:19:34.980 --> 00:19:36.610
+Davicho Barona: So, right.
+
+114
+00:19:36.970 --> 00:19:45.399
+Davicho Barona: Shift-click… like, selecting something and shift-clicking is really super helpful. And let me show you also how things can…
+
+115
+00:19:45.730 --> 00:19:57.070
+Davicho Barona: how selections can really work. So, I created this little workflow here, which the workflow is really just, creating, you know, turning any illustration
+
+116
+00:19:57.440 --> 00:20:16.930
+Davicho Barona: into, like, a photorealistic version of that illustration. That's my basic workflow. To do that, I could do that a couple different ways. I could literally do it by just telling the agent, like, in very basic language, like, hey, turn this photo into a photorealistic… or turn this illustration into a photorealistic image.
+
+117
+00:20:16.930 --> 00:20:27.420
+Davicho Barona: And the agent is going to go pick up on a bunch of strategies, basically skills that we've programmed into it, and it will do that on its own. And that was from a very basic,
+
+118
+00:20:27.660 --> 00:20:46.839
+Davicho Barona: instruction, like, natural language. However, I'm like a stickler, and I like to keep things… like, I like the most amount of control I possibly can, and I kind of am sort of like this prompt engineer, in a sense, so whether you are or you aren't, this tool can be used either way, but I just want to show you
+
+119
+00:20:47.030 --> 00:20:54.479
+Davicho Barona: How referencing assets can kind of work. So… If I select this image.
+
+120
+00:20:55.390 --> 00:21:00.539
+Davicho Barona: It's loaded up into my chat. Then I can also click, shift, select this prompt.
+
+121
+00:21:01.280 --> 00:21:22.790
+Davicho Barona: Then I can also click Shift and select any other asset in here, and I can just basically say, like, run this prompt on this image. That's one way I can do it. Or I can literally, like, select it, or I can copy this entire thing, just literally copy it to my clipboard, select this image, and then I can just drop that full prompt in here.
+
+122
+00:21:22.790 --> 00:21:28.700
+Davicho Barona: Right? And it'll do the same thing. But I love being able to build a prompt, or build, like.
+
+123
+00:21:28.700 --> 00:21:38.099
+Davicho Barona: a brief, and then just select it as an asset, and then select whatever other asset I want to run that workflow on, and then literally just say.
+
+124
+00:21:38.100 --> 00:21:43.940
+Davicho Barona: run this prompt on this image. Something like that. So.
+
+125
+00:21:44.110 --> 00:21:54.779
+Davicho Barona: Agent has context of your board, of your assets. You can type in your prompts in here, however much you want, or you can drop them in on your boards, for example.
+
+126
+00:21:54.970 --> 00:22:13.369
+Davicho Barona: and then refer… like, unpack them by just saying, like, run this on any image that you, or any asset that you… that you want that's on your board already, if that makes sense. Do you guys have any questions so far? I want to make sure that I'm… I'm giving time for that, since I only have, like, 10-ish minutes.
+
+127
+00:22:14.130 --> 00:22:16.630
+Davicho Barona: But yeah, anybody have any questions on this?
+
+128
+00:22:19.590 --> 00:22:24.809
+Davicho Barona: Cool. I am also, just so you guys know, I am running, like.
+
+129
+00:22:24.950 --> 00:22:40.640
+Davicho Barona: 3 public webinars every week, and for the first couple weeks, like, I'm gonna go over these basics, just for new folks joining. However, as time goes on, we might not have as many webinars at some point, but on Wednesdays, every single Wednesday for
+
+130
+00:22:40.880 --> 00:22:43.570
+Davicho Barona: eternity, I'm gonna be running…
+
+131
+00:22:43.800 --> 00:23:00.629
+Davicho Barona: a public webinar, and I… I just want to make sure that you guys have links to that. Most of, or a lot of you guys show up to my… to my Wednesday webinar, but let me just make sure that I am…
+
+132
+00:23:00.690 --> 00:23:14.309
+Davicho Barona: Yeah, this is correct. Let me just make sure I'm copying this and giving you guys this in your chat so that you're able to join this anytime. Artur is freaking on it, thank you, I don't even need to do that.
+
+133
+00:23:14.610 --> 00:23:33.860
+Davicho Barona: That is the… that is the right link, so please make sure that you register for those if you want to come in, and this is… these are great for, like, just ask questions. It's open, like, I don't want to be the only one talking. Everyone learns from everybody's questions, so, like, bring your problems, bring your, and bring your tips, too. Like.
+
+134
+00:23:33.900 --> 00:23:47.470
+Davicho Barona: This is open… like, this is an open world, like, I don't have all the answers. In fact, I urge you to also ask the agent for any answers. Like, how do I do X?
+
+135
+00:23:47.800 --> 00:23:58.959
+Davicho Barona: What's the best way to, you know, create a storyboard for my, you know, for a luxury product commercial?
+
+136
+00:23:59.170 --> 00:24:03.080
+Davicho Barona: The agent will help you break those things down into steps, like.
+
+137
+00:24:03.210 --> 00:24:11.279
+Davicho Barona: It truly is the knowledge base, and when… and I'm creating a lot of different knowledge docs that go up on our Learning Hub. In fact, let me make sure to,
+
+138
+00:24:11.690 --> 00:24:22.949
+Davicho Barona: to… we will… I'm gonna revamp this whole learning hub. It's being rebuilt right now to just focus on agents as well, but if you go to lumilabs.ai slash learninghub here.
+
+139
+00:24:24.320 --> 00:24:28.339
+Davicho Barona: this, and just search, like, Luma agents.
+
+140
+00:24:28.840 --> 00:24:41.279
+Davicho Barona: And then you should be able to have… it should give you, like, all kinds of different… see, it's a little clunky right now, and I apologize for this, because it's intermingled with a lot of different…
+
+141
+00:24:41.430 --> 00:24:52.840
+Davicho Barona: Dream Machine articles. And so I'm sorry for that, because it's, it's a little bit, like, a little bit confusing, but you're going to be able to see here, if you search, like.
+
+142
+00:24:54.900 --> 00:25:12.180
+Davicho Barona: agents, you'll be able to see these different articles in here, like here, uploading your files in here, how this works. Tell the agent what I've uploaded. I have put in, like, prompt templates in here, all kinds of different places, like, and there's…
+
+143
+00:25:12.180 --> 00:25:29.060
+Davicho Barona: articles about different capabilities, video, image, audio, about, team collaboration, about creating at scale, about brainstorm mode, about the, you know, how to use the toolbar, for example. So, please hit that up.
+
+144
+00:25:29.060 --> 00:25:33.910
+Davicho Barona: And also, make yourself comfortable with all those different articles.
+
+145
+00:25:34.240 --> 00:25:38.570
+Davicho Barona: And so, all of these, like, like, ground truth…
+
+146
+00:25:38.770 --> 00:25:41.690
+Davicho Barona: kind of articles. The agent is…
+
+147
+00:25:41.800 --> 00:25:50.090
+Davicho Barona: also learning from this, as we internally keep testing and testing and checking out different workflows, etc. So.
+
+148
+00:25:50.120 --> 00:25:59.569
+Davicho Barona: the information that the agent has in here is also quite useful. At the same time that you can also tell it to go search online.
+
+149
+00:25:59.570 --> 00:26:13.570
+Davicho Barona: for different things. So, when you find articles about, like, Nano Banana Pro prompts, selfies, whatever it is that you find out there, you can apply that in here. Like, there is… there is no real limitation here.
+
+150
+00:26:13.570 --> 00:26:20.709
+Davicho Barona: This truly is a home where you can use all of those different, tools without having, like, a million subscriptions.
+
+151
+00:26:21.010 --> 00:26:28.120
+Davicho Barona: And without having to, like, go to ChatGPT all the time to try to refine a prompt, or do whatever, you can do that here.
+
+152
+00:26:28.390 --> 00:26:33.640
+Davicho Barona: with this knowledge base on those tools attached to it. So.
+
+153
+00:26:33.930 --> 00:26:44.719
+Davicho Barona: it has more power than just… it's not an aggregator. This is… this isn't… this isn't that. This has, like, a level of intelligence and a… and a level of, like.
+
+154
+00:26:44.720 --> 00:26:58.320
+Davicho Barona: connectedness that you can't get from that splintered workflow. So I urge you to, if you get an account here, I urge you to, like, try this as your only, like, place to work.
+
+155
+00:26:58.620 --> 00:27:10.819
+Davicho Barona: And if it doesn't… like, you know, I use Midjourney, for example, I even still use ChatGBT, because it has my contacts in certain places, but now I'm truly starting to switch everything over to agents, because…
+
+156
+00:27:10.880 --> 00:27:29.809
+Davicho Barona: it has… once you start building in here, you have, like, a whole new way of working, and it just makes a whole lot more sense. Again, we are in, like, week two, post-launch. You're gonna see some bugs, you're gonna see some kinks. Tammy, like, what you're experiencing, these things…
+
+157
+00:27:29.890 --> 00:27:35.920
+Davicho Barona: You're gonna see some of this stuff. And when something doesn't work, you're gonna see this thumbs up, thumbs down.
+
+158
+00:27:36.220 --> 00:27:38.290
+Davicho Barona: In, in your chat responses.
+
+159
+00:27:38.440 --> 00:27:53.439
+Davicho Barona: please, if you hit the thumbs down, please share your notes. Like, please tell us what's happening. You know, I truly… we want to know what's going on, because otherwise we're just in the dark. We don't know how you like to do it. We don't know your problems. We can't add
+
+160
+00:27:53.440 --> 00:28:13.199
+Davicho Barona: to a pattern. We want to see patterns, so that we can go in there and fix stuff. Like, this tool is made for you. This isn't made for our engineers, and it's not made just because we can. This is made so that you guys can use it, you guys can have a great time using it, and so your projects are actually what's driving
+
+161
+00:28:13.290 --> 00:28:32.139
+Davicho Barona: the way that this thing is being built. So, please, take advantage of that. Email support if you have issues. Email me if you're having things that you, you know, blockers or problems or whatever, but also email me if you're having good things. Like, I also want to know good stuff. Like, please share your creations with me, something you like.
+
+162
+00:28:32.140 --> 00:28:34.540
+Davicho Barona: And then come back on Wednesdays.
+
+163
+00:28:34.540 --> 00:28:58.429
+Davicho Barona: And, like, please share it with the group. Like, I want this to be, like, truly, like, a community where we can all build with this thing together, learn from each other. I learn from people in those calls all the freaking time, and I honestly, like, I love it. We do have a CPP, I encourage you to apply. It's a little… it's kind of tight, so, you know, we have more, like, requirements now than we ever have.
+
+164
+00:28:58.430 --> 00:29:04.929
+Davicho Barona: But we also have more perks now than we ever had. So, whether you get in or not is worth applying, so please do.
+
+165
+00:29:04.930 --> 00:29:06.840
+Davicho Barona: Artur can help you with this.
+
+166
+00:29:07.210 --> 00:29:25.929
+Davicho Barona: Let me see, where do you find how many credits you have left? Good question. I'm gonna go back out of this board. If I back out of this board, I have, like, every time… everybody's got their own team. Once you make an account, you're gonna have your team. For me, this is David's team, up in the top. If I click on this drop-down arrow.
+
+167
+00:29:26.290 --> 00:29:46.060
+Davicho Barona: I can go to this Manage Team here. If I click that Manage Team, I'm gonna see how many credits I have left in here. Obviously, I have a ton of credits because I need to create stuff, and, yes, you guys are not gonna have as many credits unless that's how much you have, but this is where you're gonna see how many credits you have left.
+
+168
+00:29:47.640 --> 00:29:51.579
+Davicho Barona: Also, before I go, because I'm totally running out of time.
+
+169
+00:29:53.070 --> 00:30:08.860
+Davicho Barona: This up here, you're gonna see these seeds. We're gonna be expanding on this a lot. And these are, like, pre-built little workflows in here. You're gonna see them under a few different categories, okay? Each one of these, you're gonna see this being built up a lot more robustly here, but we have the beginnings of this.
+
+170
+00:30:08.860 --> 00:30:15.010
+Davicho Barona: And every single one of you, as soon as you jump in there, you're going to be able to see, number one.
+
+171
+00:30:15.010 --> 00:30:24.170
+Davicho Barona: I'm just gonna open this, sketch to render seed. Number one, you're gonna be able to see a, a couple assets that are pre-loaded on the board.
+
+172
+00:30:24.980 --> 00:30:25.900
+Davicho Barona: And…
+
+173
+00:30:26.070 --> 00:30:35.850
+Davicho Barona: Those are gonna be just, like, example assets for you to use. These are, like, pre-meditated workflows, and in here, the agent's already gonna start asking you stuff.
+
+174
+00:30:35.850 --> 00:30:52.289
+Davicho Barona: Because it's just about sketch to render, for example. And so now it's like, hey, I have… I see this, like, image of this chair already loaded up, but do you have your own sketch? Like, upload it, basically. Like, give me something, and I'll turn that sketch into a full render.
+
+175
+00:30:52.290 --> 00:31:06.320
+Davicho Barona: So these seeds are really, really fun. You can, this slide deck one is absolutely awesome, for example. Like, this is so helpful. I'm gonna actually go back out and show you one that I, that I made here.
+
+176
+00:31:07.240 --> 00:31:22.689
+Davicho Barona: So I made this, like, slide deck about coffee, which, by the way, I am out of coffee. But this slide deck here, I literally made in, like, 2 minutes, just with the agent asking me
+
+177
+00:31:23.020 --> 00:31:36.379
+Davicho Barona: what it was that I wanted to make it about, right? Like, it first started, like, hey, I got a brief on the board, which is, this is the starting asset, but, like, you know, give me a topic, let me make a slide deck. So I just said coffee and the history of coffee, and then…
+
+178
+00:31:36.400 --> 00:31:56.049
+Davicho Barona: boom, I have, like, such a great little starter for a deck about coffee, with really clear text on here, super accurate information that I've literally checked, accurate maps, for example, in a particular style, and then I can also go in there and ask for some,
+
+179
+00:31:56.420 --> 00:32:07.540
+Davicho Barona: some different styles, some different details about it, I can go change it, I can then kind of start tweaking things here. Again, you have an agent here.
+
+180
+00:32:07.540 --> 00:32:22.369
+Davicho Barona: You can ask the agent pretty much anything. So this isn't, you know, if you feel stuck, just talk to this agent. It also has a voice mode in your chat, so you could literally talk to the agent if you want to. Makes it much more conversational as well.
+
+181
+00:32:22.390 --> 00:32:33.489
+Davicho Barona: Anyway, I'm out of time, but I want to ask you guys if you have any questions here, hopefully you found this helpful, but please shout it out if you do have any questions.
+
+182
+00:32:33.630 --> 00:32:35.439
+Davicho Barona: Elisa here.
+
+183
+00:32:35.440 --> 00:32:36.210
+Elisa King: Yeah.
+
+184
+00:32:36.210 --> 00:32:37.050
+Davicho Barona: Yeah, go ahead.
+
+185
+00:32:37.440 --> 00:32:49.259
+Elisa King: Yeah, I was just curious, because, like, I'm trying to finish this, commercial… here, I'll just go back to this, in the time frame… well, within the credits that I have, but I found myself generating a lot.
+
+186
+00:32:49.390 --> 00:32:54.719
+Elisa King: With one particular frame over and over, it just can't seem to grasp
+
+187
+00:32:54.750 --> 00:33:11.050
+Elisa King: like, the lighting and keeping the faces from getting all warped. Okay. And I'm at about, you know, I'm almost at the 40,000 credit limit. I've got about, you know, a little bit left. And I'm wondering, from what you know, for tasks, kind of like what each,
+
+188
+00:33:11.870 --> 00:33:15.269
+Elisa King: like, I guess, how many credits are used?
+
+189
+00:33:15.270 --> 00:33:20.010
+Davicho Barona: The credits are used per test, it's a good call. I've actually…
+
+190
+00:33:20.120 --> 00:33:34.290
+Davicho Barona: to be honest, I built… I had the same… I had the same question, and so I actually… I can share this with you guys if anybody has Claude as well. Like, I… I built a calculator that allows me to see
+
+191
+00:33:34.340 --> 00:33:46.640
+Davicho Barona: how many credits are, like, everything uses, which you can totally build as well on your own, but I, let me see why this is not loading up here. Let me see if I can reload.
+
+192
+00:33:46.970 --> 00:33:56.089
+Davicho Barona: I… But, hold on. Before I go into this calculator, which doesn't really… You're trying to make a…
+
+193
+00:33:56.360 --> 00:34:04.380
+Davicho Barona: You're having issues with creating frames, because the faces are being all weird, and you're not getting the right lighting that you want?
+
+194
+00:34:04.620 --> 00:34:23.979
+Elisa King: Well, I've got this kind of, like, like, very interesting kind of, like, aura about, like, it's a kind of flickering, kind of magical lighting that's happening amongst a bunch of children, and I found that a couple of the faces, especially one particular face, kept getting blurry, and the more I would generate different ones.
+
+195
+00:34:24.070 --> 00:34:38.680
+Elisa King: it actually started making it worse. So I was like, oh, we were better off at the beginning with just one kid's face being weird, but then I found the rest of them started to get blurry the more that I proceeded with regenerating it. So it seemed like, and I talked to the chat.
+
+196
+00:34:38.900 --> 00:34:44.859
+Elisa King: And it seemed to think that it was just a lot of processing, and it was too tricky… I don't know.
+
+197
+00:34:45.870 --> 00:34:52.899
+Davicho Barona: How did you… what did you tell the agent? Like, so, like, okay, let's go, let me go into just this, this, this, random…
+
+198
+00:34:53.040 --> 00:34:57.060
+Davicho Barona: board here of character consistency.
+
+199
+00:34:57.320 --> 00:35:09.829
+Davicho Barona: So, like, for example, here's me, just, like, building characters, okay? Yeah. Number one, if you want to control your character, you truly need to build, like, a master references set.
+
+200
+00:35:10.150 --> 00:35:10.820
+Elisa King: Okay.
+
+201
+00:35:10.820 --> 00:35:23.440
+Davicho Barona: So, I go in here, and I first start with building my character. Obviously, you can build your character in here, or you can bring your character already, right? Either way, what you want to start doing is you want to create
+
+202
+00:35:23.780 --> 00:35:26.409
+Davicho Barona: a character reference set. I…
+
+203
+00:35:26.930 --> 00:35:44.789
+Davicho Barona: my biggest piece of advice to folks is do not create a single page with all the different, all the different, angles on a single image. I don't think that that's actually accurate. I truly believe in creating a single asset per
+
+204
+00:35:44.790 --> 00:35:50.659
+Davicho Barona: Every single one of the angles or the views of that character, it makes a lot more sense.
+
+205
+00:35:50.660 --> 00:35:52.590
+Elisa King: That makes total sense, yeah.
+
+206
+00:35:52.590 --> 00:36:05.340
+Davicho Barona: Yeah, you'll see, like, bleeding over, you'll see some weird leakage happening when you do… when you do a single character reference image. I don't like it, and I don't advise you to do that. As much as other people may, it's not as clean, and that's not…
+
+207
+00:36:05.420 --> 00:36:21.069
+Davicho Barona: that may be good for a human, but for an agent, it starts messing things up, because it doesn't actually know which one should I be referencing. So, like, it might bring in some aspects of one that's, like, the buttons on the back of the shirt, or whatever, sometimes may leak into the front.
+
+208
+00:36:21.070 --> 00:36:26.130
+Davicho Barona: Or, you know, and you're like, why is that happening? Well, it's because you have a single character reference image.
+
+209
+00:36:26.130 --> 00:36:34.459
+Davicho Barona: for multiple views. How is it supposed to understand which is which? It's on one page. So, multiple images, and create at least 6.
+
+210
+00:36:34.620 --> 00:36:44.430
+Davicho Barona: Like, I go in here and start with the first one, and here's, like, my prompt. It's like, portrait of a young… of a… and I put this in brackets so that anybody can kind of use it.
+
+211
+00:36:44.620 --> 00:36:55.229
+Davicho Barona: So please feel free to email me. I can totally send this to you. And I have this, like, in steps, in phases. So, I create the… my… my main…
+
+212
+00:36:55.300 --> 00:37:06.500
+Davicho Barona: reference asset, and then from here, in order to create the next one, like, I actually click on it, so that now I'm referencing my reference, and now I tell it
+
+213
+00:37:06.500 --> 00:37:23.179
+Davicho Barona: You know, give me a 1 to 1 aspect ratio portrait facing directly forward, head and shoulders, visible, neutral expression, solid white background, very important, so that you don't have any pollution from anything else. You're just able to focus on that particular face.
+
+214
+00:37:23.190 --> 00:37:31.969
+Davicho Barona: And then from there, I start making the same, I start doing the same thing for the other assets. So now that I have this one.
+
+215
+00:37:32.280 --> 00:37:53.990
+Davicho Barona: Now, I'm gonna use this as my reference, because now I'm more focused in on her face. Now I'm gonna select that, and now I'm gonna go to the next prompt here. Side profile portrait, 90 degree side view, head and shoulders visible, showing profile of nose, ear, etc. Again, the white background. Same person as the reference images.
+
+216
+00:37:53.990 --> 00:38:00.740
+Davicho Barona: And so, I'm basically… As I continue to go down here, I'm referencing my new references.
+
+217
+00:38:00.890 --> 00:38:10.259
+Davicho Barona: That way, I'm really building things, according to the references that I've made. And so I go all the way down here, so like, for example.
+
+218
+00:38:10.260 --> 00:38:22.540
+Davicho Barona: wants to build this front view, I'm obviously gonna tell it to create, like, a full body front view, like, facing forward, but I'm actually gonna make sure that all of my,
+
+219
+00:38:22.540 --> 00:38:30.899
+Davicho Barona: my, like, garment descriptions are there, including down to the shoes. If you don't describe the shoes, a lot of times it won't give you the full body pose, because…
+
+220
+00:38:30.980 --> 00:38:35.210
+Davicho Barona: It's like you're not giving it context enough to tell you, like, I want to actually see the feet.
+
+221
+00:38:36.600 --> 00:38:49.750
+Davicho Barona: And then from here, like, I would use this reference now in order to create the back view. And then I would use that reference to create the side view, etc. And then once I have…
+
+222
+00:38:49.750 --> 00:38:59.309
+Davicho Barona: all of my different, references set, then what I actually do is I go in here, and I rename every single one of them.
+
+223
+00:38:59.310 --> 00:39:11.749
+Davicho Barona: to something that makes sense, right? And I give the character a name. In this case, I named her Maya. And so Maya, now this is the Maya front face. So now I can actually talk about Maya…
+
+224
+00:39:12.020 --> 00:39:28.130
+Davicho Barona: front, face, and use Maya, and I can start talking about Maya. And then anytime I do something, I can… and also, I put a frame around all of them, and create it, and give the frame a name as well, and just call it Maya Master Character Reference Images.
+
+225
+00:39:28.130 --> 00:39:34.360
+Davicho Barona: So that now I can just select the entire frame, and I can then say, okay, you know what?
+
+226
+00:39:34.380 --> 00:39:36.599
+Davicho Barona: I'm gonna select this whole frame.
+
+227
+00:39:36.910 --> 00:39:48.879
+Davicho Barona: I also created a bunch of, like, items here, right? Like, this is kind of like a Fallout, kind of a, you know, end-of-the-world cowboy kind of a theme. And now I just… all these assets that I created, I'm just gonna select the ones I want.
+
+228
+00:39:49.340 --> 00:39:53.109
+Davicho Barona: these. In this case, I'm highlighting these in green by actually just
+
+229
+00:39:53.180 --> 00:40:11.029
+Davicho Barona: Using the little color picker. And now, because I have those assets selected, right? Like, I selected the full frame, and now I selected those garments, I can literally come in here and just say, okay, now create all of these different reference images again.
+
+230
+00:40:11.080 --> 00:40:22.000
+Davicho Barona: like, create… recreate Maya, except make her wearing all the assets that are selected. So now, I'm going in here, and I'm really creating my… a new set of character references.
+
+231
+00:40:22.180 --> 00:40:27.049
+Davicho Barona: But now, using all of these items that I just dressed her in. Does that make sense?
+
+232
+00:40:27.240 --> 00:40:28.000
+Elisa King: Yeah.
+
+233
+00:40:28.000 --> 00:40:32.090
+Davicho Barona: And now I have a full character. Now I can start placing her…
+
+234
+00:40:32.420 --> 00:40:38.450
+Davicho Barona: In a, in a different setting, and keeping all of those different details
+
+235
+00:40:38.520 --> 00:40:57.300
+Davicho Barona: alive, because I am now using those character references, like my master references alive. And if I want to create an image of her with her back facing, or the side profile, I'm going to make sure to select the one that is closest to what I want. And also select her face, because
+
+236
+00:40:57.300 --> 00:41:04.430
+Davicho Barona: That's gonna be, like, the close… I want to make sure that I'm always using my references. Like.
+
+237
+00:41:04.590 --> 00:41:08.349
+Davicho Barona: Really doing it as if you were, like.
+
+238
+00:41:08.590 --> 00:41:27.569
+Davicho Barona: in filmmaking. Does that make sense? Like, you truly want to use the process as tried and tested and proven in filmmaking in general. And if you have any issues, I'll give you another tip. All of this, this entire process, I didn't make this all from scratch. I actually started this whole process by saying.
+
+239
+00:41:28.200 --> 00:41:33.880
+Davicho Barona: Let me go back to my chat… I think, maybe here…
+
+240
+00:41:34.190 --> 00:41:36.959
+Davicho Barona: I think maybe it was my initial chat.
+
+241
+00:41:38.520 --> 00:41:53.560
+Davicho Barona: or maybe it's in a different board, but I actually… what I actually said was, help me create a classroom guide. Like, I said I'm teaching a class. Actually, this was part of a workshop that I just did at South by Southwest. And I was like, I'm teaching a class.
+
+242
+00:41:53.640 --> 00:42:09.390
+Davicho Barona: I'm teaching them character and object consistency. Please give me, like, a step-by-step breakdown with prompt templates to copy, and look, I'm coming in here, and it's truly giving me, like, this badass breakdown of how to do everything.
+
+243
+00:42:09.390 --> 00:42:13.939
+Davicho Barona: And I go in there, and I tested it. Number one, I tested it. Make sure it's not telling me
+
+244
+00:42:13.940 --> 00:42:20.110
+Davicho Barona: a bunch of lies, or it's not, like, hallucinating and telling me random stuff, but because I've also…
+
+245
+00:42:20.250 --> 00:42:38.860
+Davicho Barona: allowed it to scrape, those articles that I told you about, that I made, like, ground-level truth articles that I put up on our Learning Hub, it now knows to make sure it's not making stuff up. And so, super important, you can also get this entire guide.
+
+246
+00:42:39.300 --> 00:42:39.620
+Elisa King: Okay.
+
+247
+00:42:39.620 --> 00:42:54.090
+Davicho Barona: don't have to do, you know, you don't have to rely on other stuff. You can truly ask the agent to help you create a guide. Just be direct, and be detailed, and give it the right context, and it will give you back detailed.
+
+248
+00:42:54.090 --> 00:42:59.699
+Davicho Barona: fully contextual answers. And then from there, you can also… you can…
+
+249
+00:42:59.780 --> 00:43:08.839
+Davicho Barona: I can literally select this now, like that breakdown it gave me, and I can ask it to do stuff with this breakdown. Just say, like, hey.
+
+250
+00:43:08.950 --> 00:43:09.959
+Davicho Barona: You know what?
+
+251
+00:43:10.110 --> 00:43:22.529
+Davicho Barona: do this exercise as if you were actually trying to create something with this, and make up your own characters. Show me every single thing here that you're telling me, in this breakdown, but actually do it.
+
+252
+00:43:22.600 --> 00:43:25.890
+Davicho Barona: You know, and then it'll start doing… and you can talk to it just like that.
+
+253
+00:43:25.890 --> 00:43:49.990
+Davicho Barona: Like, literally just get the words out of your… your head and put them down here, whether it's written or in voice mode, and just talk to it, and it will do such an amazing job. It's then up to you to organize it, because this is me really organizing it. That's what took me the most time, was organizing this so that I could present it in a way that made sense to people, in a way that was easy to understand.
+
+254
+00:43:50.100 --> 00:43:53.389
+Davicho Barona: But all of this stuff that I just showed you here.
+
+255
+00:43:53.520 --> 00:44:04.589
+Davicho Barona: Minus some of these accessories, I kind of did that as sort of a side thing, but all of this breakdown, it helped me figure out how to do, so that I didn't have to start from zero, you know?
+
+256
+00:44:05.030 --> 00:44:06.350
+Davicho Barona: Really, really helpful.
+
+257
+00:44:07.980 --> 00:44:09.100
+Elisa King: Well, thank you.
+
+258
+00:44:09.100 --> 00:44:10.389
+Davicho Barona: Yeah, you bet.
+
+259
+00:44:10.810 --> 00:44:18.419
+Davicho Barona: over time. I'm sorry, you guys, to keep you here, but I appreciate you so very much for being here. I,
+
+260
+00:44:18.640 --> 00:44:38.439
+Davicho Barona: I will be here again every Wednesday, I'll be here, and for the next few weeks, I'll be here today, and Thursdays as well, for this, like, you know, open to the public webinar. So, Mondays, Thursdays… Mondays, Wednesdays, and Thursdays, I think is the right order, for this one, and for the other one that Artur dropped the link of there.
+
+261
+00:44:38.450 --> 00:44:53.370
+Davicho Barona: just come armed with questions, or whatever, and tips, things that you found. I would love to see you guys here again. Like, it would be my pleasure to keep hosting you guys here, and to continue to help you through any of these processes.
+
+262
+00:44:53.520 --> 00:45:13.009
+Davicho Barona: But you'll get the hang of it, and you'll start realizing that if you think, like, quote-unquote, outside the box a little bit, you can talk to this thing as if it was a real production assistant. The more you treat this thing as, like, a person, almost, it sounds weird and creepy, but the more you do that, the better it responds.
+
+263
+00:45:13.860 --> 00:45:16.209
+Davicho Barona: As opposed to treating it as just,
+
+264
+00:45:16.380 --> 00:45:37.630
+Davicho Barona: I'm gonna give you this prompt, if it didn't work, I'm gonna delete it, and I'm gonna start again. Like, this should be like a collaborative feedback loop. If you think about it that way, as if you're giving an order… you're giving directions to your production assistant, and then it's coming back with something, and then you say, no, this is not right, like, go back and do it this way, blah blah blah, and you kind of keep that mentality going into it.
+
+265
+00:45:37.630 --> 00:45:41.259
+Davicho Barona: you'll crush it. This thing will be so useful.
+
+266
+00:45:41.260 --> 00:45:44.179
+Davicho Barona: More than most other tools out there, like, for real.
+
+267
+00:45:44.690 --> 00:45:47.260
+Davicho Barona: Cool.
+
+268
+00:45:47.700 --> 00:45:54.019
+Davicho Barona: I'm gonna… I'm gonna stop, but, any final questions before I… before we sign off?
+
+269
+00:45:56.180 --> 00:46:08.540
+Davicho Barona: Cool. Again, remember guys, please shoot me an email if you want the recording of this. Eventually, we'll make these all available, but for now, it's on a case-by-case, so just, reach out, and I'm happy to provide it, if it helps.
+
+270
+00:46:13.000 --> 00:46:14.010
+Davicho Barona: Awesome.
+
+271
+00:46:14.220 --> 00:46:28.989
+Davicho Barona: Thank you guys so very much for being here. I will see you guys again, either this week or next. We'll be here, same bat channel, and same time for the next foreseeable weeks. After that, Wednesdays will be the day.
+
+272
+00:46:30.640 --> 00:46:37.160
+Davicho Barona: Beautiful. Thank you guys very, very much, really appreciate you all. And, we'll see you guys next time.
+
+273
+00:46:37.740 --> 00:46:38.980
+Artur Monteiro: Thank you, Daviko.
+
+274
+00:46:39.400 --> 00:46:39.990
+Elisa King: Here's…
+
+275
+00:46:41.390 --> 00:46:41.960
+Davicho Barona: Bye.
+
