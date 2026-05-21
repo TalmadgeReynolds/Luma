@@ -1,0 +1,272 @@
+[
+  {
+    "start_time_seconds": 0.0,
+    "end_time_seconds": 5.2,
+    "speaker": "Alice Chen",
+    "text": "Hello everyone, and welcome to today's webinar on character consistency in AI-generated video."
+  },
+  {
+    "start_time_seconds": 5.5,
+    "end_time_seconds": 12.8,
+    "speaker": "Alice Chen",
+    "text": "I'm Alice Chen, lead product designer, and I'll be walking you through the best practices we've learned over the past year."
+  },
+  {
+    "start_time_seconds": 13.1,
+    "end_time_seconds": 19.4,
+    "speaker": "Alice Chen",
+    "text": "Joining me today is Bob Martinez, our AI researcher, who'll dive into the technical aspects."
+  },
+  {
+    "start_time_seconds": 19.7,
+    "end_time_seconds": 22.3,
+    "speaker": "Bob Martinez",
+    "text": "Hey everyone, excited to be here."
+  },
+  {
+    "start_time_seconds": 22.8,
+    "end_time_seconds": 31.5,
+    "speaker": "Alice Chen",
+    "text": "So let's start with the core problem. When you're generating a multi-shot sequence, keeping the same character looking consistent across frames is actually really challenging."
+  },
+  {
+    "start_time_seconds": 31.9,
+    "end_time_seconds": 40.2,
+    "speaker": "Alice Chen",
+    "text": "You might notice that in shot one, your character has brown hair, but by shot three, it's suddenly blonde. Or their facial features shift slightly between frames."
+  },
+  {
+    "start_time_seconds": 40.6,
+    "end_time_seconds": 48.3,
+    "speaker": "Alice Chen",
+    "text": "This phenomenon is called identity drift, and it's one of the most common issues users report when working with generative AI."
+  },
+  {
+    "start_time_seconds": 48.8,
+    "end_time_seconds": 56.5,
+    "speaker": "Bob Martinez",
+    "text": "Right. And from a technical standpoint, identity drift happens because each generation is essentially a new inference pass through the model."
+  },
+  {
+    "start_time_seconds": 56.9,
+    "end_time_seconds": 65.2,
+    "speaker": "Bob Martinez",
+    "text": "The model doesn't inherently remember what the character looked like in previous frames. It's working from your text description or reference image each time."
+  },
+  {
+    "start_time_seconds": 65.6,
+    "end_time_seconds": 73.8,
+    "speaker": "Alice Chen",
+    "text": "Exactly. So the safest way to keep a character consistent is to start with a locked reference image before you begin generating your sequence."
+  },
+  {
+    "start_time_seconds": 74.2,
+    "end_time_seconds": 82.9,
+    "speaker": "Alice Chen",
+    "text": "A locked reference means you upload a high-quality image of your character, and the system uses that as the canonical source of truth for all subsequent generations."
+  },
+  {
+    "start_time_seconds": 83.3,
+    "end_time_seconds": 91.7,
+    "speaker": "Alice Chen",
+    "text": "This is way more reliable than relying on text descriptions alone. Text descriptions can be ambiguous, and the model might interpret them differently each time."
+  },
+  {
+    "start_time_seconds": 92.1,
+    "end_time_seconds": 99.5,
+    "speaker": "Bob Martinez",
+    "text": "I want to emphasize this point. If you only use text prompts, you're essentially asking the model to imagine the character from scratch every single time."
+  },
+  {
+    "start_time_seconds": 99.9,
+    "end_time_seconds": 108.3,
+    "speaker": "Bob Martinez",
+    "text": "But with a reference image, you're giving it concrete visual data to anchor on. The difference in consistency is night and day."
+  },
+  {
+    "start_time_seconds": 108.7,
+    "end_time_seconds": 116.2,
+    "speaker": "Alice Chen",
+    "text": "Let me show you a practical example. Here's a sequence where we used only text descriptions. Notice how the character's face shape changes between shots?"
+  },
+  {
+    "start_time_seconds": 116.6,
+    "end_time_seconds": 123.9,
+    "speaker": "Alice Chen",
+    "text": "And here's the same sequence, but this time we used a locked reference image. Much more consistent, right?"
+  },
+  {
+    "start_time_seconds": 124.3,
+    "end_time_seconds": 132.7,
+    "speaker": "Alice Chen",
+    "text": "Now, let's talk about the workflow. Step one is always to create or select your reference image before you start the main generation process."
+  },
+  {
+    "start_time_seconds": 133.1,
+    "end_time_seconds": 141.4,
+    "speaker": "Alice Chen",
+    "text": "This reference should be high resolution, well-lit, and show the character's face clearly. Avoid references with heavy shadows or extreme angles."
+  },
+  {
+    "start_time_seconds": 141.8,
+    "end_time_seconds": 149.2,
+    "speaker": "Bob Martinez",
+    "text": "One common mistake is waiting until after you've generated a few shots to decide you need a reference. At that point, it's too late to prevent drift."
+  },
+  {
+    "start_time_seconds": 149.6,
+    "end_time_seconds": 157.8,
+    "speaker": "Bob Martinez",
+    "text": "If you try to use one of those already-drifted shots as your reference, you're just locking in the inconsistency."
+  },
+  {
+    "start_time_seconds": 158.2,
+    "end_time_seconds": 166.5,
+    "speaker": "Alice Chen",
+    "text": "Great point. So the workflow is: reference first, then generate. Not the other way around."
+  },
+  {
+    "start_time_seconds": 166.9,
+    "end_time_seconds": 174.3,
+    "speaker": "Alice Chen",
+    "text": "Step two is setting up your project with the reference image locked in place. In our interface, you'll see an option to upload and lock your reference."
+  },
+  {
+    "start_time_seconds": 174.7,
+    "end_time_seconds": 182.1,
+    "speaker": "Alice Chen",
+    "text": "Once it's locked, every frame you generate will use that reference as a guide, keeping your character consistent throughout the sequence."
+  },
+  {
+    "start_time_seconds": 182.5,
+    "end_time_seconds": 190.8,
+    "speaker": "Bob Martinez",
+    "text": "Now, even with a reference image, you might still see minor variations. That's normal. No AI system is perfect."
+  },
+  {
+    "start_time_seconds": 191.2,
+    "end_time_seconds": 199.6,
+    "speaker": "Bob Martinez",
+    "text": "But the variations should be subtle—like slight lighting differences or camera angle effects—not major changes to facial structure or hair color."
+  },
+  {
+    "start_time_seconds": 200.0,
+    "end_time_seconds": 208.3,
+    "speaker": "Alice Chen",
+    "text": "Let's talk about multi-shot sequences specifically. When you're creating a narrative with multiple scenes, planning ahead becomes even more critical."
+  },
+  {
+    "start_time_seconds": 208.7,
+    "end_time_seconds": 217.1,
+    "speaker": "Alice Chen",
+    "text": "We recommend using Brainstorm Mode first to map out your sequence. This helps you think through which shots need character consistency and which don't."
+  },
+  {
+    "start_time_seconds": 217.5,
+    "end_time_seconds": 225.8,
+    "speaker": "Alice Chen",
+    "text": "For example, if your character appears in shots one, three, and five, but not two and four, you only need to worry about consistency for those specific shots."
+  },
+  {
+    "start_time_seconds": 226.2,
+    "end_time_seconds": 234.6,
+    "speaker": "Bob Martinez",
+    "text": "Another tip: generate your character shots in order when possible. Don't jump around. This helps maintain a mental model of the sequence as you work."
+  },
+  {
+    "start_time_seconds": 235.0,
+    "end_time_seconds": 243.3,
+    "speaker": "Alice Chen",
+    "text": "Now, let's address a question we get a lot: What if I want the character to change outfits or be in different lighting between scenes?"
+  },
+  {
+    "start_time_seconds": 243.7,
+    "end_time_seconds": 252.1,
+    "speaker": "Alice Chen",
+    "text": "That's totally fine. The reference image locks in facial features and identity, not wardrobe or environment. You can still vary those in your prompts."
+  },
+  {
+    "start_time_seconds": 252.5,
+    "end_time_seconds": 260.8,
+    "speaker": "Bob Martinez",
+    "text": "Exactly. Think of the reference as locking the 'who,' not the 'what' or 'where.' The character's identity stays fixed, but context can change."
+  },
+  {
+    "start_time_seconds": 261.2,
+    "end_time_seconds": 269.5,
+    "speaker": "Alice Chen",
+    "text": "Before we wrap up, let me share some common pitfalls to avoid. Number one: using a group photo as your reference."
+  },
+  {
+    "start_time_seconds": 269.9,
+    "end_time_seconds": 278.3,
+    "speaker": "Alice Chen",
+    "text": "If your reference has multiple people in it, the system might get confused about which face to lock onto. Always use a clear, solo shot."
+  },
+  {
+    "start_time_seconds": 278.7,
+    "end_time_seconds": 287.0,
+    "speaker": "Alice Chen",
+    "text": "Number two: using a heavily stylized or filtered reference. The more natural and true-to-life your reference is, the better the results."
+  },
+  {
+    "start_time_seconds": 287.4,
+    "end_time_seconds": 295.7,
+    "speaker": "Bob Martinez",
+    "text": "Number three: forgetting to check your reference image before you start a big batch generation. Always preview it first."
+  },
+  {
+    "start_time_seconds": 296.1,
+    "end_time_seconds": 304.5,
+    "speaker": "Alice Chen",
+    "text": "And number four: not saving your reference! If you're working on a long-term project, make sure you keep that reference file somewhere safe."
+  },
+  {
+    "start_time_seconds": 304.9,
+    "end_time_seconds": 313.2,
+    "speaker": "Alice Chen",
+    "text": "You might need to come back to this project weeks or months later, and you'll want to use the exact same reference to maintain consistency."
+  },
+  {
+    "start_time_seconds": 313.6,
+    "end_time_seconds": 321.9,
+    "speaker": "Bob Martinez",
+    "text": "One last technical note: our system uses a face recognition model to extract features from your reference. This is different from style transfer."
+  },
+  {
+    "start_time_seconds": 322.3,
+    "end_time_seconds": 330.6,
+    "speaker": "Bob Martinez",
+    "text": "Style transfer would copy the artistic style of an image. Face recognition ensures the actual identity—the person's unique facial structure—remains consistent."
+  },
+  {
+    "start_time_seconds": 331.0,
+    "end_time_seconds": 339.3,
+    "speaker": "Alice Chen",
+    "text": "To summarize: start with a reference, lock it in before generating, use Brainstorm Mode to plan your sequence, and avoid common pitfalls like group photos."
+  },
+  {
+    "start_time_seconds": 339.7,
+    "end_time_seconds": 348.1,
+    "speaker": "Alice Chen",
+    "text": "Follow these guidelines, and you'll see a dramatic improvement in character consistency across your multi-shot projects."
+  },
+  {
+    "start_time_seconds": 348.5,
+    "end_time_seconds": 356.8,
+    "speaker": "Bob Martinez",
+    "text": "We're going to open it up for questions now. Remember, you can always revisit this webinar later if you need a refresher on any of these techniques."
+  },
+  {
+    "start_time_seconds": 357.2,
+    "end_time_seconds": 365.5,
+    "speaker": "Alice Chen",
+    "text": "Thanks for joining us today, everyone. Let's make some consistently great characters!"
+  },
+  {
+    "start_time_seconds": 365.9,
+    "end_time_seconds": 370.0,
+    "speaker": "Bob Martinez",
+    "text": "Thanks all, and happy creating!"
+  }
+]

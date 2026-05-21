@@ -1,0 +1,19 @@
+You are selecting the most useful transcript excerpts to answer a user question.
+
+User question:
+{{user_question}}
+
+Candidate excerpts (JSON array):
+{{candidate_chunks}}
+
+Rank excerpts by usefulness. Prefer excerpts that:
+- directly answer the question
+- contain concrete steps, definitions, examples, or warnings
+- are specific rather than vague
+- do not contain only greetings, intros, or unrelated chatter
+
+Return valid JSON only:
+{
+  "ranked_chunk_ids": ["<id>", "..."],
+  "reasoning_summary": "<one sentence>"
+}

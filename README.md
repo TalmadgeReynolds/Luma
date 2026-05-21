@@ -1,2 +1,0 @@
-# Luma
-Luma RAG Agent

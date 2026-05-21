@@ -1,0 +1,32 @@
+[
+  {
+    "question": "How do we prevent identity drift in character consistency?",
+    "expected_topics": ["identity drift", "locked reference images", "character consistency"],
+    "expected_video_title": "Character Consistency Deep Dive",
+    "notes": "Should retrieve chunks discussing the identity drift problem and locked reference image solution"
+  },
+  {
+    "question": "What are locked reference images and how do they help?",
+    "expected_topics": ["locked reference images", "reference", "consistent", "character"],
+    "expected_video_title": "Character Consistency Deep Dive",
+    "notes": "Should retrieve chunks explaining locked reference images feature"
+  },
+  {
+    "question": "How should we handle multi-shot sequences?",
+    "expected_topics": ["multi-shot", "sequences", "character sheet", "visual anchors"],
+    "expected_video_title": "Character Consistency Deep Dive",
+    "notes": "Should retrieve chunks about multi-shot workflow and character sheets"
+  },
+  {
+    "question": "What is the character sheet feature?",
+    "expected_topics": ["character sheet", "visual anchors", "multi-shot"],
+    "expected_video_title": "Character Consistency Deep Dive",
+    "notes": "Should retrieve chunks explaining character sheets and visual anchors"
+  },
+  {
+    "question": "What techniques ensure character consistency across multiple images?",
+    "expected_topics": ["consistency", "locked reference", "character sheet", "multi-shot"],
+    "expected_video_title": "Character Consistency Deep Dive",
+    "notes": "Should retrieve chunks covering multiple consistency techniques"
+  }
+]
