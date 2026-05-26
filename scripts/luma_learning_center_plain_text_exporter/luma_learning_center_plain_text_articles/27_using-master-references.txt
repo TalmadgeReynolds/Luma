@@ -1,0 +1,183 @@
+Source: https://lumalabs.ai/learning-center/articles/using-master-references
+
+Using Master References =======================
+
+March 9, 2026
+
+- Using Master References Create Your Master Reference Assets Pack Establish What Is Immovable Anchor Every Major Iteration Avoid Iteration Chains Without Re-Anchoring Use Master References Across Modalities Protect Brand Integrity at Scale Use Evaluation as a Final Check The Core Principle
+
+- Create Your Master Reference Assets Pack
+
+- Establish What Is Immovable
+
+- Anchor Every Major Iteration
+
+- Avoid Iteration Chains Without Re-Anchoring
+
+- Use Master References Across Modalities
+
+- Protect Brand Integrity at Scale
+
+- Use Evaluation as a Final Check
+
+- The Core Principle
+
+Using Master References =======================
+
+Create Your Master Reference Assets Pack ----------------------------------------
+
+At the start of a project, define and group:
+
+- Final logo file
+
+- Approved brand colors
+
+- Character reference images
+
+- Product reference renders
+
+- Tone-of-voice document
+
+- Key messaging lines
+
+Place them clearly on your board in a dedicated frame labeled:
+
+Master Reference Assets or something similar that you will tell the Agent to reference as its source of truth
+
+Keep them visually separated from exploration zones, label each asset clearly, so if you have 3 versions of your logo that you've uploaded to your board, label each version clearly e.g. "logo01, "logo02", "logo03" that way you can give the Agent a clear path to understanding which asset you may be talking about in your written instructions/prompt.
+
+Establish What Is Immovable ---------------------------
+
+Explicitly define:
+
+- What can change?
+
+- What cannot change?
+
+Example:
+
+Can change:
+
+- Lighting
+
+- Background
+
+- Camera angle
+
+Cannot change:
+
+- Character face
+
+- Logo proportions
+
+- Brand typography
+
+- Product design
+
+Clarity here prevents drift later.
+
+Anchor Every Major Iteration ----------------------------
+
+When generating new versions, say things like:
+
+- Use the Master Reference character.
+
+Use the Master Reference character.
+
+- Preserve logo placement from Master References.
+
+Preserve logo placement from Master References.
+
+- Maintain exact product dimensions from Master Reference.
+
+Maintain exact product dimensions from Master Reference.
+
+- Keep brand color system consistent with Master Reference Assets.
+
+Keep brand color system consistent with Master Reference Assets.
+
+This keeps each branch tethered to the source.
+
+Avoid Iteration Chains Without Re-Anchoring -------------------------------------------
+
+Common mistake:
+
+Version 1 → tweak Version 2 → tweak Version 3 → tweak Version 4 → tweak
+
+By Version 6, the character no longer matches the original.
+
+Instead:
+
+Every few iterations, restate:
+
+Reconfirm against Master Reference Assets.
+
+This resets drift.
+
+Use Master References Across Modalities ---------------------------------------
+
+When transforming formats:
+
+- Image → Video
+
+- Video → Stylized version
+
+- English → Localized voiceover
+
+- Static → Animated
+
+Always re-anchor.
+
+Example Prompt:
+
+Animate this scene while preserving the character proportions and product design from the Master Reference Assets.
+
+Multimodal transformation increases drift risk — so anchoring becomes even more important.
+
+Protect Brand Integrity at Scale --------------------------------
+
+When generating large batches:
+
+- 20 hooks
+
+- 10 video variants
+
+- 5 tonal versions
+
+Keep brand identity consistent by referencing:
+
+- Approved messaging
+
+- Tone guidelines
+
+- Visual system
+
+Scale should multiply reach — not multiply inconsistency.
+
+Use Evaluation as a Final Check -------------------------------
+
+Before delivering:
+
+- Compare outputs side-by-side with Master References.
+
+- Ask the Agent to evaluate alignment.
+
+- Confirm that no key elements drifted.
+
+This is especially important for:
+
+- Enterprise brand work
+
+- Character-driven campaigns
+
+- Product visualizations
+
+- Franchise-style creative systems
+
+The Core Principle ------------------
+
+Exploration expands. Identity anchors.
+
+Luma enables infinite creative branching — but the most professional work always maintains a stable center.
+
+Your Master Reference Assets are that center.

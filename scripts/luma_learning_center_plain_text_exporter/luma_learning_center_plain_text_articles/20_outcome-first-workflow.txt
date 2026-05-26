@@ -1,0 +1,73 @@
+Source: https://lumalabs.ai/learning-center/articles/outcome-first-workflow
+
+Outcome-First Workflow ======================
+
+March 9, 2026
+
+- Outcome-first Workflow Step-by-step: outcome-first workflow Define the result (keep it simple) Tell the agent the end goal Follow one step at a time Micro exercise Key takeaway
+
+- Step-by-step: outcome-first workflow Define the result (keep it simple) Tell the agent the end goal Follow one step at a time Micro exercise
+
+- Define the result (keep it simple)
+
+- Tell the agent the end goal
+
+- Follow one step at a time
+
+- Micro exercise
+
+- Key takeaway
+
+Outcome-first Workflow ======================
+
+When using multiple AI tools and models, it’s easy to feel unsure where to begin. A simple fix: decide what you want to end with first .
+
+Step-by-step: outcome-first workflow ------------------------------------
+
+Define the result (keep it simple) ----------------------------------
+
+Choose one clear outcome:
+
+- one image you’d be happy sharing
+
+- a short visual idea
+
+- a rough video concept
+
+You don’t need to know how yet.
+
+Tell the agent the end goal ---------------------------
+
+Prompt template
+
+I want to end this session with: [describe the final result] Explain a simple plan to get there before we start and let me know if you have any questions for me about this [project or task] that you want me to answer in order to complete it? Additionally, list any assets, references or other materials that you feel are necessary for me to provide you, or for us to build first, before starting this project in order to get a better, more usable final result.
+
+Follow one step at a time -------------------------
+
+When the agent suggests a step, respond with:
+
+- “Yes, let’s do that”
+
+- “No, let’s do [insert action, new direction] instead”
+
+- Or “Can you explain that a bit more first?”
+
+- Or “Can you explain your reasoning behind your decision?”
+
+- Or “I don’t like this output, there are details missing and it is not usable for my project because of [insert your reasons]. Are there any questions I can answer to provide more context, better understanding and more actionable information before making the right adjustments?”
+
+You don’t need to rush.
+
+💡 Tip: Try planning your project in Brainstorm Mode before creating anything, it’s cheaper, more efficient and will still be tracked in your Agent’s memory bank as context for future executions.
+
+Micro exercise --------------
+
+Prompt template
+
+Please break this process into small steps, wait for my approval after each one before moving on, and ask me to provide you with more context or details whenever you need to in order to provide better results.
+
+This keeps things manageable.
+
+Key takeaway ------------
+
+You don’t need to understand every tool. You just need to know what you want to end up with , and what to provide the agent to set it up for success in any project, task or process you are trying to navigate.

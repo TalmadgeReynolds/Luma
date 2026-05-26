@@ -113,22 +113,31 @@ async def generate_answer(
         for chunk_id in source_chunk_ids:
             chunk = chunk_map[chunk_id]
 
-            # Build video URL with timestamp
-            video_url = chunk.video_title  # Placeholder - actual URL should come from video record
-            if settings.VIDEO_BASE_URL:
-                video_url = f"{settings.VIDEO_BASE_URL}/{chunk.video_id}"
-            video_url_with_timestamp = f"{video_url}?t={int(chunk.start_time_seconds)}"
+            # Build source URL based on content type
+            if chunk.content_type == 'webinar':
+                # For webinars: use video URL with timestamp
+                video_url = chunk.video_title  # Fallback
+                if settings.VIDEO_BASE_URL:
+                    video_url = f"{settings.VIDEO_BASE_URL}/{chunk.video_id}"
+                source_url = f"{video_url}?t={int(chunk.start_time_seconds)}"
+                display_time = format_time_range(chunk.start_time_seconds, chunk.end_time_seconds)
+            else:
+                # For articles: use direct article URL (no timestamp)
+                source_url = chunk.source_url or f"Article: {chunk.video_title}"
+                display_time = None  # No timestamps for articles
 
             source_card = SourceCard(
                 chunk_id=chunk.chunk_id,
                 video_id=chunk.video_id,
-                video_title=chunk.video_title,
-                video_url=video_url_with_timestamp,
-                start_time_seconds=chunk.start_time_seconds,
-                end_time_seconds=chunk.end_time_seconds,
-                display_time=format_time_range(chunk.start_time_seconds, chunk.end_time_seconds),
-                excerpt=chunk.summary or chunk.contextual_text[:200],
+                content_type=chunk.content_type,
+                title=chunk.video_title,
+                source_url=source_url,
+                start_time_seconds=chunk.start_time_seconds if chunk.content_type == 'webinar' else None,
+                end_time_seconds=chunk.end_time_seconds if chunk.content_type == 'webinar' else None,
+                display_time=display_time,
                 speaker_names=chunk.speaker_names or [],
+                section_heading=chunk.section_heading,
+                excerpt=chunk.summary or chunk.contextual_text[:200],
             )
             sources.append(source_card)
 

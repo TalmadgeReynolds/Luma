@@ -13,6 +13,10 @@ class Settings(BaseSettings):
 
     # Anthropic / Claude
     ANTHROPIC_API_KEY: str = Field(description="Anthropic API key")
+    ANTHROPIC_WORKSPACE: str | None = Field(
+        default=None,
+        description="Anthropic workspace ID (for workspace-scoped keys)"
+    )
     CLAUDE_MODEL: str = Field(
         default="claude-sonnet-4-20250514",
         description="Claude model identifier"

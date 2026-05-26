@@ -13,19 +13,27 @@ from pydantic import BaseModel, Field
 class AskRequest(BaseModel):
     """Request to ask a question."""
     question: str = Field(..., min_length=1, max_length=1000)
+    content_type_filter: str | None = Field(None, pattern="^(webinar|article)$")
 
 
 class SourceCard(BaseModel):
-    """A source excerpt with video link."""
+    """A source excerpt with link to original content (webinar or article)."""
     chunk_id: UUID
-    video_id: UUID
-    video_title: str
-    video_url: str  # Includes ?t={start_time_seconds} parameter
-    start_time_seconds: float
-    end_time_seconds: float
-    display_time: str  # Formatted as "HH:MM:SS–HH:MM:SS"
+    video_id: UUID  # Legacy name, actually content_source_id
+    content_type: str  # 'webinar' | 'article'
+    title: str
+    source_url: str
+
+    # Optional webinar-specific fields
+    start_time_seconds: float | None = None
+    end_time_seconds: float | None = None
+    display_time: str | None = None  # Formatted as "HH:MM:SS–HH:MM:SS"
+    speaker_names: list[str] = Field(default_factory=list)
+
+    # Optional article-specific field
+    section_heading: str | None = None
+
     excerpt: str  # contextual_text or summary
-    speaker_names: list[str]
 
 
 class AskResponse(BaseModel):
@@ -42,13 +50,14 @@ class AskResponse(BaseModel):
 # ============================================================================
 
 class VideoSummary(BaseModel):
-    """Summary of a video."""
+    """Summary of a video or article."""
     id: UUID
     title: str
     description: str | None
     webinar_date: date | None
     speakers: list[str]
     video_url: str | None
+    content_type: str  # "webinar" | "article"
     status: str  # "processing" | "contextualized" | "embedded" | "failed"
     chunk_count: int
 

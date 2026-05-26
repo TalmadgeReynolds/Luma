@@ -38,11 +38,14 @@ async def ask_question(
     try:
         # Step 1: Retrieve chunks
         print(f"\n[API] POST /ask: {request.question}")
+        if request.content_type_filter:
+            print(f"[API] Content type filter: {request.content_type_filter}")
 
         retrieved_chunks = await retrieval_service.retrieve_chunks(
             question=request.question,
             top_k=5,
             db_session=db_session,
+            content_type_filter=request.content_type_filter,
         )
 
         # Step 2: Generate answer
