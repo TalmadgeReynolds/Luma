@@ -11,18 +11,21 @@
 
 export interface AskRequest {
   question: string;
+  content_type_filter?: 'webinar' | 'article' | null;
 }
 
 export interface SourceCard {
   chunk_id: string;
   video_id: string;
-  video_title: string;
-  video_url: string;  // Includes ?t={start_time_seconds}
-  start_time_seconds: number;
-  end_time_seconds: number;
-  display_time: string;  // "HH:MM:SS–HH:MM:SS"
-  excerpt: string;
+  content_type: 'webinar' | 'article';
+  title: string;
+  source_url: string;
+  start_time_seconds: number | null;
+  end_time_seconds: number | null;
+  display_time: string | null;
   speaker_names: string[];
+  section_heading: string | null;
+  excerpt: string;
 }
 
 export interface AskResponse {

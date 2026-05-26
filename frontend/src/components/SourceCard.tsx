@@ -5,28 +5,28 @@ interface SourceCardProps {
 }
 
 export default function SourceCard({ source }: SourceCardProps) {
+  const isArticle = source.content_type === 'article';
+  const label = isArticle ? 'Article' : 'Video';
+  const linkText = isArticle ? 'Open Article →' : 'Open Video →';
+
   return (
     <div className="source-card">
-      <div className="source-header">
-        <h3 className="source-title">{source.video_title}</h3>
-        <span className="source-time">{source.display_time}</span>
-      </div>
-
-      {source.speaker_names.length > 0 && (
-        <div className="source-speakers">
-          <strong>Speakers:</strong> {source.speaker_names.join(', ')}
-        </div>
-      )}
-
-      <p className="source-excerpt">{source.excerpt}</p>
-
+      <span className="source-type-badge">{label}</span>
       <a
-        href={source.video_url}
+        href={source.source_url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="source-title-link"
+      >
+        {source.title}
+      </a>
+      <a
+        href={source.source_url}
         target="_blank"
         rel="noopener noreferrer"
         className="source-link"
       >
-        Open Clip →
+        {linkText}
       </a>
     </div>
   );
