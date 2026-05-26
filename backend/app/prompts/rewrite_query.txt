@@ -1,4 +1,4 @@
-You are optimizing a search query against a private company webinar transcript library.
+You are optimizing a search query against a library containing both company webinar transcripts and learning center articles.
 
 Rewrite the user's question into a retrieval query that improves recall.
 Include: exact product terms (if implied), synonyms, likely feature names, technical and plain-English phrasings.

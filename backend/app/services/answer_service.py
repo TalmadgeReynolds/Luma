@@ -71,13 +71,20 @@ async def generate_answer(
         for chunk in retrieved_chunks:
             chunk_dict = {
                 "chunk_id": str(chunk.chunk_id),
+                "content_type": chunk.content_type,
                 "video_title": chunk.video_title,
-                "time_range": format_time_range(chunk.start_time_seconds, chunk.end_time_seconds),
-                "speakers": chunk.speaker_names or [],
                 "summary": chunk.summary or "",
                 "topic_tags": chunk.topic_tags or [],
                 "contextual_text": chunk.contextual_text,
             }
+
+            # Add content-type-specific fields
+            if chunk.content_type == 'webinar':
+                chunk_dict["time_range"] = format_time_range(chunk.start_time_seconds, chunk.end_time_seconds)
+                chunk_dict["speakers"] = chunk.speaker_names or []
+            else:  # article
+                chunk_dict["section_heading"] = chunk.section_heading or "N/A"
+
             formatted_chunks.append(chunk_dict)
             chunk_map[chunk.chunk_id] = chunk
 
