@@ -73,3 +73,26 @@ Thumbs.db
 *.webm
 *.mp3
 *.wav
+
+# Project-specific
+# Exported articles (can be regenerated)
+scripts/luma_learning_center_plain_text_exporter/luma_learning_center_plain_text_articles/
+
+# Hot folder processing
+hot_folder/processed/
+hot_folder/failed/
+
+# Claude Code
+.claude/
+
+# Test scripts
+test_*.py
+run_migration_008.py
+
+# Ingestion logs
+backend/*.log
+backend/ingestion.log
+
+# Fixtures (optional - remove if you want to commit them)
+# backend/fixtures/
+
