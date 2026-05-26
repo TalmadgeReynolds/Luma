@@ -1,97 +1,78 @@
 """
 POST /ask endpoint - main query interface.
 """
-from fastapi import APIRouter, Depends, HTTPException
+import asyncio
+import json
+
+from fastapi import APIRouter, Depends
+from fastapi.responses import StreamingResponse
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.db.database import get_db
-from app.db.schemas import AskRequest, AskResponse, ErrorResponse, ErrorDetail
+from app.db.schemas import AskRequest, AskResponse
 from app.services import retrieval_service, answer_service
 from app.errors import RetrievalError, AnswerServiceError
 
 router = APIRouter()
 
 
-@router.post("/ask", response_model=AskResponse)
+async def _execute_ask(request: AskRequest, db_session: AsyncSession) -> AskResponse:
+    retrieved_chunks = await retrieval_service.retrieve_chunks(
+        question=request.question,
+        top_k=5,
+        db_session=db_session,
+        content_type_filter=request.content_type_filter,
+    )
+    return await answer_service.generate_answer(
+        question=request.question,
+        retrieved_chunks=retrieved_chunks,
+    )
+
+
+@router.post("/ask")
 async def ask_question(
     request: AskRequest,
     db_session: AsyncSession = Depends(get_db),
-) -> AskResponse:
+) -> StreamingResponse:
     """
     Answer a question using RAG over webinar transcripts.
 
-    Flow:
-    1. Retrieve relevant chunks (hybrid search)
-    2. Generate answer with Claude
-    3. Return answer with source cards
-
-    Args:
-        request: Question from user
-        db_session: Database session
-
-    Returns:
-        Answer with sources and suggested questions
-
-    Raises:
-        HTTPException: If retrieval or answer generation fails
+    Returns an SSE stream:
+    - Periodic keep-alive events while Claude processes
+    - A final 'complete' or 'error' event with the result
     """
-    try:
-        # Step 1: Retrieve chunks
-        print(f"\n[API] POST /ask: {request.question}")
-        if request.content_type_filter:
-            print(f"[API] Content type filter: {request.content_type_filter}")
+    print(f"\n[API] POST /ask: {request.question}")
+    if request.content_type_filter:
+        print(f"[API] Content type filter: {request.content_type_filter}")
 
-        retrieved_chunks = await retrieval_service.retrieve_chunks(
-            question=request.question,
-            top_k=5,
-            db_session=db_session,
-            content_type_filter=request.content_type_filter,
-        )
+    async def event_stream():
+        task = asyncio.create_task(_execute_ask(request, db_session))
 
-        # Step 2: Generate answer
-        response = await answer_service.generate_answer(
-            question=request.question,
-            retrieved_chunks=retrieved_chunks,
-        )
+        while not task.done():
+            yield 'data: {"status":"processing"}\n\n'
+            try:
+                await asyncio.wait_for(asyncio.shield(task), timeout=4.0)
+            except asyncio.TimeoutError:
+                continue
+            except Exception:
+                break
 
-        print(f"[API] Response ready: {len(response.answer)} chars, {len(response.sources)} sources")
-        return response
+        try:
+            result = await task
+            print(f"[API] Response ready: {len(result.answer)} chars, {len(result.sources)} sources")
+            payload = {"status": "complete", "result": result.model_dump(mode="json")}
+            yield f"data: {json.dumps(payload)}\n\n"
+        except RetrievalError as e:
+            print(f"[API] Retrieval error: {e}")
+            payload = {"status": "error", "code": "retrieval_error", "message": "Failed to retrieve relevant content"}
+            yield f"data: {json.dumps(payload)}\n\n"
+        except AnswerServiceError as e:
+            print(f"[API] Answer error: {e}")
+            payload = {"status": "error", "code": "answer_error", "message": "Failed to generate answer"}
+            yield f"data: {json.dumps(payload)}\n\n"
+        except Exception as e:
+            print(f"[API] Unexpected error: {e}")
+            payload = {"status": "error", "code": "internal_error", "message": "An unexpected error occurred"}
+            yield f"data: {json.dumps(payload)}\n\n"
 
-    except RetrievalError as e:
-        print(f"[API] Retrieval error: {e}")
-        raise HTTPException(
-            status_code=500,
-            detail={
-                "error": {
-                    "code": "retrieval_error",
-                    "message": "Failed to retrieve relevant content",
-                    "details": {"error": str(e)},
-                }
-            }
-        )
-
-    except AnswerServiceError as e:
-        print(f"[API] Answer generation error: {e}")
-        raise HTTPException(
-            status_code=500,
-            detail={
-                "error": {
-                    "code": "answer_error",
-                    "message": "Failed to generate answer",
-                    "details": {"error": str(e)},
-                }
-            }
-        )
-
-    except Exception as e:
-        print(f"[API] Unexpected error: {e}")
-        raise HTTPException(
-            status_code=500,
-            detail={
-                "error": {
-                    "code": "internal_error",
-                    "message": "An unexpected error occurred",
-                    "details": {"error": str(e)},
-                }
-            }
-        )
+    return StreamingResponse(event_stream(), media_type="text/event-stream")

@@ -54,14 +54,49 @@ async function apiFetch<T>(
 }
 
 /**
- * POST /ask - Submit a question
+ * POST /ask - Submit a question (SSE stream: keep-alive pings then final result)
  */
 export async function askQuestion(question: string): Promise<AskResponse> {
   const request: AskRequest = { question };
-  return apiFetch<AskResponse>('/ask', {
+  const response = await fetch('/ask', {
     method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(request),
   });
+
+  if (!response.ok || !response.body) {
+    let errorMessage = `HTTP ${response.status}: ${response.statusText}`;
+    try {
+      const errorData: ErrorResponse = await response.json();
+      errorMessage = errorData.error?.message || errorMessage;
+    } catch { /* use status text */ }
+    throw new Error(errorMessage);
+  }
+
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = '';
+
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+
+    buffer += decoder.decode(value, { stream: true });
+
+    // SSE events are separated by double newlines
+    const events = buffer.split('\n\n');
+    buffer = events.pop() ?? '';
+
+    for (const event of events) {
+      const line = event.trim();
+      if (!line.startsWith('data: ')) continue;
+      const data = JSON.parse(line.slice(6));
+      if (data.status === 'complete') return data.result as AskResponse;
+      if (data.status === 'error') throw new Error(data.message || 'Request failed');
+    }
+  }
+
+  throw new Error('Stream ended without a result');
 }
 
 /**

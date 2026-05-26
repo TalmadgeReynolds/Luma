@@ -20,6 +20,9 @@ export default function SourceCard({ source }: SourceCardProps) {
       >
         {source.title}
       </a>
+      {source.excerpt && (
+        <p className="source-excerpt">{source.excerpt}</p>
+      )}
       <a
         href={source.source_url}
         target="_blank"
