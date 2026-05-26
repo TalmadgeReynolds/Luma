@@ -257,12 +257,13 @@ async def ingest_article(
             tags_str = ", ".join(chunk_dict.get("topic_tags", []))
 
             embedding_input = (
-                f"[Article] {title} | "
-                f"{publication_date or 'Unknown'} | "
-                f"{section} | "
-                f"{chunk_dict.get('summary', '')} | "
-                f"{tags_str} | "
-                f"{chunk_dict['contextual_text']}"
+                f"{title} | "
+                f"Date: {publication_date or 'Unknown'} | "
+                f"Section: {section} | "
+                f"Summary: {chunk_dict.get('summary', '')} | "
+                f"Topics: {tags_str} | "
+                f"{chunk_dict['contextual_text']} | "
+                f"Content type: article"
             )
 
             # Generate embedding
