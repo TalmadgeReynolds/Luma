@@ -1,0 +1,1055 @@
+Source: https://lumalabs.ai/learning-center/articles/luma-video-models-field-guide
+
+Luma Video Models Field Guide =============================
+
+March 9, 2026
+
+- Luma Video Models Field Guide Ray3.14 (Luma) Strengths Weaknesses Specialties Best Practices Tips & Gotchas Ray3 (Luma) Overview Strengths Weaknesses Specialties Best Practices Prompt Examples Tips & Gotchas Veo 3 (Google) Overview Strengths Weaknesses Specialties Best Practices Prompt Examples Tips & Gotchas Veo 3.1 (Google) Overview Strengths Weaknesses Specialties Best Practices Prompt Examples Tips & Gotchas Sora 2 (OpenAI) Overview Strengths Weaknesses Specialties Best Practices Prompt Examples Tips & Gotchas Kling 2.6 (Kuaishou) Overview Strengths Weaknesses Specialties Best Practices Prompt Examples Tips & Gotchas Ray3 & Ray3.14 Video Modify (V2V) Overview What It Does Strength Control Keyframe Support Best Practices Use Cases Tips & Gotchas Comparison Summary Speed Ranking (Fastest to Slowest - Heavily dependent on Quality): Audio Capabilities Resolution Options Duration Options Aspect Ratio Flexibility Special Features Cost/Resource Considerations Decision Flowchart General video, need high consistency and temporal stability? Need character consistency across shots? Need native audio/dialogue? Need high-energy multi-subject action? Need longest possible single clip (20s)? Need to modify existing video? Other model failing or not delivering? Need specific features? Recommendations for Creative Professionals Default Workflow When to Break the Rules Prompting Discipline Quality Control Platform-Specific Recommendations
+
+- Ray3.14 (Luma) Strengths Weaknesses Specialties Best Practices Tips & Gotchas
+
+- Strengths
+
+- Weaknesses
+
+- Specialties
+
+- Best Practices
+
+- Tips & Gotchas
+
+- Ray3 (Luma) Overview Strengths Weaknesses Specialties Best Practices Prompt Examples Tips & Gotchas
+
+- Overview
+
+- Strengths
+
+- Weaknesses
+
+- Specialties
+
+- Best Practices
+
+- Prompt Examples
+
+- Tips & Gotchas
+
+- Veo 3 (Google) Overview Strengths Weaknesses Specialties Best Practices Prompt Examples Tips & Gotchas
+
+- Overview
+
+- Strengths
+
+- Weaknesses
+
+- Specialties
+
+- Best Practices
+
+- Prompt Examples
+
+- Tips & Gotchas
+
+- Veo 3.1 (Google) Overview Strengths Weaknesses Specialties Best Practices Prompt Examples Tips & Gotchas
+
+- Overview
+
+- Strengths
+
+- Weaknesses
+
+- Specialties
+
+- Best Practices
+
+- Prompt Examples
+
+- Tips & Gotchas
+
+- Sora 2 (OpenAI) Overview Strengths Weaknesses Specialties Best Practices Prompt Examples Tips & Gotchas
+
+- Overview
+
+- Strengths
+
+- Weaknesses
+
+- Specialties
+
+- Best Practices
+
+- Prompt Examples
+
+- Tips & Gotchas
+
+- Kling 2.6 (Kuaishou) Overview Strengths Weaknesses Specialties Best Practices Prompt Examples Tips & Gotchas
+
+- Overview
+
+- Strengths
+
+- Weaknesses
+
+- Specialties
+
+- Best Practices
+
+- Prompt Examples
+
+- Tips & Gotchas
+
+- Ray3 & Ray3.14 Video Modify (V2V) Overview What It Does Strength Control Keyframe Support Best Practices Use Cases Tips & Gotchas
+
+- Overview
+
+- What It Does
+
+- Strength Control
+
+- Keyframe Support
+
+- Best Practices
+
+- Tips & Gotchas
+
+- Comparison Summary Speed Ranking (Fastest to Slowest - Heavily dependent on Quality): Audio Capabilities Resolution Options Duration Options Aspect Ratio Flexibility Special Features Cost/Resource Considerations
+
+- Speed Ranking (Fastest to Slowest - Heavily dependent on Quality):
+
+- Audio Capabilities
+
+- Resolution Options
+
+- Duration Options
+
+- Aspect Ratio Flexibility
+
+- Special Features
+
+- Cost/Resource Considerations
+
+- Decision Flowchart General video, need high consistency and temporal stability? Need character consistency across shots? Need native audio/dialogue? Need high-energy multi-subject action? Need longest possible single clip (20s)? Need to modify existing video? Other model failing or not delivering? Need specific features?
+
+- General video, need high consistency and temporal stability?
+
+- Need character consistency across shots?
+
+- Need native audio/dialogue?
+
+- Need high-energy multi-subject action?
+
+- Need longest possible single clip (20s)?
+
+- Need to modify existing video?
+
+- Other model failing or not delivering?
+
+- Need specific features?
+
+- Recommendations for Creative Professionals Default Workflow When to Break the Rules Prompting Discipline Quality Control Platform-Specific Recommendations
+
+- Default Workflow
+
+- When to Break the Rules
+
+- Prompting Discipline
+
+- Quality Control
+
+- Platform-Specific Recommendations
+
+Luma Video Models Field Guide =============================
+
+A comprehensive reference guide for video generation AI models available in Luma, their strengths, limitations, and practical application strategies.
+
+Ray3.14 (Luma) --------------
+
+Overview: Luma's latest and fastest video model. This is your default workhorse for video generation. Native 1080p and HDR support make it the go-to for professional video work.
+
+Strengths ---------
+
+- DEFAULT recommended model — fastest generation of the Luma lineup
+
+- Native 1080p resolution support (also 720p, 540p, Draft)
+
+- HDR output with expanded dynamic range for dramatic lighting scenarios.
+
+- EXR export option for professional color grading workflows (available in 540p and 720p)
+
+*HDR and HDR+EXR are available only for text2video and image2video ; Modify and HDR/EXR is not supported
+
+- Supports start frame AND end frame keyframes (precise interpolation between two images)
+
+- 6 aspect ratios : 9:16 (portrait), 3:4, 1:1 (square), 4:3, 16:9 (landscape), 21:9 (ultrawide)
+
+- Seamless loop support for product showcases and repeating content
+
+- 5s or 10s duration for Text-to-video; image-to-video is 5s ; Modify supports up to 18s ; extensions can reach ~ 30s .
+
+- Strong cinematic quality — filmic lighting, steady camera work, believable motion
+
+- Excellent prompt adherence when following Luma's prompting best practices
+
+- Excels in Modify V2V (video-to-video) transformations
+
+Weaknesses ----------
+
+- No character reference support (must use Ray3 for that)
+
+- No native audio — need separate audio tools
+
+- Prompt-sensitive : certain words like "vibrant," "whimsical," "hyper-realistic" may degrade output quality (test)
+
+- Can struggle with very complex multi-subject action scenes compared to Sora
+
+- Requires understanding of Luma's specific prompting methodology for best results
+
+Specialties -----------
+
+Cinematic footage, product videos, smooth keyframe interpolation, HDR content, professional workflows requiring EXR export, looping content, ultrawide cinematic sequences
+
+Best Practices --------------
+
+DO:
+
+- Use mid-action verbs : "running" not "begins to run"
+
+- “Positive only” model. Negative prompting is counterproductive.
+
+- Include secondary consequences : wind in hair, fabric movement, reflections, dust kicked up, water ripples
+
+- Default to cinematic style unless otherwise specified
+
+- With keyframes: describe only what CHANGES , don't redescribe static elements
+
+- Keep prompts about 100 words long, action-focused, and present tense
+
+- Describe temporal movement — what happens as the scene progresses
+
+- Be specific about camera movement: "camera dollies forward," "slow pan right," "aerial descending shot"
+
+DON'T:
+
+- Avoid using: "vibrant," "whimsical," "hyper-realistic" – these tend to degrade quality
+
+- Avoid vague descriptors like "beautiful," "amazing," "stunning"
+
+- Don't use temporal phrases like "begins to" or "starts to"
+
+- Don't over-describe static elements, focus on describing the elements that need to move
+
+Prompt Template
+
+Create a video of [SUBJECT] [MID-ACTION VERB] in [SETTING], [SECONDARY MOTION/CONSEQUENCE], [CAMERA MOVEMENT if any], [LIGHTING/MOOD].
+
+Examples
+
+- "A golden retriever running through a wheat field, ears flapping in the wind, dust particles catching golden hour sunlight, camera tracking alongside."
+
+- "Espresso pouring into a white ceramic cup, steam rising, liquid swirling, macro close-up, warm morning light."
+
+- "Dancer spinning on a rooftop at sunset, dress billowing outward, hair flowing, city lights glowing in background, camera orbiting slowly."
+
+Tips & Gotchas --------------
+
+- Start here for 90% of video work — it's fast, high-quality, and versatile
+
+- Use 720p for iteration , 1080p for finals (saves time and credits)
+
+- Loop mode is excellent for product showcase content that needs to repeat seamlessly
+
+- HDR mode is outstanding for dramatic lighting scenarios: sunsets, neon signs, fire, and stage lighting
+
+- The EXR export is a game-changer for professional color grading pipelines
+
+- 21:9 ultrawide is perfect for cinematic letterbox aesthetic
+
+Ray3 (Luma) -----------
+
+Overview --------
+
+Luma's character-reference-capable model. Use when you need a specific character maintained across shots without needing perfect keyframes of that character.
+
+Strengths ---------
+
+- CHARACTER REFERENCE support – upload a character reference image to maintain character identity across your video generations, supported in T2V, I2V, V2V and Reference Mode.
+
+- Same keyframe support as Ray3.14 – start frame, end frame (5s frame/120th frame)
+
+- 6 aspect ratios (9:16, 3:4, 1:1, 4:3, 16:9, 21:9)
+
+- 5s or 10s duration
+
+- Seamless loop support
+
+- HDR and EXR support
+
+- Cinematic quality with more expressive and intense movement
+
+- Enhanced prompt mode available for better adherence
+
+Weaknesses ----------
+
+- Slower than Ray3.14 — noticeably longer generation times
+
+- Native 1080p
+
+- No native audio
+
+- Same prompt sensitivity as Ray3.14 (avoid "vibrant," "whimsical," etc.)
+
+Specialties -----------
+
+Character-consistent multi-shot sequences, narrative projects, storyboards with recurring characters, and any work requiring the same character across multiple video generation modes.
+
+Best Practices --------------
+
+Same rules as Ray3.14 (mid-action verbs, secondary consequences, no banned words)
+
+Character Reference Specific:
+
+- When using character reference, the prompt should describe the scene/action , and the reference image handles identity
+
+- You don’t have to re-describe the character's physical appearance if using a reference — let the reference image do that work
+
+- With keyframes AND character reference: describe action/setting changes, not character features
+
+Prompt Template
+
+Create a video of [CHARACTER DESCRIPTION if no ref] [MID-ACTION VERB] in [SETTING], [SECONDARY MOTION], [CAMERA if any], [LIGHTING/MOOD].
+
+Prompt Examples ---------------
+
+- With character ref: "Character walking through a foggy forest, leaves crunching underfoot, mist swirling around legs, low-angle tracking shot."
+
+- Without ref: "Young woman in red jacket hiking up a mountain trail, backpack bouncing, hair tied back, breathing visible in cold air, golden hour side lighting."
+
+Tips & Gotchas --------------
+
+- Only reach for this when you specifically need character reference — Ray 3.14 is faster and higher-res for everything else
+
+- Ray is a “positive only” model. Negative prompting is counterproductive.
+
+- Character reference works best with clear, well-lit reference images showing the character's face and defining features
+
+- Can combine character reference WITH keyframes for maximum control over both identity and composition
+
+- Great for narrative sequences where the same character appears in multiple locations/scenarios
+
+- The enhanced prompt mode can help with complex scenes but increases generation time
+
+Veo 3 (Google) --------------
+
+Overview --------
+
+Google's video model with native audio generation. Generates synchronized dialogue, sound effects, and ambient audio alongside video.
+
+Strengths ---------
+
+- NATIVE AUDIO generation — dialogue, SFX, ambient sound, all synchronized with video
+
+- Include dialogue in quotes for automatic lip-sync : e.g., 'A man says, "Hello world"
+
+- Text-based "inpainting" for scene modifications.
+
+- Uses reference images for character/background consistency.
+
+- Significantly SLOWER than Sora for longer videos.
+
+- 720p and 1080p resolution (1080p only available for 16:9 aspect ratio)
+
+- 4s, 6s, or 8s duration options
+
+- High adherence to professional camera, lens, and lighting terminology.
+
+- Good for standalone videos that need integrated audio from the start
+
+- Cinematic quality
+
+- High temporal adherence means more physical realism.
+
+- Long context window, it can handle long, detailed prompts
+
+Weaknesses ----------
+
+- Only 2 aspect ratios (16:9, 9:16) — very limited framing options compared to Luma `models
+
+- No keyframe support (no start/end frame control for precise visuals)
+
+- No character reference
+
+- No loop support
+
+- Less cinematic quality than Ray models — visuals can feel "AI-ish" with occasional artifacts
+
+- Poor for multi-video projects requiring visual consistency across shots
+
+- Audio quality can be hit-or-miss ; dialogue can sound robotic or uncanny
+
+- 1080p locked to 16:9 only
+
+Specialties -----------
+
+Audio-integrated videos, talking head content, ambient scene videos with natural sound, quick social content with sound, dialogue-driven shorts
+
+Best Practices --------------
+
+Audio Integration
+
+- Put dialogue in quotes : 'A woman says, "Welcome to our channel"'
+
+- Describe sound effects explicitly: "thunder rumbling," "waves crashing," "footsteps echoing"
+
+- Be specific about ambient sound: "busy coffee shop chatter," "forest birds chirping," "city traffic humming"
+
+Visual
+
+- Keep prompts clean and concise (1-2 sentences)
+
+- Focus on what's visually happening AND what you want to hear
+
+- Simple is better — complex scenes can degrade quality
+
+Prompt Template
+
+[Cinematography] + [Subject] + [Action] + [Context] + [Style] + [Ambiance] + [Audio].
+
+Prompt Examples ---------------
+
+- “Tracking shot following the explorer as she steps into the clearing and runs her hand over the intricate carvings on a crumbling stone wall. Emotion: Wonder and reverence."
+
+- “Wide, high-angle crane shot, revealing the lone explorer standing small in the center of the vast, forgotten temple complex, half-swallowed by the jungle. SFX: A swelling, gentle orchestral score begins to play.”
+
+- “Reverse shot of the explorer's freckled face, her expression filled with awe as she gazes upon ancient, moss-covered ruins in the background. SFX: The rustle of dense leaves, distant exotic bird calls.”
+
+Tips & Gotchas --------------
+
+- Best when you need audio baked in from the start and don't want to sync separately
+
+- For higher visual quality without audio, use Ray 3.14 + separate audio tools
+
+- 1080p only works at 16:9 — portrait is locked to 720p (significant limitation)
+
+- Multi-shot consistency — While each generation is independent, use "First Frame" anchoring or the "Scene Extension" tool to carry character details across shots.
+
+- The dialogue feature is powerful, but the voice quality is inconsistent (can sound robotic).
+
+- Good for quick social content where audio matters more than cinematic perfection
+
+Veo 3.1 (Google) ----------------
+
+Overview --------
+
+Updated version of Veo 3 with keyframe support. Same native audio capabilities with added visual control through start and end frame keyframes.
+
+Strengths ---------
+
+- Everything Veo 3 has PLUS keyframe support (start frame and end frame)
+
+- Native audio generation with dialogue, SFX, ambient sound
+
+- 1080p and 720p at 4s, 6s, or 8s durations .
+
+- Optional 4K upscaling — specifically reconstructs textures and skin pores rather than just stretching pixels.
+
+- Can bridge between two keyframe images with audio — unique capability
+
+- Better visual control than Veo 3 for specific compositional needs
+
+Weaknesses ----------
+
+- Same limited aspect ratios as Veo 3 (16:9, 9:16 only)
+
+- Up to three (3) reference images.
+
+- No loop support —unofficial workflow possible
+
+- 1080p available for all durations—4s, 6s, 8s
+
+- Same visual quality limitations as Veo 3 — less cinematic than Ray models
+
+- Audio quality is still variable and can be uncanny
+
+- Falls back to Veo 3 if generation fails
+
+Specialties -----------
+
+Keyframe-guided videos with native audio, image-to-video with sound, scene transitions with audio, and bridging two specific visual moments with synchronized sound
+
+Best Practices --------------
+
+Same as Veo 3 — dialogue in quotes, describe sounds explicitly
+
+With Keyframes
+
+- Describe the transition/action between frames AND the audio you want
+
+- Focus on the journey from start frame to end frame
+
+- Don't redescribe static elements visible in the keyframes
+
+Prompt Template
+
+[Cinematography] + [Subject] + [Action] + [Context] + [Style] + [Ambiance] + [Audio].
+
+Prompt Examples ---------------
+
+- “Tracking shot following the explorer as she steps into the clearing and runs her hand over the intricate carvings on a crumbling stone wall. Emotion: Wonder and reverence."
+
+- “Wide, high-angle crane shot, revealing the lone explorer standing small in the center of the vast, forgotten temple complex, half-swallowed by the jungle. SFX: A swelling, gentle orchestral score begins to play.”
+
+- “Reverse shot of the explorer's freckled face, her expression filled with awe as she gazes upon ancient, moss-covered ruins in the background. SFX: The rustle of dense leaves, distant exotic bird calls.”
+
+Tips & Gotchas --------------
+
+- Use this over Veo 3 when you have keyframe images and need audio
+
+- U se Veo 3.1 Fast model ( ~70% cheaper and 2x faster) for testing. Once locked, re-run the same seed and prompt on Standard with “4k” enabled for the final render.
+
+- The keyframe + audio combo is unique — no other model does this natively
+
+- Falls back gracefully if it fails, so it's worth trying
+
+- Still inherits Veo 3's visual quality limitations — not as cinematic as Ray models
+
+Sora 2 (OpenAI) ---------------
+
+Overview --------
+
+OpenAI's video model. Strong at high-energy, multi-subject motion scenes with believable physics and crowd dynamics. Automatic audio generation included.
+
+Strengths ---------
+
+- Excellent multi-subject motion : crowds, sports, group dynamics, action scenes with multiple moving elements
+
+- Strong character and world persistence within a single clip
+
+- Faster than Veo 3.1 (at high-quality)
+
+- Believable background activity and physics — things move naturally in the periphery
+
+- Automatic audio generation (ambient, SFX, even auto-generated dialogue)
+
+- Can suppress audio selectively ("no dialogue," "no music," "no audio")
+
+- Duration options vary by UI and wrapper: : 4s, 8s, or 15s. Pro users up to 25s
+
+- LONGEST duration of models listed.
+
+- Sora 2 (base, $0.10/ second) is cheaper than Veo 3.1 Fast $0.15/second).
+
+- Good at historical recreations and documentary-style content
+
+- High scene realism and physics accuracy
+
+- Handles complex action better than most other models
+
+Weaknesses ----------
+
+- Only 2 aspect ratios : 16:9, 9:16: 1792×1024 (landscape) and 1024×1792 (portrait)
+
+- Only 720p resolution — 1080p option only for Pro users.
+
+- No keyframe interpolation (start frame only, no end frame)
+
+- Strict content moderation — no copyrighted material, living celebrities, political figures
+
+- Sora doesn’t guarantee continuity across separate fresh generations; use additional features (Remix/Re-cut/Storyboard), or use a reference frame .
+
+- Not ideal for long cinematic storytelling sequences that require shot-to-shot consistency
+
+- Expensive in both time and compute resources.
+
+- Sora 2 Pro high-res ($0.50/sec) can exceed Veo 3.1 Standard ($0.40/sec) .
+
+Specialties -----------
+
+High-energy social content, crowd/group dynamics, action scenes with multiple subjects, sports footage, historical recreations, meme-style videos, longer single clips (20s), documentary-style content
+
+Best Practices --------------
+
+General
+
+- Sora 2 prompting guide says both shorter prompts (more creative freedom) and longer detailed prompts (more control/consistency) are valid, depending on goals
+
+- Be specific about shot type, subject, action, setting, and lighting for best results.
+
+- Sora 2 calls it “briefing a cinematographer.”
+
+- Let the model handle background activity naturally
+
+Audio
+
+- For dialogue: 'A woman says, "Welcome home"'
+
+- For SFX: describe explicitly — "waves crash on the shore," "engine revs loudly"
+
+- To suppress audio, OpenAI’s official guide uses “Diegetic only,” “No score,” “Natural ambience only”
+
+Content
+
+- Can reference historical figures (Lincoln, MLK, Freddie Mercury) but NOT living celebrities
+
+- No copyrighted characters or IP
+
+Prompt Template
+
+[SHOT TYPE/FRAMING] of [SUBJECTS] [ACTION] in [SETTING], (optional: [SECONDARY MOTION / ENV EFFECTS]), [CAMERA MOVEMENT], [LIGHTING/PALETTE]. (optional: Audio: [DIALOGUE / BACKGROUND SOUND])
+
+Prompt Examples ---------------
+
+- "Wide handheld street-level shot of four basketball players in a gritty city court during golden hour, fast crossovers and a drive to the rim; camera tracks alongside the ball-handler, slight shake, shallow depth of field. Lighting: warm low sun, long shadows, dust in the air. Background sound: sneakers squeak on asphalt, ball thumps, crowd cheers, and claps."
+
+- "Wide shot transitioning to a medium tracking shot through a busy open-air market in Morocco; vendors gesture and call out while shoppers pass colorful fabric stalls. Camera: steady handheld gimbal feel, slow weave forward at walking pace. Lighting: bright midday sun with patchy shade under awnings; saturated color palette. Background sound: overlapping voices, bargaining calls, footsteps, cloth flapping in the wind. "
+
+Tips & Gotchas --------------
+
+- Best for short-form social content with lots of movement and energy
+
+- The 20s option is powerful but VERY slow — use strategically
+
+- Use as fallback when Veo or Ray aren't delivering what you need
+
+- The auto-audio is a nice bonus but less controllable than Veo's quoted dialogue
+
+- Excellent for memes and viral content where energy matters more than cinematic polish
+
+- Good at historical/period recreations if you need figures from the past
+
+Kling 2.6 (Kuaishou) --------------------
+
+Overview --------
+
+Kuaishou's video model with native audio and lip-sync capabilities. Good motion quality with integrated audio generation.
+
+Strengths ---------
+
+- Native audio generation : speech, SFX, ambient sound
+
+- LIP-SYNC capability — put dialogue in quotes for synchronized speech
+
+- Supports English and Chinese (other languages auto-translate)
+
+- Both text-to-video and image-to-video
+
+- Start and end frame reference images.
+
+- 3 aspect ratios (16:9, 9:16, 1:1 square)
+
+- 720p and 1080p resolution
+
+- 5s or 10s duration
+
+- CFG scale control (0-1) for prompt adherence tuning.
+
+- Good motion quality and consistency
+
+- Square aspect ratio option (1:1) is great for Instagram
+
+Weaknesses ----------
+
+- Only 3 aspect ratios (no ultrawide, no 3:4, no 4:3)
+
+- No loop support
+
+- No HDR/EXR
+
+- Less cinematic quality than Ray models
+
+- Language limitations (best in English and Chinese)
+
+- No dedicated character reference support
+
+Specialties -----------
+
+Talking head content with lip-sync, audio-integrated scenes, social media content (especially Instagram with 1:1), bilingual English/Chinese content
+
+Best Practices --------------
+
+Audio/Dialogue
+
+- Put dialogue in quotes for lip-sync : 'Character says "Hello!"'
+
+- Describe sounds explicitly: "coffee shop chatter, espresso machine hissing"
+
+CFG Scale
+
+- Use CFG scale to control how strictly the model follows your prompt
+
+- 0.5 = balanced default (recommended starting point)
+
+- Higher values (0.7-1.0) = stricter adherence to prompt
+
+- Lower values (0.2-0.4) = more creative freedom
+
+General
+
+- Clean concise prompts work best
+
+- Be specific about action and setting
+
+Prompt Template
+
+[SETTING + LIGHTING]. [SUBJECT] [ACTION/MOTION] (optional: [CAMERA]). Audio: [AMBIENCE + SFX]. [CHARACTER] says "[DIALOGUE]" (optional: [VOICE TRAITS]). Style: [VISUAL AESTHETIC].
+
+Prompt Examples ---------------
+
+- “Medium close-up, creator facing camera in a home studio, subtle hand gestures, gentle camera push-in. Audio: low-volume lo-fi beat under clear voice, faint room tone. She says, “I’ll show you three AI tricks you can use today.” Warm key light, soft background bokeh, natural skin texture.”
+
+- Nighttime neon street after rain, slow tracking shot from behind as the subject walks, then turns to camera. Audio: rain on pavement, distant traffic, footsteps. She says, “Okay… this is where it starts.” Moody noir lighting, high contrast, shallow depth of field.
+
+- 360-degree rotating shot of a sleek smartphone on a minimal pedestal, slow floating motion. Audio: soft studio room tone, subtle whoosh as it rotates, tiny click as the screen lights. No dialogue. Crisp commercial lighting, clean reflections, product photography look.
+
+Tips & Gotchas --------------
+
+- CFG scale is useful for fine-tuning adherence vs. creativity
+
+- Add weight to key elements by using emphasis indicators (++) for critical elements
+
+Example: "++sleek red convertible++ driving along coastal highway"
+
+- Lip-sync quality is still a standout feature compared to other models
+
+- Square (1:1) aspect ratio option is excellent for Instagram feed posts
+
+- If you need wider framing or more cinematic work , use Ray models instead
+
+- Works well for influencer-style content with direct-to-camera dialogue
+
+- Bilingual capability is useful for international campaigns
+
+Ray3 & Ray3.14 Video Modify (V2V) ---------------------------------
+
+Overview --------
+
+Transform existing videos with prompt-guided frame and/or video modifications. This is video-to-video transformation, not generation from scratch.
+
+What It Does ------------
+
+Takes an existing video and modifies it based on your prompt — can change style, lighting, environment, weather, time of day, and more while preserving the underlying motion and composition.
+
+Strength Control ----------------
+
+Three modes with three intensity levels each:
+
+- Adhere (1-3) : Preserves original video closely, subtle changes
+
+- Level 1: Minimal changes
+
+- Level 3: Moderate changes while staying faithful
+
+- Flex (1-3) : Balanced transformation
+
+- Level 1: Moderate changes
+
+- Level 3: Significant changes
+
+- Reimagine (1-3) : Creative freedom, major transformations
+
+- Level 1: Significant changes
+
+- Level 3: Dramatic reinterpretation
+
+Keyframe Support ----------------
+
+- Can use start and/or end frame keyframes to guide the modification
+
+- Helps maintain specific visual elements or compositions
+
+- Useful for ensuring the output matches a desired aesthetic
+
+Best Practices --------------
+
+CRITICAL RULES
+
+- Describe desired END STATE , not commands
+
+- NO temporal language — don't say "changes to" or "transforms into"
+
+- POSITIVE descriptions only — say "clear blue sky" NOT "no clouds"
+
+- Be specific about the transformation you want
+
+Good Examples
+
+- "Cyberpunk neon city at night, rain-slicked streets, purple and blue lighting"
+
+- "Watercolor painting style, soft pastel colors, impressionistic"
+
+- "Golden hour lighting, warm orange glow, long shadows"
+
+Bad Examples
+
+- ❌ "Change the sky to blue" (command, not description)
+
+- ❌ "Remove the clouds" (negative description)
+
+- ❌ "The scene transforms into a forest" (temporal language)
+
+- Style transfer : Turn live-action into animation, or realistic into illustrated
+
+- Re-lighting : Change time of day, add dramatic lighting
+
+- Environment changes : Urban to nature, summer to winter, day to night
+
+- Weather modifications : Add rain, fog, snow, sunshine
+
+- Artistic stylization : Oil painting, watercolor, comic book, cinematic grading
+
+Tips & Gotchas --------------
+
+- Start with lower strength levels (Adhere 1-2, Flex 1) and increase if needed
+
+- Higher strength = more deviation from original — can lose important details
+
+- Works best when the original video has good motion and composition already
+
+- Use keyframes to anchor specific visual elements you want to preserve
+
+- Great for repurposing existing footage into different styles or moods
+
+- Can be used iteratively — modify a video, then modify the result again
+
+Comparison Summary ------------------
+
+Speed Ranking (Fastest to Slowest - Heavily dependent on Quality): ------------------------------------------------------------------
+
+- Ray3.14 — Fastest, especially at lower resolutions
+
+- Ray3 — Slightly slower than 3.14
+
+- Veo 3 / Veo 3.1 — Fast for longer durations
+
+- Sora 2 — Noticeably slow, especially at 12s and 20s
+
+- Kling 2.6 — Moderate speed
+
+Audio Capabilities ------------------
+
+Ray 3.14 - Audio generation available in supported UIs.
+
+Veo 3.1 - Native audio generation. Slightly robotic Kling 2.6 (Kuaishou) - Native audio. Strong lip-sync capability—multilingual voice support. Sora (OpenAI) - Native Audio. Varies by UI
+
+Resolution Options ------------------
+
+- Ray 3.14 — Draft Mode, 540p, 720p, 1080p (native), 4K via upscaling
+
+- Ray 3 — 720p, 1080p
+
+- Veo 3.1 — 720p, 1080p, 4K
+
+- Kling 2.6 — Up to 1080p
+
+- Sora (Sora Editor surface) — 720p (higher resolutions vary by UI
+
+Duration Options ----------------
+
+- Ray 3.14 — 4 s, 8 s, 12 s (up to ~18 s orchestration)
+
+- Ray 3 — Short-form durations similar to Ray 3.14 (varies by platform)
+
+- Veo 3.1 — Up to 8 s
+
+- Kling (e.g., 2.1 / 2.6 class) — ~5 s and options to extend toward ~10 s is possible
+
+- Sora 2 — Up to 12 s
+
+Aspect Ratio Flexibility ------------------------
+
+- Ray 3.14 / Ray 3 — 16:9, 9:16, 1:1, 4:3, 3:4, 21:9
+
+- Veo 3.1 — 16:9, 9:16 (with some reference-image limitations reported)
+
+- Kling 2.x / 2.6 — 16:9, 9:16, 1:1
+
+- Sora 2 — 16:9, 9:16, 1:1
+
+Special Features ----------------
+
+- Ray 3 — Modify workflows, motion & character controls, part of Luma API ecosystem.
+
+- Veo 3 / 3.1 — Integrated audio, cinematic camera semantics, longer sequence support & scene continuity.
+
+- Kling 2.x (e.g., 2.6) — Native audio, strong lip sync, 3D VAE architecture, spatiotemporal motion quality, improved realism.
+
+- Sora 2 — Narrative/storytelling optimization, social-ready app features, visual coherence focus.
+
+Cost/Resource Considerations ----------------------------
+
+- Most efficient : Ray3.14 (fast + high quality)
+
+- Time-intensive : Sora 2 (especially 12s and 20s), Ray3 (slower than 3.14)
+
+- Resource-heavy : 1080p renders, HDR/EXR exports, longer durations
+
+- Budget-friendly iteration : Use 720p or lower for testing, 1080p for finals
+
+Decision Flowchart ------------------
+
+General video, need high consistency and temporal stability? ------------------------------------------------------------
+
+→ Ray3.14
+
+- Fast, high-quality, most aspect ratios
+
+- Native 1080p, use 720p for iteration.
+
+- HDR for dramatic lighting
+
+- Loop mode for product showcases
+
+Need character consistency across shots? ----------------------------------------
+
+→ Ray3
+
+- Character reference maintains identity
+
+- Slower than 3.14 but worth it for multi-shot narratives
+
+- Native 1080p, 720p for iteration
+
+- More intense motion
+
+Need native audio/dialogue? ---------------------------
+
+Choose based on your specific need:
+
+a) Have keyframe images + need audio? → Veo 3.1
+
+- Start and end frame keyframes with synchronized audio
+
+- Best for bridging specific visual moments with sound
+
+b) Text-to-video with audio, no keyframes? → Veo 3
+
+- Fast, dialogue with lip-sync
+
+- Limited aspect ratios (16:9, 9:16 only)
+
+c) Need lip-sync quality + social content? → Kling 2.6
+
+- Strong lip-sync, 1:1 square for Instagram
+
+- CFG scale for fine-tuning
+
+- Bilingual (English/Chinese)
+
+Need high-energy multi-subject action? --------------------------------------
+
+→ Sora 2
+
+- Best for crowds, sports, group dynamics
+
+- Believable background activity
+
+- Automatic audio included
+
+- Slower generation, 720p max
+
+Need longest possible single clip (20s)? ----------------------------------------
+
+→ Sora 2
+
+- Only model that goes to 20s
+
+- Be prepared for slow generation
+
+- Good for longer narrative moments
+
+Need to modify existing video? ------------------------------
+
+→ Modify Video • Ray3
+
+- Style transfer, re-lighting, environment changes
+
+- Adhere/Flex/Reimagine strength control
+
+- Start with lower strength levels
+
+Other model failing or not delivering? --------------------------------------
+
+→ Try Sora 2 or Veo 3 as fallback
+
+- Different architectures may handle your prompt better
+
+- Sora for complex action, Veo for audio-integrated content
+
+Need specific features? -----------------------
+
+- Ultrawide (21:9) : Ray3.14 or Ray3
+
+- HDR/EXR export : Ray3.14 720p & 540p only
+
+- Seamless loops : Ray3.14 or Ray3
+
+- Character reference : Ray3 only
+
+- 1:1 square : Kling 2.6 (or Ray models)
+
+- End frame keyframes : Ray3.14, Ray 3, Veo 3.1
+
+Recommendations for Creative Professionals ------------------------------------------
+
+Default Workflow ----------------
+
+- Start with Ray3.14 for 90% of projects
+
+- Iterate at 720p to save time and resources
+
+- Use keyframes when you have specific compositions in mind
+
+- Add audio separately for maximum control (unless you specifically need integrated audio)
+
+- Upscale to 1080p for final delivery
+
+When to Break the Rules -----------------------
+
+- Character-driven narratives → Ray3
+
+- Audio-first content → Veo 3.1, Kling 2.6
+
+- High-energy social → Sora 2
+
+- Longer single takes → Sora 2 (20s)
+
+- Style transformations → Modify Video
+
+Prompting Discipline --------------------
+
+- Luma models (Ray3.14, Ray3) : Follow their rules religiously — mid-action verbs, secondary motion, NO forbidden words
+
+- Veo models : Quotes for dialogue, explicit sound descriptions
+
+- Sora : Clean and concise, let it handle complexity
+
+- Kling : Use CFG scale strategically, lip-sync in quotes
+
+- Modify Video : Describe end state, no commands, positive language only
+
+Quality Control ---------------
+
+- Always review at full resolution before delivery
+
+- Test audio sync if using native audio models
+
+- Check for artifacts in high-motion scenes
+
+- Verify aspect ratio matches platform requirements
+
+- Iterate strategically — don't waste credits on random attempts
+
+Platform-Specific Recommendations ---------------------------------
+
+- Instagram Feed (1:1) : Kling 2.6 or Ray models
+
+- Instagram Reels (9:16) : Ray 3.14, Veo 3, Kling 2.6
+
+- TikTok (9:16) : Ray3.14, Sora 2 for high-energy
+
+- YouTube (16:9) : Ray3.14 (1080p, HDR if applicable)
+
+- Cinematic/Film (21:9) : Ray3.14, Ray3
+
+- Professional Grading : Ray3.14 (EXR export)
+
+Remember: These tools are powerful but not magic. Understanding their strengths, limitations, and prompting requirements will dramatically improve your results. Start with the default (Ray3.14), learn its quirks, then expand to other models as your specific needs require.

@@ -19,6 +19,8 @@ class RetrievedChunk:
         chunk_id: UUID,
         video_id: UUID,
         video_title: str,
+        content_type: str,
+        source_url: str | None,
         start_time_seconds: float,
         end_time_seconds: float,
         raw_text: str,
@@ -26,12 +28,15 @@ class RetrievedChunk:
         summary: str | None,
         topic_tags: list[str] | None,
         speaker_names: list[str] | None,
+        section_heading: str | None,
         score: float,
         rank: int,
     ):
         self.chunk_id = chunk_id
         self.video_id = video_id
         self.video_title = video_title
+        self.content_type = content_type
+        self.source_url = source_url
         self.start_time_seconds = start_time_seconds
         self.end_time_seconds = end_time_seconds
         self.raw_text = raw_text
@@ -39,6 +44,7 @@ class RetrievedChunk:
         self.summary = summary
         self.topic_tags = topic_tags or []
         self.speaker_names = speaker_names or []
+        self.section_heading = section_heading
         self.score = score
         self.rank = rank
 
@@ -47,6 +53,7 @@ async def retrieve_chunks(
     question: str,
     top_k: int,
     db_session: AsyncSession,
+    content_type_filter: str | None = None,
 ) -> list[RetrievedChunk]:
     """
     Retrieve relevant chunks using hybrid search.
@@ -64,6 +71,7 @@ async def retrieve_chunks(
         question: User question
         top_k: Number of chunks to return
         db_session: Database session
+        content_type_filter: Optional filter by content type ('webinar' | 'article')
 
     Returns:
         List of RetrievedChunk objects
@@ -88,6 +96,7 @@ async def retrieve_chunks(
         vector_results = await _vector_search(
             query_embedding=query_embedding,
             limit=top_k * 2,
+            content_type_filter=content_type_filter,
             db_session=db_session,
         )
         print(f"  Found {len(vector_results)} vector matches")
@@ -97,6 +106,7 @@ async def retrieve_chunks(
         keyword_results = await _keyword_search(
             query_text=rewritten_query,
             limit=top_k * 2,
+            content_type_filter=content_type_filter,
             db_session=db_session,
         )
         print(f"  Found {len(keyword_results)} keyword matches")
@@ -143,6 +153,7 @@ async def retrieve_chunks(
 async def _vector_search(
     query_embedding: list[float],
     limit: int,
+    content_type_filter: str | None,
     db_session: AsyncSession,
 ) -> list[tuple[Chunk, float]]:
     """
@@ -159,28 +170,33 @@ async def _vector_search(
     # before the ::vector cast (avoids the named-param + :: conflict).
     embedding_str = f"[{','.join(str(x) for x in query_embedding)}]"
 
-    query = text("""
+    # Build WHERE clause with optional content_type filter
+    where_clause = "v.status = 'embedded' AND c.embedding IS NOT NULL"
+    if content_type_filter:
+        where_clause += " AND v.content_type = :content_type"
+
+    query = text(f"""
         SELECT
             c.id, c.video_id, c.start_time_seconds, c.end_time_seconds,
             c.raw_text, c.contextual_text, c.summary, c.topic_tags,
-            c.speaker_names, c.chunk_index, c.word_count,
-            v.title as video_title,
+            c.speaker_names, c.section_heading, c.chunk_index, c.word_count,
+            v.title as video_title, v.content_type, v.source_url,
             (1 - (c.embedding <=> CAST(:query_embedding AS vector))) as score
         FROM chunks c
         JOIN videos v ON c.video_id = v.id
-        WHERE v.status = 'embedded'
-          AND c.embedding IS NOT NULL
+        WHERE {where_clause}
         ORDER BY c.embedding <=> CAST(:query_embedding AS vector)
         LIMIT :limit
     """)
 
-    result = await db_session.execute(
-        query,
-        {
-            "query_embedding": embedding_str,
-            "limit": limit,
-        }
-    )
+    params = {
+        "query_embedding": embedding_str,
+        "limit": limit,
+    }
+    if content_type_filter:
+        params["content_type"] = content_type_filter
+
+    result = await db_session.execute(query, params)
     rows = result.fetchall()
 
     chunks = []
@@ -195,11 +211,14 @@ async def _vector_search(
             summary=row.summary,
             topic_tags=row.topic_tags,
             speaker_names=row.speaker_names,
+            section_heading=row.section_heading,
             chunk_index=row.chunk_index,
             word_count=row.word_count,
         )
-        # Attach video_title as attribute for convenience
+        # Attach video metadata as attributes for convenience
         chunk.video_title = row.video_title
+        chunk.content_type = row.content_type
+        chunk.source_url = row.source_url
         score = float(row.score)
         chunks.append((chunk, score))
 
@@ -209,6 +228,7 @@ async def _vector_search(
 async def _keyword_search(
     query_text: str,
     limit: int,
+    content_type_filter: str | None,
     db_session: AsyncSession,
 ) -> list[tuple[Chunk, float]]:
     """
@@ -219,36 +239,43 @@ async def _keyword_search(
     Returns:
         List of (Chunk, score) tuples
     """
+    # Build WHERE clause with optional content_type filter
+    where_clause = """v.status = 'embedded'
+          AND (
+            to_tsvector('english', c.raw_text) @@ plainto_tsquery('english', :query_text)
+            OR to_tsvector('english', COALESCE(c.summary, '')) @@ plainto_tsquery('english', :query_text)
+          )"""
+
+    if content_type_filter:
+        where_clause += " AND v.content_type = :content_type"
+
     # Use ts_rank to score matches
     # Search in both raw_text and summary
-    query = text("""
+    query = text(f"""
         SELECT
             c.id, c.video_id, c.start_time_seconds, c.end_time_seconds,
             c.raw_text, c.contextual_text, c.summary, c.topic_tags,
-            c.speaker_names, c.chunk_index, c.word_count,
-            v.title as video_title,
+            c.speaker_names, c.section_heading, c.chunk_index, c.word_count,
+            v.title as video_title, v.content_type, v.source_url,
             GREATEST(
                 ts_rank(to_tsvector('english', c.raw_text), plainto_tsquery('english', :query_text)),
                 ts_rank(to_tsvector('english', COALESCE(c.summary, '')), plainto_tsquery('english', :query_text))
             ) as score
         FROM chunks c
         JOIN videos v ON c.video_id = v.id
-        WHERE v.status = 'embedded'
-          AND (
-            to_tsvector('english', c.raw_text) @@ plainto_tsquery('english', :query_text)
-            OR to_tsvector('english', COALESCE(c.summary, '')) @@ plainto_tsquery('english', :query_text)
-          )
+        WHERE {where_clause}
         ORDER BY score DESC
         LIMIT :limit
     """)
 
-    result = await db_session.execute(
-        query,
-        {
-            "query_text": query_text,
-            "limit": limit,
-        }
-    )
+    params = {
+        "query_text": query_text,
+        "limit": limit,
+    }
+    if content_type_filter:
+        params["content_type"] = content_type_filter
+
+    result = await db_session.execute(query, params)
     rows = result.fetchall()
 
     chunks = []
@@ -263,10 +290,13 @@ async def _keyword_search(
             summary=row.summary,
             topic_tags=row.topic_tags,
             speaker_names=row.speaker_names,
+            section_heading=row.section_heading,
             chunk_index=row.chunk_index,
             word_count=row.word_count,
         )
         chunk.video_title = row.video_title
+        chunk.content_type = row.content_type
+        chunk.source_url = row.source_url
         score = float(row.score)
         chunks.append((chunk, score))
 
@@ -306,6 +336,8 @@ def _merge_and_dedupe(
             chunk_id=chunk.id,
             video_id=chunk.video_id,
             video_title=chunk.video_title,
+            content_type=chunk.content_type,
+            source_url=chunk.source_url,
             start_time_seconds=chunk.start_time_seconds,
             end_time_seconds=chunk.end_time_seconds,
             raw_text=chunk.raw_text,
@@ -313,6 +345,7 @@ def _merge_and_dedupe(
             summary=chunk.summary,
             topic_tags=chunk.topic_tags,
             speaker_names=chunk.speaker_names,
+            section_heading=chunk.section_heading,
             score=score,
             rank=0,  # Will be assigned after sorting
         )

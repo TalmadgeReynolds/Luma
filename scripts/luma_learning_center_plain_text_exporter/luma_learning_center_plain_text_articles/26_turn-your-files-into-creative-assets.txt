@@ -1,0 +1,261 @@
+Source: https://lumalabs.ai/learning-center/articles/turn-your-files-into-creative-assets
+
+Turn Your Files Into Creative Assets ====================================
+
+March 9, 2026
+
+- Turn Your Files Into Creative Assets Tell the agent what you uploaded and what you want What you can ask the agent to do with uploaded assets Summarize it Extract the important parts Turn it into a creative brief Turn it into instructions you can actually use Create a plan before generating Check for problems or contradictions Turn it into a storyboard / shot list for video Turn it into a character reference system Turn it into a “style guide” for consistency Use it as “truth” so the agent doesn’t make things up What types of files can you upload? Text-based Files Visual Files Video Files Audio Files The most useful workflow Upload → Analyze → Convert → Create A helpful reminder Key takeaway
+
+- Tell the agent what you uploaded and what you want
+
+- What you can ask the agent to do with uploaded assets Summarize it Extract the important parts Turn it into a creative brief Turn it into instructions you can actually use Create a plan before generating Check for problems or contradictions Turn it into a storyboard / shot list for video Turn it into a character reference system Turn it into a “style guide” for consistency Use it as “truth” so the agent doesn’t make things up
+
+- Summarize it
+
+- Extract the important parts
+
+- Turn it into a creative brief
+
+- Turn it into instructions you can actually use
+
+- Create a plan before generating
+
+- Check for problems or contradictions
+
+- Turn it into a storyboard / shot list for video
+
+- Turn it into a character reference system
+
+- Turn it into a “style guide” for consistency
+
+- Use it as “truth” so the agent doesn’t make things up
+
+- What types of files can you upload? Text-based Files Visual Files Video Files Audio Files
+
+- Text-based Files
+
+- Visual Files
+
+- Video Files
+
+- Audio Files
+
+- The most useful workflow Upload → Analyze → Convert → Create
+
+- Upload → Analyze → Convert → Create
+
+- A helpful reminder
+
+- Key takeaway
+
+Turn Your Files Into Creative Assets ====================================
+
+One of the most powerful things about working with Luma's multimodal Agent is this:
+
+You don’t have to start from scratch.
+
+You can upload your own materials—PDFs, scripts, images, videos, briefs, decks, references, audio tracks—and ask the Agent to:
+
+- understand them
+
+- summarize them
+
+- extract what matters
+
+- turn them into creative-ready building blocks
+
+- generate outputs based on them
+
+If you give the agent good inputs, you can move faster, stay consistent, and avoid “random AI results.”
+
+Tell the agent what you uploaded and what you want --------------------------------------------------
+
+A common mistake is uploading a file and saying:
+
+Make [something] with this.
+
+Instead, select the file you’ve uploaded and say this to the agent:
+
+Prompt template
+
+I’ve uploaded this file. Your job is to: 1) understand what it contains 2) summarize it clearly 3) ask me what output I want to create from it Before generating anything, tell me what you think this file is and what it can be used for.
+
+This makes the agent “look before it acts.”
+
+What you can ask the agent to do with uploaded assets -----------------------------------------------------
+
+Summarize it ------------
+
+Best for: long PDFs, raw notes, research, briefs
+
+Prompt template
+
+Summarize this file in [10] bullet points. Then give me: - the [3] most important takeaways - the [3] things that are unclear or missing - the [3] most useful next steps
+
+Extract the important parts ---------------------------
+
+Best for: scripts, text docs, briefs, pitch decks
+
+Prompt template
+
+Extract the most important parts of this file. Organize them into: - key facts - key goals - key constraints - key tone/style notes - key deliverables
+
+Turn it into a creative brief -----------------------------
+
+Best for: messy notes, email threads, unstructured PDFs
+
+Prompt template
+
+Turn this file into a clean creative brief. Format it as: - Project Summary - Target Audience - Tone and Style - Key Messages - Must-Haves - Avoid / Don’t Do - Deliverables - Open Questions
+
+This is one of the most valuable tasks because it turns chaos into clarity.
+
+Turn it into instructions you can actually use ----------------------------------------------
+
+Best for: any file you want to create outputs from
+
+Prompt template
+
+Based on this file, write [10] high-quality prompts I can use. Each prompt should: - be specific - include style guidance - include what should stay consistent - include what can vary Make them copy/paste templates with placeholders.
+
+Create a plan before generating -------------------------------
+
+Best for: larger projects like trailers, campaigns, story worlds
+
+Prompt template
+
+Based on this file, propose a step-by-step plan to create final outputs. Please include: - what assets we should generate first - what we should lock early (style, characters, tone) - where iteration will be needed - what can be done in parallel
+
+Check for problems or contradictions ------------------------------------
+
+Best for: brand docs, scripts, story bibles, spec sheets
+
+Prompt template
+
+Review this file for: - contradictions - unclear parts - missing information - places where a human would need to make a decision Then ask me the questions you need.
+
+This is extremely useful for reducing mistakes later.
+
+Turn it into a storyboard / shot list for video -----------------------------------------------
+
+Best for: scripts, voiceovers, trailer outlines
+
+Prompt template
+
+Using this file, create a shot list. For each shot: - what we see - what we feel - camera style - key visual details - what must stay consistent
+
+Turn it into a character reference system -----------------------------------------
+
+Best for: story docs, character descriptions, lore
+
+Prompt template
+
+Extract the character information from this file. For each character: - appearance - personality - key identity markers - “must not change” rules Then write a short reusable character reference block I can paste into future prompts.
+
+Turn it into a “style guide” for consistency --------------------------------------------
+
+Best for: reference image sets, art direction docs, moodboards
+
+Prompt template
+
+Turn this file into a visual style guide. Include: - color palette - lighting rules - texture/material rules - composition rules - camera language (if relevant) - what to avoid Write it in a format that can be reused in prompts.
+
+Use it as “truth” so the agent doesn’t make things up -----------------------------------------------------
+
+Best for: anything where accuracy matters
+
+Prompt template
+
+Use this file as the source of truth. If something is not stated in the file: - do not invent it - instead, ask me a question
+
+This is a big one. It prevents hallucinated details.
+
+What types of files can you upload? -----------------------------------
+
+You can upload almost anything that helps the agent understand your intent, such as:
+
+Text-based Files ----------------
+
+- PDFs
+
+- scripts
+
+- voiceover documents
+
+- briefs
+
+- pitch decks
+
+- brand guidelines
+
+- story bibles
+
+- meeting notes
+
+Visual Files ------------
+
+- reference images
+
+- moodboards
+
+- character sheets
+
+- product photos
+
+- screenshots
+
+Video Files -----------
+
+- clips you want to remix (V2V)
+
+- motion references
+
+- prior versions of your own video work
+
+Audio Files -----------
+
+- voice samples
+
+- rough reads
+
+- music references (depending on tool support)
+
+The most useful workflow ------------------------
+
+Upload → Analyze → Convert → Create -----------------------------------
+
+If you want a simple repeatable flow, use this every time:
+
+Prompt template
+
+Step 1: Summarize what’s in this file. Step 2: Extract the important creative constraints. Step 3: Turn it into reusable building blocks: - brief - character references - style guide - shot list (if video) Step 4: Propose [3] output directions I could generate.
+
+This turns the agent into a creative producer.
+
+A helpful reminder ------------------
+
+Uploading assets doesn’t just “give the agent content.”
+
+It gives the agent:
+
+- constraints
+
+- style
+
+- continuity
+
+- context
+
+Which means: you get less randomness and more control.
+
+Key takeaway ------------
+
+If you provide strong inputs and ask for the right kind of analysis, the agent can do a huge amount of work for you—before you generate a single frame.
+
+It can:
+
+- organize your materials
+
+- convert them into usable creative building blocks
+
+- and help you produce consistent, professional outputs faster.

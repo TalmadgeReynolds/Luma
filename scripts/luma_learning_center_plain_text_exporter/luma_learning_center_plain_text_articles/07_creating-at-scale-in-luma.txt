@@ -1,0 +1,389 @@
+Source: https://lumalabs.ai/learning-center/articles/creating-at-scale-in-luma
+
+Creating At Scale in Luma =========================
+
+March 9, 2026
+
+- Creating At Scale in Luma What Scale Means in Luma Prompt Scale Asset Scale System Scale Why Scale Matters for Creative Professionals How to Use Scale Intentionally Exploration Scale Refinement Scale Production Scale Scale by Modality Image Scale Video Scale Audio Scale Text Scale The Compounding Effect of Scale Advanced Scaling Strategies Version Trees Controlled Variable Testing Localization at Scale Character Franchising Key Takeaway
+
+- What Scale Means in Luma Prompt Scale Asset Scale System Scale
+
+- Prompt Scale
+
+- Asset Scale
+
+- System Scale
+
+- Why Scale Matters for Creative Professionals
+
+- How to Use Scale Intentionally Exploration Scale Refinement Scale Production Scale
+
+- Exploration Scale
+
+- Refinement Scale
+
+- Production Scale
+
+- Scale by Modality Image Scale Video Scale Audio Scale Text Scale
+
+- Image Scale
+
+- Video Scale
+
+- Audio Scale
+
+- Text Scale
+
+- The Compounding Effect of Scale
+
+- Advanced Scaling Strategies Version Trees Controlled Variable Testing Localization at Scale Character Franchising
+
+- Version Trees
+
+- Controlled Variable Testing
+
+- Localization at Scale
+
+- Character Franchising
+
+- Key Takeaway
+
+Creating At Scale in Luma =========================
+
+With Luma, you can do things like:
+
+- Generate countless variations from one prompt
+
+- Derive entire campaigns from a small set of assets
+
+- Produce cross-platform versions instantly
+
+- Localize without re-shooting
+
+One of Luma’s core advantages is creative scale .
+
+Not just speed. Not just multimodal generation. Not just access to multiple models.
+
+But the ability to expand a single idea into many iterations, variations and executions
+
+What Scale Means in Luma ------------------------
+
+Scale in Luma works in three primary ways
+
+Prompt Scale ------------
+
+One prompt → many outputs
+
+For example, from a single prompt you can generate:
+
+- Multiple image variations
+
+- Multiple video variations
+
+- Multiple Tone variants
+
+- Multiple Lighting shifts
+
+- Multiple Camera changes
+
+- Multiple Style reinterpretations
+
+- Multiple Format adaptations (1:1, 9:16, 16:9)
+
+- Multiple Platform-specific edits
+
+Instead of refining one output linearly, you can branch outward with multiple assets simultaneously, without having to worry about connecting any nodes for any task.
+
+Asset Scale -----------
+
+One asset → many derivatives
+
+One hero asset can become:
+
+- Multiple iterations using multiple models simultaneously
+
+- Multiple variants in multiple syles
+
+- Multiple executions with multiple parameters
+
+All on the same canvas, all from a single prompt or isolated instructions
+
+System Scale ------------
+
+One concept → full campaign
+
+Luma allows you to scale across:
+
+- Creative directions
+
+- Languages
+
+- Markets
+
+- Platforms
+
+- Character iterations
+
+- Product SKUs
+
+- Tone variants
+
+You’re not generating isolated assets. You’re generating creative systems.
+
+Why Scale Matters for Creative Professionals --------------------------------------------
+
+Traditional workflow: Brief → 1 concept → 1 execution → small set of variants, adjust, start over
+
+Luma workflow: Brief → 5 directions → 20 variations per direction → platform cuts → localized versions → emotional tone variations
+
+All without restarting from scratch.
+
+Scale shifts creative from: Scarcity mindset → Abundance mindset
+
+How to Use Scale Intentionally ------------------------------
+
+Scale is powerful — but it must be directed. Here’s how to use it strategically:
+
+Exploration Scale -----------------
+
+Use loose prompts to:
+
+- Explore visual territories
+
+- Test aesthetic directions
+
+- Discover unexpected angles
+
+- Compare styles side-by-side
+
+Generate wide before narrowing.
+
+Refinement Scale ----------------
+
+Once direction is chosen:
+
+- Generate multiple lighting variants
+
+- Generate multiple composition shifts
+
+- Adjust multiple wardrobes / props
+
+- Test multiple emotional tone
+
+Control variables. Change one element at a time.
+
+Production Scale ----------------
+
+After final direction:
+
+- Reframe for platforms
+
+- Generate CTA variations
+
+- Translate
+
+- Add subtitles
+
+- Create cutdowns
+
+- Produce 6s / 15s / 30s versions
+
+- Create hook variations
+
+Systematize your variations.
+
+Scale by Modality -----------------
+
+Image Scale -----------
+
+From one prompt:
+
+- Multiple visual variations
+
+- Countless style swaps
+
+- Several lighting adjustments
+
+- Multiple seasonal adaptations
+
+- Multiple SKU color swaps
+
+- Multiple Campaign theme variations
+
+From one image:
+
+- Animate it
+
+- Reframe it
+
+- Extract palette
+
+- Turn into video
+
+- Create variations grid
+
+Video Scale -----------
+
+From one video, in one prompt:
+
+- Extend head/tail
+
+- Create alternate endings
+
+- Change style (video-to-video)
+
+- Reframe to vertical
+
+- Add subtitles
+
+- Add voiceover
+
+- Translate + lip sync
+
+- Cut into shorter edits
+
+From one script, with one prompt:
+
+- Generate multiple tone versions
+
+- Produce numerous character variations
+
+- Create countless hook openings
+
+Audio Scale -----------
+
+From one script, in one prompt:
+
+- Confident voice
+
+- Playful voice
+
+- Urgent voice
+
+- Calm luxury voice
+
+From one music concept, in one prompt:
+
+- Instrumental version
+
+- Vocal version
+
+- Short cut
+
+- Extended version
+
+Text Scale ----------
+
+From one campaign idea:
+
+- Endless hooks
+
+- Countless taglines
+
+- Multiple emotional directions
+
+- Many positioning angles
+
+- 30 platform-specific copy variants
+
+Text is the multiplier layer for everything else.
+
+The Compounding Effect of Scale -------------------------------
+
+The real power isn’t just many outputs...
+
+It’s this: Image → becomes video → becomes multiple edits → becomes localized versions → becomes captioned versions → becomes performance variants
+
+All starting from one asset.
+
+Scale compounds spatially on the canvas, without the need to wire more and more node-flows for new tasks.
+
+Advanced Scaling Strategies ---------------------------
+
+Version Trees -------------
+
+Instead of overwriting (deleting and starting over), you can branch versions spatially on canvas
+
+- Concept A
+
+- Lighting 1
+
+- Lighting 2
+
+- Lighting 3
+
+- Lighting 4
+
+- Lighting 5
+
+- Concept B
+
+- Character 1
+
+- Character 2
+
+- Character 3
+
+- Character 4
+
+- Character 5
+
+- Character 6
+
+This keeps exploration visible.
+
+Controlled Variable Testing ---------------------------
+
+When scaling for ads:
+
+Change only:
+
+- Hook
+
+- CTA
+
+- Text animation
+
+Keep everything else identical.
+
+This makes performance testing cleaner.
+
+Localization at Scale ---------------------
+
+From one finished video, in one prompt you can:
+
+- Translate script
+
+- Generate new voiceover
+
+- Lip sync character
+
+- Swap on-screen text
+
+This avoids full re-production.
+
+Character Franchising ---------------------
+
+Build one character reference system, then scale into:
+
+- Multiple different environments
+
+- Numerous different emotional arcs
+
+- Many different languages
+
+- Multiple different campaigns
+
+Maintain identity while expanding narrative.
+
+Key Takeaway ------------
+
+Luma changes the question from:
+
+“Can I afford to try this direction?”
+
+To:
+
+“Which of these 20 directions performs best?”
+
+It reduces the cost of exploration to nearly zero, which fundamentally changes creative strategy.

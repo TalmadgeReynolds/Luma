@@ -195,7 +195,7 @@ async def ingest_webinar(
             tags_str = ", ".join(chunk.topic_tags) if chunk.topic_tags else ""
 
             embedding_input = (
-                f"{title} | "
+                f"[Webinar] {title} | "
                 f"{webinar_date or 'Unknown'} | "
                 f"{speaker_str} | "
                 f"{chunk.summary or ''} | "

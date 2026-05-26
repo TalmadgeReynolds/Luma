@@ -24,7 +24,7 @@ settings = get_settings()
 
 
 class Video(Base):
-    """Video table - stores webinar metadata."""
+    """Video table - stores webinar and article metadata."""
 
     __tablename__ = "videos"
 
@@ -39,6 +39,13 @@ class Video(Base):
     speakers: Mapped[list[str] | None] = mapped_column(ARRAY(Text), nullable=True)
     video_url: Mapped[str | None] = mapped_column(Text, nullable=True)
     duration_seconds: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    content_type: Mapped[str] = mapped_column(
+        Text,
+        nullable=False,
+        default="webinar",
+        server_default="webinar"
+    )
+    source_url: Mapped[str | None] = mapped_column(Text, nullable=True)
     status: Mapped[str] = mapped_column(
         Text,
         nullable=False,
@@ -122,6 +129,7 @@ class Chunk(Base):
         nullable=True
     )
     speaker_names: Mapped[list[str] | None] = mapped_column(ARRAY(Text), nullable=True)
+    section_heading: Mapped[str | None] = mapped_column(Text, nullable=True)
     embedding: Mapped[list[float] | None] = mapped_column(
         Vector(settings.EMBEDDING_DIMENSION),
         nullable=True

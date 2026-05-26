@@ -17,8 +17,15 @@ from app.errors import ClaudeServiceError
 
 settings = get_settings()
 
-# Initialize Claude client
-client = AsyncAnthropic(api_key=settings.ANTHROPIC_API_KEY)
+# Initialize Claude client with workspace support
+default_headers = {}
+if settings.ANTHROPIC_WORKSPACE:
+    default_headers["anthropic-workspace"] = settings.ANTHROPIC_WORKSPACE
+
+client = AsyncAnthropic(
+    api_key=settings.ANTHROPIC_API_KEY,
+    default_headers=default_headers
+)
 
 # Load all prompts at module import time
 PROMPTS: dict[str, str] = {}
@@ -150,6 +157,49 @@ async def contextualize_chunk(
         speaker_names=", ".join(speaker_names) if speaker_names else "Unknown",
         start_time=start_time,
         end_time=end_time,
+        raw_chunk_text=raw_chunk_text,
+    )
+
+    result = await _call_claude(prompt)
+
+    # Validate response has required keys
+    required_keys = ["contextual_text", "summary", "topic_tags", "questions_this_answers"]
+    missing = [k for k in required_keys if k not in result]
+    if missing:
+        raise ClaudeServiceError(
+            f"Claude response missing required keys: {missing}\n"
+            f"Got: {list(result.keys())}"
+        )
+
+    return result
+
+
+async def contextualize_article_chunk(
+    article_title: str,
+    publication_date: str,
+    source_url: str,
+    section_heading: str | None,
+    start_pos: int,
+    end_pos: int,
+    raw_chunk_text: str,
+) -> dict:
+    """
+    Enrich an article chunk with contextual information using Claude.
+
+    Returns dict with keys:
+    - contextual_text: Enhanced text with context
+    - summary: One-sentence summary
+    - topic_tags: List of topic tags
+    - questions_this_answers: List of questions this chunk answers
+    """
+    prompt = _render_template(
+        PROMPTS["contextualize_article_chunk"],
+        article_title=article_title,
+        publication_date=publication_date or "Unknown",
+        source_url=source_url,
+        section_heading=section_heading or "N/A",
+        start_pos=start_pos,
+        end_pos=end_pos,
         raw_chunk_text=raw_chunk_text,
     )
 

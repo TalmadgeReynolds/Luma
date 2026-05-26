@@ -1,0 +1,617 @@
+Source: https://lumalabs.ai/learning-center/articles/luma-image-models-field-guide
+
+Luma Image Models Field Guide =============================
+
+March 9, 2026
+
+- Luma Image Models Field Guide Nano Banana (Google) Overview Strengths Weaknesses Specialties Prompt Best Practices Example Prompts Tips & Gotchas Nano Banana Pro (Google) Overview Strengths Weaknesses Specialties Prompt Best Practices Example Prompts Tips & Gotchas Seedream 5.0 (ByteDance) Overview Strengths Weaknesses Specialties Prompt Best Practices Example Prompts Tips & Gotchas GPT Image 1.5 (OpenAI) Overview Strengths Weaknesses Specialties Prompt Best Practices Example Prompts Tips & Gotchas Quick References Speed Ranking (Fastest → Slowest) Quality Ranking by Use Case Resolution Options Reference Image Limits Aspect Ratio Flexibility Decision Flowchart Practical Workflow Examples Scenario 1: Brand Campaign Asset Creation Scenario 2: Editorial Illustration (Specific Style) Scenario 3: Multi-Brand Element Composition Scenario 4: Text-Heavy Design (Poster, Packaging) Notes For Creative Professionals When to Diverge Prompt Philosophy Reference Images Quality vs. Speed Common Pitfalls
+
+- Nano Banana (Google) Overview Strengths Weaknesses Specialties Prompt Best Practices Example Prompts Tips & Gotchas
+
+- Overview
+
+- Strengths
+
+- Weaknesses
+
+- Specialties
+
+- Prompt Best Practices
+
+- Example Prompts
+
+- Tips & Gotchas
+
+- Nano Banana Pro (Google) Overview Strengths Weaknesses Specialties Prompt Best Practices Example Prompts Tips & Gotchas
+
+- Overview
+
+- Strengths
+
+- Weaknesses
+
+- Specialties
+
+- Prompt Best Practices
+
+- Example Prompts
+
+- Tips & Gotchas
+
+- Seedream 5.0 (ByteDance) Overview Strengths Weaknesses Specialties Prompt Best Practices Example Prompts Tips & Gotchas
+
+- Overview
+
+- Strengths
+
+- Weaknesses
+
+- Specialties
+
+- Prompt Best Practices
+
+- Example Prompts
+
+- Tips & Gotchas
+
+- GPT Image 1.5 (OpenAI) Overview Strengths Weaknesses Specialties Prompt Best Practices Example Prompts Tips & Gotchas
+
+- Overview
+
+- Strengths
+
+- Weaknesses
+
+- Specialties
+
+- Prompt Best Practices
+
+- Example Prompts
+
+- Tips & Gotchas
+
+- Quick References Speed Ranking (Fastest → Slowest) Quality Ranking by Use Case Resolution Options Reference Image Limits Aspect Ratio Flexibility
+
+- Speed Ranking (Fastest → Slowest)
+
+- Quality Ranking by Use Case
+
+- Resolution Options
+
+- Reference Image Limits
+
+- Aspect Ratio Flexibility
+
+- Decision Flowchart
+
+- Practical Workflow Examples Scenario 1: Brand Campaign Asset Creation Scenario 2: Editorial Illustration (Specific Style) Scenario 3: Multi-Brand Element Composition Scenario 4: Text-Heavy Design (Poster, Packaging)
+
+- Scenario 1: Brand Campaign Asset Creation
+
+- Scenario 2: Editorial Illustration (Specific Style)
+
+- Scenario 3: Multi-Brand Element Composition
+
+- Scenario 4: Text-Heavy Design (Poster, Packaging)
+
+- Notes For Creative Professionals When to Diverge Prompt Philosophy Reference Images Quality vs. Speed Common Pitfalls
+
+- When to Diverge
+
+- Prompt Philosophy
+
+- Reference Images
+
+- Quality vs. Speed
+
+- Common Pitfalls
+
+Luma Image Models Field Guide =============================
+
+A practical reference for understanding and choosing the right image generation tool for your creative work.
+
+Nano Banana (Google) --------------------
+
+Overview --------
+
+Google's Gemini 2.5 Flash model delivers fast, reliable general-purpose image generation. This is your rapid prototyping tool—great for quick iterations and exploratory work where speed matters.
+
+Strengths ---------
+
+- Excellent text rendering in images (one of the best at putting readable text into generated images)
+
+- Strong character and style consistency across multiple generations
+
+- Fast generation times—ideal for rapid iteration
+
+- Supports up to 8 reference images for guidance
+
+- 10 aspect ratio options (21:9, 16:9, 4:3, 3:2, 5:4, 1:1, 4:5, 2:3, 3:4, 9:16)
+
+- Great default for most general image generation tasks
+
+- Good at maintaining consistent characters and styles across multiple generations
+
+- Cost-effective for exploration and drafting
+
+Weaknesses ----------
+
+- Often fails to generate recognizable images of famous people without reference images
+
+- Can struggle with niche or obscure art styles (retro anime, specific artistic movements)
+
+- Supports 10 preset aspect ratios, each capped at approximately 1 megapixel (max 1024×1024). 4K output requires Nana Banana Pro.
+
+- For strict image editing tasks, you need dedicated modify tools instead
+
+- May produce "safe" or generic results for highly specialized aesthetic requests
+
+Specialties -----------
+
+General-purpose generation, text-in-image rendering, character consistency, fast iteration, exploratory creative work
+
+Prompt Best Practices ---------------------
+
+- Best practices are a prompt length of ~150–200 words, but our testing shows quality drops beyond ~100 unless additional words are tightly tied to camera, lighting, or action.
+
+- Be specific about style, composition, and key elements
+
+- For multi-reference: explicitly label each image's role (e.g., "Image 1 (woman in red dress): use as character reference")
+
+- Specify reference TYPE: style reference, character reference, pose reference, composition reference
+
+- No bullet points, JSON, or code in prompts
+
+- Clarity over length—this model responds better to focused prompts than verbose descriptions
+
+Prompt Template
+
+“A photorealistic [shot type] of [subject], [action or expression], set in [environment]. The scene is illuminated by [lighting description], creating a [mood] atmosphere. Captured with [camera/lens details], emphasizing [key textures and details]."
+
+Example Prompts ---------------
+
+- "A photorealistic close-up portrait of an elderly Japanese ceramicist with deep, sun-etched wrinkles and a warm, knowing smile. He is carefully inspecting a freshly glazed tea bowl. The setting is his rustic, sun-drenched workshop. The scene is illuminated by soft, golden hour light streaming through a window, highlighting the fine texture of the clay. Captured with an 85mm portrait lens, resulting in a soft, blurred background (bokeh).”
+
+- "A high-resolution, studio-lit product photograph of a minimalist ceramic coffee mug in matte black, presented on a polished concrete surface. The lighting is a three-point softbox setup designed to create soft, diffused highlights and eliminate harsh shadows. The camera angle is a slightly elevated 45-degree shot to showcase its clean lines. Ultra-realistic, with sharp focus on the steam rising from the coffee."
+
+Tips & Gotchas --------------
+
+- If you need a famous person, provide a reference image—the model won't generate recognizable likenesses from text alone.
+
+- If your style request comes back looking generic, try Seedream instead
+
+- Great for rapid prototyping. Fast and cheap means you can iterate quickly
+
+- Don't over-prompt; this model responds well to clarity over length
+
+- The 14-reference limit is generous—use it for complex character or style consistency work
+
+- Text rendering is a superpower here—leverage it for posters, signage, packaging
+
+Nano Banana Pro (Google) ------------------------
+
+Overview --------
+
+The premium tier of Google's Gemini model. This should be your default workhorse for professional creative work. Higher quality output with resolution control up to 4K makes it suitable for client-facing deliverables and campaign work.
+
+Strengths ---------
+
+- Highest quality output for general image generation (premium tier)
+
+- Resolution control: 1K (fast), 2K (balanced), 4K (highest quality)
+
+- Strong text rendering capabilities—excellent for brand work with typography
+
+- Excellent for photorealistic content and product imagery
+
+- Maintains consistent characters and styles across generations
+
+- Supports up to 14 reference images
+
+- 10 aspect ratio options (21:9, 16:9, 4:3, 3:2, 1:1, 2:3, 3:4, 4:5, 5:4 9:16)
+
+- The recommended default for most professional work
+
+- Scalable quality for different project phases (draft to final)
+
+Weaknesses ----------
+
+- May produce generic results for niche or obscure art styles
+
+- More resource-intensive than base Nano Banana
+
+- For strict image editing tasks, you need dedicated modify tools instead
+
+- Higher cost at higher resolutions (though still efficient)
+
+Specialties -----------
+
+Professional-grade photorealism, product imagery, brand assets, high-resolution output, campaign work, client-facing deliverables
+
+Prompt Best Practices ---------------------
+
+- Same clean, concise approach as Nano Banana
+
+- Be specific about style, composition, and elements
+
+- For multi-reference: explicitly label roles and types
+
+- Defaults to 1K for speed, but 2K and 4K are options.
+
+- Great for establishing visual identity in campaigns
+
+- Include texture, material, and color palette details for product/brand work
+
+Prompt Template
+
+“A photorealistic [shot type] of [subject], [action or expression], set in [environment]. The scene is illuminated by [lighting description], creating a [mood] atmosphere. Captured with [camera/lens details], emphasizing [key textures and details]."
+
+Example Prompts ---------------
+
+- "A photorealistic close-up portrait of an elderly Japanese ceramicist with deep, sun-etched wrinkles and a warm, knowing smile. He is carefully inspecting a freshly glazed tea bowl. The setting is his rustic, sun-drenched workshop. The scene is illuminated by soft, golden hour light streaming through a window, highlighting the fine texture of the clay. Captured with an 85mm portrait lens, resulting in a soft, blurred background (bokeh).”
+
+- "A high-resolution, studio-lit product photograph of a minimalist ceramic coffee mug in matte black, presented on a polished concrete surface. The lighting is a three-point softbox setup designed to create soft, diffused highlights and eliminate harsh shadows. The camera angle is a slightly elevated 45-degree shot to showcase its clean lines. Ultra-realistic, with sharp focus on the steam rising from the coffee."
+
+Tips & Gotchas --------------
+
+- Use 1K for iteration/drafts, 2K for final work, 4K only when print-quality is needed
+
+- This is your workhorse—start here for most professional tasks
+
+- If results feel "safe" or generic for artistic styles, switch to Seedream
+
+- For successive edits (edit chains), quality degrades—upscale between edits to maintain quality, or once you’re happy with the end result after many successive edits, take all of them and run them in one shot on the original image.
+
+- The resolution control is strategic: save time and resources by matching resolution to project phase
+
+- 14 reference images + resolution control = powerful tool for brand consistency work
+
+Seedream 5.0 (ByteDance) ------------------------
+
+Overview --------
+
+ByteDance's Seedream model is your specialist for niche art styles and stylistic prompts. When Nano Banana gives you generic results, this is where you turn. Excels at specific artistic movements, retro aesthetics, and highly detailed stylistic work.
+
+Strengths ---------
+
+- EXCELLENT for niche and detailed art styles (retro anime like Vampire Hunter D/Hellsing, 80s/90s anime aesthetics, obscure artistic movements)
+
+- Strong prompt adherence for complex, descriptive prompts—follows long detailed prompts more faithfully than other models
+
+- High-quality artistic and creative imagery
+
+- Fast generation times
+
+- Resolution control: 1K, 2K, 4K
+
+- Supports up to 6 reference images.
+
+- 9 aspect ratio options: 9:21, 9:16, 2:3, 3:4, 1:1, 4:3, 3:2, 16:9, 21:9
+
+- Can nail specific eras and aesthetic movements when properly prompted
+
+Weaknesses ----------
+
+- Sometimes mixes styles inappropriately (e.g., cartoon elements bleeding into photorealistic scenes, or vice versa)
+
+- Not recommended as your default—better as a specialist
+
+- Can be inconsistent with style blending when given competing aesthetic cues
+
+- Fewer reference image slots than Nano Banana models (6 vs 14)
+
+- Requires more specific prompting knowledge—you need to know what you're asking for
+
+Specialties -----------
+
+Retro anime, specific artistic movements, niche aesthetics, highly detailed stylistic work, complex prompt adherence, editorial illustration, concept art
+
+Prompt Best Practices ---------------------
+
+The Seedream team frames 5.0 as an “intent-driven” upgrade: less prompt gymnastics, better understanding of natural-language edits. While no official max length is published, ByteDance developer guidance recommends keeping prompts under “~600 English words.”
+
+- Be very specific about the exact art style you want
+
+- Name specific visual references, eras, and aesthetic movements
+
+- For multi-reference: label each image's role explicitly
+
+- Great for when you have a very particular visual vision
+
+- Include technical details: line weight, color palette, shading technique
+
+- Reference specific artists, shows, or eras for best results
+
+Prompt Template
+
+A [SUBJECT] rendered in [SPECIFIC ART STYLE/ERA/MOVEMENT] style, with [DETAILED VISUAL CHARACTERISTICS: line weight, color palette, shading technique], set in [ENVIRONMENT], [LIGHTING], evoking [REFERENCE ARTIST/SHOW/ERA] aesthetic.
+
+Example Prompts ---------------
+
+- "A vampire hunter rendered in 1980s dark fantasy anime style, with heavy ink outlines, limited color palette of deep reds and blacks,` cel-shading technique, set in a gothic cathedral, dramatic chiaroscuro lighting, evoking Yoshiaki Kawajiri and Vampire Hunter D aesthetic."
+
+- "A brutalist architecture illustration rendered in 1960s modernist poster style, with bold flat colors, geometric shapes, screen-print texture, set against stark sky, high-contrast lighting, evoking Bauhaus and Swiss design movement."
+
+Tips & Gotchas --------------
+
+- This is your go-to when Nano Banana gives you "generic" results for artistic styles
+
+- Be careful with mixing photorealism and illustration cues—it can get confused and blend inappropriately
+
+- Great for concept art, editorial illustration, and stylized work
+
+- Name the specific anime era or art movement you're targeting for best results
+
+- If you want clean photorealism, go back to Nano Banana Pro
+
+- The 6-reference limit is lower—prioritize your most important style/character references
+
+- Treat this as a precision instrument: the more specific the stylistic direction of your prompt is, the better the result
+
+GPT Image 1.5 (OpenAI) ----------------------
+
+Overview --------
+
+GPT Image 1.5 is best for when you need tight control and complex multi-image composition. It also offers a low-quality tier designed for fast, inexpensive iteration for when you aren’t ready for one of the heavyweight models.
+
+Strengths ---------
+
+- Excellent for complex multi-image editing and compositing scenarios
+
+- Best at creating novel, creative views and complex composition changes from multiple references
+
+- Strong context preservation from input images (style, composition, details)
+
+- Can handle up to 16 reference images.
+
+- Good at blending multiple brand/character elements into cohesive output
+
+- Quality options: low (fast), medium (balanced), high (best)
+
+- Sophisticated "understanding" of what you're trying to achieve across references
+
+Weaknesses ----------
+
+- Slower than Nana Banana Pro: ~30 - 45 seconds vs ~10–15 seconds (1K)
+
+- Competitive pricing with Nano Banana Pro (at high)
+
+- Limited aspect ratio options (only 3: 1:1, 3:2, 2:3)
+
+- Should typically be used as a fallback when other models fail, not as a first choice
+
+- Overkill for simple generation tasks (at high)
+
+- Speed difference can impact your workflow depending on your use case
+
+Specialties -----------
+
+Complex multi-reference compositing, blending multiple brand/character elements, sophisticated scene construction from multiple inputs, fallback for when other models fail, novel compositional problem-solving
+
+Prompt Best Practices ---------------------
+
+- From OpenAI: “Think of prompting like briefing a cinematographer who has never seen your storyboard.”
+
+- Write DIRECT COMMANDS for editing: "Change X to Y" not "The image should have X changed to Y"
+
+- Be terse when you can: "Remove background" not "Please remove the background from this image."
+
+- State WHAT TO CHANGE and WHAT TO KEEP explicitly
+
+- For multi-reference: "Use image 1 (description) as [TYPE] reference. Use image 2 (description) as [TYPE] reference."
+
+- No flowery, interpretive language. Use constraints, not justifications
+
+- Command-style prompting works best: direct, imperative statements
+
+Prompt Template
+
+For generation:
+
+A [SHOT TYPE] of [SUBJECT] [ACTION/STATE] in [SETTING], [STYLE], with [LIGHTING], [KEY COMPOSITION / DETAIL CONSTRAINTS].
+
+Example Prompt
+
+- ‘Wide shot of a child flying a red kite in a grassy park, golden hour sunlight, camera slowly pans upward.’
+
+For multi-ref compositing:
+
+Use image 1 ([BRIEF DESCRIPTION]) as [REFERENCE TYPE]. Use image 2 ([BRIEF DESCRIPTION]) as [REFERENCE TYPE]. Generate a [SHOT TYPE] of [SUBJECT] [ACTION/STATE] in [SETTING], [STYLE], with [LIGHTING], [KEY COMPOSITION / DETAIL CONSTRAINTS] that combines these references as described.
+
+Example Prompts ---------------
+
+- OpenAi’s Template: “Place the dog from the second image into the setting of image 1, right next to the woman, use the same style of lighting, composition and background. Do not change anything else.”
+
+- Sample: Use image 1 (white shoe) as the product design reference. Use image 2 (runner on a rocky trail) as the environment and lighting reference. Generate a wide shot of a single white running shoe floating above the rocky trail, turned three-quarters toward the camera, in a clean, professional sports photo style, with warm sunrise light coming from the right and soft haze in the distance. Keep the logo, panel seams, and sole pattern exactly as in image 1, and match the trail, horizon line, and overall color grading from image 2. Keep the shoe very sharp, let the background blur slightly, and leave empty space in the upper-left corner for ad copy.
+
+Tips & Gotchas --------------
+
+- Don't reach for this first—it's your power tool, not your daily driver
+
+- Best when you need to combine multiple visual elements from different sources
+
+- The speed difference is real—plan for longer waits (budget extra time in client timelines)
+
+- Limited aspect ratios mean you may need to reframe the output afterward
+
+- Great as a "second opinion" when other models aren't nailing what you want
+
+- Use this when complexity justifies the wait.
+
+Quick References ----------------
+
+Speed Ranking (Fastest → Slowest) ---------------------------------
+
+- Nano Banana
+
+- Seedream / Nano Banana Pro (similar)
+
+- GPT Image 1.5 (significantly slower)
+
+Quality Ranking by Use Case ---------------------------
+
+Photorealism / Product Imagery:
+
+- Nano Banana Pro (4K)
+
+- Nano Banana Pro (2K)
+
+- Seedream (4K)
+
+Text Rendering:
+
+- Nano Banana Pro
+
+- Nano Banana
+
+- Seedream / GPT Image 1.5
+
+Niche Art Styles / Stylized Work:
+
+- Seedream
+
+- Nano Banana Pro
+
+- GPT Image 1.5
+
+Multi-Image Compositing:
+
+- GPT Image 1.5
+
+- Nano Banana Pro
+
+- Seedream
+
+Character Consistency:
+
+- Nano Banana Pro (14 refs)
+
+- Nano Banana (14 refs)
+
+- Seedream (5 refs)
+
+Resolution Options ------------------
+
+- Nano Banana: Single resolution (2K)
+
+- Nano Banana Pro: 1K / 2K / 4K
+
+- Seedream: 1K / 2K / 4K
+
+- GPT Image 1.5: Low / Medium / High quality
+
+Reference Image Limits ----------------------
+
+- Nano Banana: 14 images
+
+- Nano Banana Pro: 14 images
+
+- Seedream: 5 images
+
+- GPT Image 1.5: 14 images
+
+Aspect Ratio Flexibility ------------------------
+
+- Nano Banana: 10 options (most flexible)
+
+- Seedream: 9 options (includes 9:21 ultra-tall)
+
+- Nano Banana Pro: 10 options
+
+- GPT Image 1.5: 3 options (least flexible)
+
+Decision Flowchart ------------------
+
+Step 1: Is it a general image task (product, photorealism, brand work)? → YES: Use Nano Banana Pro (your default workhorse) → NO: Continue to Step 2
+
+Step 2: Do you need speed/iteration for exploratory work? → YES: Use Nano Banana (fast and cheap) → NO: Continue to Step 3
+
+Step 3: Do you need a specific/niche art style (retro anime, specific movement)? → YES: Use Seedream (specialist for artistic styles) → NO: Continue to Step 4
+
+Step 4: Do you need complex multi-image compositing (blending multiple sources)? → YES: Use GPT Image 1.5 (power tool for complexity) → NO: Default to Nano Banana Pro
+
+Step 5: Is another model failing to deliver what you need? → YES: Try GPT Image 1.5 as fallback → NO: Re-evaluate your prompt or try Seedream for artistic work
+
+Practical Workflow Examples ---------------------------
+
+Scenario 1: Brand Campaign Asset Creation -----------------------------------------
+
+- Start with Nano Banana for rapid exploration (10-15 iterations)
+
+- Narrow to 3-4 directions
+
+- Switch to Nano Banana Pro (2K) for refined versions
+
+- Final client deliverables: Nano Banana Pro (4K)
+
+Scenario 2: Editorial Illustration (Specific Style) ---------------------------------------------------
+
+- If modern/general aesthetic: Nano Banana Pro (2K)
+
+- If niche/retro/specific movement: Seedream (2K or 4K)
+
+- If Seedream gives style-mixing issues: simplify prompt, remove competing cues
+
+Scenario 3: Multi-Brand Element Composition -------------------------------------------
+
+- Try Nano Banana Pro with multiple references first
+
+- If composition isn't working: switch to GPT Image 1.5
+
+- Accept the speed tradeoff for sophisticated blending
+
+Scenario 4: Text-Heavy Design (Poster, Packaging) -------------------------------------------------
+
+- Nano Banana Pro is your first choice (excellent text rendering)
+
+- Use 2K or 4K depending on final output needs
+
+- Iterate quickly with Nano Banana if exploring many directions first
+
+Notes For Creative Professionals --------------------------------
+
+Default Recommendation: Start with Nano Banana Pro for 80% of professional work. It's the best balance of quality, speed, flexibility, and cost.
+
+When to Diverge ---------------
+
+- Exploration phase: Nano Banana
+
+- Niche artistic styles: Seedream
+
+- Complex compositing: GPT Image 1.5
+
+Prompt Philosophy -----------------
+
+- Nano Banana models: clarity and concision
+
+- Seedream: detailed and specific
+
+- GPT Image 1.5: direct commands
+
+Reference Images ----------------
+
+- More isn't always better—prioritize quality and relevance
+
+- Label each reference's role explicitly in your prompt
+
+- Use references for style, character, composition, or pose guidance
+
+Quality vs. Speed -----------------
+
+- Match resolution to project phase (draft → 1K, final → 4K)
+
+- Budget time for GPT Image 1.5 if you use it
+
+- Fast iteration (Nano Banana) → refinement (Pro) is a proven workflow
+
+Common Pitfalls ---------------
+
+- Over-prompting Nano Banana models (keep it clean)
+
+- Under-prompting Seedream (be specific about style)
+
+- Using GPT Image 1.5 for simple tasks (overkill)
+
+- Not providing reference images when needed (especially famous faces, specific styles)
+
+This field guide is your strategic reference. Know your tools, match them to your task, and iterate intelligently. The best model is the one that gets you to your creative vision efficiently.

@@ -1,0 +1,417 @@
+Source: https://lumalabs.ai/learning-center/articles/text-and-natural-language
+
+Text & Natural Language =======================
+
+March 9, 2026
+
+- Text & Natural Language What You Can Do With Text in Luma Creative Writing Marketing & Performance Copy Instructions & Directions Script-to-Production Workflows Captions, Subtitles, and On-Screen Text Translation & Localization Summarization & Extraction Strategy & Creative Planning Quality Control & Brand Compliance (Text Layer) Code-Assisted Editing Best Practices Write a Creative Brief First Separate “Content” From “Direction” Generate Variants in Batches Use Text to Enforce Consistency Pro Use Cases The Big Picture Text as a Creative Trigger Text on Board Text in Images Text Overlays on Video Text from Media (Extraction) Text as Conversation Text as Structure
+
+- What You Can Do With Text in Luma Creative Writing Marketing & Performance Copy
+
+- Creative Writing
+
+- Marketing & Performance Copy
+
+- Instructions & Directions
+
+- Script-to-Production Workflows
+
+- Captions, Subtitles, and On-Screen Text
+
+- Translation & Localization
+
+- Summarization & Extraction
+
+- Strategy & Creative Planning
+
+- Quality Control & Brand Compliance (Text Layer)
+
+- Code-Assisted Editing
+
+- Best Practices Write a Creative Brief First Separate “Content” From “Direction” Generate Variants in Batches Use Text to Enforce Consistency Pro Use Cases The Big Picture
+
+- Write a Creative Brief First
+
+- Separate “Content” From “Direction”
+
+- Generate Variants in Batches
+
+- Use Text to Enforce Consistency
+
+- Pro Use Cases
+
+- The Big Picture
+
+- Text as a Creative Trigger
+
+- Text on Board
+
+- Text in Images
+
+- Text Overlays on Video
+
+- Text from Media (Extraction)
+
+- Text as Conversation
+
+- Text as Structure
+
+Text & Natural Language =======================
+
+Text is the primary way you interact with everything. It generates images, videos, music, voiceovers, and sound effects. It gets extracted from media. It gets baked into visuals. It gets overlaid on video. It lives on canvas as documents. And most importantly — it's how you talk to the agent to make all of it happen.
+
+Luma can be a full-stack writing, thinking, and production assistant for creative work.
+
+- Direct creation (prompts)
+
+- Build production assets (scripts, captions, storyboards)
+
+- Run research and synthesis
+
+- Plan campaigns
+
+- Generate code for programmatic video editing
+
+- Evaluate outputs and enforce brand voice
+
+What You Can Do With Text in Luma ---------------------------------
+
+Creative Writing ----------------
+
+- Ad scripts (short + long)
+
+- Brand voice development
+
+- Taglines, hooks, headlines
+
+- Campaign themes
+
+- Character dialogue
+
+- Scene descriptions
+
+- Storyboards (written form)
+
+Marketing & Performance Copy ----------------------------
+
+- Social Media hooks
+
+- Streaming video intros
+
+- Email subject lines
+
+- Landing page copy
+
+- Product descriptions
+
+- UGC-style scripts
+
+- A/B variants at scale
+
+Instructions & Directions -------------------------
+
+Luma can write:
+
+- High-quality prompts for any text/image/video/audio generation model
+
+- Style-consistent prompt templates
+
+- Multi-shot video prompts
+
+- Camera movement instructions
+
+- Lighting + lens specs
+
+- Character consistency instructions
+
+This is one of the biggest hidden superpowers:
+
+You can write what you want like a creative brief, and Luma turns it into production-ready prompts for any model it has available and beyond.
+
+Script-to-Production Workflows ------------------------------
+
+Luma can convert:
+
+- A story idea → scene list
+
+- A scene list → shot list
+
+- A shot list → per-shot prompts
+
+- Prompts → generated video clips
+
+- Clips → edited sequence
+
+Captions, Subtitles, and On-Screen Text ---------------------------------------
+
+- Auto captions (via transcription)
+
+- Styled caption generation
+
+- SRT-style formatting
+
+- Punchy “subtitle voice”
+
+- Multi-language subtitles
+
+- Karaoke-style word timing (when timestamps are available)
+
+Translation & Localization --------------------------
+
+- Translate scripts, captions, and voiceovers
+
+- Maintain tone and brand voice
+
+- Adapt culturally (not just literal translation)
+
+- Generate region-specific variants
+
+Then optionally:
+
+- Generate new voiceover
+
+- Lip sync the character to the new language
+
+Summarization & Extraction --------------------------
+
+Luma can summarize:
+
+- Streaming videos
+
+- PDFs
+
+- Web pages
+
+- Meeting notes
+
+- Research
+
+And extract:
+
+- Key points
+
+- Action items
+
+- Brand claims
+
+- Creative angles
+
+- Competitive insights
+
+Strategy & Creative Planning ----------------------------
+
+Text isn’t only output, it’s also how you plan:
+
+- Creative briefs
+
+- Brand guidelines
+
+- Campaign frameworks
+
+- Messaging matrices
+
+- Positioning documents
+
+- Creative territories
+
+- Moodboard rationale
+
+- Shot lists + production plans
+
+Quality Control & Brand Compliance (Text Layer) -----------------------------------------------
+
+Luma can evaluate text for:
+
+- Brand voice alignment
+
+- Forbidden claims
+
+- Tone mismatches
+
+- Messaging clarity
+
+- Consistency across variants
+
+This matters a lot for:
+
+- Ads
+
+- regulated industries
+
+- enterprise brand systems
+
+Code-Assisted Editing ---------------------
+
+Programmatic editing:
+
+- Motion compositions
+
+- Caption overlays
+
+- Timing logic
+
+- Transitions
+
+- Layout templates
+
+- Export-ready sequences
+
+Best Practices --------------
+
+Write a Creative Brief First ----------------------------
+
+The best results come when you write:
+
+- Goal
+
+- Audience
+
+- Tone
+
+- Constraints
+
+- Must-haves
+
+Then ask Luma to convert into:
+
+- scripts
+
+- prompts
+
+- captions
+
+- shot lists
+
+Separate “Content” From “Direction” -----------------------------------
+
+A strong pattern:
+
+- Content text : what is said
+
+- Direction text : how it should feel/look
+
+Example:
+
+- Content: “Try it free today”
+
+- Direction: “Minimal, Apple-like, calm confidence”
+
+Generate Variants in Batches ----------------------------
+
+For performance creative, ask for:
+
+- 20 hooks
+
+- 10 CTA lines
+
+- 5 tone versions
+
+Then pick winners and refine.
+
+Use Text to Enforce Consistency -------------------------------
+
+Text is the easiest place to keep:
+
+- brand voice
+
+- recurring phrases
+
+- consistent messaging
+
+This keeps multimodal work coherent.
+
+Pro Use Cases -------------
+
+- Build a full campaign from a one-paragraph brief
+
+- Turn a YouTube video into 10 short scripts + captions
+
+- Generate multi-language variants + voiceovers + lip sync
+
+- Write a shot list and generate every shot as a clip
+
+- Create a brand voice system and apply it across assets
+
+- Produce Remotion edits with captions and templates
+
+The Big Picture ---------------
+
+- the control layer
+
+- the planning layer
+
+- the automation layer
+
+- the consistency layer
+
+It lets you go from:
+
+idea → production system
+
+Text as a Creative Trigger --------------------------
+
+Text-to-Image — Describe anything in words and get a high-quality image back. As simple or detailed as you want.
+
+Text-to-Video — Describe a scene, action, or moment and get a full video generated from it.
+
+Text-to-Video with Audio — Some models generate video with synchronized dialogue, ambient sound, and music directly from your text description.
+
+Text-to-Music — Describe a genre, mood, tempo, or vibe and get a full music track (with or without vocals).
+
+Text-to-Sound Effects — Describe a sound ("thunder crack," "footsteps on gravel") and get a generated SFX clip.
+
+Text-to-Speech — Write dialogue or narration and get a natural-sounding voiceover. Supports emotion and expression tags like [excited], [whisper], [sad], etc. Wide catalog of voice options.
+
+Text on Board -------------
+
+Planning Documents — It can create briefs, scripts, shot lists, proposals, and other planning docs directly on the board.
+
+Text Notes — Write, organize, and reference text notes alongside your visual assets.
+
+Text in Images --------------
+
+Typography & Titles — Generate images with professional text/titles baked in, following typography best practices.
+
+Text Translation in Images — Take a poster, ad, or graphic with embedded text in one language and translate it to another while preserving the design.
+
+Infographics — Create data visualizations and infographic images with text, numbers, and labels.
+
+Slide Decks — Generate presentation slides with text content, layout, and design.
+
+Text Overlays on Video ----------------------
+
+Captions & Subtitles — Render styled, animated captions onto video with full control over font, color, position, and timing.
+
+Text Overlays & Graphics — Layer titles, lower thirds, and text elements on top of video through programmatic composition.
+
+Social Media Ad Copy — Generate hook text, CTAs, and captions optimized for specific platforms.
+
+Text from Media (Extraction) ----------------------------
+
+Video/Audio Transcription — Extract every spoken word from video or audio with word-level timestamps.
+
+Streaming Video Transcription — Transcribe and summarize streaming videos.
+
+PDF Text Extraction — Pull all text content from PDF documents.
+
+Image Analysis — It can read and describe text that appears in images.
+
+Text as Conversation --------------------
+
+Creative Direction — Just talk to the agent. Describe your vision, give feedback, ask for changes — natural language is the primary interface.
+
+Brainstorming — Describe a product, brand, or concept and it can generate 90+ images across 7+ creative directions.
+
+Feedback & Iteration — Say "make it warmer," "zoom in more," "try a different angle" — plain language drives every edit.
+
+Questions & Research — Ask me anything about art, design, cinema, culture, or technique. It can also search the web for references and inspiration.
+
+Text as Structure -----------------
+
+Scripts & Storyboards — Write a script and it can break it into visual storyboard frames.
+
+Shot Lists — Describe shots in text and it can generate them sequentially.
+
+Brand Briefs — Write out your brand guidelines and it can evaluate all creative work against them.
+
+Comic Scripts — Write dialogue and panel descriptions and it can produce full comic book pages.

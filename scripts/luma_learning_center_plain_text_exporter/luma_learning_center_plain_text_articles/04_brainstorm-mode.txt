@@ -1,0 +1,175 @@
+Source: https://lumalabs.ai/learning-center/articles/brainstorm-mode
+
+Brainstorm Mode ===============
+
+March 9, 2026
+
+- Brainstorm Mode What Brainstorm Mode Does Guides the Creative Conversation Suggests Creative Directions Pulls in Research and References Uses Existing Project Context Produces Structured Plans What Brainstorm Mode Doesn't Do How to Use Brainstorm Mode Describe the Goal Answer the Questions Explore Directions Generate the Plan Move to Create Mode When to Use Brainstorm Mode When to Skip It The Result
+
+- What Brainstorm Mode Does Guides the Creative Conversation Suggests Creative Directions Pulls in Research and References Uses Existing Project Context Produces Structured Plans
+
+- Guides the Creative Conversation
+
+- Suggests Creative Directions
+
+- Pulls in Research and References
+
+- Uses Existing Project Context
+
+- Produces Structured Plans
+
+- What Brainstorm Mode Doesn't Do
+
+- How to Use Brainstorm Mode Describe the Goal Answer the Questions Explore Directions Generate the Plan Move to Create Mode
+
+- Describe the Goal
+
+- Answer the Questions
+
+- Explore Directions
+
+- Generate the Plan
+
+- Move to Create Mode
+
+- When to Use Brainstorm Mode
+
+- When to Skip It
+
+- The Result
+
+Brainstorm Mode ===============
+
+Every creative project starts with direction.
+
+Before assets are generated, teams need to define the idea, align on creative intent, and establish a plan for execution.
+
+Brainstorm Mode helps teams move from early ideas to clear creative direction. It asks targeted questions, gathers context, pulls in research, and produces structured planning documents that guide production.
+
+The result is a defined creative direction before execution begins.
+
+What Brainstorm Mode Does -------------------------
+
+Guides the Creative Conversation --------------------------------
+
+Brainstorm Mode moves projects forward by asking focused questions that help define the work ahead.
+
+Rather than starting from a blank prompt, teams move through a short sequence of guided choices that establish direction quickly. Questions focus on key creative decisions such as style, format, audience, and tone.
+
+Each answer narrows the creative space and builds shared context for the project.
+
+Suggests Creative Directions ----------------------------
+
+Once enough context is established, Brainstorm Mode proposes concrete creative directions.
+
+Each suggestion is a fully formed concept that incorporates the context gathered during the conversation, including style, references, format, and constraints.
+
+Teams can select a direction, refine it, or explore additional variations before committing to production.
+
+Pulls in Research and References --------------------------------
+
+Creative decisions benefit from context.
+
+Brainstorm Mode can surface references, examples, and inspiration directly within the conversation. This allows teams to evaluate trends, analyze competitors, and review visual references without leaving the project.
+
+Research becomes part of the creative discussion rather than a separate workflow.
+
+Uses Existing Project Context -----------------------------
+
+Brainstorm Mode can reference assets already present on the board.
+
+Images, videos, and documents become part of the conversation. Brainstorm Mode can analyze dimensions, content, and metadata so new ideas build directly on the work already in progress.
+
+Creative exploration happens with full awareness of the project context.
+
+Produces Structured Plans -------------------------
+
+When a direction is chosen, Brainstorm Mode generates structured planning documents directly on the board.
+
+These documents outline the creative initiative in clear steps, turning the conversation into an actionable plan. They may include:
+
+- Creative briefs
+
+- Campaign outlines
+
+- Shot lists
+
+- Storyboard structures
+
+- Production steps
+
+These artifacts remain part of the project and can be edited, referenced, and expanded as work progresses.
+
+What Brainstorm Mode Doesn't Do -------------------------------
+
+Brainstorm Mode focuses on planning and creative direction.
+
+It does not generate images, videos, or audio.
+
+Production happens in Create Mode, where agents generate and transform media based on the direction established during brainstorming.
+
+Brainstorm Mode defines the plan. Create Mode executes it.
+
+How to Use Brainstorm Mode --------------------------
+
+Describe the Goal -----------------
+
+Start with a simple description of what needs to be created.
+
+A rough idea is enough. The goal is to begin the conversation and establish initial context.
+
+Answer the Questions --------------------
+
+Brainstorm Mode responds with a short series of questions that refine the creative direction.
+
+Each choice adds clarity and narrows the possibilities.
+
+Explore Directions ------------------
+
+Once enough context is gathered, Brainstorm Mode proposes several creative directions.
+
+Each option represents a concrete approach to the project. Teams can select one, refine it, or continue exploring.
+
+Generate the Plan -----------------
+
+For larger initiatives, Brainstorm Mode creates a structured planning document on the board.
+
+This plan organizes the project into clear steps that guide production.
+
+Move to Create Mode -------------------
+
+When the direction is established, teams can move to Create Mode.
+
+The context gathered during brainstorming carries forward, allowing production to begin immediately.
+
+When to Use Brainstorm Mode ---------------------------
+
+Brainstorm Mode is useful whenever creative direction needs to be defined before production.
+
+Common scenarios include:
+
+- Starting from a vague idea
+
+- Exploring multiple creative directions
+
+- Planning campaigns or multi-asset productions
+
+- Gathering references or trend research
+
+- Refining an existing concept
+
+When to Skip It ---------------
+
+If the creative request is already fully defined, teams can begin directly in Create Mode.
+
+Brainstorm Mode is designed for situations where the direction needs to be explored before execution begins.
+
+The Result ----------
+
+Brainstorm Mode helps teams move from early ideas to clear creative direction.
+
+Projects begin with structured thinking, informed context, and a defined plan for execution.
+
+Ideas become actionable. Direction becomes production.
+
+Then agents take the work forward.

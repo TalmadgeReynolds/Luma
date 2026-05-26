@@ -1,0 +1,239 @@
+Source: https://lumalabs.ai/learning-center/articles/about-the-luma-agent
+
+The Luma Agent ==============
+
+March 9, 2026
+
+- About The Luma Agent Two Ways to Work with the Luma Agent Brainstorm Mode Create Mode What You Can Build with the Agent A helpful reminder Key takeaway
+
+- Two Ways to Work with the Luma Agent Brainstorm Mode Create Mode
+
+- Brainstorm Mode
+
+- Create Mode
+
+- What You Can Build with the Agent
+
+- A helpful reminder
+
+- Key takeaway
+
+About The Luma Agent ====================
+
+The Luma Agent is your multimodal creative partner that understands what you want to create and orchestrates the right models to bring it to life.
+
+You don’t need to think in terms of:
+
+- Which model to choose
+
+- Which tool to open
+
+- Which modality to start with
+
+- How to connect image, video, and audio together
+
+- How good are my prompts
+
+You can describe your creative vision, project or task through natural language
+
+“Create a cinematic product launch.” “Turn this character into a short animated series.” “Make five bold visual directions for this campaign.”
+
+The Agent interprets your intent and decides how to execute it, and collaborates with you through feedback and direction.
+
+It connects:
+
+- Image generation
+
+- Video generation and editing
+
+- Audio creation
+
+- Voiceover
+
+- Lip sync
+
+- Transcription
+
+- Research
+
+- Scaling variations
+
+All on one board.
+
+It doesn’t just generate media.
+
+It orchestrates creative systems.
+
+Two Ways to Work with the Luma Agent ------------------------------------
+
+The Agent operates in two powerful modes: Brainstorm Mode and Create Mode .
+
+Understanding the difference can unlock the full potential of Luma.
+
+Brainstorm Mode ---------------
+
+Brainstorm Mode is where ideas take shape.
+
+In this mode, the Agent helps you think before anything is generated.
+
+You describe what you’re trying to create — even if it’s vague — and the Agent helps you clarify and structure it.
+
+It can:
+
+- Expand rough ideas into clear concepts
+
+- Generate multiple creative directions
+
+- Develop character concepts
+
+- Outline campaign strategies
+
+- Suggest visual styles and moods
+
+- Create shot lists
+
+- Structure a product launch plan
+
+- Turn a paragraph into a full creative roadmap
+
+Nothing is rendered yet.
+
+No images. No video. No audio.
+
+This is your strategic layer.
+
+Brainstorm Mode is ideal for:
+
+- Early concept development
+
+- Campaign planning
+
+- Character ideation
+
+- World-building
+
+- Messaging exploration
+
+- Creative direction alignment
+
+- Structuring multi-step projects
+
+You focus on vision.
+
+The Agent helps you refine it into something actionable.
+
+Create Mode -----------
+
+Create Mode is where vision becomes media.
+
+In this mode, the Agent can actively generate images, video, audio, and other media using the full range of models available inside Luma.
+
+You can ask it to:
+
+- Generate visuals
+
+- Animate still images into motion
+
+- Transform one video into another style
+
+- Extend scenes
+
+- Add music and sound effects
+
+- Create voiceovers with emotional tone
+
+- Lip sync characters
+
+- Add captions
+
+- Reframe for different platforms
+
+- Produce multiple variations at scale
+
+Here, the Agent is not just helping you think.
+
+It’s building with you.
+
+Behind the scenes, it:
+
+- Selects the appropriate model
+
+- Routes your request to the correct modality
+
+- Connects outputs across media types
+
+- Iterates intelligently
+
+- Scales variations
+
+- Maintains consistency when anchored properly
+
+Create Mode is ideal for:
+
+- Producing campaign assets
+
+- Building character-driven content
+
+- Launching products
+
+- Generating ad variations
+
+- Refining outputs
+
+- Executing full creative systems
+
+You’re still directing.
+
+But now the Agent is your creative collaborator.
+
+What You Can Build with the Agent ---------------------------------
+
+With Brainstorm Mode and Create Mode working together, you can execute:
+
+- Full-scale campaigns
+
+- Serialized character content
+
+- Product launch systems
+
+- Social media content engines
+
+- Brand world development
+
+- Localization workflows
+
+- Research-to-production pipelines
+
+The Agent connects research, ideation, generation, iteration, and scale into one unified workflow.
+
+A helpful reminder ------------------
+
+The Agent is powerful — but it works best with clarity.
+
+The more clearly you define:
+
+- Your goal
+
+- Your audience
+
+- Your tone
+
+- Your non-negotiable assets
+
+The more intelligently it can orchestrate the models behind the scenes.
+
+You are not operating a tool.
+
+You are collaborating with a creative partner.
+
+Key takeaway ------------
+
+The Luma Agent is the intelligence layer that transforms ideas into multimodal creative systems.
+
+In Brainstorm Mode, it helps you think. In Create Mode, it helps you build.
+
+It selects the models. It connects the modalities. It scales the outputs. It keeps everything on one board.
+
+You focus on creative direction.
+
+The Agent handles the complexity and technical execution
