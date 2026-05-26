@@ -144,7 +144,7 @@ async def generate_answer(
                 display_time=display_time,
                 speaker_names=chunk.speaker_names or [],
                 section_heading=chunk.section_heading,
-                excerpt=chunk.summary or chunk.contextual_text[:200],
+                excerpt=chunk.raw_text,
             )
             sources.append(source_card)
 

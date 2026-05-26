@@ -222,31 +222,32 @@ def main(argv: Optional[List[str]] = None) -> int:
     # Backend
     backend_proc = None
     if not args.no_backend:
+        _start_backend = True
         if is_port_open("127.0.0.1", BACKEND_PORT):
-            print(f"Backend port {BACKEND_PORT} already in use")
+            print(f"Backend port {BACKEND_PORT} already in use — killing and restarting")
             pid = find_pid_on_port(BACKEND_PORT)
-            if pid and args.force_kill_port:
-                print(f"Killing process {pid} on port {BACKEND_PORT}")
+            if pid:
                 kill_pid(pid)
                 time.sleep(0.5)
-        backend_proc = start_backend()
-        procs.append(backend_proc)
-        print(f"Waiting up to {args.timeout}s for backend on http://127.0.0.1:{BACKEND_PORT}/ …")
-        deadline = time.time() + args.timeout
-        import urllib.request
+        if _start_backend:
+            backend_proc = start_backend()
+            procs.append(backend_proc)
+            print(f"Waiting up to {args.timeout}s for backend on http://127.0.0.1:{BACKEND_PORT}/ …")
+            deadline = time.time() + args.timeout
+            import urllib.request
 
-        ok = False
-        while time.time() < deadline:
-            try:
-                with urllib.request.urlopen(f"http://127.0.0.1:{BACKEND_PORT}/", timeout=2) as r:
-                    if r.status == 200:
-                        ok = True
-                        break
-            except Exception:
-                pass
-            time.sleep(0.5)
-        if not ok:
-            print("Backend did not respond in time; check logs")
+            ok = False
+            while time.time() < deadline:
+                try:
+                    with urllib.request.urlopen(f"http://127.0.0.1:{BACKEND_PORT}/", timeout=2) as r:
+                        if r.status == 200:
+                            ok = True
+                            break
+                except Exception:
+                    pass
+                time.sleep(0.5)
+            if not ok:
+                print("Backend did not respond in time; check logs")
 
     # Frontend
     frontend_proc = None

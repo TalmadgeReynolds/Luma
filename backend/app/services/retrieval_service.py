@@ -91,33 +91,38 @@ async def retrieve_chunks(
         print(f"[Retrieval] Embedding query...")
         query_embedding = await embedding_service.embed_text(rewritten_query)
 
-        # Step 3: Vector search
-        print(f"[Retrieval] Running vector search...")
-        vector_results = await _vector_search(
-            query_embedding=query_embedding,
-            limit=top_k * 2,
-            content_type_filter=content_type_filter,
-            db_session=db_session,
-        )
-        print(f"  Found {len(vector_results)} vector matches")
-
-        # Step 4: Keyword search
-        print(f"[Retrieval] Running keyword search...")
-        keyword_results = await _keyword_search(
-            query_text=rewritten_query,
-            limit=top_k * 2,
-            content_type_filter=content_type_filter,
-            db_session=db_session,
-        )
-        print(f"  Found {len(keyword_results)} keyword matches")
-
-        # Step 5: Merge and dedupe
-        print(f"[Retrieval] Merging results...")
-        merged_chunks = _merge_and_dedupe(vector_results, keyword_results)
-        print(f"  {len(merged_chunks)} unique chunks after merge")
-
-        # Take top_k
-        final_chunks = merged_chunks[:top_k]
+        if content_type_filter:
+            # Filtered: single pool, no diversity needed
+            print(f"[Retrieval] Running filtered search ({content_type_filter})...")
+            vector_results = await _vector_search(
+                query_embedding,
+                top_k * 2,
+                content_type_filter,
+                db_session,
+            )
+            keyword_results = await _keyword_search(
+                rewritten_query,
+                top_k * 2,
+                content_type_filter,
+                db_session,
+            )
+            merged = _merge_and_dedupe(vector_results, keyword_results)
+            final_chunks = merged[:top_k]
+        else:
+            # Unfiltered: search each content type separately to guarantee diversity.
+            # These queries share one AsyncSession, so they must run serially.
+            print(f"[Retrieval] Running per-type search for diversity...")
+            vec_articles = await _vector_search(query_embedding, top_k, 'article', db_session)
+            vec_webinars = await _vector_search(query_embedding, top_k, 'webinar', db_session)
+            kw_articles = await _keyword_search(rewritten_query, top_k, 'article', db_session)
+            kw_webinars = await _keyword_search(rewritten_query, top_k, 'webinar', db_session)
+            print(f"  Vector: {len(vec_articles)} articles, {len(vec_webinars)} webinars")
+            print(f"  Keyword: {len(kw_articles)} articles, {len(kw_webinars)} webinars")
+            merged = _merge_and_dedupe(
+                vec_articles + vec_webinars,
+                kw_articles + kw_webinars,
+            )
+            final_chunks = _pick_with_diversity(merged, top_k, min_per_type=3)
 
         # Assign ranks
         for i, chunk in enumerate(final_chunks, 1):
@@ -142,7 +147,9 @@ async def retrieve_chunks(
 
         await db_session.commit()
 
-        print(f"[Retrieval] Complete - returning {len(final_chunks)} chunks")
+        print(f"[Retrieval] Complete - returning {len(final_chunks)} chunks "
+              f"({sum(1 for c in final_chunks if c.content_type=='article')} articles, "
+              f"{sum(1 for c in final_chunks if c.content_type=='webinar')} webinars)")
         return final_chunks
 
     except Exception as e:
@@ -301,6 +308,48 @@ async def _keyword_search(
         chunks.append((chunk, score))
 
     return chunks
+
+
+def _pick_with_diversity(
+    chunks: list[RetrievedChunk],
+    top_k: int,
+    min_per_type: int = 3,
+) -> list[RetrievedChunk]:
+    """
+    Pick top_k chunks ensuring minimum representation from each content type.
+
+    Guarantees at least min_per_type results from each type that has any
+    results, then fills remaining slots with the highest scorers overall.
+    If only one content type exists in the pool, returns top_k as-is.
+    """
+    by_type: dict[str, list[RetrievedChunk]] = {}
+    for chunk in chunks:
+        by_type.setdefault(chunk.content_type, []).append(chunk)
+
+    # Single content type — no diversity action needed
+    if len(by_type) <= 1:
+        return chunks[:top_k]
+
+    selected: list[RetrievedChunk] = []
+    selected_ids: set = set()
+
+    # Reserve minimum slots for each type
+    for type_chunks in by_type.values():
+        for chunk in type_chunks[:min_per_type]:
+            if chunk.chunk_id not in selected_ids:
+                selected.append(chunk)
+                selected_ids.add(chunk.chunk_id)
+
+    # Fill remaining slots from the highest-scoring unselected chunks
+    remaining = top_k - len(selected)
+    for chunk in chunks:
+        if chunk.chunk_id not in selected_ids and remaining > 0:
+            selected.append(chunk)
+            selected_ids.add(chunk.chunk_id)
+            remaining -= 1
+
+    selected.sort(key=lambda x: x.score, reverse=True)
+    return selected
 
 
 def _merge_and_dedupe(
