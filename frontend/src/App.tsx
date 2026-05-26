@@ -40,8 +40,8 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>Webinar Library Answer Engine</h1>
-        <p>Ask questions about our webinar content</p>
+        <h1>Luma Knowledge Base</h1>
+        <p>Ask questions about our webinars and learning center articles</p>
       </header>
 
       <main className="app-main">
@@ -55,7 +55,7 @@ function App() {
 
         {loading && (
           <div className="loading-message">
-            Searching webinar library...
+            Searching knowledge base...
           </div>
         )}
 
@@ -68,14 +68,16 @@ function App() {
             />
 
             {sources.length > 0 && (
-              <section className="sources-section">
-                <h2>Sources</h2>
-                <div className="sources-grid">
+              <details className="sources-accordion">
+                <summary className="sources-toggle">
+                  Sources ({sources.length})
+                </summary>
+                <div className="sources-list">
                   {sources.map((source) => (
                     <SourceCard key={source.chunk_id} source={source} />
                   ))}
                 </div>
-              </section>
+              </details>
             )}
 
             <SuggestedQuestions
