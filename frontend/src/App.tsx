@@ -65,6 +65,7 @@ function App() {
               answer={answer}
               confidence={confidence}
               notEnoughEvidence={notEnoughEvidence}
+              sources={sources}
             />
 
             {sources.length > 0 && (

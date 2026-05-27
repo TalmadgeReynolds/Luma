@@ -21,6 +21,7 @@ class RetrievedChunk:
         video_title: str,
         content_type: str,
         source_url: str | None,
+        video_url: str | None,
         start_time_seconds: float,
         end_time_seconds: float,
         raw_text: str,
@@ -37,6 +38,7 @@ class RetrievedChunk:
         self.video_title = video_title
         self.content_type = content_type
         self.source_url = source_url
+        self.video_url = video_url
         self.start_time_seconds = start_time_seconds
         self.end_time_seconds = end_time_seconds
         self.raw_text = raw_text
@@ -187,7 +189,7 @@ async def _vector_search(
             c.id, c.video_id, c.start_time_seconds, c.end_time_seconds,
             c.raw_text, c.contextual_text, c.summary, c.topic_tags,
             c.speaker_names, c.section_heading, c.chunk_index, c.word_count,
-            v.title as video_title, v.content_type, v.source_url,
+            v.title as video_title, v.content_type, v.source_url, v.video_url,
             (1 - (c.embedding <=> CAST(:query_embedding AS vector))) as score
         FROM chunks c
         JOIN videos v ON c.video_id = v.id
@@ -226,6 +228,7 @@ async def _vector_search(
         chunk.video_title = row.video_title
         chunk.content_type = row.content_type
         chunk.source_url = row.source_url
+        chunk.video_url = row.video_url
         score = float(row.score)
         chunks.append((chunk, score))
 
@@ -263,7 +266,7 @@ async def _keyword_search(
             c.id, c.video_id, c.start_time_seconds, c.end_time_seconds,
             c.raw_text, c.contextual_text, c.summary, c.topic_tags,
             c.speaker_names, c.section_heading, c.chunk_index, c.word_count,
-            v.title as video_title, v.content_type, v.source_url,
+            v.title as video_title, v.content_type, v.source_url, v.video_url,
             GREATEST(
                 ts_rank(to_tsvector('english', c.raw_text), plainto_tsquery('english', :query_text)),
                 ts_rank(to_tsvector('english', COALESCE(c.summary, '')), plainto_tsquery('english', :query_text))
@@ -304,6 +307,7 @@ async def _keyword_search(
         chunk.video_title = row.video_title
         chunk.content_type = row.content_type
         chunk.source_url = row.source_url
+        chunk.video_url = row.video_url
         score = float(row.score)
         chunks.append((chunk, score))
 
@@ -387,6 +391,7 @@ def _merge_and_dedupe(
             video_title=chunk.video_title,
             content_type=chunk.content_type,
             source_url=chunk.source_url,
+            video_url=chunk.video_url,
             start_time_seconds=chunk.start_time_seconds,
             end_time_seconds=chunk.end_time_seconds,
             raw_text=chunk.raw_text,

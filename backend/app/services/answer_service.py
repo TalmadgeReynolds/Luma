@@ -122,11 +122,10 @@ async def generate_answer(
 
             # Build source URL based on content type
             if chunk.content_type == 'webinar':
-                # For webinars: use video URL with timestamp
-                video_url = chunk.video_title  # Fallback
-                if settings.VIDEO_BASE_URL:
-                    video_url = f"{settings.VIDEO_BASE_URL}/{chunk.video_id}"
-                source_url = f"{video_url}?t={int(chunk.start_time_seconds)}"
+                if chunk.video_url and chunk.video_url.startswith('https://'):
+                    source_url = chunk.video_url
+                else:
+                    source_url = f"{settings.VIDEO_BASE_URL}/{chunk.video_id}"
                 display_time = format_time_range(chunk.start_time_seconds, chunk.end_time_seconds)
             else:
                 # For articles: use direct article URL (no timestamp)

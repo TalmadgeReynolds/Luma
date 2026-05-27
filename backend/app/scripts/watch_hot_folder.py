@@ -46,18 +46,64 @@ _TIMESTAMP_RE = re.compile(
     r"(\d{2}):(\d{2}):(\d{2})[.,](\d{3})\s*-->\s*"
     r"(\d{2}):(\d{2}):(\d{2})[.,](\d{3})"
 )
+_SIMPLE_TS_RE = re.compile(r"^(\d+):(\d{2})$")
 
 
 def _ts_to_seconds(h: str, m: str, s: str, ms: str) -> float:
     return int(h) * 3600 + int(m) * 60 + int(s) + int(ms) / 1000.0
 
 
+def _parse_simple_transcript(text: str) -> list[dict]:
+    """
+    Fallback parser for simple M:SS / text alternating format (no WEBVTT header).
+    Timestamps like '0:01', '1:07' alternate with lines of transcript text.
+    '>>' prefixes are stripped (indicate speaker turns with no named speaker).
+    """
+    lines = text.splitlines()
+    timestamps: list[float] = []
+    texts: list[str] = []
+    current_ts: float | None = None
+    current_lines: list[str] = []
+
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+        m = _SIMPLE_TS_RE.match(line)
+        if m:
+            if current_ts is not None and current_lines:
+                timestamps.append(current_ts)
+                texts.append(" ".join(current_lines))
+            current_ts = int(m.group(1)) * 60 + int(m.group(2))
+            current_lines = []
+        else:
+            cleaned = re.sub(r"^>>\s*", "", line)
+            if cleaned:
+                current_lines.append(cleaned)
+
+    if current_ts is not None and current_lines:
+        timestamps.append(current_ts)
+        texts.append(" ".join(current_lines))
+
+    segments = []
+    for i, (ts, txt) in enumerate(zip(timestamps, texts)):
+        end_ts = timestamps[i + 1] if i + 1 < len(timestamps) else ts + 5.0
+        segments.append({
+            "start_time_seconds": float(ts),
+            "end_time_seconds": float(end_ts),
+            "speaker": None,
+            "text": txt,
+        })
+    return segments
+
+
 def vtt_to_segments(vtt_path: Path) -> list[dict]:
     """
-    Parse a Zoom-style VTT file into the ingestion JSON format.
+    Parse a VTT or simple transcript file into the ingestion JSON format.
 
-    Expected cue format (speaker label on same line as text):
-        Speaker Name: cue text here
+    Supports:
+      1. Standard Zoom-style WebVTT (HH:MM:SS.mmm --> HH:MM:SS.mmm cues)
+      2. Simple M:SS / text alternating format (no WEBVTT header)
 
     Returns list of dicts with keys:
         start_time_seconds, end_time_seconds, speaker, text
@@ -98,6 +144,9 @@ def vtt_to_segments(vtt_path: Path) -> list[dict]:
         else:
             i += 1
 
+    if not segments:
+        segments = _parse_simple_transcript(text)
+
     return segments
 
 
@@ -110,21 +159,28 @@ async def _run_ingestion(folder: Path) -> None:
     from app.db.database import AsyncSessionLocal
     from app.services.ingestion_service import ingest_webinar
 
-    # Locate VTT file
-    vtt_files = sorted(folder.glob("*.vtt"))
-    if not vtt_files:
-        raise FileNotFoundError(f"No .vtt file found in {folder}")
+    # Locate transcript file — supports *.vtt, *.transcript, and *.txt
+    transcript_files = (
+        sorted(folder.glob("*.vtt")) +
+        sorted(folder.glob("*.transcript")) +
+        sorted(folder.glob("*.transcript.txt")) +
+        sorted(folder.glob("*.txt"))
+    )
+    # Exclude error.txt written by the watcher itself
+    transcript_files = [f for f in transcript_files if f.name != "error.txt"]
+    if not transcript_files:
+        raise FileNotFoundError(f"No transcript file found in {folder} (expected *.vtt, *.transcript, or *.txt)")
 
-    # Prefer *.transcript.vtt if multiple exist
+    # Prefer files with 'transcript' in the name if multiple exist
     transcript_vtt = next(
-        (f for f in vtt_files if "transcript" in f.name.lower()), vtt_files[0]
+        (f for f in transcript_files if "transcript" in f.name.lower()), transcript_files[0]
     )
 
-    # Convert VTT → segments list
+    # Convert transcript → segments list
     print(f"  Converting {transcript_vtt.name} …")
     segments = vtt_to_segments(transcript_vtt)
     if not segments:
-        raise ValueError(f"VTT file produced 0 segments: {transcript_vtt}")
+        raise ValueError(f"Transcript file produced 0 segments: {transcript_vtt}")
 
     # Write temp JSON (ingestion_service reads from file path)
     tmp_json = folder / "_transcript_converted.json"

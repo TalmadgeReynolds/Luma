@@ -241,6 +241,24 @@ body {
   margin-bottom: 1rem;
 }
 
+.source-timestamp {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #7f8c8d;
+  background: #f0f3f4;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+.source-video {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  background: #000;
+}
+
 .source-link {
   display: inline-block;
   color: #3498db;
