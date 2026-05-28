@@ -83,20 +83,13 @@ async def _call_claude(prompt: str, *, max_retries: int = 5, backoff_base: float
     attempt = 0
     while True:
         try:
-            # Prefill assistant turn with "{" to force JSON output
             response = await client.messages.create(
                 model=settings.CLAUDE_MODEL,
                 max_tokens=4096,
-                messages=[
-                    {"role": "user", "content": prompt},
-                    {"role": "assistant", "content": "{"},
-                ],
+                messages=[{"role": "user", "content": prompt}],
             )
 
-            # Extract text content and prepend the prefilled "{"
-            content = "{" + response.content[0].text
-
-            # Strip markdown code blocks if present (defensive, shouldn't occur with prefill)
+            content = response.content[0].text
             content = content.strip()
             if content.startswith("```json"):
                 content = content[7:]
