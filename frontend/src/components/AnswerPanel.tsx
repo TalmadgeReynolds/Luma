@@ -8,32 +8,16 @@ interface AnswerPanelProps {
   sources: SourceCard[];
 }
 
-function linkifyCitations(answer: string, sources: SourceCard[]): string {
-  let result = answer;
-
-  // Match: (Webinar 'TITLE', HH:MM:SS–HH:MM:SS)
-  result = result.replace(
-    /\(Webinar '([^']+)',\s*(\d{2}:\d{2}:\d{2}[–-]\d{2}:\d{2}:\d{2})\)/g,
-    (match, _title, displayTime) => {
-      const source = sources.find(
-        (s) => s.content_type === "webinar" && s.display_time === displayTime
-      );
-      return source ? `[${match}](${source.source_url})` : match;
-    }
-  );
-
-  // Match: (Article: 'TITLE')
-  result = result.replace(
-    /\(Article: '([^']+)'\)/g,
-    (match, title) => {
-      const source = sources.find(
-        (s) => s.content_type === "article" && s.title.includes(title)
-      );
-      return source ? `[${match}](${source.source_url})` : match;
-    }
-  );
-
-  return result;
+function resolveChunkCitations(answer: string, sources: SourceCard[]): string {
+  return answer.replace(/\(cite:([a-f0-9-]{36})\)/g, (_match, chunkId) => {
+    const source = sources.find((s) => s.chunk_id === chunkId);
+    if (!source) return "";
+    const url =
+      source.content_type === "webinar" && source.start_time_seconds !== null
+        ? `${source.source_url}#t=${Math.floor(source.start_time_seconds)}`
+        : source.source_url;
+    return `(${url})`;
+  });
 }
 
 export default function AnswerPanel({
@@ -71,13 +55,18 @@ export default function AnswerPanel({
         <ReactMarkdown
           components={{
             a: ({ href, children }) => (
-              <a href={href} target="_blank" rel="noopener noreferrer">
+              <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="citation-link"
+              >
                 {children}
               </a>
             ),
           }}
         >
-          {linkifyCitations(answer, sources)}
+          {resolveChunkCitations(answer, sources)}
         </ReactMarkdown>
       </div>
     </div>

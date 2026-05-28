@@ -68,7 +68,7 @@ async def _call_claude(prompt: str, *, max_retries: int = 5, backoff_base: float
     Args:
         prompt: The complete prompt to send
         max_retries: Number of retry attempts on transient failures (default 5)
-        backoff_base: Exponential backoff base multiplier
+        backoff_base: Exponential backoff base multiplier (used for rate limits only)
         max_backoff: Maximum backoff seconds
 
     Returns:
@@ -83,16 +83,20 @@ async def _call_claude(prompt: str, *, max_retries: int = 5, backoff_base: float
     attempt = 0
     while True:
         try:
+            # Prefill assistant turn with "{" to force JSON output
             response = await client.messages.create(
                 model=settings.CLAUDE_MODEL,
                 max_tokens=4096,
-                messages=[{"role": "user", "content": prompt}],
+                messages=[
+                    {"role": "user", "content": prompt},
+                    {"role": "assistant", "content": "{"},
+                ],
             )
 
-            # Extract text content
-            content = response.content[0].text
+            # Extract text content and prepend the prefilled "{"
+            content = "{" + response.content[0].text
 
-            # Strip markdown code blocks if present
+            # Strip markdown code blocks if present (defensive, shouldn't occur with prefill)
             content = content.strip()
             if content.startswith("```json"):
                 content = content[7:]
@@ -106,18 +110,19 @@ async def _call_claude(prompt: str, *, max_retries: int = 5, backoff_base: float
             try:
                 return json.loads(content)
             except json.JSONDecodeError as e:
-                # For invalid JSON, treat as transient and retry up to max_retries
+                # JSON errors are not rate limits — retry quickly without long backoff
                 if attempt < max_retries:
                     attempt += 1
-                    wait = min(max_backoff, (backoff_base ** attempt) + random.uniform(0, 1))
-                    print(f"Warning: Invalid JSON from Claude, retrying in {wait:.1f}s... (attempt {attempt}/{max_retries})")
-                    await asyncio.sleep(wait)
+                    print(f"Warning: Invalid JSON from Claude, retrying immediately... (attempt {attempt}/{max_retries})")
+                    await asyncio.sleep(0.2)
                     continue
                 raise ClaudeServiceError(
                     f"Claude returned invalid JSON after {attempt + 1} attempts: {e}\nResponse: {content[:500]}"
                 ) from e
 
         except Exception as e:
+            if isinstance(e, ClaudeServiceError):
+                raise
             # Determine if error looks like a rate limit / transient error
             msg = str(e).lower()
             is_rate_limit = "rate" in msg or "429" in msg or "rate_limit" in msg or "rate-limit" in msg

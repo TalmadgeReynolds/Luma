@@ -180,6 +180,19 @@ body {
   color: #1a252f;
 }
 
+.citation-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px dotted #3498db;
+  white-space: nowrap;
+}
+
+.citation-link:hover {
+  color: #2980b9;
+  border-bottom-style: solid;
+}
+
 /* Sources section */
 .sources-section {
   margin-top: 2rem;
