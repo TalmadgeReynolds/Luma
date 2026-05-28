@@ -1,0 +1,4 @@
+Ingestion failed: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO videos (id, title, description, webinar_date, speakers, video_url, duration_seconds, status) VALUES ($1::UUID, $2::VARCHAR, $3::VARCHAR, $4::DATE, $5::TEXT[], $6::VARCHAR, $7::INTEGER, $8::VARCHAR) RETURNING videos.created_at, videos.updated_at]
+[parameters: (UUID('01fe459f-4a8d-42e6-85f3-c8750f7c151e'), '0422-vtt', None, None, ['Davicho Barona', 'Maria Ian', 'Artur Monteiro', 'Eric David'], None, None, 'processing')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)

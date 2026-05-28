@@ -1,0 +1,43 @@
+00:00:53	Elle Cardenas:	good morning! 🙂
+00:00:57	Michał Królewiak:	hello!
+00:01:27	Charlie King:	Hey! From stockolm. My platfom is stuck
+00:01:27	Fireflies.ai Notetaker Kathari:	Fireflies invited Fireflies.ai here to record & take notes. View Security & Privacy info: https://fireflies.ai/policy
+
+Type:
+'/ff leave' - Remove Fireflies  By continuing, you agree to https://fireflies.ai/privacy
+
+View Realtime notes here: https://app.fireflies.ai/live/01KQZ5J6BYTZYY53F4DX9HF0VD?ref=live_chat
+00:01:54	Michael Mandaville:	Good morning Davicho.
+00:02:03	Michael Mandaville:	Sharky and Artur.
+00:03:04	Sharky Luma:	@CK do you perhaps have a Dream Machine account instead of a Luma agents sub? They are different things
+00:03:31	Cristobal Ruiz:	Do you speak spanish?
+00:03:59	Jacques Stroweis:	Hello, can we get a future session on EXR and HDR and the way it does it compared to other methods? I have been starting to experiment with it
+00:05:21	Davicho Barona:	artur@lumalabs.ai
+00:06:22	Sharky Luma:	@Jacques, if you want to ping me in WhatsApp, I can work with you on HDR and EXR processes
+00:07:00	Jacques Stroweis:	OK @Sharkys
+00:07:01	Artur Monteiro:	Sharky is here in the call too he can help with customer support too
+00:10:22	Artur Monteiro:	That “Animate Logo Reveal” is new! The team is really updating this constantly!
+00:18:48	Artur Monteiro:	Starting points!
+00:19:16	Artur Monteiro:	So you can defy that blank page challenge, a starting point can help you
+00:21:21	Artur Monteiro:	In Luma agents its always interesting to interact to the agent in NATURAL LANGUAGE instead of prompting engineering the requests
+00:23:05	Artur Monteiro:	Music video clips is an excellent use case the Luma Agent users have for their productions
+00:23:57	Sharky Luma:	Veo also can use audio
+00:24:05	Artur Monteiro:	FYI we also added Kling Omni these last days besides Kling 3.0!
+00:25:31	Artur Monteiro:	Have to jump to another meeting, see you next week!
+00:25:51	Artur Monteiro:	Here’s my email if I could help you artur@lumalabs.ai
+00:27:41	Jacques Stroweis:	Kling Omni !!! Great
+00:29:04	Sharky Luma:	https://lumalabs.ai/learning-center
+00:37:47	Ken Hitsman:	sorry late to the party
+00:38:07	Jacques Stroweis:	be good to compare the same lighting bear & texture with the different models.
+00:39:58	Davicho Barona:	create a prompt-based repeatable workflow text doc for [outcome] that I can have on my board as an asset and trigger it by [trigger process and assets] and saying Run.
+00:40:13	Ken Hitsman:	What's the best way I can get a response from your support? I've been waiting for almost a month. I've had my unused credits deleted even tho there is nothing in your documentation letting us know that credits do not rollover.
+00:41:00	Sharky Luma:	@Ken Hey Ken, are you on Discord? I can help you out with that. https://discord.gg/N98YkmSch
+00:43:30	Michael Mandaville:	You will make this session available offline, Davicho?
+00:43:46	Michael Mandaville:	thank you Davicho.
+00:44:12	Michael Mandaville:	No all good thank you guys.
+00:44:29	Sharky Luma:	I'm good.
+00:44:55	Ken Hitsman:	Jumping on Discord now
+00:44:59	Sharky Luma:	Or whatsapp for the CPP group
+00:44:59	Davicho Barona:	davicho@lumalabs.ai
+00:45:28	Charlie King:	Thank you
+00:45:34	Elle Cardenas:	thank you, Davicho!

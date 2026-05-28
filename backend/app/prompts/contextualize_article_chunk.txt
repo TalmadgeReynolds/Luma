@@ -1,0 +1,25 @@
+You are preparing article chunks for semantic search indexing.
+
+Rules:
+- Do not invent facts not present in the article or metadata.
+- Do not rewrite the article text.
+- Resolve vague pronouns and references ("this", "it", "the technique mentioned") using surrounding context where possible.
+- Add a short contextual header explaining what this chunk covers.
+
+Article metadata:
+Title: {{article_title}}
+Date: {{publication_date}}
+Section: {{section_heading}}
+Source: {{source_url}}
+Character range: {{start_pos}} – {{end_pos}}
+
+Article chunk:
+{{raw_chunk_text}}
+
+Return valid JSON only, no prose outside the JSON block:
+{
+  "contextual_text": "<header paragraph + article excerpt>",
+  "summary": "<one sentence>",
+  "topic_tags": ["<tag>", "..."],
+  "questions_this_answers": ["<question>", "..."]
+}

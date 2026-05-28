@@ -1,0 +1,81 @@
+Source: https://lumalabs.ai/learning-center/articles/master-reference-assets
+
+Master Reference Assets =======================
+
+March 9, 2026
+
+- Master Reference Assets Iteration without anchoring tends to drift. Ask for edits with context Key takeaway
+
+- Iteration without anchoring tends to drift.
+
+- Ask for edits with context
+
+- Key takeaway
+
+Master Reference Assets =======================
+
+Before you start generating variants, refining outputs, or scaling creative directions in Luma, establish your Master Reference Assets .
+
+Your Master Reference Assets are the immovable elements of your project — the non-negotiables that define identity and consistency. Think of them as the Agent's single source of truth .
+
+These can include:
+
+- A logo and its placement rules
+
+- A brand color system
+
+- A character’s face, proportions, and wardrobe
+
+- A product’s exact physical design
+
+- A specific lighting style
+
+- A defined tone of voice
+
+- A tagline that must remain unchanged
+
+Luma is designed for exploration and scale. You can generate dozens of variations from a single prompt. You can branch into new formats. You can transform images into video, add voiceover, localize, restyle, extend, and reframe.
+
+but…
+
+Iteration without anchoring tends to drift. -------------------------------------------
+
+When you tell the Agent to fix this version or generate another option , it naturally optimizes from the most recent output. If you don’t explicitly remind it to reference the original Master Reference Assets , small deviations can compound:
+
+fix this version
+
+generate another option
+
+- A character’s facial structure shifts slightly.
+
+- A logo subtly changes proportions.
+
+- A brand color drifts warmer or cooler.
+
+- A product’s shape becomes approximate.
+
+- A tagline mutates over iterations.
+
+At first, the changes are subtle. Over time, they become inconsistencies. Master Reference Assets prevent creative entropy. They ensure that while exploration expands outward, identity remains stable. In a system built for scale, anchoring is discipline.
+
+Ask for edits with context --------------------------
+
+Luma allows you to iterate quickly and generate many variations from a single input. But the more you scale, the more intentional you must be in your instructions about what stays constant.
+
+When refining a version, don’t just reference the last output – re-anchor the Agent to your original Master Reference Assets .
+
+Instead of:
+
+Fix the lighting on this.
+
+Say:
+
+Fix the lighting while preserving the exact character proportions, logo placement, and color palette from the Master Reference Assets.
+
+That small shift in instruction protects the integrity of your project across every transformation — image to video, video to localization, edit to extension.
+
+Consistency doesn’t happen automatically. It’s maintained deliberately.
+
+Key takeaway ------------
+
+Before you scale, define your Master Reference Assets . As you iterate, always re-anchor to them. In Luma, creativity can expand infinitely — but identity should remain intentional and grounded in a clear single source of truth .

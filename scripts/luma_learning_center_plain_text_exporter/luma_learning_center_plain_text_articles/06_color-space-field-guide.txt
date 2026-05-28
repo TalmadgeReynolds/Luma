@@ -1,0 +1,129 @@
+Source: https://lumalabs.ai/learning-center/articles/color-space-field-guide
+
+Color Space Field Guide =======================
+
+March 31, 2026
+
+- Ray3.14 HDR Tech Specs (TL;DR)
+
+- The real limitation of most AI outputs
+
+- Color gamut and dynamic range
+
+- Why ACES 2065-1
+
+- Dynamic range
+
+- What this unlocks
+
+- Key takeaway
+
+Luma's HDR model, Ray3.14 HDR, is designed to integrate directly into professional VFX and film pipelines. That means one thing above all: clear, production-ready color specifications.
+
+This article is split into two parts:
+
+- Exact technical specs (what you need to plug into your pipeline)
+
+- Context (why those specs matter and how to think about them)
+
+Ray3.14 HDR Tech Specs (TL;DR) ==============================
+
+If you only need the implementation details, here they are:
+
+Model: Ray3.14 HDR
+
+Primary output (video):
+
+- Format: OpenEXR (.exr)
+
+- Bit depth: 16-bit (half float)
+
+- Compression: DWAB, quality 45
+
+- Color space: ACES 2065-1 (AP0 primaries)
+
+- Encoding: scene-referred linear
+
+Key properties:
+
+- Wide gamut
+
+- HDR (no tone mapping, no display clipping)
+
+- Suitable for ACES-based pipelines
+
+Most AI-generated images and videos are designed to look good on a screen. Ray3.14 HDR is designed to hold up in a pipeline.
+
+In VFX and filmmaking you're not just creating images, you're creating assets that need to survive compositing, grading, relighting, and delivery across formats. That comes down to: how much color and light information you actually have to work with.
+
+Ray3.14 HDR generates outputs that behave like camera data, not finished images. You're not getting final pixels, you're getting a source asset with headroom.
+
+The real limitation of most AI outputs ======================================
+
+Most generative models today output:
+
+- 8-bit images or compressed video
+
+- Rec.709 / sRGB color space
+
+- Display-referred imagery
+
+In practice, that means:
+
+- Highlights are clipped or baked in
+
+- Colors are already compressed
+
+- Very limited flexibility in post
+
+They're optimized for final delivery, not intermediate assets.
+
+Color gamut and dynamic range =============================
+
+Color gamut = the range of colors a format can represent
+
+Dynamic range = the range of brightness a format can represent
+
+Ray3.14 HDR sits at the high end of both.
+
+Why ACES 2065-1 ===============
+
+ACES 2065-1 is the standard interchange format of the ACES ecosystem, the canonical way to move high-end imagery between cameras, software, and facilities.
+
+Where typical AI output sits in Rec.709 / sRGB (a small container), ACES 2065-1 sits at the other extreme. Its AP0 primaries form a container large enough to hold any current camera or display gamut without clipping.
+
+Why deliver in it:
+
+- Universal handoff format for any ACES-based pipeline
+
+- Conversions to working spaces (ACEScg) and display spaces (Rec.709, P3, Rec.2020) are well-defined and stable
+
+You can always map down to a smaller space. You cannot recover information that was never captured.
+
+Dynamic range =============
+
+Ray3.14 HDR is trained to generate true high-dynamic-range scene data, values that extend well above diffuse white, and the output is never tone-mapped or compressed to a display range.
+
+That means:
+
+- Highlights are not baked
+
+- Shadows retain detail
+
+- Exposure adjustments behave as they would on real footage
+
+You can treat outputs like footage, not flattened renders.
+
+What this unlocks =================
+
+This enables:
+
+- Direct ACES pipeline integration
+
+- HDR delivery workflows
+
+You are not adapting AI outputs into production. You are generating assets that already conform to it.
+
+Key takeaway ============
+
+By outputting 16-bit EXR in ACES 2065-1, Luma's Ray3.14 HDR model gives you the same flexibility as high-end camera pipelines so you can shape color and light after generation, not be limited by it.

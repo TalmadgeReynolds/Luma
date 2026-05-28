@@ -1,0 +1,531 @@
+Source: https://lumalabs.ai/learning-center/articles/avoiding-common-mistakes
+
+Avoiding Common Mistakes ========================
+
+March 9, 2026
+
+- Avoiding Common Mistakes Don’t start generating before you define the goal Don’t treat the agent like a vending machine Don’t ask for “perfect” on the first try Don’t generate one output at a time Don’t give feedback like “I don’t like it” Asset Upload + File Analysis Mistakes Don’t upload a file and say “do something with this” Don’t ask the agent to invent missing info from a file Don’t skip the “extract constraints” step Image Generation Mistakes Don’t change everything at once when iterating Don’t rely on “style words” alone Don’t ignore consistency until later Video Generation Mistakes Don’t try to generate a full 60–90s video in one go Don’t assume video must start from text Don’t skip keyframes when consistency matters Don’t “fix video” by endlessly regenerating Planning + Workflow Mistakes Don’t start with tools, start with structure Don’t try to do everything in one session Multi-Agent + Multi-Model Mistakes Don’t assume the agent knows what you want without confirmation Don’t let the agent “choose everything” without telling it your priorities The Biggest Mistake of All Don’t restart when you should refine Final Reminder–The mindset that prevents 80% of mistakes
+
+- Don’t start generating before you define the goal
+
+- Don’t treat the agent like a vending machine
+
+- Don’t ask for “perfect” on the first try
+
+- Don’t generate one output at a time
+
+- Don’t give feedback like “I don’t like it”
+
+- Asset Upload + File Analysis Mistakes Don’t upload a file and say “do something with this” Don’t ask the agent to invent missing info from a file Don’t skip the “extract constraints” step
+
+- Don’t upload a file and say “do something with this”
+
+- Don’t ask the agent to invent missing info from a file
+
+- Don’t skip the “extract constraints” step
+
+- Image Generation Mistakes Don’t change everything at once when iterating Don’t rely on “style words” alone Don’t ignore consistency until later
+
+- Don’t change everything at once when iterating
+
+- Don’t rely on “style words” alone
+
+- Don’t ignore consistency until later
+
+- Video Generation Mistakes Don’t try to generate a full 60–90s video in one go Don’t assume video must start from text Don’t skip keyframes when consistency matters Don’t “fix video” by endlessly regenerating
+
+- Don’t try to generate a full 60–90s video in one go
+
+- Don’t assume video must start from text
+
+- Don’t skip keyframes when consistency matters
+
+- Don’t “fix video” by endlessly regenerating
+
+- Planning + Workflow Mistakes Don’t start with tools, start with structure Don’t try to do everything in one session
+
+- Don’t start with tools, start with structure
+
+- Don’t try to do everything in one session
+
+- Multi-Agent + Multi-Model Mistakes Don’t assume the agent knows what you want without confirmation Don’t let the agent “choose everything” without telling it your priorities
+
+- Don’t assume the agent knows what you want without confirmation
+
+- Don’t let the agent “choose everything” without telling it your priorities
+
+- The Biggest Mistake of All Don’t restart when you should refine
+
+- Don’t restart when you should refine
+
+- Final Reminder–The mindset that prevents 80% of mistakes
+
+Avoiding Common Mistakes ========================
+
+Using our multimodal agent means you’re working with something powerful.
+
+But power comes with a predictable set of failure modes.
+
+The good news is: Most frustrating outcomes come from a small list of common mistakes.
+
+This article covers the biggest ones across:
+
+- task planning
+
+- working with the agent
+
+- uploading + analyzing assets
+
+- image generation
+
+- video generation
+
+- consistency
+
+- iteration and batching
+
+And for every mistake, you’ll see:
+
+- what not to do
+
+- why it breaks
+
+- what to do instead (with copy/paste templates)
+
+Don’t start generating before you define the goal -------------------------------------------------
+
+❌ What not to do
+
+Make something cinematic.
+
+Or:
+
+Generate a trailer.
+
+Why it fails
+
+The agent has no idea what “good” means to you. So it guesses — and you get random outputs.
+
+✅ Do this instead
+
+Start with a clear end result.
+
+Prompt template
+
+I want to end up with: [describe the final deliverable] This is for: [where it will be used] The most important qualities are: [list qualities] Before generating anything, summarize your understanding and ask any questions you need.
+
+Don’t treat the agent like a vending machine --------------------------------------------
+
+❌ What not to do
+
+Give me 10 options.
+
+With no context, no references, no constraints.
+
+Why it fails
+
+You’ll get 10 different interpretations of your vague idea — not 10 useful options.
+
+✅ Do this instead
+
+Treat it like a teammate you’re briefing.
+
+Prompt template
+
+You are my [creative assistant] Before creating anything:] - ask questions if unclear - confirm the goal - suggest the best approach Then generate [10] options that are meaningfully different.
+
+Don’t ask for “perfect” on the first try ----------------------------------------
+
+❌ What not to do
+
+Make it perfect. Make it final.
+
+Why it fails
+
+It sets unrealistic expectations and encourages you to restart instead of refine.
+
+✅ Do this instead
+
+Ask for exploration first, refinement second.
+
+Prompt template
+
+Let’s start with exploration. Generate [10] options that explore different directions. Then we will pick 1 or more and refine.
+
+Don’t generate one output at a time -----------------------------------
+
+❌ What not to do
+
+Generate one image → stare at it → feel disappointed → restart.
+
+Why it fails
+
+One output is basically a coin flip. It also gives you no comparison.
+
+✅ Do this instead
+
+Generate small batches.
+
+Prompt template
+
+Generate [10] options. Make them meaningfully different. Label them clearly so I can see how you made them and compare.
+
+Don’t give feedback like “I don’t like it” ------------------------------------------
+
+❌ What not to do
+
+No. Not good. Try again.
+
+Why it fails
+
+The agent has no actionable direction. So it guesses again.
+
+✅ Do this instead
+
+Use focused feedback.
+
+Prompt template
+
+I like: [what works] I don’t like: [what doesn’t] Please change: [specific adjustment] Then show me [2] improved versions.
+
+Asset Upload + File Analysis Mistakes -------------------------------------
+
+Don’t upload a file and say “do something with this” ----------------------------------------------------
+
+❌ What not to do
+
+Upload a PDF and ask:
+
+What do you think?
+
+Why it fails
+
+You’ll get generic summaries or random guesses about what you want.
+
+✅ Do this instead
+
+Select the file you’ve uploaded, then tell the agent what kind of work you want done.
+
+Prompt template
+
+Analyze this file. First: - summarize what it contains - extract the key points Then: - ask me what output I want to create from it
+
+Don’t ask the agent to invent missing info from a file ------------------------------------------------------
+
+❌ What not to do
+
+“Fill in the missing parts.”
+
+Why it fails
+
+This is how you get hallucinated details.
+
+✅ Do this instead
+
+Make the file the source of truth.
+
+Prompt template
+
+Use this file as the source of truth. If something is not stated: - do not invent it - ask me a question instead
+
+Don’t skip the “extract constraints” step -----------------------------------------
+
+❌ What not to do
+
+Upload brand guidelines → jump straight to generation.
+
+Why it fails
+
+Brand work is mostly constraints. If you don’t extract them, outputs may drift.
+
+✅ Do this instead
+
+Extract rules first.
+
+Prompt template
+
+From this file, extract: - must-have rules - must-not-do rules - tone/style rules - visual rules Then rewrite them as a short checklist we can reuse in prompts.
+
+Image Generation Mistakes -------------------------
+
+Don’t change everything at once when iterating ----------------------------------------------
+
+❌ What not to do
+
+“Make it brighter, different style, new camera, new character, new setting.”
+
+Why it fails
+
+You can’t tell what caused improvement or failure.
+
+✅ Do this instead
+
+Change one variable at a time.
+
+Prompt template
+
+Keep everything the same except: [one change] Generate [3] variations.
+
+Don’t rely on “style words” alone ---------------------------------
+
+❌ What not to do
+
+“Make it cinematic, high quality, detailed.”
+
+Why it fails
+
+Those words are vague and overused. They don’t define a real look.
+
+✅ Do this instead
+
+Use visual references OR a style description.
+
+Prompt template
+
+Use this style reference: [select image(s) / shift+click assets] Match: - lighting - color palette - texture/material feel - composition style Do not copy the content. Only match the aesthetic.
+
+Don’t ignore consistency until later ------------------------------------
+
+❌ What not to do
+
+Generate 20 images and only then realize that the character keeps changing.
+
+Why it fails
+
+Consistency is easiest to lock early.
+
+✅ Do this instead
+
+Create a reference block first.
+
+Prompt template
+
+Before generating more images: Describe this character/object in detail. Then list: - what must stay consistent - what can vary We will reuse this in every prompt.
+
+Video Generation Mistakes -------------------------
+
+Don’t try to generate a full 60–90s video in one go ---------------------------------------------------
+
+❌ What not to do
+
+Generate a 1:30 cinematic trailer.
+
+Why it fails
+
+Long videos require structure. One-shot generation creates drift and chaos.
+
+✅ Do this instead
+
+Break it into moments.
+
+Prompt template
+
+Break this video into [4-6] moments. For each moment: - what we see - what we feel - what must stay consistent Then we will generate one moment at a time.
+
+Don’t assume video must start from text ---------------------------------------
+
+❌ What not to do
+
+Only using T2V because it’s the default.
+
+Why it fails
+
+Text-only video is often less stable and requires more iteration.
+
+✅ Do this instead
+
+Choose a start strategy based on what you have.
+
+Prompt template
+
+I want to create a video. Here is what I have to start with: - [text] (optional) - [image] (optional) - [video] (optional) - [keyframes] (optional) Recommend the best start strategy: T2V, I2V, V2V, or Keyframes. Explain why.
+
+Don’t skip keyframes when consistency matters ---------------------------------------------
+
+❌ What not to do
+
+Try to generate multiple scenes without any anchors.
+
+Why it fails
+
+Multi-shot sequences drift in:
+
+- style
+
+- characters
+
+- lighting
+
+- environment
+
+✅ Do this instead
+
+Keyframe first.
+
+Prompt template
+
+Before generating motion: Create 1 keyframe per moment. Each keyframe must: - match the style references - keep character consistency - clearly communicate the story beat
+
+Don’t “fix video” by endlessly regenerating -------------------------------------------
+
+❌ What not to do
+
+Regenerate 20 times hoping it magically improves.
+
+Why it fails
+
+That’s gambling, not iteration.
+
+✅ Do this instead
+
+Diagnose and adjust.
+
+Prompt template
+
+Analyze what is wrong with this video. Classify issues into: - motion issues - camera issues - style drift - character drift - pacing issues Then propose [3] fixes in order of impact.
+
+Planning + Workflow Mistakes ----------------------------
+
+Don’t start with tools, start with structure --------------------------------------------
+
+❌ What not to do
+
+“Should I use [model name] or [model name]?”
+
+Why it fails
+
+Tool selection comes after you know what you’re making.
+
+✅ Do this instead
+
+Define the output first.
+
+Prompt template
+
+My output goal is: [deliverable] Now recommend: - a simple plan - which tools/models to use at each step - where to iterate
+
+Don’t try to do everything in one session -----------------------------------------
+
+❌ What not to do
+
+Trying to create:
+
+- story
+
+- visuals
+
+- keyframes
+
+- final video
+
+- voiceover
+
+- sound design
+
+…all at once.
+
+Why it fails
+
+You lose clarity and quality.
+
+✅ Do this instead
+
+Work in layers.
+
+Prompt template
+
+Let’s do this in layers: 1) structure 2) style 3) keyframes 4) shots 5) refinement Start with layer 1 only.
+
+Multi-Agent + Multi-Model Mistakes ----------------------------------
+
+Don’t assume the agent knows what you want without confirmation ---------------------------------------------------------------
+
+❌ What not to do
+
+You know what I mean.
+
+Why it fails
+
+The agent can’t read your taste unless you define it.
+
+✅ Do this instead
+
+Ask for a summary and confirmation.
+
+Prompt template
+
+Before generating: Summarize what you think I want. Then ask: - what should be locked - what should be explored
+
+Don’t let the agent “choose everything” without telling it your priorities --------------------------------------------------------------------------
+
+❌ What not to do
+
+Pick the best model.
+
+Why it fails
+
+“Best” depends on what you care about:
+
+- realism
+
+- style
+
+- speed
+
+- consistency
+
+- motion quality
+
+✅ Do this instead
+
+State your priorities.
+
+Prompt template
+
+When choosing tools/models, prioritize: 1) [e.g., consistency] 2) [e.g., cinematic lighting] 3) [e.g., speed] Explain tradeoffs briefly.
+
+The Biggest Mistake of All --------------------------
+
+Don’t restart when you should refine ------------------------------------
+
+❌ What not to do
+
+Throw everything away because one thing is wrong.
+
+Why it fails
+
+You lose progress and you don’t learn what worked.
+
+✅ Do this instead
+
+Preserve what’s good and fix what isn’t.
+
+Prompt template
+
+Keep everything that is working. Only fix: [the specific issue] Show me [2] improved versions.
+
+Final Reminder–The mindset that prevents 80% of mistakes --------------------------------------------------------
+
+Most frustration comes from expecting AI to behave like a magic button.
+
+A better expectation is:
+
+- you are collaborating
+
+- you are directing
+
+- you are iterating
+
+- you are building in layers
+
+And the best part is:
+
+Once you work this way, you get:
+
+- more control
+
+- more consistency
+
+- faster results
+
+- and way less randomness

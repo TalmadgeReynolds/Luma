@@ -1,0 +1,287 @@
+Source: https://lumalabs.ai/learning-center/articles/luma-video-capabilities
+
+Luma Video Capabilities =======================
+
+March 9, 2026
+
+- Luma Video Capabilities Generate New Videos Text-to-Video Text-to-Video with Audio Image-to-Video Animate a Still Keyframe-to-Keyframe Modify & Transform Existing Videos Video-to-Video Extend Video Reframe & Resize Aspect Ratio Changes Add Voice & Audio Text-to-Speech Voiceover Sound Effects Music Lip Sync & Character Animation Lip Sync Emotion & Expression Control Captions & Subtitles Transcription Programmatic Captioning Programmatic Video Editing Compositions Transitions Overlays & Graphics Cinematic Transitions Transformation Injections Analyze & Evaluate Videos Quality Assessment Action Adherence Brand Compliance Consistency Checks Visual Timing Analysis Audio Timing Analysis Multi-Shot & Storytelling Workflows Storyboards Micro-Beat Production Image Sequence to Video Platform Adaptation Cross-Platform Transformation Social Media Video Ads Full Production Workflows Product Review Videos Product Video Loops Brand Campaigns Comic-to-Animation Streaming Video Analysis Summarize & Transcribe Import Videos Upload Web Download
+
+- Generate New Videos Text-to-Video Text-to-Video with Audio
+
+- Text-to-Video
+
+- Text-to-Video with Audio
+
+- Image-to-Video Animate a Still Keyframe-to-Keyframe
+
+- Animate a Still
+
+- Keyframe-to-Keyframe
+
+- Modify & Transform Existing Videos Video-to-Video Extend Video
+
+- Video-to-Video
+
+- Extend Video
+
+- Reframe & Resize Aspect Ratio Changes
+
+- Aspect Ratio Changes
+
+- Add Voice & Audio Text-to-Speech Voiceover Sound Effects Music
+
+- Text-to-Speech Voiceover
+
+- Sound Effects
+
+- Music
+
+- Lip Sync & Character Animation Lip Sync Emotion & Expression Control
+
+- Lip Sync
+
+- Emotion & Expression Control
+
+- Captions & Subtitles Transcription Programmatic Captioning
+
+- Transcription
+
+- Programmatic Captioning
+
+- Programmatic Video Editing Compositions Transitions Overlays & Graphics
+
+- Compositions
+
+- Transitions
+
+- Overlays & Graphics
+
+- Cinematic Transitions Transformation Injections
+
+- Transformation Injections
+
+- Analyze & Evaluate Videos Quality Assessment Action Adherence Brand Compliance Consistency Checks Visual Timing Analysis Audio Timing Analysis
+
+- Quality Assessment
+
+- Action Adherence
+
+- Brand Compliance
+
+- Consistency Checks
+
+- Visual Timing Analysis
+
+- Audio Timing Analysis
+
+- Multi-Shot & Storytelling Workflows Storyboards Micro-Beat Production Image Sequence to Video
+
+- Storyboards
+
+- Micro-Beat Production
+
+- Image Sequence to Video
+
+- Platform Adaptation Cross-Platform Transformation Social Media Video Ads
+
+- Cross-Platform Transformation
+
+- Social Media Video Ads
+
+- Full Production Workflows Product Review Videos Product Video Loops Brand Campaigns Comic-to-Animation
+
+- Product Review Videos
+
+- Product Video Loops
+
+- Brand Campaigns
+
+- Comic-to-Animation
+
+- Streaming Video Analysis Summarize & Transcribe
+
+- Summarize & Transcribe
+
+- Import Videos Upload Web Download
+
+- Upload
+
+- Web Download
+
+Luma Video Capabilities =======================
+
+Any video on your board can be extended, restyled, reframed, lip-synced, scored with music, captioned, analyzed, split apart, transitioned into, or used as a building block for larger productions.
+
+Generate New Videos -------------------
+
+Text-to-Video -------------
+
+Describe a scene and get a video. Up to native 1080p resolution.
+
+Text-to-Video with Audio ------------------------
+
+Some models generate synchronized audio natively alongside the video (dialogue, ambient sound, music).
+
+Image-to-Video --------------
+
+Animate a Still ---------------
+
+Turn any image into a video with motion, camera movement, and action.
+
+Keyframe-to-Keyframe --------------------
+
+Provide a start image and an end image, and generate the transition video between them. Great for controlled storytelling.
+
+Modify & Transform Existing Videos ----------------------------------
+
+Video-to-Video --------------
+
+Change the style, look, or aesthetic of an existing video with adjustable strength control (subtle tweak to full transformation).
+
+Extend Video ------------
+
+Add more time to any video — extend it forward to continue the action, or backward to create a prequel moment. Adds ~5 seconds per extension.
+
+Reframe & Resize ----------------
+
+Aspect Ratio Changes --------------------
+
+Convert a landscape video to portrait (or any ratio) using AI outpainting that intelligently fills in the missing areas. Perfect for adapting content across platforms.
+
+Add Voice & Audio -----------------
+
+Text-to-Speech Voiceover ------------------------
+
+Generate natural voiceovers with emotion tags (excited, whispering, sad, etc.) and layer them onto your video.
+
+Sound Effects -------------
+
+Generate short SFX (5–22 seconds) to enhance your video.
+
+Music -----
+
+Generate full music tracks (with or without vocals) to score your video.
+
+Lip Sync & Character Animation ------------------------------
+
+Lip Sync --------
+
+Take a video of a character and sync their mouth to any audio track with realistic movement.
+
+Emotion & Expression Control ----------------------------
+
+Advanced lip sync with control over the character's emotional reactions and expressions.
+
+Captions & Subtitles --------------------
+
+Transcription -------------
+
+Extract word-level timestamps from any video's audio track.
+
+Programmatic Captioning -----------------------
+
+Render animated captions, subtitles, and text overlays directly onto video with full styling control.
+
+Programmatic Video Editing --------------------------
+
+Compositions ------------
+
+Combine multiple videos, images, audio, and text layers into a single rendered output using code-based composition.
+
+Transitions -----------
+
+Add cinematic transitions between clips (fades, wipes, custom animations).
+
+Overlays & Graphics -------------------
+
+Layer text, shapes, and graphics on top of video.
+
+Cinematic Transitions ---------------------
+
+Transformation Injections -------------------------
+
+Split a video at a specific point and insert a cinematic transformation effect (morphs, glitches, reveals) between the halves.
+
+Analyze & Evaluate Videos -------------------------
+
+Quality Assessment ------------------
+
+AI evaluation of visual quality, pacing, and content.
+
+Action Adherence ----------------
+
+Structured validation: "Did X actually happen in this video?"
+
+Brand Compliance ----------------
+
+Check video against brand guidelines.
+
+Consistency Checks ------------------
+
+Verify characters, style, and settings stay consistent across multiple videos.
+
+Visual Timing Analysis ----------------------
+
+Extract motion peaks, impact moments, and scene transitions from video.
+
+Audio Timing Analysis ---------------------
+
+Extract beat detection, word timestamps, and silence points from video audio.
+
+Multi-Shot & Storytelling Workflows -----------------------------------
+
+Storyboards -----------
+
+Build sequential multi-shot videos where each shot maintains visual continuity with the last.
+
+Micro-Beat Production ---------------------
+
+Produce consistent multi-shot videos using 5-second micro-beats with spatial references for things like music videos.
+
+Image Sequence to Video -----------------------
+
+Convert a series of images into a video by generating keyframe transitions between each pair.
+
+Platform Adaptation -------------------
+
+Cross-Platform Transformation -----------------------------
+
+Adapt a video from one platform format to another (YouTube → TikTok → Instagram) using Ray2 video reframe or out-painting keyframes with nano banana, and then animating again with I2V per shot, or V2V with Ray3.14 Video Modify depending on video length.
+
+Social Media Video Ads ----------------------
+
+Turn videos into full ads with hooks, captions, and platform-specific optimization.
+
+Full Production Workflows -------------------------
+
+Product Review Videos ---------------------
+
+Create authentic influencer-style product review videos with character and voiceover.
+
+Product Video Loops -------------------
+
+Create seamless looping product showcase videos.
+
+Brand Campaigns ---------------
+
+Use video as part of multi-asset campaigns with consistent visual identity.
+
+Comic-to-Animation ------------------
+
+Animate comic panels into sequential video.
+
+Streaming Video Analysis ------------------------
+
+Summarize & Transcribe ----------------------
+
+Analyze streaming videos for content, structure, and transcription.
+
+Import Videos -------------
+
+Upload ------
+
+Drop videos directly onto your board.
+
+Web Download ------------
+
+I can search the web, find video content, and pull it onto your board.

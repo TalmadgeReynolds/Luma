@@ -1,0 +1,143 @@
+Source: https://lumalabs.ai/learning-center/articles/credit-conservation
+
+Credit Conservation ===================
+
+March 31, 2026
+
+- What “credit conservation” actually means
+
+- The Core Principles Plan before you create Draft low, finalize high Stay in control of iteration Reuse your thinking Don’t generate what you’ll replace Solve visuals in images first Reframe instead of regenerate Match the model to the job Understand what actually costs
+
+- Plan before you create
+
+- Draft low, finalize high
+
+- Stay in control of iteration
+
+- Reuse your thinking
+
+- Don’t generate what you’ll replace
+
+- Solve visuals in images first
+
+- Reframe instead of regenerate
+
+- Match the model to the job
+
+- Understand what actually costs
+
+- Why This Matters
+
+- Helpful Reminders
+
+- Key Takeaway
+
+When you can generate images, videos, audio, and more on demand, it’s easy to fall into a pattern of over-generation in expensive places.
+
+Credit conservation isn’t about restricting creativity.
+
+It’s about directing it.
+
+The goal is simple: get to better outputs with fewer unnecessary generations.
+
+What “credit conservation” actually means =========================================
+
+Credit conservation is the practice of being intentional with when and how you generate.
+
+Instead of using generation as your thinking process, you separate thinking from execution:
+
+- You plan before you create
+
+- You explore in efficient ways
+
+- You only spend heavily when you’re confident in the direction
+
+This shift alone dramatically reduces wasted work and often improves quality at the same time.
+
+The Core Principles ===================
+
+Plan before you create ----------------------
+
+Use Brainstorm mode to think through your idea before generating anything.
+
+Define your goal, audience, tone, and constraints upfront. Ask the Agent to outline options, directions, or structures first.
+
+Every generation you avoid early is compounding savings later.
+
+Draft low, finalize high ------------------------
+
+For video, iterate at lower resolutions until the concept works. Only render high-resolution versions once you’re confident in the direction. You can often upscale a strong draft instead of re-generating from scratch.
+
+For images, iterate until composition and style are right, then re-generate natively at higher resolution for final outputs. Native high-res tends to produce sharper detail and cleaner results than upscaling.
+
+Stay in control of iteration ----------------------------
+
+By default, the Agent may generate multiple variations or retry outputs automatically.
+
+If you want tighter control, be explicit:
+
+“Create one version. Don’t generate alternatives. Wait for my feedback.”
+
+This keeps you in the loop and prevents silent overuse.
+
+Reuse your thinking -------------------
+
+Tell the Agent to save your workflow as a text document on your board.
+
+Include your preferences, structure, and constraints. Then point the Agent to it at the start of each session.
+
+This avoids repeating setup work and prevents unnecessary generations caused by re-explaining your intent.
+
+Don’t generate what you’ll replace ----------------------------------
+
+If you plan to replace audio anyway, don’t pay to generate it.
+
+For video, disable native audio when you don’t need it. Add voiceover, sound effects, and music separately when you’re ready. This gives you more control and avoids wasted output.
+
+Solve visuals in images first -----------------------------
+
+Images are faster and more controllable for early exploration.
+
+Lock your composition, lighting, and style using still images first, then use the best result as a keyframe for video.
+
+Avoid using video generation for problems that can be solved more efficiently in stills.
+
+Reframe instead of regenerate -----------------------------
+
+If you need a different aspect ratio, don’t start over.
+
+Use reframing tools to adapt your existing content. You keep the same shot while adjusting it for different platforms, and it's a cheaper process.
+
+Match the model to the job --------------------------
+
+Not every task needs the best model.
+
+Ask the Agent: what’s the simplest most inexpensive model that can achieve this outcome?
+
+Choosing the right tool for the stage of work is one of the easiest ways to stay efficient.
+
+Understand what actually costs ------------------------------
+
+Failed generations aren’t billed, but rejected outputs are.
+
+This means careless iteration still adds up. The goal isn’t to avoid mistakes, it’s to reduce unnecessary ones.
+
+Why This Matters ================
+
+Credit conservation isn’t just about saving usage.
+
+It changes how you work.
+
+You become more deliberate in your direction, more precise in your feedback, and more strategic about when to explore versus when to execute.
+
+And in most cases, that leads to better creative outcomes, not just cheaper ones.
+
+Helpful Reminders =================
+
+If you need more credits, you can enable On-Demand Spend in your Usage settings.
+
+Turn on the On-Demand Spend toggle, then adjust your spending limit as needed. This allows you to continue working beyond your plan’s included credits while staying in control of your usage. Credits serve as the in-platform currency for image and video generation within Luma App. Each subscription tier includes a fixed monthly credit allocation. Please note that any unused credits expire at the end of the applicable billing cycle and will not be carried over to the subsequent month. Any credits used for failed generations will be automatically returned to your account.
+
+Key Takeaway ============
+
+Credit conservation is about separating thinking from generation, so you can explore intelligently, execute intentionally, and get better results with fewer wasted outputs.

@@ -1,0 +1,207 @@
+Source: https://lumalabs.ai/learning-center/articles/team-collaboration-in-luma
+
+Team Collaboration in Luma ==========================
+
+March 9, 2026
+
+- Team Collaboration in Luma Overview Collaborative Work Sharing a Board Share by Link Invite Specific People Permissions Collaboration Tools on the Board Collaboration Across the Creative Process Creative Director Review Designer + Motion Collaboration Agency → Client Approval Team Brainstorming Collaboration With Shared Context
+
+- Overview
+
+- Collaborative Work
+
+- Sharing a Board Share by Link Invite Specific People
+
+- Share by Link
+
+- Invite Specific People
+
+- Permissions
+
+- Collaboration Tools on the Board
+
+- Collaboration Across the Creative Process Creative Director Review Designer + Motion Collaboration Agency → Client Approval Team Brainstorming
+
+- Creative Director Review
+
+- Designer + Motion Collaboration
+
+- Agency → Client Approval
+
+- Team Brainstorming
+
+- Collaboration With Shared Context
+
+Team Collaboration in Luma ==========================
+
+Overview --------
+
+Luma includes built-in collaboration so teams can create, review, and iterate together within the same project.
+
+You can:
+
+- Share a board by link
+
+- Invite teammates by email
+
+- Assign Viewer or Editor permissions (Commenter coming soon)
+
+- Annotate directly on the board using text, doodles, arrows, notes, labels, and more
+
+Teams explore ideas, review outputs, and advance creative work together while agents coordinate execution across the project.
+
+Collaborative Work ------------------
+
+Creative production involves multiple contributors working across stages.
+
+Luma enables teams to collaborate directly within the project while agents coordinate work across models, formats, and assets.
+
+Your team can:
+
+- Direct creative work together
+
+- Review outputs within shared project context
+
+- Leave feedback directly on the board
+
+- Iterate and refine creative directions in real time
+
+Instead of exporting assets between models and systems, teams collaborate directly where creative work is generated and evolved.
+
+Sharing a Board ---------------
+
+Every project in Luma is organized on a board. Boards can be shared with collaborators in two primary ways:
+
+Share by Link -------------
+
+The board owner can generate a shareable link and choose access settings.
+
+Access options include:
+
+- Anyone with the link can view
+
+- Anyone with the link can edit
+
+This works well for:
+
+- Internal creative reviews
+
+- Agency-client collaboration (view only)
+
+- Creative direction approvals
+
+- Team brainstorming sessions
+
+Invite Specific People ----------------------
+
+Boards can also be shared with specific collaborators by adding their email address.
+
+This is ideal for:
+
+- Controlled team access
+
+- Private client work
+
+- Ongoing projects with defined collaborators
+
+Permissions -----------
+
+Luma includes role-based permissions so project owners remain in control.
+
+Current roles include:
+
+- Viewer — can view the board
+
+- Editor — can generate and modify assets on the board
+
+- Commenter (coming soon) — can leave comments without editing assets
+
+These permissions support collaboration across:
+
+- Small creative teams
+
+- Agencies and production groups
+
+- Enterprise brand teams
+
+- Client review workflows
+
+Collaboration Tools on the Board --------------------------------
+
+Luma includes built-in annotation tools so teams can communicate visually directly where the work lives.
+
+Available tools include:
+
+- Text boxes
+
+- Doodles
+
+- Shapes
+
+- Arrows
+
+- Notes
+
+- Labels
+
+- Color selection
+
+These tools allow teams to:
+
+- Annotate assets
+
+- Highlight areas for revision
+
+- Mark composition or motion changes
+
+- Leave creative direction notes
+
+- Label versions and directions
+
+- Prepare boards for review without exporting assets
+
+Collaboration Across the Creative Process -----------------------------------------
+
+Luma supports the way creative teams actually work — exploring ideas, reviewing outputs, and refining directions together.
+
+Common collaboration patterns include:
+
+Creative Director Review ------------------------
+
+- Mark up frames
+
+- Leave notes in context
+
+- Request revisions directly on the board
+
+Designer + Motion Collaboration -------------------------------
+
+- One designer generates stills
+
+- Another animates or transforms them
+
+- Both organize versions and directions together
+
+Agency → Client Approval ------------------------
+
+- Share a view-only board link
+
+- Keep assets, notes, and revisions in one place
+
+- Avoid email chains and scattered attachments
+
+Team Brainstorming ------------------
+
+- Multiple collaborators exploring directions
+
+- Grouping outputs live
+
+- Comparing variations side by side
+
+Collaboration With Shared Context ---------------------------------
+
+In Luma, collaboration happens directly where creative work is generated and refined.
+
+Agents maintain shared project context across text, image, video, and audio assets while teams explore directions and evaluate outputs together. Work advances in parallel as teams and agents move projects forward across stages.
+
+The result is a fundamentally different way for creative teams to operate: more ideas explored, more iterations compared, and more work delivered without increasing coordination overhead.

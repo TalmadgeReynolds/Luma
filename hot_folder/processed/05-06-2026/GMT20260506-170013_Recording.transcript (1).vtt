@@ -1,0 +1,1146 @@
+WEBVTT
+
+1
+00:00:08.150 --> 00:00:09.450
+Davicho Barona: Hey!
+
+2
+00:00:10.520 --> 00:00:13.829
+Davicho Barona: How are you guys doing? I'm gonna…
+
+3
+00:00:14.780 --> 00:00:18.589
+Davicho Barona: Make sure I allow everybody to talk here. Welcome.
+
+4
+00:00:18.930 --> 00:00:21.279
+Davicho Barona: You guys, thank you for being here again.
+
+5
+00:00:22.880 --> 00:00:29.830
+Davicho Barona: And, as always, I would love to start
+
+6
+00:00:31.060 --> 00:00:35.170
+Davicho Barona: With a quick round of, like, questions, or…
+
+7
+00:00:35.650 --> 00:00:38.790
+Davicho Barona: Things, issues you've been having, like…
+
+8
+00:00:39.010 --> 00:00:53.089
+Davicho Barona: fires that I can help put out in any way, things that are, like, really, really kind of, like, top of mind. Would love to start there and go around. If you have something to mention, please just go ahead and,
+
+9
+00:00:53.090 --> 00:01:11.049
+Davicho Barona: Either raise your hand or unmute yourself and, and just throw it out there. And I will just preface by saying that I'm gonna finish what I started last week, which was talking about, like, modify video, motion control, some keyframe stuff, some image-to-video.
+
+10
+00:01:11.450 --> 00:01:13.080
+Davicho Barona: Kind of,
+
+11
+00:01:13.760 --> 00:01:20.759
+Davicho Barona: Looking towards, let me just make sure everybody can see your chats. Just kind of looking towards,
+
+12
+00:01:21.520 --> 00:01:26.779
+Davicho Barona: I don't want to say viral videos or viral stuff, but,
+
+13
+00:01:26.840 --> 00:01:46.069
+Davicho Barona: looking at things that are more quicker, and that can kind of get something cool pretty fast, and then you can sort of expand on that. But that's my goal, is just to kind of touch on that, or finalize that, or kind of just finish the board that I was demoing last week.
+
+14
+00:01:47.350 --> 00:01:58.479
+Davicho Barona: Yeah, chats, I think, are on, if everyone can see that. And, but yeah, anyway, I'll… let me… let me start. I saw, Jacques, you put your hand up first, and then Elle, I'll come to you.
+
+15
+00:01:59.030 --> 00:02:02.770
+Jacques Stroweis: Yes, so I'm following up on,
+
+16
+00:02:02.790 --> 00:02:19.440
+Jacques Stroweis: the modified video, video to video. It is something I've been pushing for quite a while, and I was just, doing, actually delivering some 4K shots for a film of a newborn baby. And, you know, I had to try a few
+
+17
+00:02:19.440 --> 00:02:32.749
+Jacques Stroweis: video to video, you know, there was a motion that the director or producer liked, and there was a slight modification I needed to do. So, I had a lot of problems to do this, and I was asking the agent.
+
+18
+00:02:32.750 --> 00:02:53.860
+Jacques Stroweis: to summarize what they found out, and the agent was saying, well, it called it surgical motion preservation. It's hard, and to try to do a video-to-video when, you know, I might do a face swap, or a style swap, or a slight different look.
+
+19
+00:02:53.860 --> 00:03:11.829
+Jacques Stroweis: You know, there's sometimes that modified video from Rite 14 didn't work, I think I might have tried the cling, but anyway, that's the question. So maybe it's a complex question, and maybe you want to come back later after you…
+
+20
+00:03:11.830 --> 00:03:20.559
+Jacques Stroweis: You show us some examples, but any tip would be good to be able to figure out how to really get
+
+21
+00:03:20.590 --> 00:03:26.389
+Jacques Stroweis: best controllable, repeatable results, which is one of the hardest things in AI.
+
+22
+00:03:26.570 --> 00:03:40.019
+Davicho Barona: It is, especially when you're trying to fix something, right? When you're trying to surgically go in and fix something that's in a random part of the video. But is that what you're talking about? Or are you more talking about, kind of.
+
+23
+00:03:40.220 --> 00:03:49.989
+Davicho Barona: Adding, a sort of new layer of style over something, or are you, like, trying to surgically go in and fix or change a certain part?
+
+24
+00:03:49.990 --> 00:04:01.769
+Jacques Stroweis: surgical fix, so, you know, maybe the person, you know, I've got a nice motion, but the hand of a mother is not the right place. I want to put it a little lower.
+
+25
+00:04:01.890 --> 00:04:14.760
+Jacques Stroweis: But keep, you know, keep the motion. So it's mostly surgical fix, which is, you know, what we do in visual effects, you know, that we keep refining things.
+
+26
+00:04:15.140 --> 00:04:33.399
+Davicho Barona: That is the hardest thing to do in AI, and I think everyone's kind of looking at that, almost like a video in painting kind of a feature, where it's an easy way to go in to frame X and change something that then will stick through the rest of the video without altering everything else that's going on, right?
+
+27
+00:04:33.560 --> 00:04:44.129
+Jacques Stroweis: Exactly, exactly. Video and painting is a very good word, and I think as a maybe… maybe, runway, I haven't played with that, might have that, but there's a few.
+
+28
+00:04:44.130 --> 00:04:54.250
+Davicho Barona: No, nobody has it in a way that actually works consistently. The way that I tend to try to do that here is actually
+
+29
+00:04:54.370 --> 00:05:01.549
+Davicho Barona: splitting my video, and then going through, you know, basically, if I have a,
+
+30
+00:05:01.920 --> 00:05:11.769
+Davicho Barona: let's just go into one of these… one of these videos, for example. So I have this 9-second video, right? And then let's say, like, right here, I…
+
+31
+00:05:11.810 --> 00:05:15.379
+Davicho Barona: You know, this is not the point where it starts, but…
+
+32
+00:05:15.390 --> 00:05:29.849
+Davicho Barona: where it starts, I have a pearl earring at some point, and then that turns into these two, like, hoop earrings, or something like this. And I would like to change those hoop earrings, but I would like to keep everything else the same.
+
+33
+00:05:29.850 --> 00:05:42.349
+Davicho Barona: In this case, it starts from the beginning of the video, so it's almost like I would just do the V2V, like, edit the start frame, and then just let it see what happens. But at some point, you notice that this goes, you know, one ear
+
+34
+00:05:42.350 --> 00:06:00.679
+Davicho Barona: is not… here, the other ear isn't showing, so it's just picking up the cue from this earring, and then translating it to the other ear once it gets there. Like, right here. Now, all of a sudden, it's like, okay, I'm recognizing that there's a hoop earring on one side, it must be another, it must be on the other side, too. Let's just imagine that
+
+35
+00:06:00.680 --> 00:06:17.549
+Davicho Barona: this is a pearl earring on the right, and this is now a hoop, and I want to go in there and fix it. Let's pretend that second number 3, or whatever that frame is, is where that thing started, where that bad thing started. What I would do here is I would come in here.
+
+36
+00:06:17.710 --> 00:06:25.019
+Davicho Barona: right-click, go to that More Actions, and actually, I would go to, Split.
+
+37
+00:06:25.260 --> 00:06:40.179
+Davicho Barona: I think, or trim, it doesn't really matter. I would basically go in here and trim out that part of the video, so let's say it started at, we said, like, second number 3, I don't know exactly where it is, here, and then I would go ahead and start splitting this.
+
+38
+00:06:40.550 --> 00:06:56.010
+Davicho Barona: and all of a sudden, I'm gonna have the first part of the video, which I liked, right, leading up to second 3, and then this is the part, let's just pretend that's the case, obviously it's not actually the case. And then this second part here is where the problem started.
+
+39
+00:06:56.010 --> 00:07:07.640
+Davicho Barona: And so then I would… I would do the same thing here, the same modify video here, and then I would try to stitch the two together. I would for sure be listening to which was… oh, and this…
+
+40
+00:07:07.640 --> 00:07:28.799
+Davicho Barona: I did this during Kling, so obviously we'd want to try to do this with a generation that was made with Ray 3.14, so that I don't pollute what I'm telling you right now. Pretend this was done in Ray 3.14, then I would be running that same strength that I ran here to make this video, because I like the way that it came out.
+
+41
+00:07:28.800 --> 00:07:34.129
+Davicho Barona: I would do that, you know, I would fix the start frame of this new split
+
+42
+00:07:34.300 --> 00:07:45.589
+Davicho Barona: side of my video, the second part of my video that has the mistake in it, I would do that same process here, and I would try to potentially limit it to wherever in the video that
+
+43
+00:07:45.670 --> 00:08:04.480
+Davicho Barona: that bad thing was happening. But it's still a little bit of a janky process. It's still not gonna be as perfect. You will get the same kind of motion, but you're not gonna get the same video that you did before, that you had before, with just the fixed area.
+
+44
+00:08:04.810 --> 00:08:15.579
+Davicho Barona: what a real studio would do here is they would do what I'm saying, but they would just be generating a piece of it. So, like, I see studios where
+
+45
+00:08:16.050 --> 00:08:35.239
+Davicho Barona: they're actually isolating different quadrants of the frame itself, and they are generating, regenerating, or doing whatever changes they need to just that specific quadrant, you know? So, like, if… if I could split my video up into, you know, different quadrants, or whatever,
+
+46
+00:08:35.419 --> 00:08:48.619
+Davicho Barona: you know, whatever it is, like, that's how a professional studio would do it, is they would be coming in here, and they would just be focusing on regenerating this part of the video, and then they would bring it in together.
+
+47
+00:08:48.820 --> 00:09:04.210
+Davicho Barona: Later on, with Nuke or whatever, they would just kind of start bringing it… piecing the whole thing back together. That's kind of the video inpainting, way that VFX studios do it. They do it
+
+48
+00:09:04.300 --> 00:09:18.169
+Davicho Barona: using the same techniques that they would otherwise. But I don't… so I don't have, like, this amazing answer to that, but it does require a little bit of, like, splitting your video.
+
+49
+00:09:18.300 --> 00:09:36.820
+Davicho Barona: targeting the part that you don't like, that has a particular mistake, redoing the start frame there, and then continuing from there, and potentially, if you have the software required for doing real VFX, which you might, you probably do, you might want to think about splitting that frame into different
+
+50
+00:09:37.030 --> 00:09:53.200
+Davicho Barona: quadrants, or different parts of it, and then bringing in the part that was regenerated and stitching it back together. Again, you're not gonna have the perfect results. You might need to do some blending in there in some way, but that's how I've seen it done in a professional setting.
+
+51
+00:09:53.480 --> 00:10:07.439
+Jacques Stroweis: Okay, okay, that's good. I see, you know, from different companies doing… using different tools, you know, some great work, but, you know, I've realized the last 5% or 5-10% are the hardest.
+
+52
+00:10:07.440 --> 00:10:19.130
+Jacques Stroweis: You know, and, you know, you can get 90% fairly quickly if you know your tools, using Luma or others, but the last 5-10% are the hardest.
+
+53
+00:10:19.130 --> 00:10:28.900
+Jacques Stroweis: If you have another… another… at some point, if you have another seminar, webinar on dealing with some issues like this, I think that'd be very interesting. So, just…
+
+54
+00:10:28.900 --> 00:10:48.180
+Davicho Barona: I appreciate it, Jacques. That's a good tip, and I will, definitely look towards that, for sure. And I agree, it's the… the first… the first 20% and the last 20%, to me, are the, like, the hardest parts, and the parts that I try… I actually don't rely on AI as much.
+
+55
+00:10:48.370 --> 00:10:50.879
+Davicho Barona: No matter what the tool is. But…
+
+56
+00:10:51.330 --> 00:10:55.270
+Davicho Barona: That… that will be for another… another discussion. L…
+
+57
+00:10:55.460 --> 00:10:57.550
+Davicho Barona: How can I answer your question?
+
+58
+00:10:58.070 --> 00:11:00.009
+Elle Cardenas: Hey, thank you, can you hear me okay?
+
+59
+00:11:00.010 --> 00:11:00.440
+Davicho Barona: Yep.
+
+60
+00:11:00.440 --> 00:11:14.970
+Elle Cardenas: That's gonna be like, great. Thank you. So I am working, a lot with anime in my, in my generations, and I'm really trying to pull different styles and kind of keep things, like, even within the animation, kind of to a specific style.
+
+61
+00:11:14.970 --> 00:11:20.730
+Elle Cardenas: So I've tried making both, like, you know, kind of like the character Bibles, etc, once I nail a look.
+
+62
+00:11:20.730 --> 00:11:34.780
+Elle Cardenas: But sometimes when I generate the video, it will still push towards, like, you know, whatever video gen I'm using, it still kind of gets kind of 3D-ish instead of that flat 2D, cel-shaded look. Would you recommend something like…
+
+63
+00:11:34.780 --> 00:11:46.880
+Elle Cardenas: Should I just, like, be taking, like, a screen cap… like, recording the screen of, like, a sample and dropping that in and asking the agent to, like, use that as a reference? Is it gonna nail that, or should I, like, be describing it
+
+64
+00:11:46.880 --> 00:11:52.870
+Elle Cardenas: Is it better to just, like, you know, just put it as a description within the chat to the agent, or does that matter?
+
+65
+00:11:53.020 --> 00:12:12.950
+Davicho Barona: I… I… it's a good question, because I honestly… at first, I used to always just be really heavy on the description, and I was like, if I describe it the same way every time, then the agent should obviously understand that every time… or the model should understand that every time I'm doing this, it should be the same… the same result, or the same style, or whatever.
+
+66
+00:12:12.950 --> 00:12:17.850
+Davicho Barona: But over time, I've realized that that's not actually the case, because what happens is.
+
+67
+00:12:18.060 --> 00:12:36.149
+Davicho Barona: every time when you're describing it, which is basically a prompt, you are asking the agent or the model to go back and look at its training data. And so a lot of times, it's pulling out something slightly different. You know, like, let's say, for example, if we
+
+68
+00:12:36.350 --> 00:12:47.580
+Davicho Barona: if I'm working with a brand, like a car brand, a Toyota or something, and I have these perfect Toyota references, and that they sent me. They sent me every car, every angle.
+
+69
+00:12:47.660 --> 00:12:55.830
+Davicho Barona: I now have this choice. Do I, every time I make something, do I describe, or do I give it the visual reference that I have?
+
+70
+00:12:55.830 --> 00:13:11.960
+Davicho Barona: And the answer is, if you have a perfect visual reference, always use the visual reference without the prompt, because if I go in there and I start describing the car, the red Toyota with whatever wheels and the year, and all the different things.
+
+71
+00:13:11.980 --> 00:13:13.040
+Davicho Barona: that…
+
+72
+00:13:13.660 --> 00:13:31.240
+Davicho Barona: are that reference, but I'm describing it via prompt and via text, I'm now telling the agent, like, yes, look at the car that I'm giving this reference, but also go and dig through your training data and find a red Toyota with the… and so all of a sudden, you're…
+
+73
+00:13:31.260 --> 00:13:32.150
+Elle Cardenas: So…
+
+74
+00:13:32.150 --> 00:13:48.199
+Davicho Barona: Visual references, 100% preferred over prompt and description, because if you have a visual reference, that's gonna be the number one way of keeping the agent, or the model.
+
+75
+00:13:48.440 --> 00:13:54.790
+Davicho Barona: True to the… to the thing you're trying to make, is giving those, those visual references.
+
+76
+00:13:55.850 --> 00:13:57.989
+Elle Cardenas: Thank you, thank you, that's super helpful to know.
+
+77
+00:13:57.990 --> 00:14:02.389
+Davicho Barona: Yeah, for sure. I see…
+
+78
+00:14:02.750 --> 00:14:06.509
+Davicho Barona: Michael, Mikal, or someone else? Who had the hand up?
+
+79
+00:14:07.130 --> 00:14:07.850
+Davicho Barona: Yeah.
+
+80
+00:14:07.850 --> 00:14:09.899
+Oliver Shore: Oh, I did.
+
+81
+00:14:10.040 --> 00:14:11.260
+Oliver Shore: Oliver here.
+
+82
+00:14:11.750 --> 00:14:15.249
+Davicho Barona: Oh, Oliver, sorry man, it looks like the hand is… yeah. What's up?
+
+83
+00:14:15.250 --> 00:14:17.010
+Oliver Shore: Oh, sorry.
+
+84
+00:14:17.010 --> 00:14:17.489
+Davicho Barona: Here you come.
+
+85
+00:14:17.490 --> 00:14:38.389
+Oliver Shore: I just had a quick question about, like, the different strength levels with Modify, because I find myself trying to use Modify and keep it as close… basically perfect one-to-one to my live-action footage. Yeah. And, I guess it's two different questions that I have, like.
+
+86
+00:14:38.430 --> 00:14:42.270
+Oliver Shore: One is, like…
+
+87
+00:14:42.540 --> 00:14:53.200
+Oliver Shore: the difference between the lowest adhere level, like adhere 1 and Adhere 3, because sometimes I find that,
+
+88
+00:14:53.310 --> 00:14:54.130
+Oliver Shore: like.
+
+89
+00:14:54.210 --> 00:15:10.580
+Oliver Shore: those levels, like, work better for different, like, instances, and it just comes down to, like, testing, and I try my hardest to be, like, mindful of, like, the credit usage, so I just wanted to get your thoughts on, if you find yourself, like, switching between
+
+90
+00:15:10.580 --> 00:15:17.910
+Oliver Shore: A different strength level, depending on how close you're trying to keep it to the source video, or if it's an experiment.
+
+91
+00:15:18.140 --> 00:15:22.699
+Davicho Barona: Yeah, the modified strengths are a little bit of an enigma for a lot of us.
+
+92
+00:15:22.820 --> 00:15:35.740
+Davicho Barona: we've been, obviously, internally getting better at figuring out, like, you know, like, oh, that is definitely a flex too, let's go for that, because, you know, we kind of start getting in this rhythm. If you go back into,
+
+93
+00:15:36.730 --> 00:15:48.410
+Davicho Barona: If you go back into Dream Machine, actually, and I don't know if you guys can see… What screen am I sharing? Am I sh… can you guys see Dream Machine up there?
+
+94
+00:15:48.940 --> 00:15:49.560
+Oliver Shore: Yes.
+
+95
+00:15:49.560 --> 00:15:53.640
+Davicho Barona: Okay, so if you're in Dream Machine, and you bring in
+
+96
+00:15:54.000 --> 00:16:01.319
+Davicho Barona: a, let me go somewhere where there's a video. And you bring in a, a video.
+
+97
+00:16:03.100 --> 00:16:14.019
+Davicho Barona: Let me just grab any video. So, and I go into, modify, and now we go into the strengths here.
+
+98
+00:16:14.620 --> 00:16:19.830
+Davicho Barona: Unfortunately, we don't have this little reference video here in… in…
+
+99
+00:16:19.950 --> 00:16:26.489
+Davicho Barona: agents, but this, to me, is really the most helpful thing, okay? And… and so I'm just gonna go over this real fast.
+
+100
+00:16:26.760 --> 00:16:32.260
+Davicho Barona: to try to see if this really makes sense. So, in the adhere levels here.
+
+101
+00:16:32.470 --> 00:16:52.300
+Davicho Barona: you can see, if I mouse over it, you can see this is the original video. So you can see John, and the way that his jacket is laying, the way that there's, like, these frames on the wall, how close the wall is, right? You see all these elements. If I go to, like, the generation example video, you can see that if I'm down in the adhere levels.
+
+102
+00:16:52.300 --> 00:17:01.390
+Davicho Barona: All of that stuff is still present. Literally, here is, like, lighting changes, very surface-level changes, where I want to keep
+
+103
+00:17:01.390 --> 00:17:16.349
+Davicho Barona: all the elements, the contours, the lines, the edges of my original elements in the video intact. Like, I want those to be really, really strong drivers of what's happening in my… what's gonna happen in my video.
+
+104
+00:17:17.020 --> 00:17:28.759
+Davicho Barona: As I continue to go up, you start seeing that, first of all, now, things start getting a little bit more interesting. The wall starts getting removed. I can still see those frames, actually, like those poles.
+
+105
+00:17:28.940 --> 00:17:47.210
+Davicho Barona: But now, like, also his jacket is way different. I can start adding stuff, like, inside of his face. I may be able to start changing his identity quite a bit more, right? Other, instead of what I saw down here in Adhere 1, which is, like, very true to those contours and those edges.
+
+106
+00:17:47.210 --> 00:17:49.220
+Davicho Barona: As I continue to go up.
+
+107
+00:17:49.220 --> 00:17:58.460
+Davicho Barona: you start seeing it's letting go of all of that depth information and contour and edge information, so that those hard lines.
+
+108
+00:17:58.460 --> 00:18:16.350
+Davicho Barona: that were around everything, his jacket, the collar, the walls, even the bikes that were on the ground, like, in the plant. You can even see it's still kind of, like, there, just maybe modified according to whatever the prompt was, some kind of industrial weird thing. But as I continue to go up.
+
+109
+00:18:16.620 --> 00:18:25.829
+Davicho Barona: It starts… the background starts becoming more of a green screen, so it's… all the depth information, like, behind the character is starting to really let go.
+
+110
+00:18:25.830 --> 00:18:35.669
+Davicho Barona: So now I can start adding more different worlds behind him now that don't have anything to do with my original frames on the wall, the wall, all the other stuff behind him.
+
+111
+00:18:35.670 --> 00:18:49.610
+Davicho Barona: But I can also start adding more information to the way he's dressed, the way he looks. Maybe I start adding longer hair, because it's no longer trying to really respect those tight contours and every single detail.
+
+112
+00:18:49.610 --> 00:18:52.080
+Davicho Barona: As I go up, In the strength.
+
+113
+00:18:52.600 --> 00:19:16.699
+Davicho Barona: and going to reimagine, you start seeing, like, okay, now I can start adding… like, I could have tentacles if I want to, because those lines and those edges that were so present down and at here are now much more blurry. Now I'm becoming more of a blob. So, the camera motion is there, the character is there, the background is there, but everything is way more blurry, more forgiving.
+
+114
+00:19:17.250 --> 00:19:35.740
+Davicho Barona: and a lot more generous to the changes that you can make through your prompt, or through an edited start frame, or both. So now, when I'm, like, all the way in Reimagined, now all I have here is basically camera motion and a character pose, but if I wanted to be a…
+
+115
+00:19:35.800 --> 00:19:37.499
+Davicho Barona: You know, a walrus.
+
+116
+00:19:37.620 --> 00:19:56.319
+Davicho Barona: or a refrigerator, I probably could, because now I'm a big blob. So whatever you tell me, those lines are so forgiving, instead of when I'm all the way down here, if I'm trying to be a refrigerator down here, it's gonna get sucked into those contours and edges of my original character from the original video. Does that make sense?
+
+117
+00:19:57.300 --> 00:20:15.220
+Oliver Shore: Yeah, that makes a lot of sense. I appreciate, like, the thorough explanation. I guess the second question that I had about it was, I find a lot of success when I am using Nano Banana Pro and modifying my start frame and keeping the subject
+
+118
+00:20:15.330 --> 00:20:29.840
+Oliver Shore: positioning, like, one-to-one. But, as I try modifies where, let's say I zoom out of the image a little bit, and now the subject is, like, a bit more, I don't know, 20 feet farther back into the frame.
+
+119
+00:20:29.840 --> 00:20:38.500
+Oliver Shore: I, like, have a lot of difficulty, like, getting modified to then match it. A lot of times, I see that it, like.
+
+120
+00:20:38.500 --> 00:20:53.700
+Oliver Shore: will completely, change the subject, so I was wondering if, like, you ran into similar problems, where once the… the start frame departs from, like, the original positioning, if you… if you have trouble getting good results.
+
+121
+00:20:53.860 --> 00:21:02.280
+Davicho Barona: Yeah, you will, and you might have this thing where it'll kind of, like, jump back in, because it's trying to, like, go back into where the position is.
+
+122
+00:21:02.580 --> 00:21:03.029
+Oliver Shore: Like, it's.
+
+123
+00:21:03.030 --> 00:21:10.920
+Davicho Barona: go back here, but, like, sometimes, like, I'll tell you, it really depends. Like, here's… here's… this is a… an interesting one. So I went from here…
+
+124
+00:21:11.090 --> 00:21:29.929
+Davicho Barona: I wanted to turn him into a worm. So first, I would, like, literally turn him into, like, this funky-looking worm. But I realized that, like, for example, his hand goes all the way out here, this hand goes all the way out here, like, his le- everything looks quite different than he does here, right? I was wondering, like, how are these…
+
+125
+00:21:30.070 --> 00:21:43.360
+Davicho Barona: you know, his hand is out here, and this hand is out here. How is this gonna really work? And I realized that it… when I… when I did run it through with Modify, it actually added
+
+126
+00:21:43.360 --> 00:21:57.190
+Davicho Barona: his hands all the way out here, and it did modify enough where it still really, really works, but he's still in the same plane. He's still in the same position.
+
+127
+00:21:57.590 --> 00:21:59.150
+Davicho Barona: And it did not?
+
+128
+00:21:59.710 --> 00:22:14.440
+Davicho Barona: you know, this actually worked much better than I thought it would be, because his hands are actually still a little bit wormy, like, they do look a little bit like they belong. Not as much as they did here, but, like, this is because I'm…
+
+129
+00:22:14.630 --> 00:22:19.569
+Davicho Barona: Like, in some cases, you can see where, like, it didn't work.
+
+130
+00:22:19.790 --> 00:22:22.110
+Davicho Barona: And that's because in this case.
+
+131
+00:22:22.260 --> 00:22:26.440
+Davicho Barona: I am all the way down…
+
+132
+00:22:26.650 --> 00:22:36.219
+Davicho Barona: Let me see if I can tell you where this was. I'm actually all the way up in the reimagine, which is basically trying to make it work.
+
+133
+00:22:36.220 --> 00:22:53.519
+Davicho Barona: with what I gave it, right? Because it's saying, like, I just… I'm telling it, like, reimagine the whole thing. And so you can see it's, like, really trying to make that work. And I know I'm not zoomed out, and I'm not… this is not exactly the example you're telling me, but in a sense, you kind of…
+
+134
+00:22:53.890 --> 00:22:57.530
+Davicho Barona: I have to find this balance,
+
+135
+00:22:57.870 --> 00:23:01.139
+Davicho Barona: Between the quality of your output and
+
+136
+00:23:01.580 --> 00:23:07.959
+Davicho Barona: Your desire to have something in particular come out
+
+137
+00:23:09.560 --> 00:23:12.719
+Davicho Barona: a certain way. You're driving videos…
+
+138
+00:23:12.720 --> 00:23:13.669
+Oliver Shore: That's really helpful.
+
+139
+00:23:13.670 --> 00:23:15.000
+Davicho Barona: different. So…
+
+140
+00:23:15.000 --> 00:23:15.490
+Oliver Shore: Yeah.
+
+141
+00:23:15.490 --> 00:23:29.439
+Davicho Barona: Yeah, I would… I would definitely say you're gonna keep running into those issues a little bit, and you may want to think of a workaround for how to do it in a way that you can have that zoomed out.
+
+142
+00:23:29.830 --> 00:23:32.800
+Davicho Barona: feel. And,
+
+143
+00:23:33.610 --> 00:23:47.939
+Davicho Barona: I would probably be using Reframe in some way. After you're done with the video, I would probably try to reframe it so it's, you know, you're basically gonna out-paint a little bit, and keep it in the same aspect ratio, so then you would have, like, a zoomed-out look at the end. But doing it at the
+
+144
+00:23:48.510 --> 00:23:52.119
+Davicho Barona: really rough, because this is what you end up with. You end up with.
+
+145
+00:23:52.120 --> 00:23:53.970
+Oliver Shore: That makes a lot of sense, yeah.
+
+146
+00:23:55.110 --> 00:23:55.780
+Davicho Barona: Cool.
+
+147
+00:23:55.780 --> 00:24:06.149
+Oliver Shore: Do you find yourself using the enhance, like, button when you, like, run these prompts? Like, or do you think that that doesn't make too much of a difference, like, when you… when you hit, generate?
+
+148
+00:24:06.150 --> 00:24:24.039
+Davicho Barona: It's a good question, because if you're doing video-to-video, and you're using visual references, I actually try never to prompt at all. I just let the visual references do their thing, because of kind of what I was telling Elle before, is if you start prompting, then you're actually starting to go into training data, as opposed to
+
+149
+00:24:24.160 --> 00:24:29.509
+Davicho Barona: going… just a visual process. Take this, make it do this. Not like…
+
+150
+00:24:29.790 --> 00:24:37.900
+Davicho Barona: go find the stuff that I want you to look at, and then kind of, like, nebulously turn it into… into this.
+
+151
+00:24:38.210 --> 00:24:44.440
+Davicho Barona: so it's like, it gives me a lot less control when I'm prompting. If I'm doing something that's video-to-video.
+
+152
+00:24:44.770 --> 00:24:48.220
+Davicho Barona: I…
+
+153
+00:24:48.330 --> 00:24:59.510
+Davicho Barona: know that I already have the motion that I want, so I don't have to prompt for that, because the video, my input video is what's driving that. And I already have the visual that I want
+
+154
+00:24:59.910 --> 00:25:13.049
+Davicho Barona: So I don't have to prompt for that either, because now I have this image, and I… and if I do everything correctly, where I'm like, you know, I try to, like, pose, you know, give her a particular pose, this is with Kling.
+
+155
+00:25:14.830 --> 00:25:33.339
+Davicho Barona: here, like, give her a particular pose, now I know that I do have a good input. I don't have to prompt for her to make that pose or something, because I really… I posed her beforehand, and I kind of took care of my prep work. You know, prepping your assets goes a much longer way than prompting
+
+156
+00:25:33.460 --> 00:25:37.269
+Davicho Barona: for… for something, if that makes sense.
+
+157
+00:25:37.270 --> 00:25:57.240
+Oliver Shore: Yeah, that's really useful. I've actually, really never tried, like, no prompt in it at all. I usually try, like, very, like, light prompts of, like, a sentence of, like, add this, remove that, so I'm gonna start testing, like, with no prompts, and really just, like, let the start frame guide it. Thank you, I appreciate your…
+
+158
+00:25:57.240 --> 00:26:10.520
+Davicho Barona: I'll tell you one last thing on that. I'll tell you one last thing on that, is like, so here's an example, right? I'm taking this video, taking her, selecting both these assets, going into Generate Video, and going into Ray 314,
+
+159
+00:26:10.860 --> 00:26:18.450
+Davicho Barona: And I'm gonna do, you know, I'm sorry, did I do right through on 4, or did I do modify?
+
+160
+00:26:19.390 --> 00:26:31.479
+Davicho Barona: Sorry, modify. RAID 314, and then, you know, so I have my source video, now I have my start frame. If you're doing it through the toolbar, it won't let you.
+
+161
+00:26:31.760 --> 00:26:33.850
+Davicho Barona: Create without a prompt.
+
+162
+00:26:35.150 --> 00:26:39.290
+Oliver Shore: Oh, that's how I usually do it, too. Like, that's how I'm always doing it.
+
+163
+00:26:39.290 --> 00:26:47.040
+Davicho Barona: why I felt like I needed to tell you this. So, a lot of times what I'll do, if I'm doing it through the toolbar, is I'll just put, like, one letter. Whoops.
+
+164
+00:26:47.150 --> 00:26:55.270
+Davicho Barona: Like, I will literally just put one letter as my prompt, and just hit create. Because then it has no con… it's almost like…
+
+165
+00:26:55.300 --> 00:27:08.569
+Davicho Barona: what am I… it has no real context of what you're trying to do. It'll at least just let you create, right? And it'll… it's basically like doing a no prompt, right? And don't hit enhance at that point, because then who knows what it's gonna… it's gonna come up with.
+
+166
+00:27:08.610 --> 00:27:26.779
+Davicho Barona: So, if you're doing it through the toolbar, do it… or through right-click, put just a single letter. I actually need to get this fixed. I need it to be able… I've brought this up a couple times internally, I want to make sure to echo that again. But if you do it through the agent, you don't have to prompt. So if I do this.
+
+167
+00:27:27.350 --> 00:27:30.319
+Davicho Barona: Right, I got both my assets selected, and I can just say.
+
+168
+00:27:30.570 --> 00:27:41.870
+Davicho Barona: modify this video using this image as the start frame, and like I said, usually here, I say, like, sweep.
+
+169
+00:27:42.080 --> 00:27:50.150
+Davicho Barona: whatever strengths I want, you know, maybe I kind of have a good idea, and I can just say, use, you know, Flex 2,
+
+170
+00:27:50.400 --> 00:27:57.870
+Davicho Barona: Or I can say, like, sweep, adhere… through Flex.
+
+171
+00:27:58.500 --> 00:28:09.499
+Davicho Barona: strengths, or something like this, so then I would see, like, 6 different videos. Obviously, that costs money, but if you're doing 720p in Modify, it shouldn't be so, so bad.
+
+172
+00:28:09.650 --> 00:28:15.719
+Davicho Barona: But in this case, I don't have the prompt. In this case, I'm just telling the agent what to do.
+
+173
+00:28:16.770 --> 00:28:18.030
+Oliver Shore: That's really helpful.
+
+174
+00:28:18.030 --> 00:28:18.480
+Davicho Barona: and running.
+
+175
+00:28:18.480 --> 00:28:36.260
+Oliver Shore: I know in the past, though, that, like, I don't know if this is still a thing, but, like, generating at 1080, like, usually gave us, like, better results. Is it something now that, like, if you do do it at 720, that you'll… you'll still get good results as 1080? Or it's…
+
+176
+00:28:36.260 --> 00:28:40.590
+Davicho Barona: You should get good results. It's kind of negligible, obviously.
+
+177
+00:28:40.590 --> 00:28:40.960
+Oliver Shore: Okay.
+
+178
+00:28:40.960 --> 00:28:54.850
+Davicho Barona: It's really just a matter of the resolution that you need, but I find 720 to be, like, very, very good. I usually don't go into 1080, to be honest, but that's just me also, because I may not have the same needs.
+
+179
+00:28:54.850 --> 00:29:01.789
+Davicho Barona: I just… I want speed, and I want scale, and I have not seen any…
+
+180
+00:29:01.820 --> 00:29:07.359
+Davicho Barona: sacrifices that I've needed to make in terms of quality, if I just… if I'm going 720.
+
+181
+00:29:08.500 --> 00:29:09.519
+Oliver Shore: Thank you so much, David.
+
+182
+00:29:09.520 --> 00:29:18.740
+Davicho Barona: Like the, like the, like the actual, you know, quality of the content, of, of, you know, the outcome.
+
+183
+00:29:18.890 --> 00:29:19.730
+Davicho Barona: Yeah.
+
+184
+00:29:19.950 --> 00:29:21.009
+Davicho Barona: Yeah, no worries.
+
+185
+00:29:21.890 --> 00:29:25.400
+Oliver Shore: Very helpful. Really appreciate you answering those questions.
+
+186
+00:29:25.400 --> 00:29:34.409
+Davicho Barona: Yeah, you bet. Let me just take a peek here. Okay, thank you, Sharky, for answering. Okay, so, if there's no more questions, since I don't… how much time do I have?
+
+187
+00:29:34.560 --> 00:29:36.449
+Davicho Barona: I have a little bit more time.
+
+188
+00:29:36.760 --> 00:29:45.230
+Davicho Barona: Let me go through a… And… I…
+
+189
+00:29:45.720 --> 00:30:01.810
+Davicho Barona: Also, for anyone who didn't see any of this last week, and they were free to email me, drop a line and I'll share. We are definitely going to be better at adding all this content, like, directly on the Learning Center, but for now.
+
+190
+00:30:02.070 --> 00:30:15.079
+Davicho Barona: Let me drop my email address, and please send me an email after this, and I can send you the recording of today, and I can send you the recording of last time if you need it as well. So I can just start from down here. I wanted to show a couple…
+
+191
+00:30:15.610 --> 00:30:25.980
+Davicho Barona: things here. Uni One, number one, a lot of people have been asking me, what do I use Uni One for? I love Uni One for these kinds of very realistic-looking shots.
+
+192
+00:30:26.320 --> 00:30:41.279
+Davicho Barona: So, in this case, I wanted to make this dude flow. I wanted to make this look like it was, like, taken on an iPhone, like, really real-looking imagery. So I went to Uni One, and I just prompted… actually went to the agent and just prompted, this…
+
+193
+00:30:41.280 --> 00:30:53.300
+Davicho Barona: You can take a look at this later if you want to email me for the board, you can look at that prompt, but I basically try to use Uni One for these kinds of imagery, where it's, like, really real…
+
+194
+00:30:53.350 --> 00:31:11.850
+Davicho Barona: legitimate, genuine-looking photos that then I can use, like, for example, Kling, or a model that's really good at holding onto those aesthetics and giving me, like, real action. Kling 3 is a great model for that. Then I can just talk about it, with, with,
+
+195
+00:31:13.680 --> 00:31:23.290
+Davicho Barona: Give me, like, a really interesting, like, really realistic shot, Whereas listening to all these…
+
+196
+00:31:25.970 --> 00:31:34.339
+Davicho Barona: visual cues that Uni One gave it, because it looks so real, and I'm also saying that it's, like, found footage, and that it's shot on a cell phone.
+
+197
+00:31:34.340 --> 00:31:53.509
+Davicho Barona: Then I… and then with Cling and the sounds it generates, it's just such a great combination. Uni One and Cling, for real-looking footage, is awesome. Start with Uni One for your, your imagery. I'm very much a image-to-video guy, or keyframes guy. That's my, like.
+
+198
+00:31:53.510 --> 00:31:56.850
+Davicho Barona: first mode of controlling what I want to make is…
+
+199
+00:31:57.170 --> 00:32:20.259
+Davicho Barona: visuals, this is sort of what I was telling you, Elle, before, is like, prompts are cool, but once you have a visual out of a prompt or whatever, that's your new… that's your grounding point. Like, not more and more prompting, but, like, that visual is your grounding point, and always use that as, like, your jumping-off point, right? So, like, even here, where this looks like found footage, and it looks like it was shot on a cell phone.
+
+200
+00:32:20.260 --> 00:32:25.789
+Davicho Barona: That's what I'm gonna tell my video model. This was found footage, and it was shot on a cell phone.
+
+201
+00:32:26.810 --> 00:32:44.019
+Davicho Barona: I don't have to go crazy, like, adding all kinds of crazy details, just make sure that you're following the cue of your original image once you're trying to animate it into something. If you did this without a prompt, if you just tried to animate this without any prompt at all.
+
+202
+00:32:44.020 --> 00:32:48.750
+Davicho Barona: You still would probably get decent results, because the visual drives
+
+203
+00:32:48.750 --> 00:33:03.260
+Davicho Barona: the generation, like, without you even having to prompt, it's gonna understand that it's found footage, and that it was shot on a cell phone. But I also like to make sure that it has that, like, shakiness to it.
+
+204
+00:33:03.260 --> 00:33:13.559
+Davicho Barona: that the audio that's coming out sounds really legitimate. That's why I kind of, you know, I do want to go into it a little bit and prompt just a little bit further.
+
+205
+00:33:13.950 --> 00:33:30.819
+Davicho Barona: Also, here's another set of, like, Uni One generations. Again, very cool, like, legit-looking generations here, where, again, calling for, like, really realistic, candid shots,
+
+206
+00:33:31.150 --> 00:33:50.060
+Davicho Barona: at, like, a Chili's or something, and then, again, I'm using Kling to then go in and animate these according to whatever it is that I was asking for. I do see some artifacts, and I see some hallucinations with different little things in different places, but I could probably do a better job, and I could probably do, like, a better job cleaning that up
+
+207
+00:33:50.060 --> 00:34:09.859
+Davicho Barona: in the image side of it, right? Like, because the image, like, I have no idea what these things are here, so I could surgically go in here, remove some of these unknowns, which then would not come out on that video, right? Like, all these little things, like, I don't know what those things are, but that's where, you know.
+
+208
+00:34:10.000 --> 00:34:17.589
+Davicho Barona: going back to what I mentioned before, prep your assets before you go and start making stuff. Really look at everything first.
+
+209
+00:34:17.590 --> 00:34:31.840
+Davicho Barona: Everything looks legit when you look at a distance, then when you start looking close, you probably will want to fix certain things before you then send to generate. Whether you take this into Photoshop and do generative fill for in-painting right now, or whatever it is, or…
+
+210
+00:34:31.840 --> 00:34:40.760
+Davicho Barona: go into Nano Banana and try to fix it surgically. Totally fine, up to you what your pipeline looks like, but…
+
+211
+00:34:41.389 --> 00:34:52.180
+Davicho Barona: at the end of the day, is making sure you take care of those assets beforehand, and then you send them to Animate, once they're really nice and prepped.
+
+212
+00:34:52.179 --> 00:35:02.460
+Davicho Barona: And here, look, like, in this case, right, like, here's another version of this, this guy, like, floating off the ground, all this stuff falling around him, the families are all freaked out. I can make the video.
+
+213
+00:35:03.950 --> 00:35:10.719
+Davicho Barona: And I'm doing this, like, frozen in time, this kind of, like, really cool, kind of slow-motion, like, orbiting effect.
+
+214
+00:35:11.060 --> 00:35:14.370
+Davicho Barona: Cameras rotating around him, like, super slow-mo.
+
+215
+00:35:14.510 --> 00:35:21.019
+Davicho Barona: But in this case, too, I can come in here first, prep my asset, and I'm just gonna, like, remove the lighting, so I can, like, remove…
+
+216
+00:35:21.270 --> 00:35:37.010
+Davicho Barona: actually, the light, I think I initially meant to say lightning, but I just said lighting, so it turned, like, all that kind of, like, overhead lighting off, and sort of brought the mood down a bit, and then go from there. Then I can… then I can animate from there, and
+
+217
+00:35:37.740 --> 00:35:43.609
+Davicho Barona: I prepped my asset, you know, I kind of did what I needed to do there, and then went on,
+
+218
+00:35:43.700 --> 00:35:53.409
+Davicho Barona: To… to the animation. Instead of animating first, and then realizing, like, oh, I… now I gotta go back and try to remove all these things, because now I really like this…
+
+219
+00:35:53.430 --> 00:36:12.600
+Davicho Barona: this version of it, like, save yourself that pain, and prep ahead of time. Images and image editing is so much cheaper, so much easier than when you already have a video. So prep your keyframes is, like, the best advice I can give you. Prep, prep, prep, and then you'll see you send it for video, and it's, like, first time, done.
+
+220
+00:36:12.650 --> 00:36:27.949
+Davicho Barona: And you didn't spend tons of credits, you had enough credits to do, like, a 10-second with audio, so prep… that's what should take you the longest. Prep your assets, and then you send it for generation, and you should have yourself, like, a pretty decent-looking,
+
+221
+00:36:28.370 --> 00:36:29.640
+Davicho Barona: result.
+
+222
+00:36:29.640 --> 00:36:52.309
+Davicho Barona: Same thing here, this is using that same video that I… that we created here, this 10-second video, but now I'm gonna put that through modify. And so what I did is, like, I just took this image now, because let's say I… sure, I prepped my asset here, I removed the lighting, and then I generate it again, right? But this generation sure looks a lot different than this one.
+
+223
+00:36:52.310 --> 00:37:06.850
+Davicho Barona: But I really did like this one. I liked the motion, I liked the way he was… I liked the way the camera went around. This is completely different, right? I can't fix the lighting and then regenerate and try to make it the same as it was before. Not gonna work that way.
+
+224
+00:37:06.850 --> 00:37:19.430
+Davicho Barona: So instead, again, I fixed the lighting, and then in this case, I can put it through video-to-video. I liked everything about this video. I liked the way it moved through, I liked all of that stuff, but I liked the way that this
+
+225
+00:37:19.430 --> 00:37:35.790
+Davicho Barona: has now the, you know, the lighting removed, and maybe I like that better. So now I do that same thing as before. I go to the agent, this is the same thing that I showed you just before, Oliver. Go to the agent, say, modify this video using this image, right? So I'm, like, selecting, selecting, it's in my agent.
+
+226
+00:37:36.150 --> 00:37:45.830
+Davicho Barona: both of them, and then I just say, modify this video using this image as a start frame. I said, sweep it here, 1 through flex 3, so I can compare them, and then…
+
+227
+00:37:45.990 --> 00:37:53.540
+Davicho Barona: I'll get all these different results, right? These are all the Flex, whatever I just said, Flex 3…
+
+228
+00:37:53.900 --> 00:38:09.600
+Davicho Barona: Adhere 1 through Flex 3, and then I land on this modify adhere, which, yes, it does have… there's more glow in his eyes than before, so I probably have to try to fix that. Potentially.
+
+229
+00:38:09.630 --> 00:38:24.369
+Davicho Barona: That's potentially what I could fix in the… in my prompt itself, like, make his eyes not glow, or something like that, or I could put this through again, through modify video here.
+
+230
+00:38:24.790 --> 00:38:42.870
+Davicho Barona: Especially once his eyes start lighting up, like, right there, maybe I don't want that. But anyway, those are other things that you kind of may… may have to focus on a little bit more. But I felt like I should just kind of show how I would go through that process.
+
+231
+00:38:42.910 --> 00:38:45.169
+Davicho Barona: To avoid this feeling of, like.
+
+232
+00:38:45.540 --> 00:38:49.790
+Davicho Barona: Oh, I generated everything, and now I just wish it had this one change.
+
+233
+00:38:49.790 --> 00:39:05.579
+Davicho Barona: But I can't do it because I have the video now, and now I, you know, what do I do now? Do I start again? Now I used up all those credits, now how do I… so just planning ahead and thinking about modifying your assets and preparing your assets before
+
+234
+00:39:05.590 --> 00:39:11.829
+Davicho Barona: generating, like, really go through and prepare your assets. Any questions on any of that?
+
+235
+00:39:12.660 --> 00:39:13.549
+Davicho Barona: By the way.
+
+236
+00:39:14.860 --> 00:39:23.240
+Davicho Barona: Oopsie, got some stuff in the chat, okay. Cool. So… from there…
+
+237
+00:39:23.940 --> 00:39:27.059
+Davicho Barona: Let me just make sure everybody's allowed to talk here.
+
+238
+00:39:27.330 --> 00:39:28.360
+Davicho Barona: Hey, Wen.
+
+239
+00:39:28.780 --> 00:39:40.710
+Davicho Barona: From there, I wanted to show you this process here, I… Wanted to make…
+
+240
+00:39:41.030 --> 00:39:43.070
+Davicho Barona: Kind of like this Pint My Ride.
+
+241
+00:39:43.620 --> 00:39:57.100
+Davicho Barona: type of, type of animation. Actually, it was really just the transformation I wanted from image to image. And so I uploaded a photo of this truck, and I then,
+
+242
+00:39:58.160 --> 00:40:04.070
+Davicho Barona: Actually, what I should… what I should actually start with is I created this,
+
+243
+00:40:04.670 --> 00:40:15.839
+Davicho Barona: repeatable workflow, and I think I've talked to you guys before about how to make these repeatable workflows, and honestly, all it takes is asking the agent to create a
+
+244
+00:40:16.150 --> 00:40:26.360
+Davicho Barona: prompt-based, repeatable workflow text document, and then you'd give it the outcome, like, that does this, and that basically, in this case, I would say that
+
+245
+00:40:26.360 --> 00:40:44.030
+Davicho Barona: takes an image, a photo of a car, and completely transforms it into multiple different styles, and then I can say… and I can trigger this text document by selecting it, selecting an image, and just saying, like, run, or something like that.
+
+246
+00:40:44.300 --> 00:41:03.600
+Davicho Barona: So I created this document, and please, if you want more instructions on how to do that, I did a whole webinar, or a couple, actually, on these repeatable workflows. Please send me an email, and I will also have more, information on this on the Learning Center as soon as I get a little bit of time.
+
+247
+00:41:03.600 --> 00:41:06.249
+Davicho Barona: So I took that workflow.
+
+248
+00:41:06.330 --> 00:41:11.119
+Davicho Barona: In this workflow, there's all these different presets, which the agent builds in
+
+249
+00:41:11.120 --> 00:41:26.969
+Davicho Barona: like, it recognizes what you're trying to do, and it builds in all these different, variables. Like, for example, the Japanese Bosasoku, style cars, which look very much like this. They're, like, custom cars, look crazy. Also, like, a time attack.
+
+250
+00:41:26.970 --> 00:41:29.930
+Davicho Barona: variable that I built in, which is more of a race.
+
+251
+00:41:29.930 --> 00:41:43.689
+Davicho Barona: kind of a… of a… Outcome, and then a Mad Max wasteland, which was obviously more like a Mad Max sort of dystopian end of the world thing, and so that's what this…
+
+252
+00:41:43.710 --> 00:42:00.800
+Davicho Barona: workflow does, is it takes an image of your car, transforms it according to whatever variables you tell it to. In this case, I just said to run these 3 variables here that are inside of here. It has a lot more than 3, but I just decided to do it with those 3 for now.
+
+253
+00:42:00.970 --> 00:42:12.579
+Davicho Barona: Then I get those 3 different results, and now I can actually… now I have… I created another workflow, which is a keyframe transition.
+
+254
+00:42:12.580 --> 00:42:21.930
+Davicho Barona: basically mimicking a video game, like, select screen. So, it turns any image
+
+255
+00:42:22.530 --> 00:42:31.990
+Davicho Barona: Any set of images, any two keyframes, it creates this transition between them that makes it look like you're in a video game kind of select screen, sort of a style.
+
+256
+00:42:32.000 --> 00:42:49.830
+Davicho Barona: And so, I would basically just select my original photo, then I… after I ran it through my workflow of, like, transformation, I would select my transform photo, and then I would,
+
+257
+00:42:49.850 --> 00:42:57.539
+Davicho Barona: run one of these presets, or multiple of these presets, to get these kinds of animations here, where,
+
+258
+00:42:57.750 --> 00:43:04.910
+Davicho Barona: Going from one to the other in this, like, really fun transformation here.
+
+259
+00:43:06.700 --> 00:43:16.100
+Davicho Barona: That feels like a video game screen select, kind of, where I'm… Going… from one another.
+
+260
+00:43:16.610 --> 00:43:21.780
+Davicho Barona: And with Eric's, white, I'm not sure why.
+
+261
+00:43:22.090 --> 00:43:22.910
+Davicho Barona: Am I?
+
+262
+00:43:24.450 --> 00:43:29.029
+Davicho Barona: All of these are really fun. They transform into each one of these trucks. Please shoot me a,
+
+263
+00:43:29.450 --> 00:43:31.679
+Davicho Barona: Here's another version of that.
+
+264
+00:43:33.250 --> 00:43:36.740
+Davicho Barona: why it's kind of, like, stopping and going.
+
+265
+00:43:37.040 --> 00:43:39.959
+Davicho Barona: Shoot me an email if you want this.
+
+266
+00:43:41.980 --> 00:43:52.380
+Davicho Barona: David, how do I switch from the standard view of Dream Machine to this floating board? You're actually in two different apps. So, Dream Machine, which we're just looking at here, which is this.
+
+267
+00:43:53.200 --> 00:43:55.299
+Davicho Barona: Like, this is your board's view.
+
+268
+00:43:55.890 --> 00:44:09.940
+Davicho Barona: Yeah, Shrekie's sending you the right… the right link there. That app.lumalabs.ai is different than dreammachine.lumalabs.ai. They're two totally different systems,
+
+269
+00:44:10.880 --> 00:44:15.229
+Davicho Barona: And you'll have to… you'll have to open an account here. They're two separate accounts.
+
+270
+00:44:18.810 --> 00:44:20.120
+Davicho Barona: And…
+
+271
+00:44:21.240 --> 00:44:32.660
+Davicho Barona: Talk to us also, just… and I'm not gonna make any, like, weird promises I can't keep, but I do think that your credits could run over, depending on how many you have.
+
+272
+00:44:32.740 --> 00:44:47.999
+Davicho Barona: So just… we can… we can kind of look at that so that you have some credits to start with. You'll have some free credits to start with, I think a few thousand, but depending on how many you have in Dream Machine, maybe there's a way that we can work with you on it.
+
+273
+00:44:48.370 --> 00:44:55.799
+Davicho Barona: In any case, really fun workflows like this, where, you know, you're really going from, something
+
+274
+00:44:56.090 --> 00:45:13.229
+Davicho Barona: mundane to something that's a lot more fun, a lot more, like, animated. And as the video models get better and better as well, like, you'll see these kinds of animations will get better and better, too. So having these workflows.
+
+275
+00:45:13.230 --> 00:45:19.370
+Davicho Barona: are… is really, really key. Please email me, if you want to see some of these.
+
+276
+00:45:19.370 --> 00:45:35.439
+Davicho Barona: I will make them more accessible on, the Learning Center. For now, it's kind of a one-to-one thing. So just feel free to hit me up, and I can give you more clues about how to make these workflows,
+
+277
+00:45:35.890 --> 00:45:50.079
+Davicho Barona: for whatever process you want them for. It's not just for this, they can be for all kinds of different stuff. Okay, that is actually all the time that I have today for you guys.
+
+278
+00:45:50.480 --> 00:46:08.449
+Davicho Barona: I really, really do appreciate you guys being here, and, please, if there's something that I didn't cover, or… or something that, you know, you want to look into a little bit deeper, please send me an email, we'll try to take it offline. Otherwise, we'll be here next week.
+
+279
+00:46:11.420 --> 00:46:12.290
+Davicho Barona: Cool.
+
+280
+00:46:14.040 --> 00:46:22.899
+Davicho Barona: Okay, thank you guys. Any last comments, any last questions, any last little somethings? Let me know. Otherwise, I will,
+
+281
+00:46:23.330 --> 00:46:26.170
+Davicho Barona: I will see you guys next week. You're welcome, no problem.
+
+282
+00:46:26.170 --> 00:46:27.499
+Oliver Shore: Thank you, David.
+
+283
+00:46:27.500 --> 00:46:29.080
+Davicho Barona: Thanks, Oliver, appreciate you.
+
+284
+00:46:30.280 --> 00:46:31.220
+Davicho Barona: You bet.
+
+285
+00:46:31.650 --> 00:46:32.690
+Davicho Barona: Thanks, guys!
+
+286
+00:46:33.280 --> 00:46:34.110
+Davicho Barona: Cheers.
+

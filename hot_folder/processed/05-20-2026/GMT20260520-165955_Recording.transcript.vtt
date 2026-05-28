@@ -1,0 +1,1326 @@
+WEBVTT
+
+1
+00:00:09.130 --> 00:00:10.420
+Davicho Barona: Hey, guys.
+
+2
+00:00:14.300 --> 00:00:19.010
+Davicho Barona: Welcome, welcome, you guys, how are you? Hey, Eric, good to see you, man, glad you made it in.
+
+3
+00:00:23.350 --> 00:00:25.880
+Davicho Barona: I am.
+
+4
+00:00:28.080 --> 00:00:28.730
+Jay Torres: Hello?
+
+5
+00:00:29.150 --> 00:00:30.130
+Davicho Barona: Hey!
+
+6
+00:00:30.130 --> 00:00:30.820
+Jay Torres: Good morning.
+
+7
+00:00:31.540 --> 00:00:32.950
+Davicho Barona: Good morning, how are ya?
+
+8
+00:00:32.950 --> 00:00:34.120
+Jay Torres: Good, how are you doing?
+
+9
+00:00:34.120 --> 00:00:36.970
+Davicho Barona: Excellent. Excellent, man. I.
+
+10
+00:00:36.970 --> 00:00:38.190
+Jay Torres: Is it the ratio?
+
+11
+00:00:38.190 --> 00:00:44.010
+Davicho Barona: Yeah, Davico, or David, I go by both. But Davico is, sort of my…
+
+12
+00:00:44.880 --> 00:00:48.889
+Davicho Barona: my childhood nickname that I'm reliving out now.
+
+13
+00:00:48.890 --> 00:00:49.910
+Jay Torres: I love it, I love it.
+
+14
+00:00:50.300 --> 00:00:51.280
+Jay Torres: Where you from originally?
+
+15
+00:00:51.280 --> 00:00:52.609
+Davicho Barona: I'm from Colombia, originally.
+
+16
+00:00:52.610 --> 00:00:54.360
+Jay Torres: Oh, nice. I'm a Boricua.
+
+17
+00:00:54.850 --> 00:00:57.239
+Davicho Barona: Hey, hey! Puerto Rico!
+
+18
+00:00:57.240 --> 00:00:59.390
+Jay Torres: Not a lot of… not a lot of us in tech.
+
+19
+00:00:59.770 --> 00:01:01.940
+Davicho Barona: No, but great to see you, man.
+
+20
+00:01:01.940 --> 00:01:02.879
+Jay Torres: Yeah, same.
+
+21
+00:01:03.850 --> 00:01:09.300
+Jay Torres: I, I'm also being joined by my partner on the other side, Shamoy.
+
+22
+00:01:10.050 --> 00:01:10.400
+Davicho Barona: Excellent.
+
+23
+00:01:10.400 --> 00:01:13.330
+Jay Torres: He'll be joining us. So is this just us today?
+
+24
+00:01:13.610 --> 00:01:30.779
+Davicho Barona: No, we got a few more folks here, joined in here. We're probably gonna… I assume we'll end up somewhere around 20 or so. Usually, I just spend the first few minutes here allowing people to talk and having a, you know, sort of a back and forth with some questions. My goal today is really just to cover
+
+25
+00:01:31.050 --> 00:01:33.609
+Davicho Barona: Sea Dance.
+
+26
+00:01:33.760 --> 00:01:36.269
+Davicho Barona: And, it's…
+
+27
+00:01:36.740 --> 00:01:55.820
+Davicho Barona: appearance now in Luma, and just our ability to use it and to generate with it, and I just wanted to walk through some guides, share a board that has a bunch of really useful stuff, and then just share a couple tips on how to use it and kind of how to get the most out of it.
+
+28
+00:01:55.820 --> 00:02:11.229
+Davicho Barona: that was… that's gonna be sort of my overall plan today. I can also dive into a couple other things if we need to, but I feel like we probably spend, most of the time on that. But I usually start just by taking a couple questions.
+
+29
+00:02:11.290 --> 00:02:21.470
+Davicho Barona: for the first, you know, 5-10 minutes, or however it takes. Yes, Jacques, we got… it's in.
+
+30
+00:02:21.700 --> 00:02:36.889
+Davicho Barona: I don't have, let me see if I have anyone else, helping me today with questions and stuff. I don't think I do. So, it's just gonna be me, which what that means is sometimes,
+
+31
+00:02:37.060 --> 00:02:38.320
+Davicho Barona: the chats…
+
+32
+00:02:38.780 --> 00:02:53.069
+Davicho Barona: will not get as much love as usual, so if you do have a question, and I'm not checking the chats, and I'm not answering, please just raise your hand so that I can see that you have a question, and then you can just kind of shout it out.
+
+33
+00:02:53.070 --> 00:03:01.609
+Davicho Barona: But, in the spirit of that, does anyone have anything? Do you guys have, like, anything that stands out that you're having a massive issue with? Like, big blockers?
+
+34
+00:03:01.610 --> 00:03:11.760
+Davicho Barona: Or something that you're just, like, really itching to find out a little bit more about it, or that you want me to touch on, or show something. Yeah, let's start there.
+
+35
+00:03:17.060 --> 00:03:22.429
+Davicho Barona: And feel free to shout it out, just take yourself off of mute, and feel free to shout it out.
+
+36
+00:03:22.430 --> 00:03:28.970
+Eric David: I was just gonna ask, what's the latest new developments in, in Luma agents, but you already covered that. We're talking about CDANs.
+
+37
+00:03:28.970 --> 00:03:41.670
+Davicho Barona: Yeah, yeah, CDance is gonna be probably the newest development right now, as far as, like, a new addition. You probably will experience a few different feature changes, and you might see some different things.
+
+38
+00:03:42.290 --> 00:04:00.759
+Davicho Barona: kind of changing on the UI front, potentially. Also, NanoBanana2 is in product. Artura's here also. Thanks, Artur, for joining. He will also help me monitor chats, and then, I only have about half an hour, so he'll probably take over for the last 15 minutes. Artur, if that's okay?
+
+39
+00:04:01.060 --> 00:04:03.350
+Davicho Barona: Awesome.
+
+40
+00:04:03.440 --> 00:04:18.550
+Davicho Barona: So yeah, like I said, you might see some, you know, developments in the UI, and maybe some feature updates and cleanup stuff, so that happens all the time, but as far as, like, the newest additions and sort of the biggest moments of the last couple weeks.
+
+41
+00:04:18.550 --> 00:04:22.279
+Davicho Barona: are, yes, A, Sea Dance 2, now in product.
+
+42
+00:04:22.280 --> 00:04:40.019
+Davicho Barona: B, also Nano Banana 2, and GPT2 Image 2, as opposed to just GPT Image 1.5, which is actually a really, really solid, model for multiple different, use cases, specifically
+
+43
+00:04:40.660 --> 00:04:48.819
+Davicho Barona: complex use cases. I truly love it for, it's kind of a Nano Banana Pro…
+
+44
+00:04:49.320 --> 00:04:56.460
+Davicho Barona: comparable product. So, comparable model, so I would say, like, Both of those…
+
+45
+00:04:56.910 --> 00:05:04.329
+Davicho Barona: are the top image models for those kind of surgical edits. You need one…
+
+46
+00:05:04.520 --> 00:05:17.720
+Davicho Barona: And Artur, I don't know if you know this or not, but I did see a Uni 1.1, addition to the product, but I'm not sure if that's only for me for testing right now, or if that's actually released in the wild.
+
+47
+00:05:17.930 --> 00:05:18.600
+Jacques Stroweis: No.
+
+48
+00:05:18.600 --> 00:05:19.730
+Artur Monteiro: we saw it.
+
+49
+00:05:20.040 --> 00:05:23.670
+Artur Monteiro: But I'm not sure if anyone… everyone is having this.
+
+50
+00:05:23.850 --> 00:05:35.669
+Artur Monteiro: Because sometimes it's behind the scenes, the Uni1, but it's already running the Uni1. But I'm not sure if the naming…
+
+51
+00:05:35.790 --> 00:05:38.149
+Artur Monteiro: Was updated in all users.
+
+52
+00:05:39.000 --> 00:05:40.000
+Davicho Barona: Okay.
+
+53
+00:05:40.100 --> 00:05:48.040
+Davicho Barona: That's good to know. I'm not sure if that's the case for everyone. Jacques, seemed like you, were seeing that it's maybe not there yet.
+
+54
+00:05:48.210 --> 00:06:07.679
+Jacques Stroweis: It's for API only, I think, so I don't know if it made it in the current release that we're using, but it's mostly API. There was a seminar, a webinar that happened a week ago. I was trying to get access to it, maybe our tour can figure it out.
+
+55
+00:06:07.680 --> 00:06:08.440
+Jacques Stroweis: Yeah.
+
+56
+00:06:08.440 --> 00:06:29.980
+Jacques Stroweis: But then, I'll just mention also, Cling Omni, it looks like Kling Omni and CDance to have multi… obviously multi-shot capabilities. I'm not sure if you're going to talk about that today, but it's a big thing, so obviously, how it integrates specifically with Luma would be fabulous to hear.
+
+57
+00:06:30.400 --> 00:06:49.829
+Davicho Barona: Yes, I may not be able to go… I haven't actually tested, that as much, so I probably won't go deep into that right now, but yes, you're right. And I do see, also that, like, for me, I do have Uni 1.1, but I'm not sure if you guys have that or not.
+
+58
+00:06:50.330 --> 00:06:51.330
+Davicho Barona: So…
+
+59
+00:06:51.740 --> 00:07:04.819
+Davicho Barona: you know, as far as updates go, I think today we'll just touch on CDance, and next week, once I get a chance to do more testing on Omni and on Multi-Shot, and…
+
+60
+00:07:05.000 --> 00:07:09.040
+Davicho Barona: Also, different references, like, I've honestly have not used…
+
+61
+00:07:09.550 --> 00:07:24.279
+Davicho Barona: video refs or audio refs yet in CDance, so… and that's a huge part of it. But I have all the guidance here of how to do it and what it does, and I've run a couple iterations on it, but I just haven't actually tested it.
+
+62
+00:07:24.280 --> 00:07:31.300
+Davicho Barona: So, let's just start here. I'm gonna go ahead and… and this board will be added to…
+
+63
+00:07:32.080 --> 00:07:41.069
+Davicho Barona: This board will be added to our, learning center as well. Where is my chat?
+
+64
+00:07:41.810 --> 00:07:48.930
+Davicho Barona: Okay, let me drop the link of this board here, and you will have this available in the
+
+65
+00:07:49.800 --> 00:08:03.549
+Davicho Barona: whatchamacallit? In the Learning Center, too. But you can take this board, you can duplicate it, so that you can actually manipulate all the assets in it, but inside of this board, number one, you're gonna see A
+
+66
+00:08:03.620 --> 00:08:17.730
+Davicho Barona: the official CDance 2.0 prompt guide from ByteDance themselves. This is really helpful. It gives you a lot of different information here, a lot of tech spec kind of data here, like what it, you know.
+
+67
+00:08:17.790 --> 00:08:30.580
+Davicho Barona: what you can do, what kind of files it accepts, etc. Then you'll see some core capabilities, too, down here, which just gives you a nice overview of kind of what's, what's, what it can do.
+
+68
+00:08:30.580 --> 00:08:42.080
+Davicho Barona: Then you'll kind of see some best practices from them as far as, like, prompt structure, and just some of the, the syntax that you, should be getting accustomed to.
+
+69
+00:08:42.080 --> 00:08:46.629
+Davicho Barona: As far as, like, Talking about your reference,
+
+70
+00:08:46.730 --> 00:08:50.940
+Davicho Barona: Assets that you're uploading, some restrictions and some warnings.
+
+71
+00:08:51.300 --> 00:09:02.149
+Davicho Barona: And some common mistakes to avoid, so you'll get that guide here on the left side, broken up into some more, like, digestible kind of bits here. Then you'll also have, kind of, my…
+
+72
+00:09:02.190 --> 00:09:14.959
+Davicho Barona: field guide here that I've kind of extrapolated, and also, after some testing, put together. Also, more general tips and, on prompting, how to kind of approach that.
+
+73
+00:09:14.960 --> 00:09:32.790
+Davicho Barona: Text-to-video, just in general, like, how that could potentially work without references. Then image reference techniques here, video reference techniques, and video editing, capabilities, because you, you really can do some modifications with CDance.
+
+74
+00:09:33.120 --> 00:09:46.940
+Davicho Barona: But just read through it, and you'll kind of see the limitations. You can extend, also. Then from there, I've also created a couple different, more practical and, like, actionable
+
+75
+00:09:46.940 --> 00:10:04.869
+Davicho Barona: prompt templates and working examples here, so you'll see some… a few different versions of that, of, like, what that could look like. One is sort of like a core prompt formula with that at image 1, or at image 2, or at video 1 syntax reference system.
+
+76
+00:10:04.870 --> 00:10:22.280
+Davicho Barona: Then some, like, copy-pasteable prompts that you can literally just bring in, and then potentially just, change up some of the stuff inside of it, right? Like, you don't have to have a luxury watch in it, you can do, something, you know, of, you know, on your own.
+
+77
+00:10:22.750 --> 00:10:34.719
+Davicho Barona: And then I also, include some, like, advanced templates, for referencing and lip-syncing, multi-shot, etc. Eric, I want to just go ahead and mute you real quick.
+
+78
+00:10:35.080 --> 00:10:53.100
+Davicho Barona: And, some camera vocabulary. One of the most powerful things, honestly, about CDance is the camera motions and how it handles those. Really, really dynamic camera motions. Also, the multi-shot versus continuous shot is really, really, amazing, and the
+
+79
+00:10:53.100 --> 00:11:03.790
+Davicho Barona: how many styles it really can handle is also really incredible. And just the way that it handles references, how many references, how you can use them, what you can do with them.
+
+80
+00:11:03.790 --> 00:11:11.159
+Davicho Barona: I will be adding to this document also, so keep this link handy, even if you did duplicate this and create your own.
+
+81
+00:11:11.160 --> 00:11:25.310
+Davicho Barona: Just make sure that you kind of keep an eye on this, because I'll add more practical examples here as well. Also, the one… the biggest limitation of CDance, which you'll see in the prompt, in, like, the CDance prompt guide section.
+
+82
+00:11:25.550 --> 00:11:44.650
+Davicho Barona: is the limitation on using realistic human faces, which obviously is a massive limitation, but there are some ways to get around this. And over here on the… on, like, the… towards the right side of this content on this board, you can see this using photo real IDs as Character References section, and this is just…
+
+83
+00:11:44.650 --> 00:11:48.389
+Davicho Barona: Three different ways to get around that limitation.
+
+84
+00:11:48.390 --> 00:12:00.049
+Davicho Barona: And I'll just, you know, I'm outlining kind of what it is and how to do it. Then I also… which is… I'll just kind of break that down, actually, real quick. So, if you have two photorealistic
+
+85
+00:12:00.050 --> 00:12:18.619
+Davicho Barona: references, even though these are two… these are AI models, as you can probably see, like, with the eyes and stuff, you can kind of see these are both synthetic, but they still represent, like, a photorealistic image. It would be the… it would behave the same exact way. But if you take… you drop your images on your board.
+
+86
+00:12:19.100 --> 00:12:26.149
+Davicho Barona: you can do it in 3 different ways. You can A draw basically an X around their face.
+
+87
+00:12:26.390 --> 00:12:32.169
+Davicho Barona: I try to do it in a way that it keeps the eyes,
+
+88
+00:12:32.480 --> 00:12:46.459
+Davicho Barona: like, visible, so that I… whatever video I'm making, it doesn't distort the eyes. Maybe it's their particular color, or… or something like that. So, I've included here just the prompt,
+
+89
+00:12:46.480 --> 00:12:54.079
+Davicho Barona: that you can run on whatever photo ID you have to draw the bold X over the face.
+
+90
+00:12:54.510 --> 00:13:01.160
+Davicho Barona: While keeping, you know, the eyes unobstructed, and keeping everything else identical, etc.
+
+91
+00:13:01.160 --> 00:13:15.119
+Davicho Barona: Then there's the gouache repaint option here, which is taking your input images. This is an example prompt here of just saying, redraw it as a gouache painting, or a gouache illustration.
+
+92
+00:13:15.400 --> 00:13:21.999
+Davicho Barona: You sometimes don't even need to add all of this. You can literally probably just say that, like.
+
+93
+00:13:22.290 --> 00:13:29.929
+Davicho Barona: this top line, redraw as a gouache painting. Actually, this is a really good tip. The words redraw
+
+94
+00:13:30.680 --> 00:13:36.360
+Davicho Barona: repaint… And, reshoot.
+
+95
+00:13:36.450 --> 00:13:48.860
+Davicho Barona: Are really great words to use when you're trying to keep the structures of things intact, and just change the style, or just change, like, the camera lens, or change the camera type.
+
+96
+00:13:48.860 --> 00:13:57.659
+Davicho Barona: So reshoot, redraw, repaint, I've realized are, like, really great, words to kind of have in the back of your mind when you're trying to switch styles.
+
+97
+00:13:57.660 --> 00:14:07.400
+Davicho Barona: But I also always like to add a little bit more detail in here, to get it to kind of behave a little bit more consistently.
+
+98
+00:14:08.180 --> 00:14:16.919
+Davicho Barona: So that's gouache, and it comes out like this, and even though it looks like this, and it looks very painterly, about…
+
+99
+00:14:17.080 --> 00:14:26.529
+Davicho Barona: 90% of your generations are going to look photorealistic. And I'll give you another kind of hint after this, also.
+
+100
+00:14:26.580 --> 00:14:37.870
+Davicho Barona: And then there's the ink wash and watercolor redraw prompt, very similar to gouache, except doing it with an ink wash or a watercolor style.
+
+101
+00:14:37.900 --> 00:14:55.700
+Davicho Barona: And this will behave very, very similarly. Again, I can just say redraw as a watercolor and ink wash illustration, that's probably good enough, but I also, I usually, like, you know, add a little bit more detail as well, so you can use this prompt to just run it on those, on those characters.
+
+102
+00:14:56.210 --> 00:15:18.490
+Davicho Barona: Or, I also have included here just a little workflow doc that I broke down that includes all the different… all those different, scenarios. So, it has gouache painting template, it has the watercolor ink gouache template, and it has the face redaction, the bold red X over the face. So, you could potentially just grab this document.
+
+103
+00:15:19.520 --> 00:15:36.490
+Davicho Barona: you know, select it, select both of your images, and then just say run in your agent chat here, and that will trigger it to just give you all the outputs at once, just in case one of them works better than the other, you want to have them all, because I have found out that sometimes
+
+104
+00:15:36.490 --> 00:15:43.210
+Davicho Barona: you know, like with gouache, for example, sometimes I'll have it, like, it'll come out as sort of a painterly…
+
+105
+00:15:43.210 --> 00:16:00.570
+Davicho Barona: generation. I'll show you also how to potentially avoid that, too. Ink wash, it just may work better for some subjects, and it may not work so well with others. So, just to give you these three options here, which I have found were the best.
+
+106
+00:16:00.610 --> 00:16:04.950
+Davicho Barona: Also, all the way to the right side, I'm linking out
+
+107
+00:16:05.130 --> 00:16:22.410
+Davicho Barona: if you go to our Discover page, which is, you know, this is the Discover page, right? You have your boards page, which is your own boards, and then you have the Discover page, which is all of these workflows here, as you probably have tried some of these. The first one here
+
+108
+00:16:22.690 --> 00:16:37.099
+Davicho Barona: being the, this, seed dance prompt factory, basically. I'm also linking to the seed, like, if you click on this link down here in this document, it'll open up that seed for you.
+
+109
+00:16:37.100 --> 00:16:46.269
+Davicho Barona: And, so, you know, you'll find it at the top left, and what this seed does is really just walk… and I… you'll see here in this document, I'll show you, like, a mock
+
+110
+00:16:46.570 --> 00:16:53.030
+Davicho Barona: flow of how that agent chat goes inside of that seed workflow, inside of that workflow.
+
+111
+00:16:53.400 --> 00:17:03.639
+Davicho Barona: And so I, you know, I'll just put kind of this guidance here from beginning to end. What this seat does is this, it just helps you create a…
+
+112
+00:17:03.970 --> 00:17:11.810
+Davicho Barona: CDance2 prompt, and that is according to all this guidance that you saw here first, like, all these different
+
+113
+00:17:11.810 --> 00:17:24.389
+Davicho Barona: documents here went into training this little workflow. So once you get in there, you'll see the agent will just walk you through a bunch of different questions, you'll just kind of select them,
+
+114
+00:17:25.329 --> 00:17:26.619
+Davicho Barona: Nope, what happened there?
+
+115
+00:17:26.619 --> 00:17:48.809
+Davicho Barona: you'll just kind of go through and select, like, through the multiple choice, like, whether you have an idea, or maybe you want to pick a preset that it tells you. I also baked in some learning about CDance, so you can go through there, and if you select this one, it'll just kind of walk you through, like, if you want to learn about CDance, and you want to, you know, talk about it with the agent, what it can do, all the different things, kind of a tutorial.
+
+116
+00:17:48.810 --> 00:18:03.389
+Davicho Barona: type of a option there as well. And then I'm just walking you through how the process goes. I added my characters in there, or my reference images in there to show you, what it is that I used.
+
+117
+00:18:03.390 --> 00:18:21.930
+Davicho Barona: I'll show you, this kind of is laid out as almost like a, like a text conversation with the agent, if you will. So, walk through that, and check that out, and then also run it yourself with your own prompt ideas. All the way at the bottom, you'll see the prompt that, at the end, it gave me here, which is like this, kind of a multi-shot prompt.
+
+118
+00:18:21.930 --> 00:18:27.610
+Davicho Barona: You'll see how those syntaxes are used for the referencing.
+
+119
+00:18:27.630 --> 00:18:29.230
+Davicho Barona: functions.
+
+120
+00:18:29.990 --> 00:18:45.069
+Davicho Barona: And you just kind of see the whole… the whole thing, and then at the end, you'll see my… my final generations here, which for some reason are having issues loading in some cases. Sometimes I just kind of have to move my…
+
+121
+00:18:45.300 --> 00:18:56.390
+Davicho Barona: Anyway, you'll see these two final outputs here, for you to just check out and kind of dissect and maybe put up against the prompt and see where it's…
+
+122
+00:18:56.940 --> 00:19:14.809
+Davicho Barona: what it's listening to, what it's not listening to. Nothing is really 100% perfect or bulletproof. CDance is a great model, but it still has its pitfalls, it still has its problems. Artifacts and hallucinations are still gonna be present. It's not, like, a perfect model by any means.
+
+123
+00:19:14.810 --> 00:19:28.710
+Davicho Barona: But it sure is awesome, and it can handle a whole lot more intricacies than most other models out there. So that is basically that for this,
+
+124
+00:19:29.140 --> 00:19:31.090
+Davicho Barona: For this whole…
+
+125
+00:19:31.120 --> 00:19:44.859
+Davicho Barona: guide board here, so please make sure that you save this. This, honestly, is such a nice little thing to have in your back pocket as you're creating and generating more with CDance, to really understand it before you start just
+
+126
+00:19:44.880 --> 00:19:59.799
+Davicho Barona: blowing through credits, because you will spend credits on CDance. It is not a cheap model, especially if you're going all the way up to the 15-second mark. I'm gonna jump over… well, first, let me ask you guys if anyone has any questions on this.
+
+127
+00:20:02.640 --> 00:20:03.620
+Eric David: I just have…
+
+128
+00:20:04.200 --> 00:20:11.490
+Eric David: I just have a question. How do those gouache images, or the X, how does that turn into the realistic image?
+
+129
+00:20:12.160 --> 00:20:16.279
+Davicho Barona: So, let me jump over into a testing board here real quick.
+
+130
+00:20:16.640 --> 00:20:17.870
+Davicho Barona: So…
+
+131
+00:20:19.400 --> 00:20:34.680
+Davicho Barona: it's interesting, it just sort of does. I guess the way that I can explain it is there's just not much training data for animated gouache or animated ink gouache type of,
+
+132
+00:20:36.340 --> 00:20:47.729
+Davicho Barona: videos, I guess, like, that the model was trained on. So, this is, like, a big testing board that I have internal here, and I'll just walk you through some of the…
+
+133
+00:20:48.520 --> 00:20:52.390
+Davicho Barona: some of these videos, just to kind of show you. So, like, for example.
+
+134
+00:20:52.510 --> 00:21:01.500
+Davicho Barona: Whenever you put in the photorealistic characters in here, every single time, you're gonna get a block, and it'll say, the input image may contain a real person.
+
+135
+00:21:01.850 --> 00:21:19.560
+Davicho Barona: please replace it and try again. You might get these blockers. As soon as you do that, then as soon as you put in the new either gouache or ink gouache, you'll see it'll… it'll actually translate to a pretty decent… but see, sometimes you might see some painterly…
+
+136
+00:21:19.760 --> 00:21:32.999
+Davicho Barona: things in there. If you do see that, I usually either regenerate, or I do this… where did I place it? I will write in…
+
+137
+00:21:34.900 --> 00:21:43.550
+Davicho Barona: this. I'll add this to the top of the prompt. In this case, it's a fight scene. So I'll write in photorealistic fight scene, all the way at the top.
+
+138
+00:21:43.560 --> 00:22:03.450
+Davicho Barona: If that doesn't work, and you're still not getting the results that you want, then go for the X method. It really depends on what your character image actually looks like, like your input image. As you can see, most of mine are pretty clean. There's, like, white background, et cetera, which is kind of what you want. You want to set it up cleanly.
+
+139
+00:22:03.450 --> 00:22:05.249
+Davicho Barona: As cleanly as you can.
+
+140
+00:22:05.250 --> 00:22:09.919
+Davicho Barona: So, like, prep your assets first, This, to me, is like…
+
+141
+00:22:09.960 --> 00:22:21.809
+Davicho Barona: my last resort, because a lot of times, if it does block the eyes, then I may not get accurate eyes in my final, generation, but it works
+
+142
+00:22:22.300 --> 00:22:34.459
+Davicho Barona: well. So sometimes this, like, in some cases, and for some of you, this may become your go-to, as opposed to, the ink wash, or the, and like, here's an example with the ink wash.
+
+143
+00:22:35.290 --> 00:22:40.549
+Davicho Barona: Where, you know, again, this is another kind of fight scene. I like using fight scenes just because of the…
+
+144
+00:22:41.410 --> 00:22:47.829
+Davicho Barona: the complexity of the movements and stuff, I actually really like testing with fight scenes. And…
+
+145
+00:22:47.830 --> 00:23:05.179
+Davicho Barona: you can see that it's not… it's not bringing over any of the styling from the ink wash. It's really keeping it very, very photorealistic, without me having to say anything. Like, I didn't say, you know, make a photorealistic fight scene, with this one here.
+
+146
+00:23:05.180 --> 00:23:08.979
+Davicho Barona: And then here's, like, a couple examples, just with those X's.
+
+147
+00:23:10.080 --> 00:23:22.470
+Davicho Barona: Also works really, really well. As you can see. Even with… even with the eyes covered, you obviously are still seeing eyes. You just, at some points, if your eyes are very particular.
+
+148
+00:23:22.620 --> 00:23:31.099
+Davicho Barona: you're gonna… it's probably not gonna pick up on those, right? So, like, if the eyes are a certain color, I like trying to not block it as much as I can. But…
+
+149
+00:23:31.330 --> 00:23:45.170
+Davicho Barona: it works, and it works very well, and very consistently. You will, at some points, or you may, at some points, see blocks like this one, where it says intellectual property or likeness detected.
+
+150
+00:23:45.210 --> 00:23:51.620
+Davicho Barona: Those are not the same as the, you know, this is a, you know,
+
+151
+00:23:51.630 --> 00:24:02.629
+Davicho Barona: I see a photo of a real person, I'm blocking it because there's a real person. This is something different. If that happens, you can also just re,
+
+152
+00:24:02.630 --> 00:24:16.949
+Davicho Barona: regenerate. Whenever something like this fails, you're not getting charged for it. This… these credits go right back into your account. The only time you do get charged,
+
+153
+00:24:17.130 --> 00:24:22.339
+Davicho Barona: And if it's considered sort of a fail, is when the judge is,
+
+154
+00:24:22.340 --> 00:24:37.739
+Davicho Barona: rejecting something, and then regenerating again, but I have not seen the judge really active at all with CDance prompts, so I haven't seen it, like, spend more credits than I actually asked it to spend.
+
+155
+00:24:37.760 --> 00:24:42.760
+Davicho Barona: So, something else…
+
+156
+00:24:42.940 --> 00:24:49.210
+Davicho Barona: that… I also tried glasses. There was a lot of talk going around that if you added glasses.
+
+157
+00:24:49.210 --> 00:25:07.499
+Davicho Barona: that that potentially would, allow you to, bypass those restrictions, but I did not get that at all. It was always, always kept coming back to me with saying that it contains a real person, which makes sense. Also, these kind of,
+
+158
+00:25:07.660 --> 00:25:19.820
+Davicho Barona: redraws are also not working very well. Original definitely not working. Things like this, like, I tried to make them look fake, like, out of plastic. Also not working. Things like this.
+
+159
+00:25:20.420 --> 00:25:28.530
+Davicho Barona: also not working. The one thing that always, always has been working for me are these gouache
+
+160
+00:25:28.980 --> 00:25:33.630
+Davicho Barona: ink wash, and watercolors, and the X's over the eyes.
+
+161
+00:25:34.130 --> 00:25:35.199
+Davicho Barona: So there's that.
+
+162
+00:25:35.530 --> 00:25:38.719
+Davicho Barona: Let me just check on the… on the chat. Yeah, Brennan.
+
+163
+00:25:38.910 --> 00:25:46.300
+Davicho Barona: That is, that is us fighting each other. Yes, it is. I have a whole series of Brennan and I, fighting each other. So…
+
+164
+00:25:46.730 --> 00:25:55.690
+Davicho Barona: The… that's that for the, photorealistic ID situation.
+
+165
+00:25:55.700 --> 00:26:19.320
+Davicho Barona: You can also do start and end frame. Some people were saying you can't do start and end frame, but you really can. You just need to talk to it. So, like, let's say I took both of these images, select one, select the other, then I actually, a lot of times, I actually will just open up CDance from the toolbar once I've done that, but you can do it with the agent. I just…
+
+166
+00:26:19.870 --> 00:26:26.349
+Davicho Barona: for whatever reason, with CDance, I've been getting used to doing it here. I felt like I have a little bit more control here.
+
+167
+00:26:27.850 --> 00:26:40.670
+Davicho Barona: And if you are, you know, you just… whoops, that's not the correct thing. I'm gonna copy this here. So, if I just select both of my images, sorry, select both of my images.
+
+168
+00:26:41.450 --> 00:26:47.019
+Davicho Barona: Open up CDance, and I'll drop this prompt in here.
+
+169
+00:26:47.370 --> 00:27:03.620
+Davicho Barona: The syntax is pretty simple. At image 1 is the top image, right? The one that's at the top here, or the first one that you clicked on. At image 2, you can go up to, I think, 9 references, potentially, quite a lot.
+
+170
+00:27:04.070 --> 00:27:05.030
+Davicho Barona: And…
+
+171
+00:27:05.200 --> 00:27:20.350
+Davicho Barona: as long as you are talking about each one in this atImageX syntax, it'll refer to that image, and then it'll bring it in to whatever action that you're trying to achieve.
+
+172
+00:27:20.350 --> 00:27:30.199
+Davicho Barona: But simply saying, using image 1 as the start frame, and image 2 as the end frame, and then kind of describing what's happening.
+
+173
+00:27:30.520 --> 00:27:46.279
+Davicho Barona: works perfectly fine to get them as start, end, or end frames, like in this, in this transition here. So, you definitely can use start and end frames there, not a problem. You just have to make sure that you tell it.
+
+174
+00:27:46.450 --> 00:27:49.140
+Davicho Barona: what, like, what you're trying to do. Yeah, Jacques.
+
+175
+00:27:50.620 --> 00:28:05.389
+Jacques Stroweis: Yes, so Cdance is quite good for its natural prompt. You can do quite a lot of things, including, I think, even more surgical V2V. But my question to you is,
+
+176
+00:28:05.390 --> 00:28:17.860
+Jacques Stroweis: how, you know, the combination of the agent and CDance would seem to be a really, really powerful combination. How do you see the agent
+
+177
+00:28:17.930 --> 00:28:25.599
+Jacques Stroweis: For this particular model help go further, even further, better.
+
+178
+00:28:26.370 --> 00:28:39.889
+Davicho Barona: Honestly, just building out super detailed prompts and understanding things like the breakdown of timing, of your, of your 15 seconds, right? So, like, for example.
+
+179
+00:28:40.330 --> 00:28:46.939
+Davicho Barona: Because look, CDance, it can handle, like, extremely long prompts.
+
+180
+00:28:47.300 --> 00:28:57.149
+Davicho Barona: big context window, and things like this, right? Like, where is this gonna be placed? 6 to 9 seconds? This is what's gonna happen around then.
+
+181
+00:28:57.530 --> 00:29:03.920
+Davicho Barona: Or things like, understanding, different…
+
+182
+00:29:04.250 --> 00:29:15.949
+Davicho Barona: how the audio syncs, like, if you have an audio reference, how it syncs up with your… with your final generation. The agent is so much better at having that understanding without you having to, kind of.
+
+183
+00:29:16.370 --> 00:29:19.830
+Davicho Barona: Dig in and figure out how all that timing works.
+
+184
+00:29:20.230 --> 00:29:21.320
+Davicho Barona: For me.
+
+185
+00:29:21.440 --> 00:29:39.210
+Davicho Barona: It's really building prompts and building out these massive sets of instructions that just work so, so well by just giving the agent very basic information. And you can kind of see that through the seed process, like this,
+
+186
+00:29:39.950 --> 00:29:42.700
+Davicho Barona: This seat,
+
+187
+00:29:43.320 --> 00:29:57.719
+Davicho Barona: what's it called? The prompt builder seed that is on the Discover page, you can really see how, from an idea like this, like, yes, my idea, you want to make sure that you, like, describe it, like, pretty deeply, but then going from here.
+
+188
+00:29:57.880 --> 00:30:06.920
+Davicho Barona: To then being able to build out this, like, really detailed prompt that goes through so many different,
+
+189
+00:30:07.180 --> 00:30:15.830
+Davicho Barona: Timing segments, you know, which shot is which, and then adding more, detail where
+
+190
+00:30:16.300 --> 00:30:26.589
+Davicho Barona: you maybe were missing it. That to me is the most powerful use for the agent, as well as taking some of these guides.
+
+191
+00:30:27.010 --> 00:30:39.579
+Davicho Barona: and distilling them into, like, a prompt. So, like, if, you know, if I were to take some of the… maybe, like, let's say these, like, prompt template and examples, I can just grab all of these.
+
+192
+00:30:39.940 --> 00:30:48.549
+Davicho Barona: And just tell the agent, like, you know, using the logic and info in these… Docs.
+
+193
+00:30:48.690 --> 00:30:54.050
+Davicho Barona: Build a prompt… For, like, you know.
+
+194
+00:30:54.800 --> 00:31:02.730
+Davicho Barona: whatever idea that you may… you may have. Really super useful with, you know, because there's… there's something that…
+
+195
+00:31:03.410 --> 00:31:20.639
+Davicho Barona: There's something important about you going through here and reading it and understanding what all this kind of, like, work… how all this works, but then, when you actually lean on the agent to sort of take that and expand on it, while keeping sort of the, the main…
+
+196
+00:31:23.040 --> 00:31:36.730
+Davicho Barona: reasoning behind these docs, and the main, like, logic behind them, and keeping that as the backbone of the… its answers, or its, its,
+
+197
+00:31:36.790 --> 00:31:45.149
+Davicho Barona: prompts that it's gonna give you is really awesome, without you having to do very much, you know, just being able to have it all there, and having the agent
+
+198
+00:31:45.150 --> 00:32:02.099
+Davicho Barona: be the one who's reading and who is understanding all of this, and then having it just spit out certain things. Also, creating a repeatable workflow or a repeatable prompt template out of something you've made, and then filling it out for you with extra detail, etc. Really great.
+
+199
+00:32:02.610 --> 00:32:19.029
+Jacques Stroweis: Yeah, that is great. I have a compliment question to this. So, it looks like in the CDance community, a lot of people are using ChatGPT2 to create storyboards and mood boards that they feed to CDance to.
+
+200
+00:32:19.030 --> 00:32:37.800
+Jacques Stroweis: how… what would be the equivalent here? Would the agent would build that storyboard, mood boards, and with objects and environments, things that you've shown a little bit in the past? Do you understand my question? Yeah. How would you do it?
+
+201
+00:32:37.800 --> 00:32:53.149
+Davicho Barona: I would definitely do that, and the cool thing is now you can pair this up with, like, these… the advanced image models, right? Like, you'll be able to… if you pair this up with, like, GPT Image 2, for example, that's so good at,
+
+202
+00:32:53.210 --> 00:33:01.170
+Davicho Barona: keeping text and things like this on screen very, very clear and detailed without messing up and without garbled text.
+
+203
+00:33:01.620 --> 00:33:18.179
+Davicho Barona: you can create full, like, comic book storyboards, where you then can actually translate that into, into a C-Dance video, and have the agent build it out according to all of this stuff, right? So, like, if you go in here, and there's,
+
+204
+00:33:18.180 --> 00:33:26.060
+Davicho Barona: You know, like, this text in video, document here. So, if…
+
+205
+00:33:26.330 --> 00:33:28.480
+Davicho Barona: If the agent knows all of this.
+
+206
+00:33:28.940 --> 00:33:45.919
+Davicho Barona: then it'll build something out that kind of pushes this into… into its generation. And so you can create all those kind of, like, complex reference tables, or, like, a full-on, like, 3x3, storyboard.
+
+207
+00:33:45.950 --> 00:33:54.969
+Davicho Barona: kind of grid single image. It will… it will help you more so than, than if you were kind of to do it on your own.
+
+208
+00:33:54.970 --> 00:34:06.780
+Davicho Barona: it may be much, much faster and much easier to kind of just test it out that way. So, the important thing is basically having these documents available
+
+209
+00:34:07.210 --> 00:34:15.320
+Davicho Barona: So that the agent knows exactly what you're trying to, to achieve, or…
+
+210
+00:34:15.870 --> 00:34:24.369
+Davicho Barona: it knows its boundaries, and it knows what to push on and what to do within the vision of what you're trying to achieve.
+
+211
+00:34:24.590 --> 00:34:39.059
+Davicho Barona: According to this, so just having this as, like, a knowledge base is really awesome, honestly. And then being able to take and use this seed… and a quick reminder about seeds, actually. So, like, if I open up this seed.
+
+212
+00:34:39.520 --> 00:34:55.240
+Davicho Barona: And it pops open this workflow, right? It's gonna start, you're gonna see all… that whole thing that you just saw there, you're gonna see all… you're gonna see it all here, just as an example, to kind of show you, what's going on. But once you… or how it's gonna work.
+
+213
+00:34:55.260 --> 00:35:13.729
+Davicho Barona: But once you get in here, again, when the agent guides you through all of this, you still have the ability to start a new chat. So, all of the workflow is packed into this particular chat. But, if you open up a new chat, this now becomes just a board.
+
+214
+00:35:13.850 --> 00:35:32.050
+Davicho Barona: But this board has the ability to route you into this chat that has this workflow built into it. So, you can also open up a seed, and then within that seed, like, you don't have to close it after you're done running this kind of test.
+
+215
+00:35:32.110 --> 00:35:49.060
+Davicho Barona: keep this as your seed, as your board. This is just a board now that happens to have this one chat that's really preloaded with this, like, dialed-in strategy behind it, that has all the knowledge that is built from all of these documents. So.
+
+216
+00:35:49.060 --> 00:35:58.290
+Davicho Barona: These seeds and aka workflows are really powerful, even just because of that. Because this is a normal board.
+
+217
+00:35:58.290 --> 00:36:03.380
+Davicho Barona: It just has this one chat in it that has got this very specific training.
+
+218
+00:36:03.430 --> 00:36:20.780
+Davicho Barona: And so from here, you know, I can just add another chat. This new chat does not have that context. So now I can build other stuff, and then I can go back to my chat and continue down here, or say, you know, I can just be like, start over, use these assets.
+
+219
+00:36:20.780 --> 00:36:31.690
+Davicho Barona: Instead, or something. And then it'll go back all the way to the beginning, and kind of guide you through this whole process again. Or you can go in and learn about CDANC, kind of go back, and it's…
+
+220
+00:36:31.750 --> 00:36:43.969
+Davicho Barona: can act as sort of your CDANC, like, concierge, sort of. You can ask it a question, like, hey, what about audio references? How do those get used? Or, like, what you were asking for, Jacques, like.
+
+221
+00:36:44.260 --> 00:37:09.120
+Davicho Barona: how, can I, what is the best way to lean on you in order to, get the most out of CDance and Luma, or something like that? And you'll see the agent will start telling you, like, this is what you can use me for, you know, this is maybe what, could be a really, you know, powerful use case of pairing the agent with CDance, etc.
+
+222
+00:37:09.390 --> 00:37:27.370
+Davicho Barona: So feel free to kind of go through that with the agent in this seed board, and just remember, any seed, that goes for any seed, as soon as you open it, it becomes part of your boards, right? So, like, I open this seed, if I go back to my, my, to my boards.
+
+223
+00:37:28.040 --> 00:37:37.309
+Davicho Barona: I now see that this is now a new… like, I've opened it multiple times, as you can see. It's a new board now. If I open it, I'm back in that board.
+
+224
+00:37:37.360 --> 00:37:48.489
+Davicho Barona: You know, I have that new chat that I had just opened, or I have the original C… so I… it's just another board that happens to have one chat loaded with tons of… of CDAN-specific stuff.
+
+225
+00:37:48.570 --> 00:38:05.099
+Davicho Barona: And that goes for any seed. Any seed that you see in here, and I've been doing a lot of work on these seeds, like, you're gonna see some pretty powerful ones here up at the top. Any one of these seeds behaves the same, the same exact way. You open it, you have a…
+
+226
+00:38:05.190 --> 00:38:06.040
+Davicho Barona: like…
+
+227
+00:38:06.240 --> 00:38:21.470
+Davicho Barona: trained chat, but then any other chat in there is just your own. Now it becomes your board, with this one chat that's very specifically trained on something. So seeds are really cool. I would, I would, venture in there when you, when you can.
+
+228
+00:38:21.470 --> 00:38:23.180
+Eric David: DeVito, I have a question.
+
+229
+00:38:23.180 --> 00:38:23.830
+Davicho Barona: Yeah, Eric.
+
+230
+00:38:24.080 --> 00:38:30.719
+Eric David: I created a story, and I had it prompted in ChatGPT, to,
+
+231
+00:38:30.740 --> 00:38:44.549
+Eric David: I had to write out the prompts, but I also had to do the actual storyboard. And on the actual storyboard, it has all the shot directions, it has all the video descriptions, it has, you know, visual references, it has timings, all on the storyboard.
+
+232
+00:38:44.590 --> 00:38:56.910
+Eric David: Now, could I literally take that storyboard, or that storyboard, plus those written-out prompts, and put it into, the agent, into Seedance, and basically just say, create this?
+
+233
+00:38:57.400 --> 00:39:11.339
+Davicho Barona: you should be able to, especially with the agent, right? Because the agent can also read that, and it can break that down into… into, like, syntax prompt. You're just gonna have to test it, because sometimes
+
+234
+00:39:11.470 --> 00:39:14.400
+Davicho Barona: depending on how ChatGPT
+
+235
+00:39:14.970 --> 00:39:31.390
+Davicho Barona: made those images, and what it took into account. Like, does it say… does it have the atImage1 character type of syntax? Does it have all of that, built into those images, or is that something that is kind of missing?
+
+236
+00:39:31.410 --> 00:39:44.329
+Davicho Barona: I would suggest run it one time. Like, run it, and see what happens, and see what the pitfalls are. It may very well be able to pick up on that, like, super quick. As you can see, like… yeah, go ahead.
+
+237
+00:39:44.330 --> 00:39:55.810
+Eric David: No, I was saying, the images in the storyboard are storyboard images, they're not, like, photorealistic images, they're, like, storyboard, you know, drawings. Some are, you know, more detailed than others, but they're still storyboard images, they're not…
+
+238
+00:39:55.810 --> 00:40:03.770
+Davicho Barona: I got you. So what you would want to do is you would want to make sure that you're telling CDance, in the CDance prompt, that
+
+239
+00:40:04.340 --> 00:40:08.260
+Davicho Barona: Let's say you have 3 images as your references.
+
+240
+00:40:08.670 --> 00:40:25.599
+Davicho Barona: Image 1 is a character, Image 2 is another character, image 3 is your storyboard image. So you're gonna have to make sure that you're telling CDance, image 1 is this character, that image 2 is this other character.
+
+241
+00:40:26.050 --> 00:40:31.230
+Davicho Barona: And image 3 is a storyboard, that I want you to…
+
+242
+00:40:31.430 --> 00:40:38.119
+Davicho Barona: or that needs to be translated into, like, a shot list, so to speak. So you have to make sure you're kind of…
+
+243
+00:40:38.460 --> 00:40:42.240
+Davicho Barona: referencing it correctly. You're not just throwing it in there.
+
+244
+00:40:42.540 --> 00:40:45.210
+Davicho Barona: and leaving it .
+
+245
+00:40:45.690 --> 00:40:49.190
+Eric David: And also, since the, since the,
+
+246
+00:40:50.230 --> 00:40:59.919
+Eric David: since the piece is 1 minute long, do I also instruct it to give me, like, you know, break it down into, you know, 4 15-second videos, or, like, how does that work?
+
+247
+00:40:59.920 --> 00:41:03.540
+Davicho Barona: Yeah, and CDAMs can also extend.
+
+248
+00:41:03.700 --> 00:41:12.439
+Davicho Barona: it can… it can do a pretty good job of extending your video, itself. So, you may need to…
+
+249
+00:41:13.970 --> 00:41:16.469
+Davicho Barona: You may need to just either
+
+250
+00:41:17.390 --> 00:41:20.840
+Davicho Barona: Keep extending it up until 1 minute.
+
+251
+00:41:20.960 --> 00:41:22.000
+Davicho Barona: or…
+
+252
+00:41:22.170 --> 00:41:38.890
+Davicho Barona: like what you just described, it's just, like, my goal is to have a one-minute video. That's another cool thing about the agent, is you can sort of plan it out first with the agent, right? As long as it has all the knowledge of how to prompt Cdance correctly, using all those docs as references.
+
+253
+00:41:39.150 --> 00:41:53.719
+Davicho Barona: then the agent is the one that's gonna probably help you build out the multiple prompts that, you know, that it's gonna take, you know, 4 different prompts for each… for 15-second shots.
+
+254
+00:41:54.000 --> 00:42:10.379
+Davicho Barona: that are sequential, and that makes sense with where one ended and where the next one begins, the agent can definitely help in that sense, like, planning out what it's gonna look like. Cdance itself is not gonna help you as much unless you're just extending.
+
+255
+00:42:10.490 --> 00:42:13.830
+Davicho Barona: And we're su- and just remember, this is, like, super early.
+
+256
+00:42:14.200 --> 00:42:23.439
+Davicho Barona: time for using CDance with an agent like this, so I personally have so much more experimentation to do, which I'll keep logging in.
+
+257
+00:42:23.550 --> 00:42:42.649
+Davicho Barona: But I would love if you also… you guys also kept that, like, record of what's happening, and how it's working for you, and what your experiments are yielding. And maybe next week we can share more of that together. That would be really great.
+
+258
+00:42:42.850 --> 00:42:44.300
+Davicho Barona: That'd be really cool.
+
+259
+00:42:44.300 --> 00:42:55.989
+Jacques Stroweis: Yeah, this is Jack, yes. This use of ChatGPT2 to build the visual Bible, essentially, with all the document elements.
+
+260
+00:42:55.990 --> 00:43:05.679
+Jacques Stroweis: I'm wondering if we can do it directly, especially for CDance, inside Luma with the agents. You would think it is, but.
+
+261
+00:43:05.680 --> 00:43:06.210
+Davicho Barona: Oh, yeah.
+
+262
+00:43:06.210 --> 00:43:09.290
+Jacques Stroweis: I don't know exactly, so, but that would be interesting.
+
+263
+00:43:09.540 --> 00:43:15.170
+Davicho Barona: Yeah, that's definitely where I would be building it, because then you're not having to leave and kind of, like…
+
+264
+00:43:16.120 --> 00:43:20.590
+Davicho Barona: cut off your… context.
+
+265
+00:43:20.710 --> 00:43:39.099
+Davicho Barona: You know, if you… since we have GPT Image 2 in here, you can certainly kind of continue your context of what you're doing from one to the other, you know? And talking to the agent about it is really key. You know, planning out with it, like.
+
+266
+00:43:39.380 --> 00:43:58.369
+Davicho Barona: you know, a lot of times, I will just go into research mode, and, like, I would just be, like, opening, like, a new chat, going to research mode, and just start planning with the agent. Like, hey, this is what I want to do. You know, I want to build a storyboard image that has, you know, like, a 3x3 storyboard image,
+
+267
+00:43:58.950 --> 00:44:16.219
+Davicho Barona: about this story idea or something, and then I want to make a… I want to use it with CDance in order to, you know, kind of control the shot list. Like, your whole kind of planning conversation could really be done right in here.
+
+268
+00:44:16.220 --> 00:44:24.349
+Davicho Barona: And then you just switch over to create mode. Once you under… once you know that it understands what you're trying to achieve.
+
+269
+00:44:24.460 --> 00:44:42.399
+Davicho Barona: Then you just switch over to Createboard and be like, alright, let's make it happen. Like, let's do it. Let's just start, let's try it. And then you'll test it. It'll help you test through it, and then it'll be like, is this working? Do we need to tweak it? What isn't working? What is working? And kind of going through the process with the agent that way is really great.
+
+270
+00:44:42.520 --> 00:44:46.970
+Davicho Barona: Give it as much context as you possibly can.
+
+271
+00:44:47.360 --> 00:44:58.690
+Davicho Barona: And what I mean by that, too, is not just context of what you are… trying to… create, But…
+
+272
+00:44:59.010 --> 00:45:11.239
+Davicho Barona: of why. Like, what your reasoning is behind doing certain things. Like, for example, a lot of times, I will tell the agent to create something with multiple image models.
+
+273
+00:45:11.450 --> 00:45:19.129
+Davicho Barona: But I won't just say, make it with these models. I'll say, make it with these models, so that I can…
+
+274
+00:45:19.320 --> 00:45:27.140
+Davicho Barona: compare outputs. And by adding that final little sign-off of, so that I can compare outputs.
+
+275
+00:45:27.160 --> 00:45:44.349
+Davicho Barona: I'm telling the agent why I'm doing this. Its responses are going to be different than if you didn't say that. It will probably organize them differently, it'll title them differently, and then it'll follow up differently. It'll say, how's this working? Which one works best? Do you want to, like.
+
+276
+00:45:44.350 --> 00:45:53.580
+Davicho Barona: do something according to this, because you're… you know what I mean? So, giving it real context of not only what you're trying to do, but why.
+
+277
+00:45:53.760 --> 00:46:02.030
+Davicho Barona: Will allow the agent to help you in different ways, because then it understands your intent, not just your task.
+
+278
+00:46:02.330 --> 00:46:05.270
+Davicho Barona: That you, that you are giving it.
+
+279
+00:46:05.490 --> 00:46:15.370
+Davicho Barona: Yeah, that's another recommendation that I've been… I've been giving out, because it helps tremendously. It kind of switches. It switches, like, thinking.
+
+280
+00:46:15.510 --> 00:46:17.490
+Davicho Barona: Yeah.
+
+281
+00:46:19.240 --> 00:46:22.160
+Davicho Barona: That's all I got for you guys today.
+
+282
+00:46:22.160 --> 00:46:26.150
+Eric David: Sorry, I also just think it's amazing how we can actually analyze music as well.
+
+283
+00:46:26.390 --> 00:46:26.760
+Davicho Barona: Yeah.
+
+284
+00:46:27.080 --> 00:46:28.090
+Eric David: It's incredible.
+
+285
+00:46:28.450 --> 00:46:32.369
+Davicho Barona: Yeah, and not only music, but also voice.
+
+286
+00:46:32.590 --> 00:46:43.919
+Davicho Barona: Just audio in general, it can truly break that down. And because we have the ability of doing voice and audio in here, too.
+
+287
+00:46:43.930 --> 00:47:00.880
+Davicho Barona: it's also helpful to have it built into one space where you… again, you're not breaking context, you're kind of keeping it here throughout. So, you know, not forgetting about the fact that you can make music, speech, and sound effects, you can also transcribe here,
+
+288
+00:47:01.240 --> 00:47:14.060
+Davicho Barona: and make captions in here as well. You can… you have options. You know, you have options of adding captions with CDance, or later, in a different style, position them differently,
+
+289
+00:47:14.140 --> 00:47:26.020
+Davicho Barona: syncopate music with your video, you know, tell it to make shot changes on different beats, etc. That's something else that the agent really is great at helping with, is like.
+
+290
+00:47:26.320 --> 00:47:35.509
+Davicho Barona: it's hard to wrap your head around that. The agent should be very helpful in that, of, like, breaking it down for you, and giving you a little bit of, like.
+
+291
+00:47:35.640 --> 00:47:37.689
+Davicho Barona: You know, aha moments itself.
+
+292
+00:47:41.630 --> 00:47:47.010
+Davicho Barona: Okay, cool. That…
+
+293
+00:47:47.070 --> 00:48:04.419
+Davicho Barona: is it for me. I am recording this, as always, so please feel free to reach out. I'm sorry that we don't have these recordings just available on our site right now. We will eventually have that kind of function, but please feel free to reach out if you want the recording to this.
+
+294
+00:48:04.420 --> 00:48:09.120
+Davicho Barona: Or if you didn't get the link, to,
+
+295
+00:48:09.320 --> 00:48:18.780
+Davicho Barona: to that guides board, which I'm going to, drop again in here so that no one is… wait.
+
+296
+00:48:20.290 --> 00:48:28.330
+Davicho Barona: And, just remember that the link I'm sharing here is view-only, so once you open it.
+
+297
+00:48:28.580 --> 00:48:32.689
+Davicho Barona: Just click on that drop-down, and just say duplicate.
+
+298
+00:48:32.810 --> 00:48:38.779
+Davicho Barona: That way, you then have your own copy of this, and you can manipulate all these assets.
+
+299
+00:48:39.240 --> 00:48:41.429
+Davicho Barona: And do whatever you need to them.
+
+300
+00:48:41.830 --> 00:48:42.780
+Davicho Barona: these…
+
+301
+00:48:42.970 --> 00:48:55.169
+Davicho Barona: files in here are also fully editable, so make sure you understand that, because sometimes if you're inside of here, you can delete stuff by accident, but on the flip side, you can also make edits to them.
+
+302
+00:48:55.170 --> 00:49:04.150
+Davicho Barona: You know, if you wanted to expand on one of these, or make changes, and then lean on that as a reference, or as an asset on your board to do stuff with.
+
+303
+00:49:04.200 --> 00:49:07.639
+Davicho Barona: Just keep that in mind. You can definitely edit these on the fly.
+
+304
+00:49:07.640 --> 00:49:15.730
+Eric David: It's interesting, you just mentioned the accidentally delete. Is there some sort of control command to bring something you accidentally deleted back?
+
+305
+00:49:16.300 --> 00:49:23.779
+Davicho Barona: If you delete an asset, you can actually go, like, let's just say I accidentally deleted this guy.
+
+306
+00:49:23.780 --> 00:49:41.560
+Davicho Barona: I'm like, shoot, yes, I can do Command… Command-Z to undo, but, like, maybe I didn't… I didn't realize it, and it's been deleted for a long time. There's no… there's no Command-Z function anymore. If you go… if you click either Command-F, or you click on this, little,
+
+307
+00:49:42.130 --> 00:49:45.640
+Davicho Barona: Magnifying glass at the bottom right here.
+
+308
+00:49:45.790 --> 00:49:48.999
+Davicho Barona: You can go into…
+
+309
+00:49:49.210 --> 00:50:05.590
+Davicho Barona: actually, you'll see it right here. If you see anything that's faded out, that's actually a recently deleted file. Or you can go in here, into the little filter down top here, and if you go to Archived.
+
+310
+00:50:05.750 --> 00:50:10.879
+Davicho Barona: That actually will show you all the images that have been deleted. Wait, hold on a second.
+
+311
+00:50:11.550 --> 00:50:17.619
+Davicho Barona: why is it not showing me that image, though?
+
+312
+00:50:18.700 --> 00:50:20.820
+Davicho Barona: Image archived.
+
+313
+00:50:21.420 --> 00:50:37.399
+Davicho Barona: Use that filters. I do see it in here. I'm not sure why I'm not… I'm not seeing it when I go into archive, but if you… but once you open that, you'll see a list of your assets, and you'll see ones that are… that are, like, faded out. If you click on those, it'll bring that back.
+
+314
+00:50:39.220 --> 00:50:43.879
+Davicho Barona: So whatever you've deleted lives in your asset search here.
+
+315
+00:50:44.420 --> 00:50:47.689
+Davicho Barona: And… You'll see it faded out.
+
+316
+00:50:47.930 --> 00:50:50.449
+Davicho Barona: You'll see all your assets in here, first of all.
+
+317
+00:50:50.540 --> 00:50:53.609
+Eric David: And it brings it back to where… and it brings it back to where it was.
+
+318
+00:50:53.610 --> 00:50:57.070
+Davicho Barona: It brings you back to where if I click on any of these.
+
+319
+00:50:57.320 --> 00:51:02.840
+Davicho Barona: It'll actually move my viewport to wherever that asset is.
+
+320
+00:51:03.700 --> 00:51:07.639
+Davicho Barona: it'll kind of, like, show me where it is, like, if I, you know.
+
+321
+00:51:07.930 --> 00:51:10.299
+Davicho Barona: You can see it, like, getting highlighted here.
+
+322
+00:51:10.420 --> 00:51:15.710
+Davicho Barona: So that's really useful, that little find… tool. That's great.
+
+323
+00:51:15.710 --> 00:51:16.410
+Eric David: Thank you.
+
+324
+00:51:16.740 --> 00:51:17.880
+Davicho Barona: No problem.
+
+325
+00:51:19.610 --> 00:51:38.879
+Davicho Barona: Okay, guys, I really appreciate you guys being here, and next week, I'll have more findings about this. There may be new stuff to go over as well. Please feel free to reach out, and, I'll see you guys, next week. Thanks again so much for coming. Please make use of those files.
+
+326
+00:51:42.800 --> 00:51:45.840
+Davicho Barona: Awesome. Thank you guys, much appreciated.
+
+327
+00:51:45.840 --> 00:51:47.730
+Eric David: Thanks. Thanks, Mark. Talk soon.
+
+328
+00:51:47.730 --> 00:51:48.660
+Davicho Barona: Yeah, you bet.
+
+329
+00:51:48.810 --> 00:51:49.600
+Davicho Barona: Cheers.
+
+330
+00:51:49.930 --> 00:51:50.650
+Eric David: Bye-bye.
+
+331
+00:51:50.650 --> 00:51:51.210
+Davicho Barona: Bye.
+
