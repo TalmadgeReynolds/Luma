@@ -1,16 +1,19 @@
 """
-Hot folder watcher — drop a webinar subfolder here to trigger automatic ingestion.
+Hot folder watcher — drop a webinar file or subfolder here to trigger automatic ingestion.
 
 Usage (from backend/):
     python -m app.scripts.watch_hot_folder
 
 Drop zone: <project_root>/hot_folder/
-Each subfolder must contain:
-  - *.transcript.vtt  (required — Zoom-style VTT with "Speaker: text" cues)
-  - metadata.json     (optional — title, description, date, speakers, video_url)
 
-On success the subfolder is moved to hot_folder/processed/.
-On failure  the subfolder is moved to hot_folder/failed/ with an error.txt.
+Accepted inputs:
+  - A single transcript file (*.vtt, *.transcript, *.txt) dropped directly in hot_folder/
+  - A subfolder containing a transcript file plus optional metadata.json
+
+Optional metadata.json keys: title, description, date, speakers, video_url
+
+On success the file/folder is moved to hot_folder/processed/.
+On failure  the file/folder is moved to hot_folder/failed/ with an error.txt.
 """
 
 import asyncio
@@ -20,6 +23,7 @@ import re
 import shutil
 import sys
 import time
+import urllib.parse
 from pathlib import Path
 
 from watchdog.events import FileSystemEventHandler
@@ -38,6 +42,20 @@ FAILED       = HOT_FOLDER / "failed"
 VIDEOS_DIR   = PROJECT_ROOT / "backend" / "videos"
 
 _VIDEO_EXTENSIONS = {".mp4", ".mov", ".webm", ".avi", ".mkv"}
+_TRANSCRIPT_EXTENSIONS = {".vtt", ".transcript", ".txt"}
+
+_S3_BASE = "https://luma-webinars-730335545672-us-east-1-an.s3.us-east-1.amazonaws.com"
+_GMT_DATE_RE = re.compile(r"GMT(\d{8})")
+
+
+def _build_s3_url(filename: str) -> str | None:
+    """Derive the S3 URL from a GMT-prefixed recording filename."""
+    m = _GMT_DATE_RE.search(filename)
+    if not m:
+        return None
+    date = m.group(1)
+    key = f"Luma Webinars/{date} Luma Webinar/{filename}"
+    return f"{_S3_BASE}/{urllib.parse.quote(key, safe='/')}"
 
 # --------------------------------------------------------------------------- #
 # VTT → JSON conversion
@@ -153,28 +171,40 @@ def vtt_to_segments(vtt_path: Path) -> list[dict]:
 # --------------------------------------------------------------------------- #
 # Ingestion trigger
 # --------------------------------------------------------------------------- #
-async def _run_ingestion(folder: Path) -> None:
-    """Convert VTT and call ingest_webinar for the given subfolder."""
+async def _run_ingestion(folder_or_file: Path) -> None:
+    """Convert VTT and call ingest_webinar. Accepts a folder or a bare transcript file."""
     # Import here to avoid loading DB config at module import time
     from app.db.database import AsyncSessionLocal
     from app.services.ingestion_service import ingest_webinar
 
-    # Locate transcript file — supports *.vtt, *.transcript, and *.txt
-    transcript_files = (
-        sorted(folder.glob("*.vtt")) +
-        sorted(folder.glob("*.transcript")) +
-        sorted(folder.glob("*.transcript.txt")) +
-        sorted(folder.glob("*.txt"))
-    )
-    # Exclude error.txt written by the watcher itself
-    transcript_files = [f for f in transcript_files if f.name != "error.txt"]
-    if not transcript_files:
-        raise FileNotFoundError(f"No transcript file found in {folder} (expected *.vtt, *.transcript, or *.txt)")
+    if folder_or_file.is_file():
+        # Bare file dropped directly — use it as the transcript, no metadata
+        transcript_vtt = folder_or_file
+        meta: dict = {}
+        video_search_dir: Path | None = None
+        tmp_json = folder_or_file.parent / f"_{folder_or_file.stem}_converted.json"
+    else:
+        folder = folder_or_file
+        # Locate transcript file — supports *.vtt, *.transcript, and *.txt
+        transcript_files = (
+            sorted(folder.glob("*.vtt")) +
+            sorted(folder.glob("*.transcript")) +
+            sorted(folder.glob("*.transcript.txt")) +
+            sorted(folder.glob("*.txt"))
+        )
+        # Exclude error.txt written by the watcher itself
+        transcript_files = [f for f in transcript_files if f.name != "error.txt"]
+        if not transcript_files:
+            raise FileNotFoundError(f"No transcript file found in {folder} (expected *.vtt, *.transcript, or *.txt)")
 
-    # Prefer files with 'transcript' in the name if multiple exist
-    transcript_vtt = next(
-        (f for f in transcript_files if "transcript" in f.name.lower()), transcript_files[0]
-    )
+        # Prefer files with 'transcript' in the name if multiple exist
+        transcript_vtt = next(
+            (f for f in transcript_files if "transcript" in f.name.lower()), transcript_files[0]
+        )
+        meta_file = folder / "metadata.json"
+        meta = json.loads(meta_file.read_text()) if meta_file.exists() else {}
+        video_search_dir = folder
+        tmp_json = folder / "_transcript_converted.json"
 
     # Convert transcript → segments list
     print(f"  Converting {transcript_vtt.name} …")
@@ -182,35 +212,27 @@ async def _run_ingestion(folder: Path) -> None:
     if not segments:
         raise ValueError(f"Transcript file produced 0 segments: {transcript_vtt}")
 
-    # Write temp JSON (ingestion_service reads from file path)
-    tmp_json = folder / "_transcript_converted.json"
     tmp_json.write_text(json.dumps(segments, indent=2, ensure_ascii=False))
 
-    # Load optional metadata.json
-    meta_file = folder / "metadata.json"
-    if meta_file.exists():
-        meta = json.loads(meta_file.read_text())
-    else:
-        meta = {}
-
-    title       = meta.get("title") or folder.name
+    title       = meta.get("title") or transcript_vtt.stem
     description = meta.get("description")
     date        = meta.get("date")
     speakers    = meta.get("speakers") or _extract_speakers(segments)
 
     # Copy any video file to backend/videos/ and set video_url
     video_url = meta.get("video_url")
-    if not video_url:
-        video_files = [f for f in folder.iterdir() if f.suffix.lower() in _VIDEO_EXTENSIONS]
+    if not video_url and video_search_dir:
+        video_files = [f for f in video_search_dir.iterdir() if f.suffix.lower() in _VIDEO_EXTENSIONS]
         if video_files:
-            VIDEOS_DIR.mkdir(parents=True, exist_ok=True)
-            src = video_files[0]
-            dest = VIDEOS_DIR / src.name
-            if not dest.exists():
-                shutil.copy2(str(src), str(dest))
-                print(f"  Copied video: {src.name} → backend/videos/")
-            video_url = f"/videos/{src.name}"
-            print(f"  video_url   : {video_url}")
+            video_file = video_files[0]
+            video_url = _build_s3_url(video_file.name)
+            if video_url:
+                print(f"  video_url (S3): {video_url}")
+            else:
+                print(f"  Warning: could not derive S3 URL from {video_file.name}")
+            # Use mp4 stem as title if no explicit title was set
+            if not meta.get("title"):
+                title = video_file.stem
 
     print(f"  Title   : {title}")
     print(f"  Speakers: {speakers}")
@@ -242,43 +264,45 @@ def _extract_speakers(segments: list[dict]) -> list[str]:
 
 
 # --------------------------------------------------------------------------- #
-# Folder processing (async — runs inside the single persistent event loop)
+# Item processing (async — runs inside the single persistent event loop)
 # --------------------------------------------------------------------------- #
-async def process_folder(folder: Path) -> None:
-    """Run ingestion for the given subfolder and move it on completion."""
+async def process_item(item: Path) -> None:
+    """Run ingestion for a transcript file or subfolder and move it on completion."""
     print(f"\n{'='*60}")
-    print(f"[HOT FOLDER] Processing: {folder.name}")
+    print(f"[HOT FOLDER] Processing: {item.name}")
     print(f"{'='*60}")
 
     try:
-        await _run_ingestion(folder)
+        await _run_ingestion(item)
 
-        if not folder.exists():
-            print(f"  ✓ Ingestion succeeded; folder already removed (likely moved by another process)\n")
+        if not item.exists():
+            print(f"  ✓ Ingestion succeeded; item already removed\n")
             return
 
-        dest = PROCESSED / folder.name
+        dest = PROCESSED / item.name
         if dest.exists():
-            dest = PROCESSED / f"{folder.name}_{int(time.time())}"
-        shutil.move(str(folder), dest)
+            dest = PROCESSED / f"{item.name}_{int(time.time())}"
+        shutil.move(str(item), dest)
         print(f"  → Moved to processed/{dest.name}\n")
 
     except Exception as exc:
         print(f"  ✗ Error: {exc}\n")
 
-        if not folder.exists():
-            print(f"  (folder already gone; skipping move to failed/)\n")
+        if not item.exists():
+            print(f"  (item already gone; skipping move to failed/)\n")
             return
 
-        dest = FAILED / folder.name
+        dest = FAILED / item.name
         if dest.exists():
-            dest = FAILED / f"{folder.name}_{int(time.time())}"
+            dest = FAILED / f"{item.name}_{int(time.time())}"
         try:
-            shutil.move(str(folder), dest)
+            shutil.move(str(item), dest)
         except FileNotFoundError:
-            print(f"  (folder disappeared before it could be moved to failed/)\n")
+            print(f"  (item disappeared before it could be moved to failed/)\n")
             return
-        (dest / "error.txt").write_text(str(exc))
+        # Write error alongside the item
+        err_file = dest.parent / f"{dest.name}.error.txt" if dest.is_file() else dest / "error.txt"
+        err_file.write_text(str(exc))
         print(f"  → Moved to failed/{dest.name}\n")
 
 
@@ -305,20 +329,27 @@ class HotFolderHandler(FileSystemEventHandler):
 
     def _schedule(self, path: str):
         p = Path(path)
-        if p.parent == HOT_FOLDER and p.is_dir():
-            subfolder = str(p)
+        # Bare transcript file dropped directly in hot_folder
+        if (p.parent == HOT_FOLDER and p.is_file()
+                and p.suffix.lower() in _TRANSCRIPT_EXTENSIONS
+                and p.name != "error.txt"):
+            key = str(p)
+        # Subfolder dropped in hot_folder
+        elif p.parent == HOT_FOLDER and p.is_dir():
+            key = str(p)
+        # File modified inside a subfolder (not processed/failed)
         elif p.parent.parent == HOT_FOLDER and p.parent.name not in ("processed", "failed"):
-            subfolder = str(p.parent)
+            key = str(p.parent)
         else:
             return
 
-        if subfolder in (str(PROCESSED), str(FAILED)):
+        if key in (str(PROCESSED), str(FAILED)):
             return
 
         eligible_at = time.time() + _SETTLE_SECONDS
-        if self._pending.get(subfolder, 0) < eligible_at:
-            self._pending[subfolder] = eligible_at
-            print(f"  [queued] {Path(subfolder).name} (processing in {_SETTLE_SECONDS}s …)")
+        if self._pending.get(key, 0) < eligible_at:
+            self._pending[key] = eligible_at
+            print(f"  [queued] {Path(key).name} (processing in {_SETTLE_SECONDS}s …)")
 
     def drain_due(self) -> list[str]:
         """Return and remove folder paths whose settle time has passed."""
@@ -333,11 +364,11 @@ class HotFolderHandler(FileSystemEventHandler):
 # Main async loop — single event loop for all ingestion work
 # --------------------------------------------------------------------------- #
 async def _worker(queue: asyncio.Queue) -> None:
-    """Consume folders from the queue and ingest them sequentially."""
+    """Consume files/folders from the queue and ingest them sequentially."""
     while True:
-        folder: Path = await queue.get()
-        if folder.exists() and folder.is_dir():
-            await process_folder(folder)
+        item: Path = await queue.get()
+        if item.exists():
+            await process_item(item)
         queue.task_done()
 
 
@@ -346,8 +377,8 @@ async def _main_async() -> None:
     FAILED.mkdir(parents=True, exist_ok=True)
 
     print(f"[HOT FOLDER] Watching: {HOT_FOLDER}")
-    print(f"  Drop a webinar subfolder with a .vtt transcript inside.")
-    print(f"  Optional metadata.json: title, description, date, speakers, video_url")
+    print(f"  Drop a transcript file (*.vtt, *.txt) or a subfolder with a transcript inside.")
+    print(f"  Optional metadata.json (in subfolder): title, description, date, speakers, video_url")
     print(f"  Press Ctrl+C to stop.\n")
 
     queue: asyncio.Queue = asyncio.Queue()
@@ -356,10 +387,15 @@ async def _main_async() -> None:
     # Start the background worker
     worker_task = asyncio.create_task(_worker(queue))
 
-    # Enqueue any pre-existing subfolders immediately
+    # Enqueue any pre-existing items (subfolders and loose transcript files)
     for child in sorted(HOT_FOLDER.iterdir()):
-        if child.is_dir() and child.name not in ("processed", "failed") and not child.name.startswith("."):
+        if child.name in ("processed", "failed") or child.name.startswith("."):
+            continue
+        if child.is_dir():
             print(f"[HOT FOLDER] Found existing folder on startup: {child.name}")
+            await queue.put(child)
+        elif child.is_file() and child.suffix.lower() in _TRANSCRIPT_EXTENSIONS:
+            print(f"[HOT FOLDER] Found existing file on startup: {child.name}")
             await queue.put(child)
 
     # Start watchdog observer
@@ -373,9 +409,9 @@ async def _main_async() -> None:
             await asyncio.sleep(1)
             # Drain settled watchdog events into the queue
             for folder_str in handler.drain_due():
-                folder = Path(folder_str)
-                if folder.exists() and folder.is_dir():
-                    await queue.put(folder)
+                item = Path(folder_str)
+                if item.exists():
+                    await queue.put(item)
     except (KeyboardInterrupt, asyncio.CancelledError):
         pass
     finally:

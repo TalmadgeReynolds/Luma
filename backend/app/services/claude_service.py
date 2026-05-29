@@ -24,6 +24,7 @@ if settings.ANTHROPIC_WORKSPACE:
 
 client = AsyncAnthropic(
     api_key=settings.ANTHROPIC_API_KEY,
+    base_url="https://api.anthropic.com",
     default_headers=default_headers
 )
 

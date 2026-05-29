@@ -1,29 +1,32 @@
 index,title,url,filename,word_count,status
 1,The Luma Agent,https://lumalabs.ai/learning-center/articles/about-the-luma-agent,01_the-luma-agent.txt,703,ok
-2,Just Ask The Agent,https://lumalabs.ai/learning-center/articles/ask-the-agent,02_just-ask-the-agent.txt,1201,ok
-3,Avoiding Common Mistakes,https://lumalabs.ai/learning-center/articles/avoiding-common-mistakes,03_avoiding-common-mistakes.txt,2118,ok
-4,Brainstorm Mode,https://lumalabs.ai/learning-center/articles/brainstorm-mode,04_brainstorm-mode.txt,835,ok
-5,Character and Object Consistency,https://lumalabs.ai/learning-center/articles/character-and-object-consistency,05_character-and-object-consistency.txt,639,ok
-6,Color Space Field Guide,https://lumalabs.ai/learning-center/articles/color-space-field-guide,06_color-space-field-guide.txt,598,ok
-7,Creating At Scale in Luma,https://lumalabs.ai/learning-center/articles/creating-at-scale-in-luma,07_creating-at-scale-in-luma.txt,927,ok
-8,Credit Conservation,https://lumalabs.ai/learning-center/articles/credit-conservation,08_credit-conservation.txt,849,ok
-9,Endless Variations,https://lumalabs.ai/learning-center/articles/endless-variants,09_endless-variations.txt,588,ok
-10,Luma Audio Capabilities,https://lumalabs.ai/learning-center/articles/luma-audio-capabilities,10_luma-audio-capabilities.txt,978,ok
-11,Luma Image Capabilities,https://lumalabs.ai/learning-center/articles/luma-image-capabilities,11_luma-image-capabilities.txt,841,ok
-12,Luma Image Models Field Guide,https://lumalabs.ai/learning-center/articles/luma-image-models-field-guide,12_luma-image-models-field-guide.txt,3229,ok
-13,Luma Lip Sync Guide,https://lumalabs.ai/learning-center/articles/luma-lip-sync-field-guide,13_luma-lip-sync-guide.txt,795,ok
-14,Luma Toolbar Field Guide,https://lumalabs.ai/learning-center/articles/luma-toolbar-field-guide,14_luma-toolbar-field-guide.txt,2218,ok
-15,Uni-1 Field Guide,https://lumalabs.ai/learning-center/articles/luma-uni-1-field-guide,15_uni-1-field-guide.txt,969,ok
-16,Uni-1,https://lumalabs.ai/learning-center/articles/luma-uni-1-model,16_uni-1.txt,1124,ok
-17,Luma Video Capabilities,https://lumalabs.ai/learning-center/articles/luma-video-capabilities,17_luma-video-capabilities.txt,1021,ok
-18,Luma Video Models Field Guide,https://lumalabs.ai/learning-center/articles/luma-video-models-field-guide,18_luma-video-models-field-guide.txt,4755,ok
-19,Master Reference Assets,https://lumalabs.ai/learning-center/articles/master-reference-assets,19_master-reference-assets.txt,446,ok
-20,Outcome-First Workflow,https://lumalabs.ai/learning-center/articles/outcome-first-workflow,20_outcome-first-workflow.txt,479,ok
-21,Research with Luma,https://lumalabs.ai/learning-center/articles/research-with-luma,21_research-with-luma.txt,1334,ok
-22,Starting Points,https://lumalabs.ai/learning-center/articles/starting-points,22_starting-points.txt,671,ok
-23,Team Collaboration in Luma,https://lumalabs.ai/learning-center/articles/team-collaboration-in-luma,23_team-collaboration-in-luma.txt,651,ok
-24,Text & Natural Language,https://lumalabs.ai/learning-center/articles/text-and-natural-language,24_text-natural-language.txt,1313,ok
-25,Talk To The Agent,https://lumalabs.ai/learning-center/articles/treat-the-agent-like-a-teammate,25_talk-to-the-agent.txt,450,ok
-26,Turn Your Files Into Creative Assets,https://lumalabs.ai/learning-center/articles/turn-your-files-into-creative-assets,26_turn-your-files-into-creative-assets.txt,1256,ok
-27,Using Master References,https://lumalabs.ai/learning-center/articles/using-master-references,27_using-master-references.txt,534,ok
-28,Welcome To Luma Agents,https://lumalabs.ai/learning-center/articles/welcome-to-luma-agents,28_welcome-to-luma-agents.txt,612,ok
+2,Advanced Seedance 2.0 Workflows,https://lumalabs.ai/learning-center/articles/advanced-seedance-2.0-workflows,02_advanced-seedance-20-workflows.txt,1589,ok
+3,Just Ask The Agent,https://lumalabs.ai/learning-center/articles/ask-the-agent,03_just-ask-the-agent.txt,1201,ok
+4,Avoiding Common Mistakes,https://lumalabs.ai/learning-center/articles/avoiding-common-mistakes,04_avoiding-common-mistakes.txt,2118,ok
+5,Brainstorm Mode,https://lumalabs.ai/learning-center/articles/brainstorm-mode,05_brainstorm-mode.txt,835,ok
+6,Character and Object Consistency,https://lumalabs.ai/learning-center/articles/character-and-object-consistency,06_character-and-object-consistency.txt,639,ok
+7,Color Space Field Guide,https://lumalabs.ai/learning-center/articles/color-space-field-guide,07_color-space-field-guide.txt,598,ok
+8,Creating At Scale in Luma,https://lumalabs.ai/learning-center/articles/creating-at-scale-in-luma,08_creating-at-scale-in-luma.txt,927,ok
+9,Credit Conservation,https://lumalabs.ai/learning-center/articles/credit-conservation,09_credit-conservation.txt,849,ok
+10,Endless Variations,https://lumalabs.ai/learning-center/articles/endless-variants,10_endless-variations.txt,588,ok
+11,How to Prompt Seedance 2.0,https://lumalabs.ai/learning-center/articles/how-to-prompt-seedance-2.0,11_how-to-prompt-seedance-20.txt,1884,ok
+12,Luma Audio Capabilities,https://lumalabs.ai/learning-center/articles/luma-audio-capabilities,12_luma-audio-capabilities.txt,978,ok
+13,Luma Image Capabilities,https://lumalabs.ai/learning-center/articles/luma-image-capabilities,13_luma-image-capabilities.txt,841,ok
+14,Luma Image Models Field Guide,https://lumalabs.ai/learning-center/articles/luma-image-models-field-guide,14_luma-image-models-field-guide.txt,3229,ok
+15,Luma Lip Sync Guide,https://lumalabs.ai/learning-center/articles/luma-lip-sync-field-guide,15_luma-lip-sync-guide.txt,795,ok
+16,Luma Toolbar Field Guide,https://lumalabs.ai/learning-center/articles/luma-toolbar-field-guide,16_luma-toolbar-field-guide.txt,2218,ok
+17,Uni-1 Field Guide,https://lumalabs.ai/learning-center/articles/luma-uni-1-field-guide,17_uni-1-field-guide.txt,969,ok
+18,Uni-1,https://lumalabs.ai/learning-center/articles/luma-uni-1-model,18_uni-1.txt,1124,ok
+19,Luma Video Capabilities,https://lumalabs.ai/learning-center/articles/luma-video-capabilities,19_luma-video-capabilities.txt,1021,ok
+20,Luma Video Models Field Guide,https://lumalabs.ai/learning-center/articles/luma-video-models-field-guide,20_luma-video-models-field-guide.txt,4755,ok
+21,Master Reference Assets,https://lumalabs.ai/learning-center/articles/master-reference-assets,21_master-reference-assets.txt,446,ok
+22,Outcome-First Workflow,https://lumalabs.ai/learning-center/articles/outcome-first-workflow,22_outcome-first-workflow.txt,479,ok
+23,Research with Luma,https://lumalabs.ai/learning-center/articles/research-with-luma,23_research-with-luma.txt,1334,ok
+24,Seedance 2.0 Basics,https://lumalabs.ai/learning-center/articles/seedance-2.0-basics,24_seedance-20-basics.txt,1067,ok
+25,Starting Points,https://lumalabs.ai/learning-center/articles/starting-points,25_starting-points.txt,671,ok
+26,Team Collaboration in Luma,https://lumalabs.ai/learning-center/articles/team-collaboration-in-luma,26_team-collaboration-in-luma.txt,651,ok
+27,Text & Natural Language,https://lumalabs.ai/learning-center/articles/text-and-natural-language,27_text-natural-language.txt,1313,ok
+28,Talk To The Agent,https://lumalabs.ai/learning-center/articles/treat-the-agent-like-a-teammate,28_talk-to-the-agent.txt,450,ok
+29,Turn Your Files Into Creative Assets,https://lumalabs.ai/learning-center/articles/turn-your-files-into-creative-assets,29_turn-your-files-into-creative-assets.txt,1256,ok
+30,Using Master References,https://lumalabs.ai/learning-center/articles/using-master-references,30_using-master-references.txt,534,ok
+31,Welcome To Luma Agents,https://lumalabs.ai/learning-center/articles/welcome-to-luma-agents,31_welcome-to-luma-agents.txt,612,ok

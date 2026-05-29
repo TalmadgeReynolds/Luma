@@ -49,6 +49,9 @@ class Settings(BaseSettings):
         description="Transcription provider: 'whisper', 'deepgram', 'assemblyai', or 'json'"
     )
 
+    # API access
+    API_KEY: str | None = Field(default=None, description="API key for external access (X-API-Key header)")
+
     # Video
     VIDEO_BASE_URL: str = Field(
         default="http://localhost:8000/videos",

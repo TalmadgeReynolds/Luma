@@ -8,6 +8,7 @@ from fastapi import APIRouter, Depends
 from fastapi.responses import StreamingResponse
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.api.deps import verify_api_key
 from app.db.database import get_db
 from app.db.schemas import AskRequest, AskResponse
 from app.services import retrieval_service, answer_service
@@ -76,3 +77,16 @@ async def ask_question(
             yield f"data: {json.dumps(payload)}\n\n"
 
     return StreamingResponse(event_stream(), media_type="text/event-stream")
+
+
+@router.post("/ask/sync", dependencies=[Depends(verify_api_key)])
+async def ask_question_sync(
+    request: AskRequest,
+    db_session: AsyncSession = Depends(get_db),
+) -> AskResponse:
+    """
+    Answer a question using RAG. Returns plain JSON (no streaming).
+    Easier to test with curl or Postman than the SSE /ask endpoint.
+    """
+    print(f"\n[API] POST /ask/sync: {request.question}")
+    return await _execute_ask(request, db_session)
