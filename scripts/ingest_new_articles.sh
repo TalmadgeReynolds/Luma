@@ -28,9 +28,6 @@ MANIFEST="$ARTICLES_DIR/manifest.csv"
 
 BACKEND_DIR="$REPO_ROOT/backend"
 
-# Forward any extra flags (e.g. --browser) to the scraper
-SCRAPER_FLAGS="${@}"
-
 # ---------------------------------------------------------------------------
 echo "=== Step 1: Install scraper dependencies ==="
 pip install -r "$EXPORTER_DIR/requirements.txt" --quiet
@@ -40,7 +37,7 @@ echo ""
 echo "=== Step 2: Scrape Learning Center articles ==="
 (
   cd "$EXPORTER_DIR"
-  python export_luma_learning_center_articles.py $SCRAPER_FLAGS
+  python export_luma_learning_center_articles.py "$@"
 )
 
 if [[ ! -f "$MANIFEST" ]]; then
