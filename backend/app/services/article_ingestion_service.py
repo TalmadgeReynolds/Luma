@@ -12,6 +12,7 @@ import re
 from datetime import datetime
 from uuid import UUID
 
+from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.db.models import Chunk, Video
@@ -151,6 +152,22 @@ async def ingest_article(
         IngestionError: If ingestion fails at any step
     """
     try:
+        # ====================================================================
+        # Step 0: Check for duplicate (already ingested)
+        # ====================================================================
+        existing = await db_session.execute(
+            select(Video.id).where(
+                Video.source_url == source_url,
+                Video.content_type == 'article',
+            )
+        )
+        existing_row = existing.first()
+        if existing_row is not None:
+            raise IngestionError(
+                f"Article already ingested (source_url={source_url!r}). "
+                "Use --skip-existing in the batch script to avoid this."
+            )
+
         # ====================================================================
         # Step 1: Create article record
         # ====================================================================

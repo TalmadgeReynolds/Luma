@@ -79,6 +79,8 @@ async def main():
     with open(manifest_path, 'r') as f:
         reader = csv.DictReader(f)
         for row in reader:
+            if row.get('status', 'ok') != 'ok':
+                continue
             articles.append(row)
 
     log(f"Found {len(articles)} articles in manifest")
