@@ -48,6 +48,10 @@ class Settings(BaseSettings):
         default="json",
         description="Transcription provider: 'whisper', 'deepgram', 'assemblyai', or 'json'"
     )
+    ASSEMBLYAI_API_KEY: str | None = Field(
+        default=None,
+        description="AssemblyAI API key (required if TRANSCRIPTION_PROVIDER='assemblyai')"
+    )
 
     # Video
     VIDEO_BASE_URL: str = Field(
