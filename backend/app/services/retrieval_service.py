@@ -3,6 +3,7 @@ Retrieval service - hybrid search over webinar chunks.
 
 Combines vector similarity search with keyword search for optimal recall.
 """
+from collections.abc import Callable, Awaitable
 from uuid import UUID
 from sqlalchemy import select, func, text
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -10,6 +11,8 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.db.models import Chunk, Query, RetrievalLog, Video
 from app.errors import RetrievalError
 from app.services import claude_service, embedding_service
+
+ProgressCallback = Callable[..., Awaitable[None]] | None
 
 
 class RetrievedChunk:
@@ -30,6 +33,7 @@ class RetrievedChunk:
         topic_tags: list[str] | None,
         speaker_names: list[str] | None,
         section_heading: str | None,
+        webinar_date: str | None,
         score: float,
         rank: int,
     ):
@@ -47,6 +51,7 @@ class RetrievedChunk:
         self.topic_tags = topic_tags or []
         self.speaker_names = speaker_names or []
         self.section_heading = section_heading
+        self.webinar_date = webinar_date
         self.score = score
         self.rank = rank
 
@@ -56,6 +61,7 @@ async def retrieve_chunks(
     top_k: int,
     db_session: AsyncSession,
     content_type_filter: str | None = None,
+    progress_callback: ProgressCallback = None,
 ) -> list[RetrievedChunk]:
     """
     Retrieve relevant chunks using hybrid search.
@@ -88,10 +94,17 @@ async def retrieve_chunks(
         rewritten_query = rewrite_result["rewritten_query"]
         print(f"  Original: {question}")
         print(f"  Rewritten: {rewritten_query}")
+        if progress_callback:
+            await progress_callback("rewriting", "Rewriting query", {
+                "search_terms": rewrite_result.get("search_terms", []),
+                "rewritten_query": rewritten_query,
+            })
 
         # Step 2: Embed rewritten query
         print(f"[Retrieval] Embedding query...")
         query_embedding = await embedding_service.embed_text(rewritten_query)
+        if progress_callback:
+            await progress_callback("embedding", "Vectorizing query", None)
 
         if content_type_filter:
             # Filtered: single pool, no diversity needed
@@ -108,6 +121,11 @@ async def retrieve_chunks(
                 content_type_filter,
                 db_session,
             )
+            if progress_callback:
+                await progress_callback("searching", "Searching knowledge base", {
+                    "vector_count": len(vector_results),
+                    "keyword_count": len(keyword_results),
+                })
             merged = _merge_and_dedupe(vector_results, keyword_results)
             final_chunks = merged[:top_k]
         else:
@@ -120,6 +138,11 @@ async def retrieve_chunks(
             kw_webinars = await _keyword_search(rewritten_query, top_k, 'webinar', db_session)
             print(f"  Vector: {len(vec_articles)} articles, {len(vec_webinars)} webinars")
             print(f"  Keyword: {len(kw_articles)} articles, {len(kw_webinars)} webinars")
+            if progress_callback:
+                await progress_callback("searching", "Searching knowledge base", {
+                    "vector_count": len(vec_articles) + len(vec_webinars),
+                    "keyword_count": len(kw_articles) + len(kw_webinars),
+                })
             merged = _merge_and_dedupe(
                 vec_articles + vec_webinars,
                 kw_articles + kw_webinars,
@@ -129,6 +152,26 @@ async def retrieve_chunks(
         # Assign ranks
         for i, chunk in enumerate(final_chunks, 1):
             chunk.rank = i
+        if progress_callback:
+            seen: dict[str, dict] = {}
+            for c in final_chunks:
+                if c.video_title not in seen:
+                    seen[c.video_title] = {
+                        "title": c.video_title,
+                        "content_type": c.content_type,
+                        "webinar_date": c.webinar_date,
+                        "topics": [],
+                    }
+                entry = seen[c.video_title]
+                for tag in (c.topic_tags or []):
+                    if tag not in entry["topics"]:
+                        entry["topics"].append(tag)
+                if c.content_type == 'article' and c.section_heading:
+                    if c.section_heading not in entry["topics"]:
+                        entry["topics"].append(c.section_heading)
+            await progress_callback("ranking", "Ranking results", {
+                "source_titles": list(seen.values()),
+            })
 
         # Step 6: Log retrieval
         query_record = Query(
@@ -189,7 +232,7 @@ async def _vector_search(
             c.id, c.video_id, c.start_time_seconds, c.end_time_seconds,
             c.raw_text, c.contextual_text, c.summary, c.topic_tags,
             c.speaker_names, c.section_heading, c.chunk_index, c.word_count,
-            v.title as video_title, v.content_type, v.source_url, v.video_url,
+            v.title as video_title, v.content_type, v.source_url, v.video_url, v.webinar_date,
             (1 - (c.embedding <=> CAST(:query_embedding AS vector))) as score
         FROM chunks c
         JOIN videos v ON c.video_id = v.id
@@ -229,6 +272,7 @@ async def _vector_search(
         chunk.content_type = row.content_type
         chunk.source_url = row.source_url
         chunk.video_url = row.video_url
+        chunk.webinar_date = str(row.webinar_date) if row.webinar_date else None
         score = float(row.score)
         chunks.append((chunk, score))
 
@@ -266,7 +310,7 @@ async def _keyword_search(
             c.id, c.video_id, c.start_time_seconds, c.end_time_seconds,
             c.raw_text, c.contextual_text, c.summary, c.topic_tags,
             c.speaker_names, c.section_heading, c.chunk_index, c.word_count,
-            v.title as video_title, v.content_type, v.source_url, v.video_url,
+            v.title as video_title, v.content_type, v.source_url, v.video_url, v.webinar_date,
             GREATEST(
                 ts_rank(to_tsvector('english', c.raw_text), plainto_tsquery('english', :query_text)),
                 ts_rank(to_tsvector('english', COALESCE(c.summary, '')), plainto_tsquery('english', :query_text))
@@ -308,6 +352,7 @@ async def _keyword_search(
         chunk.content_type = row.content_type
         chunk.source_url = row.source_url
         chunk.video_url = row.video_url
+        chunk.webinar_date = str(row.webinar_date) if row.webinar_date else None
         score = float(row.score)
         chunks.append((chunk, score))
 
@@ -400,6 +445,7 @@ def _merge_and_dedupe(
             topic_tags=chunk.topic_tags,
             speaker_names=chunk.speaker_names,
             section_heading=chunk.section_heading,
+            webinar_date=chunk.webinar_date,
             score=score,
             rank=0,  # Will be assigned after sorting
         )

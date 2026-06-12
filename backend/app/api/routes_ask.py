@@ -8,7 +8,6 @@ from fastapi import APIRouter, Depends
 from fastapi.responses import StreamingResponse
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.api.deps import verify_api_key
 from app.db.database import get_db
 from app.db.schemas import AskRequest, AskResponse
 from app.services import retrieval_service, answer_service
@@ -47,16 +46,41 @@ async def ask_question(
         print(f"[API] Content type filter: {request.content_type_filter}")
 
     async def event_stream():
-        task = asyncio.create_task(_execute_ask(request, db_session))
+        event_queue: asyncio.Queue[dict] = asyncio.Queue()
 
-        while not task.done():
-            yield 'data: {"status":"processing"}\n\n'
-            try:
-                await asyncio.wait_for(asyncio.shield(task), timeout=4.0)
-            except asyncio.TimeoutError:
-                continue
-            except Exception:
+        async def emit_progress(stage: str, message: str, data: dict | None = None) -> None:
+            await event_queue.put({
+                "stage": stage,
+                "message": message,
+                "data": data or {},
+            })
+
+        async def run_pipeline() -> AskResponse:
+            retrieved_chunks = await retrieval_service.retrieve_chunks(
+                question=request.question,
+                top_k=5,
+                db_session=db_session,
+                content_type_filter=request.content_type_filter,
+                progress_callback=emit_progress,
+            )
+            return await answer_service.generate_answer(
+                question=request.question,
+                retrieved_chunks=retrieved_chunks,
+                progress_callback=emit_progress,
+            )
+
+        task = asyncio.create_task(run_pipeline())
+
+        while True:
+            if task.done() and event_queue.empty():
                 break
+
+            try:
+                event = await asyncio.wait_for(event_queue.get(), timeout=4.0)
+                yield f"data: {json.dumps(event)}\n\n"
+            except asyncio.TimeoutError:
+                # Keep the SSE connection alive while work continues.
+                yield 'data: {"status":"processing"}\n\n'
 
         try:
             result = await task
@@ -77,16 +101,3 @@ async def ask_question(
             yield f"data: {json.dumps(payload)}\n\n"
 
     return StreamingResponse(event_stream(), media_type="text/event-stream")
-
-
-@router.post("/ask/sync", dependencies=[Depends(verify_api_key)])
-async def ask_question_sync(
-    request: AskRequest,
-    db_session: AsyncSession = Depends(get_db),
-) -> AskResponse:
-    """
-    Answer a question using RAG. Returns plain JSON (no streaming).
-    Easier to test with curl or Postman than the SSE /ask endpoint.
-    """
-    print(f"\n[API] POST /ask/sync: {request.question}")
-    return await _execute_ask(request, db_session)

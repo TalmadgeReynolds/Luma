@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import AskBox from './components/AskBox';
 import AnswerPanel from './components/AnswerPanel';
 import SourceCard from './components/SourceCard';
 import SuggestedQuestions from './components/SuggestedQuestions';
-import { askQuestion } from './api/client';
-import type { SourceCard as SourceCardType } from './types/api';
+import PipelineFeed from './components/PipelineFeed';
+import SavedSidebar from './components/SavedSidebar';
+import { askQuestion, getSavedItems, createSavedItem, deleteSavedItem } from './api/client';
+import type { SourceCard as SourceCardType, ProgressEvent, SavedItem } from './types/api';
 
 function App() {
   const [answer, setAnswer] = useState('');
@@ -14,17 +16,50 @@ function App() {
   const [notEnoughEvidence, setNotEnoughEvidence] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [progressEvents, setProgressEvents] = useState<ProgressEvent[]>([]);
+  const [savedItems, setSavedItems] = useState<SavedItem[]>([]);
+  const [queryKey, setQueryKey] = useState(0);
 
-  const handleSubmit = async (newQuestion: string) => {
+  const handleSave = useCallback(async (item: Omit<SavedItem, 'id' | 'savedAt'>) => {
+    try {
+      const saved = await createSavedItem(item);
+      setSavedItems((prev) => [...prev, saved]);
+    } catch {
+      // Fall back to local-only if API fails
+      setSavedItems((prev) => [
+        ...prev,
+        { ...item, id: crypto.randomUUID(), savedAt: new Date().toISOString() },
+      ]);
+    }
+  }, []);
+
+  const handleRemove = useCallback(async (id: string) => {
+    setSavedItems((prev) => prev.filter((item) => item.id !== id));
+    try {
+      await deleteSavedItem(id);
+    } catch {
+      // Item already removed from UI; silently ignore
+    }
+  }, []);
+
+  useEffect(() => {
+    getSavedItems().then(setSavedItems).catch(() => {});
+  }, []);
+
+  const handleSubmit = async (newQuestion: string, filter: 'webinar' | 'article' | null = null) => {
     setLoading(true);
     setError(null);
     setAnswer('');
     setSources([]);
     setSuggestedQuestions([]);
     setNotEnoughEvidence(false);
+    setProgressEvents([]);
+    setQueryKey((k) => k + 1);
 
     try {
-      const response = await askQuestion(newQuestion);
+      const response = await askQuestion(newQuestion, filter, (event) => {
+        setProgressEvents((prev) => [...prev, event]);
+      });
       setAnswer(response.answer);
       setSources(response.sources);
       setSuggestedQuestions(response.suggested_questions);
@@ -37,6 +72,8 @@ function App() {
     }
   };
 
+  const showPipeline = loading || progressEvents.length > 0;
+
   return (
     <div className="app">
       <header className="app-header">
@@ -45,20 +82,6 @@ function App() {
       </header>
 
       <main className="app-main">
-        <AskBox onSubmit={handleSubmit} loading={loading} />
-
-        {error && (
-          <div className="error-message">
-            <strong>Error:</strong> {error}
-          </div>
-        )}
-
-        {loading && (
-          <div className="loading-message">
-            Searching knowledge base...
-          </div>
-        )}
-
         {!loading && !error && answer && (
           <>
             <AnswerPanel
@@ -87,6 +110,25 @@ function App() {
             />
           </>
         )}
+
+        {error && (
+          <div className="error-message">
+            <strong>Error:</strong> {error}
+          </div>
+        )}
+
+        {showPipeline && (
+          <PipelineFeed
+            key={queryKey}
+            events={progressEvents}
+            loading={loading}
+            onSave={handleSave}
+          />
+        )}
+
+        <SavedSidebar items={savedItems} onRemove={handleRemove} />
+
+        <AskBox onSubmit={handleSubmit} loading={loading} />
       </main>
     </div>
   );

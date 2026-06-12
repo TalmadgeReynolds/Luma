@@ -171,20 +171,42 @@ def vtt_to_segments(vtt_path: Path) -> list[dict]:
 # --------------------------------------------------------------------------- #
 # Ingestion trigger
 # --------------------------------------------------------------------------- #
+def _resolve_video_url_for_transcription(folder: Path, meta: dict) -> str | None:
+    """Return an HTTPS URL suitable for cloud transcription, or None if unavailable."""
+    # 1. Explicit URL in metadata.json
+    if meta.get("video_url"):
+        return meta["video_url"]
+    # 2. Video file in folder whose filename can be mapped to an S3 URL
+    video_files = [f for f in folder.iterdir() if f.suffix.lower() in _VIDEO_EXTENSIONS]
+    for vf in video_files:
+        url = _build_s3_url(vf.name)
+        if url:
+            return url
+    return None
+
+
 async def _run_ingestion(folder_or_file: Path) -> None:
     """Convert VTT and call ingest_webinar. Accepts a folder or a bare transcript file."""
     # Import here to avoid loading DB config at module import time
     from app.db.database import AsyncSessionLocal
     from app.services.ingestion_service import ingest_webinar
 
+    # segments is populated either by parsing a transcript file or by the transcription service
+    segments: list[dict] | None = None
+
     if folder_or_file.is_file():
         # Bare file dropped directly — use it as the transcript, no metadata
-        transcript_vtt = folder_or_file
+        transcript_vtt: Path | None = folder_or_file
         meta: dict = {}
         video_search_dir: Path | None = None
         tmp_json = folder_or_file.parent / f"_{folder_or_file.stem}_converted.json"
     else:
         folder = folder_or_file
+        meta_file = folder / "metadata.json"
+        meta = json.loads(meta_file.read_text()) if meta_file.exists() else {}
+        video_search_dir = folder
+        tmp_json = folder / "_transcript_converted.json"
+
         # Locate transcript file — supports *.vtt, *.transcript, and *.txt
         transcript_files = (
             sorted(folder.glob("*.vtt")) +
@@ -194,27 +216,41 @@ async def _run_ingestion(folder_or_file: Path) -> None:
         )
         # Exclude error.txt written by the watcher itself
         transcript_files = [f for f in transcript_files if f.name != "error.txt"]
+
         if not transcript_files:
-            raise FileNotFoundError(f"No transcript file found in {folder} (expected *.vtt, *.transcript, or *.txt)")
+            # No transcript found — attempt auto-transcription via the configured provider
+            video_url_for_tx = _resolve_video_url_for_transcription(folder, meta)
+            if video_url_for_tx is None:
+                raise FileNotFoundError(
+                    f"No transcript file found in {folder} "
+                    "(expected *.vtt, *.transcript, or *.txt). "
+                    "To enable auto-transcription, set video_url in metadata.json "
+                    "and configure TRANSCRIPTION_PROVIDER in your .env."
+                )
+            print(f"  No transcript found — requesting auto-transcription…")
+            from app.services import transcription_service
+            segments = await transcription_service.transcribe_video(video_url_for_tx)
+            if not segments:
+                raise ValueError(f"Auto-transcription returned 0 segments for {folder.name}")
+            transcript_vtt = None
+        else:
+            # Prefer files with 'transcript' in the name if multiple exist
+            transcript_vtt = next(
+                (f for f in transcript_files if "transcript" in f.name.lower()), transcript_files[0]
+            )
 
-        # Prefer files with 'transcript' in the name if multiple exist
-        transcript_vtt = next(
-            (f for f in transcript_files if "transcript" in f.name.lower()), transcript_files[0]
-        )
-        meta_file = folder / "metadata.json"
-        meta = json.loads(meta_file.read_text()) if meta_file.exists() else {}
-        video_search_dir = folder
-        tmp_json = folder / "_transcript_converted.json"
-
-    # Convert transcript → segments list
-    print(f"  Converting {transcript_vtt.name} …")
-    segments = vtt_to_segments(transcript_vtt)
-    if not segments:
-        raise ValueError(f"Transcript file produced 0 segments: {transcript_vtt}")
+    # Parse transcript file if segments not already obtained from transcription service
+    if segments is None:
+        print(f"  Converting {transcript_vtt.name} …")
+        segments = vtt_to_segments(transcript_vtt)
+        if not segments:
+            raise ValueError(f"Transcript file produced 0 segments: {transcript_vtt}")
 
     tmp_json.write_text(json.dumps(segments, indent=2, ensure_ascii=False))
 
-    title       = meta.get("title") or transcript_vtt.stem
+    # transcript_vtt may be None when segments came from the transcription service
+    title_fallback = transcript_vtt.stem if transcript_vtt else folder_or_file.name
+    title       = meta.get("title") or title_fallback
     description = meta.get("description")
     date        = meta.get("date")
     speakers    = meta.get("speakers") or _extract_speakers(segments)
@@ -230,6 +266,12 @@ async def _run_ingestion(folder_or_file: Path) -> None:
                 print(f"  video_url (S3): {video_url}")
             else:
                 print(f"  Warning: could not derive S3 URL from {video_file.name}")
+            # Extract date from GMT filename when metadata.json didn't provide one
+            if not date:
+                m = _GMT_DATE_RE.search(video_file.name)
+                if m:
+                    d = m.group(1)  # YYYYMMDD
+                    date = f"{d[:4]}-{d[4:6]}-{d[6:]}"  # → YYYY-MM-DD
             # Use mp4 stem as title if no explicit title was set
             if not meta.get("title"):
                 title = video_file.stem

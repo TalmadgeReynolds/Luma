@@ -120,3 +120,31 @@ class ErrorDetail(BaseModel):
 class ErrorResponse(BaseModel):
     """Standard error response."""
     error: ErrorDetail
+
+
+# ============================================================================
+# GET /saved, POST /saved, DELETE /saved/{id} - Saved sidebar items
+# ============================================================================
+
+class SavedItemCreate(BaseModel):
+    """Request to save an item."""
+    type: str = Field(..., pattern="^(search_term|stat|source|topic)$")
+    label: str = Field(..., min_length=1, max_length=500)
+    detail: str | None = None
+
+
+class SavedItemResponse(BaseModel):
+    """A saved sidebar item."""
+    id: UUID
+    type: str
+    label: str
+    detail: str | None
+    savedAt: str  # ISO timestamp - matches frontend field name
+
+    model_config = {"from_attributes": True}
+
+
+class SavedItemListResponse(BaseModel):
+    """Response with list of saved items."""
+    items: list[SavedItemResponse]
+    total: int

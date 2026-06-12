@@ -31,6 +31,7 @@ def format_time_range(start_seconds: float, end_seconds: float) -> str:
 async def generate_answer(
     question: str,
     retrieved_chunks: list[RetrievedChunk],
+    progress_callback=None,
 ) -> AskResponse:
     """
     Generate answer from retrieved chunks.
@@ -90,6 +91,8 @@ async def generate_answer(
 
         # Step 3: Call Claude
         print(f"[Answer] Calling Claude with {len(formatted_chunks)} chunks...")
+        if progress_callback:
+            await progress_callback("generating", "Generating answer", {"chunk_count": len(formatted_chunks)})
         claude_response = await claude_service.answer_from_chunks(
             user_question=question,
             retrieved_chunks=formatted_chunks,

@@ -8,7 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
 from app.config import get_settings
-from app.api import routes_ask, routes_videos, routes_ingest
+from app.api import routes_ask, routes_videos, routes_ingest, routes_saved
 
 settings = get_settings()
 
@@ -37,6 +37,7 @@ app.mount("/videos", StaticFiles(directory=str(_VIDEOS_DIR)), name="videos")
 app.include_router(routes_ingest.router, tags=["health"])
 app.include_router(routes_ask.router, tags=["ask"])
 app.include_router(routes_videos.router, tags=["videos"])
+app.include_router(routes_saved.router, tags=["saved"])
 
 
 @app.get("/")

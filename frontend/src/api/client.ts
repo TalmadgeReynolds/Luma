@@ -10,6 +10,9 @@ import type {
   ChunkListResponse,
   HealthResponse,
   ErrorResponse,
+  ProgressEvent,
+  SavedItem,
+  SavedItemListResponse,
 } from '../types/api';
 
 const API_BASE_URL = '';  // Empty string uses Vite proxy
@@ -53,11 +56,25 @@ async function apiFetch<T>(
   }
 }
 
+// Persistent session ID for saved items
+function getSessionId(): string {
+  let id = localStorage.getItem('luma_session_id');
+  if (!id) {
+    id = crypto.randomUUID();
+    localStorage.setItem('luma_session_id', id);
+  }
+  return id;
+}
+
 /**
  * POST /ask - Submit a question (SSE stream: keep-alive pings then final result)
  */
-export async function askQuestion(question: string): Promise<AskResponse> {
-  const request: AskRequest = { question };
+export async function askQuestion(
+  question: string,
+  filter: 'webinar' | 'article' | null = null,
+  onProgress?: (event: ProgressEvent) => void,
+): Promise<AskResponse> {
+  const request: AskRequest = { question, content_type_filter: filter ?? undefined };
   const response = await fetch('/ask', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -93,10 +110,45 @@ export async function askQuestion(question: string): Promise<AskResponse> {
       const data = JSON.parse(line.slice(6));
       if (data.status === 'complete') return data.result as AskResponse;
       if (data.status === 'error') throw new Error(data.message || 'Request failed');
+      // Progress event
+      if (onProgress && data.stage) onProgress(data as ProgressEvent);
     }
   }
 
   throw new Error('Stream ended without a result');
+}
+
+/**
+ * GET /saved - List saved items for the current session
+ */
+export async function getSavedItems(): Promise<SavedItem[]> {
+  const data = await apiFetch<SavedItemListResponse>('/saved', {
+    headers: { 'X-Session-ID': getSessionId() },
+  });
+  return data.items;
+}
+
+/**
+ * POST /saved - Create a saved item
+ */
+export async function createSavedItem(
+  item: Omit<SavedItem, 'id' | 'savedAt'>,
+): Promise<SavedItem> {
+  return apiFetch<SavedItem>('/saved', {
+    method: 'POST',
+    body: JSON.stringify(item),
+    headers: { 'X-Session-ID': getSessionId() },
+  });
+}
+
+/**
+ * DELETE /saved/{id} - Delete a saved item
+ */
+export async function deleteSavedItem(id: string): Promise<void> {
+  await apiFetch<void>(`/saved/${id}`, {
+    method: 'DELETE',
+    headers: { 'X-Session-ID': getSessionId() },
+  });
 }
 
 /**

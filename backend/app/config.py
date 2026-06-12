@@ -48,6 +48,14 @@ class Settings(BaseSettings):
         default="json",
         description="Transcription provider: 'whisper', 'deepgram', 'assemblyai', or 'json'"
     )
+    ASSEMBLYAI_API_KEY: str | None = Field(
+        default=None,
+        description="AssemblyAI API key (required if TRANSCRIPTION_PROVIDER='assemblyai')"
+    )
+    DEEPGRAM_API_KEY: str | None = Field(
+        default=None,
+        description="Deepgram API key (required if TRANSCRIPTION_PROVIDER='deepgram')"
+    )
 
     # API access
     API_KEY: str | None = Field(default=None, description="API key for external access (X-API-Key header)")

@@ -104,3 +104,42 @@ export interface ErrorDetail {
 export interface ErrorResponse {
   error: ErrorDetail;
 }
+
+// ============================================================================
+// Pipeline progress events (SSE)
+// ============================================================================
+
+export interface ProgressEventData {
+  search_terms?: string[];
+  rewritten_query?: string;
+  vector_count?: number;
+  keyword_count?: number;
+  articles?: number;
+  webinars?: number;
+  total?: number;
+  chunk_count?: number;
+  source_titles?: Array<{ title: string; content_type: 'webinar' | 'article'; webinar_date?: string | null; topics: string[] }>;
+}
+
+export interface ProgressEvent {
+  stage: 'rewriting' | 'embedding' | 'searching' | 'ranking' | 'generating';
+  message: string;
+  data?: ProgressEventData;
+}
+
+// ============================================================================
+// Saved sidebar items
+// ============================================================================
+
+export interface SavedItem {
+  id: string;
+  type: 'search_term' | 'stat' | 'source' | 'topic';
+  label: string;
+  detail?: string;
+  savedAt: string;
+}
+
+export interface SavedItemListResponse {
+  items: SavedItem[];
+  total: number;
+}
