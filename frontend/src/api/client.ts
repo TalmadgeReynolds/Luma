@@ -56,8 +56,14 @@ async function apiFetch<T>(
 /**
  * POST /ask - Submit a question (SSE stream: keep-alive pings then final result)
  */
-export async function askQuestion(question: string): Promise<AskResponse> {
-  const request: AskRequest = { question };
+export async function askQuestion(
+  question: string,
+  contentTypeFilter: 'webinar' | 'article' | null = null,
+): Promise<AskResponse> {
+  const request: AskRequest = {
+    question,
+    content_type_filter: contentTypeFilter,
+  };
   const response = await fetch('/ask', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },

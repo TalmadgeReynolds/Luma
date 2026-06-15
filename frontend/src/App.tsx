@@ -6,6 +6,8 @@ import SuggestedQuestions from './components/SuggestedQuestions';
 import { askQuestion } from './api/client';
 import type { SourceCard as SourceCardType } from './types/api';
 
+type ContentTypeFilter = 'webinar' | 'article' | null;
+
 function App() {
   const [answer, setAnswer] = useState('');
   const [sources, setSources] = useState<SourceCardType[]>([]);
@@ -15,7 +17,10 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = async (newQuestion: string) => {
+  const handleSubmit = async (
+    newQuestion: string,
+    contentTypeFilter: ContentTypeFilter = null,
+  ) => {
     setLoading(true);
     setError(null);
     setAnswer('');
@@ -24,7 +29,7 @@ function App() {
     setNotEnoughEvidence(false);
 
     try {
-      const response = await askQuestion(newQuestion);
+      const response = await askQuestion(newQuestion, contentTypeFilter);
       setAnswer(response.answer);
       setSources(response.sources);
       setSuggestedQuestions(response.suggested_questions);
@@ -83,7 +88,7 @@ function App() {
 
             <SuggestedQuestions
               questions={suggestedQuestions}
-              onQuestionClick={handleSubmit}
+              onQuestionClick={(question) => handleSubmit(question, null)}
             />
           </>
         )}

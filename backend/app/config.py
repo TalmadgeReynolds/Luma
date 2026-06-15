@@ -48,6 +48,14 @@ class Settings(BaseSettings):
         default="json",
         description="Transcription provider: 'whisper', 'deepgram', 'assemblyai', or 'json'"
     )
+    DEEPGRAM_API_KEY: str | None = Field(
+        default=None,
+        description="Deepgram API key (required if TRANSCRIPTION_PROVIDER='deepgram')"
+    )
+    ASSEMBLYAI_API_KEY: str | None = Field(
+        default=None,
+        description="AssemblyAI API key (required if TRANSCRIPTION_PROVIDER='assemblyai')"
+    )
 
     # API access
     API_KEY: str | None = Field(default=None, description="API key for external access (X-API-Key header)")
@@ -96,6 +104,28 @@ class Settings(BaseSettings):
         if provider == "openai" and not v:
             raise ValueError(
                 "OPENAI_API_KEY is required when EMBEDDING_PROVIDER='openai'"
+            )
+        return v
+
+    @field_validator("DEEPGRAM_API_KEY")
+    @classmethod
+    def validate_deepgram_key(cls, v: str | None, info) -> str | None:
+        """Validate that DEEPGRAM_API_KEY is provided when using Deepgram provider."""
+        provider = info.data.get("TRANSCRIPTION_PROVIDER")
+        if provider == "deepgram" and not v:
+            raise ValueError(
+                "DEEPGRAM_API_KEY is required when TRANSCRIPTION_PROVIDER='deepgram'"
+            )
+        return v
+
+    @field_validator("ASSEMBLYAI_API_KEY")
+    @classmethod
+    def validate_assemblyai_key(cls, v: str | None, info) -> str | None:
+        """Validate that ASSEMBLYAI_API_KEY is provided when using AssemblyAI provider."""
+        provider = info.data.get("TRANSCRIPTION_PROVIDER")
+        if provider == "assemblyai" and not v:
+            raise ValueError(
+                "ASSEMBLYAI_API_KEY is required when TRANSCRIPTION_PROVIDER='assemblyai'"
             )
         return v
 
