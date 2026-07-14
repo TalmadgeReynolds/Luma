@@ -47,9 +47,6 @@ export default function AnswerPanel({
     <div className="answer-panel">
       <div className="answer-header">
         <h2>Answer</h2>
-        <span className={`confidence-badge ${confidenceClass}`}>
-          {confidence} confidence
-        </span>
       </div>
       <div className="answer-text">
         <ReactMarkdown
