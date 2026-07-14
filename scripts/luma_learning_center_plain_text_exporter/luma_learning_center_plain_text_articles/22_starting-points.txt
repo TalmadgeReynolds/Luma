@@ -1,0 +1,101 @@
+Source: https://lumalabs.ai/learning-center/articles/starting-points
+
+Starting Points ===============
+
+March 23, 2026
+
+- What a Starting Point actually does 1. A defined creative format 2. Starter assets (optional, but powerful) 3. A guided flow through the Agent
+
+- 1. A defined creative format
+
+- 2. Starter assets (optional, but powerful)
+
+- 3. A guided flow through the Agent
+
+- What it feels like to use one
+
+- Flexibility is the point, not a limitation
+
+- Why Starting Points matter
+
+- A helpful reminder
+
+- Key takeaway
+
+Starting something creative is often the hardest part.
+
+Not because you lack ideas—but because you’re staring at a blank canvas with too many directions to choose from.
+
+Starting Points exist to remove that friction.
+
+A Starting Point is a pre-configured creative environment inside Luma that pairs the Agent with a specific format and, optionally, starter materials. Instead of beginning from zero, you begin from a direction. The board sets the tone, the structure, and the first step—so you can focus on shaping, refining, and expanding rather than figuring out where to start.
+
+It’s not about limiting creativity. It’s about accelerating it.
+
+What a Starting Point actually does ===================================
+
+A Starting Point combines three things that normally require manual setup:
+
+1. A defined creative format ----------------------------
+
+Each board is tuned to a specific type of output—like a slide deck, product video, storyboard, moodboard, or ad campaign. This format shapes how the Agent thinks and responds. A pitch deck board guides structure and narrative. A product video board leans into scenes, pacing, and visuals. The format becomes the starting frame for everything that follows.
+
+2. Starter assets (optional, but powerful) ------------------------------------------
+
+Some Starting Points come pre-loaded with materials—briefs, reference images, logos, PDFs, or example content. These act as both inspiration and input. Instead of explaining everything from scratch, you can react to what’s already there or build directly from it.
+
+3. A guided flow through the Agent ----------------------------------
+
+When you open a Starting Point, the Agent doesn’t wait passively. It initiates a short onboarding flow tailored to that format. You might be asked about your goal, audience, tone, or constraints. Within a few messages, the Agent moves into execution—generating your first outputs based on your inputs and the board’s structure.
+
+This combination turns setup time into creation time.
+
+What it feels like to use one =============================
+
+The experience is intentionally lightweight and fast:
+
+You open a Starting Point → you see assets (if included) already on the canvas → the Agent greets you with context about what you’re building → it asks a few focused questions → and then it starts creating.
+
+In most cases, you’re only one to three messages away from your first real output.
+
+From there, you iterate just like you would in any Luma workflow—refining, branching, and expanding your work across modalities.
+
+Flexibility is the point, not a limitation ==========================================
+
+A Starting Point is a starting point—not a constraint.
+
+You can:
+
+- Ignore the format entirely and take the project in a different direction
+
+- Add your own assets at any time (logos, images, brand guidelines, data)
+
+- Change the goal midway through
+
+- Ask the Agent to pivot formats or outputs
+
+The structure is there to help you begin—not to lock you in.
+
+Why Starting Points matter ==========================
+
+Starting Points are a simple idea with a compounding effect.
+
+They reduce the time between intention and output.
+
+They make high-quality workflows accessible without requiring expertise in prompting or structuring.
+
+And they allow the Luma Agent to meet you halfway—bringing both context and execution into the same starting moment.
+
+Instead of asking, “What should I do?”
+
+You’re already doing it.
+
+A helpful reminder ==================
+
+You don’t need to follow the Starting Point perfectly.
+
+Use it to get momentum—then shape it into something that’s uniquely yours.
+
+Key takeaway ============
+
+Starting Point eliminate the blank page by giving you a structured starting point—so you can move from idea to creation in just a few steps, with the Luma Agent guiding you from the very beginning.

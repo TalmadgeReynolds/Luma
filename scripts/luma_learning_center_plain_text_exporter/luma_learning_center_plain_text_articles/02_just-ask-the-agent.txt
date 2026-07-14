@@ -1,0 +1,221 @@
+Source: https://lumalabs.ai/learning-center/articles/ask-the-agent
+
+Just Ask The Agent ==================
+
+March 9, 2026
+
+- Ask The Agent Why this matters The 3 Types of Questions You Should Ask 1. “What do you have access to?” 2. “What are the strengths and weaknesses?” 3. “How do I actually use it?” The Most Powerful Instructions Tool Deep Dive Instructions: How to Ask for Tools Without Getting Overwhelmed The Best Way to Ask for Practical Examples Example: “show me a real project” Ask the Agent to Create Instruction Templates for You Ask About Multi-Model Workflows What to Ask When Something Isn’t Working Key takeaway
+
+- Why this matters
+
+- The 3 Types of Questions You Should Ask 1. “What do you have access to?” 2. “What are the strengths and weaknesses?” 3. “How do I actually use it?”
+
+- 1. “What do you have access to?”
+
+- 2. “What are the strengths and weaknesses?”
+
+- 3. “How do I actually use it?”
+
+- The Most Powerful Instructions
+
+- Tool Deep Dive Instructions:
+
+- How to Ask for Tools Without Getting Overwhelmed
+
+- The Best Way to Ask for Practical Examples
+
+- Example: “show me a real project”
+
+- Ask the Agent to Create Instruction Templates for You
+
+- Ask About Multi-Model Workflows
+
+- What to Ask When Something Isn’t Working
+
+- Key takeaway
+
+Ask The Agent =============
+
+One of the biggest advantages of working with an agent inside a multimodal creative canvas is this:
+
+You don’t have to memorize tools, models, workflows, or best practices.
+
+You can simply ask.
+
+And not just:
+
+What tools do you have?
+
+…but:
+
+- what each tool is best at
+
+- what it’s bad at
+
+- how to use it step-by-step
+
+- what common mistakes to avoid
+
+- and how to see a real example end-to-end
+
+This article shows a simple, repeatable way to do that.
+
+Why this matters ----------------
+
+Most people lose time in two ways:
+
+- They don’t know what tools exist
+
+- They don’t know which tool to use when
+
+The agent can solve both — but only if you ask the right kinds of questions.
+
+The 3 Types of Questions You Should Ask ---------------------------------------
+
+1. “What do you have access to?” --------------------------------
+
+This is the inventory question, it gives you a map.
+
+Prompt template
+
+List the tools and models you have access to. Group them into categories such as: - image generation - video generation - motion control - audio / voice - editing / transformation - analysis / planning - consistency / reference tools For each one: - give a short description - tell me what it is best for
+
+2. “What are the strengths and weaknesses?” -------------------------------------------
+
+This is the tradeoff question – this turns the map into decision-making.
+
+Prompt template
+
+For each tool/model you listed, explain: Strengths: - what it does best Weaknesses: - what it struggles with Best Use Cases: - when I should choose it Avoid Using It When: - when it is likely to disappoint Keep it practical and beginner-friendly.
+
+3. “How do I actually use it?” ------------------------------
+
+This is the workflow question – it turns knowledge into action.
+
+Prompt template
+
+Pick the top [3] most important tools/models for: [my use case] For each one: - write a short best practices guide - list the most common mistakes - give me a step-by-step workflow Then: create one real example using your own choice of assets (or ask me to upload what you need).
+
+The Most Powerful Instructions ------------------------------
+
+This is a reusable “deep dive” instruction that works for almost any tool category – It's the “make me an internal guide” direction. It works extremely well.
+
+Tool Deep Dive Instructions: ----------------------------
+
+I want to learn how to use your tools effectively. Topic: [example: lip sync / cinematic video / character consistency / image refinement] 1) List all tools/models you have for this topic. 2) For each one, explain: - strengths - weaknesses - best use cases - what to avoid 3) Create a best practices document for each tool/model. 4) Create a step-by-step workflow for each tool/model. 5) Then create one complete real example end-to-end: - choose assets yourself OR tell me exactly what to upload - show the steps - show the prompts - explain the decisions
+
+How to Ask for Tools Without Getting Overwhelmed ------------------------------------------------
+
+A common mistake is asking:
+
+Tell me everything.
+
+That can produce an answer that’s technically correct but too long to use.
+
+A better approach is to ask in layers.
+
+Ask for the shortlist
+
+Prompt template
+
+For my goal: [describe goal] What are the top 3 tools/models I should focus on first? Do not list everything. Just the most important ones for getting good results quickly.
+
+Ask for the decision rules
+
+Prompt template
+
+Give me simple decision rules for choosing between these tools. Example format: - If I have [X], use [tool] - If I want [Y], use [tool] - If I need [Z], avoid [tool]
+
+Ask for one workflow and one example
+
+Prompt template
+
+Give me one simple workflow that uses the best tool for this job. Then show me one real example from start to finish.
+
+The Best Way to Ask for Practical Examples ------------------------------------------
+
+Your instinct here is exactly right.
+
+A tool explanation without a real example often doesn’t stick.
+
+So you should regularly ask for:
+
+- a full example
+
+- using real assets
+
+- with prompts you can reuse
+
+Example: “show me a real project” ---------------------------------
+
+Pick a realistic example project. Then: - list the assets you would start with - generate or describe them - walk through the process step by step - show the exact prompts you used - show how you would refine based on feedback
+
+Ask the Agent to Create Instruction Templates for You -----------------------------------------------------
+
+This is one of the highest leverage moves in the whole system.
+
+Instead of asking:
+
+How do I prompt this?
+
+Ask:
+
+Write me reusable prompt templates.
+
+Prompt template
+
+Create a set of prompt templates for this task: [task] Each template should include placeholders like: [STYLE], [CHARACTER], [SETTING], [CAMERA], [MOOD], [DURATION], [REFERENCES] For each template: - explain when to use it - give one filled-in example
+
+This gives you a “prompt toolkit” you can reuse forever.
+
+Ask About Multi-Model Workflows -------------------------------
+
+In a multi-model system, the best results often come from:
+
+- one model for exploration
+
+- one model for refinement
+
+- one model for video
+
+- one model for audio
+
+You don’t need to know which is which.
+
+Just ask the agent to design the pipeline.
+
+Prompt template
+
+My goal is: [goal] I don’t care which models you use. I care about: - consistency - cinematic quality - speed Design a workflow using the tools/models you have access to. Explain: - what each step uses - why that tool is chosen - what I should provide as input
+
+What to Ask When Something Isn’t Working ----------------------------------------
+
+Prompt template
+
+This result is not working. Please diagnose the problem and classify it as: - prompt issue - missing context issue - tool/model mismatch - consistency issue - motion issue (if video) Then propose: - [3] fixes in order of impact - and which tool/model you would try next
+
+Key takeaway ------------
+
+If you treat the agent like:
+
+- a documentation system
+
+- a trainer
+
+- a creative producer
+
+- and a tool router
+
+…it becomes much more than “chat.”
+
+And once you get into the habit of asking:
+
+- what tools exist for your task
+
+- what they’re good at
+
+- how to use them
+
+- and to show real examples
+
+You stop guessing and start working with real leverage.

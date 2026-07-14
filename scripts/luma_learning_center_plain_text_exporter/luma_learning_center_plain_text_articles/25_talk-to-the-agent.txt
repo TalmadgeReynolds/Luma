@@ -1,0 +1,93 @@
+Source: https://lumalabs.ai/learning-center/articles/treat-the-agent-like-a-teammate
+
+Talk To The Agent =================
+
+March 9, 2026
+
+- Treat The Agent like A Teammate
+
+- A simple rule to remember
+
+- A reliable way to start any task
+
+- Set expectations once
+
+- Explain the goal, not the tool
+
+- Let the agent guide the next step
+
+- Always ask for a few options
+
+- Give focused feedback
+
+- Key takeaway
+
+Treat The Agent like A Teammate -------------------------------
+
+If you already use AI tools, you’ve probably noticed this pattern:
+
+- vague request → confusing result
+
+- better explanation → better result
+
+That’s not accidental.
+
+The Luma Agent works best when you treat it like a creative teammate :
+
+- it needs context
+
+- it needs clear goals
+
+- it benefits from feedback
+
+You don’t need special prompt tricks — you need clear communication .
+
+A simple rule to remember -------------------------
+
+The quality of the result usually matches the quality of the instructions, but what makes Luma so special is that you can enter into a collaborative feedback loop with the agent to
+
+A reliable way to start any task --------------------------------
+
+Set expectations once ---------------------
+
+Paste this at the start of a new project or conversation.
+
+Prompt template
+
+You are my [creative assistant]. Please: - Ask questions if anything is unclear - Explain your thinking in simple terms - Create more than one option when helpful - Improve results based on my feedback If my request is vague, pause and ask for clarification before creating anything.
+
+This reduces misunderstandings immediately.
+
+Explain the goal, not the tool ------------------------------
+
+Instead of focusing on models or features, explain what you want to end up with.
+
+Prompt template
+
+I want to create: [a short description of the final thing] This is for: [personal project / concept exploration / work presentation / social post] The most important qualities are: [list X things, e.g. “clear,” “stylish,” “emotional,” “simple”] I’m open to exploring ideas before refining.
+
+Let the agent guide the next step ---------------------------------
+
+Prompt template
+
+Before creating anything, ask me the most important questions you need me to answer in order to understand this better.
+
+Answer those questions simply. Short answers are fine.
+
+Always ask for a few options ----------------------------
+
+Prompt template
+
+Please create [4] different options so I can compare and choose.
+
+Comparison helps you understand what’s working.
+
+Give focused feedback ---------------------
+
+Prompt template
+
+I like: [what works] I don’t like: [what doesn’t work] Please adjust by: [specific change] Then show me [3] improved versions.
+
+Key takeaway ------------
+
+You don’t need perfect prompts. You need clear goals, context, and feedback — just like working with a real person. The more you lean into this state of mind, the better your experience and results will be. Put your Director shoes on, and treat the Agent like your own personal production team.

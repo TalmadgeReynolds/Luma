@@ -1,0 +1,7 @@
+{
+  "title": "Character Consistency Deep Dive",
+  "description": "Best practices for maintaining consistent character appearance in AI-generated video sequences. Covers reference images, workflow, common pitfalls, and technical details.",
+  "date": "2026-05-21",
+  "speakers": ["Alice Chen", "Bob Martinez"],
+  "video_url": "https://luma-webinars-730335545672-us-east-1-an.s3.us-east-1.amazonaws.com/Luma%20Webinars/20260521%20Luma%20Webinar/GMT20260521-170000_Recording_2560x1440.mp4"
+}

@@ -1,0 +1,300 @@
+#!/usr/bin/env python3
+"""Run script to start the app stack (DB, backend, frontend).
+
+Features:
+- Checks ports before starting services and warns if in use
+- Starts database via docker compose if `docker` is available
+- Starts backend (uvicorn) and frontend (npm run dev)
+- Waits for services to become healthy with timeouts
+- Graceful shutdown on SIGINT/SIGTERM
+- Options to skip components or teardown the DB
+
+Usage:
+  ./run [--no-db] [--no-backend] [--no-frontend] [--teardown]
+
+This is self-contained and uses standard system tools: `docker`/`docker compose`,
+`python -m uvicorn`, and `npm`.
+"""
+from __future__ import annotations
+
+import argparse
+import os
+import signal
+import socket
+import subprocess
+import sys
+import time
+from pathlib import Path
+from typing import Optional, List, Tuple
+
+
+ROOT = Path(__file__).resolve().parent
+BACKEND_DIR = ROOT / "backend"
+FRONTEND_DIR = ROOT / "frontend"
+DOCKER_COMPOSE_FILE = ROOT / "docker-compose.yml"
+
+# Default ports
+DB_PORT = 5432
+BACKEND_PORT = 8000
+FRONTEND_PORT = 5173
+
+
+def is_port_open(host: str, port: int) -> bool:
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        s.settimeout(0.5)
+        try:
+            s.connect((host, int(port)))
+            return True
+        except Exception:
+            return False
+
+
+def wait_for_port(host: str, port: int, timeout: int) -> bool:
+    deadline = time.time() + timeout
+    while time.time() < deadline:
+        if is_port_open(host, port):
+            return True
+        time.sleep(0.5)
+    return False
+
+
+def run_cmd(cmd: List[str], cwd: Optional[Path] = None, env=None) -> subprocess.Popen:
+    print(f">>> Starting: {' '.join(cmd)} (cwd={cwd})")
+    return subprocess.Popen(
+        cmd,
+        cwd=str(cwd) if cwd else None,
+        env=(os.environ if env is None else env),
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        text=True,
+        preexec_fn=os.setsid,
+    )
+
+
+def stream_process(proc: subprocess.Popen, prefix: str = "") -> None:
+    assert proc.stdout
+    for line in proc.stdout:
+        print(f"[{prefix}] {line.rstrip()}")
+
+
+def start_db(compose_file: Path) -> Tuple[bool, Optional[subprocess.Popen]]:
+    """Start database service using docker compose (if present).
+    Returns (started, process) where process is the docker command process (detached).
+    """
+    if not compose_file.exists():
+        print("docker-compose.yml not found — skipping DB start")
+        return (False, None)
+
+    # Prefer `docker compose` if available, otherwise `docker-compose`
+    cmd_base = None
+    for c in (["docker", "compose"], ["docker-compose"]):
+        try:
+            subprocess.run([*(c if isinstance(c, list) else [c]), "version"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            cmd_base = c
+            break
+        except Exception:
+            continue
+
+    if cmd_base is None:
+        print("Docker CLI not available; please start Postgres manually on port 5432")
+        return (False, None)
+
+    # Build command
+    if isinstance(cmd_base, list):
+        cmd = [cmd_base[0], cmd_base[1], "up", "-d", "db"]
+    else:
+        cmd = [cmd_base, "up", "-d", "db"]
+
+    try:
+        subprocess.run(cmd, cwd=str(ROOT), check=True)
+        print("Requested docker compose to start DB (db). Waiting for port...")
+        return (True, None)
+    except subprocess.CalledProcessError as e:
+        print(f"Failed to start DB via docker compose: {e}")
+        return (False, None)
+
+
+def start_backend() -> subprocess.Popen:
+    # Use python -m uvicorn so we don't rely on front-path binaries
+    cmd = [sys.executable, "-m", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", str(BACKEND_PORT)]
+    return run_cmd(cmd, cwd=BACKEND_DIR)
+
+
+def start_frontend() -> subprocess.Popen:
+    # Use npm run dev in frontend directory
+    if not (FRONTEND_DIR / "package.json").exists():
+        raise FileNotFoundError("frontend/package.json not found")
+    return run_cmd(["npm", "run", "dev"], cwd=FRONTEND_DIR)
+
+
+def start_watcher() -> subprocess.Popen:
+    runner = ROOT / "watch_hot_folder.py"
+    if not runner.exists():
+        raise FileNotFoundError("watch_hot_folder.py runner not found at project root")
+    return run_cmd([str(runner)], cwd=ROOT)
+
+
+def find_pid_on_port(port: int) -> Optional[int]:
+    # Try lsof to find PID
+    try:
+        out = subprocess.check_output(["lsof", "-i", f":{port}", "-t"]).decode().strip()
+        if out:
+            return int(out.splitlines()[0])
+    except Exception:
+        pass
+    return None
+
+
+def kill_pid(pid: int) -> None:
+    try:
+        os.kill(pid, signal.SIGTERM)
+        time.sleep(0.5)
+        os.kill(pid, signal.SIGKILL)
+    except Exception:
+        pass
+
+
+def main(argv: Optional[List[str]] = None) -> int:
+    parser = argparse.ArgumentParser(description="Start the app stack (DB, backend, frontend)")
+    parser.add_argument("--no-db", action="store_true", help="Don't start DB (expect it to be running)")
+    parser.add_argument("--no-backend", action="store_true", help="Don't start backend")
+    parser.add_argument("--no-frontend", action="store_true", help="Don't start frontend")
+    parser.add_argument("--no-watch", action="store_true", help="Don't start hot-folder watcher")
+    parser.add_argument("--teardown", action="store_true", help="Tear down started docker-compose services on exit")
+    parser.add_argument("--timeout", type=int, default=60, help="Timeout in seconds for service start checks")
+    parser.add_argument("--force-kill-port", action="store_true", help="If a required port is in use, attempt to kill the owning process")
+    args = parser.parse_args(argv)
+
+    procs: List[subprocess.Popen] = []
+    started_db = False
+
+    def shutdown(signum=None, frame=None):
+        print("\nShutting down…")
+        for p in procs:
+            try:
+                print(f" Terminating PID {p.pid}")
+                os.killpg(os.getpgid(p.pid), signal.SIGTERM)
+            except Exception:
+                try:
+                    p.terminate()
+                except Exception:
+                    pass
+        if args.teardown and DOCKER_COMPOSE_FILE.exists():
+            # Try to stop compose
+            for c in (["docker", "compose"], ["docker-compose"]):
+                try:
+                    if isinstance(c, list):
+                        subprocess.run([c[0], c[1], "down"], cwd=str(ROOT))
+                    else:
+                        subprocess.run([c, "down"], cwd=str(ROOT))
+                    print("Docker compose services stopped")
+                    break
+                except Exception:
+                    continue
+        sys.exit(0)
+
+    signal.signal(signal.SIGINT, shutdown)
+    signal.signal(signal.SIGTERM, shutdown)
+
+    # DB
+    if not args.no_db:
+        if is_port_open("127.0.0.1", DB_PORT):
+            print(f"Port {DB_PORT} already in use")
+        else:
+            ok, _ = start_db(DOCKER_COMPOSE_FILE)
+            started_db = ok
+
+        print(f"Waiting up to {args.timeout}s for DB on port {DB_PORT}…")
+        if not wait_for_port("127.0.0.1", DB_PORT, args.timeout):
+            print(f"DB did not become available on port {DB_PORT} within {args.timeout}s")
+            if args.force_kill_port:
+                pid = find_pid_on_port(DB_PORT)
+                if pid:
+                    print(f"Killing process {pid} on port {DB_PORT}")
+                    kill_pid(pid)
+                    time.sleep(1)
+                    if not wait_for_port("127.0.0.1", DB_PORT, 5):
+                        print("Still no DB after killing process; aborting")
+                        return 1
+            else:
+                print("Proceeding without DB — some features may fail")
+
+    # Backend
+    backend_proc = None
+    if not args.no_backend:
+        _start_backend = True
+        if is_port_open("127.0.0.1", BACKEND_PORT):
+            print(f"Backend port {BACKEND_PORT} already in use — killing and restarting")
+            pid = find_pid_on_port(BACKEND_PORT)
+            if pid:
+                kill_pid(pid)
+                time.sleep(0.5)
+        if _start_backend:
+            backend_proc = start_backend()
+            procs.append(backend_proc)
+            print(f"Waiting up to {args.timeout}s for backend on http://127.0.0.1:{BACKEND_PORT}/ …")
+            deadline = time.time() + args.timeout
+            import urllib.request
+
+            ok = False
+            while time.time() < deadline:
+                try:
+                    with urllib.request.urlopen(f"http://127.0.0.1:{BACKEND_PORT}/", timeout=2) as r:
+                        if r.status == 200:
+                            ok = True
+                            break
+                except Exception:
+                    pass
+                time.sleep(0.5)
+            if not ok:
+                print("Backend did not respond in time; check logs")
+
+    # Frontend
+    frontend_proc = None
+    if not args.no_frontend:
+        if is_port_open("127.0.0.1", FRONTEND_PORT):
+            print(f"Frontend port {FRONTEND_PORT} already in use")
+            pid = find_pid_on_port(FRONTEND_PORT)
+            if pid and args.force_kill_port:
+                print(f"Killing process {pid} on port {FRONTEND_PORT}")
+                kill_pid(pid)
+                time.sleep(0.5)
+        try:
+            frontend_proc = start_frontend()
+            procs.append(frontend_proc)
+        except Exception as exc:
+            print(f"Failed to start frontend: {exc}")
+
+    # Hot-folder watcher
+    watcher_proc = None
+    if not args.no_watch:
+        try:
+            watcher_proc = start_watcher()
+            procs.append(watcher_proc)
+        except Exception as exc:
+            print(f"Failed to start hot-folder watcher: {exc}")
+
+    # Stream logs (blocking) — interleave backend and frontend outputs
+    try:
+        while True:
+            alive = [p for p in procs if p and p.poll() is None]
+            if not alive:
+                print("No child processes running — exiting")
+                break
+            for p in list(alive):
+                # Non-blocking read single line if available
+                if p.stdout is None:
+                    continue
+                line = p.stdout.readline()
+                if line:
+                    label = "backend" if p is backend_proc else ("frontend" if p is frontend_proc else str(p.pid))
+                    print(f"[{label}] {line.rstrip()}")
+            time.sleep(0.1)
+    except KeyboardInterrupt:
+        shutdown()
+
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

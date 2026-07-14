@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# Luma
-Luma RAG Agent
-=======
-[README.md](https://github.com/user-attachments/files/28358194/README.md)
 # Webinar Library Answer Engine MVP
 
 ---
@@ -1006,4 +1001,3 @@ Overall: 2/3 questions with correct source in top 5 (67%)
 ### Retrieval quality signals to log (for future tuning)
 
 The `retrieval_logs` table captures method (`vector` / `keyword` / `merged`) and score per chunk per query. This data enables offline analysis of which retrieval method performs better without any additional instrumentation.
->>>>>>> 40be7cdacc3ed0b417e61ee7e05ecc33c8ae7a0b

@@ -1,0 +1,221 @@
+Source: https://lumalabs.ai/learning-center/articles/research-with-luma
+
+Research with Luma ==================
+
+March 9, 2026
+
+- Research with Luma How Research Works in Luma AI Where Research Lives Research Best Practices Be Specific About What's Needed Layer Questions — Don't Front-Load Use Board Assets as Research Context Ask for Structured Deliverables State the Purpose Research During Production — Not Just Planning What Research Can Cover Research Limitations Research Workflows by Use Case For Brand Campaigns For Content Creation For Product Launches For Pitch Decks and Presentations Quick Reference
+
+- How Research Works in Luma AI
+
+- Where Research Lives
+
+- Research Best Practices Be Specific About What's Needed Layer Questions — Don't Front-Load Use Board Assets as Research Context Ask for Structured Deliverables State the Purpose Research During Production — Not Just Planning
+
+- Be Specific About What's Needed
+
+- Layer Questions — Don't Front-Load
+
+- Use Board Assets as Research Context
+
+- Ask for Structured Deliverables
+
+- State the Purpose
+
+- Research During Production — Not Just Planning
+
+- What Research Can Cover
+
+- Research Limitations
+
+- Research Workflows by Use Case For Brand Campaigns For Content Creation For Product Launches For Pitch Decks and Presentations
+
+- For Brand Campaigns
+
+- For Content Creation
+
+- For Product Launches
+
+- For Pitch Decks and Presentations
+
+- Quick Reference
+
+Research with Luma ==================
+
+How Research Works in Luma AI -----------------------------
+
+The Luma Agent has web research capabilities accessible across both Brainstorm Mode and Create Mode. Research isn't a separate tool — it's woven into the conversational workflow. Ask a question, and Luma searches the web in real time, retrieves relevant sources, synthesizes the findings, and presents them directly in the conversation or as a structured document on the board.
+
+The output is curated information — not a list of links. Sources are read, key data is extracted, and findings are organized for immediate creative use. Research can inform ideation, validate creative direction, or provide technical specifications mid-production.
+
+Where Research Lives --------------------
+
+- Brainstorm Mode — Research is most commonly used here during the ideation phase. Ask for competitor analysis, trend reports, visual references, or cultural context to shape creative direction before any assets are generated.
+
+- Create Mode — Research is also available during production. Need to check a platform's aspect ratio specs mid-build? Want to reference a specific film's color grading approach while generating images? Ask during creation and the information feeds directly into the workflow.
+
+- Contextual Memory — Any asset already on the board — images, videos, documents, brand guidelines — can be analyzed and referenced during research. Upload a competitor's ad and ask how to differentiate. Drop in brand guidelines and ask for research that aligns with them.
+
+Research Best Practices -----------------------
+
+Be Specific About What's Needed -------------------------------
+
+Frame requests around the actual information gap, not the search mechanics. The more precisely the question is framed, the more actionable the output.
+
+Layer Questions — Don't Front-Load ----------------------------------
+
+Research works best as a conversation, not a single megaprompt. Start broad, then narrow based on what comes back.
+
+Round 1: "What visual styles are trending in luxury real estate marketing?" Round 2: "Focus on the minimal editorial direction — who's doing it best?" Round 3: "Pull specific examples from those brands I can reference for my campaign."
+
+Each round builds context. This layered approach produces sharper, more targeted results than trying to ask everything at once.
+
+Use Board Assets as Research Context ------------------------------------
+
+Drop reference images, competitor screenshots, brand guidelines, or existing work onto the board before starting research. Luma can analyze what's already there and tailor findings accordingly.
+
+Effective combinations:
+
+- Brand guidelines PDF + research request → Results filtered through brand parameters
+
+- Competitor screenshot + differentiation question → Analysis grounded in specifics
+
+- Existing campaign asset + trend research → Recommendations that build on current work
+
+- Product photo + market research → Positioning insights tied to the actual product
+
+Ask for Structured Deliverables -------------------------------
+
+When research feeds a project, specify the output format:
+
+- "Summarize this into a competitive analysis document"
+
+- "Create a reference sheet with key takeaways and source links"
+
+- "Organize findings into a mood direction brief"
+
+- "Build a platform specs cheat sheet I can reference during production"
+
+- "Write a creative brief based on what we've found"
+
+This produces a persistent asset — editable, referenceable, and available throughout the project lifecycle.
+
+State the Purpose -----------------
+
+Context about the end goal sharpens everything. There's a meaningful difference between research for inspiration and research for a deliverable.
+
+- For ideation: "I'm exploring visual directions for a rebrand — show me what's out there."
+
+- For production: "I'm building hero images for a sneaker campaign targeting 18–24 year olds. I need specific reference examples to guide the generation."
+
+- For validation: "I've chosen a brutalist design direction for this brand. Find examples of other premium brands that have used brutalism successfully."
+
+- For technical specs: "I'm creating video ads for TikTok, Instagram Reels, and YouTube Shorts. What are the current recommended specs for each?"
+
+Purpose-driven requests produce research that's already shaped for its destination.
+
+Research During Production — Not Just Planning ----------------------------------------------
+
+Research isn't limited to the brainstorming phase. During asset creation in Create Mode, research can answer questions in real time:
+
+- "What's the exact hex code for Coca-Cola red?"
+
+- "Show me examples of split-screen compositions in fashion photography"
+
+- "What film used the teal-and-orange grading I'm trying to replicate?"
+
+- "What's the standard safe zone for text in Instagram Stories?"
+
+This eliminates tab-switching and keeps the creative flow unbroken.
+
+What Research Can Cover -----------------------
+
+- Visual trends — current styles, color palettes, typography, layout patterns across industries
+
+- Competitor analysis — what other brands are doing, how they position visually and strategically
+
+- Cultural context — memes, movements, subcultures, and aesthetics relevant to a target audience
+
+- Platform specifications — format requirements, best practices, and performance benchmarks for TikTok, Instagram, YouTube, LinkedIn, and more
+
+- Technical references — aspect ratios, resolution standards, duration recommendations, codec specs
+
+- Art and film references — specific directors, cinematographers, photographers, designers, movements — as creative vocabulary
+
+- Market research — audience demographics, positioning strategies, pricing context
+
+- Inspiration gathering — reference images, mood boards, stylistic touchpoints from across the web
+
+Research Limitations --------------------
+
+- Paywalled content — research works with publicly available sources only
+
+- Real-time data precision — trending topics and statistics may have slight lag
+
+- Domain expertise depth — synthesizes available online information; highly specialized or proprietary industry knowledge may require human input
+
+- Asset generation — research informs decisions; image, video, and audio creation is handled by the generation tools
+
+- Historical accuracy — always verify critical dates, statistics, or claims against authoritative sources for high-stakes projects
+
+Research Workflows by Use Case ------------------------------
+
+For Brand Campaigns -------------------
+
+- Upload brand assets and guidelines to the board
+
+- Ask for competitor landscape analysis in Brainstorm Mode
+
+- Request trend research filtered through brand parameters
+
+- Generate a creative brief document from findings
+
+- Switch to Create Mode with the brief as a reference
+
+For Content Creation --------------------
+
+- Describe the content format and platform
+
+- Ask for current best practices and specs for that platform
+
+- Request visual references that match the intended style
+
+- Generate assets in Create Mode, referencing research mid-production as needed
+
+For Product Launches --------------------
+
+- Upload product photos to the board
+
+- Research competitor visual strategies in the same category
+
+- Ask for trend analysis relevant to the target demographic
+
+- Generate multiple creative direction options
+
+- Research which directions align with current market momentum
+
+For Pitch Decks and Presentations ---------------------------------
+
+- Describe the audience and objective
+
+- Research market data, competitor positioning, and visual benchmarks
+
+- Request a structured research summary document
+
+- Use findings as the data backbone for slide content and visuals
+
+Quick Reference ---------------
+
+- One topic per thread — mixing unrelated research topics dilutes quality
+
+- React to what comes back — "more like this" or "not that direction" refines results faster than re-prompting from scratch
+
+- Ask for comparisons — "How does Brand A differ from Brand B?" beats researching each separately
+
+- Name the audience — stating target demographics upfront improves relevance across every finding
+
+- Save everything — request a summary document for any research that matters beyond the current conversation
+
+- Cross-reference modes — start research in Brainstorm, continue it in Create when production questions arise
+
+- Use research as generation context — reference research documents and findings when prompting asset generation for more targeted outputs

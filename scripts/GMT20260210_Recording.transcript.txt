@@ -1,0 +1,1336 @@
+0:01
+from Ryan back. Last week was a snow place. Now there's
+0:08
+no boat.
+0:11
+>> Enjoying the water. That's definitely on the
+0:15
+>> Oh, wow. You're on a boat now.
+0:17
+>> Yeah. Yeah.
+0:20
+>> It's like jet setting.
+0:21
+>> The seasons changed really quickly.
+0:27
+>> Kind of feels like that right now. Uh, Mr. Brett,
+0:33
+how are you, dude? Do you have
+0:35
+>> Oh, we're doing all right.
+0:37
+>> Do you have things that you need from us? Are we Are we um good on things?
+0:43
+>> I think we're good. We should be able to dive bomb into uh this demo here.
+0:48
+>> Uh I just drafted up what the new like product positioning and messaging
+0:55
+should be. Um Dom's going to look through it, chat
+1:00
+with Caroline and folks and see if there's any feedback, input, etc. on it.
+1:04
+But thank you guys for the the input earlier. Was very helpful.
+1:07
+>> Sweet. Um
+1:10
+I I think this is uh this really is Brennan's show, I think. Um
+1:19
+Yeah.
+1:22
+>> Yeah. Let's do it.
+1:23
+>> Let's do it. Okay.
+1:31
+Okay. So, just so you know, everything that
+1:35
+we're going to go, we're going to go over characters today, but everything we
+1:38
+go over is relevant to objects, object consistency as well. So, there will be a
+1:44
+few times that I'm going to show that. And technically, my claimation character
+1:48
+here is an object. So really the point of this is just to say if you need
+1:53
+object consistency, product consistency, it will be the exact same techniques and
+1:58
+approaches and best practices that we use for character consistency.
+2:03
+And the main goal of this, it's going to make it sound really simple, but you're
+2:08
+going to see there's a lot of nuances, is to get you to think in terms of
+2:13
+creating these views first before anything else. And then when you
+2:19
+need to place a character into a scene, you use the view that makes the most
+2:25
+sense or is the most closely related to your desired output. So if I'm hoping to
+2:31
+have this character facing at a similar angle to the stage, then this shot is
+2:36
+going to be much better than this shot. And I know at this point you're like,
+2:41
+"Yeah, this is obvious." But I there's so many times that we see people not
+2:46
+doing this and there's so many nuances that I'm going to go over that I I think
+2:51
+by the end of this you'll really see how important it is. So I'm trying to say
+2:56
+get multiple views first that you've approved of before you start putting
+3:01
+these characters into an environments and okay so when we actually look at
+3:08
+these so I I asked to get some views of this character and I zoom in here you
+3:14
+will notice that my jacket is different on both of these two characters. So,
+3:20
+this one has studs along the edges, and this one has studs that go kind of
+3:24
+across the top horizontal. And so, I'm going to want to fix this.
+3:29
+And we're going to go over how to fix this and why this is happening.
+3:33
+So, the first thing that I want to go over
+3:38
+is like, so this is an example. I have this character reference, and let's say
+3:42
+I I asked the agent to give me a back view and to give me a back view closeup.
+3:49
+So the thing is that because we're working with the front of a character,
+3:53
+each time I ask the agent to generate a back view, it's going to be a different
+3:58
+back view. So if I need to get a back view and get a back view close-up shot,
+4:04
+then I'm first going to say, okay, this is actually the back view that I like.
+4:10
+And then I'm going to use this back view to get a close-up shot.
+4:16
+And now I know that my jackets are going to match.
+4:19
+And it's this small step that a lot of people seem to miss because they'll keep
+4:24
+using this as a character reference. But really, once we get the back back view,
+4:29
+that's our main back view reference. And we we only want to use that for back
+4:33
+view shots. So in this situation that we're going
+4:38
+over here, when the jackets are different Oh, yeah. Go ahead.
+4:44
+I just before before you go on, I also wanted to point out the thing that we
+4:49
+realized that you may want to create a single
+4:55
+character reference sheet that has all the angles, but like don't do that. It's
+5:01
+much better to create separate reference sheets for each angle and each position
+5:06
+that that you want. Otherwise, you start getting some real funky stuff happening.
+5:11
+I think you'll go over that in a minute, but yeah. Well, actually, no, it's a
+5:14
+good point because I I thought maybe I was going to skip it because I didn't
+5:17
+know if people were actually using this, but the main
+5:22
+the main point that he was touching on, yeah, the main point that was trying to
+5:30
+be said is that get the views as individual images that you can then
+5:34
+reference that view with the agent as opposed to a sheet that has all of the
+5:41
+views And there's a few there's a few reasons
+5:44
+for this. Uh and you'll see here like if you can imagine that I got this as my
+5:50
+output. It's not easy for me to select this and ask the agent to iterate on
+5:55
+four views at the same time. I could ask it to break these into four separate
+6:00
+shots and then fix them and put it back together. But asking it to make three
+6:05
+edits to only these like these characters hair, but this one's fine is
+6:11
+really frustrating. But when you have all the views
+6:14
+separate, then it's really easy to just iterate on one of these views at a time.
+6:19
+So it's for ease. But also when we tested this,
+6:26
+which this was the worst with Cream, but Nano Banana it was happening too. Though
+6:31
+Nano Banana Pro, it didn't happen very frequently. It happened very little at
+6:35
+all, but it did happen. was that when it's the full character sheet,
+6:41
+we could kind of phrase it as threearters of the views on this on this
+6:46
+uh image have something in the image that we don't actually want in my back
+6:50
+view. So, it turned out that a lot of times using this multi- view sheet
+6:57
+caused it to put these shoulder pads on the character when I didn't need it to
+7:03
+be there. But when I just am using only my back view, it doesn't even have those
+7:09
+shoulder views in the image reference. So I'm more likely to get all of my
+7:13
+outputs to look just like the view because it doesn't have to doesn't have
+7:18
+any extra information in there that's unrelated to what I'm trying to to
+7:22
+create. So that was the main thing. Um but yeah, thanks for calling that out.
+7:29
+Um, okay. So, this where we were. Yeah, this is where
+7:34
+we were. Okay. So, back to the original problem that we had. We want to get
+7:39
+these jackets to be the same. So, we actually decide, okay, I like this
+7:45
+jacket and I want this jacket to be on this character's view. So, now I'm
+7:51
+actually going to just use this as my reference and then request to get a
+7:56
+different view. And now I know that the jackets are the same. Just so you can
+8:00
+see. Is that all making sense? What we're
+8:05
+covering so far? It seems Okay, cool.
+8:11
+Yeah, it's something that once you see it, it feels really obvious, but at the
+8:15
+same time, it's it's um easy to miss. And then separately, we've heard a lot
+8:21
+of feedback on on this as well. If you really needed a jacket to look good,
+8:27
+it's almost then better for any accessory or fashion item to get these
+8:32
+views on the jacket separate and then place them onto the character. So, like
+8:39
+if I really wanted it to just be this jacket, then I could just get the
+8:42
+corresponding view and just say place this jacket onto this character.
+8:46
+Especially if you think you're maybe going to have different fashion items
+8:50
+that a character is in throughout multiple shots.
+8:56
+Okay, so we kind of went over this. I know it's going to seem obvious, but I
+9:00
+I'm just going to go over because it seems to really click in when we do it
+9:04
+this way. And so I'm just going to compare what happens if I use these two
+9:09
+different references and try and get them into this scene. So, if I'm trying
+9:13
+to get this front view character into the scene, and I look at three of these
+9:18
+outputs, and these are just close-up shots down
+9:22
+here, so we can easily view all of the guitars look the same, his hair looks
+9:26
+the same, his facial expression. I have consistency across these three shots.
+9:33
+When I use the back view, I didn't specify. I just said place the character
+9:37
+into the scene. It didn't seem one of them. It actually
+9:41
+had the character turn the other way around, which you can see here. And then
+9:46
+the other two, uh, they're facing towards us, but now it's having the
+9:50
+studs that were on the back on the front. The pick guard on this guitar is
+9:55
+white, and the pick guard on this guitar is black. So, none of the guitars are
+10:00
+consistent. And the reason for this is the same thing we mentioned before. It
+10:05
+doesn't know what the front of this character looks like. So each time it
+10:09
+generates an image with it facing forward, it's going to look different in
+10:13
+each of those images. And you'll actually even notice that even though
+10:17
+his guitar is facing forward, it was referencing the back of the guitar. So
+10:22
+it doesn't even look like the guitar is facing the right way. So that's part of
+10:27
+the reason why getting the views first is really important. And just to drill
+10:32
+this in even further, the other way around. So I actually said place the
+10:37
+character on the stage facing away from the camera. So now I do want this view.
+10:43
+But when I use the front view, I have three different jackets.
+10:50
+This one is a black guitar strap. This has no guitar strap. This has a brown
+10:55
+guitar strap. And so I'm I'm still going to not get
+10:59
+consistency. Actually, the guitars are different, too. I'm not going to get
+11:03
+consistency unless I have my view where when I did use the back view now
+11:10
+all of the jackets and guitars are exactly the same.
+11:16
+So that's part of the reason to get the views. And I am going to use our tour's
+11:22
+example here just because this helped click click in for me. Um so
+11:30
+this is just another example. with an object, but the same thing applies. And
+11:34
+our tour had commented that this model of the car has these three slashes right
+11:39
+here. Um, it has a unique um rim on it. And then the way,
+11:47
+you can't really see it here, but it actually has a specific logo on the car.
+11:51
+So, this is a view of the right side of the car, but when I'm putting it into a
+11:56
+picture that's guaranteed to have a left view of the car. Now it only has one
+12:02
+stripe here. Yeah. Go ahead, Archer.
+12:07
+>> A quick comment is that the model was trying to reach the infernos because it
+12:12
+has more images with just one stripe. they call it the claw of this lion.
+12:20
+Um, so we I think it's interesting to lock in in the image reference instead
+12:26
+of allowing the model to go out and search outside.
+12:30
+>> Exactly. Exactly. Yeah. It's the It's the same
+12:34
+kind of concept as the jacket is like now it has to kind of invent or create
+12:41
+what the left side of the car would look like. And so it's more likely to then be
+12:46
+based off of its previous training. So now it doesn't look like the current
+12:51
+model anymore. But when we use the right view and we're we're using images that
+12:58
+expect a right view of the car to be used, then all of these shots had the
+13:03
+three stripes. They have the right hubcap or the rim on it and then they
+13:07
+have the right logo. So, as long as I and which was which our tours example is
+13:13
+really cool because the car came with a bunch of different views on it and as
+13:18
+long as you use the right view then you could get really good outputs but if you
+13:22
+use the wrong view then you are more likely to get these results. So the same
+13:27
+the same thing goes for characters objects it's all the same concept.
+13:33
+Um okay and I'll get to that in a second.
+13:37
+So the main the main reason and so and also
+13:43
+just keep in mind that like when we're talking to enterprise clients about
+13:47
+their like a car or a character, they don't really have much room for
+13:52
+error. And so I'm sort of been recommending key frames like start and
+13:57
+end frames because at least as long as they can guarantee that the start frame
+14:02
+and the end frame are consistent with what they want, we're more likely to get
+14:06
+a video that's what they want than if it's just I tov. So that's part of the
+14:11
+reason why I'm contextualizing things this way. But what I I don't know if you
+14:17
+guys noticed that everything in Vespa got like resized a few weeks ago. So,
+14:21
+kind of bothered the crap out of me, but these used to be a lot bigger.
+14:29
+So, this is going to be sort of obvious, but I just want to show an example of
+14:35
+when we have a matching jacket, what our start frame and frame outputs look like
+14:39
+compared to when we have two different jackets where the studs are different.
+14:45
+And I know that you guys all know what's going to happen here, but just so that
+14:48
+we do it, if I look at this video,
+14:56
+so one of the things I'm recommending to people, which I'll go over in a bit, is
+15:00
+to actually test out character um animations
+15:06
+with just these character reference images, maybe even before you put them
+15:10
+into a scene, so that you can kind of sign off of like, I know that my
+15:14
+character can transition between these two shots and therefore I can know that
+15:18
+I have good reference images. Um, and you can still add dancing to it
+15:25
+or whatever, but I still have like good character consistency. There's not much
+15:29
+hallucination happening here. Um, I do want to show this video where
+15:34
+it didn't work, and I'm going to go over this in a second. So, he overrotates
+15:41
+um outside of the range of the two angles here. So, as long as I stay in
+15:46
+between, let's just say this like 45 to 60° angle, I know my characters are
+15:53
+going to be consistent. So, as long as he rotates counterclockwise here, I'm
+15:57
+good. If he rotates clockwise, which is what happened here, then I'm
+16:03
+not good because it's it's the same concept. We're now asking the model to
+16:07
+come up with the front of the character, but it never got a reference to the
+16:11
+front of the character. Uh, so as long as we stay in that range,
+16:15
+we're good. When the jackets are different
+16:21
+at the end of the animation here, whenever it wants to play,
+16:26
+there we go. At the end of the animation, the studs
+16:33
+are going to appear out of nowhere. Um, and this is an obvious example. Like, we
+16:39
+all kind of knew this was going to happen, but the point of this is to say
+16:42
+we really want to be like precise in comparing our reference images and
+16:47
+knowing that they're going to work. Otherwise, we're going to see these
+16:51
+hallucinations. And then just to follow up on the car example,
+16:58
+as long as I was certain that I could get these two views to be consistent,
+17:04
+then I'm able to get animations where the consistency of how the product
+17:11
+actually looks throughout the animation is going to be pretty strong.
+17:20
+Let's see here. And really, so and the point of this was
+17:29
+to say I'm not so certain that we would have gotten these same results from um I
+17:34
+to V because it feels like we're leaving some room for the model to interpret
+17:38
+things a little more than key frames. So if character consistency is highly
+17:43
+desired, then I'm trying to recommend people to use key frames. Um,
+17:50
+so we went over some obvious examples. I'm going to go over a less obvious
+17:55
+example here. So I had this character view and I
+18:02
+wanted to see all of these shirts and all of these guitars on this character,
+18:08
+which implies that when I get my outputs, the the the character is
+18:12
+actually going to look like he's playing the guitar. And it seems like that would
+18:16
+make sense. It seems like I've chosen a good character image here, but what
+18:22
+happened is that all of my outputs, the hair was different. So, my tattoos
+18:30
+look good, the shirts look good, the guitars look good, but the hair is
+18:34
+inconsistent in all of these outputs. And I think I highlighted that here.
+18:43
+And if we look at this image, it's the same. It's the same concept now just on
+18:47
+the hair. It doesn't know what his haircut looks like. It just sees that
+18:52
+there's these spikes and then maybe it's a mohawk, but it doesn't have enough
+18:56
+information here to infer what to do at this slight angle that it's putting the
+19:03
+uh character at in order to play this guitar.
+19:06
+Does that at least make sense? This like nuance thing I'm showing?
+19:10
+>> Yeah. Did you prompt it to be playing the guitar or just like to be with the
+19:14
+accessories? Like did you just combine them?
+19:17
+>> I just said Uhhuh.
+19:19
+>> I just wanted to see every combination here. And so it inferred that that it
+19:24
+should be he should be playing the guitar just from that prompt.
+19:29
+>> So yeah, if I had maybe asked for it to stay in the same pose, I probably
+19:34
+wouldn't have noticed it. But because because it did take the liberty of
+19:39
+having that slight angle on most of them, it had to make up what the hair
+19:44
+was in most of them. So, and and it at first it kind of
+19:49
+confused me and then it's like, okay, it's the same concept. So, now I'm going
+19:54
+to provide an image where I know that it can see all of the hair. He's already in
+19:59
+a pose where he's playing the guitar. And so when I combine these together,
+20:05
+now all of the hair is the same. So this is where this like little nuance
+20:11
+of the character consistency is like a really big deal because it's not just
+20:15
+about front and back, it's like what the model can see. Yeah, go ahead, Charles.
+20:20
+>> I'm just curious from a prompting standpoint, was was this one shot or was
+20:24
+there a lot of inconsistencies like and these are just the final ones you picked
+20:27
+out of um this image? So like when you asked for it to you know add each
+20:33
+element was it was this actually the result that it gave you or was there a
+20:37
+bunch of inconsistencies too? No this was actually
+20:42
+um a lot of times I am asking for like three variations of everything but this
+20:48
+time I wasn't just to test it. And you can even see here it just says orange
+20:52
+shirt for guitar. So this these were my exact outputs that I got.
+20:57
+>> Awesome. And was it in one prompt or was it um in multiple prompts?
+21:03
+>> I So this was this was exactly my prompt other than at the bottom I changed I
+21:08
+switched out this image for the slightly angled view but I just had um all eight
+21:14
+of these images selected and said add every combination of shirt and guitar to
+21:18
+this character. And then that that was what the result was I got.
+21:22
+>> Awesome. That's impressive. Pretty cool. So yeah, it could it was pretty
+21:26
+satisfying that it could figure out and like neatly has the shirts in each group
+21:32
+with all of the guitars and the columns. But yeah, go ahead, Ar.
+21:39
+>> Later on, I'd like to show you some example that I did that is like taking
+21:45
+this um concerns to another level. But just
+21:49
+go on and then later on if you have time I can show. But it's the same topic we
+21:54
+>> Oh yeah. Yeah. I think we'll definitely have
+21:58
+time. Yeah.
+22:02
+>> So, okay. And I don't think Okay. And the only other thing
+22:09
+I'm going to point out here, um, because I found this out way later in my
+22:15
+process, I wish I found it out sooner. Just forgive my scrolling here for a
+22:20
+second. is that one of the things I so I got my views. One of the things I didn't
+22:26
+notice is that if you look at this side view, the hair is actually there's like
+22:31
+space in between the glasses and where the hair starts. And on this side,
+22:36
+there's no space. So when I was using this as a character
+22:43
+as a reference, it had no idea this was a mohawk and made like the entire it
+22:48
+actually I think this is part of the reason why
+22:52
+I was getting a lot of results like this is because it couldn't figure out that
+22:59
+when you look at his head here that this was a mohawk because it actually like
+23:02
+widens and that little detail made like a giant
+23:07
+difference whenever I was asking asking it for a back view or if I was asking
+23:12
+for let's say a rotation between like this
+23:19
+shot and this shot, it w it was getting confused of what to do with that
+23:23
+hairline. So, I actually this was part of what caused me to
+23:31
+redo this character's hair so that it was more symmetrical.
+23:35
+And this is something that Devich, I think you've been doing in in classic as
+23:40
+well. But I started once I got these views and I thought that they worked and
+23:44
+I added tattoos so that it would be a little bit harder for the model to
+23:47
+accomplish. This is where I was recommending
+23:53
+like test out these views and see if the animations work. So like I want this as
+23:59
+my start frame, this is my end frame. And then I can know that if I do these
+24:04
+actually in an environment that it's going to work and that same. So I'm
+24:09
+actually going to show you the a good example first. So if I can get a clean
+24:13
+animation where all of my my tattoos, everything
+24:18
+looks good, then I know that I can use those as a reference point. Nothing
+24:21
+funny is happening with the hair. So now I at least can know that between these
+24:26
+two views I have a good uh character consistency.
+24:32
+as long as I expect it to stay within this rotation. So the times when it
+24:38
+rotated the other way, it you can actually see it put the wrong
+24:44
+tattoos. So on this side is supposed to have a snake and it just replicated the
+24:49
+same tattoos that it um had access to because it has no clue from these two
+24:53
+images that my right arm has a different set of tattoos. So, as long as I stay in
+24:59
+between these two views, it's not going to make up tattoos.
+25:05
+As you Oh, as you can see here. Um, but like in this shot, I have two
+25:10
+separate arms and as long as it stayed between these two angles now, I can see
+25:15
+both sets of tattoos and they should they should look good. Um, did I cover
+25:22
+that too quickly or does that part make sense, too?
+25:27
+Okay, cool.
+25:28
+>> Makes sense.
+25:30
+>> And so, yeah, you could see I I just tested all these. And then the last
+25:36
+thing I'll say before I hand it off to you, Artur, is
+25:43
+I would, especially if you're going to be working with this character a lot, I
+25:48
+would I would recommend like like I kind of showed with the jacket, like
+25:53
+separating out assets and iterating them and then putting them back together like
+25:59
+I was doing with the character um the shirt and guitar. And that's how I was
+26:04
+able to like really make sure that I could have a good combination of like I
+26:09
+wanted to get this logo onto these shirts, but I didn't know what shirt was
+26:12
+going to work with which guitar. But there just seems to be much higher
+26:17
+quality outputs when like all of these things are separated and like cleaned up
+26:23
+and then put back together instead of trying to prompt for it all at once. Um,
+26:28
+and then if I had chosen one of these, then I would probably want to get some
+26:32
+views of this as well. But that was the main the main stuff I wanted to cover.
+26:40
+One more. Can I add one more thing is also and also to like do the same thing
+26:46
+for every accessory that you're going to then implement, right? like treat all
+26:50
+objects as a character, all characters as an object or like because then you
+26:55
+have this whole bank of things that you're like, all right, I'm going to
+26:58
+choose this one because it's at this angle which matches this angle on this
+27:01
+one. Those are the two I'm going to combine. And then something that he said
+27:05
+that was also really key um that m was the the environment itself when the when
+27:13
+the model or in this case the agent understands like and sees an image and
+27:20
+there's an obvious placement for something like do you remember the
+27:24
+annotation that we we kind of went through this annotation thing where like
+27:27
+we realized that where we where we write something and you know for an action to
+27:32
+happen is kind of a super obvious place. The model is going to do the same thing.
+27:37
+It's like it's going to understand that there is a um uh what's it called? The
+27:44
+the the path of least resistance so to speak where it's going to really
+27:48
+understand how the composition of that image is going to like most commonly
+27:54
+relate to the object or the thing that you're placing in it. And so in a sense,
+28:00
+you always got to think about that too. And like in your image, if you're doing
+28:03
+something that the angle of your character or whatever doesn't isn't the
+28:08
+the path of least resistance, you're going to it's going to probably give you
+28:12
+like multiple views that are not what you want. Like you're like fighting with
+28:15
+it until you set that that plate or that that setting that background in the
+28:21
+right like angle to fit the thing. Um if that makes sense.
+28:26
+>> Yeah. Yeah, that is a good point. And I Oh, yeah. Go ahead. I I did forget one
+28:33
+thing I do want to cover, but yeah, go ahead.
+28:35
+>> Maybe you'll cover it. I'll let you I'll let you go.
+28:37
+>> Oh, the only the only thing is that So, here's an example where I wanted to get
+28:43
+a close-up shot of this witch's face, but because it's kind of zoomed out,
+28:49
+once it was able to get that shot, it's didn't really have much details compared
+28:53
+to my original reference. So, you can imagine this reference was used to place
+28:58
+this character into this scene and then I wanted to get a close-up shot. So, I
+29:02
+used this as my reference, but because it's far away and then when I zoomed in,
+29:07
+I didn't have the same detail on the witch's face.
+29:12
+But a lot of people when they get here think that they're just stuck and that
+29:16
+this is what they have to deal with or they're going to try and regenerate the
+29:20
+image with this um character reference and hope it looks like the same scene.
+29:24
+As you can see, I can kind of see the books and like the lighting is
+29:27
+consistent. But I can also select this image, select my character
+29:34
+reference, and then edit this image and say or actually I think I used I
+29:39
+actually used a closeup. So I can select this and select this image and say edit
+29:45
+this witch's face to be this face. And then it will give me
+29:51
+an updated version of her face with the same background and lighting as the
+29:56
+original image. So if you get an output that's like close and you're like, "Oh,
+30:01
+my character's close." You can try and edit it. It will maybe take like 10
+30:07
+tries to get a good one. I think I had it say like, "Give me like 15 outputs or
+30:13
+something and it's not but eventually I got it." Um, so you're not always stuck.
+30:19
+You can edit an image with the reference. That was the main other point
+30:21
+I was going to say. But yeah, go ahead, Charles.
+30:24
+>> Oh, awesome. Yeah. No, that's super helpful. And I I just want to um
+30:29
+share my screen for a second because it's the board with the thing, but it
+30:33
+looks like I can't because of the new filters that we have in our things we've
+30:39
+installed on our computers doesn't let me. It says denied. Um so I don't think
+30:44
+I can share. But um and it's the same issues you were having, Dicho. The uh
+30:50
+>> Oh, I went through so much.
+30:53
+>> I I was following that. Um,
+30:55
+>> I was so angry.
+30:57
+>> Yeah. Okay, I can't share my screen. But essentially, the big thing that I'm
+31:00
+taking away because I was going to show my the Chrome robot piece I was doing,
+31:04
+which kind of sparked this conversation. Um, so one thing I was using was like a
+31:09
+layout sheet with like concept art of the character. And it seems like layouts
+31:13
+are not the move. Use angles and put them in the style that you ultimately
+31:19
+want in the final piece. So instead of having concept art of this character, I
+31:23
+should have created a 3D like version of him
+31:27
+uh most likely on like a neutral lighting background um in different
+31:30
+angles. And that would probably have served me better than trying to prompt
+31:34
+from a concept art standpoint because I think that was my main problem was that
+31:38
+it was a different style and it was a layout photo. Um so you guys have like
+31:45
+re like you guys wouldn't recommend ever using layouts, right?
+31:48
+>> Yeah. No, like like a multi- view like like multiple views on a single page
+31:53
+kind of thing.
+31:54
+>> Yeah, I
+31:55
+>> know. And when you look at it, like that works for a human really well because a
+32:00
+human can kind of like put those things together and it's coming from like his
+32:06
+like whatever his his vision, but it's not when you look at it like when the
+32:11
+model is looking at it or the agent is looking at it like it's not as helpful
+32:16
+for sure. Especially because if the agent or if the or if a model actually
+32:21
+created that then
+32:24
+>> you'll see when you zoom in and you start looking around there are major
+32:27
+little differences in all kinds of different places. I it just doesn't work
+32:33
+as well. Like not not nearly as well.
+32:36
+>> I see. And it's I actually got it working. So yeah, I was using this and
+32:40
+so these are like no like this is like the first thing you guys would say would
+32:44
+be like an issue. I should have been generating off of like this type of uh
+32:50
+>> derivate more. Just a bit more. This is a good image. Just state at 300 angle
+32:57
+360.
+32:58
+>> Yeah, exactly.
+32:59
+>> No, this is super helpful. Yeah, I think uh I kept thinking like, oh well,
+33:03
+concept artists would concept a character and then that's how you would
+33:06
+but in this format, you're actually wanting to get as close as possible to
+33:12
+the reference, right? Uploaded. Cool. Yeah,
+33:15
+>> it's almost we try to um be rivals to loras because people always do this kind
+33:21
+of stuff beside Loras. But for example, I have this bizarre scene with tons of
+33:27
+people and another challenge, another tons of faces. So I decided to generate
+33:33
+all the emotions or at least few emotions and some
+33:37
+points of view of all the characters.
+33:44
+and then try to make the model learn their clothing, you know, exactly
+33:49
+because it's it has an specific pattern. And then I have my scene this seen in
+33:57
+the chairs and I'm sometimes I I can generate that the people and then I have
+34:02
+to fix all the faces and then I have this sort of casting card, you know,
+34:07
+when actors go to a casting. So I every time I try to generate the
+34:13
+emotions and points of view, uh this is probably the most famous
+34:20
+example right now, generating the cars, the colors,
+34:26
+then adding the space where they're going to be inserted,
+34:30
+and then adding people. I had to make the casting part of the other people at
+34:34
+least some positions very their clothing
+34:41
+put them on their clothing and then join um put it together with the cars and
+34:48
+having this variations. I find this way easier than just prompt
+34:55
+it right away. And you can be consistent and always tell the hey I this person is
+35:01
+wrong in this scene. Can you fix or impaint all only his face only her face?
+35:06
+You know this kind of stuff.
+35:08
+>> Oh yeah.
+35:08
+>> And I find it impainting is the right word that I understands.
+35:15
+For example, all this this product. So I asked, hey, make some positions, make a
+35:22
+zoom, make some variations. And then what I I was trying to come up with the
+35:27
+prompt based on this seats that you guys are doing, Brandon, in the video is if I
+35:34
+can create a prompt that generate a grid with nine positions. So maybe people
+35:39
+just bring in their character, put this prompt, the seed, and then they can have
+35:45
+a starting point of nine points of view with the product. You know, I'm trying
+35:50
+to come up with this is not going really well. But for example, this smaller
+35:54
+stuff, details from other point of views, uh because I think it could help
+35:59
+people try to to bring characters. Another another example, I have my old
+36:03
+lady. Old lady here's looking to the side. Now
+36:07
+she's angry looking from above and all this kind of stuff. I am trying to get
+36:11
+one prompt to generate that a big grid you know
+36:17
+>> have you noticed like for example like when you look back at that lady like
+36:21
+because you can go so detailed so like for example have you noticed in these
+36:25
+cases like are her glasses changing for example?
+36:29
+>> Oh I had.
+36:31
+>> Yeah. So like if you control like the more control you have for like you
+36:34
+really if you're like if you think of stuff as like a movie director you have
+36:38
+like control over the wardrobe over like all the different things that go into
+36:43
+it. That's how you build true consistency and like persistency almost
+36:49
+also where you you are really like controlling every detail and it it makes
+36:54
+it so much easier later on
+36:57
+>> for things not to morph around and like little weird things that are happening
+37:01
+that you didn't realize we didn't figure out why.
+37:04
+>> Like it's like that planning stage.
+37:08
+>> Totally totally agree. And then the famous scene, this dog with all his
+37:13
+accessories. And then when I try to make put him on the scene, it understands
+37:18
+better. And you also can just in paint, hey, this is not the right glasses. Oh,
+37:22
+hey, this is not the right cap because it has a reference. And if you have the
+37:27
+same object in in different references, sorry, this is the dog.
+37:32
+the same object and different reference, different point of view, it would
+37:36
+understand better when it tried to generate, you know, this character
+37:40
+sheet, this casting card. Um, but yeah,
+37:46
+>> totally awesome. I was curious um just if you guys had any uh issues with like
+37:52
+the model switching between um things. haven't like hasn't happened to me, but
+37:57
+I'm just like curious with this workflow like if it's been using Nano Banana Pro,
+38:01
+is it pretty good at like now keeping that consistent that it's going to use
+38:05
+that model going forward or is that kind of just the default at this point that
+38:08
+it uses?
+38:08
+>> Uh you guys are want to answer this because
+38:12
+I have one tip for this. I always teach the model to have global settings. This
+38:18
+is the setting. This is the lighting. This is the model. This is the color
+38:21
+palette. I try to prior to everything teach them teach him everything and say
+38:27
+hey call this global settings something
+38:31
+>> that's a great that's a really great practice in my opinion since we don't
+38:35
+quite have those global settings in a menu or something to establish your
+38:39
+rules are is a really great idea and I in order to establish them I think it's
+38:44
+also good to test first because there are things that I've realized that some
+38:48
+models are better at than others nano NB pro is not necessarily
+38:53
+the best at everything. Like for me, I found that anime like Cadream does much
+38:57
+better edits in anime than than other models. OpenAI 1.5 for example, it
+39:05
+doesn't do freaking 16 by9, but it does great with other stuff, but it just like
+39:09
+it it won't do it. Um, you know, there's like these different things. So at first
+39:14
+a lot of times I will ask like before I generate anything I'll just start asking
+39:18
+about the models and then asking about like what what one is best at or what
+39:24
+which one would be best for my particular purpose and then I lock it in
+39:28
+and then not not yet then I ask it for to generate some examples and then once
+39:33
+I take a peek and judge and kind of understand what is what then I you can
+39:39
+lock it in and then you can really make that a a parameter. Um like Brendan for
+39:44
+example had seen that like upscaling images I think like Nano Banana was
+39:49
+better than Nano Banana Pro. Um like
+39:53
+>> yeah for the punk rock dude for whatever reason Nano Banana was working way
+39:58
+better than Pro.
+39:59
+>> Yeah. Interesting. And same goes for video models. Like you found out that
+40:03
+particles are way better with Ray 3 for doing like the witch transformation, the
+40:08
+the the wizard transformation, right? Like Ray 3 was actually much better for
+40:14
+that particular scene, like that effect and then like moving on to something
+40:18
+else and mixing and matching. That's why sometimes, you know, you're locking
+40:23
+things in, but also give yourself a chance to see what it looks like with a
+40:27
+different model if you're not getting, you know, something.
+40:33
+>> What are your guys initial images that you've created there? So, your uh Mohawk
+40:38
+guy, your guitar, etc. Have you done all of that in Vespa or were you creating
+40:42
+that initial concept say in an external software and then bringing it in?
+40:49
+I am full line don't do every anything other than Vespa other than maybe
+40:54
+Premiere to edit stuff sometimes but there's other people who use other tools
+40:59
+but I am just full committed Vespa only. So
+41:04
+>> I I start a lot of my stuff I start in midJourney or with my own with my own
+41:11
+photos.
+41:13
+>> Got it. Okay, that's good to know. And then from I'm curious if you guys have
+41:18
+actually tested this with a like script that you've brought in and tagged
+41:25
+to take to this point of like okay we've got ele every element in the script is
+41:30
+tagged now we're going to create these like we'll call them pseudo 3D models of
+41:34
+each prop each character map them by day whatever the scene ends up being. Have
+41:40
+you guys tried testing on that side at all or no? I the the the boxer that I'm
+41:46
+doing right now is based on a script that I had on notion, but it's so big to
+41:51
+do this kind of stuff.
+41:53
+>> I'm trying to do all this more stuff for the guys and helping Liz and helping
+41:57
+bringing more sellable things, but I have this boxing girl here. Uh I have
+42:04
+her story in a different notion, you know. So, she starts on her home and
+42:11
+it's a a really um low budget home and then she's going to go to another place
+42:16
+and then there's the the ring boxing ring. It takes too much time because
+42:21
+they have to set all the set design. For example, this is her pajamas because if
+42:26
+she's on her home, she needs to have a different clothing. It takes too much
+42:30
+time.
+42:32
+>> But yeah, it's possible. So you've you dragged in a script and started working
+42:38
+based on the script. No,
+42:39
+>> I had uh the script all uh generated outside because this is story it's an
+42:44
+old story even prior to to I had access to the rest
+42:48
+>> but I never asked IRL regarding my script. This is a good idea.
+42:54
+I'm I'm just curious on that side of like you know Brennan when you're
+42:58
+talking about external softwares versus staying all inside of Vespa and
+43:02
+something I've been trying to test is see like how does it actually help on
+43:06
+script development and getting to a point
+43:09
+>> script development itself or like developing like
+43:14
+>> all the stuff from a script? I mean I haven't worked with that a ton. I've
+43:19
+tried it a couple times. I saw PJ um Axenturo work on this and like I I I
+43:26
+did this like training session and watched him go through it with a script
+43:29
+and how he started and it was sick like because he was really able to get it to
+43:35
+go from a a script like just a a a text document to then split it up into like
+43:41
+beats and then from there split that up into different shots um and and
+43:47
+basically like storyboard the whole and then like key frames and then start
+43:53
+that whole process for video and uh it works honestly super well like if you've
+44:00
+ever done it in any other like with Chad GBT and having it you know obvious maybe
+44:05
+not visuals but just using you know developing the script into like an
+44:09
+actionable thing to make a video from it like this does the same thing it works
+44:15
+super well in my in my experience
+44:18
+>> but I think Just to clarify the question, Brad, are you questioning the
+44:24
+critic capability of the model to talk about your script or you talking about
+44:29
+the technical capabilities to plan the shot scenes or both cases?
+44:35
+>> I would say both in this. So like where my brain is going to is what parts of
+44:41
+the quote unquote production process are we touching in this and what areas could
+44:46
+we potentially like flatten some of the work because this
+44:53
+like what's happening here is very similar to more of like traditional
+44:56
+animation workflows in this. First you've got to develop a 3D model of
+45:00
+every single character in this. Then you're going to develop the rigging for
+45:03
+how the character is going to move. Every single prop has the same um that's
+45:07
+all based off of a script. And when you're working in a software like Final
+45:11
+Draft or any of them that already exist, it's a couple clicks to go through and
+45:16
+tag everything in your script. And then it breaks it out um like a a just Excel
+45:22
+sheet of like everything you need per day, per scene, per this, per that.
+45:26
+Because on day one of your script, the person might be in the terminal and
+45:29
+they're wearing what I have on. And then day two, they're going to be in an
+45:33
+office setting and they have on what Ryan has on, etc., etc. on that. And so
+45:37
+you end up building this master list of like these are all the things that we
+45:41
+need to get. and it breaks it out by wardrobe needs this, props needs this,
+45:46
+hair and makeup needs this. Um, so you get your master list of everything that
+45:52
+needs to be sourced or created. And from that master list, it then breaks it down
+45:58
+into each of your individual days, your scenes, your this, your that.
+46:04
+And when I'm looking at a lot of this, like what you guys have done and
+46:07
+created, Brennan and Devicho, is you have created more or less like that step
+46:12
+of here is what our prop is. Here is what our character, our object or
+46:17
+whatever it is. You're basically taking everything that could be tagged in your
+46:20
+script and saying here is all the references of it.
+46:24
+One thing I would be very curious about, and this is probably more for like the
+46:28
+engineering side, is does it make sense to be able to support
+46:34
+like a 3D model in that instance? So that way we don't have to do like here's
+46:39
+this image, here's this image, here's this, this, this, this, this, this. So
+46:42
+you're moving around. I don't know.
+46:44
+>> It would be sick. We were we were mauling that over. That would be crazy
+46:48
+if we could have that in here. Um,
+46:52
+>> okay. Sorry derail like I'm I'm thinking more future direction on some of this
+46:58
+but the reason I ask is like for the positioning of this want to know sort of
+47:03
+what direction we're headed in um so that way I can try to make sure there's
+47:07
+at least some through line that can be drawn you know in three months and four
+47:11
+months
+47:12
+>> I'll say I think looking more in short form like for sure you know with any of
+47:17
+this like 30 seconds or less is like easier to concept than like a short film
+47:22
+of any type um and creating like characters and blocking and all that.
+47:26
+And you know, like technically you could like what we were doing with uh Cody's
+47:30
+gummy bears, like you could take a physical object, take photos of
+47:34
+different angles and then upload that into Vesa and use that as your reference
+47:38
+and stuff like that. Um or you could do it with a 3D model. You just take photos
+47:43
+in your 3D software of the at different angles and then plug it in versus we're
+47:47
+all relying on models to do it. Um, but to your point, like I think you could
+47:53
+like write a short 30 second commercial, script it, put it in there, and then I
+47:58
+think you would probably have to do manual work to get your characters all,
+48:01
+you know, tagged and figured out, your environments figured out. But I don't
+48:05
+see there's any reason why you couldn't, you know, essentially make everything
+48:08
+because I think what you're talking about is like you actually have a
+48:11
+production. Like this is all previs and then you take it to a production versus
+48:15
+like I'm just doing this all in AI and creating a final product just using AI.
+48:20
+Like this is my production. Um, but you could use it for both. You know, you can
+48:24
+position it as a previs solution to get to your, you know, executing.
+48:29
+>> It's it's really interesting actually. You mentioned blocking and nanobanana
+48:34
+pro actually does a great job with blocking diagrams. You can anything you
+48:40
+can think of in that in that sense try it with with the the top tier nano
+48:44
+banana nano banana specifically blocking and referencing certain characters that
+48:49
+you build out uh and then put them into a scene according to your blocking
+48:55
+diagram or whatever. Um, it actually does a pretty crazy job of it. I have
+49:01
+that as one of my like articles that'll be I mean those like a very advanced
+49:06
+kind of techniques if you will, but dude try try blocking diagrams with Nat
+49:12
+Banana and then try plugging in your characters into that scene setup and
+49:18
+then animate it. Um, but you know, you have to go through all these steps kind
+49:23
+of like regardless. you still have to go through that like what you're just
+49:25
+saying Brett like through that production I mean through the previous
+49:30
+uh and and character development and all this stuff um to then get to those to
+49:36
+those scenes but you can do it um you you really can it's it's pretty crazy
+49:44
+>> yeah I mean I both have tested having it write a script and do shot list but that
+49:50
+was for a 40 second video with like
+49:53
+>> mult multiple shots in it. And then there was an enterprise client who
+49:57
+created a script and brought that in. And then I I helped him u not much, but
+50:02
+helped him plan out how he could do that, which some of it was getting these
+50:07
+views and then making a a reference sheet so the the agent knew which view
+50:11
+to grab for what situation. Um, but yeah, no, I haven't actually tested both
+50:17
+of them at the same time because I realized all the character consistency
+50:20
+needs after the first uh video I made was like not working perfectly and then
+50:27
+it was like, "Okay, I need to try out this other thing." So, I haven't brought
+50:29
+them together yet,
+50:31
+>> but I think
+50:34
+>> Ryan, you should share the animation that you just sent to me. I'll say like
+50:38
+seed like seedream I feel like we're at the point where you could make a
+50:42
+legitimate animation. Um the seedream 2.0 is crazy. Um
+50:50
+but yeah. Do we know if there's any plans to add Seedream 2.0 to? Um that's
+50:56
+>> Are you talking about Cream or you talking about one?
+50:58
+>> I'm talking about Seedream. Seedream 2.0 is I think what is like this new
+51:02
+animation killer that people are talking about.
+51:05
+>> Cedream is from bite dance. I can always
+51:08
+>> wait no
+51:09
+>> you're talking about
+51:10
+>> see C dance sorry they're
+51:13
+>> yeah yeah it's so confusing um
+51:16
+>> so seed dream right now should be image modelwise
+51:21
+>> yeah not seance
+51:23
+>> yeah you're thinking about C dance 2.0 O just came out and then Ryan just sent me
+51:27
+a like video that was like pretty much like arcane but it had LeBron in it and
+51:33
+like LeBron was fighting the arcane characters and I was like this is so
+51:37
+realistic. Yeah. Watch this. And then you know I feel like we're at this point
+51:42
+where and they're like talking too like I don't know what they're using for that
+51:45
+but like this kind of just like shook me. I'm like, "Oh, wow. This is uh
+51:52
+yeah, it's so ridiculous." But
+51:55
+>> yeah,
+51:56
+>> um I was very impressed at this and this is when I was like, "Okay, like this has
+52:00
+made overclock irrelevant."
+52:02
+>> Dude, that is crazy. Uh go
+52:09
+>> I want to say I want to ask uh regarding this example that Ben said in this
+52:14
+enterprise client. Did the agent have an opinion on the script or it was just
+52:20
+considered as some uh executional role
+52:26
+>> more in terms of scoping what aspects of the script could be accomplished within
+52:31
+Vespa and figuring out the right tools to use for what situation. So, it was
+52:36
+able to help some. It was It's able to help as much as we have strategies
+52:41
+written to help it help, if that makes sense. But we don't really have a
+52:45
+strategy for these views because these views threw off other things when people
+52:52
+didn't need them. So, but yeah, so he was able to do it. He
+52:58
+knew to use the views just because I don't know how he just already knew to
+53:01
+do that um coming into it. So he was able to accomplish it that way.
+53:11
+>> I wish uh the model could fight me in some stuff, you know, regarding
+53:15
+especially text. Hey, this is not going to work. No, you just this is too much
+53:21
+work. You can simplify by this. I wish it has some sort of leveler so I can do
+53:26
+this is you're good with me and then you fight me. I wish this this kind of
+53:30
+slider, you know. Text is a whole other thing, too.
+53:38
+>> Okay, here. Let me I think we can probably stop Gemini and the recording
+53:44
+here.

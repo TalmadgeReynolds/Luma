@@ -1,0 +1,307 @@
+Source: https://lumalabs.ai/learning-center/articles/luma-uni-1-field-guide
+
+Uni-1 Field Guide =================
+
+March 23, 2026
+
+- 1. The “Fast Start” Prompt (best for 80% of use cases) Template Example When to use
+
+- Template
+
+- Example
+
+- When to use
+
+- 2. The “Cinematic Control” Prompt Template Example When to use
+
+- Template
+
+- Example
+
+- When to use
+
+- 3. The “Direct Edit” Prompt Template Example Pro tip
+
+- Template
+
+- Example
+
+- Pro tip
+
+- 4. The “Multi-Reference Fusion” Prompt Template Example When to use
+
+- Template
+
+- Example
+
+- When to use
+
+- 5. The “Layout Control” Prompt Template Example Pro tip
+
+- Template
+
+- Example
+
+- Pro tip
+
+- 6. The “Storyboard Generator” Template Example
+
+- Template
+
+- Example
+
+- 7. The “Loose / Creative Mode” Template Example When to use
+
+- Template
+
+- Example
+
+- When to use
+
+- 8. The “Structured JSON” Prompt Template Example
+
+- Template
+
+- Example
+
+- Core Workflows
+
+- Workflow 1: Idea → Final Image
+
+- Workflow 2: Reference-Driven Creation
+
+- Workflow 3: Fix & Polish
+
+- Workflow 4: Precision Composition
+
+- Workflow 5: Exploration → Lock → Iterate
+
+- Quick Rules A helpful reminder Key takeaway
+
+- A helpful reminder
+
+- Key takeaway
+
+Uni-1 is not about writing the perfect prompt.
+
+It’s about:
+
+Start → Direct → Refine → Finish
+
+You can prompt with:
+
+- short text
+
+- long detailed prompts
+
+- structured formats (JSON)
+
+- reference images
+
+- sketches / layouts
+
+1. The “Fast Start” Prompt (best for 80% of use cases) ======================================================
+
+Template --------
+
+A [subject], in [style], with [lighting], [camera/composition], [environment/background], mood: [emotion], details: [key specifics]
+
+Example -------
+
+A ceramic artist shaping a lopsided bowl, documentary photography style, soft window lighting, close-up shot, cluttered home studio background, mood: focused and quiet, details: clay-covered hands, imperfect texture, tools scattered on wooden table
+
+When to use -----------
+
+- Exploration
+
+- First ideas
+
+- Quick outputs
+
+2. The “Cinematic Control” Prompt =================================
+
+Template --------
+
+Subject: [who/what] Style: [editorial / documentary / fine art / etc.] Scene: - Environment: [where] - Time of day: [lighting context] - Mood: [emotional tone] Camera: - Shot type: [close-up / wide / overhead] - Lens: [35mm / 85mm / etc.] - Composition: [framing approach] Details: - Textures: [materials] - Motion: [if any] - Extra: [small details that matter]
+
+Example -------
+
+Subject: A street tailor repairing a jacket Style: documentary photography Scene: - Environment: sidewalk workshop with hanging fabrics - Time of day: late afternoon natural light - Mood: patient, intimate Camera: - Shot type: medium close-up - Lens: 50mm - Composition: slightly off-center, hands in focus Details: - Textures: worn fabric, frayed edges, thread spools - Motion: subtle hand movement mid-stitch - Extra: pins in mouth, chalk markings on fabric
+
+When to use -----------
+
+- Editorial visuals
+
+- Story-driven imagery
+
+- High-quality outputs
+
+3. The “Direct Edit” Prompt ===========================
+
+Template --------
+
+Edit instructions: - Change: [what to modify] - Keep: [what must stay the same] - Style shift: [optional] - Lighting: [optional] - Details: [specific adjustments]
+
+Example -------
+
+Edit instructions: - Change: replace background with a quiet bookstore interior - Keep: subject posture, clothing, and facial expression - Style shift: slightly more warm and nostalgic - Lighting: soft golden indoor lighting - Details: add bookshelves with uneven stacks and handwritten notes
+
+Pro tip -------
+
+Always define what to keep (this prevents drift)
+
+4. The “Multi-Reference Fusion” Prompt ======================================
+
+Template --------
+
+Combine the following: IMAGE 1: [what it provides] IMAGE 2: [what it provides] IMAGE 3: [optional] Output: - Subject: [final image goal] - Style: [dominant style] - Composition: [layout guidance] - Details: [specific merges]
+
+Example -------
+
+Combine the following: IMAGE 1: a vintage portrait (use for pose and framing) IMAGE 2: a modern fashion editorial (use for styling and lighting) IMAGE 3: textured paper background (use for surface quality) Output: - Subject: a contemporary portrait with vintage posture - Style: editorial with subtle retro influence - Composition: centered subject, clean framing - Details: blend modern clothing with aged texture finish
+
+When to use -----------
+
+- Style blending
+
+- Character consistency
+
+- Editorial work
+
+5. The “Layout Control” Prompt ==============================
+
+Template --------
+
+Layout instructions: [LEFT]: [object + description] [CENTER]: [object + description] [RIGHT]: [object + description] [BACKGROUND]: [environment] Style: [style] Lighting: [lighting]
+
+Example -------
+
+Layout instructions: LEFT: a stack of handwritten letters tied with string CENTER: a wooden desk with an open notebook RIGHT: a cup of tea with steam rising BACKGROUND: softly lit room with a window Style: still life photography Lighting: soft morning natural light
+
+Pro tip -------
+
+Treat this like directing a photoshoot
+
+6. The “Storyboard Generator” =============================
+
+Template --------
+
+Create a storyboard with [X] frames. Story: [short narrative] Frame details: 1. [scene] 2. [scene] 3. [scene] Style: [style] Consistency: same characters and setting
+
+Example -------
+
+Create a storyboard with 4 frames. Story: A baker wakes up early to prepare bread for the day. Frame details: 1. Dim kitchen, flour being poured 2. Hands kneading dough on wooden surface 3. Oven light glowing with rising bread 4. Morning customers entering small bakery Style: warm, documentary realism Consistency: same space and character throughout
+
+7. The “Loose / Creative Mode” ==============================
+
+Template --------
+
+[vibes, fragments, ideas, emotions]
+
+Example -------
+
+quiet morning, dust in sunlight, old apartment, slightly messy, books everywhere, slow life, soft textures, calm, lived-in feeling
+
+When to use -----------
+
+- Mood exploration
+
+- Unexpected ideas
+
+- Early ideation
+
+8. The “Structured JSON” Prompt ===============================
+
+Template --------
+
+{ "subject": "", "style": "", "environment": "", "lighting": "", "camera": { "shot": "", "lens": "", "composition": "" }, "details": [] }
+
+Example -------
+
+{ "subject": "elderly man repairing a watch", "style": "fine art photography", "environment": "small workshop filled with tools", "lighting": "soft directional window light", "camera": { "shot": "close-up", "lens": "85mm", "composition": "tight framing on hands" }, "details": ["tiny screws", "dust particles", "aged skin texture"] }
+
+Core Workflows ==============
+
+Workflow 1: Idea → Final Image ==============================
+
+- Start with Fast Prompt
+
+- Generate
+
+- Refine with direct instructions
+
+- Reroll
+
+- Finalize
+
+Workflow 2: Reference-Driven Creation =====================================
+
+- Add 2–3 references
+
+- Use fusion prompt
+
+- Adjust composition
+
+- Refine
+
+Workflow 3: Fix & Polish ========================
+
+- Generate
+
+- Identify issues
+
+- Edit specific regions
+
+- Repeat
+
+Workflow 4: Precision Composition =================================
+
+- Generate base
+
+- Add layout
+
+- Label clearly
+
+- Regenerate
+
+Workflow 5: Exploration → Lock → Iterate ========================================
+
+- Generate variations
+
+- Pick favorite
+
+- Lock seed
+
+- Iterate small changes
+
+Quick Rules ===========
+
+- Be specific (subject + style + composition)
+
+- Put key instructions early
+
+- Use references for consistency
+
+- Don’t restart — refine
+
+- Use layout for control
+
+- Use editing for precision
+
+- Iterate in small steps
+
+A helpful reminder ------------------
+
+You don’t need a perfect prompt.
+
+You need:
+
+a clear idea + direction + iteration
+
+Key takeaway ------------
+
+Uni-1 isn’t about prompting better.
+
+It’s about:
+
+thinking visually, then directing the system

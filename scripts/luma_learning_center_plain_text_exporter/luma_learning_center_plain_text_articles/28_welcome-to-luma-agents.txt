@@ -1,0 +1,135 @@
+Source: https://lumalabs.ai/learning-center/articles/welcome-to-luma-agents
+
+Welcome To Luma Agents ======================
+
+March 9, 2026
+
+- Welcome to Luma Agents How Luma Works The Three Core Layers 1. Project Organization 2. Creative Agents 3. Capabilities
+
+- How Luma Works
+
+- The Three Core Layers 1. Project Organization 2. Creative Agents 3. Capabilities
+
+- 1. Project Organization
+
+- 2. Creative Agents
+
+- 3. Capabilities
+
+Welcome to Luma Agents ======================
+
+Your creative collaborator and the most capable multimodal Agent, built to collaborate with you to execute professional creative work end-to-end, from brief through delivery through different layers of execution
+
+It allows you to:
+
+- Generate text, images, video, audio, and voice across the world’s leading models while maintaining shared project context and memory
+
+- Transform and evolve existing media across formats without restarting work or rebuilding assets
+
+- Organize initiatives on a shareable board where agents generate, iterate, and evolve assets across the project workspace
+
+- Collaborate in real time with teammates, external partners, and agents operating in parallel
+
+- Direct production through natural language or direct controls while agents coordinate models and execute tasks across the workflow
+
+Instead of switching between tools, timelines, generators, and editors — Luma unifies them into a single visual board powered by multimodal agent collaborators there to support you, execute creative tasks, and help you understand how to do it according to your own vision and proficiency level.
+
+Think of it as a highly skilled teammate that you can collaborate with in a super fast, prolific feedback loop with unmatched speed, scale and creative fun.
+
+How Luma Works --------------
+
+Luma advances creative work through agents that execute projects from brief through final delivery while maintaining shared context and memory across every stage. Work is organized on boards where agents generate, iterate, and evolve assets across the initiative.
+
+The Three Core Layers ---------------------
+
+1. Project Organization -----------------------
+
+Boards organize creative initiatives visually so teams can structure scenes, concepts, references, and production assets in one place
+
+- Assets, versions, and explorations can be grouped and compared while preserving project context
+
+- Teams collaborate in real time with agents advancing work alongside them
+
+- Semantic search instantly locates assets, references, and iterations across the board
+
+- Work evolves spatially across boards rather than through folders or disconnected timelines
+
+2. Creative Agents ------------------
+
+Luma's Creative agents execute and advance professional creative work across the entire process while maintaining shared project context in every board.
+
+You:
+
+- Direct creative work through natural language
+
+- Request iterations, refinements, and alternative directions
+
+- Gather references, research, and inspiration within the project
+
+- Evaluate outputs and guide quality improvements
+
+Agents:
+
+- Route tasks across industry-leading image, video and audio models automatically or selectively
+
+- Generate text, image, video, and audio assets
+
+- Iterate and evolve assets while maintaining contextual memory across the project board
+
+- Evaluate outputs and advance work toward final delivery.
+
+3. Capabilities ---------------
+
+Creative agents access and orchestrate industry-leading GenAI models to execute creative work across all modalities while maintaining shared project context. Agents route tasks across advanced video model families including Ray, Veo, Kling, and specialized image models including Uni-1, Nano Banana, Seedream, and GPT Image
+
+Image
+
+- Photorealistic generation
+
+- Stylized illustration
+
+- Concept art and visual exploration
+
+- High-fidelity editing and enhancement
+
+- Outpainting and reframing
+
+Video
+
+- Text-to-video generation
+
+- Image-to-video animation
+
+- Video transformation and modification
+
+- Keyframe interpolation
+
+- Video extension and scene continuation
+
+- Character-consistent generation
+
+Audio
+
+- Sound effects generation
+
+- Music generation
+
+- Voiceovers with emotional control
+
+- Word-level transcription
+
+Lip Sync
+
+- Audio-to-mouth synchronization
+
+- Expression control
+
+- Character animation
+
+Composition
+
+- Programmatic editing of video and motion elements
+
+- Captions, transitions, and compositing
+
+Agents automatically route tasks across the appropriate models while preserving context across the project. Advanced users can also access individual models through the board UI when manual control is preferred

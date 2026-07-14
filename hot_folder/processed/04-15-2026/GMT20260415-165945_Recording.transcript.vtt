@@ -1,0 +1,2338 @@
+WEBVTT
+
+1
+00:00:06.510 --> 00:00:08.430
+Davicho Barona: Hey guys, what's going on?
+
+2
+00:00:14.130 --> 00:00:15.300
+Davicho Barona: Hey, Artur.
+
+3
+00:00:18.030 --> 00:00:19.820
+Artur Monteiro: Hey man, how's it going?
+
+4
+00:00:20.010 --> 00:00:21.250
+Davicho Barona: Good.
+
+5
+00:00:21.250 --> 00:00:23.599
+Artur Monteiro: Jocks, how's it going, Alejandro? Yeah.
+
+6
+00:00:23.600 --> 00:00:29.739
+Davicho Barona: The background kills me every time I'm like, this is… this is awkward, but it's not.
+
+7
+00:00:29.740 --> 00:00:34.530
+Artur Monteiro: It's perfect to break the ice, you know, in the meetings.
+
+8
+00:00:34.680 --> 00:00:36.729
+Artur Monteiro: People just start laughing, and…
+
+9
+00:00:36.960 --> 00:00:37.840
+Davicho Barona: It's so funny.
+
+10
+00:00:37.840 --> 00:00:39.320
+Artur Monteiro: Another modem, yeah.
+
+11
+00:00:41.020 --> 00:00:50.679
+Davicho Barona: Let me see, just, yeah, let's hang for one second, I'm just usually admitting folks. Let me make sure that the chats are also open.
+
+12
+00:00:52.280 --> 00:00:54.370
+Davicho Barona: Times they are not.
+
+13
+00:00:55.550 --> 00:00:56.470
+Davicho Barona: Okay.
+
+14
+00:00:58.810 --> 00:01:00.360
+Davicho Barona: Everybody see that?
+
+15
+00:01:04.290 --> 00:01:07.630
+Davicho Barona: Anyone can just say, Yes.
+
+16
+00:01:07.760 --> 00:01:09.970
+Davicho Barona: Or just write back on that, that'd be great.
+
+17
+00:01:14.270 --> 00:01:15.440
+Davicho Barona: Should be able to.
+
+18
+00:01:16.090 --> 00:01:20.309
+Davicho Barona: Excellent. Thank you, Mikhail. How are you?
+
+19
+00:01:21.870 --> 00:01:23.940
+Davicho Barona: And goal, welcome!
+
+20
+00:01:25.870 --> 00:01:28.360
+Davicho Barona: She is on our team. How are you?
+
+21
+00:01:28.360 --> 00:01:31.049
+Gull Sheer: Oh, I'm great. Nice to see you.
+
+22
+00:01:31.050 --> 00:01:37.130
+Davicho Barona: You too! So, usually we kick it off by waiting for a minute until…
+
+23
+00:01:37.460 --> 00:01:41.740
+Davicho Barona: people, join, and, and I can just…
+
+24
+00:01:42.590 --> 00:01:45.810
+Davicho Barona: And I can just give a second while we wait,
+
+25
+00:01:46.180 --> 00:01:59.259
+Davicho Barona: for the first, kind of, first 5 minutes or so, I just want to take any questions, anybody having any issues, anything else that I can address. My plan today is I only have about half an hour.
+
+26
+00:01:59.260 --> 00:02:07.699
+Davicho Barona: And then Artur will take the, the, the second half hour or so. And I just, I want to talk about,
+
+27
+00:02:07.750 --> 00:02:14.330
+Davicho Barona: Lip Sync, And, and captioning, because it's been coming up
+
+28
+00:02:14.460 --> 00:02:26.880
+Davicho Barona: a few different ways. So if nobody… if anybody has any questions about something totally different, please feel free right now to just throw it out there, and we'll… we'll address it. Otherwise, I will just move into,
+
+29
+00:02:27.040 --> 00:02:29.380
+Davicho Barona: Into… into a little demo of that.
+
+30
+00:02:33.660 --> 00:02:35.300
+Davicho Barona: Cool. Okay.
+
+31
+00:02:35.440 --> 00:02:39.370
+Davicho Barona: So, let me first share my screen real quick.
+
+32
+00:02:39.600 --> 00:02:50.630
+Davicho Barona: And Artur will be on the chats, also, if anybody has a question there, so please feel free to, to chime in with anything you might have.
+
+33
+00:02:50.970 --> 00:02:53.320
+Davicho Barona: There…
+
+34
+00:02:57.420 --> 00:03:09.459
+Davicho Barona: Okay, so first, this board is kind of a little bit of a mess, but I wanted to just showcase this process here. We have, like, 3 different lip sync models.
+
+35
+00:03:09.830 --> 00:03:27.149
+Davicho Barona: in the… in… in agents, but the one that I found the most useful, actually, I like to try to lip-sync from an image, as opposed to from a video, because usually I don't have a video that is just kind of, like, this, you know, soft movement,
+
+36
+00:03:27.150 --> 00:03:46.890
+Davicho Barona: usually, and I still have yet to explore what that truly looks like, but starting from an image, it'll still create a video, it'll create that kind of just normal movement, very subtle movement video, and then it will go into the actual lip-sync task. And so to start, I just had these two input images.
+
+37
+00:03:47.140 --> 00:03:55.050
+Davicho Barona: And I had this input voice track, which, let me see, I'm probably not sharing the right… let me just share sound here.
+
+38
+00:03:56.540 --> 00:03:57.930
+Davicho Barona: Let me know if you could hear this.
+
+39
+00:03:59.020 --> 00:04:03.720
+Audio shared by Davicho Barona: It is the world that has been pulled over your eyes to blind you from the truth.
+
+40
+00:04:03.720 --> 00:04:04.740
+Davicho Barona: You hear that?
+
+41
+00:04:04.740 --> 00:04:06.240
+Gull Sheer: Yes, we can hear, yes.
+
+42
+00:04:06.240 --> 00:04:23.629
+Davicho Barona: Excellent, thank you. So, my goal was really just to use these two static images and try to overlay this, this voice track. So, the most simple way I found to do that, because obviously I know about the tools that we have, and so I want to give you kind of a shortcut of how to get there.
+
+43
+00:04:23.910 --> 00:04:35.350
+Davicho Barona: I basically just selected both of my images, and I selected my tracks, so now you see them loaded up in your chat window as assets, and then I just prompted
+
+44
+00:04:35.350 --> 00:04:52.850
+Davicho Barona: the agent to make these characters talk and move their lips in sync with this short voice track, and I asked it to use Cling to make the initial video, and then use Sync React 1 for the lip sync task. You don't have to do this, like, you can literally just ask it to make the characters talk.
+
+45
+00:04:52.950 --> 00:04:57.180
+Davicho Barona: And… and use this voice track. I just…
+
+46
+00:04:57.500 --> 00:05:08.480
+Davicho Barona: after doing some experimentations, I found Kling to be the best source of that video, of that, like, almost, like, very subtle video. And usually 2.6 will do, you don't have to do 3.0.
+
+47
+00:05:08.760 --> 00:05:14.559
+Davicho Barona: And then I found Sync React 1 to be the best tool for the job, to be honest.
+
+48
+00:05:14.560 --> 00:05:33.350
+Davicho Barona: After doing some experimentation. So what happens is Kling will first make this… in this case, it's a 10-second video, because my voice track is 7 seconds, so I can't make a 5-second video, so instead it's gonna make the 10-second video, which then will get cut down to 7 seconds, and then you'll see the little.
+
+49
+00:05:33.350 --> 00:05:37.829
+Audio shared by Davicho Barona: That is the world that has been pulled over your eyes to blind you from the truth.
+
+50
+00:05:38.340 --> 00:05:43.740
+Audio shared by Davicho Barona: and then the second version of this… It is a world that has been pulled over your eyes to blind you from the truth.
+
+51
+00:05:43.740 --> 00:05:50.090
+Davicho Barona: Now, what I've realized here is that in this case, like, and in most cases, because the original mouth
+
+52
+00:05:50.520 --> 00:05:52.539
+Davicho Barona: Doesn't show any teeth.
+
+53
+00:05:52.870 --> 00:06:09.409
+Davicho Barona: even in the image here, like, the teeth are really hidden back there on both of these. This one shows a little bit, but not very much. So then the final output comes out with also no teeth, and it's a little bit awkward.
+
+54
+00:06:09.410 --> 00:06:27.600
+Davicho Barona: But you can totally fix that, and I'll show you a different case where I kind of… I used these 3 images. The first… my first order of business was… I wanted to try this in a vertical format, in a 9-16, as opposed to the 16x9.
+
+55
+00:06:27.790 --> 00:06:47.359
+Davicho Barona: So the first thing I did was just ask the agent to reframe these images into 9 to 16. And so I got these 3 images, and now from here, I did the same exact process. I basically selected all of them, and asked the same thing, make these characters talk, basically this exact prompt. I'm gonna drop this
+
+56
+00:06:47.360 --> 00:06:50.750
+Davicho Barona: In our chat, just so you have this prompt, like, handy.
+
+57
+00:06:50.850 --> 00:06:55.299
+Davicho Barona: Sometimes I know that helps. Where is our chat?
+
+58
+00:06:56.560 --> 00:06:58.190
+Davicho Barona: Where did my chat go?
+
+59
+00:07:00.190 --> 00:07:00.960
+Davicho Barona: Care.
+
+60
+00:07:02.870 --> 00:07:14.639
+Davicho Barona: So, copy that prompt, it's pretty useful. I mean, honestly, you can do this a million ways, but this is just the way that I did it, and it's a good way to get started, in my opinion. So…
+
+61
+00:07:15.170 --> 00:07:21.829
+Davicho Barona: In this case, again, I reframed these, and then I did that same thing, grabbed that prompt, and applied it to these 3 images.
+
+62
+00:07:22.110 --> 00:07:35.120
+Davicho Barona: that first creates that video, that kind of natural motion video. In some cases, you'll see a little bit of talking, and that's totally fine, because a lot of times, it will add those teeth for you, for then the video to start, you know, doing its.
+
+63
+00:07:35.120 --> 00:07:36.409
+Audio shared by Davicho Barona: It is the world.
+
+64
+00:07:36.410 --> 00:07:37.170
+Davicho Barona: Where you can actually…
+
+65
+00:07:38.390 --> 00:07:46.290
+Davicho Barona: But if you don't see the teeth, it's easy enough to basically just tell it to… let me make sure I grab my…
+
+66
+00:07:47.440 --> 00:07:54.660
+Davicho Barona: My… prompt here… to show you… I mean…
+
+67
+00:07:55.920 --> 00:08:03.319
+Davicho Barona: Yeah, this was it. I basically said, make this character talk like that same prompt that I had before, selected that base image.
+
+68
+00:08:03.320 --> 00:08:16.329
+Davicho Barona: then selected my, my voice track. You can see it here, the two things that were selected initially. And I just said, you know, the first part of that prompt, the same thing, use Cling, use React 1, and then,
+
+69
+00:08:16.390 --> 00:08:19.959
+Davicho Barona: another thing here is that React 1
+
+70
+00:08:19.960 --> 00:08:38.119
+Davicho Barona: it has multiple settings for different emotions, and so what I was seeing is that a lot of times it would add this, like, sad emotion, because it was kind of picking it up from the voice track. It felt that the voice was a little sad, so then it added this kind of sad view. Same thing here. It kind of adds this, like, sad…
+
+71
+00:08:39.380 --> 00:08:54.330
+Davicho Barona: emotion. So what I first did after… or what I did after that first initial part of the prompt, I just said, don't change the character's emotion, and then I said, make sure that his teeth show in a natural way. And so then I'm getting…
+
+72
+00:08:54.330 --> 00:09:05.299
+Davicho Barona: this is my, my, you know, the cling video that it's making, that natural motion video that it's making, and again, sometimes you'll see it say a word, and that's totally fine. And then this is the.
+
+73
+00:09:05.300 --> 00:09:06.410
+Audio shared by Davicho Barona: It is the world.
+
+74
+00:09:06.410 --> 00:09:07.030
+Davicho Barona: With a little bit of.
+
+75
+00:09:07.030 --> 00:09:07.559
+Audio shared by Davicho Barona: has been pulled.
+
+76
+00:09:07.560 --> 00:09:08.119
+Davicho Barona: over here.
+
+77
+00:09:08.120 --> 00:09:10.160
+Audio shared by Davicho Barona: Looks a lot more natural.
+
+78
+00:09:10.390 --> 00:09:23.109
+Davicho Barona: When I did that. So that's the basic process, and I'm gonna make a demo board on this, and we'll throw that up in the Learning Center as soon as that is done, so always keep an eye on that.
+
+79
+00:09:23.110 --> 00:09:35.640
+Davicho Barona: But at the end of the day, this was the basic process here that I used, starting with an input image, as opposed to starting with a video. You can start with a video, it kind of skips that step.
+
+80
+00:09:35.640 --> 00:09:43.839
+Davicho Barona: Which is sometimes more… even more preferable. You don't have to generate that video, spend your credits there, if you already have one.
+
+81
+00:09:44.100 --> 00:09:54.330
+Davicho Barona: And then the voice track, obviously, is… is sort of the driver for all of this. And then again, using Sync React 1, and…
+
+82
+00:09:54.330 --> 00:10:04.539
+Davicho Barona: Going back to the recap, making sure that you're asking to not change the character's emotion, or if you do want it to change the character's emotion, tell it what emotion you want.
+
+83
+00:10:04.540 --> 00:10:22.100
+Davicho Barona: You know, if you wanted to be angry, whatever it is, whichever way you want to push it, you can say that same exact thing there. And then the last piece, again, was to make sure that his teeth show in a natural way. Because, you know, when you look at all these generations, a lot of times.
+
+84
+00:10:22.550 --> 00:10:23.589
+Audio shared by Davicho Barona: It is the world…
+
+85
+00:10:23.590 --> 00:10:34.639
+Davicho Barona: Oh, that one's actually pretty good, but the, so many versions of this, the teeth are just not showing, well, this is, this is a good…
+
+86
+00:10:35.170 --> 00:10:38.720
+Audio shared by Davicho Barona: way to show it. It is the weird… It is the weird that has been pulled over your head.
+
+87
+00:10:38.720 --> 00:10:52.129
+Davicho Barona: And a lot of times, it'll, you know, there's times that it'll be worse than others. So, this is kind of really helpful here. Any questions on this from anybody before I jump into captions?
+
+88
+00:10:56.260 --> 00:10:58.690
+Davicho Barona: I see some questions in the chat, if…
+
+89
+00:10:59.110 --> 00:11:02.090
+Davicho Barona: Our tutor, Brennan, if you guys don't mean to… awesome.
+
+90
+00:11:02.220 --> 00:11:04.450
+Davicho Barona: Amazing.
+
+91
+00:11:05.400 --> 00:11:13.790
+Davicho Barona: If you don't have any other questions here, I'm just gonna jump over to, showing you some captions for this, and how to, how to do that.
+
+92
+00:11:14.800 --> 00:11:16.440
+Davicho Barona: Cool? Awesome.
+
+93
+00:11:17.170 --> 00:11:21.479
+Artur Monteiro: There was a quick question regarding multiple characters with the lip sync, but Brennan already.
+
+94
+00:11:21.480 --> 00:11:23.849
+Davicho Barona: I see Brennan is answering that.
+
+95
+00:11:24.020 --> 00:11:32.519
+Davicho Barona: And yeah, singing should work as well. This is very true. Okay, this board is a little bit more cleaned up. I had more time to do this this morning.
+
+96
+00:11:32.790 --> 00:11:36.829
+Davicho Barona: So, again, I'm starting from that same lip-sync video that I had before.
+
+97
+00:11:36.830 --> 00:11:37.380
+Audio shared by Davicho Barona: world.
+
+98
+00:11:37.380 --> 00:11:37.970
+Davicho Barona: They did not add the.
+
+99
+00:11:37.970 --> 00:11:39.550
+Audio shared by Davicho Barona: That has been in this case.
+
+100
+00:11:39.550 --> 00:11:50.650
+Davicho Barona: okay, you got how to do that. Now, my prompt here was, again, after doing a bunch of experimentation, to save you a little bit of time.
+
+101
+00:11:50.830 --> 00:11:55.170
+Davicho Barona: I first started with this, I just said, transcribe the audio, you know, I select it.
+
+102
+00:11:55.170 --> 00:11:56.100
+Audio shared by Davicho Barona: you from the truth.
+
+103
+00:11:56.430 --> 00:11:59.840
+Davicho Barona: I select it, and then it shows up in my…
+
+104
+00:11:59.900 --> 00:12:22.719
+Davicho Barona: In my, my chat, so I know that I'm gonna be talking about that asset. And then I just said, transcribe the audio from this video using Whisperv3, that's gonna be the tool that it's falling back on. Then add subtitles to the video, using the transcription, and style the subtitles cleanly and legibly. So this is, like, my first stab at it.
+
+105
+00:12:22.720 --> 00:12:37.839
+Davicho Barona: Okay, it comes up with this, basically a JSON file of what the transcription is, and as you can see, if you read through it, you'll see, like, where the words are landing, like, the word it.
+
+106
+00:12:38.000 --> 00:12:42.069
+Davicho Barona: It's gonna start at this time, it's gonna end at this time.
+
+107
+00:12:42.310 --> 00:12:57.580
+Davicho Barona: it's picking up on the motion of the lips and picking up on the actual words of the voice track, and then laying it down according to the timing of each word, right? So, this is what I get here.
+
+108
+00:12:57.580 --> 00:13:01.780
+Audio shared by Davicho Barona: It is the world that has been pulled over your eyes to blind you from the truth.
+
+109
+00:13:01.780 --> 00:13:07.330
+Davicho Barona: A very basic caption, which you don't… you're not actually getting, like, the timing of the words.
+
+110
+00:13:07.330 --> 00:13:27.469
+Davicho Barona: So then from here, I was like, okay, number one, I don't like that style. It's, like, super, like, flat, and it's just this, like, single basic caption. Let me see if I can make things that are a little bit more, dynamic and just look a little bit cooler. So, I started off by just saying, okay, thanks, like, are you able to create the captions in different styles?
+
+111
+00:13:27.470 --> 00:13:40.429
+Davicho Barona: The response was pretty clear, like, yes, I can definitely do that, I can also, you know, make it in different languages, I can also change the positioning, etc. So it gave me kind of a good understanding of what it can sort of do.
+
+112
+00:13:40.590 --> 00:13:46.009
+Davicho Barona: And that it uses a tool called Remotion to do it, in order to sub… in order to, like.
+
+113
+00:13:46.270 --> 00:13:59.339
+Davicho Barona: really control the subtitles, more so than what it just did here with Whisper. So, now I'm like, okay, now just describe, like, a few popular caption styles that I could try. And then it gives me, like.
+
+114
+00:13:59.580 --> 00:14:10.200
+Davicho Barona: 6 different popular, and, like, common styles. One is that Hormozy style, which is, like, in the center with, like, the yellow and white,
+
+115
+00:14:10.460 --> 00:14:16.740
+Davicho Barona: Words that come up kind of in the center of the screen, kind of another karaoke, like, word-by-word highlight.
+
+116
+00:14:17.060 --> 00:14:32.069
+Davicho Barona: classic cinematic, which is the most similar to what we just did before. A typewriter, box pill style, and sort of a glitch motion type of a style as well. So then I was like, okay, just, like, try all of them.
+
+117
+00:14:32.070 --> 00:14:37.640
+Davicho Barona: With that video, and then it gives me really great outputs, right? First, that Hormozy style.
+
+118
+00:14:38.380 --> 00:14:39.989
+Davicho Barona: Coming up right in the center.
+
+119
+00:14:41.440 --> 00:14:48.149
+Davicho Barona: Then it… then that karaoke style, which is highlighting every word, sort of, under… underneath here.
+
+120
+00:14:48.330 --> 00:14:59.710
+Davicho Barona: Then is that, like, boxed pill style, which is very similar to, something you guys have obviously seen all over the place. Then this, like, classic cinematic, which is…
+
+121
+00:14:59.710 --> 00:15:00.840
+Audio shared by Davicho Barona: Is the world…
+
+122
+00:15:00.840 --> 00:15:06.299
+Davicho Barona: Much more similar to what we did initially, except it's popping up as the
+
+123
+00:15:06.300 --> 00:15:22.969
+Davicho Barona: the video continues. And then here's, like, the glitch version of this, which is also kind of cool. Now, for this glitch version, I didn't actually really love it, so I'll show you how I changed that. And then here's, like, another version, like, this kind of matrix-y.
+
+124
+00:15:22.970 --> 00:15:25.220
+Davicho Barona: Typewriter, version.
+
+125
+00:15:25.220 --> 00:15:25.890
+Audio shared by Davicho Barona: over your house.
+
+126
+00:15:25.890 --> 00:15:35.799
+Davicho Barona: Also, I had problems with, because as you could see there, like, you know, the cursor is sort of in the wrong place. This gray box behind it is just…
+
+127
+00:15:35.800 --> 00:15:58.389
+Davicho Barona: too large, and it just feels a little clunky and uncomfortable. So, first and foremost, I went back and I said, okay, make the glitch motion version again, and this time, make sure that the captions are along the bottom of the video, and that the colors match the Matrix vibe, like, a little bit better. So this is the original glitch motion one, right? Like, it's… it's cool, I like what it does, but the colors…
+
+128
+00:15:58.390 --> 00:16:03.920
+Davicho Barona: don't match my vibe here. And then the positioning is just too centered, it's kind of…
+
+129
+00:16:04.000 --> 00:16:14.469
+Davicho Barona: I don't know, disruptive for me. And so, after that, like, after this prompt to kind of make a… make an update to that.
+
+130
+00:16:14.550 --> 00:16:16.520
+Audio shared by Davicho Barona: I get a much better version.
+
+131
+00:16:16.520 --> 00:16:35.750
+Davicho Barona: Which is more matrix-y, right, with that green. The glitch is cool, and now it's along the bottom of my screen, as opposed to this version, which just was not working out for me very well. So there's that. Like, it's very easy to change things. Don't think that something doesn't work just because you got a version that you…
+
+132
+00:16:35.750 --> 00:16:46.220
+Davicho Barona: you know, you didn't really like. You can go in there and granularly make changes here. And then from here, this typewriter version, again, I did not think this was…
+
+133
+00:16:46.220 --> 00:17:07.409
+Davicho Barona: up to par for multiple reasons, and so I did the same thing here. I just said, okay, this is feeling okay. It'll ask you, like, how's it hitting, or how does it feel? And then I'm like, okay, it's feeling okay, but, like, I need a couple updates. Number one, the cursor position needs to be ahead of the newest letter every time. Right now, it's in the same place at the bottom of the text block.
+
+134
+00:17:07.480 --> 00:17:08.849
+Davicho Barona: Number two.
+
+135
+00:17:08.849 --> 00:17:33.650
+Davicho Barona: the dark, opaque frame, like that dark bar, around the caption text should grow and change according to the text as it appears on the video. And then I said, please confirm that you understand before proceeding, so that I can make further corrections if I detect that you're not understanding this correctly. Now, it came back and was like… and actually, it really understood, like, what it… what I wanted it to do.
+
+136
+00:17:34.180 --> 00:17:36.870
+Davicho Barona: Here on the side, you can see, like.
+
+137
+00:17:36.930 --> 00:17:45.590
+Davicho Barona: first, actually, it said, here's my understanding. Like, cursor tracking, the blinking cursor, I mean, it really did understand. It kind of gave me these two paragraphs.
+
+138
+00:17:45.590 --> 00:17:58.670
+Davicho Barona: telling me that it understood my task, and I said, okay, that's correct, please proceed. And then it went on to make the correction, and it did a really great job at doing that. I'll silence it. But it's going along the bottom.
+
+139
+00:17:58.880 --> 00:18:13.090
+Davicho Barona: and it's going, the cursor is really popping up after every single letter, and that black bar is growing as the text grows, right? Then I had one more fix. I was like, this is fine, but, like, I actually want a little bit…
+
+140
+00:18:13.200 --> 00:18:30.130
+Davicho Barona: another update to this. And I said, it looks really good, but show me another version. This time, the captions should be center-aligned, and the font should be, like, 2 points bigger, at least. And then it gave me this version here, which makes a lot more sense to me, right? The font is a little bit bigger.
+
+141
+00:18:30.130 --> 00:18:34.209
+Davicho Barona: It's starting from the center out, as opposed to this left-aligned.
+
+142
+00:18:34.210 --> 00:18:42.450
+Davicho Barona: And the cursor is still doing what it's supposed to do, and that black bar behind it is also still doing what it's supposed to do. So…
+
+143
+00:18:42.450 --> 00:18:56.120
+Davicho Barona: That was my entire process here. I have a whole other version of this that I can… that I can kind of go into a little bit more, but before I do that, let me ask you guys if you have any questions about that… that part of the process.
+
+144
+00:18:56.140 --> 00:19:01.700
+Davicho Barona: And please, feel free to, like, raise your hand, or unmute yourself, or anything else.
+
+145
+00:19:02.200 --> 00:19:03.720
+Davicho Barona: And just throw it out there.
+
+146
+00:19:07.370 --> 00:19:08.190
+Davicho Barona: Cool.
+
+147
+00:19:08.350 --> 00:19:18.970
+Davicho Barona: Okay, so the last part of this was, I really wanted to start customizing this even more. So, I did the same thing with that old… that video you saw before, where I, like, added.
+
+148
+00:19:18.970 --> 00:19:20.329
+Audio shared by Davicho Barona: It is the world.
+
+149
+00:19:20.950 --> 00:19:29.369
+Davicho Barona: silence this. We're out of the teeth a little bit, and we got rid of that, like, sad emotion. And my goal is this. Like, here's my final outcome.
+
+150
+00:19:29.370 --> 00:19:30.850
+Audio shared by Davicho Barona: Pulled over your eyes to…
+
+151
+00:19:31.950 --> 00:19:39.779
+Davicho Barona: A custom font that you wouldn't think actually exists here, and then every word, like.
+
+152
+00:19:39.950 --> 00:19:47.820
+Davicho Barona: instead of just tiny little text, big text, and then every word coming up as he's saying it.
+
+153
+00:19:47.820 --> 00:20:06.369
+Davicho Barona: Similar to what I did with that matrix one, but just much bigger in scale, and the font is custom, the styling is custom, etc. So the first thing that I did was the same exact thing I did here before, basically transcribe. Give me a transcription. So I got this transcription here.
+
+154
+00:20:06.600 --> 00:20:11.450
+Davicho Barona: Same kind of thing as before. And then, I started by.
+
+155
+00:20:12.030 --> 00:20:13.370
+Audio shared by Davicho Barona: to blind you from the truth.
+
+156
+00:20:13.370 --> 00:20:18.029
+Davicho Barona: showing the different examples again. So, the Hormozy style here.
+
+157
+00:20:18.490 --> 00:20:22.599
+Davicho Barona: With that same transcription, just to make sure everything's kind of working the same way.
+
+158
+00:20:22.600 --> 00:20:38.560
+Davicho Barona: the karaoke style, with every, you know, every word kind of popping up as it's… as it's going, you know, sort of like a karaoke situation. Same thing here with that, like, cinematic version, and same thing here with this, like, pill…
+
+159
+00:20:38.580 --> 00:20:49.070
+Davicho Barona: the word pills, beneath again. And then what I decided to do was, like, okay, this is, like, taking me a long time to kind of, like, do this again, over and over again.
+
+160
+00:20:49.070 --> 00:21:04.269
+Davicho Barona: So, I need, like, a cheat sheet. So, I said, you know, please create a prompt-based remotion cheat sheet doc that I can use to copy-paste some prompt snippets. I mean, I gave it, like, the whole, exactly what I want to do, right? The key to this, I always say this, is, like.
+
+161
+00:21:04.680 --> 00:21:18.449
+Davicho Barona: you don't have to… you just have to tell it what to do. Be very clear in your instructions about what you want, but you don't need to focus on how you want it to do it. A lot of times, like, in these cases, I'm telling you to
+
+162
+00:21:18.620 --> 00:21:37.619
+Davicho Barona: to… to tell it how to do it, because I've found different short… you know, after experimenting, I can try to save you some credits by giving you, like, very exact, wordings and exact tools, etc. So in some cases, I am telling it how to do it, right? Using a particular tool, etc.
+
+163
+00:21:37.620 --> 00:21:44.469
+Davicho Barona: But, for the most part, when you really get into the habit of just telling it what to do clearly.
+
+164
+00:21:44.470 --> 00:22:07.449
+Davicho Barona: with, like, as if you truly were, like, a creative director, and you're bringing your instructions with your assets, with everything, to your production team that's sitting in the next office. You're bringing kind of, like, this folder of stuff, and you're… all these references, you're asking questions, saying, like, do you have enough information, or do you need something else from me in order to, like, complete this task?
+
+165
+00:22:07.500 --> 00:22:19.650
+Davicho Barona: Treat the agent the same way. This canvas is that office next door, and the agent is your production team, and you are that creative director, and all of these assets that you're bringing in
+
+166
+00:22:19.910 --> 00:22:28.939
+Davicho Barona: Those are the folders and the paperwork that you're bringing over as, like, the reference assets, and the instructions, the clear instructions you're telling your team.
+
+167
+00:22:29.030 --> 00:22:51.489
+Davicho Barona: That same exact scenario is the way you should look at talking to the agent. As a teammate, as your production team, you don't… you're not there telling them how. You're not necessarily micromanaging, but you're giving them clear instructions as to what you want to see. And then they'll come back with something, and then you might have different feedback. You might be like, oh, you know, fix this, fix that.
+
+168
+00:22:51.490 --> 00:22:53.980
+Davicho Barona: I really like this, I really don't like this, here's why.
+
+169
+00:22:54.330 --> 00:22:55.550
+Davicho Barona: That happens.
+
+170
+00:22:55.550 --> 00:23:19.929
+Davicho Barona: I was a creative director for a long time, and an art director before that, that happens a lot. You really, you know, you get better and better at giving clear instructions, and sometimes you come back, and you have a round of feedback, and you have rounder revisions. Same thing in this situation. The more you get used to talking like that, and to seeing this scenario in that way, the better results you're gonna get. So, in any case, I asked for this cheat sheet that would give me
+
+171
+00:23:20.040 --> 00:23:24.989
+Davicho Barona: like, actual JSON information, and actual, like.
+
+172
+00:23:25.150 --> 00:23:30.230
+Davicho Barona: Practical instructions for the agent to
+
+173
+00:23:30.770 --> 00:23:41.629
+Davicho Barona: to create every particular style, right? That Hormozy or Mr. B style kind of thing, I have that here now outlined in a full, like, step here that I can literally copy and paste.
+
+174
+00:23:41.630 --> 00:23:57.729
+Davicho Barona: I have, like, the Netflix-style subtitles. I mean, I asked for at least 50 different presets slash combinations, and I said 25 of them should be totally unique and imaginative, but highly legible. And then I said, and the other 25 should be, like, common…
+
+175
+00:23:57.930 --> 00:24:13.910
+Davicho Barona: versions that exist in the world of social media and just, like, general internet, I don't know, whatever that instruction is. And then it gave me this great, like, document. From here, I can extract those different particular presets, so to speak.
+
+176
+00:24:14.150 --> 00:24:24.600
+Davicho Barona: And I can just tell it to do… to use them. And so, like, in this case, I was, like, trying to do different ways, like, this is a style that it called, like.
+
+177
+00:24:24.790 --> 00:24:30.999
+Davicho Barona: I don't know, some, some kind of, like, what, what did it call it?
+
+178
+00:24:31.500 --> 00:24:43.269
+Davicho Barona: I don't remember exactly what it was, but it was some kind of, like, toxic sludge, or toxic glow, or something like this. And then I did a tour that was, like, a frost style, or something like this, whatever it called it.
+
+179
+00:24:43.480 --> 00:24:49.339
+Davicho Barona: And I just copy-pasted that in here. And then I decided, like.
+
+180
+00:24:49.400 --> 00:24:57.870
+Davicho Barona: okay, I need to actually figure out how many fonts you have available. So I asked the agent, like, hey, create an infographic that shows all the Google fonts.
+
+181
+00:24:57.870 --> 00:25:22.559
+Davicho Barona: That you have available. And it can be multiple pages if you need it to be, and then just write the word Quipster to, like, showcase every single one of these fonts. So then it gave me every single one, and because it's able to write it, then now I know that it's not, like, lying to me, it's actually using those fonts to write those words. And it gave me quite a bit of them. The final one here, the script and display, is kind of like the cool fonts here.
+
+182
+00:25:23.030 --> 00:25:31.529
+Davicho Barona: And, you know, one that everyone recognizes is this lobster font, and so I went and I asked for it to just, like, hey, do this same.
+
+183
+00:25:31.530 --> 00:25:31.980
+Audio shared by Davicho Barona: That has been.
+
+184
+00:25:31.980 --> 00:25:33.910
+Davicho Barona: N, which I just showed you.
+
+185
+00:25:34.100 --> 00:25:53.840
+Davicho Barona: do that again, but with this font styling. And I just, like, grabbed one of these stylings here. Actually, it was the same Frost version, like, this version, but I just replaced… I went in there and I just altered the code to replace it to Lobster, and left everything the same. So then I got this.
+
+186
+00:25:53.840 --> 00:25:54.940
+Audio shared by Davicho Barona: Bind you from the truth.
+
+187
+00:25:55.100 --> 00:25:57.559
+Davicho Barona: Right? Which you can definitely see the lobster fauna.
+
+188
+00:25:57.560 --> 00:25:59.970
+Audio shared by Davicho Barona: It is the world that has been pulled over.
+
+189
+00:25:59.970 --> 00:26:17.130
+Davicho Barona: And I had said, like, you know, lowercase, etc. I kind of gave it all those instructions. And then I was like, okay, that worked really well. Now, I went into… I, like, googled all the Google Fonts, and I realized there's a lot more Google Fonts than these.
+
+190
+00:26:17.130 --> 00:26:30.729
+Davicho Barona: And there's some that are much cooler than these. And I was like, I pinpointed one that I really like, which is the Creepster font. And I was like, hey, do you have access to the font called Creepster? Even though it didn't tell me here, I wanted to know.
+
+191
+00:26:30.730 --> 00:26:40.330
+Davicho Barona: And it was like, okay, Creepster is a real Google font, it's kind of spooky, got the horror movie vibe, blah blah blah, and it was like telling, you know, it was being transparent with me, it was like…
+
+192
+00:26:40.330 --> 00:26:51.230
+Davicho Barona: These infographic pages are not programmatic font renders, so, like, basically, this is… these things are not complete. Let me try this
+
+193
+00:26:51.230 --> 00:26:55.639
+Davicho Barona: using the Creepster font, and I'll do it using that word that you gave me before.
+
+194
+00:26:55.640 --> 00:27:10.109
+Davicho Barona: And it was like, do you want me to… do you want me to show you, like, the word Quipster in that Creepster font so you could see how well it renders? I just said yes. Then it gave me this as the output, and now I knew that it does have access to that Creepster font, which I really always liked.
+
+195
+00:27:10.410 --> 00:27:13.130
+Davicho Barona: And so then I went back to this bank.
+
+196
+00:27:13.130 --> 00:27:13.810
+Audio shared by Davicho Barona: you.
+
+197
+00:27:13.810 --> 00:27:20.169
+Davicho Barona: And I selected, and I said, do that again, but use that creepster font. And now it gives me this output here.
+
+198
+00:27:20.510 --> 00:27:22.989
+Audio shared by Davicho Barona: It is the world that has been pulled apart.
+
+199
+00:27:22.990 --> 00:27:37.819
+Davicho Barona: It has now the Creepster font, it still has that, like, arctic, or whatever it was called, the frost effect, which came from this. And obviously, all I said was do it again, but just use the creepster font, and so that's what it came out with, so I expected that.
+
+200
+00:27:37.820 --> 00:27:43.130
+Davicho Barona: And then I said, okay, do that again, but move the text lower on the frame, make the kerning.
+
+201
+00:27:43.130 --> 00:27:54.180
+Davicho Barona: Tighter, no glow. I want solid lime green with a solid black stroke on the outside, and just add, like, a soft shadow, just to see what it would come up with. And then it gave me this.
+
+202
+00:27:54.540 --> 00:28:14.970
+Davicho Barona: I'll silence it. But it gave me exactly what I asked for, right? Even down to the stroke, etc. But then, of course, I want more changes, because I'm super picky. So I said, do that again, make the green color of the font a lot more neon-looking, and make it, like, 3 times the size, and kern it, like, even tighter. So then, I get.
+
+203
+00:28:14.970 --> 00:28:18.849
+Audio shared by Davicho Barona: A world that has been pulled over your eyes to blind you from the truth.
+
+204
+00:28:19.120 --> 00:28:21.010
+Davicho Barona: Now, what I noticed here, everything was looking great.
+
+205
+00:28:21.010 --> 00:28:23.619
+Audio shared by Davicho Barona: It's been pulled over your eyes to blind you from the truth.
+
+206
+00:28:23.620 --> 00:28:30.040
+Davicho Barona: Much bigger, all my instructions are there, the color changes, the stroke, etc, all the things, except
+
+207
+00:28:30.270 --> 00:28:32.990
+Davicho Barona: I don't know if you noticed, but the word eyes was missing.
+
+208
+00:28:33.300 --> 00:28:46.119
+Davicho Barona: that was… has been pulled over your… and there's no eyes. So I was like, okay, this looks great, but the word eyes was skipped. Can you do that again and make sure you include every word? And this is kind of like my troubleshooting area here. And then it was like, okay.
+
+209
+00:28:46.140 --> 00:28:46.990
+Audio shared by Davicho Barona: That has been painted.
+
+210
+00:28:46.990 --> 00:28:58.590
+Davicho Barona: It gave me this, and I was like, okay, the words are right, but now the font isn't right. So it said, the font is not Creepster, please try it again, make sure it's the right font. Again, it gave me something a little strange.
+
+211
+00:28:58.590 --> 00:28:59.389
+Audio shared by Davicho Barona: of the world.
+
+212
+00:28:59.390 --> 00:29:17.839
+Davicho Barona: which gave me, like, the text on the side in the middle to the right. That was obviously not correct. And I said, okay, the words are right, but the placement isn't. Do it again. Make sure the captions are centered in the lower third of the frame, until finally I get exactly what I needed.
+
+213
+00:29:17.840 --> 00:29:27.689
+Davicho Barona: Right, so it's a little bit of a process. I could have done a lot of things in a single shot, but I wanted to also show you my process, so you understand kind of what I went through.
+
+214
+00:29:27.910 --> 00:29:32.559
+Davicho Barona: And at the end of the day, that was my final output, was… was that.
+
+215
+00:29:35.490 --> 00:29:42.089
+Davicho Barona: Any questions on this before I take off and hand it off to Artura? I see? Sharif, you have your hand up.
+
+216
+00:29:46.690 --> 00:29:49.580
+Davicho Barona: Let me see, are you able to talk?
+
+217
+00:29:50.070 --> 00:29:55.169
+Davicho Barona: I might have you on… not allowed to talk. Sorry. Okay, go ahead.
+
+218
+00:29:58.070 --> 00:29:59.070
+Sherif Mokbel: Can you hear me?
+
+219
+00:29:59.070 --> 00:29:59.790
+Davicho Barona: I can.
+
+220
+00:29:59.960 --> 00:30:13.750
+Sherif Mokbel: Okay, so a quick question about the JSON prompting. I know you glanced over it, but, like, this has been a debate, you know, like, whether it's important to have JSON prompting or not. Some people say it gives you more precision.
+
+221
+00:30:13.750 --> 00:30:23.440
+Sherif Mokbel: But then, in the end of the day, it's not really the language that we understand, so it makes it kind of hard to edit it, you know, and we keep on going back and forth, you know?
+
+222
+00:30:23.710 --> 00:30:24.540
+Davicho Barona: I mean…
+
+223
+00:30:25.690 --> 00:30:41.549
+Davicho Barona: Listen, I think it's… it just has to do with the process, because there are some tools that will handle JSON prompting really well. In this case, this JSON prompt was for, remotion, and it's… or Whisper, or both, actually. Like.
+
+224
+00:30:41.550 --> 00:30:56.930
+Davicho Barona: Remotion will handle JSON prompting really well. So will, like, Nano Banana Pro, handle Remotion really well. And all those models are in here. They don't need to be in JSON. Like, this is really just kind of what it gave me back.
+
+225
+00:30:56.970 --> 00:31:08.849
+Davicho Barona: And so I just kind of took its cue, and because it gave it back to me like this, because I'm trying to do re-motion edits, then I was like, okay, let me just, like… I also…
+
+226
+00:31:09.440 --> 00:31:19.100
+Davicho Barona: I also did a lot of, like, website design when I was younger, and so for me, like, CSS and this kind of language makes a lot of sense to me, like, I can edit this.
+
+227
+00:31:19.210 --> 00:31:32.870
+Davicho Barona: If… but you certainly do not have to do that. You do not have to put it in JSON. You can be as direct in natural language as you… you want. This just keeps a lot more control over certain things.
+
+228
+00:31:32.870 --> 00:31:47.109
+Davicho Barona: But again, it also comes down to what tool you're actually asking it to use, because for the most part, I still stick to very natural language instructions. It's only… I honestly only take its cue.
+
+229
+00:31:47.110 --> 00:31:59.790
+Davicho Barona: when it gives me back some kind of JSON thing, then I'm like, okay, let me kind of take it from there. But even when it does, you can still ask it to kind of like, hey, break this down into, like, natural language. I don't want to use JSON.
+
+230
+00:32:00.020 --> 00:32:05.709
+Davicho Barona: And it'll probably be like, I'm so sorry, like, I, I apologize for that.
+
+231
+00:32:05.710 --> 00:32:11.700
+Sherif Mokbel: At no point I will ask it to make it JSON, in other words. You know, like, I'll let it do its thing, and that's it, right?
+
+232
+00:32:11.700 --> 00:32:13.380
+Davicho Barona: Yes. Yes.
+
+233
+00:32:13.380 --> 00:32:13.940
+Sherif Mokbel: Okay.
+
+234
+00:32:14.230 --> 00:32:15.299
+Davicho Barona: I,
+
+235
+00:32:16.190 --> 00:32:33.049
+Davicho Barona: I gotta take off, but I will leave you in the very capable hands of Brennan and Khartur here, and both of them can help answer stuff. Again, as always, it's, like, so great to, to see you guys. Let me stop sharing.
+
+236
+00:32:33.050 --> 00:32:39.720
+Davicho Barona: And thank you guys very much for being here. I'm going to hand off the pen.
+
+237
+00:32:39.880 --> 00:32:49.770
+Davicho Barona: to, to our tour. If you have any more questions, please direct them to him and to Brennan, who are both experts as well.
+
+238
+00:32:50.040 --> 00:32:53.679
+Davicho Barona: But yeah, thank you guys. Yeah, you're absolutely welcome. Thank you guys.
+
+239
+00:32:53.680 --> 00:32:54.250
+Sherif Mokbel: Thank you.
+
+240
+00:32:54.250 --> 00:32:54.920
+Davicho Barona: Cheers.
+
+241
+00:32:57.510 --> 00:33:11.580
+Artur Monteiro: Thanks, Davicio. Yeah, I would like to address something that I've been seeing in the webinars that I've been giving, and I don't know, maybe because both, Davicio, me, Brennan, we are…
+
+242
+00:33:11.680 --> 00:33:16.610
+Artur Monteiro: Dealing with these two every day, something seems too obvious for us.
+
+243
+00:33:16.800 --> 00:33:29.719
+Artur Monteiro: So, I would like to show you some really simple process here, and receive some questions, and also address some things that I had in the past week.
+
+244
+00:33:30.210 --> 00:33:40.100
+Artur Monteiro: The first thing I would like to address… are you guys seeing my screen? Yes, you are. Cool. The first thing I'd like to address is that,
+
+245
+00:33:40.770 --> 00:33:44.160
+Artur Monteiro: Maybe sometimes when we present our boards.
+
+246
+00:33:44.350 --> 00:33:50.940
+Artur Monteiro: This is presented in a way that you guys can understand the step-by-step what we exactly did.
+
+247
+00:33:51.360 --> 00:33:53.440
+Artur Monteiro: And sometimes we have a cleaner.
+
+248
+00:33:53.770 --> 00:33:59.249
+Artur Monteiro: Bored because something that we don't like is being erased or being discarded.
+
+249
+00:33:59.570 --> 00:34:09.149
+Artur Monteiro: And sometimes, when credits for my boards that are really neat and really organized, people think that I just took one shot to create this kind of stuff.
+
+250
+00:34:09.320 --> 00:34:11.649
+Artur Monteiro: And this may be happening a lot.
+
+251
+00:34:12.050 --> 00:34:16.639
+Artur Monteiro: So, I just decided to create a really simple example, and
+
+252
+00:34:16.900 --> 00:34:30.240
+Artur Monteiro: express exactly what I did, and even if you guys want to follow along, I can share the same image, you know, if you guys just want to test, because sometimes they… people ask the exact same prompt.
+
+253
+00:34:30.610 --> 00:34:37.460
+Artur Monteiro: I don't think it's gonna have the exact same result, but anyway, here's the image if you guys want to follow along.
+
+254
+00:34:37.659 --> 00:34:49.580
+Artur Monteiro: Cool. Let me go back to my… yes, so cool. I have this object here, and it's something that is really asking for us, is I just have one image, and I need to make
+
+255
+00:34:49.840 --> 00:34:58.660
+Artur Monteiro: something for e-commerce, or something like a catalog, you know? But I don't only have one image, it's low quality, maybe I need some help from Luma Agents.
+
+256
+00:34:59.070 --> 00:35:08.710
+Artur Monteiro: And sometimes, what people don't get how exactly this could work… oh, let me just use this one, this will be better.
+
+257
+00:35:08.980 --> 00:35:10.949
+Artur Monteiro: How this stuff would work?
+
+258
+00:35:12.030 --> 00:35:19.400
+Artur Monteiro: It's like you have to understand the capabilities of the tool instead of forcing the tool to your process.
+
+259
+00:35:19.840 --> 00:35:25.069
+Artur Monteiro: And I… we used it, two days ago, an analogy, maybe you can…
+
+260
+00:35:25.650 --> 00:35:43.069
+Artur Monteiro: jump in a horse and ask it to be, like, to fly. So maybe you could just understand what the horse is capable, the transportation and its space, instead of trying to force your tool, in this case, the horse, to fly. So let me go this in a really
+
+261
+00:35:43.130 --> 00:35:45.779
+Artur Monteiro: step-by-step process. This is the image.
+
+262
+00:35:45.850 --> 00:35:47.409
+Artur Monteiro: That we've been using.
+
+263
+00:35:47.610 --> 00:36:00.959
+Artur Monteiro: the base image imported, sometimes you have multiple images, multiple points of view of the image, sometimes just, I don't know, just grabbed your mobile phone and took these images, and you are importing this on your process.
+
+264
+00:36:01.280 --> 00:36:09.480
+Artur Monteiro: So, maybe prior to understand the process here, we can… we need to define our internal mental framework.
+
+265
+00:36:09.650 --> 00:36:15.240
+Artur Monteiro: What's the main objective of this project? In this case, let's create this e-commerce catalog.
+
+266
+00:36:15.770 --> 00:36:24.679
+Artur Monteiro: So cool. We have an R object, and the question that we usually do is that, okay, is the agent… let me just…
+
+267
+00:36:25.040 --> 00:36:27.080
+Artur Monteiro: Is the agent understanding?
+
+268
+00:36:27.250 --> 00:36:29.979
+Artur Monteiro: The complete geometry of my object?
+
+269
+00:36:30.100 --> 00:36:31.499
+Artur Monteiro: Let me try it.
+
+270
+00:36:31.820 --> 00:36:39.620
+Artur Monteiro: So I just asked the agent, let's start by generating the desk, because this is the object that I'm choosing right now. Maybe you have a chair, maybe you have another object.
+
+271
+00:36:40.670 --> 00:36:51.970
+Artur Monteiro: multiple angles to see if the AI is understanding. Then we're gonna pick winners, reject loses, and iterate. And step by step, I selected my image.
+
+272
+00:36:52.500 --> 00:36:54.639
+Artur Monteiro: And wrote this prompt.
+
+273
+00:36:55.760 --> 00:37:10.659
+Artur Monteiro: Is this necessary so the agent can understand what's going on? Not necessary, but I'm just putting, like, baby steps here, so we don't have any kind of doubts, and some part of the process keep kept out of the mental workflow.
+
+274
+00:37:11.080 --> 00:37:12.650
+Artur Monteiro: selecting the image.
+
+275
+00:37:12.790 --> 00:37:21.390
+Artur Monteiro: And using the promise, hey, this is my desk. Can you generate feed from different angles on a white background? Because I want to make sure you got the shape right.
+
+276
+00:37:21.550 --> 00:37:33.699
+Artur Monteiro: And then it got some results. And this point, what I was getting in the previous webinars is that sometimes we're not showing you these guys the bad results.
+
+277
+00:37:33.840 --> 00:37:39.560
+Artur Monteiro: And then people say, how these guys are doing in just one trial and get these excellent results.
+
+278
+00:37:39.670 --> 00:37:43.040
+Artur Monteiro: And now we iterate, Does that make sense?
+
+279
+00:37:43.280 --> 00:37:49.649
+Artur Monteiro: Because I'm seeing this a lot, so I'm going to start the webinar just putting the bad results as well.
+
+280
+00:37:49.920 --> 00:37:54.469
+Artur Monteiro: So you guys can say, okay, sometimes the platform will
+
+281
+00:37:54.910 --> 00:37:57.620
+Artur Monteiro: Go on 100%, and sometimes it's not.
+
+282
+00:37:58.980 --> 00:38:01.589
+Artur Monteiro: So far, so good. Are you guys following me?
+
+283
+00:38:03.300 --> 00:38:05.080
+Artur Monteiro: Sheriff, just… yeah.
+
+284
+00:38:06.440 --> 00:38:31.359
+Sherif Mokbel: Yeah, so last, last week I remember I was telling you, if I have bad results, you know, and you were telling me about the tagging, and that it doesn't matter, so what I started doing is that I would remove the bad results completely from the board to prevent the model from kind of understanding. But something interesting happened is that it had a memory of those ones, and it actually, like, I remember I had a specific reference of
+
+285
+00:38:31.360 --> 00:38:43.790
+Sherif Mokbel: guy, I was trying to create a Robin Hood character, and I had a specific reference that I ended up changing my mind, removed it, but then it actually created from that reference, even though I removed it and I gave it a new prompt.
+
+286
+00:38:43.990 --> 00:38:53.180
+Sherif Mokbel: So, it seems it has a memory, I guess, and does this technique work better in that case, instead of removing things?
+
+287
+00:38:54.380 --> 00:39:08.249
+Artur Monteiro: I also remove the bad results, and then, in the end of this process, I'm gonna show how I do, okay? Because, again, in this week, we have some people say, no, but I need to maintain the bad results so the platform can understand what not to do.
+
+288
+00:39:08.780 --> 00:39:23.560
+Artur Monteiro: And from my perspective, you're making things complicated for the platform. But anyway, let's just not ignore that sometimes we can get bad results. Is that clear? Oh, no, but you just showed me the step-by-step, and it's perfect.
+
+289
+00:39:23.610 --> 00:39:40.339
+Artur Monteiro: It's partly because we clean, we prepare for you guys, we put some arrows, but sometimes you can get bad results. So here are my bad results, real… real transparency here in the process. Sure, I'm gonna… in the end of this chain, I'm gonna answer your question.
+
+290
+00:39:40.590 --> 00:39:56.119
+Artur Monteiro: So, cool. Let's use the good results to generate a description of this object. And again, here, what we just discussed. You can keep the bad results on the board, or just delete it. To make it more organized, it's a personal choice. I personally prefer to delete it.
+
+291
+00:39:56.420 --> 00:40:05.090
+Artur Monteiro: But in the webinars, I'm gonna maintain the bad results, so just people don't think, oh, these guys are perfect, they have their secret receipt to make this stuff…
+
+292
+00:40:05.230 --> 00:40:10.539
+Artur Monteiro: happens. Sometimes it's just in the word choicing of this… making the description of the stuff.
+
+293
+00:40:10.690 --> 00:40:19.559
+Artur Monteiro: So, cool. This is the stuff that we like in, you know, good results, let's use these good results to generate a description of our object.
+
+294
+00:40:19.850 --> 00:40:21.419
+Artur Monteiro: I'm gonna select this group.
+
+295
+00:40:22.110 --> 00:40:30.290
+Artur Monteiro: And then I literally use this text. You guys want a copy-paste I can show you guys? I can share with you in the chat?
+
+296
+00:40:31.190 --> 00:40:34.730
+Artur Monteiro: Again, let me just put it right here, just in case.
+
+297
+00:40:35.540 --> 00:40:43.629
+Artur Monteiro: These angles look good, can you write me a detailed description of this task? Based on what you see, because I want to use this as a reference for future steps.
+
+298
+00:40:43.990 --> 00:40:48.719
+Artur Monteiro: And then selecting this, with this prompt, then I have my Bible.
+
+299
+00:40:49.200 --> 00:40:53.059
+Artur Monteiro: With my object-locked desk specification.
+
+300
+00:40:54.070 --> 00:41:00.929
+Artur Monteiro: This is my way to lock up my object, my character, if this is a person. Does that answer your question, Sheriff?
+
+301
+00:41:02.590 --> 00:41:14.599
+Artur Monteiro: So I have this really detailed stuff, because now I teach it step by step, and then when I want to make reference of my desk, I will have the images.
+
+302
+00:41:15.560 --> 00:41:16.880
+Artur Monteiro: And the specification.
+
+303
+00:41:18.150 --> 00:41:21.729
+Artur Monteiro: Does that make sense? Do you guys want me to go again?
+
+304
+00:41:22.730 --> 00:41:23.890
+Artur Monteiro: S, S.
+
+305
+00:41:23.890 --> 00:41:48.399
+Sherif Mokbel: It's just, to me, it's more like, how can I convince the model, you know, to ignore a reference, even though if I put it and removed it, you know, and it still goes back to it, or if I put it in a box, you know, to tell it, okay, this is not good, don't do this. So, the confusion is sometimes it kind of goes on its own and decides on doing things.
+
+306
+00:41:48.550 --> 00:42:00.439
+Sherif Mokbel: And it's a communication problem, basically, you know, like, how can I say, this is bad, don't do that, and let it fully understand that, you mean? You know?
+
+307
+00:42:00.440 --> 00:42:09.579
+Artur Monteiro: Yes, and I would invite you to think in a different way, instead of, how can I make the platform understand, how can we as users
+
+308
+00:42:09.700 --> 00:42:13.430
+Artur Monteiro: Take and express the most of capabilities of the platform.
+
+309
+00:42:13.880 --> 00:42:15.179
+Artur Monteiro: Does that make sense?
+
+310
+00:42:15.280 --> 00:42:28.710
+Artur Monteiro: This is an invitation I make. Some… most of people's will likely try to force their… I don't know, maybe people are creative, and they have their own process, and try to make Luma fit in this kind of process.
+
+311
+00:42:28.820 --> 00:42:36.350
+Artur Monteiro: You know? And I would like to invite you, this is not something that I would like to force you to understand how the platform works instead of saying, oh, this…
+
+312
+00:42:36.800 --> 00:42:43.280
+Artur Monteiro: the platform is not speaking my language instead of trying to understand how can I communicate better
+
+313
+00:42:43.450 --> 00:42:44.790
+Artur Monteiro: With a platform.
+
+314
+00:42:45.780 --> 00:42:53.110
+Artur Monteiro: Maybe too philosophical here, but… I'm showing you guys how something works.
+
+315
+00:42:53.250 --> 00:43:01.020
+Artur Monteiro: You know, and with success, we also have another NOMA employees here, and this is a process that we do.
+
+316
+00:43:01.630 --> 00:43:10.559
+Artur Monteiro: Does that make sense? And… but you… you can still think, oh, but I needed to… the platform to fit my stuff, and this could be frustrating.
+
+317
+00:43:11.050 --> 00:43:14.590
+Artur Monteiro: Regarding the expectations, you know? Maybe the dis…
+
+318
+00:43:16.970 --> 00:43:25.739
+Artur Monteiro: Prior to dive into the platform capabilities, we have a frustration, expectation kind of problem, kind of issue.
+
+319
+00:43:26.110 --> 00:43:29.330
+Artur Monteiro: Does that make sense, or I'm just too philosophical?
+
+320
+00:43:30.750 --> 00:43:46.819
+Sherif Mokbel: Yeah, it's always a gam… it's always a balance between how we want things to be done and how to convince the… this is why, you know, I was asking you if you already have a very clear trick. Sometimes I would remove it, like last week, I removed it from the board.
+
+321
+00:43:46.820 --> 00:43:58.960
+Sherif Mokbel: and then this week, probably, I'm gonna try, you know, to frame it and say, these are bad results, don't do that, or don't follow that, follow something else. So… but yeah, definitely, I'm always trying to
+
+322
+00:43:58.960 --> 00:44:03.370
+Sherif Mokbel: Understand the model and adapt to it, rather than let it adapt to me, you know?
+
+323
+00:44:04.510 --> 00:44:11.290
+Artur Monteiro: I think in terms of frustration, because sometimes people, treat AI like a Google, give me this kind of stuff.
+
+324
+00:44:11.410 --> 00:44:13.820
+Artur Monteiro: And it has some steps, you know?
+
+325
+00:44:14.040 --> 00:44:23.419
+Artur Monteiro: This is my desk. Let me put the environment, the ambience of where this desk will be.
+
+326
+00:44:23.650 --> 00:44:26.299
+Artur Monteiro: So I'm in my mental workflow.
+
+327
+00:44:26.460 --> 00:44:36.289
+Artur Monteiro: I'm thinking something like Scandinavian, but maybe just saying Scandinavian is too vague for the platform to understand exactly what I have in mind.
+
+328
+00:44:36.630 --> 00:44:43.199
+Artur Monteiro: So, okay, let's assume here that I don't have the exact image reference I did identify on Pinterest.
+
+329
+00:44:43.660 --> 00:45:02.619
+Artur Monteiro: And if I just use the adjective Scandinavian, it can mean tons of different things. So now, maybe this isn't a communication problem with the platform. So how can I solve this situation? Let's assume that we are not interior designers, we don't have the proper knowledge about this, let's ask the agent some help.
+
+330
+00:45:04.020 --> 00:45:08.480
+Artur Monteiro: Generate empty excavation living rooms with natural light, leave some space.
+
+331
+00:45:08.760 --> 00:45:16.160
+Artur Monteiro: So I want to pick, I want to choose, because I don't have a mental reference, so the platform's, okay, you don't have a clear direction, let's…
+
+332
+00:45:16.450 --> 00:45:18.349
+Artur Monteiro: Starting to iterate.
+
+333
+00:45:18.740 --> 00:45:27.520
+Artur Monteiro: Maybe it's going this way, maybe it's going the way in the… then I can say, okay, it's not there yet, you know? I don't know exactly what I want.
+
+334
+00:45:27.670 --> 00:45:29.510
+Artur Monteiro: I don't know how to describe it.
+
+335
+00:45:30.090 --> 00:45:46.150
+Artur Monteiro: But can you try, similar to the first batch? Because I think it's more this way, you know, because this is the kind of problem. I… sometimes I don't know what I want, but I will know when I see it. So let's ask the agent to show me some information. So with this prompt.
+
+336
+00:45:46.350 --> 00:45:49.190
+Artur Monteiro: And this first batch, these are the results.
+
+337
+00:45:49.930 --> 00:45:54.859
+Artur Monteiro: And then I imagine, okay, maybe it's something closer to this first image.
+
+338
+00:45:55.760 --> 00:45:59.249
+Artur Monteiro: Not sure. Let's continue to iterate.
+
+339
+00:45:59.680 --> 00:46:03.430
+Artur Monteiro: And I select this image, and say, this is the best image so far.
+
+340
+00:46:03.560 --> 00:46:08.939
+Artur Monteiro: But it's still not 100% sure. Can you make me variations based on this image?
+
+341
+00:46:09.610 --> 00:46:12.050
+Artur Monteiro: And then starting soon make some variations.
+
+342
+00:46:14.830 --> 00:46:16.750
+Artur Monteiro: Maybe quit just this one.
+
+343
+00:46:17.360 --> 00:46:19.030
+Artur Monteiro: That's just this image.
+
+344
+00:46:20.080 --> 00:46:26.929
+Artur Monteiro: Can you show me multiple points of view on this image, so the model can understand the speciality?
+
+345
+00:46:27.330 --> 00:46:29.069
+Artur Monteiro: And these are the results.
+
+346
+00:46:30.670 --> 00:46:37.619
+Artur Monteiro: You know, sometimes we have different angles, Different levels of the camera.
+
+347
+00:46:37.940 --> 00:46:39.000
+Artur Monteiro: You know?
+
+348
+00:46:39.310 --> 00:46:44.709
+Artur Monteiro: And then, let's say I'm really, really satisfied with all of this. I select it all, and I say.
+
+349
+00:46:45.100 --> 00:46:50.229
+Artur Monteiro: Oh, these angles look good, can you write me a detailed description of this desk, basic, on what you see?
+
+350
+00:46:50.600 --> 00:46:54.119
+Artur Monteiro: And then it's gonna write me… this reference here.
+
+351
+00:46:55.360 --> 00:47:03.240
+Artur Monteiro: So next time I want to address this space, I have this informations.
+
+352
+00:47:03.370 --> 00:47:10.020
+Artur Monteiro: So, maybe now I can make it live. Let's blend this information. So I have the space, and I… and I have the desk.
+
+353
+00:47:15.030 --> 00:47:20.340
+Artur Monteiro: Vinue at the desk of our… Leaving them?
+
+354
+00:47:24.430 --> 00:47:26.749
+Artur Monteiro: It's going to generate here.
+
+355
+00:47:26.970 --> 00:47:31.680
+Artur Monteiro: sometimes what I like to do is already be moving this to another space.
+
+356
+00:47:31.900 --> 00:47:38.769
+Artur Monteiro: While it's generating, because sometimes it gets messy. I like to be a little bit more organized with this.
+
+357
+00:47:40.330 --> 00:47:43.290
+Artur Monteiro: So let's… Giving it sometime?
+
+358
+00:47:45.810 --> 00:47:52.229
+Artur Monteiro: And say, both Bibles are lock and load, I don't know if you guys are seeing this text right here. Now, the merge, the payoff, and the whole demo.
+
+359
+00:47:53.550 --> 00:47:55.290
+Artur Monteiro: And let's wait for the results.
+
+360
+00:47:56.130 --> 00:47:57.970
+Artur Monteiro: But what I'm sometimes…
+
+361
+00:47:58.200 --> 00:48:07.980
+Artur Monteiro: see people doing, and it may seem so obvious for us, because we're dealing with this tool every day, is that people just put the image
+
+362
+00:48:08.970 --> 00:48:12.609
+Artur Monteiro: And try to get this result that we are getting right now.
+
+363
+00:48:13.280 --> 00:48:18.530
+Artur Monteiro: Jumping all this process of teaching the platform exactly what it wants.
+
+364
+00:48:18.760 --> 00:48:27.550
+Artur Monteiro: Or at least some clues. I mean, you can… you can figure it out, all the process, maybe sometimes you'll have a detail, you'll have a video in the future.
+
+365
+00:48:28.600 --> 00:48:31.420
+Artur Monteiro: But this is the way you teach the model.
+
+366
+00:48:32.280 --> 00:48:33.150
+Artur Monteiro: And…
+
+367
+00:48:33.310 --> 00:48:41.500
+Artur Monteiro: when I get my final result, this is the way, in a successful case, I can say, okay, this is excellent, now I'm gonna change
+
+368
+00:48:41.660 --> 00:48:43.699
+Artur Monteiro: The desk to another one.
+
+369
+00:48:43.880 --> 00:48:46.519
+Artur Monteiro: And you're gonna follow all this process.
+
+370
+00:48:48.230 --> 00:48:49.680
+Artur Monteiro: Does that make sense?
+
+371
+00:48:51.630 --> 00:48:57.430
+Artur Monteiro: It's less than a vending machine that you just put the coin and you get the result.
+
+372
+00:48:58.260 --> 00:49:05.249
+Artur Monteiro: And a teaching process, because the agent has tons of capabilities, but it's too much options. There are too many options.
+
+373
+00:49:06.110 --> 00:49:06.980
+Artur Monteiro: You know?
+
+374
+00:49:09.630 --> 00:49:12.539
+Artur Monteiro: So cool. These results… yeah, this is kind of cool, let's see.
+
+375
+00:49:12.800 --> 00:49:15.960
+Artur Monteiro: Which results were cool, and which results were not?
+
+376
+00:49:16.960 --> 00:49:24.020
+Artur Monteiro: But now, the agent understands exactly the space, exactly the object, and can start making this kind of iterations.
+
+377
+00:49:24.350 --> 00:49:28.369
+Artur Monteiro: And this is the way that I minimize bad results.
+
+378
+00:49:37.130 --> 00:49:39.240
+Artur Monteiro: This is… not cool…
+
+379
+00:49:39.470 --> 00:49:43.670
+Artur Monteiro: But let me put here the bad results as well, because people will think, oh, you just…
+
+380
+00:49:43.750 --> 00:50:02.149
+Artur Monteiro: put in the magic word and get good stuff. No, this is a process, you know? And I like to make this comparison about this is not a vending machine, and why the vending machine is not paying attention to what I'm saying. This is a process of teaching, and then when you teach well, the platform can replicate
+
+381
+00:50:02.570 --> 00:50:05.189
+Artur Monteiro: Tons of process, and tons of images.
+
+382
+00:50:13.140 --> 00:50:16.480
+Artur Monteiro: I can say, oh, this is not good enough. Give me more options.
+
+383
+00:50:17.370 --> 00:50:19.159
+Artur Monteiro: I'm not satisfied with all this.
+
+384
+00:50:19.430 --> 00:50:24.369
+Artur Monteiro: is still doing this kind of stuff. But then I have some kind of control.
+
+385
+00:50:24.570 --> 00:50:31.800
+Artur Monteiro: In the object, because the platform can understand all the speciality of the object, you know, all the different angles, and
+
+386
+00:50:31.910 --> 00:50:33.160
+Artur Monteiro: the environment.
+
+387
+00:50:33.540 --> 00:50:36.389
+Artur Monteiro: If I would like to have a table.
+
+388
+00:50:37.090 --> 00:50:49.110
+Artur Monteiro: from IMA image in a Scandinavian space, it can give me anything, and then this can make this frustration that sometimes I see in people, the platform is not getting me.
+
+389
+00:50:49.340 --> 00:50:54.200
+Artur Monteiro: And sometimes it's a communication problem. How can I teach the platform exactly what I want?
+
+390
+00:50:55.550 --> 00:50:56.880
+Artur Monteiro: Does that make sense?
+
+391
+00:50:58.360 --> 00:51:01.110
+Artur Monteiro: Their guys are too quiet. This is too much.
+
+392
+00:51:02.070 --> 00:51:05.020
+Artur Monteiro: I… is there anyone still there?
+
+393
+00:51:05.130 --> 00:51:12.149
+Sherif Mokbel: We're here, yeah. I guess, I think you don't, you have the authority to give them, the mic.
+
+394
+00:51:12.350 --> 00:51:14.650
+Sherif Mokbel: like I had, now.
+
+395
+00:51:14.930 --> 00:51:18.479
+Artur Monteiro: I don't… let's see if I can.
+
+396
+00:51:18.480 --> 00:51:22.419
+Sherif Mokbel: For you to authorize, and then they'll be able to talk, so, yeah.
+
+397
+00:51:22.420 --> 00:51:23.550
+Artur Monteiro: Okay, I'm not sure.
+
+398
+00:51:23.550 --> 00:51:26.129
+Sherif Mokbel: I think I'm the only one who has it now.
+
+399
+00:51:27.150 --> 00:51:32.480
+Artur Monteiro: But in the chat, there's no one talking. I don't know if you guys are… I'm checking…
+
+400
+00:51:32.480 --> 00:51:49.320
+Sherif Mokbel: I might have another quick question. A trick I did is that it generated some bad results at some point, and I was telling it, instead of saying these are bad results, I was asking them in the brainstorm mode, do you think this is good?
+
+401
+00:51:49.320 --> 00:52:00.519
+Sherif Mokbel: And it recognized that it's not. And it said, yes, you're right, you know, this has this and this and that, these kind of problems. But my question is, I don't know if you know if it has…
+
+402
+00:52:00.520 --> 00:52:18.439
+Sherif Mokbel: a memory of that conversation that it will stop doing that, because it did do the same mistake again. Like, it was creating some HDR look to images. When I was saying I need a bit of a medium-high contrast, you know, with the moody lighting, you know, and so on, but it gave me, like, HDR look.
+
+403
+00:52:18.530 --> 00:52:25.950
+Sherif Mokbel: So, I told it, do you think this is right? And it said, no, no, you're right, this is not correct. So, it's like, okay, can you.
+
+404
+00:52:25.950 --> 00:52:26.429
+Artur Monteiro: Good read.
+
+405
+00:52:26.430 --> 00:52:33.639
+Sherif Mokbel: more images, and it did generate more HDR. It was like, okay, I don't know what to tell you, you know? Like, this is where…
+
+406
+00:52:33.820 --> 00:52:42.730
+Sherif Mokbel: It's… this is where my conversation is, basically. I want to know all the tricks, like, I'm gonna try to do this kind of a framing and say these are bad results.
+
+407
+00:52:43.010 --> 00:52:46.219
+Sherif Mokbel: And I did ask it on brainstorm mode.
+
+408
+00:52:46.380 --> 00:52:50.990
+Sherif Mokbel: And… and then I ran out of credit, so… so… so yeah, but I mean.
+
+409
+00:52:51.440 --> 00:52:59.809
+Sherif Mokbel: me a couple of good results, it's just that it was giving me, like, two-thirds of the results were in the wrong direction side, basically, that's why.
+
+410
+00:53:01.660 --> 00:53:12.960
+Artur Monteiro: Everything you generate in the platform, you… if you, go to assets, will be there, because you can, drag and drop later to put it again in the Canva.
+
+411
+00:53:13.300 --> 00:53:21.519
+Artur Monteiro: But the thing is, I, again, invite you to paint the process in a different way. Because, for example, you say, oh.
+
+412
+00:53:21.940 --> 00:53:32.139
+Artur Monteiro: this is good and this is bad, but I didn't warn the agent. This is for some internal teaching. Sometimes I can get the results.
+
+413
+00:53:32.650 --> 00:53:48.660
+Artur Monteiro: Does that make sense? Because when I was teaching and I just deleted the bad results, people say, oh, this is… I don't know how you do it, you have the secret receipt, the perfect word choicing, and sometimes it's just explaining, but doing this step by step.
+
+414
+00:53:49.140 --> 00:53:55.720
+Artur Monteiro: You know? I, in this process, didn't find the necessity to explain these are the bad results.
+
+415
+00:53:57.490 --> 00:54:05.820
+Artur Monteiro: Because I was too focused on, oh, this is the good stuff, this is the Lockman reference, I'm gonna use it only this universe right here.
+
+416
+00:54:09.590 --> 00:54:19.470
+Artur Monteiro: I think you have to try to see if it happens. Lock it up your objects, lock it up… let me just grab another example, because I have other boards with this.
+
+417
+00:54:19.780 --> 00:54:21.649
+Artur Monteiro: Where I heard them?
+
+418
+00:54:21.780 --> 00:54:32.909
+Sherif Mokbel: Quick question about that as well, like, if I group results, certain results, and if I name it Bad Results, like, the name of the group is Bad Results.
+
+419
+00:54:33.010 --> 00:54:36.810
+Sherif Mokbel: Would it understand? Would it know that… what I mean?
+
+420
+00:54:37.570 --> 00:54:40.539
+Artur Monteiro: I think you're just keeping more information to ignore.
+
+421
+00:54:40.710 --> 00:54:43.800
+Artur Monteiro: And it's easier to focus on the information.
+
+422
+00:54:44.030 --> 00:54:44.640
+Sherif Mokbel: That it shouldn'.
+
+423
+00:54:46.060 --> 00:54:46.760
+Artur Monteiro: No.
+
+424
+00:54:46.870 --> 00:54:49.639
+Artur Monteiro: Have you ever teach a child, don't do this?
+
+425
+00:54:49.750 --> 00:54:53.759
+Artur Monteiro: The child wants to only understand this, instead of don't do it.
+
+426
+00:54:53.900 --> 00:54:54.740
+Sherif Mokbel: Yay.
+
+427
+00:54:55.290 --> 00:55:08.250
+Sherif Mokbel: So if I do the same with good results, like, if I group and say… and I name the group good results, like, my question is basically, does naming a group, is a tool to communicate with the model?
+
+428
+00:55:10.060 --> 00:55:11.640
+Artur Monteiro: Sorry, the last part of what?
+
+429
+00:55:11.640 --> 00:55:23.210
+Sherif Mokbel: So, let's say I created something, and I'm happy with it, okay? And I made a group, and I grouped them, and I think the key pad is, like, F, I think, when you group them.
+
+430
+00:55:23.210 --> 00:55:23.800
+Artur Monteiro: G.
+
+431
+00:55:23.800 --> 00:55:43.170
+Sherif Mokbel: And then I would… yeah, or G, so… and I group them and name that group good results. Would that make the model understand that these are good results, or do I need to select them and say, hey, these are good results? Like, just by naming. My question is, does naming groups is a form of communication as well?
+
+432
+00:55:44.650 --> 00:55:55.849
+Artur Monteiro: is not the best one. Selecting is the best one, because this is an input you're giving to the platform. It's similar to when people used to think, oh, I'm pulling this…
+
+433
+00:55:56.580 --> 00:56:02.599
+Artur Monteiro: approved, and this is not. So, I'm already sending information to the platform? No, you're not.
+
+434
+00:56:02.810 --> 00:56:07.080
+Artur Monteiro: This is just… an organization kind of stuff. Naming.
+
+435
+00:56:07.800 --> 00:56:14.589
+Artur Monteiro: Also helps to organize, but it's not the best way to communicate with the platform. The best way is selecting.
+
+436
+00:56:17.790 --> 00:56:30.200
+Artur Monteiro: So this is what I did. I select this group, I put the prompt, you know, selecting this group is gonna come to here, then I put this text in, and then this is the result that it gave me. A really complete and comprehensive.
+
+437
+00:56:30.370 --> 00:56:30.700
+Sherif Mokbel: Okay.
+
+438
+00:56:30.700 --> 00:56:35.649
+Artur Monteiro: detailed stuff. What's the range? What's the material, color, tone, you know?
+
+439
+00:56:35.840 --> 00:56:38.920
+Artur Monteiro: And again, you guys can do?
+
+440
+00:56:39.240 --> 00:56:45.409
+Artur Monteiro: how you'd like to operate with the platform, but these webinars are trying to minimize frustration.
+
+441
+00:56:45.570 --> 00:56:50.009
+Artur Monteiro: And so, I would invite you guys to understand how the platform
+
+442
+00:56:50.240 --> 00:57:05.050
+Artur Monteiro: operates instead of why the platform is not learning my individual process. Can you imagine how many Luma users we have in the role? If we have a particular Luma
+
+443
+00:57:05.290 --> 00:57:08.170
+Artur Monteiro: Personalized for each one of our agents.
+
+444
+00:57:09.210 --> 00:57:12.930
+Artur Monteiro: So, let's understand the capabilities of the platform.
+
+445
+00:57:13.530 --> 00:57:28.479
+Artur Monteiro: And I… I did this, this funny comparison, I think 2 days ago, that I say, you… I… I… I feel you're asking a horse to fly, getting frustrated because it's not flying. Instead, I understand how the horse
+
+446
+00:57:29.190 --> 00:57:31.949
+Artur Monteiro: will make you go from point A to point B.
+
+447
+00:57:38.500 --> 00:57:45.660
+Artur Monteiro: Cool. Does that make sense? I… let's see if I can… Michael…
+
+448
+00:57:46.130 --> 00:57:46.810
+Michał Królewiak: Yes.
+
+449
+00:57:46.810 --> 00:57:51.680
+Artur Monteiro: So, yes, cool. I thought the feature Yes.
+
+450
+00:57:52.200 --> 00:58:03.859
+Michał Królewiak: Because I think this is my case, so, I think that we all should understand that even if we choose the correct,
+
+451
+00:58:03.950 --> 00:58:21.249
+Michał Królewiak: the correct results to create something more. The agent can create… even then, the agent can create something in the wrong way.
+
+452
+00:58:22.140 --> 00:58:27.089
+Artur Monteiro: Yes, this is true. If you guys are expecting 100%
+
+453
+00:58:27.380 --> 00:58:40.949
+Artur Monteiro: of results, I don't know any platform that today, 2026, April 15, can do 100% results. If you guys know it, please show it to me, because I would be really, really curious.
+
+454
+00:58:42.060 --> 00:58:43.049
+Michał Królewiak: Okay, thank you.
+
+455
+00:58:43.050 --> 00:58:46.629
+Sherif Mokbel: That's… that's the new Claude model that they banned, that they did.
+
+456
+00:58:46.630 --> 00:58:58.759
+Artur Monteiro: Oh, hopefully, hopefully we'll solve all those four problems, hopefully, yeah. But, again, does that make sense? Because, I've been teaching a lot, with Brenna, with the Vito, and sometimes the main
+
+457
+00:58:58.950 --> 00:59:06.830
+Artur Monteiro: Pain points of the frustration is why the platform doesn't understand my process.
+
+458
+00:59:07.430 --> 00:59:12.110
+Artur Monteiro: You know, and sometimes we need to understand the tool's way of operate.
+
+459
+00:59:14.200 --> 00:59:15.460
+Artur Monteiro: Does that make sense?
+
+460
+00:59:15.740 --> 00:59:19.849
+Artur Monteiro: Or which… how can I stretch the capabilities of the platform?
+
+461
+00:59:19.960 --> 00:59:26.650
+Artur Monteiro: And again, it's not a vending machine, I put in a coin, and I get a soda can. It's not this coin, 100% soda can.
+
+462
+00:59:28.090 --> 00:59:35.849
+Artur Monteiro: So how can I teach the model? And once it… you can teach, and the model can… can learn, you can do tons of stuff.
+
+463
+00:59:36.350 --> 00:59:53.049
+Artur Monteiro: And let me just, show you guys another board, because I've been showing this board, and some people say, oh, but this is too clean, this is… this is… I can't do this kind of stuff, and then I realize, oh, I'm showing the… I'm showing the guys the finalized project.
+
+464
+00:59:53.260 --> 00:59:56.630
+Artur Monteiro: And sometimes people think that I didn't make any mistake.
+
+465
+00:59:57.040 --> 01:00:05.339
+Artur Monteiro: or the platform, I just put the magic word and got 100% positive results, and no, sometimes it doesn't happen.
+
+466
+01:00:06.370 --> 01:00:14.649
+Artur Monteiro: For example, the same example here, but without preparing for teaching, so without the errors, without the results, without an idea.
+
+467
+01:00:15.000 --> 01:00:16.849
+Artur Monteiro: Teaching a model a car.
+
+468
+01:00:17.250 --> 01:00:22.390
+Artur Monteiro: Hey, this is my car. This is the geometry of my car. This is the… these are the colors.
+
+469
+01:00:22.600 --> 01:00:25.719
+Artur Monteiro: Let's make some variations about the car.
+
+470
+01:00:26.520 --> 01:00:34.569
+Artur Monteiro: Amazing. I took 3, 5 hours, and I don't know how many hours. I have my base images of my car.
+
+471
+01:00:35.260 --> 01:00:45.650
+Artur Monteiro: Then I'm gonna teach the platform, hey, this is the vehicle configuration, this is the lighting color grading, these are the specifications. Now you can start iterating.
+
+472
+01:00:46.010 --> 01:00:53.300
+Artur Monteiro: And then I had the project, the prompter here, and then I got the results that I… some… you guys are seeing right here.
+
+473
+01:00:53.900 --> 01:01:05.500
+Artur Monteiro: If you guys try to jump right away to get these results, it will not happen, because the agent doesn't have the full context, and sometimes have tons of information you need to narrow down.
+
+474
+01:01:06.280 --> 01:01:13.179
+Artur Monteiro: And then I say, amazing, I have my car, let's put some people on this car. And then I started iterating.
+
+475
+01:01:13.320 --> 01:01:17.109
+Artur Monteiro: I need some people to say… to talk about the French market.
+
+476
+01:01:17.770 --> 01:01:22.209
+Artur Monteiro: Oh, but just, if it's just one prompt, you've solved all of this, no.
+
+477
+01:01:22.770 --> 01:01:24.550
+Artur Monteiro: These items are selected.
+
+478
+01:01:24.900 --> 01:01:41.400
+Artur Monteiro: organized board with all the good results, and sometimes this may confuse some people. Oh, this is too easy, I saw these guys from Luma doing, they have all this kind of stuff. No, this is only the organized stuff. I have other boards that are just organized that I can show you as well.
+
+479
+01:01:41.950 --> 01:01:52.670
+Artur Monteiro: But again, defining my casting, the people exactly I want to be interacting with this car. Tree targets, and then I say I need to lock it down, the clothing.
+
+480
+01:01:53.360 --> 01:01:59.700
+Artur Monteiro: of all these characters, and then I did the process exactly the colors and all this kind of stuff.
+
+481
+01:01:59.930 --> 01:02:02.840
+Artur Monteiro: for all, my casting.
+
+482
+01:02:03.040 --> 01:02:07.569
+Artur Monteiro: And then I ask the agent, now, blend my casting with the clothing.
+
+483
+01:02:08.270 --> 01:02:11.430
+Artur Monteiro: Here are some results, and even some bad results right here.
+
+484
+01:02:11.930 --> 01:02:16.569
+Artur Monteiro: And only then I can start, say, blend it all together, and make this photoshooting.
+
+485
+01:02:22.400 --> 01:02:29.210
+Artur Monteiro: But I couldn't just say yellow car with a couple, And,
+
+486
+01:02:29.470 --> 01:02:35.920
+Artur Monteiro: I don't know, brutalist design with tons of concrete. It will not happen if you go straight away.
+
+487
+01:02:38.350 --> 01:02:44.870
+Artur Monteiro: Let me give another example. With so, such a, Massive board.
+
+488
+01:02:47.250 --> 01:02:49.859
+Artur Monteiro: This board from a short film that I did is…
+
+489
+01:02:50.160 --> 01:02:57.840
+Artur Monteiro: a mess. I didn't get the time to organize it, and sometimes the board will be more like this instead of the prolific stuff.
+
+490
+01:02:58.690 --> 01:03:03.070
+Artur Monteiro: But I still took my time to say, hey, these are my characters.
+
+491
+01:03:03.800 --> 01:03:08.479
+Artur Monteiro: These are the clothings, these are the emotions, now I have all locked up.
+
+492
+01:03:08.800 --> 01:03:10.540
+Artur Monteiro: Now, let's go to the scene.
+
+493
+01:03:10.820 --> 01:03:15.790
+Artur Monteiro: Now let's go to another… and then I can start making some variations.
+
+494
+01:03:16.900 --> 01:03:19.560
+Artur Monteiro: If the model doesn't have a full range.
+
+495
+01:03:19.820 --> 01:03:25.349
+Artur Monteiro: To understand the object, the person, the environment, it can't replicate.
+
+496
+01:03:26.140 --> 01:03:31.769
+Artur Monteiro: This will likely… if you don't teach the model, the chance of hallucinating will be higher.
+
+497
+01:03:34.690 --> 01:03:36.380
+Artur Monteiro: This is a mess. This is…
+
+498
+01:03:45.650 --> 01:03:46.420
+Artur Monteiro: Cool.
+
+499
+01:03:50.000 --> 01:03:52.889
+Artur Monteiro: Questions. Questions, questions?
+
+500
+01:03:57.580 --> 01:04:03.930
+Artur Monteiro: I don't know if Mikal has risen his hand again for another question, or if it was the previous one.
+
+501
+01:04:04.630 --> 01:04:17.570
+Michał Królewiak: It was the previous one, but once again, I think my point of view, and maybe Shaf Mogbal, because teaching is based,
+
+502
+01:04:17.570 --> 01:04:25.950
+Michał Królewiak: on what is good and what is bad. So, I think we must change our minds, because
+
+503
+01:04:25.950 --> 01:04:36.220
+Michał Królewiak: When we teach something new, we must know also what was wrong to not do this again in the future.
+
+504
+01:04:36.280 --> 01:04:41.130
+Michał Królewiak: And you say that we must choose only good things.
+
+505
+01:04:41.410 --> 01:04:47.479
+Michał Królewiak: Good results to, to, teach the agents.
+
+506
+01:04:48.480 --> 01:04:49.400
+Artur Monteiro: Yes.
+
+507
+01:04:49.580 --> 01:04:52.739
+Artur Monteiro: I prefer to teach the agent with the good stuff.
+
+508
+01:04:52.910 --> 01:05:04.649
+Artur Monteiro: If you guys want to teach the agent with the bad stuff, and make the reverse process, I don't think it's efficient. It's as efficient at focusing on the good stuff, but be my guess.
+
+509
+01:05:05.310 --> 01:05:06.530
+Michał Królewiak: Okay.
+
+510
+01:05:14.400 --> 01:05:21.509
+Artur Monteiro: More questions. There are people just… I don't know if it's still there, or if they're just eating and hearing me like a podcast.
+
+511
+01:05:28.100 --> 01:05:32.910
+Artur Monteiro: I'm seeing… who else? Orlando, Lana, Jacques…
+
+512
+01:05:33.570 --> 01:05:37.550
+Artur Monteiro: Oh, Guy's here too, Isa…
+
+513
+01:05:38.850 --> 01:05:42.870
+Artur Monteiro: Jacques, can you open the mic?
+
+514
+01:05:43.780 --> 01:05:44.470
+Jacques Stroweis: Yes, hi.
+
+515
+01:05:44.470 --> 01:05:45.240
+Artur Monteiro: Oh, cool.
+
+516
+01:05:45.240 --> 01:05:45.970
+Jacques Stroweis: Tammy?
+
+517
+01:05:46.150 --> 01:05:57.460
+Jacques Stroweis: Yes. Yeah, so a little bit different. I was trying to do an i2V video with, from keyframes. Here it was a young baby.
+
+518
+01:05:57.460 --> 01:06:20.469
+Jacques Stroweis: And, you know, I was starting with a keyframe, but I had a really big problem getting a locked-off camera, or even, locked off was really, really hard. So, the, you know, you say the model, but I don't know if we call it the platform or the agent. The agent talks to the model, which are either Kling or Ray.
+
+519
+01:06:20.470 --> 01:06:37.769
+Jacques Stroweis: And the agent understands what I'm asking it, but, you know, the cling array won't be able to achieve what the model… the agent is asking. So, in this case, it was really hard to do just a lock-off, because
+
+520
+01:06:37.770 --> 01:06:45.269
+Jacques Stroweis: Supposedly, you know, the system is strained, the AI is strained where there is a little camera move.
+
+521
+01:06:45.320 --> 01:06:56.250
+Jacques Stroweis: So it took me a long time, so sometimes I say, well, maybe we'll just do a camera push, and even that was hard. So, do you have any tricks to be able to
+
+522
+01:06:56.310 --> 01:07:08.800
+Jacques Stroweis: kind of override and really say, yes, it's definitely a lock-off. Because sometimes in Dream Machine, I have the same issue also, but sometimes you can get a lock-off.
+
+523
+01:07:08.890 --> 01:07:14.399
+Jacques Stroweis: So, hopefully I was clear enough, and see if you have any tips.
+
+524
+01:07:15.230 --> 01:07:18.279
+Artur Monteiro: When you say lock off, you say the camera will not move?
+
+525
+01:07:18.280 --> 01:07:33.880
+Jacques Stroweis: Yeah, yeah, it's a term from, from film, it's a stationary, it's still, so even if in my prompt, I say twice, I repeat, stationary, view, lock off, even if I say that, it won't, it won't listen to what I say.
+
+526
+01:07:34.400 --> 01:07:35.340
+Jacques Stroweis: And, and…
+
+527
+01:07:35.340 --> 01:07:36.040
+Artur Monteiro: Rick.
+
+528
+01:07:36.040 --> 01:07:47.589
+Jacques Stroweis: Yeah, and it happens fairly often, you know, so… and the agent will say, yes, you're right, but either you will say, suggest a different model.
+
+529
+01:07:47.590 --> 01:08:02.350
+Jacques Stroweis: Or it will say… it's hard to do, because generally, when we do film or video, the camera is always moving, which is not totally true, obviously, because, you know, they are such a thing about having it locked off.
+
+530
+01:08:02.530 --> 01:08:16.669
+Jacques Stroweis: So, this happens fairly often, and it's, losing a lot of energy, she's spending credits for no… for… I mean, it… you would think there would be an override for that.
+
+531
+01:08:16.670 --> 01:08:34.649
+Jacques Stroweis: So, a possible override would be to have a start frame and an end frame, where it's, you know, the same camera position, but obviously that might limit, depending on what… there might be a limit into this, because then you have to get the right,
+
+532
+01:08:34.649 --> 01:08:42.559
+Jacques Stroweis: Whatever you want in the end frame, you know, in terms of the content, like a kid turning his head or something like that.
+
+533
+01:08:42.670 --> 01:08:48.519
+Jacques Stroweis: Is that a sort of a clear description of the issue?
+
+534
+01:08:48.520 --> 01:09:08.479
+Sherif Mokbel: I kind of have a solution, actually, for this, Arturo, if you don't mind, because I am also a filmmaker, and I use the term locked off on set, but then sometimes the… you know how locked off could mean other things offset? So this is why I would use things like a static tripod shot.
+
+535
+01:09:08.620 --> 01:09:21.830
+Sherif Mokbel: You know, so… so this way, it knows that it's on the ground instead of it's moving. So, it's just… we need to use more general terminology, I would say, that we don't really use on set.
+
+536
+01:09:21.830 --> 01:09:45.100
+Sherif Mokbel: And because of that, you know, like, I just say a tripod shot, or a gimbal shot, this means it's moving, you know? Sometimes you can say crab right or crab left, but then crab, it could put a crab in the frame, but we know that it is not crab, you know? It's just… people sometimes say, dolly left, even though there's only dolly forward and backward.
+
+537
+01:09:45.130 --> 01:09:56.089
+Sherif Mokbel: You know, so there's truck right or left, or there's pedestal up or down, and so on. Some people say it's crane, and so on. So, at some point, I would kind of put
+
+538
+01:09:56.190 --> 01:10:09.980
+Sherif Mokbel: all the terms that would… together, you know, just to make sure that you understand what I'm saying. It's not a truck, and it's not a crab, you know, so… so those kind of things, you know? Artur, I don't know if you want to add to it, of course.
+
+539
+01:10:10.960 --> 01:10:27.569
+Artur Monteiro: We… we've been getting some, feedback regarding this, because there's this barrier about the exact terminology people are using, and we hopefully, to… we hope to solve this in the next deploy, you know, because,
+
+540
+01:10:28.050 --> 01:10:35.490
+Artur Monteiro: The agent has information, and sometimes it's not the proper terminology that could understand and replicate to the model.
+
+541
+01:10:35.690 --> 01:10:51.810
+Artur Monteiro: This is a current issue, there's the escape frame that you already mentioned, the solution that Sheriff already mentioned, but we hope that in the next deploy we can make it easier for people to… to make this kind of stuff. We don't have a proper solution today.
+
+542
+01:10:52.960 --> 01:11:12.529
+Jacques Stroweis: Yeah, this is Jack. Yeah, this is a good point about adding those, the terminology, but in my case, I was also adding camera totally still, you know? That's pretty clear. I would repeat it in multiple different ways, and it would still not work. So,
+
+543
+01:11:12.620 --> 01:11:23.100
+Jacques Stroweis: Proper terminology understood by the agent or platform is important, obviously, but there's still something else happening there.
+
+544
+01:11:23.910 --> 01:11:33.560
+Artur Monteiro: Yeah, and that's why we always get feedback from people, and we will be evolving the model with the users, you know? But, yeah, I think it is a really…
+
+545
+01:11:33.720 --> 01:11:36.440
+Artur Monteiro: big point of frustration, why?
+
+546
+01:11:36.820 --> 01:11:39.199
+Artur Monteiro: I didn't get 100% success.
+
+547
+01:11:39.450 --> 01:11:45.909
+Artur Monteiro: And I personally don't know any model that can guarantee 100% of success.
+
+548
+01:11:46.390 --> 01:11:53.149
+Artur Monteiro: We have strategies, we can teach the model. With more data the model has, it will reduce
+
+549
+01:11:53.550 --> 01:12:00.470
+Artur Monteiro: This chance of making errors, you know, and updates, and all this kind of stuff, but…
+
+550
+01:12:01.430 --> 01:12:05.840
+Artur Monteiro: Today, I can say, this is the magic word. I don't have this magic word, you know?
+
+551
+01:12:06.740 --> 01:12:12.230
+Jacques Stroweis: Yeah, I totally understand what you're saying, but what I'm saying, this is a very…
+
+552
+01:12:12.470 --> 01:12:18.330
+Jacques Stroweis: important, seminal point, you know? Sometimes it's good to have
+
+553
+01:12:18.800 --> 01:12:26.999
+Jacques Stroweis: a camera not moving, that's not very complicated. I mean, in theory, maybe it's difficult for the AI model themselves.
+
+554
+01:12:27.000 --> 01:12:40.439
+Jacques Stroweis: in order, for example, to do a post-process with visual effects, you know, because when things move, then it gets more complicated, you have to do tracking, so it's a very important thing. But I do understand,
+
+555
+01:12:40.650 --> 01:12:49.920
+Jacques Stroweis: what you say. I'm not saying, you know, or… I mean, and sometimes Kling or even Ray don't have the same,
+
+556
+01:12:50.020 --> 01:12:51.490
+Jacques Stroweis: issue, so…
+
+557
+01:12:52.520 --> 01:13:07.109
+Jacques Stroweis: But, yeah, maybe there's a way to do some sort of override, because I see it happening from time to time in Dream Machine also, so… Anyway, just, was wondering if, if you had any thoughts about that, but that's okay.
+
+558
+01:13:07.110 --> 01:13:22.240
+Artur Monteiro: I know we had plans, and we have plans, I don't know where, but… when, sorry, that… remember in Dream Machine, we used to have some presets about the camera? This would help a lot of people, so the team's trying to figure out how to make this stuff
+
+559
+01:13:22.270 --> 01:13:29.409
+Artur Monteiro: inside of Luma Agents, but I can't say exactly when this is gonna happen. But this is an issue that the team is aware.
+
+560
+01:13:29.670 --> 01:13:49.029
+Jacques Stroweis: Yeah, yeah, I understand. And while I'm thinking about it, do you have the same guidelines, you know, guardrail guidelines for Dream Machine and agents? There's something that sometimes I cannot do in Dream Machine. I mean, nothing complicated, but, you know, anytime you have a baby, it's much more sensitive.
+
+561
+01:13:50.530 --> 01:13:59.140
+Jacques Stroweis: and sometimes it works in agents, but doesn't work in dream machines. Are they supposedly to be the same guardrail, or guidelines?
+
+562
+01:13:59.820 --> 01:14:12.709
+Artur Monteiro: No, it's not the same. I can guarantee… this I can guarantee it's not the same. And for now, the main source of information about Luma Agents is the Learning Center, you know?
+
+563
+01:14:12.710 --> 01:14:13.120
+Jacques Stroweis: Okay.
+
+564
+01:14:13.120 --> 01:14:16.809
+Artur Monteiro: The Vito has been updating, Brenna has been updating this as well.
+
+565
+01:14:17.070 --> 01:14:28.799
+Artur Monteiro: This is… and more and more articles are being added every day, more starting points, because we are just getting more information from the platform, and just…
+
+566
+01:14:28.800 --> 01:14:37.129
+Artur Monteiro: Trying to help you guys, oh, don't go this way because you'll get frustrated, you'll spend tons of credits, go this other way, starting with the starting points.
+
+567
+01:14:37.250 --> 01:14:45.069
+Artur Monteiro: And that's the goal of the webinars, you know? And I can't totally understand, guys, if you're getting frustrated with the platform.
+
+568
+01:14:45.240 --> 01:14:55.740
+Artur Monteiro: I have this every day. I talk with some people that are really positive, some people are really angry, the platforms give me this stuff, it needs to give me more.
+
+569
+01:14:55.860 --> 01:15:03.350
+Artur Monteiro: Let's… talk about how this… but again, I'd like to invite you guys to understand how the platform works.
+
+570
+01:15:03.590 --> 01:15:23.299
+Artur Monteiro: Instead, and say, why the platform's not doing this that I think it's supposed to be doing? Let's learn the basics of the platform, you know? Instead of asking. I remember there's this famous story about Henry Ford, when he asked people, what do you want? And people ask it faster, and people answered it, faster horses.
+
+571
+01:15:23.590 --> 01:15:32.560
+Artur Monteiro: I don't want your car, I want to have a faster horse, you know? And sometimes, it's a similar solution, because it can bring you to point A to point B,
+
+572
+01:15:33.050 --> 01:15:37.079
+Artur Monteiro: But sometimes people are just, too used to…
+
+573
+01:15:37.430 --> 01:15:46.240
+Artur Monteiro: to one kind of process. So every kind of new tool is being judged on this old process.
+
+574
+01:15:47.310 --> 01:15:55.979
+Jacques Stroweis: Anyway, it's a fabulous platform, and it's good to learn how it thinks, and how to train it. So, you know, it's…
+
+575
+01:15:55.980 --> 01:16:08.889
+Artur Monteiro: Totally again, and I invite you guys again, we've been doing tons of webinars, bring your, doubts, your strategies. This consist… well, object consistent, I did it yesterday to try to solve some kind of stuff.
+
+576
+01:16:09.040 --> 01:16:20.880
+Artur Monteiro: But if more doubts can come, because you guys are multiple, have multiple interests, filmmaking, furniture, photography, just…
+
+577
+01:16:21.000 --> 01:16:25.769
+Artur Monteiro: Send us an email, come back to webinars, and we'll try to help.
+
+578
+01:16:31.270 --> 01:16:34.560
+Artur Monteiro: And that's it. I'm a little bit over my time here.
+
+579
+01:16:34.680 --> 01:16:40.190
+Artur Monteiro: Do you guys have any questions? If not, I'm gonna say thank you.
+
+580
+01:16:40.590 --> 01:16:48.719
+Artur Monteiro: Thank you for your time. Come back with new stuff, new, learnings, new doubts, and we'll try our best to help you guys.
+
+581
+01:16:51.380 --> 01:16:54.920
+Michał Królewiak: Thank you, Artur, for today's webinar. See you soon.
+
+582
+01:16:55.480 --> 01:16:56.369
+Jacques Stroweis: Thank you very much.
+
+583
+01:16:58.210 --> 01:16:59.020
+Artur Monteiro: Bye.
+
+584
+01:16:59.840 --> 01:17:00.450
+Michał Królewiak: Right?
+

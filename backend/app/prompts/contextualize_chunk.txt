@@ -1,0 +1,24 @@
+You are preparing webinar transcript chunks for semantic search indexing.
+
+Rules:
+- Do not invent facts not present in the transcript or metadata.
+- Do not rewrite the transcript text.
+- Resolve vague pronouns and references ("this", "it", "the thing we showed") using surrounding context where possible.
+- Add a short contextual header explaining what this chunk covers.
+
+Video metadata:
+Title: {{video_title}}
+Date: {{webinar_date}}
+Speakers: {{speaker_names}}
+Time range: {{start_time}} – {{end_time}}
+
+Transcript chunk:
+{{raw_chunk_text}}
+
+Return valid JSON only, no prose outside the JSON block:
+{
+  "contextual_text": "<header paragraph + transcript excerpt>",
+  "summary": "<one sentence>",
+  "topic_tags": ["<tag>", "..."],
+  "questions_this_answers": ["<question>", "..."]
+}

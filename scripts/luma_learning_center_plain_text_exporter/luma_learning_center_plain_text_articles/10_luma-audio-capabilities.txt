@@ -1,0 +1,271 @@
+Source: https://lumalabs.ai/learning-center/articles/luma-audio-capabilities
+
+Luma Audio Capabilities =======================
+
+March 9, 2026
+
+- Luma Audio Capabilities Music Text-to-Music Vocals or Instrumental Full-Length Tracks, Not just short loops Sound Effects Text-to-SFX Layered Design Voiceovers Text-to-Speech Emotion & Expression Tags Wide Voice Catalog Narration, Dialogue, Ad Copy Audio + Video: Lip Sync Audio-Driven Lip Sync Emotion & Expression Control Any Audio Source Audio Natively in Video Video with Built-In Audio No Separate Assembly Needed Transcription & Analysis Audio-to-Text Transcription Video Audio Transcription Streaming Audio Transcription Beat Detection Silence Detection Audio Timing Analysis Audio in Video Compositions Score Your Videos Add Voiceover to Video SFX Layering Caption Sync Multi-Track Mixing Audio for Social & Ads Ad Voiceovers Product Review Narration Hook Audio Import Audio Upload Web Download Extract from Video
+
+- Music Text-to-Music Vocals or Instrumental Full-Length Tracks, Not just short loops
+
+- Text-to-Music
+
+- Vocals or Instrumental
+
+- Full-Length Tracks, Not just short loops
+
+- Sound Effects Text-to-SFX Layered Design
+
+- Text-to-SFX
+
+- Layered Design
+
+- Voiceovers Text-to-Speech Emotion & Expression Tags Wide Voice Catalog Narration, Dialogue, Ad Copy
+
+- Text-to-Speech
+
+- Emotion & Expression Tags
+
+- Wide Voice Catalog
+
+- Narration, Dialogue, Ad Copy
+
+- Audio + Video: Lip Sync Audio-Driven Lip Sync Emotion & Expression Control Any Audio Source
+
+- Audio-Driven Lip Sync
+
+- Emotion & Expression Control
+
+- Any Audio Source
+
+- Audio Natively in Video Video with Built-In Audio No Separate Assembly Needed
+
+- Video with Built-In Audio
+
+- No Separate Assembly Needed
+
+- Transcription & Analysis Audio-to-Text Transcription Video Audio Transcription Streaming Audio Transcription Beat Detection Silence Detection Audio Timing Analysis
+
+- Audio-to-Text Transcription
+
+- Video Audio Transcription
+
+- Streaming Audio Transcription
+
+- Beat Detection
+
+- Silence Detection
+
+- Audio Timing Analysis
+
+- Audio in Video Compositions Score Your Videos Add Voiceover to Video SFX Layering Caption Sync Multi-Track Mixing
+
+- Score Your Videos
+
+- Add Voiceover to Video
+
+- SFX Layering
+
+- Caption Sync
+
+- Multi-Track Mixing
+
+- Audio for Social & Ads Ad Voiceovers Product Review Narration Hook Audio
+
+- Ad Voiceovers
+
+- Product Review Narration
+
+- Hook Audio
+
+- Import Audio Upload Web Download Extract from Video
+
+- Upload
+
+- Web Download
+
+- Extract from Video
+
+Luma Audio Capabilities =======================
+
+You can generate music, sound effects, and voiceovers from text. You can sync audio to character lip movements. You can transcribe and analyze any audio for beats, words, and timing. And you can layer it all together — voice, music, SFX — into polished video compositions.
+
+- Sound effects (SFX)
+
+- Music generation
+
+- Text-to-speech voiceovers
+
+- Emotional voice control
+
+- Transcription (word-level timestamps)
+
+- Audio-driven lip sync
+
+- Multi-language voice production
+
+Audio in Luma can function as:
+
+- Atmosphere
+
+- Narrative driver
+
+- Brand identity layer
+
+- Emotional amplifier
+
+- Localization engine
+
+Music -----
+
+Text-to-Music -------------
+
+Describe a genre, mood, tempo, instrumentation, or vibe and get a full music track generated.
+
+Vocals or Instrumental ----------------------
+
+Generate music with or without vocals. Want a lo-fi trap beat? An epic orchestral score? A pop track with singing? Just describe it.
+
+Full-Length Tracks, Not just short loops ----------------------------------------
+
+generate proper musical compositions to score your projects.
+
+Sound Effects -------------
+
+Generate short, high-quality sound effects (5–10 seconds)
+
+- Create environmental ambience
+
+- Produce cinematic impacts
+
+- Generate UI sounds
+
+- Create foley-style textures
+
+- Build atmospheric sound beds
+
+Text-to-SFX -----------
+
+Describe any sound and get it generated (5–10 seconds). Explosions, footsteps, rain, doors creaking, sci-fi whooshes etc.
+
+Layered Design --------------
+
+Generate multiple SFX and combine them in video compositions for rich sound design.
+
+Voiceovers ----------
+
+Text-to-Speech --------------
+
+Write any dialogue or narration and get a natural human-sounding voiceover.
+
+Emotion & Expression Tags -------------------------
+
+Control delivery with tags like [excited], [whisper], [sad], [angry], [laughing] baked right into the text.
+
+Wide Voice Catalog ------------------
+
+Choose from a diverse library of voices across genders, ages, accents, and personalities.
+
+Narration, Dialogue, Ad Copy ----------------------------
+
+Whether it's a documentary narrator, a character speaking, or a punchy ad read, it's all covered.
+
+Audio + Video: Lip Sync -----------------------
+
+Audio-Driven Lip Sync ---------------------
+
+Pair any audio track with a video of a character and generate realistic mouth movement synced to the words.
+
+Emotion & Expression Control ----------------------------
+
+Advanced lip sync that doesn't just move lips, it adjusts the character's facial expressions and emotional reactions to match the audio.
+
+Any Audio Source ----------------
+
+Works with generated voiceovers, uploaded recordings, or any audio file.
+
+Audio Natively in Video -----------------------
+
+Video with Built-In Audio -------------------------
+
+Some video models generate synchronized audio alongside the visuals — dialogue, ambient sound, music, all in one pass from a text prompt.
+
+No Separate Assembly Needed ---------------------------
+
+The audio is baked into the video output automatically.
+
+Transcription & Analysis ------------------------
+
+Audio-to-Text Transcription ---------------------------
+
+Extract every spoken word from any audio file with word-level timestamps.
+
+Video Audio Transcription -------------------------
+
+Same thing, but pulled directly from video files.
+
+Streaming Audio Transcription -----------------------------
+
+Transcribe audio from streaming videos.
+
+Beat Detection --------------
+
+Identify beats, rhythmic peaks, and musical structure in audio tracks.
+
+Silence Detection -----------------
+
+Find pauses and silence points, useful for editing and timing.
+
+Audio Timing Analysis ---------------------
+
+Full breakdown of word timestamps, beats, and silence points for precision sync work.
+
+Audio in Video Compositions ---------------------------
+
+Score Your Videos -----------------
+
+Layer generated music underneath your video as a soundtrack.
+
+Add Voiceover to Video ----------------------
+
+Combine narration or dialogue with video in a rendered composition.
+
+SFX Layering ------------
+
+Add sound effects at specific moments in your video timeline.
+
+Caption Sync ------------
+
+Use word-level timestamps from transcription to drive perfectly timed animated captions and subtitles on video.
+
+Multi-Track Mixing ------------------
+
+Combine voice, music, and SFX together in a single programmatic video render.
+
+Audio for Social & Ads ----------------------
+
+Ad Voiceovers -------------
+
+Generate punchy, platform-optimized voice reads for TikTok, Instagram, YouTube ads.
+
+Product Review Narration ------------------------
+
+Create authentic influencer-style voiceovers for product review videos.
+
+Hook Audio ----------
+
+Generate attention-grabbing audio for the first few seconds of social content.
+
+Import Audio ------------
+
+Upload ------
+
+Drop audio files directly onto your board.
+
+Web Download ------------
+
+It can search the web and pull audio/media onto your board.
+
+Extract from Video ------------------
+
+Transcribe and work with audio that's already embedded in your video files.
