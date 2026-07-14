@@ -1,7 +1,6 @@
 """
 POST /ask endpoint - main query interface.
 """
-import asyncio
 import json
 
 from fastapi import APIRouter, Depends
@@ -39,34 +38,44 @@ async def ask_question(
     Answer a question using RAG over webinar transcripts.
 
     Returns an SSE stream:
-    - Periodic keep-alive events while Claude processes
-    - A final 'complete' or 'error' event with the result
+    - An initial 'retrieving' event while retrieval runs
+    - 'token' events with answer text deltas as Claude generates
+    - A final 'complete' or 'error' event with the full result
     """
     print(f"\n[API] POST /ask: {request.question}")
     if request.content_type_filter:
         print(f"[API] Content type filter: {request.content_type_filter}")
 
     async def event_stream():
-        task = asyncio.create_task(_execute_ask(request, db_session))
-
-        while not task.done():
-            yield 'data: {"status":"processing"}\n\n'
-            try:
-                await asyncio.wait_for(asyncio.shield(task), timeout=4.0)
-            except asyncio.TimeoutError:
-                continue
-            except Exception:
-                break
+        # Signal retrieval has started
+        yield 'data: {"status":"retrieving"}\n\n'
 
         try:
-            result = await task
-            print(f"[API] Response ready: {len(result.answer)} chars, {len(result.sources)} sources")
-            payload = {"status": "complete", "result": result.model_dump(mode="json")}
-            yield f"data: {json.dumps(payload)}\n\n"
+            retrieved_chunks = await retrieval_service.retrieve_chunks(
+                question=request.question,
+                top_k=5,
+                db_session=db_session,
+                content_type_filter=request.content_type_filter,
+            )
         except RetrievalError as e:
             print(f"[API] Retrieval error: {e}")
             payload = {"status": "error", "code": "retrieval_error", "message": "Failed to retrieve relevant content"}
             yield f"data: {json.dumps(payload)}\n\n"
+            return
+
+        try:
+            async for event in answer_service.generate_answer_stream(
+                question=request.question,
+                retrieved_chunks=retrieved_chunks,
+            ):
+                if event["type"] == "token":
+                    payload = {"status": "token", "text": event["text"]}
+                    yield f"data: {json.dumps(payload)}\n\n"
+                elif event["type"] == "final":
+                    result = event["result"]
+                    print(f"[API] Response ready: {len(result.answer)} chars, {len(result.sources)} sources")
+                    payload = {"status": "complete", "result": result.model_dump(mode="json")}
+                    yield f"data: {json.dumps(payload)}\n\n"
         except AnswerServiceError as e:
             print(f"[API] Answer error: {e}")
             payload = {"status": "error", "code": "answer_error", "message": "Failed to generate answer"}

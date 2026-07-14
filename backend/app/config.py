@@ -19,7 +19,11 @@ class Settings(BaseSettings):
     )
     CLAUDE_MODEL: str = Field(
         default="claude-sonnet-4-20250514",
-        description="Claude model identifier"
+        description="Claude model identifier (used for answer generation)"
+    )
+    CLAUDE_FAST_MODEL: str | None = Field(
+        default=None,
+        description="Faster/cheaper Claude model for lightweight tasks like query rewriting. Falls back to CLAUDE_MODEL if not set."
     )
 
     # Embedding Provider
@@ -59,6 +63,12 @@ class Settings(BaseSettings):
 
     # API access
     API_KEY: str | None = Field(default=None, description="API key for external access (X-API-Key header)")
+
+    # CORS
+    CORS_ORIGINS: list[str] = Field(
+        default=["http://localhost:5173"],
+        description="Allowed CORS origins. Set to your Vercel URL in production, e.g. ['https://your-app.vercel.app']"
+    )
 
     # Video
     VIDEO_BASE_URL: str = Field(
