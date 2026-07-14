@@ -8,8 +8,6 @@ import type { SourceCard as SourceCardType } from './types/api';
 
 type ContentTypeFilter = 'webinar' | 'article' | null;
 
-const RING_SIZES = [280, 440, 600, 760, 920, 1080, 1260];
-
 function App() {
   const [answer, setAnswer] = useState('');
   const [sources, setSources] = useState<SourceCardType[]>([]);
@@ -46,20 +44,8 @@ function App() {
 
   return (
     <div className="app">
-      {/* Space background */}
-      <div className="space-bg" aria-hidden="true">
-        {RING_SIZES.map((size, i) => (
-          <div
-            key={i}
-            className="orbit-ring"
-            style={{ width: `${size}px`, height: `${size}px` }}
-          />
-        ))}
-        <div className="planet planet-1" />
-        <div className="planet planet-2" />
-        <div className="planet planet-3" />
-        <div className="planet planet-4" />
-      </div>
+      {/* Hero background image */}
+      <div className="space-bg" aria-hidden="true" />
 
       {/* Navigation */}
       <nav className="nav">

@@ -11,7 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0b0e14;
+  background-color: #1a2e25;
   color: white;
 }
 
@@ -22,70 +22,20 @@ body {
   overflow-x: hidden;
 }
 
-/* ── Space background ── */
+/* ── Hero background image ── */
 .space-bg {
   position: fixed;
   inset: 0;
-  background: radial-gradient(ellipse at 50% 38%, #0f1d2a 0%, #080b12 65%);
+  background: url('/images/hero-bg.jpg') center center / cover no-repeat;
   pointer-events: none;
   z-index: 0;
 }
 
-.orbit-ring {
+.space-bg::after {
+  content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-}
-
-.orbit-ring:nth-child(odd) {
-  border-style: dashed;
-  border-color: rgba(255, 255, 255, 0.04);
-}
-
-/* Planets */
-.planet {
-  position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.planet-1 {
-  width: 80px;
-  height: 80px;
-  top: 18%;
-  left: 22%;
-  background: radial-gradient(circle at 38% 32%, #9ac5df 0%, #2a5070 55%, #0d1f2e);
-  box-shadow: 0 0 30px rgba(100, 170, 220, 0.25);
-}
-
-.planet-2 {
-  width: 46px;
-  height: 46px;
-  top: 60%;
-  left: 7%;
-  background: radial-gradient(circle at 38% 32%, #6a90b0 0%, #1a3855 55%, #0a1520);
-  box-shadow: 0 0 18px rgba(70, 120, 180, 0.2);
-}
-
-.planet-3 {
-  width: 115px;
-  height: 115px;
-  top: 36%;
-  right: 13%;
-  background: radial-gradient(circle at 33% 28%, #d4a055 0%, #804820 50%, #2a1808);
-  box-shadow: 0 0 55px rgba(210, 130, 45, 0.4), 0 0 110px rgba(200, 110, 30, 0.15);
-}
-
-.planet-4 {
-  width: 14px;
-  height: 14px;
-  top: 26%;
-  right: 38%;
-  background: radial-gradient(circle, #80b8d8, #2a5878);
-  box-shadow: 0 0 10px rgba(100, 180, 230, 0.5);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
 }
 
 /* ── Navigation ── */
