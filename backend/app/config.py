@@ -65,10 +65,14 @@ class Settings(BaseSettings):
     API_KEY: str | None = Field(default=None, description="API key for external access (X-API-Key header)")
 
     # CORS
-    CORS_ORIGINS: list[str] = Field(
-        default=["http://localhost:5173"],
-        description="Allowed CORS origins. Set to your Vercel URL in production, e.g. ['https://your-app.vercel.app']"
+    CORS_ORIGINS: str = Field(
+        default="http://localhost:5173",
+        description="Comma-separated allowed CORS origins, e.g. https://your-app.vercel.app,https://other.vercel.app"
     )
+
+    def get_cors_origins(self) -> list[str]:
+        """Parse CORS_ORIGINS string into a list."""
+        return [o.strip() for o in self.CORS_ORIGINS.split(",") if o.strip()]
 
     # Video
     VIDEO_BASE_URL: str = Field(
