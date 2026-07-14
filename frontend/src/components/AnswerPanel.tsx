@@ -41,8 +41,6 @@ export default function AnswerPanel({
     return null;
   }
 
-  const confidenceClass = `confidence-${confidence}`;
-
   return (
     <div className="answer-panel">
       <div className="answer-header">
