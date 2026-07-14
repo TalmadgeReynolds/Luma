@@ -37,6 +37,12 @@ else:
         "Must be 'voyage' or 'openai'"
     )
 
+# ---------------------------------------------------------------------------
+# Embedding cache (in-process LRU, max 1000 entries ≈ 4 MB at 1024-dim)
+# ---------------------------------------------------------------------------
+_embedding_cache: dict[str, list[float]] = {}
+_EMBEDDING_CACHE_MAX = 1000
+
 
 async def embed_text(text: str) -> list[float]:
     """
@@ -51,6 +57,11 @@ async def embed_text(text: str) -> list[float]:
     Raises:
         EmbeddingError: If embedding fails or dimension mismatch
     """
+    # Check cache before hitting the API
+    if text in _embedding_cache:
+        print(f"[Embedding] Cache hit ({len(_embedding_cache)} entries)")
+        return _embedding_cache[text]
+
     try:
         if settings.EMBEDDING_PROVIDER == "voyage":
             # Voyage AI uses sync client
@@ -77,6 +88,11 @@ async def embed_text(text: str) -> list[float]:
                 f"Embedding dimension mismatch: got {len(embedding)}, "
                 f"expected {settings.EMBEDDING_DIMENSION} for model {settings.EMBEDDING_MODEL}"
             )
+
+        # Store in cache, evicting oldest entry if full
+        if len(_embedding_cache) >= _EMBEDDING_CACHE_MAX:
+            _embedding_cache.pop(next(iter(_embedding_cache)))
+        _embedding_cache[text] = embedding
 
         return embedding
 

@@ -24,6 +24,7 @@ if settings.ANTHROPIC_WORKSPACE:
 
 client = AsyncAnthropic(
     api_key=settings.ANTHROPIC_API_KEY,
+    base_url="https://api.anthropic.com",
     default_headers=default_headers
 )
 
@@ -61,12 +62,13 @@ def _render_template(template: str, **kwargs) -> str:
     return result
 
 
-async def _call_claude(prompt: str, *, max_retries: int = 5, backoff_base: float = 1.5, max_backoff: int = 60) -> dict:
+async def _call_claude(prompt: str, *, model: str | None = None, max_retries: int = 5, backoff_base: float = 1.5, max_backoff: int = 60) -> dict:
     """
     Call Claude API and parse JSON response with retries on transient errors (e.g. rate limits).
 
     Args:
         prompt: The complete prompt to send
+        model: Model override; defaults to settings.CLAUDE_MODEL
         max_retries: Number of retry attempts on transient failures (default 5)
         backoff_base: Exponential backoff base multiplier (used for rate limits only)
         max_backoff: Maximum backoff seconds
@@ -80,23 +82,17 @@ async def _call_claude(prompt: str, *, max_retries: int = 5, backoff_base: float
     import asyncio
     import random
 
+    resolved_model = model or settings.CLAUDE_MODEL
     attempt = 0
     while True:
         try:
-            # Prefill assistant turn with "{" to force JSON output
             response = await client.messages.create(
-                model=settings.CLAUDE_MODEL,
+                model=resolved_model,
                 max_tokens=4096,
-                messages=[
-                    {"role": "user", "content": prompt},
-                    {"role": "assistant", "content": "{"},
-                ],
+                messages=[{"role": "user", "content": prompt}],
             )
 
-            # Extract text content and prepend the prefilled "{"
-            content = "{" + response.content[0].text
-
-            # Strip markdown code blocks if present (defensive, shouldn't occur with prefill)
+            content = response.content[0].text
             content = content.strip()
             if content.startswith("```json"):
                 content = content[7:]
@@ -226,6 +222,8 @@ async def rewrite_query(user_question: str) -> dict:
     """
     Rewrite a user question to improve retrieval recall.
 
+    Uses the fast model (Haiku) — this is a lightweight expansion task.
+
     Returns dict with keys:
     - rewritten_query: Expanded query string
     - search_terms: List of search terms
@@ -236,7 +234,7 @@ async def rewrite_query(user_question: str) -> dict:
         user_question=user_question,
     )
 
-    result = await _call_claude(prompt)
+    result = await _call_claude(prompt, model=settings.CLAUDE_FAST_MODEL)
 
     # Validate response
     required_keys = ["rewritten_query", "search_terms", "possible_topics"]
@@ -284,6 +282,87 @@ async def answer_from_chunks(
         )
 
     return result
+
+
+async def stream_answer_from_chunks(user_question: str, retrieved_chunks):
+    """
+    Stream answer generation token-by-token using Claude's streaming API.
+    Retries up to 3 times on transient API errors (invisible to the caller
+    since the frontend accumulates silently).
+
+    Yields:
+        {"type": "delta", "text": "..."} for each text token as it arrives
+        {"type": "done", "parsed": {...}} once streaming ends and JSON is parsed
+
+    Raises:
+        ClaudeServiceError: If streaming or JSON parsing fails after retries
+    """
+    import asyncio
+    import random
+
+    prompt = _render_template(
+        PROMPTS["answer_from_chunks"],
+        user_question=user_question,
+        retrieved_chunks=retrieved_chunks,
+    )
+
+    max_retries = 3
+    backoff_base = 2.0
+
+    for attempt in range(max_retries + 1):
+        accumulated = ""
+        failed = False
+        fail_exc = None
+
+        try:
+            async with client.messages.stream(
+                model=settings.CLAUDE_MODEL,
+                max_tokens=4096,
+                messages=[{"role": "user", "content": prompt}],
+            ) as stream:
+                async for text in stream.text_stream:
+                    accumulated += text
+                    yield {"type": "delta", "text": text}
+        except Exception as e:
+            failed = True
+            fail_exc = e
+
+        if failed:
+            if attempt < max_retries:
+                wait = min(30, (backoff_base ** (attempt + 1)) + random.uniform(0, 1))
+                print(f"[Claude] Streaming failed (attempt {attempt + 1}/{max_retries + 1}): {fail_exc}. Retrying in {wait:.1f}s...")
+                await asyncio.sleep(wait)
+                continue
+            raise ClaudeServiceError(f"Claude streaming failed after {max_retries + 1} attempts: {fail_exc}") from fail_exc
+
+        # Stream completed — parse accumulated JSON
+        content = accumulated.strip()
+        if content.startswith("```json"):
+            content = content[7:]
+        elif content.startswith("```"):
+            content = content[3:]
+        if content.endswith("```"):
+            content = content[:-3]
+        content = content.strip()
+
+        try:
+            parsed = json.loads(content)
+        except json.JSONDecodeError as e:
+            if attempt < max_retries:
+                print(f"[Claude] Streaming returned invalid JSON (attempt {attempt + 1}/{max_retries + 1}), retrying...")
+                await asyncio.sleep(0.5)
+                continue
+            raise ClaudeServiceError(
+                f"Claude streaming returned invalid JSON after {max_retries + 1} attempts: {e}\nResponse: {content[:500]}"
+            ) from e
+
+        required_keys = ["answer", "sources", "suggested_questions", "confidence", "not_enough_evidence"]
+        missing = [k for k in required_keys if k not in parsed]
+        if missing:
+            raise ClaudeServiceError(f"Claude response missing required keys: {missing}")
+
+        yield {"type": "done", "parsed": parsed}
+        return
 
 
 async def rerank_chunks(

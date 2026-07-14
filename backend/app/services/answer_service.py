@@ -158,3 +158,132 @@ async def generate_answer(
 
     except Exception as e:
         raise AnswerServiceError(f"Answer generation failed: {e}") from e
+
+
+async def generate_answer_stream(
+    question: str,
+    retrieved_chunks: list[RetrievedChunk],
+):
+    """
+    Stream answer generation, yielding token deltas then a final AskResponse.
+
+    Yields:
+        {"type": "token", "text": "..."} for each text delta from Claude
+        {"type": "final", "result": AskResponse} once generation is complete
+
+    Raises:
+        AnswerServiceError: If generation fails
+    """
+    try:
+        # Guard: no chunks
+        if not retrieved_chunks:
+            yield {
+                "type": "final",
+                "result": AskResponse(
+                    answer="",
+                    sources=[],
+                    suggested_questions=[],
+                    confidence="low",
+                    not_enough_evidence=True,
+                ),
+            }
+            return
+
+        # Format chunks for Claude (identical to generate_answer)
+        formatted_chunks = []
+        chunk_map = {}
+
+        for chunk in retrieved_chunks:
+            chunk_dict = {
+                "chunk_id": str(chunk.chunk_id),
+                "content_type": chunk.content_type,
+                "video_title": chunk.video_title,
+                "summary": chunk.summary or "",
+                "topic_tags": chunk.topic_tags or [],
+                "contextual_text": chunk.contextual_text,
+            }
+            if chunk.content_type == 'webinar':
+                chunk_dict["time_range"] = format_time_range(chunk.start_time_seconds, chunk.end_time_seconds)
+                chunk_dict["speakers"] = chunk.speaker_names or []
+            else:
+                chunk_dict["section_heading"] = chunk.section_heading or "N/A"
+
+            formatted_chunks.append(chunk_dict)
+            chunk_map[chunk.chunk_id] = chunk
+
+        # Stream tokens from Claude
+        print(f"[Answer] Streaming Claude response with {len(formatted_chunks)} chunks...")
+        parsed = None
+        async for event in claude_service.stream_answer_from_chunks(
+            user_question=question,
+            retrieved_chunks=formatted_chunks,
+        ):
+            if event["type"] == "delta":
+                yield {"type": "token", "text": event["text"]}
+            elif event["type"] == "done":
+                parsed = event["parsed"]
+
+        if parsed is None:
+            raise AnswerServiceError("Claude stream ended without a parsed result")
+
+        answer = parsed["answer"]
+        raw_sources = parsed["sources"]
+        source_chunk_ids = []
+        for s in raw_sources:
+            cid = s["chunk_id"] if isinstance(s, dict) else s
+            source_chunk_ids.append(UUID(cid))
+        suggested_questions = parsed["suggested_questions"]
+        confidence = parsed["confidence"]
+        not_enough_evidence = parsed.get("not_enough_evidence", False)
+
+        print(f"[Answer] Stream complete: {len(answer)} chars, {len(source_chunk_ids)} sources")
+
+        # Validate chunk_ids
+        invalid_chunk_ids = [cid for cid in source_chunk_ids if cid not in chunk_map]
+        if invalid_chunk_ids:
+            print(f"[Answer] Warning: Claude referenced invalid chunk IDs: {invalid_chunk_ids}")
+            source_chunk_ids = [cid for cid in source_chunk_ids if cid in chunk_map]
+
+        # Build SourceCard objects (identical to generate_answer)
+        sources = []
+        for chunk_id in source_chunk_ids:
+            chunk = chunk_map[chunk_id]
+            if chunk.content_type == 'webinar':
+                if chunk.video_url and chunk.video_url.startswith('https://'):
+                    source_url = chunk.video_url
+                else:
+                    source_url = f"{settings.VIDEO_BASE_URL}/{chunk.video_id}"
+                display_time = format_time_range(chunk.start_time_seconds, chunk.end_time_seconds)
+            else:
+                source_url = chunk.source_url or f"Article: {chunk.video_title}"
+                display_time = None
+
+            sources.append(SourceCard(
+                chunk_id=chunk.chunk_id,
+                video_id=chunk.video_id,
+                content_type=chunk.content_type,
+                title=chunk.video_title,
+                source_url=source_url,
+                start_time_seconds=chunk.start_time_seconds if chunk.content_type == 'webinar' else None,
+                end_time_seconds=chunk.end_time_seconds if chunk.content_type == 'webinar' else None,
+                display_time=display_time,
+                speaker_names=chunk.speaker_names or [],
+                section_heading=chunk.section_heading,
+                excerpt=chunk.raw_text,
+            ))
+
+        yield {
+            "type": "final",
+            "result": AskResponse(
+                answer=answer,
+                sources=sources,
+                suggested_questions=suggested_questions[:3],
+                confidence=confidence,
+                not_enough_evidence=not_enough_evidence,
+            ),
+        }
+
+    except AnswerServiceError:
+        raise
+    except Exception as e:
+        raise AnswerServiceError(f"Answer stream generation failed: {e}") from e

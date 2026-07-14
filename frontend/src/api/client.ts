@@ -12,7 +12,7 @@ import type {
   ErrorResponse,
 } from '../types/api';
 
-const API_BASE_URL = '';  // Empty string uses Vite proxy
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? '';  // Falls back to Vite proxy in dev
 
 /**
  * Base fetch wrapper with error handling.
@@ -54,11 +54,21 @@ async function apiFetch<T>(
 }
 
 /**
- * POST /ask - Submit a question (SSE stream: keep-alive pings then final result)
+ * POST /ask - Submit a question (SSE stream: retrieving → token deltas → final result)
+ *
+ * @param onToken  Optional callback invoked for each streamed text delta.
+ *                 Allows the caller to render the answer progressively.
  */
-export async function askQuestion(question: string): Promise<AskResponse> {
-  const request: AskRequest = { question };
-  const response = await fetch('/ask', {
+export async function askQuestion(
+  question: string,
+  contentTypeFilter: 'webinar' | 'article' | null = null,
+  onToken?: (text: string) => void,
+): Promise<AskResponse> {
+  const request: AskRequest = {
+    question,
+    content_type_filter: contentTypeFilter,
+  };
+  const response = await fetch(`${API_BASE_URL}/ask`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(request),
@@ -92,6 +102,8 @@ export async function askQuestion(question: string): Promise<AskResponse> {
       if (!line.startsWith('data: ')) continue;
       const data = JSON.parse(line.slice(6));
       if (data.status === 'complete') return data.result as AskResponse;
+      if (data.status === 'token' && onToken) onToken(data.text as string);
+      if (data.status === 'error') throw new Error(data.message ?? 'Unknown error');
       if (data.status === 'error') throw new Error(data.message || 'Request failed');
     }
   }

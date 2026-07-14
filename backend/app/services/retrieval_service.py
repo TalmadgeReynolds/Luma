@@ -3,13 +3,60 @@ Retrieval service - hybrid search over webinar chunks.
 
 Combines vector similarity search with keyword search for optimal recall.
 """
+import asyncio
 from uuid import UUID
 from sqlalchemy import select, func, text
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.db.database import AsyncSessionLocal
 from app.db.models import Chunk, Query, RetrievalLog, Video
 from app.errors import RetrievalError
 from app.services import claude_service, embedding_service
+
+# ---------------------------------------------------------------------------
+# Query rewrite cache (in-process LRU, max 500 entries)
+# ---------------------------------------------------------------------------
+_rewrite_cache: dict[str, dict] = {}
+_REWRITE_CACHE_MAX = 500
+
+
+def _normalize_question(q: str) -> str:
+    return q.lower().strip()
+
+
+async def _cached_rewrite_query(question: str) -> dict:
+    key = _normalize_question(question)
+    if key in _rewrite_cache:
+        print(f"[Retrieval] Rewrite cache hit for: {question[:60]}")
+        return _rewrite_cache[key]
+    result = await claude_service.rewrite_query(question)
+    if len(_rewrite_cache) >= _REWRITE_CACHE_MAX:
+        _rewrite_cache.pop(next(iter(_rewrite_cache)))
+    _rewrite_cache[key] = result
+    return result
+
+
+# ---------------------------------------------------------------------------
+# Session-owning wrappers for parallel DB queries
+# ---------------------------------------------------------------------------
+
+async def _vec_with_session(
+    query_embedding: list[float],
+    limit: int,
+    content_type: str | None,
+):
+    async with AsyncSessionLocal() as s:
+        return await _vector_search(query_embedding, limit, content_type, s)
+
+
+async def _kw_with_session(
+    query_text: str,
+    limit: int,
+    content_type: str | None,
+):
+    async with AsyncSessionLocal() as s:
+        return await _keyword_search(query_text, limit, content_type, s)
+
 
 
 class RetrievedChunk:
@@ -82,9 +129,9 @@ async def retrieve_chunks(
         RetrievalError: If retrieval fails
     """
     try:
-        # Step 1: Rewrite query with Claude
+        # Step 1: Rewrite query with Claude (cache-backed)
         print(f"[Retrieval] Rewriting query...")
-        rewrite_result = await claude_service.rewrite_query(question)
+        rewrite_result = await _cached_rewrite_query(question)
         rewritten_query = rewrite_result["rewritten_query"]
         print(f"  Original: {question}")
         print(f"  Rewritten: {rewritten_query}")
@@ -94,30 +141,23 @@ async def retrieve_chunks(
         query_embedding = await embedding_service.embed_text(rewritten_query)
 
         if content_type_filter:
-            # Filtered: single pool, no diversity needed
+            # Filtered: single pool, no diversity needed — run both queries in parallel
             print(f"[Retrieval] Running filtered search ({content_type_filter})...")
-            vector_results = await _vector_search(
-                query_embedding,
-                top_k * 2,
-                content_type_filter,
-                db_session,
-            )
-            keyword_results = await _keyword_search(
-                rewritten_query,
-                top_k * 2,
-                content_type_filter,
-                db_session,
+            vector_results, keyword_results = await asyncio.gather(
+                _vec_with_session(query_embedding, top_k * 2, content_type_filter),
+                _kw_with_session(rewritten_query, top_k * 2, content_type_filter),
             )
             merged = _merge_and_dedupe(vector_results, keyword_results)
             final_chunks = merged[:top_k]
         else:
-            # Unfiltered: search each content type separately to guarantee diversity.
-            # These queries share one AsyncSession, so they must run serially.
+            # Unfiltered: run all four per-type queries in parallel
             print(f"[Retrieval] Running per-type search for diversity...")
-            vec_articles = await _vector_search(query_embedding, top_k, 'article', db_session)
-            vec_webinars = await _vector_search(query_embedding, top_k, 'webinar', db_session)
-            kw_articles = await _keyword_search(rewritten_query, top_k, 'article', db_session)
-            kw_webinars = await _keyword_search(rewritten_query, top_k, 'webinar', db_session)
+            vec_articles, vec_webinars, kw_articles, kw_webinars = await asyncio.gather(
+                _vec_with_session(query_embedding, top_k, 'article'),
+                _vec_with_session(query_embedding, top_k, 'webinar'),
+                _kw_with_session(rewritten_query, top_k, 'article'),
+                _kw_with_session(rewritten_query, top_k, 'webinar'),
+            )
             print(f"  Vector: {len(vec_articles)} articles, {len(vec_webinars)} webinars")
             print(f"  Keyword: {len(kw_articles)} articles, {len(kw_webinars)} webinars")
             merged = _merge_and_dedupe(
