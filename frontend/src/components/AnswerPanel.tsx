@@ -22,10 +22,9 @@ function resolveChunkCitations(answer: string, sources: SourceCard[]): string {
 
 export default function AnswerPanel({
   answer,
-  confidence,
   notEnoughEvidence,
   sources,
-}: AnswerPanelProps) {
+}: Omit<AnswerPanelProps, 'confidence'> & { confidence?: AnswerPanelProps['confidence'] }) {
   if (notEnoughEvidence) {
     return (
       <div className="answer-panel not-enough-evidence">
