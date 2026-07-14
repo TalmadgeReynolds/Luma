@@ -8,6 +8,8 @@ import type { SourceCard as SourceCardType } from './types/api';
 
 type ContentTypeFilter = 'webinar' | 'article' | null;
 
+const RING_SIZES = [280, 440, 600, 760, 920, 1080, 1260];
+
 function App() {
   const [answer, setAnswer] = useState('');
   const [sources, setSources] = useState<SourceCardType[]>([]);
@@ -44,55 +46,96 @@ function App() {
 
   return (
     <div className="app">
-      <header className="app-header">
-        <h1>Luma Knowledge Base</h1>
-        <p>Ask questions about our webinars and learning center articles</p>
-      </header>
+      {/* Space background */}
+      <div className="space-bg" aria-hidden="true">
+        {RING_SIZES.map((size, i) => (
+          <div
+            key={i}
+            className="orbit-ring"
+            style={{ width: `${size}px`, height: `${size}px` }}
+          />
+        ))}
+        <div className="planet planet-1" />
+        <div className="planet planet-2" />
+        <div className="planet planet-3" />
+        <div className="planet planet-4" />
+      </div>
 
-      <main className="app-main">
+      {/* Navigation */}
+      <nav className="nav">
+        <div className="nav-logo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3C7.03 3 3 7.03 3 12s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-2.76 0-5-2.24-5-5 0-1.38.56-2.63 1.46-3.54C9.2 11.2 10.5 12 12 12s2.8-.8 3.54-1.54C16.44 11.37 17 12.62 17 14c0 2.76-2.24 5-5 5z" fill="white"/>
+          </svg>
+          <span>Luma</span>
+        </div>
+        <div className="nav-links">
+          <a href="#" className="nav-link">PRODUCT</a>
+          <a href="#" className="nav-link">PRICING</a>
+          <a href="#" className="nav-link">ENTERPRISE</a>
+          <a href="#" className="nav-link">NEWS</a>
+          <a href="#" className="nav-link">JOIN US</a>
+          <button className="nav-signin">SIGN IN</button>
+        </div>
+      </nav>
+
+      {/* Hero */}
+      <section className="hero">
+        <h1 className="hero-title">Luma Learning Center</h1>
+        <p className="hero-subtitle">
+          Tutorials, guides, and inspiration to<br />
+          help you get the most out of Luma.
+        </p>
         <AskBox onSubmit={handleSubmit} loading={loading} />
+      </section>
 
-        {error && (
-          <div className="error-message">
-            <strong>Error:</strong> {error}
-          </div>
-        )}
-
-        {loading && (
-          <div className="loading-message">
-            Searching knowledge base...
-          </div>
-        )}
-
-        {!loading && !error && answer && (
-          <>
-            <AnswerPanel
-              answer={answer}
-              confidence={confidence}
-              notEnoughEvidence={notEnoughEvidence}
-              sources={sources}
-            />
-
-            {sources.length > 0 && (
-              <details className="sources-accordion">
-                <summary className="sources-toggle">
-                  Sources ({sources.length})
-                </summary>
-                <div className="sources-list">
-                  {sources.map((source) => (
-                    <SourceCard key={source.chunk_id} source={source} />
-                  ))}
-                </div>
-              </details>
+      {/* Results */}
+      {(error || loading || answer) && (
+        <div className="results-section">
+          <div className="results-inner">
+            {error && (
+              <div className="error-message">
+                <strong>Error:</strong> {error}
+              </div>
             )}
 
-            <SuggestedQuestions
-              questions={suggestedQuestions}
-              onQuestionClick={(question) => handleSubmit(question, null)}
-            />
-          </>
-        )}
-      </main>
+            {loading && (
+              <div className="loading-message">
+                Searching knowledge base...
+              </div>
+            )}
+
+            {!loading && !error && answer && (
+              <>
+                <AnswerPanel
+                  answer={answer}
+                  confidence={confidence}
+                  notEnoughEvidence={notEnoughEvidence}
+                  sources={sources}
+                />
+
+                {sources.length > 0 && (
+                  <details className="sources-accordion">
+                    <summary className="sources-toggle">
+                      Sources ({sources.length})
+                    </summary>
+                    <div className="sources-list">
+                      {sources.map((source) => (
+                        <SourceCard key={source.chunk_id} source={source} />
+                      ))}
+                    </div>
+                  </details>
+                )}
+
+                <SuggestedQuestions
+                  questions={suggestedQuestions}
+                  onQuestionClick={(question) => handleSubmit(question, null)}
+                />
+              </>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
