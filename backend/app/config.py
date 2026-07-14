@@ -69,6 +69,10 @@ class Settings(BaseSettings):
         default="http://localhost:5173",
         description="Comma-separated allowed CORS origins, e.g. https://your-app.vercel.app,https://other.vercel.app"
     )
+    CORS_ORIGIN_REGEX: str | None = Field(
+        default=r"https://.*\.vercel\.app",
+        description="Regex pattern for allowed CORS origins (covers all Vercel preview deployments by default)"
+    )
 
     def get_cors_origins(self) -> list[str]:
         """Parse CORS_ORIGINS string into a list."""
