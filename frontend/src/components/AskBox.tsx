@@ -5,9 +5,11 @@ type ContentTypeFilter = 'webinar' | 'article' | null;
 interface AskBoxProps {
   onSubmit: (question: string, contentTypeFilter: ContentTypeFilter) => void;
   loading: boolean;
+  expanded?: boolean;
+  onReset?: () => void;
 }
 
-export default function AskBox({ onSubmit, loading }: AskBoxProps) {
+export default function AskBox({ onSubmit, loading, expanded = false, onReset }: AskBoxProps) {
   const [question, setQuestion] = useState('');
   const [contentTypeFilter, setContentTypeFilter] = useState<ContentTypeFilter>(null);
 
@@ -22,6 +24,12 @@ export default function AskBox({ onSubmit, loading }: AskBoxProps) {
     if (e.key === 'Enter' && question.trim() && !loading) {
       onSubmit(question.trim(), contentTypeFilter);
     }
+  };
+
+  const handleReset = () => {
+    setQuestion('');
+    setContentTypeFilter(null);
+    onReset?.();
   };
 
   return (
@@ -56,6 +64,19 @@ export default function AskBox({ onSubmit, loading }: AskBoxProps) {
         <button type="button" className="ask-info-btn" aria-label="Help" tabIndex={-1}>
           ?
         </button>
+        {expanded && (
+          <button
+            type="button"
+            className="ask-close-btn"
+            onClick={handleReset}
+            aria-label="Close"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        )}
       </div>
 
       {/* Input row */}

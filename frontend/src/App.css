@@ -36,6 +36,11 @@ body {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.35);
+  transition: background 0.5s ease;
+}
+
+.app--expanded .space-bg::after {
+  background: rgba(0, 0, 0, 0.65);
 }
 
 /* ── Navigation ── */
@@ -105,6 +110,28 @@ body {
   text-align: center;
   padding: 5rem 2rem 9rem;
   min-height: calc(100vh - 68px);
+  transition: padding 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app--expanded .hero {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  justify-content: center;
+}
+
+/* Hero title/subtitle collapse when expanded */
+.hero-content {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.3s ease;
+}
+
+.hero-content--hidden {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .hero-title {
@@ -122,31 +149,93 @@ body {
   margin-bottom: 2.5rem;
 }
 
-/* ── Results section ── */
-.results-section {
-  position: relative;
-  z-index: 10;
-  background: #f0f2f5;
-  padding: 3rem 0;
-}
-
-.results-inner {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-/* ── Ask Box ── */
-.ask-box {
+/* ── Answer card (expanding wrapper) ── */
+.answer-card {
   width: 100%;
   max-width: 610px;
   background: rgba(235, 238, 242, 0.97);
   border-radius: 16px;
-  padding: 0.55rem 0.7rem 0.7rem;
   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  transition: max-width 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.answer-card--expanded {
+  max-width: 700px;
+}
+
+/* Smooth height expansion using CSS grid trick */
+.card-body-outer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-body-outer--open {
+  grid-template-rows: 1fr;
+}
+
+.card-body-inner {
+  overflow: hidden;
+}
+
+/* Loading state inside card */
+.card-loading {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 1.1rem 1.25rem 1.4rem;
+  background: white;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 0.9rem;
+}
+
+.card-loading-spinner {
+  width: 18px;
+  height: 18px;
+  color: #3b82f6;
+  animation: spin 0.9s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Answer content inside card */
+.card-answer {
+  background: white;
+  padding: 1.25rem 1.5rem 1.5rem;
+  max-height: 65vh;
+  overflow-y: auto;
+}
+
+.card-answer .answer-panel {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  margin-bottom: 1.25rem;
+}
+
+.card-answer .answer-panel.not-enough-evidence {
+  background: #fff9e6;
+  border: 1px solid #ffd966;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Error inside card */
+.card-error {
+  padding: 1.1rem 1.25rem;
+  background: white;
+  color: #c33;
+  font-size: 0.9rem;
+}
+
+/* ── Ask Box (inner form only — card is .answer-card) ── */
+.ask-box {
+  padding: 0.55rem 0.7rem 0.7rem;
 }
 
 .ask-filter-row {
@@ -202,6 +291,26 @@ body {
   justify-content: center;
   font-weight: 700;
   flex-shrink: 0;
+}
+
+.ask-close-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(0, 0, 0, 0.22);
+  background: transparent;
+  color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-left: 0.2rem;
+}
+
+.ask-close-btn svg {
+  width: 11px;
+  height: 11px;
 }
 
 .ask-input-row {

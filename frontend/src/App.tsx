@@ -42,8 +42,19 @@ function App() {
     }
   };
 
+  const expanded = loading || !!answer || !!error;
+
+  const handleReset = () => {
+    setAnswer('');
+    setSources([]);
+    setSuggestedQuestions([]);
+    setError(null);
+    setLoading(false);
+    setNotEnoughEvidence(false);
+  };
+
   return (
-    <div className="app">
+    <div className={`app${expanded ? ' app--expanded' : ''}`}>
       {/* Hero background image */}
       <div className="space-bg" aria-hidden="true" />
 
@@ -67,61 +78,78 @@ function App() {
 
       {/* Hero */}
       <section className="hero">
-        <h1 className="hero-title">Luma Learning Center</h1>
-        <p className="hero-subtitle">
-          Tutorials, guides, and inspiration to<br />
-          help you get the most out of Luma.
-        </p>
-        <AskBox onSubmit={handleSubmit} loading={loading} />
-      </section>
+        {/* Title + subtitle fade out when expanded */}
+        <div className={`hero-content${expanded ? ' hero-content--hidden' : ''}`}>
+          <h1 className="hero-title">Luma Learning Center</h1>
+          <p className="hero-subtitle">
+            Tutorials, guides, and inspiration to<br />
+            help you get the most out of Luma.
+          </p>
+        </div>
 
-      {/* Results */}
-      {(error || loading || answer) && (
-        <div className="results-section">
-          <div className="results-inner">
-            {error && (
-              <div className="error-message">
-                <strong>Error:</strong> {error}
-              </div>
-            )}
+        {/* Expanding card */}
+        <div className={`answer-card${expanded ? ' answer-card--expanded' : ''}`}>
+          <AskBox
+            onSubmit={handleSubmit}
+            loading={loading}
+            expanded={expanded}
+            onReset={handleReset}
+          />
 
-            {loading && (
-              <div className="loading-message">
-                Searching knowledge base...
-              </div>
-            )}
+          {/* Body grows open below the search row */}
+          <div className={`card-body-outer${expanded ? ' card-body-outer--open' : ''}`}>
+            <div className="card-body-inner">
+              {/* Loading state */}
+              {loading && (
+                <div className="card-loading">
+                  <svg className="card-loading-spinner" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2.5" strokeOpacity="0.2" />
+                    <path d="M12 2a10 10 0 0 1 10 10" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+                  </svg>
+                  Finding relevant sources…
+                </div>
+              )}
 
-            {!loading && !error && answer && (
-              <>
-                <AnswerPanel
-                  answer={answer}
-                  confidence={confidence}
-                  notEnoughEvidence={notEnoughEvidence}
-                  sources={sources}
-                />
+              {/* Error state */}
+              {error && !loading && (
+                <div className="card-error">
+                  <strong>Error:</strong> {error}
+                </div>
+              )}
 
-                {sources.length > 0 && (
-                  <details className="sources-accordion">
-                    <summary className="sources-toggle">
-                      Sources ({sources.length})
-                    </summary>
-                    <div className="sources-list">
-                      {sources.map((source) => (
-                        <SourceCard key={source.chunk_id} source={source} />
-                      ))}
-                    </div>
-                  </details>
-                )}
+              {/* Answer state */}
+              {!loading && !error && answer && (
+                <div className="card-answer">
+                  <AnswerPanel
+                    answer={answer}
+                    confidence={confidence}
+                    notEnoughEvidence={notEnoughEvidence}
+                    sources={sources}
+                  />
 
-                <SuggestedQuestions
-                  questions={suggestedQuestions}
-                  onQuestionClick={(question) => handleSubmit(question, null)}
-                />
-              </>
-            )}
+                  {sources.length > 0 && (
+                    <details className="sources-accordion">
+                      <summary className="sources-toggle">
+                        Sources ({sources.length})
+                      </summary>
+                      <div className="sources-list">
+                        {sources.map((source) => (
+                          <SourceCard key={source.chunk_id} source={source} />
+                        ))}
+                      </div>
+                    </details>
+                  )}
+
+                  <SuggestedQuestions
+                    questions={suggestedQuestions}
+                    onQuestionClick={(question) => handleSubmit(question, null)}
+                  />
+                </div>
+              )}
+            </div>
           </div>
         </div>
-      )}
+      </section>
     </div>
   );
 }
