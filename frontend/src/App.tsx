@@ -140,7 +140,7 @@ function App() {
                   />
 
                   {videoGroups.length > 0 && (
-                    <details className="sources-accordion">
+                    <details className="sources-accordion" open>
                       <summary className="sources-toggle">
                         Video Sources ({videoGroups.length})
                       </summary>

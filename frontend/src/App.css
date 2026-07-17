@@ -680,6 +680,48 @@ body {
   gap: 1rem;
 }
 
+/* Sources accordion */
+.sources-accordion {
+  margin-top: 1.25rem;
+}
+
+.sources-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7f8c8d;
+  cursor: pointer;
+  list-style: none;
+  border-top: 1px solid #e9ecef;
+  user-select: none;
+}
+
+.sources-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.sources-toggle::after {
+  content: '▾';
+  font-size: 1rem;
+  transition: transform 0.2s;
+}
+
+.sources-accordion:not([open]) .sources-toggle::after {
+  transform: rotate(-90deg);
+}
+
+.sources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-top: 0.75rem;
+}
+
 /* ── VideoSourceCard ── */
 .video-source-card {
   background: white;
