@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import AskBox from './components/AskBox';
 import AnswerPanel from './components/AnswerPanel';
-import SourceCard from './components/SourceCard';
+import VideoSourceCard, { toVideoChunks } from './components/VideoSourceCard';
 import SuggestedQuestions from './components/SuggestedQuestions';
 import { askQuestion } from './api/client';
 import type { SourceCard as SourceCardType } from './types/api';
@@ -41,6 +41,17 @@ function App() {
       setLoading(false);
     }
   };
+
+  // Group webinar sources by video_id for the sources panel
+  const videoGroups = useMemo(() => {
+    const webinarSources = sources.filter((s) => s.content_type === 'webinar');
+    const map = new Map<string, typeof webinarSources>();
+    for (const s of webinarSources) {
+      if (!map.has(s.video_id)) map.set(s.video_id, []);
+      map.get(s.video_id)!.push(s);
+    }
+    return Array.from(map.values());
+  }, [sources]);
 
   const expanded = loading || !!answer || !!error;
 
@@ -128,14 +139,19 @@ function App() {
                     sources={sources}
                   />
 
-                  {sources.length > 0 && (
+                  {videoGroups.length > 0 && (
                     <details className="sources-accordion">
                       <summary className="sources-toggle">
-                        Sources ({sources.length})
+                        Video Sources ({videoGroups.length})
                       </summary>
                       <div className="sources-list">
-                        {sources.map((source) => (
-                          <SourceCard key={source.chunk_id} source={source} />
+                        {videoGroups.map((chunks) => (
+                          <VideoSourceCard
+                            key={chunks[0].video_id}
+                            title={chunks[0].title}
+                            sourceUrl={chunks[0].source_url}
+                            chunks={toVideoChunks(chunks)}
+                          />
                         ))}
                       </div>
                     </details>
