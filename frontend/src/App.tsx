@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import AskBox from './components/AskBox';
 import AnswerPanel from './components/AnswerPanel';
-import SourceCard from './components/SourceCard';
+import VideoSourceCard, { toVideoChunks } from './components/VideoSourceCard';
 import SuggestedQuestions from './components/SuggestedQuestions';
 import { askQuestion } from './api/client';
 import type { SourceCard as SourceCardType } from './types/api';
@@ -42,57 +42,131 @@ function App() {
     }
   };
 
+  // Group webinar sources by video_id for the sources panel
+  const videoGroups = useMemo(() => {
+    const webinarSources = sources.filter((s) => s.content_type === 'webinar');
+    const map = new Map<string, typeof webinarSources>();
+    for (const s of webinarSources) {
+      if (!map.has(s.video_id)) map.set(s.video_id, []);
+      map.get(s.video_id)!.push(s);
+    }
+    return Array.from(map.values());
+  }, [sources]);
+
+  const expanded = loading || !!answer || !!error;
+
+  const handleReset = () => {
+    setAnswer('');
+    setSources([]);
+    setSuggestedQuestions([]);
+    setError(null);
+    setLoading(false);
+    setNotEnoughEvidence(false);
+  };
+
   return (
-    <div className="app">
-      <header className="app-header">
-        <h1>Luma Knowledge Base</h1>
-        <p>Ask questions about our webinars and learning center articles</p>
-      </header>
+    <div className={`app${expanded ? ' app--expanded' : ''}`}>
+      {/* Hero background image */}
+      <div className="space-bg" aria-hidden="true" />
 
-      <main className="app-main">
-        <AskBox onSubmit={handleSubmit} loading={loading} />
+      {/* Navigation */}
+      <nav className="nav">
+        <div className="nav-logo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3C7.03 3 3 7.03 3 12s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-2.76 0-5-2.24-5-5 0-1.38.56-2.63 1.46-3.54C9.2 11.2 10.5 12 12 12s2.8-.8 3.54-1.54C16.44 11.37 17 12.62 17 14c0 2.76-2.24 5-5 5z" fill="white"/>
+          </svg>
+          <span>Luma</span>
+        </div>
+        <div className="nav-links">
+          <a href="#" className="nav-link">PRODUCT</a>
+          <a href="#" className="nav-link">PRICING</a>
+          <a href="#" className="nav-link">ENTERPRISE</a>
+          <a href="#" className="nav-link">NEWS</a>
+          <a href="#" className="nav-link">JOIN US</a>
+          <button className="nav-signin">SIGN IN</button>
+        </div>
+      </nav>
 
-        {error && (
-          <div className="error-message">
-            <strong>Error:</strong> {error}
-          </div>
-        )}
+      {/* Hero */}
+      <section className="hero">
+        {/* Title + subtitle fade out when expanded */}
+        <div className={`hero-content${expanded ? ' hero-content--hidden' : ''}`}>
+          <h1 className="hero-title">Luma Learning Center Agent</h1>
+          <p className="hero-subtitle">
+            Describe what you're trying to do or learn more about<br />
+            and the agent will match your query to the most relevant<br />
+            articles, tutorials, webinar moments, and community examples.
+          </p>
+        </div>
 
-        {loading && (
-          <div className="loading-message">
-            Searching knowledge base...
-          </div>
-        )}
+        {/* Expanding card */}
+        <div className={`answer-card${expanded ? ' answer-card--expanded' : ''}`}>
+          <AskBox
+            onSubmit={handleSubmit}
+            loading={loading}
+            expanded={expanded}
+            onReset={handleReset}
+          />
 
-        {!loading && !error && answer && (
-          <>
-            <AnswerPanel
-              answer={answer}
-              confidence={confidence}
-              notEnoughEvidence={notEnoughEvidence}
-              sources={sources}
-            />
-
-            {sources.length > 0 && (
-              <details className="sources-accordion">
-                <summary className="sources-toggle">
-                  Sources ({sources.length})
-                </summary>
-                <div className="sources-list">
-                  {sources.map((source) => (
-                    <SourceCard key={source.chunk_id} source={source} />
-                  ))}
+          {/* Body grows open below the search row */}
+          <div className={`card-body-outer${expanded ? ' card-body-outer--open' : ''}`}>
+            <div className="card-body-inner">
+              {/* Loading state */}
+              {loading && (
+                <div className="card-loading">
+                  <svg className="card-loading-spinner" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2.5" strokeOpacity="0.2" />
+                    <path d="M12 2a10 10 0 0 1 10 10" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+                  </svg>
+                  Finding relevant sources…
                 </div>
-              </details>
-            )}
+              )}
 
-            <SuggestedQuestions
-              questions={suggestedQuestions}
-              onQuestionClick={(question) => handleSubmit(question, null)}
-            />
-          </>
-        )}
-      </main>
+              {/* Error state */}
+              {error && !loading && (
+                <div className="card-error">
+                  <strong>Error:</strong> {error}
+                </div>
+              )}
+
+              {/* Answer state */}
+              {!loading && !error && answer && (
+                <div className="card-answer">
+                  <AnswerPanel
+                    answer={answer}
+                    confidence={confidence}
+                    notEnoughEvidence={notEnoughEvidence}
+                    sources={sources}
+                  />
+
+                  {videoGroups.length > 0 && (
+                    <details className="sources-accordion" open>
+                      <summary className="sources-toggle">
+                        Video Sources ({videoGroups.length})
+                      </summary>
+                      <div className="sources-list">
+                        {videoGroups.map((chunks) => (
+                          <VideoSourceCard
+                            key={chunks[0].video_id}
+                            title={chunks[0].title}
+                            sourceUrl={chunks[0].source_url}
+                            chunks={toVideoChunks(chunks)}
+                          />
+                        ))}
+                      </div>
+                    </details>
+                  )}
+
+                  <SuggestedQuestions
+                    questions={suggestedQuestions}
+                    onQuestionClick={(question) => handleSubmit(question, null)}
+                  />
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

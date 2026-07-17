@@ -143,7 +143,7 @@ async def generate_answer(
                 display_time=display_time,
                 speaker_names=chunk.speaker_names or [],
                 section_heading=chunk.section_heading,
-                excerpt=chunk.raw_text,
+                excerpt=chunk.contextual_text,
             )
             sources.append(source_card)
 
@@ -269,7 +269,7 @@ async def generate_answer_stream(
                 display_time=display_time,
                 speaker_names=chunk.speaker_names or [],
                 section_heading=chunk.section_heading,
-                excerpt=chunk.raw_text,
+                excerpt=chunk.contextual_text,
             ))
 
         yield {

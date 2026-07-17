@@ -1,5 +1,7 @@
+import { useMemo } from "react";
 import ReactMarkdown from "react-markdown";
 import type { SourceCard } from "../types/api";
+import CitationLink from "./CitationLink";
 
 interface AnswerPanelProps {
   answer: string;
@@ -22,10 +24,23 @@ function resolveChunkCitations(answer: string, sources: SourceCard[]): string {
 
 export default function AnswerPanel({
   answer,
-  confidence,
   notEnoughEvidence,
   sources,
-}: AnswerPanelProps) {
+}: Omit<AnswerPanelProps, 'confidence'> & { confidence?: AnswerPanelProps['confidence'] }) {
+  // Map resolved URL (including #t= fragment for videos) → SourceCard
+  // so the citation link renderer can look up metadata for hover previews.
+  const sourceByUrl = useMemo(() => {
+    const map = new Map<string, SourceCard>();
+    for (const s of sources) {
+      const url =
+        s.content_type === "webinar" && s.start_time_seconds !== null
+          ? `${s.source_url}#t=${Math.floor(s.start_time_seconds)}`
+          : s.source_url;
+      map.set(url, s);
+    }
+    return map;
+  }, [sources]);
+
   if (notEnoughEvidence) {
     return (
       <div className="answer-panel not-enough-evidence">
@@ -41,28 +56,21 @@ export default function AnswerPanel({
     return null;
   }
 
-  const confidenceClass = `confidence-${confidence}`;
-
   return (
     <div className="answer-panel">
       <div className="answer-header">
         <h2>Answer</h2>
-        <span className={`confidence-badge ${confidenceClass}`}>
-          {confidence} confidence
-        </span>
       </div>
       <div className="answer-text">
         <ReactMarkdown
           components={{
             a: ({ href, children }) => (
-              <a
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="citation-link"
+              <CitationLink
+                href={href ?? '#'}
+                source={href ? sourceByUrl.get(href) : undefined}
               >
                 {children}
-              </a>
+              </CitationLink>
             ),
           }}
         >
