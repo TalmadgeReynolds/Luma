@@ -82,7 +82,9 @@ function App() {
         <div className={`hero-content${expanded ? ' hero-content--hidden' : ''}`}>
           <h1 className="hero-title">Luma Learning Center Agent</h1>
           <p className="hero-subtitle">
-            Describe what you're trying to do or learn more about and the agent will match your query to the most relevant articles, tutorials, webinar moments, and community examples relevant to your question.
+            Describe what you're trying to do or learn more about<br />
+            and the agent will match your query to the most relevant<br />
+            articles, tutorials, webinar moments, and community examples.
           </p>
         </div>
 
