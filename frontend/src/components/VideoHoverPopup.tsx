@@ -28,6 +28,14 @@ export default function VideoHoverPopup({
     }
   };
 
+  const handleTimeUpdate = () => {
+    if (videoRef.current && source.end_time_seconds !== null) {
+      if (videoRef.current.currentTime >= source.end_time_seconds) {
+        videoRef.current.pause();
+      }
+    }
+  };
+
   // Center popup horizontally over the anchor link, clamped to viewport
   const viewportWidth = window.innerWidth;
   let left = anchorRect.left + anchorRect.width / 2 - POPUP_WIDTH / 2;
@@ -67,6 +75,7 @@ export default function VideoHoverPopup({
         controls
         crossOrigin="anonymous"
         onLoadedMetadata={handleLoadedMetadata}
+        onTimeUpdate={handleTimeUpdate}
       />
     </div>
   );

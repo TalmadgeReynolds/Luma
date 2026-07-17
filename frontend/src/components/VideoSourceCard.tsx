@@ -11,6 +11,7 @@ function truncate(text: string): string {
 interface VideoChunk {
   chunk_id: string;
   start_time_seconds: number | null;
+  end_time_seconds: number | null;
   display_time: string | null;
   excerpt: string;
 }
@@ -25,6 +26,7 @@ export function toVideoChunks(sources: SourceCardType[]): VideoChunk[] {
   return sources.map((s) => ({
     chunk_id: s.chunk_id,
     start_time_seconds: s.start_time_seconds,
+    end_time_seconds: s.end_time_seconds,
     display_time: s.display_time,
     excerpt: s.excerpt,
   }));
@@ -33,6 +35,7 @@ export function toVideoChunks(sources: SourceCardType[]): VideoChunk[] {
 export default function VideoSourceCard({ title, sourceUrl, chunks }: VideoSourceCardProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [activeChunkId, setActiveChunkId] = useState<string>(chunks[0]?.chunk_id ?? '');
+  const activeEndTimeRef = useRef<number | null>(chunks[0]?.end_time_seconds ?? null);
 
   const handleLoadedMetadata = () => {
     const first = chunks[0];
@@ -41,8 +44,17 @@ export default function VideoSourceCard({ title, sourceUrl, chunks }: VideoSourc
     }
   };
 
+  const handleTimeUpdate = () => {
+    if (videoRef.current && activeEndTimeRef.current !== null) {
+      if (videoRef.current.currentTime >= activeEndTimeRef.current) {
+        videoRef.current.pause();
+      }
+    }
+  };
+
   const seekToChunk = (chunk: VideoChunk) => {
     setActiveChunkId(chunk.chunk_id);
+    activeEndTimeRef.current = chunk.end_time_seconds;
     if (videoRef.current && chunk.start_time_seconds != null) {
       videoRef.current.currentTime = chunk.start_time_seconds;
       videoRef.current.play().catch(() => {});
@@ -70,6 +82,7 @@ export default function VideoSourceCard({ title, sourceUrl, chunks }: VideoSourc
         controls
         crossOrigin="anonymous"
         onLoadedMetadata={handleLoadedMetadata}
+        onTimeUpdate={handleTimeUpdate}
       />
 
       <ul className="video-source-card__chunks">

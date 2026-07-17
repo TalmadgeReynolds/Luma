@@ -1,16 +1,16 @@
 """
 Chunking service - implements sliding window chunking over transcript segments.
 
-Target: 600 words per chunk, 120-word overlap
-Acceptable range: 500-700 words, 100-150 overlap
+Target: 130 words per chunk (~1 minute of speech at ~130 wpm), 20-word overlap
+Acceptable range: 110-150 words, 15-25 overlap
 """
 from app.errors import ChunkingError
 
 
 def chunk_segments(
     segments: list[dict],
-    target_words: int = 600,
-    overlap_words: int = 120
+    target_words: int = 130,
+    overlap_words: int = 20
 ) -> list[dict]:
     """
     Create overlapping chunks from transcript segments.
@@ -21,8 +21,8 @@ def chunk_segments(
             - end_time_seconds: float
             - speaker: str | None
             - text: str
-        target_words: Target words per chunk (default 600)
-        overlap_words: Overlap words between chunks (default 120)
+        target_words: Target words per chunk (default 130 ≈ 1 minute of speech)
+        overlap_words: Overlap words between chunks (default 20)
 
     Returns:
         List of chunk dicts with keys:

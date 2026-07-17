@@ -112,9 +112,9 @@ async def ingest_webinar(
         print(f"✓ Inserted {len(segments)} transcript segments")
 
         # Step 3: Chunk the segments
-        print(f"\n[Step 3] Chunking segments (target: 600 words, overlap: 120)")
+        print(f"\n[Step 3] Chunking segments (target: 130 words ~1 min, overlap: 20)")
 
-        chunk_dicts = chunk_segments(transcript_data)
+        chunk_dicts = chunk_segments(transcript_data, target_words=130, overlap_words=20)
         print(f"✓ Created {len(chunk_dicts)} chunks")
 
         # Insert chunks
