@@ -80,10 +80,9 @@ function App() {
       <section className="hero">
         {/* Title + subtitle fade out when expanded */}
         <div className={`hero-content${expanded ? ' hero-content--hidden' : ''}`}>
-          <h1 className="hero-title">Luma Learning Center</h1>
+          <h1 className="hero-title">Luma Learning Center Agent</h1>
           <p className="hero-subtitle">
-            Tutorials, guides, and inspiration to<br />
-            help you get the most out of Luma.
+            Describe what you're trying to do or learn more about and the agent will match your query to the most relevant articles, tutorials, webinar moments, and community examples relevant to your question.
           </p>
         </div>
 
