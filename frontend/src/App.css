@@ -144,9 +144,10 @@ body {
 
 .hero-subtitle {
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 1);
   line-height: 1.7;
   margin-bottom: 2.5rem;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.7);
 }
 
 /* ── Answer card (expanding wrapper) ── */
