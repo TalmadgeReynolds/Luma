@@ -150,13 +150,15 @@ async def retrieve_chunks(
             merged = _merge_and_dedupe(vector_results, keyword_results)
             final_chunks = merged[:top_k]
         else:
-            # Unfiltered: run all four per-type queries in parallel
-            print(f"[Retrieval] Running per-type search for diversity...")
+            # Unfiltered: fetch a large candidate pool per type so the diversity
+            # filter has enough material to spread results across many webinars.
+            candidate_limit = top_k * 4
+            print(f"[Retrieval] Running per-type search for diversity (pool={candidate_limit} per search)...")
             vec_articles, vec_webinars, kw_articles, kw_webinars = await asyncio.gather(
-                _vec_with_session(query_embedding, top_k, 'article'),
-                _vec_with_session(query_embedding, top_k, 'webinar'),
-                _kw_with_session(rewritten_query, top_k, 'article'),
-                _kw_with_session(rewritten_query, top_k, 'webinar'),
+                _vec_with_session(query_embedding, candidate_limit, 'article'),
+                _vec_with_session(query_embedding, candidate_limit, 'webinar'),
+                _kw_with_session(rewritten_query, candidate_limit, 'article'),
+                _kw_with_session(rewritten_query, candidate_limit, 'webinar'),
             )
             print(f"  Vector: {len(vec_articles)} articles, {len(vec_webinars)} webinars")
             print(f"  Keyword: {len(kw_articles)} articles, {len(kw_webinars)} webinars")
