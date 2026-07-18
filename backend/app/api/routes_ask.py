@@ -19,7 +19,7 @@ router = APIRouter()
 async def _execute_ask(request: AskRequest, db_session: AsyncSession) -> AskResponse:
     retrieved_chunks = await retrieval_service.retrieve_chunks(
         question=request.question,
-        top_k=5,
+        top_k=12,
         db_session=db_session,
         content_type_filter=request.content_type_filter,
     )
@@ -53,7 +53,7 @@ async def ask_question(
         try:
             retrieved_chunks = await retrieval_service.retrieve_chunks(
                 question=request.question,
-                top_k=5,
+                top_k=12,
                 db_session=db_session,
                 content_type_filter=request.content_type_filter,
             )
