@@ -150,13 +150,15 @@ async def retrieve_chunks(
             merged = _merge_and_dedupe(vector_results, keyword_results)
             final_chunks = merged[:top_k]
         else:
-            # Unfiltered: run all four per-type queries in parallel
-            print(f"[Retrieval] Running per-type search for diversity...")
+            # Unfiltered: fetch a large candidate pool per type so the diversity
+            # filter has enough material to spread results across many webinars.
+            candidate_limit = top_k * 4
+            print(f"[Retrieval] Running per-type search for diversity (pool={candidate_limit} per search)...")
             vec_articles, vec_webinars, kw_articles, kw_webinars = await asyncio.gather(
-                _vec_with_session(query_embedding, top_k, 'article'),
-                _vec_with_session(query_embedding, top_k, 'webinar'),
-                _kw_with_session(rewritten_query, top_k, 'article'),
-                _kw_with_session(rewritten_query, top_k, 'webinar'),
+                _vec_with_session(query_embedding, candidate_limit, 'article'),
+                _vec_with_session(query_embedding, candidate_limit, 'webinar'),
+                _kw_with_session(rewritten_query, candidate_limit, 'article'),
+                _kw_with_session(rewritten_query, candidate_limit, 'webinar'),
             )
             print(f"  Vector: {len(vec_articles)} articles, {len(vec_webinars)} webinars")
             print(f"  Keyword: {len(kw_articles)} articles, {len(kw_webinars)} webinars")
@@ -164,7 +166,7 @@ async def retrieve_chunks(
                 vec_articles + vec_webinars,
                 kw_articles + kw_webinars,
             )
-            final_chunks = _pick_with_diversity(merged, top_k, min_per_type=3)
+            final_chunks = _pick_with_diversity(merged, top_k, min_per_type=3, max_per_video=2)
 
         # Assign ranks
         for i, chunk in enumerate(final_chunks, 1):
@@ -358,38 +360,53 @@ def _pick_with_diversity(
     chunks: list[RetrievedChunk],
     top_k: int,
     min_per_type: int = 3,
+    max_per_video: int = 2,
 ) -> list[RetrievedChunk]:
     """
-    Pick top_k chunks ensuring minimum representation from each content type.
+    Pick top_k chunks ensuring minimum representation from each content type
+    and limiting chunks per video so no single webinar dominates results.
 
     Guarantees at least min_per_type results from each type that has any
-    results, then fills remaining slots with the highest scorers overall.
-    If only one content type exists in the pool, returns top_k as-is.
+    results, then fills remaining slots with the highest scorers overall,
+    subject to max_per_video cap per source video.
     """
     by_type: dict[str, list[RetrievedChunk]] = {}
     for chunk in chunks:
         by_type.setdefault(chunk.content_type, []).append(chunk)
 
-    # Single content type — no diversity action needed
-    if len(by_type) <= 1:
-        return chunks[:top_k]
-
     selected: list[RetrievedChunk] = []
     selected_ids: set = set()
+    video_counts: dict = {}
 
-    # Reserve minimum slots for each type
-    for type_chunks in by_type.values():
-        for chunk in type_chunks[:min_per_type]:
-            if chunk.chunk_id not in selected_ids:
-                selected.append(chunk)
-                selected_ids.add(chunk.chunk_id)
+    def _can_add(chunk: RetrievedChunk) -> bool:
+        return (
+            chunk.chunk_id not in selected_ids
+            and video_counts.get(chunk.video_id, 0) < max_per_video
+        )
+
+    def _add(chunk: RetrievedChunk) -> None:
+        selected.append(chunk)
+        selected_ids.add(chunk.chunk_id)
+        video_counts[chunk.video_id] = video_counts.get(chunk.video_id, 0) + 1
+
+    # Reserve minimum slots for each content type
+    if len(by_type) > 1:
+        for type_chunks in by_type.values():
+            count = 0
+            for chunk in type_chunks:
+                if count >= min_per_type:
+                    break
+                if _can_add(chunk):
+                    _add(chunk)
+                    count += 1
 
     # Fill remaining slots from the highest-scoring unselected chunks
     remaining = top_k - len(selected)
     for chunk in chunks:
-        if chunk.chunk_id not in selected_ids and remaining > 0:
-            selected.append(chunk)
-            selected_ids.add(chunk.chunk_id)
+        if remaining <= 0:
+            break
+        if _can_add(chunk):
+            _add(chunk)
             remaining -= 1
 
     selected.sort(key=lambda x: x.score, reverse=True)
