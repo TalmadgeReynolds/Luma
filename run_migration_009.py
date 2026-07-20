@@ -68,10 +68,10 @@ async def main(apply: bool):
         sql = migration_file.read_text()
         statements = [s.strip() for s in sql.split(";") if s.strip() and not s.strip().startswith("--")]
 
-        async with conn.begin():
-            for stmt in statements:
-                r = await conn.execute(text(stmt))
-                print(f"  Executed ({r.rowcount} rows affected): {stmt[:60]}...")
+        for stmt in statements:
+            r = await conn.execute(text(stmt))
+            print(f"  Executed ({r.rowcount} rows affected): {stmt[:60]}...")
+        await conn.commit()
 
         print("\nMigration 009 applied successfully.\n")
 
