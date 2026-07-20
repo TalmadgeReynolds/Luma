@@ -69,6 +69,7 @@ class RetrievedChunk:
         content_type: str,
         source_url: str | None,
         video_url: str | None,
+        webinar_date,
         start_time_seconds: float,
         end_time_seconds: float,
         raw_text: str,
@@ -86,6 +87,7 @@ class RetrievedChunk:
         self.content_type = content_type
         self.source_url = source_url
         self.video_url = video_url
+        self.webinar_date = webinar_date
         self.start_time_seconds = start_time_seconds
         self.end_time_seconds = end_time_seconds
         self.raw_text = raw_text
@@ -232,6 +234,7 @@ async def _vector_search(
             c.raw_text, c.contextual_text, c.summary, c.topic_tags,
             c.speaker_names, c.section_heading, c.chunk_index, c.word_count,
             v.title as video_title, v.content_type, v.source_url, v.video_url,
+            v.webinar_date,
             (1 - (c.embedding <=> CAST(:query_embedding AS vector))) as score
         FROM chunks c
         JOIN videos v ON c.video_id = v.id
@@ -271,6 +274,7 @@ async def _vector_search(
         chunk.content_type = row.content_type
         chunk.source_url = row.source_url
         chunk.video_url = row.video_url
+        chunk.webinar_date = row.webinar_date
         score = float(row.score)
         chunks.append((chunk, score))
 
@@ -309,6 +313,7 @@ async def _keyword_search(
             c.raw_text, c.contextual_text, c.summary, c.topic_tags,
             c.speaker_names, c.section_heading, c.chunk_index, c.word_count,
             v.title as video_title, v.content_type, v.source_url, v.video_url,
+            v.webinar_date,
             GREATEST(
                 ts_rank(to_tsvector('english', c.raw_text), plainto_tsquery('english', :query_text)),
                 ts_rank(to_tsvector('english', COALESCE(c.summary, '')), plainto_tsquery('english', :query_text))
@@ -350,6 +355,7 @@ async def _keyword_search(
         chunk.content_type = row.content_type
         chunk.source_url = row.source_url
         chunk.video_url = row.video_url
+        chunk.webinar_date = row.webinar_date
         score = float(row.score)
         chunks.append((chunk, score))
 
@@ -449,6 +455,7 @@ def _merge_and_dedupe(
             content_type=chunk.content_type,
             source_url=chunk.source_url,
             video_url=chunk.video_url,
+            webinar_date=chunk.webinar_date,
             start_time_seconds=chunk.start_time_seconds,
             end_time_seconds=chunk.end_time_seconds,
             raw_text=chunk.raw_text,
