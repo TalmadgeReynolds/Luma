@@ -82,6 +82,10 @@ async def generate_answer(
             if chunk.content_type == 'webinar':
                 chunk_dict["time_range"] = format_time_range(chunk.start_time_seconds, chunk.end_time_seconds)
                 chunk_dict["speakers"] = chunk.speaker_names or []
+                if chunk.webinar_date:
+                    chunk_dict["webinar_date"] = chunk.webinar_date.strftime("%m/%d/%Y")
+                else:
+                    chunk_dict["webinar_date"] = None
             else:  # article
                 chunk_dict["section_heading"] = chunk.section_heading or "N/A"
 
