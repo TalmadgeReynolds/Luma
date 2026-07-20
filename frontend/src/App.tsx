@@ -69,11 +69,6 @@ function App() {
       {/* Hero background image */}
       <div className="space-bg" aria-hidden="true" />
 
-      {/* TESTING BANNER - remove before merge */}
-      <div style={{ position: 'relative', zIndex: 20, background: '#ff0', color: '#000', textAlign: 'center', padding: '8px', fontWeight: 'bold', fontSize: '14px', letterSpacing: '2px' }}>
-        ⚠ TESTING BRANCH: feature/improve-answer-format ⚠
-      </div>
-
       {/* Navigation */}
       <nav className="nav">
         <div className="nav-logo">
