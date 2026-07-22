@@ -3,6 +3,7 @@ Answer service - generates answers from retrieved chunks.
 
 Orchestrates Claude answer generation with citation validation.
 """
+import re
 from uuid import UUID
 
 from app.config import get_settings
@@ -80,14 +81,19 @@ async def generate_answer(
 
             # Add content-type-specific fields
             if chunk.content_type == 'webinar':
-                chunk_dict["time_range"] = format_time_range(chunk.start_time_seconds, chunk.end_time_seconds)
+                time_range = format_time_range(chunk.start_time_seconds, chunk.end_time_seconds)
+                chunk_dict["time_range"] = time_range
                 chunk_dict["speakers"] = chunk.speaker_names or []
                 if chunk.webinar_date:
-                    chunk_dict["webinar_date"] = chunk.webinar_date.strftime("%m/%d/%Y")
+                    date_str = chunk.webinar_date.strftime("%m/%d/%Y")
+                    chunk_dict["webinar_date"] = date_str
+                    chunk_dict["citation_label"] = f"{chunk.video_title} - {date_str} {time_range}"
                 else:
                     chunk_dict["webinar_date"] = None
+                    chunk_dict["citation_label"] = f"{chunk.video_title} - {time_range}"
             else:  # article
                 chunk_dict["section_heading"] = chunk.section_heading or "N/A"
+                chunk_dict["citation_label"] = chunk.video_title
 
             formatted_chunks.append(chunk_dict)
             chunk_map[chunk.chunk_id] = chunk
@@ -111,6 +117,18 @@ async def generate_answer(
         not_enough_evidence = claude_response.get("not_enough_evidence", False)
 
         print(f"[Answer] Claude response: {len(answer)} chars, {len(source_chunk_ids)} sources")
+
+        # Fallback: if Claude returned an empty sources array, extract chunk IDs
+        # from cite: references in the answer text
+        if not source_chunk_ids:
+            cited_ids = re.findall(r'cite:([a-f0-9\-]{36})', answer)
+            for cid_str in dict.fromkeys(cited_ids):  # deduplicate, preserve order
+                try:
+                    source_chunk_ids.append(UUID(cid_str))
+                except ValueError:
+                    pass
+            if source_chunk_ids:
+                print(f"[Answer] Fallback: extracted {len(source_chunk_ids)} chunk IDs from answer text")
 
         # Step 4: Validate chunk_ids
         invalid_chunk_ids = [cid for cid in source_chunk_ids if cid not in chunk_map]
