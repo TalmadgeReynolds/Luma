@@ -116,6 +116,14 @@ async def main():
 
         log(f"[{i}/{len(articles)}] Processing: {title}")
 
+        # Skip rows whose scrape status is not 'ok'
+        row_status = article_row.get('status', 'ok')
+        if row_status != 'ok':
+            log(f"  ⊘ Skipped (manifest status: {row_status})")
+            log("")
+            stats['skipped'] += 1
+            continue
+
         # Check if already ingested
         if args.skip_existing and url in existing_urls:
             log(f"  ⊙ Skipped (already ingested)")
